@@ -10,7 +10,7 @@ navbar:
   sticky: true
   animation: true
   style: light
-  transparent: true
+  transparent: false
 header:
     # background_image: https://source.unsplash.com/aViOQZzikVs
     background_align: center

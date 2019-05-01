@@ -43,6 +43,7 @@ footer:             # Default footer image settings
 
 # Style settings
 navbar:
+  layout:           default # default, center
   background:       "#28a5f5" # color value e.g. "#28a5f5"
   style:            light # text color, dark or light
   sticky:           true
@@ -128,10 +129,17 @@ plugins:
   - jekyll-sitemap
   - jemoji
 
-exclude:
+exclude: 
+  - vendor
+  - .bundle
+  - .sass-cache
+  - config
   - Gemfile
   - Gemfile.lock
   - node_modules
+  - log
+  - tmp
+  - Rakefile
   - package.json
   - CHANGELOG
   - LICENSE

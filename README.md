@@ -269,7 +269,7 @@ npm install
 ```
 Enable live browser reload with the following:
 ```bash
-bundle exec jekyll s --livereload
+bundle exec jekyll s -l
 ```
 
 ## Credits and Sources

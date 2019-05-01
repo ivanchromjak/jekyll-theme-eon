@@ -5,7 +5,7 @@
 
     <body>
 
-    {% include header.html %}
+    {% include partials/header.html %}
 
     {% assign width = page.width | default: 'single' %}
     {% if width == 'left' %}
@@ -45,9 +45,9 @@
     {% endif %}
 
     {% if site.footer.layout == 'columns' %}
-      {% include footer-columns.html %}
+      {% include partials/footer-columns.html %}
     {% else %}
-      {% include footer-center.html %}
+      {% include partials/footer-center.html %}
     {% endif %}
 
     {% include offcanvas.html %}
