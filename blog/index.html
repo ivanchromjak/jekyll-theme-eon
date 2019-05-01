@@ -1,0 +1,25 @@
+---
+layout: default
+title: Events
+width: single
+---
+
+<h1 class="uk-article-title">{{ page.title | escape }}</h1>
+
+{% for post in paginator.posts %}
+<article class="uk-article">
+    {% if page.image %}
+      <a href="{{ post.url | relative_url }}"><img class="uk-width-1-1 uk-responsive-width" src="{{ post.image }}" alt="{{ post.title }}"></a>
+    {% endif %}
+    <h2 class="uk-article-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <div class="uk-article-content">
+        {{ post.excerpt }}
+    </div>
+    <div class="uk-article-footer">
+        <a href="{{ post.url | relative_url }}"><span class="uk-button uk-button-text">Read more</span></a>
+    </div>
+
+</article>
+{% endfor %}
+
+{% include paginate-blog.html %}

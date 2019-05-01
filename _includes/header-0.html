@@ -1,0 +1,102 @@
+{% if page.navbar.style %}
+  {% assign style = page.navbar.style %}
+{% else %}
+  {% assign style = site.navbar.style %}
+{% endif %}
+
+{% if page.navbar.sticky %}
+  {% assign sticky = true %}
+{% elsif page.navbar.sticky != false %}
+  {% if site.navbar.sticky %}
+    {% assign sticky = true %}
+  {% else %}
+    {% assign sticky = false %}
+  {% endif %}
+{% endif %}
+
+{% if page.header.background_align %}
+  {% assign background_align = page.header.background_align %}
+{% else %}
+  {% assign background_align = "center" %}
+{% endif %}
+
+{% if page.header.background_image %}
+{% assign background_image = page.header.background_image %}
+<header class="uk-background-{{ background_align }}-center uk-background-cover{% if page.header.background_overlay %} uk-background-blend-overlay{% endif %}" style="{% if page.header.background_color %}background-color: {{ page.header.background_color }}; {% endif %}background-image: url({% if background_image contains 'http' %}{{ background_image }}{% else %}{{ site.post_assets | absolute_url }}{{ background_image }}{% endif %});">
+{% else %}
+<header{% if page.header.background_color %} style="background: {{ page.header.background_color }}; "{% endif %}>
+{% endif %}
+
+  {% if sticky %}
+    <div data-uk-sticky="{% if page.navbar.animation %}animation: uk-animation-slide-top; top: 200; {% endif %}sel-target: .navbar-container; cls-active: uk-navbar-sticky navbar-background uk-{{ style | default: 'dark' }}; cls-inactive: {% if page.navbar.transparent %}uk-navbar-transparent{% else %}navbar-background{% endif %} uk-{{ style | default: 'dark' }}">
+      <nav class="navbar-container">
+        {% include navbar.html %}
+      </nav>
+    </div>
+  {% else %}
+    <nav class="uk-navbar-container {% if page.navbar.transparent %}uk-navbar-transparent{% else %}navbar-background{% endif %} uk-{{ style | default: 'dark' }}">
+      {% include navbar.html %}
+    </nav>
+  {% endif %}
+
+  {% if page.header %}
+  <div class="uk-section uk-section-large">
+    <div class="uk-container">
+      <div class="uk-width-2-3@m uk-{{ page.header.color | default: 'dark' }} uk-text-{{ page.header.align | default: 'left' }} uk-align-{{ page.header.align | default: 'left' }}">
+        <h1 class="uk-heading-hero">{{ page.title | escape }}</h1>
+        {% if page.subtitle %}
+          <p class="subtitle uk-text-uppercase">{{ page.subtitle | escape }}</p>
+        {% endif %}
+        {% if page.excerpt %}
+          <div class="uk-text-lead">{{ page.excerpt | markdownify }}</div>
+        {% endif %}
+      </div>
+      {% if page.header.search %}
+        <div class="uk-width-1-2@m uk-align-{{ page.header.align | default: 'left' }}">
+          <div class="hero-search">
+            <form class="uk-search uk-search-default uk-position-relative uk-width-1-1" onsubmit="return false;">
+              <span data-uk-search-icon></span>
+              <input id="search-input" class="uk-search-input" type="search" placeholder="Search for answers...">
+              <ul id="search-results" class="uk-position-absolute uk-width-1-1 uk-list uk-margin-small-top"></ul>
+            </form>
+            <script>
+              var searchInput = document.getElementById('search-input');
+              var searchResults = document.getElementById('search-results');
+
+              searchInput.addEventListener('focusin', showResults, true);
+              searchInput.addEventListener('focusout', hideResults, true);
+
+              function showResults() {
+
+                document.getElementById('search-results').style.display = '';
+
+                SimpleJekyllSearch({
+                  searchInput: document.getElementById('search-input'),
+                  resultsContainer: document.getElementById('search-results'),
+                  noResultsText: '<li>No results found</li>',
+                  searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+                  limit: 100,
+                  json: '/search.json'
+                });
+              }
+
+              function hideResults() {
+
+                document.addEventListener('click', function(event) {
+                  var isClickInside = searchResults.contains(event.target);
+                  var isClickInput = searchInput.contains(event.target);
+
+                  if ( !isClickInside && !isClickInput ) {
+                    searchResults.style.display = 'none';
+                  }
+                });
+
+              }
+            </script>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+  {% endif %}
+</header>

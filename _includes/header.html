@@ -1,0 +1,89 @@
+{% if page.navbar.style %}
+  {% assign style = page.navbar.style %}
+{% else %}
+  {% assign style = site.navbar.style %}
+{% endif %}
+
+{% if page.navbar.sticky %}
+  {% assign sticky = true %}
+{% elsif page.navbar.sticky != false %}
+  {% if site.navbar.sticky %}
+    {% assign sticky = true %}
+  {% else %}
+    {% assign sticky = false %}
+  {% endif %}
+{% endif %}
+
+{% if page.header.background_align %}
+  {% assign background_align = page.header.background_align %}
+{% else %}
+  {% assign background_align = "center" %}
+{% endif %}
+
+{% if page.header.background_image %}
+{% assign background_image = page.header.background_image %}
+<header class="uk-background-{{ background_align }}-center uk-background-cover{% if page.header.background_overlay %} uk-background-blend-overlay{% endif %}" style="{% if page.header.background_color %}background-color: {{ page.header.background_color }}; {% endif %}background-image: url({% if background_image contains 'http' %}{{ background_image }}{% else %}{{ site.post_assets | absolute_url }}{{ background_image }}{% endif %});"{% if page.header.height == 'full' %} data-uk-height-viewport{% endif %}>
+{% else %}
+<header{% if page.header.background_color %} style="background: {{ page.header.background_color }}; "{% endif %}{% if page.header.height == 'full' %} data-uk-height-viewport{% endif %}>
+{% endif %}
+
+  {% if sticky %}
+    <div data-uk-sticky="{% if page.navbar.animation %}animation: uk-animation-slide-top; top: 200; {% endif %}sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky navbar-background uk-{{ style | default: 'dark' }}; cls-inactive: {% if page.navbar.transparent %}uk-navbar-transparent{% else %}navbar-background{% endif %} uk-{{ style | default: 'dark' }}">
+      <nav class="uk-navbar-container">
+        {% include navbar.html %}
+      </nav>
+    </div>
+  {% else %}
+    <nav class="uk-navbar-container {% if page.navbar.transparent %}uk-navbar-transparent{% else %}navbar-background{% endif %} uk-{{ style | default: 'dark' }}">
+      {% include navbar.html %}
+    </nav>
+  {% endif %}
+
+  {% if page.header %}
+  <div class="header-wrapper uk-container">
+    <div class="uk-section uk-section-large">
+      {% if page.header.align == 'center' %}
+        <div data-uk-grid class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
+          <div class="uk-width-3-4@m uk-margin-remove-bottom uk-{{ page.header.color | default: 'dark' }}">
+            <h1 class="uk-heading-hero">{{ page.title | escape }}</h1>
+            {% if page.subtitle %}
+              <p class="subtitle uk-text-uppercase">{{ page.subtitle | escape }}</p>
+            {% endif %}
+            {% if page.excerpt %}
+              <div class="uk-text-lead uk-margin-remove-bottom">{{ page.excerpt | markdownify }}</div>
+            {% endif %}
+          </div>
+          <div class="uk-width-3-4@m uk-visible@m">
+            <img class="" src="{{ page.header.image }}">
+          </div>
+          {% if page.header.search %}
+            <div class="uk-width-3-4@m">
+              {% include search.html %}
+            </div>
+          {% endif %}
+        </div>
+      {% else %}
+        <div data-uk-grid>
+          <div class="uk-width-2-3@m uk-margin-remove-bottom uk-{{ page.header.color | default: 'dark' }}">
+            <h1 class="uk-heading-hero">{{ page.title | escape }}</h1>
+            {% if page.subtitle %}
+              <p class="subtitle uk-text-uppercase">{{ page.subtitle | escape }}</p>
+            {% endif %}
+            {% if page.excerpt %}
+              <div class="uk-text-lead uk-margin-remove-bottom">{{ page.excerpt | markdownify }}</div>
+            {% endif %}
+          </div>
+          <div class="uk-width-1-3@m uk-visible@m">
+            <img class="uk-width-1-1" src="{{ page.header.image }}">
+          </div>
+          {% if page.header.search %}
+            <div class="uk-width-2-3@m">
+              {% include search.html %}
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+  {% endif %}
+</header>
