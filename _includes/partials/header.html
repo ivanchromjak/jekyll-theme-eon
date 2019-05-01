@@ -1,7 +1,13 @@
-{% if page.navbar.style %}
-  {% assign style = page.navbar.style %}
+{% if page.navbar.transparent_color %}
+  {% assign transparent_color = page.navbar.transparent_color %}
 {% else %}
-  {% assign style = site.navbar.style %}
+  {% assign transparent_color = site.navbar.color %}
+{% endif %}
+
+{% if page.navbar.color %}
+  {% assign color = page.navbar.color %}
+{% else %}
+  {% assign color = site.navbar.color %}
 {% endif %}
 
 {% if page.navbar.sticky %}
@@ -11,6 +17,16 @@
     {% assign sticky = true %}
   {% else %}
     {% assign sticky = false %}
+  {% endif %}
+{% endif %}
+
+{% if page.navbar.animation %}
+  {% assign animation = true %}
+{% elsif page.navbar.animation != false %}
+  {% if site.navbar.animation %}
+    {% assign animation = true %}
+  {% else %}
+    {% assign animation = false %}
   {% endif %}
 {% endif %}
 
@@ -28,7 +44,7 @@
 {% endif %}
 
   {% if sticky %}
-    <div data-uk-sticky="{% if page.navbar.animation %}animation: uk-animation-slide-top; top: 200; {% endif %}sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky navbar-background uk-{{ style | default: 'dark' }}; cls-inactive: {% if page.navbar.transparent %}uk-navbar-transparent{% else %}navbar-background{% endif %} uk-{{ style | default: 'dark' }}">
+    <div data-uk-sticky="{% if animation %}animation: uk-animation-slide-top; top: 200; {% endif %}sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky navbar-background uk-{{ color | default: 'dark' }}; cls-inactive: {% if page.navbar.transparent %}uk-navbar-transparent uk-{{ transparent_color | default: 'dark' }}{% else %}navbar-background uk-{{ color | default: 'dark' }}{% endif %}">
       <nav class="uk-navbar-container">
         {% if site.navbar.layout == 'center' %}
           {% include partials/navbar-center.html %}
@@ -38,7 +54,7 @@
       </nav>
     </div>
   {% else %}
-    <nav class="uk-navbar-container {% if page.navbar.transparent %}uk-navbar-transparent{% else %}navbar-background{% endif %} uk-{{ style | default: 'dark' }}">
+    <nav class="uk-navbar-container {% if page.navbar.transparent %}uk-navbar-transparent uk-{{ transparent_color | default: 'dark' }}{% else %}navbar-background uk-{{ color | default: 'dark' }}{% endif %}">
       {% if site.navbar.layout == 'center' %}
         {% include partials/navbar-center.html %}
       {% else %}

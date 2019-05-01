@@ -44,8 +44,8 @@ footer:             # Default footer image settings
 # Style settings
 navbar:
   layout:           default # default, center
-  background:       "#28a5f5" # color value e.g. "#28a5f5"
-  style:            light # text color, dark or light
+  color:            dark # text color, dark or light
+  animation:        true
   sticky:           true
   search:           false
 

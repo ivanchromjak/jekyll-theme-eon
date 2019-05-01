@@ -9,8 +9,8 @@ excerpt: 'Multipurpose Jekyll theme. Create company or personal site and host on
 navbar:
   sticky: true
   animation: true
-  style: light
-  transparent: false
+  transparent: true
+  transparent_color: light
 header:
     # background_image: https://source.unsplash.com/aViOQZzikVs
     background_align: center
