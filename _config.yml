@@ -20,7 +20,10 @@ uploads:            /uploads/ # Path to post content assets directory i.e post i
 paginate:           4 # Number of posts displayed on blog page
 paginate_path:      "/blog/:num/" # Blog path
 
-
+mailchimp:
+  form_action:
+  hidden_name:
+  
 google_analytics:   # Google analytics code, get your code here https://www.google.com/analytics/
 google_maps_api_key: AIzaSyAJTeOhKq4HhEsEbUze__fAPDQswd0gUSU # Google maps API key, get your key here: https://developers.google.com/maps/documentation/javascript/get-api-key
 
