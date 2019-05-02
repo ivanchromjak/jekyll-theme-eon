@@ -22,7 +22,7 @@
 
 {% if page.header.background_image %}
 {% assign background_image = page.header.background_image %}
-<header class="uk-background-{{ background_align }}-center uk-background-cover{% if page.header.background_overlay %} uk-background-blend-overlay{% endif %}" style="{% if page.header.background_color %}background-color: {{ page.header.background_color }}; {% endif %}background-image: url({% if background_image contains 'http' %}{{ background_image }}{% else %}{{ site.post_assets | absolute_url }}{{ background_image }}{% endif %});">
+<header class="uk-background-{{ background_align }}-center uk-background-cover{% if page.header.background_overlay %} uk-background-blend-overlay{% endif %}" style="{% if page.header.background_color %}background-color: {{ page.header.background_color }}; {% endif %}background-image: url({% if background_image contains 'http' %}{{ background_image }}{% else %}{{ site.uploads | absolute_url }}{{ background_image }}{% endif %});">
 {% else %}
 <header{% if page.header.background_color %} style="background: {{ page.header.background_color }}; "{% endif %}>
 {% endif %}

@@ -3,12 +3,12 @@
         <div class="uk-navbar-left">
 
             <a class="uk-navbar-item uk-logo" href="{{ "/" | relative_url }}">
-              {% if site.logo_image.light or site.logo_image.dark %}
-                {% if site.logo_image.light %}
-                  <img class="uk-logo-inverse" src="{{ "/assets/img/" | absolute_url }}{{ site.logo_image.light }}" alt="{{ site.title }}">
+              {% if site.logo_light or site.logo %}
+                {% if site.logo_light %}
+                  <img class="uk-logo-inverse" src="{{ site.uploads | absolute_url }}{{ site.logo_light }}" alt="{{ site.title }}">
                 {% endif %}
-                {% if site.logo_image.dark %}
-                  <img src="{{ "/assets/img/" | absolute_url }}{{ site.logo_image.dark }}" alt="{{ site.title }}">
+                {% if site.logo %}
+                  <img src="{{ site.uploads | absolute_url }}{{ site.logo }}" alt="{{ site.title }}">
                 {% endif %}
               {% else %}
                 {{ site.title }}
@@ -139,7 +139,7 @@
               </div>
             {% endif %}
 
-            <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-navbar-toggle-icon data-uk-toggle></a>
+            <a class="uk-navbar-toggle uk-hidden@m" href="#nav-mobile" data-uk-navbar-toggle-icon data-uk-toggle></a>
 
         </div>
     </div>

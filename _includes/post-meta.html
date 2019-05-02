@@ -9,7 +9,7 @@
 
     {% if author.avatar.image %}
       <div>
-        <img class="avatar" src="{% if author.avatar.image contains 'http' %}{{ author.avatar.image }}{% else %}{{ site.post_assets | absolute_url }}{{ author.avatar.image }}{% endif %}" alt="{{ author.name }}" itemprop="image">
+        <img class="avatar" src="{% if author.avatar.image contains 'http' %}{{ author.avatar.image }}{% else %}{{ site.uploads | absolute_url }}{{ author.avatar.image }}{% endif %}" alt="{{ author.name }}" itemprop="image">
       </div>
     {% endif %}
 

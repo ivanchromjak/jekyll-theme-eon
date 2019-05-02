@@ -1,10 +1,10 @@
-<div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+<div id="nav-mobile" data-uk-offcanvas="flip: true; overlay: true">
     <div class="uk-offcanvas-bar">
 
         <button class="uk-offcanvas-close" type="button" data-uk-close></button>
 
-        <ul class="uk-nav uk-nav-default">
-            <li><a class="uk-logo uk-margin-small-bottom" href="{{ "/" | relative_url }}">{% if site.brand.image %}<img src="{{ site.post_assets | absolute_url }}{{ site.brand.image }}" alt="{{ site.brand.text | escape }}">{% else %}{{ site.brand.text }}{% endif %}</a></li>
+        <ul class="uk-nav uk-nav-primary">
+            <li><a class="uk-logo uk-margin-small-bottom" href="{{ "/" | relative_url }}">{% if site.logo %}<img src="{{ site.uploads | absolute_url }}{{ site.logo }}" alt="{{ site.title }}">{% else %}{{ site.title }}{% endif %}</a></li>
             {% for link in site.data.mobile %}
                 {% if link.url contains 'http' %}
                     {% assign domain = '' %}

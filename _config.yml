@@ -9,13 +9,12 @@ title:              Eon
 description:        Multipurpose Jekyll theme.
 url:                # Site base hostname & protocol, e.g. http://example.com
 baseurl:            "" # Site subpath, e.g. /blog
-logo_image:
-  light:            logo-light.svg
-  dark:             logo-dark.svg
+logo:               logo-dark.svg
+logo_light:         logo-light.svg
 permalink:          /:title/ # Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
 date_format:        "%b %-d, %Y" # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 # paginate:	          5 # The number of posts to show per page on your blog page
-post_assets:        /assets/posts/ # Path to post content assets directory i.e post images, pdfs etc
+uploads:            /uploads/ # Path to post content assets directory i.e post images, pdfs etc
 
 
 paginate:           4 # Number of posts displayed on blog page

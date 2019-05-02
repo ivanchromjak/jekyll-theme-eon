@@ -11,7 +11,7 @@
       {% if author.avatar == 'github' and author.github %}
         {% avatar {{ author.github }} size=300 %}
       {% else %}
-        <img class="avatar" src="{% if author.avatar contains 'http' %}{{ author.avatar }}{% else %}{{ site.post_assets | absolute_url }}{{ author.avatar }}{% endif %}" alt="{{ author.name }}">
+        <img class="avatar" src="{% if author.avatar contains 'http' %}{{ author.avatar }}{% else %}{{ site.uploads | absolute_url }}{{ author.avatar }}{% endif %}" alt="{{ author.name }}">
       {% endif %}
     </div>
   {% endif %}
