@@ -3,7 +3,7 @@
 
         <div>
             <ul class="uk-subnav uk-flex-center">
-                {% for link in site.data.footer.center %}
+                {% for link in site.data.[site.template].footer.center %}
                     {% if link.url contains 'http' %}
                         {% assign domain = '' %}
                     {% else %}

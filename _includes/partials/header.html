@@ -20,6 +20,16 @@
   {% endif %}
 {% endif %}
 
+{% if page.navbar.scroll_up %}
+  {% assign scroll_up = true %}
+{% elsif page.navbar.scroll_up != false %}
+  {% if site.navbar.scroll_up %}
+    {% assign scroll_up = true %}
+  {% else %}
+    {% assign scroll_up = false %}
+  {% endif %}
+{% endif %}
+
 {% if page.navbar.animation %}
   {% assign animation = true %}
 {% elsif page.navbar.animation != false %}
@@ -44,7 +54,7 @@
 {% endif %}
 
   {% if sticky %}
-    <div data-uk-sticky="{% if animation %}animation: uk-animation-slide-top; top: 200; {% endif %}sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky navbar-background uk-{{ color | default: 'dark' }}; cls-inactive: {% if page.navbar.transparent %}uk-navbar-transparent uk-{{ transparent_color | default: 'dark' }}{% else %}navbar-background uk-{{ color | default: 'dark' }}{% endif %}">
+    <div data-uk-sticky="{% if scroll_up %}show-on-up: true; {% endif %}{% if animation %}animation: uk-animation-slide-top; top: 200; {% endif %}sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky navbar-background uk-{{ color | default: 'dark' }}; cls-inactive: {% if page.navbar.transparent %}uk-navbar-transparent uk-{{ transparent_color | default: 'dark' }}{% else %}navbar-background uk-{{ color | default: 'dark' }}{% endif %}">
       <nav class="uk-navbar-container">
         {% if site.navbar.layout == 'center' %}
           {% include partials/navbar-center.html %}

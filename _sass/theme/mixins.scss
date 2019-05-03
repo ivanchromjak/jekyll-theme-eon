@@ -157,6 +157,11 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
     letter-spacing: 3px;
     font-weight: 400;
 }
+
+@mixin hook-navbar-sticky(){
+    box-shadow: $global-small-box-shadow;
+}
+
 @mixin hook-subnav-item(){
     font-size: $subnav-item-font-size;
     letter-spacing: 2px;
