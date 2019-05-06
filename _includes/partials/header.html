@@ -75,86 +75,110 @@
 
   {% if page.header %}
   <div class="uk-container{% if page.header.layout == 'center' %} uk-container-small{% endif %}{% if page.header.height == 'full' %} uk-flex uk-flex-middle{% endif %}"{% if page.header.height == 'full' %} data-uk-height-viewport="offset-top: true"{% endif %}>
-    <div class="uk-section uk-section-large  uk-width-1-1">
+    <div class="uk-section uk-section-large  uk-width-1-1 uk-{{ page.header.color | default: 'dark' }}">
       {% if page.header.layout == 'center' %}
-        <div data-uk-grid class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
-          {% if page.header.image %}
-            <div>
-              <img src="{{ page.header.image }}">
-            </div>
-          {% endif %}
-          <div class="uk-margin-remove-bottom uk-{{ page.header.color | default: 'dark' }}">
-            <h1 class="uk-heading-hero">{{ page.title | escape }}</h1>
-            {% if page.subtitle %}
-              <p class="subtitle uk-text-uppercase">{{ page.subtitle | escape }}</p>
-            {% endif %}
-            {% if page.excerpt %}
-              <div class="uk-text-lead uk-margin-remove-bottom">{{ page.excerpt | markdownify }}</div>
-            {% endif %}
-          </div>
-          {% if page.header.search %}
-            <div>
-              {% include search.html %}
-            </div>
-          {% endif %}
-        </div>
-      {% elsif page.header.layout == 'half' %}
-        <div class="uk-grid-large" data-uk-grid>
-          <div class="uk-width-1-2@m uk-flex uk-flex-middle uk-margin-remove-bottom uk-{{ page.header.color | default: 'dark' }}">
-            <div>
+        <div class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
+          <div>
+            {% if page.header.container.title %}
               <h1 class="uk-heading-hero">{{ page.title | escape }}</h1>
-              {% if page.subtitle %}
-                <p class="subtitle uk-text-uppercase">{{ page.subtitle | escape }}</p>
-              {% endif %}
-              {% if page.excerpt %}
-                <div class="uk-text-lead uk-margin-remove-bottom">{{ page.excerpt | markdownify }}</div>
-              {% endif %}
-              {% if page.header.search %}
-                <div class="uk-margin-medium-top">
-                  {% include search.html %}
-                </div>
-              {% endif %}
-              {% if page.header.newsletter == 'mailchimp' %}
-                <div class="uk-margin-medium-top">
-                  {% include mailchimp.html %}
-                </div>
-              {% endif %}
-            </div>
-          </div>
-          <div class="uk-width-1-2@m uk-flex uk-flex-middle uk-flex-center@m">
-            {% if page.header.slideshow %}
-              {% include header-slider.html %}
             {% endif %}
-            {% if page.header.image %}
-              <img src="{{ page.header.image }}">
+            {% if page.header.container.subtitle %}
+              <div class="uk-text-lead">{{ page.subtitle | markdownify }}</div>
+            {% endif %}
+            {% if page.header.container.search %}
+              <div class="uk-margin-medium-top">
+                {% include search.html %}
+              </div>
+            {% endif %}
+            {% if page.header.container.slideshow %}
+              <div class="uk-margin-medium-top">
+                {% include slideshow.html gallery=page.header.container.slideshow %}
+              </div>
+            {% endif %}
+            {% if page.header.container.image %}
+              <div class="uk-margin-medium-top">
+                <img src="{{ page.header.container.image }}">
+              </div>
+            {% endif %}
+            {% if page.header.container.content %}
+              <div class="uk-margin-medium-top">
+                {{ page.header.container.content }}
+              </div>
+            {% endif %}
+            {% if page.header.container.newsletter == 'mailchimp' %}
+              <div class="uk-margin-medium-top">
+                {% include mailchimp.html %}
+              </div>
             {% endif %}
           </div>
         </div>
       {% else %}
-        <div class="uk-grid-large" data-uk-grid>
-          <div class="uk-width-2-3@m uk-flex uk-flex-middle uk-margin-remove-bottom uk-{{ page.header.color | default: 'dark' }}">
-            <div>
+        <div class="uk-grid-large uk-flex uk-flex-middle uk-flex-center@m" data-uk-grid>
+          <div class="uk-width-{{ page.header.layout | default: '2-3' }}@m">
+            {% if page.header.container.title %}
               <h1 class="uk-heading-hero">{{ page.title | escape }}</h1>
-              {% if page.subtitle %}
-                <p class="subtitle uk-text-uppercase">{{ page.subtitle | escape }}</p>
-              {% endif %}
-              {% if page.excerpt %}
-                <div class="uk-text-lead uk-margin-remove-bottom">{{ page.excerpt | markdownify }}</div>
-              {% endif %}
-              {% if page.header.search %}
-                <div class="uk-margin-medium-top">
-                  {% include search.html %}
-                </div>
-              {% endif %}
-              {% if page.header.newsletter == 'mailchimp' %}
-                <div class="uk-margin-medium-top">
-                  {% include mailchimp.html %}
-                </div>
-              {% endif %}
-            </div>
+            {% endif %}
+            {% if page.header.container.subtitle %}
+              <div class="uk-text-lead">{{ page.subtitle | markdownify }}</div>
+            {% endif %}
+            {% if page.header.container.search %}
+              <div class="uk-margin-medium-top">
+                {% include search.html %}
+              </div>
+            {% endif %}
+            {% if page.header.container.slideshow %}
+              <div class="uk-margin-medium-top">
+                {% include slideshow.html gallery=page.header.container.slideshow %}
+              </div>
+            {% endif %}
+            {% if page.header.container.image %}
+              <div class="uk-margin-medium-top">
+                <img src="{{ page.header.container.image }}">
+              </div>
+            {% endif %}
+            {% if page.header.container.content %}
+              <div class="uk-margin-medium-top">
+                {{ page.header.container.content }}
+              </div>
+            {% endif %}
+            {% if page.header.container.newsletter == 'mailchimp' %}
+              <div class="uk-margin-medium-top">
+                {% include mailchimp.html %}
+              </div>
+            {% endif %}
           </div>
-          <div class="uk-width-1-3@m uk-flex uk-flex-middle uk-flex-center@m">
-            <img src="{{ page.header.image }}">
+          <div class="uk-width-expand@m">
+            {% if page.header.container2.title %}
+              <h1 class="uk-heading-hero">{{ page.title | escape }}</h1>
+            {% endif %}
+            {% if page.header.container2.subtitle %}
+              <div class="uk-text-lead">{{ page.subtitle | markdownify }}</div>
+            {% endif %}
+            {% if page.header.container2.search %}
+              <div class="uk-margin-medium-top">
+                {% include search.html %}
+              </div>
+            {% endif %}
+            {% if page.header.container2.slideshow %}
+              <div class="uk-margin-medium-top">
+                {% include slideshow.html gallery=page.header.container2.slideshow %}
+              </div>
+            {% endif %}
+            {% if page.header.container2.image %}
+              <div class="uk-margin-medium-top">
+                <img src="{{ page.header.container2.image }}">
+              </div>
+            {% endif %}
+            {% if page.header.container2.content %}
+              <div class="uk-margin-medium-top">
+                {{ page.header.container2.content }}
+              </div>
+            {% endif %}
+            {% if page.header.container2.newsletter == 'mailchimp' %}
+              <div class="uk-margin-medium-top">
+                {% include mailchimp.html %}
+              </div>
+            {% endif %}
           </div>
         </div>
       {% endif %}
