@@ -55,9 +55,11 @@
 @import "../uikit/components/modal.scss"; // After: Close
 @import "../uikit/components/lightbox.scss"; // After: Close
 @import "../uikit/components/slideshow.scss";
+@import "../uikit/components/slider.scss";
 @import "../uikit/components/sticky.scss";
 @import "../uikit/components/offcanvas.scss";
 @import "../uikit/components/switcher.scss";
+@import "../uikit/components/leader.scss";
 // Scrollspy
 // Toggle
 // Scroll
@@ -74,11 +76,13 @@
 // Utilities
 @import "../uikit/components/animation.scss";
 @import "../uikit/components/width.scss";
+@import "../uikit/components/height.scss";
 @import "../uikit/components/text.scss";
 @import "../uikit/components/column.scss";
 @import "../uikit/components/cover.scss";
 @import "../uikit/components/background.scss";
 @import "../uikit/components/align.scss";
+@import "../uikit/components/svg.scss";
 @import "../uikit/components/utility.scss";
 @import "../uikit/components/flex.scss"; // After: Utility
 @import "../uikit/components/margin.scss";

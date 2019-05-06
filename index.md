@@ -12,15 +12,18 @@ navbar:
   transparent: true
   transparent_color: light
 header:
-    # background_image: https://source.unsplash.com/aViOQZzikVs
-    background_align: center
-    background_color: "linear-gradient(-40deg, #0acffe 0%, #495aff 100%)"
-    background_overlay: true
-    color: light
-    align: left
-    search: true
-    height: full-
-    image: /assets/icons/rocket-2.svg
+  layout: half
+  background:
+    image: https://source.unsplash.com/aViOQZzikVs
+    align: center
+    color: "linear-gradient(-40deg, #0acffe 0%, #495aff 100%)"
+    overlay: true
+  color: light
+  # search: true
+  # newsletter: mailchimp
+  # height: full
+  # image: /assets/icons/rocket-2.svg
+  slideshow: slideshow-1
 ---
 
 [comment]: # (This actually is the most platform independent comment)
