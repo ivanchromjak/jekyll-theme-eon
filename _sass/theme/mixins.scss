@@ -487,4 +487,24 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
         }
     }
 
+    .section-team {
+        .uk-slider-items {
+            li {
+                opacity: .7;
+                &.uk-active {
+                    opacity: 1;
+                };
+            }
+        }
+        .uk-grid > div {
+            width: 128px;
+        }
+        .uk-card {
+            img {
+                max-width: 86px;
+            }
+        }
+    }
+    
+
 }

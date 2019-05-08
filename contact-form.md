@@ -25,4 +25,6 @@ header:
   image: /assets/icons/rocket-2.svg
 ---
 
-{% include formspree.html email="my_name@gmail.com" redirect="/thanks/" %}
+Example contact us form using [Formspree](https://formspree.io/).
+
+{% include formspree.html email="my_name@gmail.com" redirect="/thanks/" name="true" subject="true" %}

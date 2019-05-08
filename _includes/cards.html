@@ -6,21 +6,21 @@
       <h2 class="uk-margin-large-bottom">{{- include.title -}}</h2>
     {%- endif -%}
     <div class="uk-child-width-expand@m uk-grid-match uk-grid-large- uk-flex-center" uk-grid>
-      {% assign items = (site.items | sort: 'card[slug]') %}
-      {% for item in items %}
-        {% if item.slug contains include.id %}
+      {% assign blocks = (site.blocks | sort: 'card[slug]') %}
+      {% for block in blocks %}
+        {% if block.slug contains include.id %}
           <div>
             {% if include.media == 'left' %}
               <div class="uk-card uk-card-large uk-card-{{ include.style }} uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
                 <div class="uk-card-media-left uk-cover-container">
-                  <img src="{% if item.image contains 'http' %}{{ item.image }}{% else %}{{ site.uploads | absolute_url }}{{ item.image }}{% endif %}" alt="{{ item.title }}" uk-cover>
+                  <img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}" uk-cover>
                   <canvas width="600" height="400"></canvas>
                 </div>
                 <div>
                   <div class="uk-card-body">
-                    <h3 class="uk-card-title">{{ item.title }}</h3>
+                    <h3 class="uk-card-title">{{ block.title }}</h3>
                     <div class="uk-card-content">
-                      {{ item.content }}
+                      {{ block.content }}
                     </div>
                   </div>
                 </div>
@@ -28,14 +28,14 @@
             {% elsif include.media == 'right' %}
               <div class="uk-card uk-card-large uk-card-{{ include.style }} uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
                 <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
-                  <img src="{% if item.image contains 'http' %}{{ item.image }}{% else %}{{ site.uploads | absolute_url }}{{ item.image }}{% endif %}" alt="{{ item.title }}" uk-cover>
+                  <img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}" uk-cover>
                   <canvas width="600" height="400"></canvas>
                 </div>
                 <div>
                   <div class="uk-card-body">
-                    <h3 class="uk-card-title">{{ item.title }}</h3>
+                    <h3 class="uk-card-title">{{ block.title }}</h3>
                     <div class="uk-card-content">
-                    {{ item.content }}
+                    {{ block.content }}
                     </div>
                   </div>
                 </div>
@@ -43,39 +43,39 @@
             {% elsif include.media == 'top' %}
               <div class="uk-card uk-card-large- uk-border-rounded uk-box-shadow-large uk-card-{{ include.style }}">
                 <div class="uk-card-media-top">
-                  {% if item.icon %}
-                  <img class="icon uk-margin-medium-top" src="/assets/icons/{{ item.icon }}" alt="{{ item.title }}">
-                  {% elsif item.image %}
-                  <img src="{% if item.image contains 'http' %}{{ item.image }}{% else %}{{ site.uploads | absolute_url }}{{ item.image }}{% endif %}" alt="{{ item.title }}">
+                  {% if block.icon %}
+                  <img class="icon uk-margin-medium-top" src="/assets/icons/{{ block.icon }}" alt="{{ block.title }}">
+                  {% elsif block.image %}
+                  <img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
                   {% endif %}
                 </div>
                 <div class="uk-card-body">
-                  <h3 class="uk-card-title">{{ item.title }}</h3>
+                  <h3 class="uk-card-title">{{ block.title }}</h3>
                   <div class="uk-card-content">
-                  {{ item.content }}
+                  {{ block.content }}
                   </div>
                 </div>
               </div>
             {% elsif include.media == 'bottom' %}
             <div class="uk-card uk-card-large uk-card-{{ include.style }}">
               <div class="uk-card-body">
-                <h3 class="uk-card-title">{{ item.title }}</h3>
+                <h3 class="uk-card-title">{{ block.title }}</h3>
                 <div class="uk-card-content">
-                {{ item.content }}
+                {{ block.content }}
                 </div>
               </div>
               <div class="uk-card-media-bottom">
-                <img src="{% if item.image contains 'http' %}{{ item.image }}{% else %}{{ site.uploads | absolute_url }}{{ item.image }}{% endif %}" alt="{{ item.title }}">
+                <img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
               </div>
             </div>
             {% else %}
               <div class="uk-card uk-card-{{ include.style }} uk-card-body">
-                {% if item.icon %}
-                  <span data-uk-icon="icon: {{ item.icon }}; ratio: 2"></span>
+                {% if block.icon %}
+                  <span data-uk-icon="icon: {{ block.icon }}; ratio: 2"></span>
                 {% endif %}
-                <h3 class="uk-card-title">{{ item.title }}</h3>
+                <h3 class="uk-card-title">{{ block.title }}</h3>
                 <div class="uk-card-content">
-                  {{ item.content }}
+                  {{ block.content }}
                 </div>
               </div>
             {% endif %}

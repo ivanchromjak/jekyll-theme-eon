@@ -12,8 +12,8 @@ navbar:
   transparent: true
   transparent_color: light
 header:
-  layout: center # Options: center 1-2 or 2-3
-  height: full
+  layout: 2-3 # Options: center 1-2 or 2-3
+  height: full-
   background:
     # image: https://source.unsplash.com/aViOQZzikVs
     align: center
@@ -42,9 +42,11 @@ header:
 
 {% if site.template == 'base' %}
 
-  {% include cards.html id="home-why" style="default" media="top" section="muted" align="center" title="Why switch to Jekyll" %}
+  {% include cards.html id="home-why" style="default" media="left" section="muted" align="center" title="Why switch to Jekyll" %}
 
-  {% include features.html id="feature" section="default" align="center" title="Awesome Features" %}
+  {% include features.html id="feature" section="muted" align="center" title="Awesome Features" %}
+
+  {% include block.html id="support" section="default" layout="center" padding="remove-bottom" %}
 
   {% include cta.html title="Support continuous development of this theme with your contribution" button_style="danger" button_text="Support Us" button_url="https://www.paypal.me/ivanchromjak" blank="true" section="secondary" %}
 
@@ -61,6 +63,9 @@ header:
   {% include instagram.html count="8" section="default" %}
 
 {% endif %}
+
+{% include team.html authors="evan, john, sara, alex, tom, daniel" title="We are here to help" subtitle="Our team is just an email away ready to answer your questions" %}
+
 
 <!--
 background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);

@@ -6,22 +6,22 @@
       <h2 class="uk-margin-large-bottom">{{- include.title -}}</h2>
     {%- endif -%}
     <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-match" uk-grid>
-      {% assign items = (site.items | sort: 'card[slug]') %}
-      {% for item in items %}
-        {% if item.slug contains include.id %}
+      {% assign blocks = (site.blocks | sort: 'card[slug]') %}
+      {% for block in blocks %}
+        {% if block.slug contains include.id %}
           <div>
             <div class="uk-card">
               <div class="uk-card-media-top">
-                {% if item.icon %}
-                <img class="icon" src="/assets/icons/{{ item.icon }}" alt="{{ item.title }}">
-                {% elsif item.image %}
-                <img src="{{ item.image }}" alt="{{ item.title }}">
+                {% if block.icon %}
+                <img class="icon" src="/assets/icons/{{ block.icon }}" alt="{{ block.title }}">
+                {% elsif block.image %}
+                <img src="{{ block.image }}" alt="{{ block.title }}">
                 {% endif %}
               </div>
               <div class="uk-card-body">
-                <h3 class="uk-card-title">{{ item.title }}</h3>
+                <h3 class="uk-card-title">{{ block.title }}</h3>
                 <div class="uk-card-content">
-                {{ item.content }}
+                {{ block.content }}
                 </div>
               </div>
             </div>
