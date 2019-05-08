@@ -44,7 +44,9 @@ header:
 
   {% include cards.html id="home-why" style="default" media="left" section="muted" align="center" title="Why switch to Jekyll" %}
 
-  {% include features.html id="feature" section="muted" align="center" title="Awesome Features" %}
+  {% include features.html id="feature" section="default" align="center" title="Awesome Features" %}
+
+  {% include cards.html id="pricing" style="default" section="muted" align="center-" title="Pricing" %}
 
   {% include block.html id="support" section="default" layout="center" padding="remove-bottom" %}
 

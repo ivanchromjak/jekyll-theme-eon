@@ -74,6 +74,9 @@
                   <span data-uk-icon="icon: {{ block.icon }}; ratio: 2"></span>
                 {% endif %}
                 <h3 class="uk-card-title">{{ block.title }}</h3>
+                {% if block.heading %}
+                  <h4 class="uk-heading-large uk-margin">{{ block.heading }}</h4>
+                {% endif %}
                 <div class="uk-card-content">
                   {{ block.content }}
                 </div>
