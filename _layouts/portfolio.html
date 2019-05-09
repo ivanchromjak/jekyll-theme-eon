@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<article class="uk-article">
+
+  <h1 class="uk-article-title">{{ page.title | escape }}</h1>
+
+  <div class="uk-article-content">
+      {{ content }}
+
+      {% include post-meta.html %}
+
+      {% if page.share %}
+        <div class="share uk-text-center uk-margin-large">{% include share.html %}</div>
+      {% endif %}
+  </div>
+
+  {% if post.related %}
+    {% include related.html %}
+  {% endif %}
+
+  {% if site.disqus.shortname %} {% include disqus_comments.html %} {% endif %}
+
+</article>
+
+<script>
+  // Table of contents scroll to
+  UIkit.scroll('#markdown-toc a', {
+      duration: 400,
+      offset: 135
+  });
+</script>

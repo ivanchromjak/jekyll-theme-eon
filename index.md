@@ -58,6 +58,10 @@ header:
 
   {% include video.html id="video-home2" section="primary" layout="center" %}
 
+  {% include portfolio.html topic="Service" section="muted" layout="" %}
+
+  {% include portfolio.html section="muted" layout="" %}
+
   {% include video.html id="video-home3" section="default" layout="" %}
 
   {% include cta.html title="Support continuous development of this theme with your contribution" button_text="Support Us" button_url="https://www.paypal.me/ivanchromjak" blank="true" section="muted" align="center" %}
