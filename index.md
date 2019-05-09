@@ -46,11 +46,19 @@ header:
 
   {% include features.html id="feature" section="default" align="center" title="Awesome Features" %}
 
-  {% include cards.html id="pricing" style="default" section="muted" align="center-" title="Pricing" %}
+  {% include cards.html id="pricing" style="default" section="muted" align="center" title="Pricing" %}
 
   {% include block.html id="support" section="default" layout="center" padding="remove-bottom" %}
 
   {% include cta.html title="Support continuous development of this theme with your contribution" button_style="danger" button_text="Support Us" button_url="https://www.paypal.me/ivanchromjak" blank="true" section="secondary" %}
+
+  {% include videos.html id="video" columns="3" title="Video Tutorials" subtitle="Watch screencasts to get you started fast with Jekyll" %}
+
+  {% include faqs.html multiple="true" title="Frequently asked questions" category="presale" subtitle="Find quicke answers to frequent pre-sale questions asked by customers" %}
+
+  {% include video.html id="video-home2" section="primary" layout="center" %}
+
+  {% include video.html id="video-home3" section="default" layout="" %}
 
   {% include cta.html title="Support continuous development of this theme with your contribution" button_text="Support Us" button_url="https://www.paypal.me/ivanchromjak" blank="true" section="muted" align="center" %}
 

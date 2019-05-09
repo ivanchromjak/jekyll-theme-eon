@@ -1,0 +1,30 @@
+<div class="uk-section uk-section-{{ include.section | default: 'default' }}">
+	<div class="uk-container{% if include.layout == 'center' %} uk-container-small uk-text-center{% endif %}">
+		{% assign block = site.blocks | where:"slug", include.id | first %}
+
+		{% if include.layout == 'center' %}
+			<h2 class="uk-h1">{{ block.title }}</h2>
+
+			<div class="uk-margin-medium-top" data-uk-lightbox>
+				<a href="{{ block.video }}" data-caption="{{ block.title }}"><span data-uk-icon="icon: play-circle; ratio: 3.4"></span></a>
+			</div>
+
+			{% if block.content %}<div class="uk-margin-medium-top">{{ block.content }}</div>{% endif %}
+
+		{% else %}
+
+			<div class="uk-flex uk-flex-middle uk-grid-large" data-uk-grid data-uk-lightbox>
+				<div class="uk-width-expand">
+					<h2 class="uk-h1">{{ block.title }}</h2>
+				</div>
+				<div class="uk-width-auto">
+					<div data-uk-lightbox>
+						<a href="{{ block.video }}" data-caption="{{ block.title }}"><span data-uk-icon="icon: play-circle; ratio: 3.4"></span></a>
+					</div>
+				</div>
+				{% if block.content %}<div class="uk-width-expand">{{ block.content }}</div>{% endif %}
+			</div>
+
+		{% endif %}
+	</div>
+</div>

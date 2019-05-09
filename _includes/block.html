@@ -2,36 +2,32 @@
 <div class="uk-section uk-section-large uk-section-{{ include.section | default: 'default' }}{% if include.padding == 'remove-bottom' %} uk-padding-remove-bottom{% endif %}">
   <div class="uk-container{% if include.layout == 'center' %} uk-container-small{% endif %}">
 {%- endif -%}
-    {% assign blocks = (site.blocks | sort: 'card[slug]') %}
-    {% for block in blocks %}
-      {% if block.slug contains include.id %}
-        {% if include.layout == 'center' %}
-          <div class="uk-text-center">
-            <h2>{{ block.title }}</h2>
-            <div class="uk-margin-medium-top">{{ block.content }}</div>
-            {% if block.icon %}
-              <img class="uk-margin-medium-top icon" src="/assets/icons/{{ block.icon }}" alt="{{ block.title }}">
-            {% elsif block.image %}
-              <img class="uk-margin-medium-top" src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
-            {% endif %}
-          </div>
-        {% else %}
-          <div class="uk-grid-large uk-grid-match uk-flex uk-flex-middle" data-uk-grid>
-            <div class="uk-width-{{ page.header.layout | default: '1-1' }}@m">
-              <h3 class="">{{ block.title }}</h3>
-              <div class="">{{ block.content }}</div>
-            </div>
-            <div class="uk-width-expand@m" data-uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
-              {% if block.icon %}
-                <img class="icon" src="/assets/icons/{{ block.icon }}" alt="{{ block.title }}">
-              {% elsif block.image %}
-                <img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
-              {% endif %}
-            </div>
-          </div>
+    {% assign block = site.blocks | where:"slug", include.id | first %}
+    {% if include.layout == 'center' %}
+      <div class="uk-text-center">
+        <h2>{{ block.title }}</h2>
+        <div class="uk-margin-medium-top">{{ block.content }}</div>
+        {% if block.icon %}
+          <img class="uk-margin-medium-top icon" src="/assets/icons/{{ block.icon }}" alt="{{ block.title }}">
+        {% elsif block.image %}
+          <img class="uk-margin-medium-top" data-src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}" data-uk-img>
         {% endif %}
-      {% endif %}
-    {% endfor %}
+      </div>
+    {% else %}
+      <div class="uk-grid-large uk-grid-match uk-flex uk-flex-middle" data-uk-grid>
+        <div class="uk-width-{{ page.header.layout | default: '1-1' }}@m">
+          <h3 class="">{{ block.title }}</h3>
+          <div class="">{{ block.content }}</div>
+        </div>
+        <div class="uk-width-expand@m" data-uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
+          {% if block.icon %}
+            <img class="icon" src="/assets/icons/{{ block.icon }}" alt="{{ block.title }}">
+          {% elsif block.image %}
+            <img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
 {% if include.section %}
   </div>
 </div>

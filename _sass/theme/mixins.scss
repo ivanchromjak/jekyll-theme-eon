@@ -200,6 +200,34 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
     }
 }
 
+@mixin hook-accordion-title(){
+
+    overflow: hidden;
+    border: solid 1px $border-light;
+    // border-radius: $border-radius-small;
+    padding: 20px;
+    font-weight: 500;
+
+    &::after {
+        content: "";
+        width: ($accordion-title-line-height * 1em);
+        height: ($accordion-title-line-height * 1em);
+        float: right;
+        @include svg-fill($internal-accordion-close-image, "#000", $accordion-icon-color);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-color: $accordion-icon-background-color;
+        border-radius: 20px;
+    }
+
+    .uk-open > &::after { @include svg-fill($internal-accordion-open-image, "#000", $accordion-icon-color); }
+
+}
+
+@mixin hook-accordion-content(){
+    padding: 20px;
+}
+
 //
 // Component: Article
 //
@@ -503,6 +531,50 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
             img {
                 max-width: 86px;
             }
+        }
+    }
+
+    @media (min-width: $breakpoint-small) {
+        .section-videos {
+            div[class^="uk-child-width-1-1"] {
+                .uk-card {
+                    padding-top: 70px;
+                    padding-bottom: 70px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: $breakpoint-medium) {
+        .section-videos {
+            div[class^="uk-child-width-1-1"] {
+                .uk-card {
+                    padding-top: 110px;
+                    padding-bottom: 110px;
+                }
+            }
+        }
+    }
+
+    // Pricing
+    .included, .not-included {
+        list-style: none;
+        padding: 0;
+        li::before {
+            margin-right: 10px;
+        }
+    }
+
+    .included {
+        li::before {
+            content: "+";
+        }
+    }
+
+    .not-included {
+        margin-top: -$global-margin;
+        li::before {
+            content: "-";
         }
     }
     

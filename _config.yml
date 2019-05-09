@@ -166,6 +166,8 @@ collections:
     output: false
   sidebars:
     output: false
+  faqs:
+    output: false
 
 # Defaults
 defaults:
