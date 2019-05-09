@@ -42,7 +42,7 @@ header:
 
 {% if site.template == 'base' %}
 
-  {% include cards.html id="home-why" style="default" media="left" section="muted" align="center" title="Why switch to Jekyll" %}
+  {% include cards.html id="home-why" style="default" media="top" section="muted" align="center" title="Why switch to Jekyll" %}
 
   {% include features.html id="feature" section="default" align="center" title="Awesome Features" %}
 
@@ -65,7 +65,15 @@ header:
   {% include cta.html title="Support continuous development of this theme with your contribution" button_text="Support Us" button_url="https://www.paypal.me/ivanchromjak" blank="true" %}
 
   {% include map.html latitude="41.449689" longitude="-81.639102" zoom="16" %}
-  
+
+  {% include slider.html id="feature" layout="card-top" section="muted" align="center" title="Slider" 
+    center="true"
+    autoplay="true"
+    sets="true"
+  %}
+
+  {% include slider.html id="home-cta" color="light" %}
+
 {% else %}
 
   {% include cards.html id="home-right" style="" media="right" section="muted" %}
