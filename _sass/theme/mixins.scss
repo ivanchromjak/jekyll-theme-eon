@@ -92,7 +92,7 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
 
 @mixin hook-card-misc(){
     .uk-position-cover {
-        z-index: 1;
+        // z-index: 1;
     }
     .card-category {
         h3:nth-child(2n) {
@@ -301,6 +301,9 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
 //
 // ========================================================================
 @mixin hook-utility-misc(){
+    .position-z-index-negative {
+        z-index: -1;
+    }
     .font-smoothing {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;

@@ -1,20 +1,17 @@
-<div class="uk-section">
-	<div class="uk-container uk-container-small">
-
-		{% if include.title %}
-			<h2 class="uk-h1 uk-text-center">{{ include.title }}</h2>
-		{% endif %}
-
-		{% if include.subtitle %}
-			<p class="uk-text-center uk-text-lead">{{ include.subtitle | escape }}</p>
-		{% endif %}
+{% if include.section -%}
+<div class="uk-section uk-section-large uk-section-{{ include.section | default: 'default' }} uk-text-{{ include.align | default: 'left' }}">
+  <div class="uk-container">
+{%- endif -%}
+    {%- if include.title -%}
+      <h2 class="uk-margin-large-bottom">{{- include.title -}}</h2>
+    {%- endif -%}
 
 		{% assign topics = '' %}
 
 		{% for post in site.portfolio %}
 			{% assign t = post.topics | join: "," %}
 			{% if t != "" %}
-				{% capture topics %}{{topics}},{{t}}{% endcapture %}
+				{% capture topics %}{{topics}}{{t}},{% endcapture %}
 			{% endif %}
 		{% endfor %}
 
@@ -29,7 +26,8 @@
 		<div data-uk-filter="target: [data-uk-grid]; animation: 500">
 
 			{% unless include.topic %}
-				<ul class="uk-subnav uk-subnav-pill">
+				<ul class="uk-subnav uk-subnav-pill uk-flex uk-flex-center uk-margin-medium-bottom">
+					<li class="uk-active" uk-filter-control><a href="#">All</a></li>
 					{% for topic in topics %}
 						<li uk-filter-control="[data-topic*='{{ topic }}']"><a href="#">{{ topic | capitalize }}</a></li>
 					{% endfor %}
@@ -54,6 +52,9 @@
 
 		</div>
 
-	</div>
+{% if include.section %}
+  </div>
 </div>
+{% endif %}
+
 

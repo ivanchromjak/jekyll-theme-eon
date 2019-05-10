@@ -15,27 +15,27 @@ header:
   layout: 2-3 # Options: center 1-2 or 2-3
   height: full-
   background:
-    # image: https://source.unsplash.com/aViOQZzikVs
+    image: header-home.jpg
     align: center
-    color: "linear-gradient(-40deg, #0acffe 0%, #495aff 100%)"
-    overlay: true
+    # color: "linear-gradient(-40deg, #0acffe 0%, #495aff 100%)"
+    # overlay: true
   color: light
   container:
     title: true
     subtitle: true
-    search: true
-    newsletter: mailchimp
-    image: /assets/icons/rocket-2.svg
-    slideshow: slideshow-1
-    content: <iframe width="560" height="315" src="https://www.youtube.com/embed/BotpJkJ0BKE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    # search: true
+    # newsletter: mailchimp
+    # image: /assets/icons/rocket-2.svg
+    # slideshow: slideshow-1
+    # content: <iframe width="560" height="315" src="https://www.youtube.com/embed/BotpJkJ0BKE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   container2:
-    title: true
-    subtitle: true
-    search: true
+    # title: true
+    # subtitle: true
+    # search: true
     newsletter: mailchimp
-    image: /assets/icons/rocket-2.svg
-    slideshow: slideshow-1
-    content: <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/333319621?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    # image: /assets/icons/rocket-2.svg
+    # slideshow: slideshow-1
+    # content: <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/333319621?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 ---
 
 [comment]: # (This actually is the most platform independent comment)
@@ -48,7 +48,9 @@ header:
 
   {% include cards.html id="pricing" style="default" section="muted" align="center" title="Pricing" %}
 
-  {% include block.html id="support" section="default" layout="center" padding="remove-bottom" %}
+  {% include block-content.html id="content-post" section="primary-" video="https://app.coverr.co/s3/mp4/Feet-and-Sand.mp4" title="true" %}
+
+  {% include block.html id="support" section="default" type="center" padding="remove-bottom" %}
 
   {% include cta.html title="Support continuous development of this theme with your contribution" button_style="danger" button_text="Support Us" button_url="https://www.paypal.me/ivanchromjak" blank="true" section="secondary" %}
 

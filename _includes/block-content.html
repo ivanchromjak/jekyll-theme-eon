@@ -1,0 +1,40 @@
+{% if include.section -%}
+<div class="uk-position-relative uk-light">
+
+  <div class="uk-position-cover uk-overflow-hidden">
+
+        <video autoplay loop muted playsinline uk-cover>
+            <source src="{% if include.video contains 'http' %}{{ include.video }}{% else %}{{ site.uploads | absolute_url }}{{ include.video }}{% endif %}" type="video/mp4">
+        </video>
+
+  </div>
+
+  <div class="uk-overlay-primary uk-position-cover"></div>
+
+    <div class="uk-position-relative uk-section uk-section-large uk-section-{{ include.section | default: 'default' }} uk-text-{{ include.align | default: 'left' }}">
+
+
+      
+
+
+        <div class="uk-container">
+      {%- endif -%}
+          {% assign block = site.blocks | where:"slug", include.id | first %}
+          {%- if include.title -%}
+            <h2 class="uk-margin-medium-bottom">{{- block.title -}}</h2>
+          {%- endif -%}
+            <div>{{ block.content }}</div>
+      {% if include.section %}
+        </div>
+
+      </div>
+    
+
+  
+
+
+</div>  
+{% endif %}
+
+
+

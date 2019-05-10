@@ -1,57 +1,5 @@
 # Navbar menu navigation links
 left:
-  - title: Home
-    url: /
-
-  - title: Components
-    dropdown:
-      - title: Cards
-        url: /cards/
-      - title: Images
-        url: /images/
-      - title: Gallery
-        url: /gallery/
-      - title: Slideshow
-        url: /slideshow/
-      - title: Google Maps
-        url: /google-maps/
-      - title: Contact Form
-        url: /contact-form/
-      - title: Utilities
-        url: /utilities/
-
-  - title: Blog
-    url: /blog/
-
-  - title: 404
-    url: /404/
-
-right:
-  - title: Home
-    url: /
-
-  - title: Components
-    dropdown:
-      - title: Cards
-        url: /cards/
-      - title: Images
-        url: /images/
-      - title: Gallery
-        url: /gallery/
-      - title: Slideshow
-        url: /slideshow/
-      - title: Google Maps
-        url: /google-maps/
-      - title: Contact Form
-        url: /contact-form/
-      - title: Utilities
-        url: /utilities/
-
-  - title: Blog
-    url: /blog/
-
-  - title: 404
-    url: /404/
 
 center:
   - title: Home
@@ -79,3 +27,8 @@ center:
 
   - title: 404
     url: /404/
+
+right:
+  - title: Purchase
+    url: https://themeforest.net/user/pressapps/portfolio
+    button: default

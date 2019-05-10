@@ -1,6 +1,6 @@
 ---
 title: LRMG Spiritual Crusade 2011 Foreign Missions / Ministry Headquarters
-image: avatar-daniel.png
+image: https://source.unsplash.com/WLUHO9A_xik/500x500
 topics: [Creative]
 ---
 
