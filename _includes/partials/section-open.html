@@ -6,7 +6,7 @@
       </video>
     {%- endif -%}
     <div class="uk-position-cover" style="{% if include.background_overlay %} background: {{ include.background_overlay }};{% endif %}"></div>
-    <div class="uk-section uk-section-{{ include.section_size | default: 'default' }}{% if include.section_padding %} uk-padding-{{ include.section_padding }}{% endif %}{% if include.section_light == 'true' %} uk-light{% endif %}{% if include.section_height == 'viewport' %} uk-flex uk-flex-middle{% endif %}"{% if include.section_height == 'viewport' %} data-uk-height-viewport="offset-bottom: 80px"{% endif %}>
+    <div class="uk-section uk-section-{{ include.section_size | default: 'regular' }}{% if include.section_padding %} uk-padding-{{ include.section_padding }}{% endif %}{% if include.section_light == 'true' %} uk-light{% endif %}{% if include.section_height == 'viewport' %} uk-flex uk-flex-middle{% endif %}"{% if include.section_height == 'viewport' %} data-uk-height-viewport="offset-bottom: 80px"{% endif %}>
 {% endunless -%}
 
 			<div class="uk-container{% if include.section_container %} uk-container-{{ include.section_container | default: 'none' }}{% endif %} uk-position-relative uk-text-{{ include.align | default: 'left' }}">

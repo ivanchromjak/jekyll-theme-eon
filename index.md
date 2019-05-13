@@ -27,7 +27,7 @@ header:
 
 {% if site.template == 'base' %}
 
-  {% include block-content.html 
+  {% include section-content.html 
     block="content-post"
     section_size="large"
     section_padding="remove-vertical-"
@@ -44,12 +44,29 @@ header:
     align="center" 
   %}
 
+  {% include section-cards.html 
+    block="home-why" 
+    section_title="Why switch to Jekyll" 
+    background_color="muted" 
+    style="default" 
+    media="top" 
+    align="center" 
+  %}
 
-  {% include cards.html id="home-why" style="default" media="top" section="muted" align="center" title="Why switch to Jekyll" %}
+  {% include section-features.html 
+    block="feature" 
+    background_color="default" 
+    align="center" 
+    section_title="Awesome Features" 
+  %}
 
-  {% include features.html id="feature" section="default" align="center" title="Awesome Features" %}
-
-  {% include cards.html id="pricing" style="default" section="muted" align="center" title="Pricing" %}
+  {% include section-cards.html 
+    block="pricing" 
+    section_title="Pricing" 
+    background_color="primary" 
+    style="default"
+    align="center"
+  %}
 
 
   {% include block.html id="support" section="default" type="center" padding="remove-bottom" %}
@@ -84,9 +101,9 @@ header:
 
 {% else %}
 
-  {% include cards.html id="home-right" style="" media="right" section="muted" %}
+  {% include section-cards.html id="home-right" style="" media="right" section="muted" %}
 
-  {% include cards.html id="home-next" style="primary" align="center" section="muted" %}
+  {% include section-cards.html id="home-next" style="primary" align="center" section="muted" %}
 
   {% include instagram.html count="8" section="default" %}
 

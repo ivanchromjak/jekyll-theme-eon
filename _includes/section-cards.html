@@ -1,14 +1,22 @@
-{% if include.section -%}
-<div class="uk-section uk-section-large uk-section-{{ include.section | default: 'default' }} uk-text-{{ include.align | default: 'left' }}">
-  <div class="uk-container">
-{%- endif -%}
-    {%- if include.title -%}
-      <h2 class="uk-margin-large-bottom">{{- include.title -}}</h2>
-    {%- endif -%}
+{% include partials/section-open.html 
+  section_size=include.section_size
+  section_padding=include.section_padding
+  section_height=include.section_height
+  section_light=include.section_light
+  section_container=include.section_container
+  section_title=include.section_title
+  section_subtitle=include.section_subtitle
+  background_color=include.background_color
+  background_image=include.background_image
+  background_video=include.background_video
+  background_align=include.background_align
+  background_overlay=include.background_overlay
+  align=include.align
+%}
     <div class="uk-child-width-expand@m uk-grid-match uk-grid-large- uk-flex-center" uk-grid>
       {% assign blocks = (site.blocks | sort: 'card[slug]') %}
       {% for block in blocks %}
-        {% if block.slug contains include.id %}
+        {% if block.slug contains include.block %}
           <div>
             {% if include.media == 'left' %}
               <div class="uk-card uk-card-large uk-card-{{ include.style }} uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
@@ -86,7 +94,6 @@
         {% endif %}
       {% endfor %}
     </div>
-{% if include.section %}
-  </div>
-</div>
-{% endif %}
+{% include partials/section-close.html 
+  section_size=include.section_size 
+%}
