@@ -9,11 +9,11 @@ navbar:
 header:
   layout: center # Options: center 1-2 or 2-3
   height: full-
-  background:
-    image: header-home.jpg
-    align: bottom-center
-    # color: "linear-gradient(-40deg, #0acffe 0%, #495aff 100%)"
-    # overlay: true
+  background_image: header-home.jpg
+  background_align: bottom-center
+  background_color: "#000"
+  background_video: https://app.coverr.co/s3/mp4/Feet-and-Sand.mp4
+  background_overlay: "linear-gradient(to right bottom,rgba(12, 180, 206, 0.85) 5%,rgba(0, 108, 255, 0.85) 30%,rgba(144, 18, 254, 0.85) 80%)"
   color: light
   container:
     block: header-home-container
@@ -37,8 +37,8 @@ header:
     section_title="This is section title"
     section_subtitle="This is section subtitle"
     background_color="primary-"
-    background_image="sand.jpg-"
-    background_video="https://app.coverr.co/s3/mp4/Feet-and-Sand.mp4"
+    background_image="sand.jpg"
+    background_video=""
     background_align="top-left"
     background_overlay="linear-gradient(to right bottom,rgba(12, 180, 206, 0.85) 5%,rgba(0, 108, 255, 0.85) 30%,rgba(144, 18, 254, 0.85) 80%)"
     align="center" 

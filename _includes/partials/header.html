@@ -40,18 +40,14 @@
   {% endif %}
 {% endif %}
 
-{% if page.header.background.align %}
-  {% assign background_align = page.header.background.align %}
-{% else %}
-  {% assign background_align = "center" %}
-{% endif %}
-
-{% if page.header.background.image %}
-{% assign background_image = page.header.background.image %}
-<div class="uk-background-{{ background_align }} uk-background-cover{% if page.header.background.overlay %} uk-background-blend-overlay{% endif %}" style="{% if page.header.background.color %}background-color: {{ page.header.background.color }}; {% endif %}background-image: url({% if background_image contains 'http' %}{{ background_image }}{% else %}{{ site.uploads | absolute_url }}{{ background_image }}{% endif %});"{% if page.header.height == 'full' %} data-uk-height-viewport{% endif %}>
-{% else %}
-<div{% if page.header.background.color %} style="background: {{ page.header.background.color }}; "{% endif %}{% if page.header.height == 'full' %} data-uk-height-viewport{% endif %}>
-{% endif %}
+{% assign background_image = page.header.background_image %}
+<div class="uk-cover-container uk-background-{{ page.header.background_align | default: 'center-center' }} uk-background-cover" style="{% if page.header.background_color contains '#' or page.header.background_color contains 'rgb' %}background-color: {{ page.header.background_color }};{% endif %}{% if background_image %}background-image: url({% if background_image contains 'http' %}{{ background_image }}{% else %}{{ site.uploads | absolute_url }}{{ background_image }}{% endif %});{% endif %}"{% if page.header.height == 'full' %} data-uk-height-viewport{% endif %}>
+  {%- if page.header.background_video -%}
+    <video autoplay loop muted playsinline data-uk-cover>
+      <source src="{% if page.header.background_video contains 'http' %}{{ page.header.background_video }}{% else %}{{ site.uploads | absolute_url }}{{ page.header.background_video }}{% endif %}" type="video/mp4">
+    </video>
+  {%- endif -%}
+  <div class="uk-position-cover" style="{% if page.header.background_overlay %} background: {{ page.header.background_overlay }};{% endif %}"></div>
 
   {% if sticky %}
     <div data-uk-sticky="{% if scroll_up %}show-on-up: true; {% endif %}{% if animation %}animation: uk-animation-slide-top; top: 200; {% endif %}sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky navbar-background uk-{{ color | default: 'dark' }}; cls-inactive: {% if page.navbar.transparent %}uk-navbar-transparent uk-{{ transparent_color | default: 'dark' }}{% else %}navbar-background uk-{{ color | default: 'dark' }}{% endif %}">
@@ -74,7 +70,7 @@
   {% endif %}
 
   {% if page.header %}
-  <div class="uk-container{% if page.header.layout == 'center' %} uk-container-small{% endif %}{% if page.header.height == 'full' %} uk-flex uk-flex-middle{% endif %}"{% if page.header.height == 'full' %} data-uk-height-viewport="offset-top: true"{% endif %}>
+  <div class="uk-position-relative uk-container{% if page.header.layout == 'center' %} uk-container-small{% endif %}{% if page.header.height == 'full' %} uk-flex uk-flex-middle{% endif %}"{% if page.header.height == 'full' %} data-uk-height-viewport="offset-top: true"{% endif %}>
     <div class="uk-section uk-section-large uk-width-1-1 uk-{{ page.header.color | default: 'dark' }}">
       {% if page.header.layout == 'center' %}
         <div class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
