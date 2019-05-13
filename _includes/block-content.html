@@ -1,42 +1,26 @@
-{% unless include.section_size == 'none' -%}
-  {% if include.background_video %}
-  <div class="uk-position-relative">
-
-    <div class="uk-position-cover uk-overflow-hidden">
-      <video autoplay loop muted playsinline data-uk-cover>
-        <source src="{% if include.background_video contains 'http' %}{{ include.background_video }}{% else %}{{ site.uploads | absolute_url }}{{ include.background_video }}{% endif %}" type="video/mp4">
-      </video>
-    </div>
-
-  {% endif %}
-
-  <div class="uk-section uk-section-{{ include.section_size | default: 'default' }}{% if include.section_padding %} uk-padding-{{ include.section_padding }}{% endif %}{% if include.background_color == 'muted' or include.background_color == 'secondary' or include.background_color == 'primary' %} uk-section-{{ include.background_color }}{% endif %}{% if include.section_light == 'true' %} uk-position-relative uk-light{% endif %} uk-background-{{ include.background_align | default: 'center-center' }} uk-background-cover{% if include.section_height == 'viewport' %} uk-flex uk-flex-middle{% endif %}" style="{% if include.background_color contains '#' or include.background_color contains 'rgb' %}background-color: {{ include.background_color }};{% endif %}{% if include.background_image %}background-image: url({% if include.background_image contains 'http' %}{{ include.background_image }}{% else %}{{ site.uploads | absolute_url }}{{ include.background_image }}{% endif %});{% endif %}"{% if include.section_height == 'viewport' %} data-uk-height-viewport="offset-bottom: 80px"{% endif %}>
-  
-    <div class="uk-position-cover" style="{% if include.background_overlay %} background: {{ include.background_overlay }};{% endif %}"></div>
-
-    <!-- {% include partials/section-open.html section=include.section align=include.align %} -->
-
-{% endunless -%}
-
-    <div class="uk-container{% if include.section_container %} uk-container-{{ include.section_container }}{% endif %} uk-position-relative uk-text-{{ include.align | default: 'left' }}">
-      {%- if include.section_title -%}
-          <h2 class="uk-margin-medium-bottom">{{ include.section_title }}</h2>
-      {%- endif -%}
-
-      {%- if include.section_subtitle -%}
-          <p class="uk-text-lead">{{ include.section_subtitle | escape }}</p>
-      {%- endif -%}
+{% include partials/section-open.html 
+  section_size=include.section_size
+  section_padding=include.section_padding
+  section_height=include.section_height
+  section_light=include.section_light
+  section_container=include.section_container
+  section_title=include.section_title
+  section_subtitle=include.section_subtitle
+  background_color=include.background_color
+  background_image=include.background_image
+  background_video=include.background_video
+  background_align=include.background_align
+  background_overlay=include.background_overlay
+  align=include.align
+%}
 
       {%- assign block = site.blocks | where:"slug", include.block | first -%}
       {%- if include.title -%}
         <h2 class="uk-margin-medium-bottom">{{- block.title -}}</h2>
       {%- endif -%}
       <div>{{ block.content }}</div>
-    </div>
 
-{% unless include.section_size == 'none' -%}
-  {% if include.background_video %}
-  </div>
-  {% endif %}
-</div>
-{% endunless %}
+{% include partials/section-close.html 
+  section_size=include.section_size 
+  background_video=include.background_video 
+%}

@@ -48,7 +48,7 @@
 
 {% if page.header.background.image %}
 {% assign background_image = page.header.background.image %}
-<div class="uk-background-{{ background_align }}-center uk-background-cover{% if page.header.background.overlay %} uk-background-blend-overlay{% endif %}" style="{% if page.header.background.color %}background-color: {{ page.header.background.color }}; {% endif %}background-image: url({% if background_image contains 'http' %}{{ background_image }}{% else %}{{ site.uploads | absolute_url }}{{ background_image }}{% endif %});"{% if page.header.height == 'full' %} data-uk-height-viewport{% endif %}>
+<div class="uk-background-{{ background_align }} uk-background-cover{% if page.header.background.overlay %} uk-background-blend-overlay{% endif %}" style="{% if page.header.background.color %}background-color: {{ page.header.background.color }}; {% endif %}background-image: url({% if background_image contains 'http' %}{{ background_image }}{% else %}{{ site.uploads | absolute_url }}{{ background_image }}{% endif %});"{% if page.header.height == 'full' %} data-uk-height-viewport{% endif %}>
 {% else %}
 <div{% if page.header.background.color %} style="background: {{ page.header.background.color }}; "{% endif %}{% if page.header.height == 'full' %} data-uk-height-viewport{% endif %}>
 {% endif %}
@@ -75,39 +75,20 @@
 
   {% if page.header %}
   <div class="uk-container{% if page.header.layout == 'center' %} uk-container-small{% endif %}{% if page.header.height == 'full' %} uk-flex uk-flex-middle{% endif %}"{% if page.header.height == 'full' %} data-uk-height-viewport="offset-top: true"{% endif %}>
-    <div class="uk-section uk-section-large  uk-width-1-1 uk-{{ page.header.color | default: 'dark' }}">
+    <div class="uk-section uk-section-large uk-width-1-1 uk-{{ page.header.color | default: 'dark' }}">
       {% if page.header.layout == 'center' %}
         <div class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
-          <div>
-            {% if page.header.container.title %}
-              <h1 class="uk-heading-hero">{{ page.title | escape }}</h1>
+          <div class="uk-width-1-1">
+            {%- assign container = site.blocks | where:"slug", page.header.container.block | first -%}
+            {% unless page.header.container.title == false %}
+              <h1 class="uk-heading-hero">{{ container.title | escape }}</h1>
+            {% endunless %}
+            {% if container.subtitle %}
+              <div class="uk-text-lead">{{ container.subtitle }}</div>
             {% endif %}
-            {% if page.header.container.subtitle %}
-              <div class="uk-text-lead">{{ page.subtitle | markdownify }}</div>
-            {% endif %}
-            {% if page.header.container.search %}
+            {% if container.content %}
               <div class="uk-margin-medium-top">
-                {% include search.html %}
-              </div>
-            {% endif %}
-            {% if page.header.container.slideshow %}
-              <div class="uk-margin-medium-top">
-                {% include slideshow.html gallery=page.header.container.slideshow %}
-              </div>
-            {% endif %}
-            {% if page.header.container.image %}
-              <div class="uk-margin-medium-top">
-                <img src="{{ page.header.container.image }}">
-              </div>
-            {% endif %}
-            {% if page.header.container.content %}
-              <div class="uk-margin-medium-top">
-                {{ page.header.container.content }}
-              </div>
-            {% endif %}
-            {% if page.header.container.newsletter == 'mailchimp' %}
-              <div class="uk-margin-medium-top">
-                {% include mailchimp.html %}
+                {{ container.content }}
               </div>
             {% endif %}
           </div>
@@ -115,68 +96,30 @@
       {% else %}
         <div class="uk-grid-large uk-flex uk-flex-middle uk-flex-center@m" data-uk-grid>
           <div class="uk-width-{{ page.header.layout | default: '2-3' }}@m">
-            {% if page.header.container.title %}
-              <h1 class="uk-heading-hero">{{ page.title | escape }}</h1>
+            {%- assign container = site.blocks | where:"slug", page.header.container.block | first -%}
+            {% unless page.header.container.title == false %}
+              <h1 class="uk-heading-hero">{{ container.title | escape }}</h1>
+            {% endunless %}
+            {% if container.subtitle %}
+              <div class="uk-text-lead">{{ container.subtitle }}</div>
             {% endif %}
-            {% if page.header.container.subtitle %}
-              <div class="uk-text-lead">{{ page.subtitle | markdownify }}</div>
-            {% endif %}
-            {% if page.header.container.search %}
+            {% if container.content %}
               <div class="uk-margin-medium-top">
-                {% include search.html %}
-              </div>
-            {% endif %}
-            {% if page.header.container.slideshow %}
-              <div class="uk-margin-medium-top">
-                {% include slideshow.html gallery=page.header.container.slideshow %}
-              </div>
-            {% endif %}
-            {% if page.header.container.image %}
-              <div class="uk-margin-medium-top">
-                <img src="{{ page.header.container.image }}">
-              </div>
-            {% endif %}
-            {% if page.header.container.content %}
-              <div class="uk-margin-medium-top">
-                {{ page.header.container.content }}
-              </div>
-            {% endif %}
-            {% if page.header.container.newsletter == 'mailchimp' %}
-              <div class="uk-margin-medium-top">
-                {% include mailchimp.html %}
+                {{ container.content }}
               </div>
             {% endif %}
           </div>
           <div class="uk-width-expand@m">
-            {% if page.header.container2.title %}
-              <h1 class="uk-heading-hero">{{ page.title | escape }}</h1>
+            {%- assign container-2 = site.blocks | where:"slug", page.header.container-2.block | first -%}
+            {% unless page.header.container-2.title == false %}
+              <h1 class="uk-heading-hero">{{ container-2.title | escape }}</h1>
+            {% endunless %}
+            {% if container-2.subtitle %}
+              <div class="uk-text-lead">{{ container-2.subtitle }}</div>
             {% endif %}
-            {% if page.header.container2.subtitle %}
-              <div class="uk-text-lead">{{ page.subtitle | markdownify }}</div>
-            {% endif %}
-            {% if page.header.container2.search %}
+            {% if container-2.content %}
               <div class="uk-margin-medium-top">
-                {% include search.html %}
-              </div>
-            {% endif %}
-            {% if page.header.container2.slideshow %}
-              <div class="uk-margin-medium-top">
-                {% include slideshow.html gallery=page.header.container2.slideshow %}
-              </div>
-            {% endif %}
-            {% if page.header.container2.image %}
-              <div class="uk-margin-medium-top">
-                <img src="{{ page.header.container2.image }}">
-              </div>
-            {% endif %}
-            {% if page.header.container2.content %}
-              <div class="uk-margin-medium-top">
-                {{ page.header.container2.content }}
-              </div>
-            {% endif %}
-            {% if page.header.container2.newsletter == 'mailchimp' %}
-              <div class="uk-margin-medium-top">
-                {% include mailchimp.html %}
+                {{ container-2.content }}
               </div>
             {% endif %}
           </div>

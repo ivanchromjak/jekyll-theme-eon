@@ -1,67 +1,48 @@
 ---
 layout: full
 width: full
-title: Build fast and secure websites with Jekyll
-subtitle: 'Multipurpose Jekyll theme. Create company or personal site and host on GitHub for free.
-          <br><br>
-          <a class="uk-button uk-button-large uk-button-danger uk-box-shadow-medium hvr-up" href="https://github.com/ivanchromjak/jekyll-theme-plus/fork"><span uk-icon="github"></span> Fork on GitHub</a> &nbsp;
-          <a class="uk-button uk-button-large uk-button-light uk-box-shadow-medium hvr-up" href="https://github.com/ivanchromjak/jekyll-theme-plus/fork"><span uk-icon="copy"></span> Documentation</a>'
 navbar:
   sticky: true
   animation: true
   transparent: true
   transparent_color: light
 header:
-  layout: 2-3 # Options: center 1-2 or 2-3
+  layout: center # Options: center 1-2 or 2-3
   height: full-
   background:
     image: header-home.jpg
-    align: center
+    align: bottom-center
     # color: "linear-gradient(-40deg, #0acffe 0%, #495aff 100%)"
     # overlay: true
   color: light
   container:
-    title: true
-    subtitle: true
-    # search: true
-    # newsletter: mailchimp
-    # image: /assets/icons/rocket-2.svg
-    # slideshow: slideshow-1
-    # content: <iframe width="560" height="315" src="https://www.youtube.com/embed/BotpJkJ0BKE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  container2:
-    # title: true
-    # subtitle: true
-    # search: true
-    newsletter: mailchimp
-    # image: /assets/icons/rocket-2.svg
-    # slideshow: slideshow-1
-    # content: <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/333319621?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    block: header-home-container
+    # title: false
+  container-2:
+    block: header-home-container-2
+    title: false
 ---
 
 [comment]: # (This actually is the most platform independent comment)
 
 {% if site.template == 'base' %}
 
-{% include block-content.html 
-  block="content-post"
-
-  section_size="large"
-  section_padding="remove-vertical-"
-  section_height="viewport-"
-  section_light="true"
-  section_container="small"
-  section_title="This is section title"
-  section_subtitle="This is section subtitle"
-
-  background_color="primary"
-  background_image="sand.jpg"
-  background_video="https://app.coverr.co/s3/mp4/Feet-and-Sand.mp4"
-  background_align="top-left"
-  background_overlay="linear-gradient(to right bottom,rgba(12, 180, 206, 0.85) 5%,rgba(0, 108, 255, 0.85) 30%,rgba(144, 18, 254, 0.85) 80%)"
-
-  align="right" 
-  title="true" 
-%}
+  {% include block-content.html 
+    block="content-post"
+    section_size="large"
+    section_padding="remove-vertical-"
+    section_height="viewport-"
+    section_light="true"
+    section_container="small"
+    section_title="This is section title"
+    section_subtitle="This is section subtitle"
+    background_color="primary-"
+    background_image="sand.jpg-"
+    background_video="https://app.coverr.co/s3/mp4/Feet-and-Sand.mp4"
+    background_align="top-left"
+    background_overlay="linear-gradient(to right bottom,rgba(12, 180, 206, 0.85) 5%,rgba(0, 108, 255, 0.85) 30%,rgba(144, 18, 254, 0.85) 80%)"
+    align="center" 
+  %}
 
 
   {% include cards.html id="home-why" style="default" media="top" section="muted" align="center" title="Why switch to Jekyll" %}
