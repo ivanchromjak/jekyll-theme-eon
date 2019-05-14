@@ -99,8 +99,8 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
             margin-top: 0 !important;
         }
     }
-    .uk-card .icon {
-      width: 100px;
+    .uk-card .icon, .box .icon {
+      width: 80px;
     }
     .uk-section.uk-text-left .uk-card .icon {
       margin-left: $card-body-padding-horizontal-l;

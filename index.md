@@ -32,12 +32,11 @@ header:
     section_size="large"
     section_padding="remove-vertical-"
     section_height="viewport-"
-    section_light="true"
+    section_color="light"
     section_container="small"
     section_title="This is section title"
     section_subtitle="This is section subtitle"
     section_align="center"
-    background_color="primary-"
     background_image="sand.jpg"
     background_video=""
     background_align="top-left"
@@ -47,12 +46,16 @@ header:
 
   {% include section-cards.html 
     block="home-why" 
-    section_title="Why switch to Jekyll" 
+    section_title="This is section title"
+    section_subtitle="This is section subtitle"
+    section_color="red"
     section_align="center"
-    background_color="muted" 
+    section_size="large"
+    background_overlay1="rgba(255, 255, 255, 0.73)"
+    background_color="#563493"
     style="default" 
     media="top" 
-    content_align="left"
+    content_align="center"
     grid="1-4"
   %}
 
@@ -70,17 +73,32 @@ header:
   {% include section-features.html 
     block="feature" 
     background_color="muted" 
-    align="center" 
     section_title="Awesome Features" 
     section_align="center"
-    content_align="left"
+    content_align="center"
+    media="top"
+    grid="1-3"
+  %}
+
+  {% include section-features.html 
+    block="feature-6" 
+    background_color="default" 
+    media="left"
+    grid="1-1"
+  %}
+
+  {% include section-features.html 
+    block="feature-6" 
+    background_color="primary" 
+    media="right"
+    grid="1-1"
   %}
 
   {% include section-cards.html 
     block="pricing" 
     section_title="Pricing" 
     section_align="center"
-    background_color="primary" 
+    background_color="muted" 
     style="default"
     align="center"
   %}
