@@ -1,6 +1,6 @@
 ---
 title: Free
-icon: free-shipping.svg
+icon: icons/free-shipping.svg
 ---
 
 Dignissim quis turpis quis, semper consequat vehicula dolor. Suspendisse tincidunt consequat quam, ac consequat posuere leo dapibus id

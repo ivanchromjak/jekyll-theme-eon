@@ -1,6 +1,7 @@
 {% include partials/section-open.html 
   section_size=include.section_size
   section_padding=include.section_padding
+  section_align=include.section_align
   section_height=include.section_height
   section_light=include.section_light
   section_container=include.section_container
@@ -11,7 +12,7 @@
   background_video=include.background_video
   background_align=include.background_align
   background_overlay=include.background_overlay
-  align=include.align
+  content_align=include.content_align
 %}
 
       {%- assign block = site.blocks | where:"slug", include.block | first -%}

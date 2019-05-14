@@ -9,11 +9,11 @@
     <div class="uk-section uk-section-{{ include.section_size | default: 'regular' }}{% if include.section_padding %} uk-padding-{{ include.section_padding }}{% endif %}{% if include.section_light == 'true' %} uk-light{% endif %}{% if include.section_height == 'viewport' %} uk-flex uk-flex-middle{% endif %}"{% if include.section_height == 'viewport' %} data-uk-height-viewport="offset-bottom: 80px"{% endif %}>
 {% endunless -%}
 
-			<div class="uk-container{% if include.section_container %} uk-container-{{ include.section_container | default: 'none' }}{% endif %} uk-position-relative uk-text-{{ include.align | default: 'left' }}">
+			<div class="uk-container{% if include.section_container %} uk-container-{{ include.section_container | default: 'none' }}{% endif %} uk-position-relative uk-text-{{ include.content_align | default: include.section_align }}">
 			{%- if include.section_title -%}
-				<h2 class="uk-margin-medium-bottom">{{ include.section_title }}</h2>
+				<h2 class="uk-margin-medium-bottom uk-text-{{ include.section_align | default: 'left' }}">{{ include.section_title }}</h2>
 			{%- endif -%}
 
 			{%- if include.section_subtitle -%}
-				<p class="uk-text-lead">{{ include.section_subtitle | escape }}</p>
+				<p class="uk-text-lead uk-text-{{ include.section_align | default: 'left' }}">{{ include.section_subtitle | escape }}</p>
 			{%- endif -%}

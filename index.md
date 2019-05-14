@@ -36,6 +36,7 @@ header:
     section_container="small"
     section_title="This is section title"
     section_subtitle="This is section subtitle"
+    section_align="center"
     background_color="primary-"
     background_image="sand.jpg"
     background_video=""
@@ -47,22 +48,38 @@ header:
   {% include section-cards.html 
     block="home-why" 
     section_title="Why switch to Jekyll" 
+    section_align="center"
     background_color="muted" 
     style="default" 
     media="top" 
-    align="center" 
+    content_align="left"
+    grid="1-4"
+  %}
+
+  {% include section-cards.html 
+    block="home-cta" 
+    section_title="Why switch to Jekyll" 
+    section_align="center"
+    background_color="default" 
+    style="default" 
+    media="top" 
+    content_align="left"
+    grid="1-3"
   %}
 
   {% include section-features.html 
     block="feature" 
-    background_color="default" 
+    background_color="muted" 
     align="center" 
     section_title="Awesome Features" 
+    section_align="center"
+    content_align="left"
   %}
 
   {% include section-cards.html 
     block="pricing" 
     section_title="Pricing" 
+    section_align="center"
     background_color="primary" 
     style="default"
     align="center"

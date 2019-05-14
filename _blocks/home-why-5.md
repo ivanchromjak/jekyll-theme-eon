@@ -1,6 +1,6 @@
 ---
-title: Secure
-icon: icons/protect.svg
+title: Free
+icon: icons/marker.svg
 ---
 
 Dignissim quis turpis quis, semper consequat vehicula dolor. Suspendisse tincidunt consequat quam, ac consequat posuere leo dapibus id
