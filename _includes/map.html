@@ -24,7 +24,7 @@
       map: map,
       position: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude),
       icon: {
-          url: "/assets/img/location.svg",
+          url: "{{ '/assets/img/location.svg' | absolute_url }}",
           size: new google.maps.Size(28, 38),
           scaledSize: new google.maps.Size(28, 38)
         }

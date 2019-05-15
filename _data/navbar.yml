@@ -5,6 +5,9 @@ center:
   - title: Home
     url: /
 
+  - title: Home Two
+    url: /home-2/
+
   - title: Components
     dropdown:
       - title: Cards

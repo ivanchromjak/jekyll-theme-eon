@@ -3,24 +3,14 @@ layout: full
 width: full
 navbar:
   sticky: true
+  scroll_up: true
   animation: true
-  transparent: true
-  transparent_color: light
 header:
   layout: center # Options: center 1-2 or 2-3
-  height: full-
-  background_image: header-home.jpg
-  background_align: bottom-center
-  background_color: "#000"
-  background_video: https://app.coverr.co/s3/mp4/Feet-and-Sand.mp4
-  background_overlay: "linear-gradient(to right bottom,rgba(12, 180, 206, 0.85) 5%,rgba(0, 108, 255, 0.85) 30%,rgba(144, 18, 254, 0.85) 80%)"
-  color: light
+  section_size: 
   container:
-    block: header-home-container
+    block: header-home-2
     # title: false
-  container-2:
-    block: header-home-container-2
-    title: false
 ---
 
 [comment]: # (This actually is the most platform independent comment)

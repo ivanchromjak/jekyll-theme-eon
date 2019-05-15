@@ -71,7 +71,7 @@
 
   {% if page.header %}
   <div class="uk-position-relative uk-container{% if page.header.layout == 'center' %} uk-container-small{% endif %}{% if page.header.height == 'full' %} uk-flex uk-flex-middle{% endif %}"{% if page.header.height == 'full' %} data-uk-height-viewport="offset-top: true"{% endif %}>
-    <div class="uk-section uk-section-large uk-width-1-1 uk-{{ page.header.color | default: 'dark' }}">
+    <div class="uk-section uk-section-{{ include.section_size | default: 'regular' }}{% if include.section_padding %} uk-padding-{{ include.section_padding }}{% endif %} uk-width-1-1 uk-{{ page.header.color | default: 'dark' }}">
       {% if page.header.layout == 'center' %}
         <div class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
           <div class="uk-width-1-1">

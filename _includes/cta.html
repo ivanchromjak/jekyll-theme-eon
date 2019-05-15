@@ -1,23 +1,47 @@
+{% include partials/section-open.html 
+  section_size=include.section_size
+  section_padding=include.section_padding
+  section_align=include.section_align
+  section_height=include.section_height
+  section_color=include.section_color
+  section_container=include.section_container
+  section_title=include.section_title
+  section_subtitle=include.section_subtitle
+  background_color=include.background_color
+  background_image=include.background_image
+  background_video=include.background_video
+  background_align=include.background_align
+  background_overlay=include.background_overlay
+  content_align=include.content_align
+	content_color=include.content_color
+%}
+
 {% if include.layout == 'center' %}
-<div class="uk-section uk-section-{{ include.section | default: 'default' }} uk-text-center">
-  <div class="uk-container uk-container-xsmall">
-      <div data-uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
-            <h5 class="uk-text-large uk-margin-remove">{{ include.title }}</h5>
-            <a class="uk-margin-medium-top uk-button uk-button-large uk-button-{{ include.button_style | default: 'primary' }}" href="{{ domain }}{{ include.button_url }}">{{ include.button_text }}</a>
-      </div>
-  </div>
-</div>
+	<div data-uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
+		{% if include.title %}
+			<h3 class="uk-h2 uk-margin-remove">{{ include.title }}</h3>
+		{% endif %}
+		{% if include.subtitle %}
+			<p class="uk-text-lead uk-margin-small">{{ include.subtitle }}</p>
+		{% endif %}
+		<a class="uk-margin-medium-top uk-button uk-button-large uk-button-{{ include.button_style | default: 'primary' }}" href="{{ domain }}{{ include.button_url }}">{{ include.button_text }}</a>
+	</div>
 {% else %}
-<div class="uk-section uk-section-{{ include.section | default: 'default' }}">
-  <div class="uk-container">
-      <div class="uk-grid-large uk-flex-middle" data-uk-grid data-uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
-          <div class="uk-width-3-4@m">
-              <h5 class="uk-text-large">{{ include.title }}</h5>
-          </div>
-          <div class="uk-width-1-4@m">
-              <a class="uk-button uk-button-large uk-button-{{ include.button_style | default: 'primary' }}" href="{{ domain }}{{ include.button_url }}">{{ include.button_text }}</a>
-          </div>
-      </div>
-  </div>
-</div>
+	<div class="uk-grid-large uk-flex-middle" data-uk-grid data-uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
+		<div class="uk-width-3-4@m">
+			{% if include.title %}
+				<h3 class="uk-h2 uk-margin-remove">{{ include.title }}</h3>
+			{% endif %}
+			{% if include.subtitle %}
+				<p class="uk-text-lead uk-margin-small">{{ include.subtitle }}</p>
+			{% endif %}
+		</div>
+		<div class="uk-width-1-4@m">
+			<a class="uk-button uk-button-large uk-button-{{ include.button_style | default: 'primary' }}" href="{{ domain }}{{ include.button_url }}">{{ include.button_text }}</a>
+		</div>
+	</div>
 {% endif %}
+
+{% include partials/section-close.html 
+  section_size=include.section_size 
+%}
