@@ -1,28 +1,36 @@
-<div class="uk-section">
-    <div class="uk-container uk-container-small">
+{% include partials/section-open.html 
+  section_size=include.section_size
+  section_padding=include.section_padding
+  section_align=include.section_align
+  section_height=include.section_height
+  section_color=include.section_color
+  section_container=include.section_container
+  section_title=include.section_title
+  section_subtitle=include.section_subtitle
+  background_color=include.background_color
+  background_image=include.background_image
+  background_video=include.background_video
+  background_align=include.background_align
+  background_overlay=include.background_overlay
+  content_align=include.content_align
+  content_color=include.content_color
+%}
 
-        {% if include.title %}
-            <h2 class="uk-h1 uk-text-center">{{ include.title }}</h2>
-        {% endif %}
+	{% if include.category %}
+		{% assign faqs = site.faqs | where: "categories", include.category %}
+	{% else %}
+		{% assign faqs = site.faqs %}
+	{% endif %}
 
-        {% if include.subtitle %}
-            <p class="uk-text-center uk-text-lead">{{ include.subtitle | escape }}</p>
-        {% endif %}
+	<ul class="uk-margin-medium-top" data-uk-accordion{% if include.multiple %}="multiple: true"{% endif %}>
+		{% for faq in faqs %}
+			<li>
+				<a class="uk-accordion-title uk-box-shadow-hover-small" href="#">{{ faq.title }}</a>
+				<div class="article-content uk-accordion-content link-primary">{{ faq.content }}</div>                
+			</li>
+		{% endfor %}
+	</ul>
 
-        {% if include.category %}
-            {% assign faqs = site.faqs | where: "categories", include.category %}
-        {% else %}
-            {% assign faqs = site.faqs %}
-        {% endif %}
-
-        <ul class="uk-margin-medium-top" data-uk-accordion{% if include.multiple %}="multiple: true"{% endif %}>
-            {% for faq in faqs %}
-                <li>
-                    <a class="uk-accordion-title uk-box-shadow-hover-small" href="#">{{ faq.title }}</a>
-                    <div class="article-content uk-accordion-content link-primary">{{ faq.content }}</div>                
-                </li>
-            {% endfor %}
-        </ul>
-
-    </div>
-</div>
+{% include partials/section-close.html 
+  section_size=include.section_size 
+%}

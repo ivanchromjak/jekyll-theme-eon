@@ -55,7 +55,7 @@
                       <div class="uk-text-large uk-margin-small">{{ block.subtitle }}</div>
                     {% endif %}
                     {% if block.content %}
-                      <div class="uk-margin">{{ block.content }}</div>
+                      <div class="uk-margin-top">{{ block.content }}</div>
                     {% endif %}
                   </div>
                 </div>
@@ -69,7 +69,7 @@
                       <div class="uk-text-large uk-margin-small">{{ block.subtitle }}</div>
                     {% endif %}
                     {% if block.content %}
-                      <div class="uk-margin">{{ block.content }}</div>
+                      <div class="uk-margin-top">{{ block.content }}</div>
                     {% endif %}
                   </div>
                 </div>
@@ -86,16 +86,16 @@
             {% elsif include.media == 'top' %}
               <div class="box">
                 {% if block.icon %}
-                  <img class="icon" src="{% if block.icon contains 'http' %}{{ block.icon }}{% else %}{{ site.uploads | absolute_url }}{{ block.icon }}{% endif %}" alt="{{ block.title }}">
+                  <img class="icon uk-margin-medium-bottom" src="{% if block.icon contains 'http' %}{{ block.icon }}{% else %}{{ site.uploads | absolute_url }}{{ block.icon }}{% endif %}" alt="{{ block.title }}">
                 {% elsif block.image %}
-                  <img data-src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}" data-width data-height data-uk-img>
+                  <img class="uk-margin-medium-bottom" data-src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}" data-width data-height data-uk-img>
                 {% endif %}
-                <h3 class="uk-margin-medium-top uk-margin-remove-bottom">{{ block.title }}</h3>
+                <h3 class="uk-margin-remove">{{ block.title }}</h3>
                 {% if block.subtitle %}
                   <div class="uk-text-large uk-margin-small">{{ block.subtitle }}</div>
                 {% endif %}
                 {% if block.content %}
-                  <div class="uk-margin">{{ block.content }}</div>
+                  <div class="uk-margin-top">{{ block.content }}</div>
                 {% endif %}
               </div>
             {% else %}
