@@ -6,12 +6,17 @@ navbar:
   scroll_up: true
   animation: true
   transparent: true
+  transparent_color: light
 header:
   layout: center # Options: center 1-2 or 2-3
-  # background_image: bg1.jpg
+  # background_color: "#1B33BF"
+  background_image: sand.jpg
+  background_video: https://app.coverr.co/s3/mp4/Feet-and-Sand.mp4
   # background_align: center-center
-  # background_overlay: "rgba(255, 255, 255, 0.7)"
-  section_size: 
+  background_overlay: "rgba(5, 15, 140, 0.9)"
+  color: light
+  # section_size: large
+  height: full
   parallax: true
   container:
     block: header-home-2
@@ -21,17 +26,6 @@ header:
 [comment]: # (This actually is the most platform independent comment)
 
 {% if site.template == 'base' %}
-
-  {% include features.html 
-    block="home-why-jekyll" 
-    section_title="Why switch to Jekyll"
-    section_align="center"
-    section_size="large"
-    background_color="primary"
-    media="top" 
-    content_align="left"
-    grid="1-3"
-  %}
 
   {% include features.html 
     block="feature" 
@@ -44,40 +38,55 @@ header:
     grid="1-4"
   %}
 
-  {% include block.html id="support" section="default" type="center" padding="remove-bottom" %}
-
-  {% include cta.html 
-    title="Create your new website today!" button_style="danger" button_text="Join Us" button_url="https://www.envato.com" 
-    subtitle="Experience the advatages of static Jekyll site and piece of mind."
-    blank="true" 
-    section_size="xlarge"
-    background_image="multipurpose.webp"
-    background_overlay="rgba(255, 255, 255, 0.8)"
-    section_container="small"
-    content_align="center"
-    layout="center"
+  {% include features.html 
+    block="home-why-jekyll" 
+    section_title="Why switch to Jekyll"
+    section_align="center"
+    section_size="large"
+    section_color="light"
+    background_color="primary"
+    media="top" 
+    content_align="left"
+    grid="1-3"
   %}
 
   {% include faqs.html 
-    background_color="muted"
+    background_color="default"
     multiple="true" 
+    section_size="large"
     section_title="Frequently asked questions" 
     section_container="small"
+    section_align="center"
+    content_align="left"
     category="presale" 
     section_subtitle="Find quicke answers to frequent pre-sale questions asked by customers" 
   %}
 
-  {% include team.html authors="evan, john, sara, alex, tom, daniel" title="We are here to help" subtitle="Our team is just an email away ready to answer your questions" %}
-
   {% include cta.html 
-    section_align="center"
-    section_container="small"
-    layout="center"
-    background_color="primary"
-    title="Support continuous development of this theme with your contribution" 
+    section_title="Create your website today!" 
+    button_style="danger" 
     button_text="Purchase" 
-    button_url="https://www.paypal.me/ivanchromjak" 
+    button_url="https://www.envato.com" 
+    section_subtitle="Experience the advatages of running a static Jekyll site and concentrate an what is important."
     blank="true" 
+    section_size="large"
+    section_align="center"
+    background_video="https://storage.coverr.co/videos/Magic-Mouse-Scroll?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjExNDMyN0NEOTRCMUFCMTFERTE3IiwiaWF0IjoxNTU4NDY1OTMyLCJleHAiOjE1NTg0NjY4MzJ9.9V43rzUMCfM6426wGfSGYMenTLSRytOqulTXebfNp7o"
+    background_image="mouse.jpg"
+    background_overlay="rgba(0, 0, 0, 0.86)"
+    section_container="small"
+    section_color="#fff"
+    content_align="center"
+    layout="center"
+  %}
+  
+  {% include team.html 
+    authors="evan, john, sara, alex, tom, daniel" 
+    section_title="We are here to help" 
+    section_subtitle="Our team is just an email away ready to answer your questions" 
+    section_align="center"
+    section_size="large"
+    background_color="muted" 
   %}
 
 {% else %}

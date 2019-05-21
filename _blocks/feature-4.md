@@ -1,6 +1,6 @@
 ---
-title: Google Map
+title: Google Maps
 icon: icons/google-maps.svg
 ---
 
-Dignissim quis turpis quis, semper consequat vehicula dolor tincidunt consequat quam, ac consequat posuere leo dapibus id
+Add maps to as sections or in pages and posts.

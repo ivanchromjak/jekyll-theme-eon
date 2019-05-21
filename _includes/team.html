@@ -1,45 +1,54 @@
-<div class="uk-section section-team">
-    <div class="uk-container uk-container-expand">
+{% include partials/section-open.html 
+  section_size=include.section_size
+  section_padding=include.section_padding
+  section_align=include.section_align
+  section_height=include.section_height
+  section_color=include.section_color
+  section_container=include.section_container
+  section_title=include.section_title
+  section_subtitle=include.section_subtitle
+  background_color=include.background_color
+  background_image=include.background_image
+  background_video=include.background_video
+  background_align=include.background_align
+  background_overlay=include.background_overlay
+  content_align=include.content_align
+  content_color=include.content_color
+%}
 
-        {% if include.title %}
-            <h2 class="uk-h1 uk-text-center">{{ include.title }}</h2>
-        {% endif %}
+	<div class="uk-margin-medium-top uk-grid-small uk-flex-center uk-text-center uk-margin-medium-top section-team" data-uk-grid>
 
-        {% if include.subtitle %}<p class="uk-text-lead uk-text-center">{{ include.subtitle | escape }}</p>{% endif %}
+		{% if include.authors %}
+				{% assign authors = include.authors | split: ", " %}
+		{% else %}
+				{% assign authors = site.authors %}
+		{% endif %}
 
-        <div class="uk-margin-medium-top uk-grid-small uk-flex-center uk-text-center uk-margin-medium-top" data-uk-grid>
+		{% for author in authors %}
 
-        {% if include.authors %}
-            {% assign authors = include.authors | split: ", " %}
-        {% else %}
-            {% assign authors = site.authors %}
-        {% endif %}
+				{% if include.authors %}
+						{% assign item = site.authors[author] %}
+				{% else %}
+						{% assign item = author[1] %}
+				{% endif %}
 
-        {% for author in authors %}
+				<div>
+						<div class="uk-card">
+								{% if item.avatar %}
+										{% if item.avatar contains 'http' %}
+												{% assign domain = '' %}
+										{% else %}
+												{% assign domain = site.uploads | absolute_url %}
+										{% endif %}
 
-            {% if include.authors %}
-                {% assign item = site.authors[author] %}
-            {% else %}
-                {% assign item = author[1] %}
-            {% endif %}
-
-            <div>
-                <div class="uk-card">
-                    {% if item.avatar %}
-                        {% if item.avatar contains 'http' %}
-                            {% assign domain = '' %}
-                        {% else %}
-                            {% assign domain = site.uploads | absolute_url %}
-                        {% endif %}
-
-                        <img class="uk-border-circle" src="{{ domain }}{{ item.avatar }}" alt="{{ item.name }}">
-                    {% endif %}
-                    <h5 class="uk-margin-remove-bottom uk-margin-top">{{ item.name }}</h5>
-                    <p class="uk-article-meta uk-margin-remove-bottom uk-margin-small-top">{{ item.title }}</p>
-                </div>
-            </div>
-        {% endfor %}
-        </div>
-
-    </div>
-</div>
+										<img class="uk-border-circle" src="{{ domain }}{{ item.avatar }}" alt="{{ item.name }}">
+								{% endif %}
+								<h5 class="uk-margin-remove-bottom uk-margin-top">{{ item.name }}</h5>
+								<p class="uk-article-meta uk-margin-remove-bottom uk-margin-small-top">{{ item.title }}</p>
+						</div>
+				</div>
+		{% endfor %}
+	</div>
+{% include partials/section-close.html 
+  section_size=include.section_size 
+%}

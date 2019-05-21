@@ -1,7 +1,6 @@
 ---
-title: Map
-subtitle: Some susbtitle ala
+title: Mailchimp
 icon: icons/marker.svg
 ---
 
-Dignissim quis turpis quis, semper consequat vehicula dolor tincidunt consequat quam, ac consequat posuere leo dapibus id
+Add newsletter signup form to sections or headers.

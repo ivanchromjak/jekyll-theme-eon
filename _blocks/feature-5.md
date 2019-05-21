@@ -1,6 +1,6 @@
 ---
-title: Fast
+title: Portfolio
 icon: icons/lock.svg
 ---
 
-Dignissim quis turpis quis, semper consequat vehicula dolor tincidunt consequat quam, ac consequat posuere leo dapibus id
+Show off your portfolio with options to view an image in lightbox or open a portfolio post.

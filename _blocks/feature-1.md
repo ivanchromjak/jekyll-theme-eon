@@ -3,4 +3,4 @@ title: Cards
 icon: icons/unchecked-checkbox.svg
 ---
 
-Dignissim quis turpis quis, semper consequat vehicula dolor tincidunt consequat quam, ac consequat posuere leo dapibus id
+Display content such as features or pricing options in card layout.
