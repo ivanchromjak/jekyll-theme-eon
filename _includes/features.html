@@ -86,8 +86,7 @@
             {% elsif include.media == 'top' %}
               <div class="box">
                 {% if block.icon %}
-                  {% include icons/ios-avatar.svg %}
-                  <img class="icon uk-icon uk-margin-medium-bottom" src="{% if block.icon contains 'http' %}{{ block.icon }}{% else %}{{ site.uploads | absolute_url }}{{ block.icon }}{% endif %}" alt="{{ block.title }}" data-uk-svg>
+                  <div class="uk-margin-medium-bottom">{% include icons/{{ block.icon }} %}</div>
                 {% elsif block.image %}
                   <img class="uk-margin-medium-bottom" data-src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}" data-width data-height data-uk-img>
                 {% endif %}

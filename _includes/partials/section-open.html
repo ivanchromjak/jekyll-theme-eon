@@ -1,7 +1,7 @@
 {%- unless include.section_size == 'none' -%}
   <div class="uk-cover-container{% if include.background_color == 'muted' or include.background_color == 'secondary' or include.background_color == 'primary' %} uk-section-{{ include.background_color }}{% endif %} uk-background-{{ include.background_align | default: 'center-center' }} uk-background-cover" style="{% if include.background_color contains '#' or include.background_color contains 'rgb' %}background-color: {{ include.background_color }};{% endif %}{% if include.background_image %}background-image: url({% if include.background_image contains 'http' %}{{ include.background_image }}{% else %}{{ site.uploads | absolute_url }}{{ include.background_image }}{% endif %});{% endif %}">
     {%- if include.background_video -%}
-      <video autoplay loop muted playsinline data-uk-cover>
+      <video autoplay loop muted playsinline data-uk-cover data-uk-video="autoplay: inview">
         <source src="{% if include.background_video contains 'http' %}{{ include.background_video }}{% else %}{{ site.uploads | absolute_url }}{{ include.background_video }}{% endif %}" type="video/mp4">
       </video>
     {%- endif -%}

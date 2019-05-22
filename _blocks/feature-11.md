@@ -1,6 +1,6 @@
 ---
-title: Team
-icon: icons/ios-avatar.svg
+title: Backgrounds
+icon: color-layers.svg
 ---
 
-Add team section displaying member avatars, names and positions.  
+Set section and header background color, image, video and overlay.

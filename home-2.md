@@ -11,7 +11,7 @@ header:
   layout: center # Options: center 1-2 or 2-3
   # background_color: "#1B33BF"
   background_image: sand.jpg
-  background_video: https://app.coverr.co/s3/mp4/Feet-and-Sand.mp4
+  background_video: Feet-and-Sand.mp4
   # background_align: center-center
   background_overlay: "rgba(5, 15, 140, 0.9)"
   color: light
@@ -71,8 +71,7 @@ header:
     blank="true" 
     section_size="large"
     section_align="center"
-    background_video="https://storage.coverr.co/videos/Magic-Mouse-Scroll?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjExNDMyN0NEOTRCMUFCMTFERTE3IiwiaWF0IjoxNTU4NDY1OTMyLCJleHAiOjE1NTg0NjY4MzJ9.9V43rzUMCfM6426wGfSGYMenTLSRytOqulTXebfNp7o"
-    background_image="mouse.jpg"
+    background_video="https://app.coverr.co/s3/mp4/Feet-and-Sand.mp4"
     background_overlay="rgba(0, 0, 0, 0.86)"
     section_container="small"
     section_color="#fff"

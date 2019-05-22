@@ -1,6 +1,6 @@
 ---
-title: Footers
-icon: icons/upload-to-the-cloud-2.svg
+title: Navbar
+icon: color-navigation-toolbar-top.svg
 ---
 
-Select from two footer layouts.
+Fixed or sticky navbar with left, center and right aligned navigation and options to add buttons.

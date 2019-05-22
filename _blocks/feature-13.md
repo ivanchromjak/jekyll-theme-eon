@@ -1,6 +1,6 @@
 ---
-title: Formspree
-icon: icons/upload-to-the-cloud-2.svg
+title: Sidebars
+icon: color-navigation-toolbar-left.svg
 ---
 
-Add contact forms to the site using free Formspree service.
+Display sidebar on pages and posts, create custom sidebars for different pages.
