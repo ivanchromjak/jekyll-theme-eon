@@ -1,6 +1,6 @@
 ---
 title: Videos
-icon: color-circled-play.svg
+icon: ios-play-button-circled.svg
 ---
 
 Sections with videos played in popup lihtbox.

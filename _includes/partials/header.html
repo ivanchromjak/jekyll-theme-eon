@@ -75,48 +75,54 @@
       {% if page.header.layout == 'center' %}
         <div class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
           <div class="uk-width-1-1">
-            {%- assign container = site.blocks | where:"slug", page.header.container.block | first -%}
-            {% unless page.header.container.title == false %}
-              <h1 class="uk-heading-medium">{{ container.title | escape }}</h1>
-            {% endunless %}
-            {% if container.subtitle %}
-              <div class="uk-text-lead">{{ container.subtitle }}</div>
-            {% endif %}
-            {% if container.content %}
-              <div class="uk-margin-medium-top">
-                {{ container.content }}
-              </div>
+            {% if page.header.container.block %}
+              {%- assign container = site.blocks | where:"slug", page.header.container.block | first -%}
+              {% unless page.header.container.title == false %}
+                <h1 class="uk-heading-medium">{{ container.title | escape }}</h1>
+              {% endunless %}
+              {% if container.subtitle %}
+                <div class="uk-text-lead">{{ container.subtitle }}</div>
+              {% endif %}
+              {% if container.content %}
+                <div class="uk-margin-medium-top">
+                  {{ container.content }}
+                </div>
+              {% endif %}
             {% endif %}
           </div>
         </div>
       {% else %}
         <div class="uk-grid-large uk-flex uk-flex-middle uk-flex-center@m" data-uk-grid>
           <div class="uk-width-{{ page.header.layout | default: '2-3' }}@m">
-            {%- assign container = site.blocks | where:"slug", page.header.container.block | first -%}
-            {% unless page.header.container.title == false %}
-              <h1 class="uk-heading-medium">{{ container.title | escape }}</h1>
-            {% endunless %}
-            {% if container.subtitle %}
-              <div class="uk-text-lead">{{ container.subtitle }}</div>
-            {% endif %}
-            {% if container.content %}
-              <div class="uk-margin-medium-top">
-                {{ container.content }}
-              </div>
+            {% if page.header.container.block %}
+              {%- assign container = site.blocks | where:"slug", page.header.container.block | first -%}
+              {% unless page.header.container.title == false %}
+                <h1 class="uk-heading-medium">{{ container.title | escape }}</h1>
+              {% endunless %}
+              {% if container.subtitle %}
+                <div class="uk-text-lead">{{ container.subtitle }}</div>
+              {% endif %}
+              {% if container.content %}
+                <div class="uk-margin-medium-top">
+                  {{ container.content }}
+                </div>
+              {% endif %}
             {% endif %}
           </div>
           <div class="uk-width-expand@m">
-            {%- assign container-2 = site.blocks | where:"slug", page.header.container-2.block | first -%}
-            {% unless page.header.container-2.title == false %}
-              <h1 class="uk-heading-hero">{{ container-2.title | escape }}</h1>
-            {% endunless %}
-            {% if container-2.subtitle %}
-              <div class="uk-text-lead">{{ container-2.subtitle }}</div>
-            {% endif %}
-            {% if container-2.content %}
-              <div class="uk-margin-medium-top">
-                {{ container-2.content }}
-              </div>
+            {% if page.header.container.block %}
+              {%- assign container-2 = site.blocks | where:"slug", page.header.container-2.block | first -%}
+              {% unless page.header.container-2.title == false %}
+                <h1 class="uk-heading-hero">{{ container-2.title | escape }}</h1>
+              {% endunless %}
+              {% if container-2.subtitle %}
+                <div class="uk-text-lead">{{ container-2.subtitle }}</div>
+              {% endif %}
+              {% if container-2.content %}
+                <div class="uk-margin-medium-top">
+                  {{ container-2.content }}
+                </div>
+              {% endif %}
             {% endif %}
           </div>
         </div>

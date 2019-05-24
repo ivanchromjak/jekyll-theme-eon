@@ -1,6 +1,6 @@
 ---
 title: Mailchimp
-icon: color-envelope.svg
+icon: ios-mailbox-closed-flag-up.svg
 ---
 
 Add newsletter signup form to sections or headers.

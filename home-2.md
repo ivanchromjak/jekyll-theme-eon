@@ -3,91 +3,155 @@ layout: full
 width: full
 navbar:
   sticky: true
-  scroll_up: true
   animation: true
   transparent: true
   transparent_color: light
 header:
   layout: center # Options: center 1-2 or 2-3
-  # background_color: "#1B33BF"
-  background_image: sand.jpg
-  background_video: sand.mp4
-  # background_align: center-center
-  background_overlay: "rgba(5, 15, 140, 0.9)"
+  height: full-
+  background_image: header-home.jpg
+  background_align: bottom-center
+  background_color: "#000"
+  background_video: https://app.coverr.co/s3/mp4/Feet-and-Sand.mp4
+  background_overlay: "linear-gradient(to right bottom,rgba(12, 180, 206, 0.85) 5%,rgba(0, 108, 255, 0.85) 30%,rgba(144, 18, 254, 0.85) 80%)"
   color: light
-  # section_size: large
-  height: full
-  parallax: true
   container:
-    block: header-home-2
+    block: header-home-container
     # title: false
+  container-2:
+    block: header-home-container-2
+    title: false
 ---
 
 [comment]: # (This actually is the most platform independent comment)
 
 {% if site.template == 'base' %}
 
-  {% include features.html 
-    block="feature" 
-    background_color="default" 
-    section_title="The first trully multipurpose Jekyll theme" 
-    section_subtitle="Theme is loaded with awesome features and countless options giving you the flexibility to design your perfect site"
+  {% include content.html 
+    block="content-post"
+    section_size="large"
+    section_padding="remove-vertical-"
+    section_height="viewport-"
+    section_color="light"
+    section_container="small"
+    section_title="This is section title"
+    section_subtitle="This is section subtitle"
     section_align="center"
+    background_image="sand.jpg"
+    background_video=""
+    background_align="top-left"
+    background_overlay="linear-gradient(to right bottom,rgba(12, 180, 206, 0.85) 5%,rgba(0, 108, 255, 0.85) 30%,rgba(144, 18, 254, 0.85) 80%)"
+    align="center" 
+  %}
+
+  {% include cards.html 
+    block="home-why" 
+    section_title="This is section title"
+    section_subtitle="This is section subtitle"
+    section_color="red"
+    section_align="center"
+    section_size="large"
+    background_overlay1="rgba(255, 255, 255, 0.73)"
+    background_color="#563493"
+    style="default" 
+    media="top" 
     content_align="center"
-    media="top"
     grid="1-4"
   %}
 
-  {% include features.html 
-    block="home-why-jekyll" 
-    section_title="Why switch to Jekyll"
+  {% include cards.html 
+    block="home-cta" 
+    section_title="Why switch to Jekyll" 
     section_align="center"
-    section_size="large"
-    section_color="light"
-    background_color="primary"
+    background_color="default" 
+    style="default" 
     media="top" 
     content_align="left"
     grid="1-3"
   %}
 
-  {% include faqs.html 
-    background_color="default"
-    multiple="true" 
-    section_size="large"
-    section_title="Frequently asked questions" 
-    section_container="small"
+  {% include features.html 
+    block="feature" 
+    background_color="muted" 
+    section_title="Awesome Features" 
     section_align="center"
-    content_align="left"
-    category="presale" 
-    section_subtitle="Find quicke answers to frequent pre-sale questions asked by customers" 
+    content_align="center"
+    media="top"
+    grid="1-3"
+  %}
+
+  {% include features.html 
+    block="feature-6" 
+    background_color="default" 
+    media="left"
+    grid="1-1"
+  %}
+
+  {% include features.html 
+    block="feature-6" 
+    background_color="primary" 
+    media="right"
+    grid="1-1"
+  %}
+
+  {% include cards.html 
+    block="pricing" 
+    section_title="Pricing" 
+    section_align="center"
+    background_color="muted" 
+    style="default"
+    align="center"
+  %}
+
+  {% include block.html id="support" section="default" type="center" padding="remove-bottom" %}
+
+  {% include cta.html 
+    title="Create your new website today!" button_style="danger" button_text="Join Us" button_url="https://www.envato.com" 
+    subtitle="Experience the advatages of static Jekyll site and piece of mind."
+    blank="true" 
+    section_size="xlarge"
+    background_image="multipurpose.webp"
+    background_overlay="rgba(0, 0, 0, 0.8)"
+    section_container="small"
+    content_align="center"
+    content_color="light"
+    layout="center"
   %}
 
   {% include cta.html 
-    section_title="Create your website today!" 
-    button_style="danger" 
-    button_text="Purchase" 
-    button_url="https://www.envato.com" 
-    section_subtitle="Experience the advatages of running a static Jekyll site and concentrate an what is important."
+    title="Create your new website today!" button_style="danger" button_text="Join Us" button_url="https://www.envato.com" 
+    subtitle="Experience the advatages of static Jekyll site and piece of mind."
     blank="true" 
-    section_size="large"
-    section_align="center"
-    background_image="mouse.jpg"
-    background_video="mouse.mp4"
-    background_overlay="rgba(0, 0, 0, 0.86)"
-    section_container="small"
-    section_color="#fff"
-    content_align="center"
-    layout="center"
+    section_size="xlarge"
+    background_image="multipurpose.webp"
+    background_overlay="rgba(255, 255, 255, 0.8)"
   %}
-  
-  {% include team.html 
-    authors="evan, john, sara, alex, tom, daniel" 
-    section_title="We are here to help" 
-    section_subtitle="Our team is just an email away ready to answer your questions" 
-    section_align="center"
-    section_size="large"
-    background_color="muted" 
+
+  {% include videos.html id="video" columns="3" title="Video Tutorials" subtitle="Watch screencasts to get you started fast with Jekyll" %}
+
+  {% include faqs.html multiple="true" title="Frequently asked questions" category="presale" subtitle="Find quicke answers to frequent pre-sale questions asked by customers" %}
+
+  {% include video.html id="video-home2" section="primary" layout="center" %}
+
+  {% include portfolio.html topic="Service" section="muted" layout="" %}
+
+  {% include portfolio.html section="muted" layout="" %}
+
+  {% include video.html id="video-home3" section="default" layout="" %}
+
+  {% include cta.html title="Support continuous development of this theme with your contribution" button_text="Support Us" button_url="https://www.paypal.me/ivanchromjak" blank="true" section="muted" align="center" %}
+
+  {% include cta.html title="Support continuous development of this theme with your contribution" button_text="Support Us" button_url="https://www.paypal.me/ivanchromjak" blank="true" %}
+
+  {% include map.html latitude="41.449689" longitude="-81.639102" zoom="16" %}
+
+  {% include slider.html id="feature" layout="card-top" section="muted" align="center" title="Slider" 
+    center="true"
+    autoplay="true"
+    sets="true"
   %}
+
+  {% include slider.html id="home-cta" color="light" %}
 
 {% else %}
 
@@ -99,6 +163,7 @@ header:
 
 {% endif %}
 
+{% include team.html authors="evan, john, sara, alex, tom, daniel" title="We are here to help" subtitle="Our team is just an email away ready to answer your questions" %}
 
 
 <!--

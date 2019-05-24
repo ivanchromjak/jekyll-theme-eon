@@ -1,6 +1,6 @@
 ---
 title: FAQs
-icon: color-faq.svg
+icon: ios-faq.svg
 ---
 
 Address customer concerns with accordion styled FAQs.

@@ -1,6 +1,6 @@
 ---
 title: Sliders
-icon: color-advance.svg
+icon: ios-right-arrow.svg
 ---
 
-Sliders can display images or cards.
+Sliders can display image galleries or cards.

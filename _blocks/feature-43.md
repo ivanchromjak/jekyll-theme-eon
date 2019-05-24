@@ -1,6 +1,6 @@
 ---
-title: CTA
-icon: color-running.svg
+title: Call To Action
+icon: ios-rocket.svg
 ---
 
 Chose from two call to action section layouts.

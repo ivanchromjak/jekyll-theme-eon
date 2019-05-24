@@ -1,6 +1,6 @@
 ---
 title: Galleries
-icon: color-full-image.svg
+icon: ios-compact-camera.svg
 ---
 
 Display image galleries with optional topic filter.

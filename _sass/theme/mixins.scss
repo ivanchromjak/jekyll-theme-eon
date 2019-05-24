@@ -22,11 +22,11 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
     -webkit-font-smoothing: antialiased;
 
 }
-@mixin hook-base-misc(){
-    input[type="submit" i]{
-        -webkit-appearance:none;
-    }
-}
+// @mixin hook-base-misc(){
+//     input[type="submit" i]{
+//         -webkit-appearance:none;
+//     }
+// }
 
 @mixin hook-base-misc(){
   .uk-section-success {
@@ -44,30 +44,188 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
 @if ( $section-danger-color-mode == dark ) { .uk-section-danger:not(.uk-preserve-color) { @extend .uk-dark !optional;} }
 
 @mixin hook-button(){
-  border-radius: 3px;
+  border-radius: 2px;
+    font-weight: $button-font-weight;
+    letter-spacing: 1px;
 }
-@mixin hook-button-misc() {
-  .hvr-up {
-    transition: transform 100ms ease-in-out;
-    transform: translateY(0px);
-    &:hover {
-      transform: translateY(-2px);
-      text-decoration: none;
+// @mixin hook-button-misc() {
+
+//   .hvr-up {
+//     transition: transform 100ms ease-in-out;
+//     transform: translateY(0px);
+//     &:hover {
+//       transform: translateY(-2px);
+//       text-decoration: none;
+//     }
+//   }
+//   .tm-button-xlarge {
+//     padding: 0 20px;
+//     line-height: 50px;
+//     font-size: 15px;
+//   }
+//   .uk-button-light {
+//     background: #fff;
+//     color: $global-primary-background !important;
+//   }
+//   .uk-button-danger.hvr-up:hover {
+//     background: $global-danger-background;
+//   }
+// }
+
+@mixin hook-button-misc(){
+
+	.uk-button-xlarge {
+			padding: 0 $button-large-padding-horizontal * 1.5;
+			line-height: $button-large-line-height;
+			font-size: $button-large-font-size;
+	}    
+
+    .uk-button-default,
+    .uk-button-primary,
+    .uk-button-secondary,
+    .uk-button-danger {
+        letter-spacing: 1px;
     }
-  }
-  .tm-button-xlarge {
-    padding: 0 20px;
-    line-height: 50px;
-    font-size: 15px;
-  }
-  .uk-button-light {
-    background: #fff;
-    color: $global-primary-background !important;
-  }
-  .uk-button-danger.hvr-up:hover {
-    background: $global-danger-background;
-  }
+
+    a.button-link:not(.uk-link-muted):not(.uk-accordion-title), .button-link a:not(.uk-link-muted):not(.uk-accordion-title) {
+        font-weight: 400;
+        border-bottom: 1px solid $global-primary-background;
+    }
+
+    // Warning
+    .uk-button-warning {
+        background-color: $button-warning-background;
+        color: $button-primary-color;
+        border: 1px solid transparent;
+    }
+
+    .uk-button-warning:hover,
+    .uk-button-warning:focus {
+        background-color: $button-warning-hover-background;
+        color: $button-primary-color;
+    }
+
+    .uk-button-warning:active,
+    .uk-button-warning.uk-active {
+        background-color: $button-warning-hover-background;
+        color: $button-primary-color;
+    }
+
+    // Success
+    .uk-button-success {
+        background-color: $button-success-background;
+        color: $button-primary-color;
+        border: 1px solid transparent;
+    }
+
+    .uk-button-success:hover,
+    .uk-button-success:focus {
+        background-color: $button-success-hover-background;
+        color: $button-primary-hover-color;
+    }
+
+    .uk-button-success:active,
+    .uk-button-success.uk-active {
+        background-color: $button-success-hover-background;
+        color: $button-primary-active-color;
+    }
+
+    // Primary outline
+    .uk-button-primary-outline {
+        background-color: $button-default-background;
+        color: $button-primary-background;
+        border: $button-border-width solid $button-primary-background;
+    }
+
+    .uk-button-primary-outline:hover,
+    .uk-button-primary-outline:focus {
+        background-color: $button-primary-background;
+        color: $button-primary-hover-color;
+        border: $button-border-width solid $button-primary-background;
+    }
+
+    .uk-button-primary-outline:active,
+    .uk-button-primary-outline.uk-active {
+        background-color: $button-primary-background;
+        color: $button-primary-active-color;
+        border: $button-border-width solid $button-primary-background;
+    }
+
+    // Danger outline
+    .uk-button-danger-outline {
+        background-color: $button-default-background;
+        color: $button-danger-background;
+        border: $button-border-width solid $button-danger-background;
+    }
+
+    .uk-button-danger-outline:hover,
+    .uk-button-danger-outline:focus {
+        background-color: $button-danger-background;
+        color: $button-danger-hover-color;
+        border: $button-border-width solid $button-danger-background;
+    }
+
+    .uk-button-danger-outline:active,
+    .uk-button-danger-outline.uk-active {
+        background-color: $button-danger-background;
+        color: $button-danger-active-color;
+        border: $button-border-width solid $button-danger-background;
+    }
+
+    // Success outline
+    .uk-button-success-outline {
+        background-color: $button-default-background;
+        color: $button-success-background;
+        border: $button-border-width solid $button-success-background;
+    }
+
+    .uk-button-success-outline:hover,
+    .uk-button-success-outline:focus {
+        background-color: $button-success-background;
+        color: $button-primary-hover-color;
+        border: $button-border-width solid $button-success-background;
+    }
+
+    .uk-button-success-outline:active,
+    .uk-button-success-outline.uk-active {
+        background-color: $button-success-background;
+        color: $button-primary-hover-color;
+        border: $button-border-width solid $button-success-background;
+    }
+
+    // Warning outline
+    .uk-button-warning-outline {
+        background-color: $button-default-background;
+        color: $button-warning-background;
+        border: $button-border-width solid $button-warning-background;
+    }
+
+    .uk-button-warning-outline:hover,
+    .uk-button-warning-outline:focus {
+        background-color: $button-warning-background;
+        color: $button-primary-hover-color;
+        border: $button-border-width solid $button-warning-background;
+    }
+
+    .uk-button-warning-outline:active,
+    .uk-button-warning-outline.uk-active {
+        background-color: $button-warning-background;
+        color: $button-primary-active-color;
+        border: $button-border-width solid $button-warning-background;
+    }
+
+    .uk-light {
+        .uk-button-primary-outline,
+        .uk-button-danger-outline,
+        .uk-button-success-outline,
+        .uk-button-warning-outline {
+            border-color: #fff;
+        }
+
+    }
+    
 }
+
 
 @mixin hook-text-lead(){
   //font-family: $base-heading-font-family;
@@ -102,7 +260,6 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
 
 	.uk-card, .box {
 		svg {
-			width: 80px;
 			fill: $global-primary-background;
 		}
 	}
@@ -114,7 +271,15 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
 	.uk-section.uk-text-left .uk-card .icon {
 		margin-left: $card-body-padding-horizontal-l;
 	}
+
+    .uk-card-blog .uk-card-footer {
+        padding-top: 0;
+        margin-top: -10px;
+        border: none;
+    }
+    
 }
+
 
 @mixin hook-heading-medium(){
     font-weight: 100;
@@ -321,6 +486,10 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
 //
 // ========================================================================
 @mixin hook-utility-misc(){
+    .opacity:hover {
+        opacity: .85;
+    }
+
     .position-z-index-negative {
         z-index: -1;
     }

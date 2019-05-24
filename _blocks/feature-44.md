@@ -1,6 +1,6 @@
 ---
 title: Footers
-icon: color-drop-down.svg
+icon: ios-down-arrow.svg
 ---
 
-Select from two footer layouts.
+Select from two footer layouts, centered and columns.
