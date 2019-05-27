@@ -16,7 +16,7 @@
   content_color=include.content_color
 %}
 
-	{% assign block = site.blocks | where:"slug", include.id | first %}
+	{% assign block = site.blocks | where:"slug", include.block | first %}
 
 	{% if include.section_align == 'center' %}
 		<h2 class="uk-h1">{{ block.title }}</h2>

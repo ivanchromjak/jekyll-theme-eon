@@ -70,10 +70,16 @@ header:
     align="center"
   %}
 
-  {% include videos.html id="video" columns="3" title="Video Tutorials" subtitle="Watch screencasts to get you started fast with Jekyll" %}
+  {% include videos.html 
+    block="video" 
+    columns="3" 
+    section_align="center"
+    section_title="Video Tutorials" 
+    section_subtitle="Watch screencasts to get you started fast with Jekyll" 
+  %}
 
   {% include video.html 
-    id="video-home2" 
+    block="video-home2" 
     background_color="primary" 
     section_align="center" 
     section_container="small"
