@@ -1,23 +1,36 @@
-{% if site.instagram_accesstoken %}
-{% if include.section -%}
-<div class="uk-section uk-section-large uk-section-{{ include.section | default: 'default' }} uk-text-{{ include.align | default: 'left' }}">
-  <div class="uk-container">
-{%- endif -%}
-  {%- if include.title -%}
-    <h2>{{- include.title -}}</h2>
-  {%- endif -%}
-  {%- assign cols = include.cols | default: '4') -%}
+{% include partials/section-open.html 
+  section_size=include.section_size
+  section_padding=include.section_padding
+  section_align=include.section_align
+  section_height=include.section_height
+  section_color=include.section_color
+  section_container=include.section_container
+  section_title=include.section_title
+  section_subtitle=include.section_subtitle
+  background_color=include.background_color
+  background_image=include.background_image
+  background_video=include.background_video
+  background_align=include.background_align
+  background_overlay=include.background_overlay
+  content_align=include.content_align
+  content_color=include.content_color
+%}
+
+{% unless site.instagram_accesstoken %}
+<div class="uk-alert-danger" data-uk-alert>
+  <p>Create Instagram <a href="https://instagram.pixelunion.net/">access token</a> and add it to _config.yml file, e.g. instagram_accesstoken: 12537527232323223</p>
+</div>
+{% endunless %}
+{%- assign cols = include.cols | default: '4') -%}
 <div id="instagram" class="uk-child-width-1-2@s uk-child-width-1-{{ cols }}@m{% if include.gutter == 'false' %} uk-grid-collapse{% endif %}" data-uk-grid></div>
 <script type="text/javascript">
   instafetch.init({
     accessToken: '{{ site.instagram_accesstoken }}',
     target: 'instagram',
-    numOfPics: {{ include.count | default: '12' }},
+    numOfPics: {{ include.count | plus: 1 }},
     caption: false
   });
 </script>
-  {% if include.section %}
-    </div>
-  </div>
-  {% endif %}
-{% endif %}
+{% include partials/section-close.html 
+  section_size=include.section_size 
+%}

@@ -29,7 +29,7 @@ header:
 
   {% include features.html 
     block="feature" 
-    background_color="default" 
+    background_color="muted" 
     section_title="The first trully multipurpose Jekyll theme" 
     section_subtitle="Theme is loaded with awesome features and countless options giving you the flexibility to design your perfect site"
     section_align="center"
@@ -40,7 +40,7 @@ header:
 
   {% include features.html 
     block="home-why-jekyll" 
-    section_title="Why switch to Jekyll"
+    section_title="Why use Eon theme?"
     section_align="center"
     section_size="large"
     section_color="light"
@@ -49,6 +49,32 @@ header:
     content_align="left"
     grid="1-3"
   %}
+
+  {% include cards.html 
+    block="home-cta" 
+    section_title="Why switch to Jekyll" 
+    section_align="center"
+    background_color="default" 
+    style="default" 
+    media="top" 
+    content_align="left"
+    grid="1-3"
+  %}
+
+  {% include cards.html 
+    block="pricing" 
+    section_title="Pricing" 
+    section_align="center"
+    background_color="muted" 
+    style="default"
+    align="center"
+  %}
+
+  {% include videos.html id="video" columns="3" title="Video Tutorials" subtitle="Watch screencasts to get you started fast with Jekyll" %}
+
+  {% include video.html id="video-home2" section="primary" layout="center" %}
+
+  {% include portfolio.html section="muted" layout="" %}
 
   {% include faqs.html 
     background_color="default"
@@ -60,6 +86,12 @@ header:
     content_align="left"
     category="presale" 
     section_subtitle="Find quicke answers to frequent pre-sale questions asked by customers" 
+  %}
+
+  {% include map.html 
+    latitude="19.4230622" 
+    longitude="-99.1583328" 
+    zoom="16" 
   %}
 
   {% include cta.html 
@@ -89,6 +121,13 @@ header:
     background_color="muted" 
   %}
 
+  {% include instagram.html 
+    cols="5" 
+    count="5" 
+    gutter="false"
+    section_size="none"
+    section_container="none"
+  %}
 {% else %}
 
   {% include cards.html id="home-right" style="" media="right" section="muted" %}

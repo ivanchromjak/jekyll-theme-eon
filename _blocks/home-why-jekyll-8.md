@@ -2,4 +2,4 @@
 title: Low maintenance
 ---
 
-There are no plugin or software updates that are required for keeping your site up-to-date and secure.
+There are no constant plugin or software updates required to keep your site up-to-date and secure.
