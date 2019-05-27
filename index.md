@@ -72,7 +72,12 @@ header:
 
   {% include videos.html id="video" columns="3" title="Video Tutorials" subtitle="Watch screencasts to get you started fast with Jekyll" %}
 
-  {% include video.html id="video-home2" section="primary" layout="center" %}
+  {% include video.html 
+    id="video-home2" 
+    background_color="primary" 
+    section_align="center" 
+    section_container="small"
+  %}
 
   {% include portfolio.html 
     section_title="Portfolio" 
