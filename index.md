@@ -89,6 +89,8 @@ header:
   %}
 
   {% include map.html 
+    section_size="none"
+    section_container="none"
     latitude="19.4230622" 
     longitude="-99.1583328" 
     zoom="16" 
