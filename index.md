@@ -74,7 +74,12 @@ header:
 
   {% include video.html id="video-home2" section="primary" layout="center" %}
 
-  {% include portfolio.html section="muted" layout="" %}
+  {% include portfolio.html 
+    section_title="Portfolio" 
+    section_align="center"
+    background_color="muted"
+    cols="3"
+  %}
 
   {% include faqs.html 
     background_color="default"
