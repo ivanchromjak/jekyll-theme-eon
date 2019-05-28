@@ -1,8 +1,38 @@
+{% include partials/section-open.html 
+  section_size=include.section_size
+  section_padding=include.section_padding
+  section_align=include.section_align
+  section_height=include.section_height
+  section_color=include.section_color
+  section_container=include.section_container
+  section_title=include.section_title
+  section_subtitle=include.section_subtitle
+  background_color=include.background_color
+  background_image=include.background_image
+  background_video=include.background_video
+  background_align=include.background_align
+  background_overlay=include.background_overlay
+  content_align=include.content_align
+  content_color=include.content_color
+%}
+
 {% assign cols = include.cols | default: '4') %}
-<div class="uk-child-width-1-2@s uk-child-width-1-{{ cols }}@m" data-uk-grid>
+<div class="uk-child-width-1-2@s uk-child-width-1-{{ cols }}@m" data-uk-grid{% if include.lightbox %} data-uk-lightbox="animation: slide"{% endif %}>
   {% for image in site.static_files %}
-      {% if image.path contains include.gallery %}
-          <div><img src="{{ image.path }}" alt="{{ image.basename | replace: '_', ' ' | capitalize }}"></div>
-      {% endif %}
+    {% if image.path contains include.gallery %}
+      <div>
+        {% if include.lightbox %}
+          <a class="uk-inline" href="{{ image.path | relative_url }}"{% if include.caption %} data-caption="{{ image.basename | replace: '_', ' ' | capitalize }}"{% endif %}>
+            <img src="{{ image.path | relative_url }}" alt="{{ image.basename | replace: '_', ' ' | capitalize }}">
+          </a>
+        {% else %}
+          <img src="{{ image.path | relative_url }}" alt="{{ image.basename | replace: '_', ' ' | capitalize }}">
+        {% endif %}
+      </div>      
+    {% endif %}
   {% endfor %}
 </div>
+
+{% include partials/section-close.html 
+  section_size=include.section_size 
+%}

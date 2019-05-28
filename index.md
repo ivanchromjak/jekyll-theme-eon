@@ -92,6 +92,16 @@ header:
     cols="3"
   %}
 
+  {% include gallery.html 
+    section_title="Gallery" 
+    section_align="center"
+    background_color="default"
+    cols="2"
+    gallery="slideshow-1"
+    caption="true"
+    lightbox="true"
+  %}
+
   {% include faqs.html 
     background_color="default"
     multiple="true" 
@@ -102,6 +112,24 @@ header:
     content_align="left"
     category="presale" 
     section_subtitle="Find quicke answers to frequent pre-sale questions asked by customers" 
+  %}
+
+  {% include slider.html 
+    block="home-cta" 
+    layout="card-top" 
+    section="muted" 
+    section_align="center"  
+    section_title="Slider" 
+    center="true"
+    autoplay="true"
+    sets="true"
+  %}
+
+  {% include slider.html 
+    section_size="none"
+    section_container="none"
+    block="home-cta" 
+    color="light" 
   %}
 
   {% include map.html 
