@@ -38,7 +38,7 @@
       {{ content }}
     {% else %}
       <div class="uk-section">
-        <div class="uk-container uk-container-small">
+        <div class="uk-container{% if page.container %} uk-container-{{ page.container }}{% endif %}">
           {{ content }}
         </div>
       </div>

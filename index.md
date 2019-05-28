@@ -1,4 +1,6 @@
 ---
+title: Some title
+subtitle: Some subbbbtitle
 layout: full
 width: full
 navbar:
@@ -8,7 +10,7 @@ navbar:
   transparent: true
   transparent_color: light
 header:
-  layout: center # Options: center 1-2 or 2-3
+  layout: 1-1 # Options: left, center, 1-1, 1-2, 1-3 or 2-3
   # background_color: "#1B33BF"
   background_image: sand.jpg
   background_video: sand.mp4
@@ -16,7 +18,7 @@ header:
   background_overlay: "rgba(5, 15, 140, 0.9)"
   color: light
   # section_size: large
-  height: full
+  # height: full
   parallax: true
   container:
     block: header-home
@@ -30,6 +32,7 @@ header:
   {% include features.html 
     block="feature" 
     background_color="muted" 
+    section_size="large"
     section_title="The first trully multipurpose Jekyll theme" 
     section_subtitle="Theme is loaded with awesome features and countless options giving you the flexibility to design your perfect site"
     section_align="center"

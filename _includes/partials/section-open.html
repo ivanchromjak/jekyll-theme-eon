@@ -1,4 +1,4 @@
-{%- unless include.section_size == 'none' -%}
+{%- if include.section_size -%}
   <div class="uk-cover-container{% if include.background_color == 'muted' or include.background_color == 'secondary' or include.background_color == 'primary' %} uk-section-{{ include.background_color }}{% endif %} uk-background-{{ include.background_align | default: 'center-center' }} uk-background-cover" style="{% if include.background_color contains '#' or include.background_color contains 'rgb' %}background-color: {{ include.background_color }};{% endif %}{% if include.background_image %}background-image: url({% if include.background_image contains 'http' %}{{ include.background_image }}{% else %}{{ site.uploads | absolute_url }}{{ include.background_image }}{% endif %});{% endif %}">
     {%- if include.background_video -%}
       <video autoplay loop muted playsinline data-uk-cover data-uk-video="autoplay: inview">
@@ -7,7 +7,7 @@
     {%- endif -%}
     <div class="uk-position-cover" style="{% if include.background_overlay %} background: {{ include.background_overlay }};{% endif %}"></div>
     <div class="uk-section uk-section-{{ include.section_size | default: 'regular' }}{% if include.section_padding %} uk-padding-{{ include.section_padding }}{% endif %}{% if include.section_height == 'viewport' %} uk-flex uk-flex-middle{% endif %}"{% if include.section_height == 'viewport' %} data-uk-height-viewport="offset-bottom: 80px"{% endif %}>
-{% endunless -%}
+{% endif -%}
 
 			<div class="{% unless include.section_container == 'none' %}uk-container{% endunless %}{% if include.section_container %} uk-container-{{ include.section_container | default: 'none' }}{% endif %} uk-position-relative uk-text-{{ include.content_align | default: include.section_align }}{% if include.content_color == 'light' %} uk-light{% endif %}"{% if include.content_color and include.content_color != 'light'%} style="color: {{ include.content_color }}"{% endif %}>
         {%- if include.section_title or include.section_subtitle -%}

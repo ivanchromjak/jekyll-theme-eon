@@ -7,7 +7,7 @@ navbar:
   transparent: true
   transparent_color: light
 header:
-  layout: center # Options: center 1-2 or 2-3
+  layout: 2-3 # Options: center 1-2 or 2-3
   height: full-
   background_image: header-home.jpg
   background_align: bottom-center

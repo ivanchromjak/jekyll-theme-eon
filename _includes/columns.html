@@ -1,0 +1,32 @@
+{% include partials/section-open.html 
+  section_size=include.section_size
+  section_padding=include.section_padding
+  section_align=include.section_align
+  section_height=include.section_height
+  section_color=include.section_color
+  section_container=include.section_container
+  section_title=include.section_title
+  section_subtitle=include.section_subtitle
+  background_color=include.background_color
+  background_image=include.background_image
+  background_video=include.background_video
+  background_align=include.background_align
+  background_overlay=include.background_overlay
+  content_align=include.content_align
+  content_color=include.content_color
+%}
+
+{% assign block = site.blocks | where:"slug", include.block | first %}
+<div class="uk-grid-large" data-uk-grid>
+  <div class="uk-width-expand@m">
+    <h3 class="uk-margin-remove-top">{{ block.title }}</h3>
+    {% if block.subtitle %}
+      <div class="uk-text-lead">{{ block.subtitle }}</div>
+    {% endif %}
+  </div>
+  <div class="uk-width-{{ include.width | default: '2-3' }}@m">{{ block.content }}</div>
+</div>
+
+{% include partials/section-close.html 
+  section_size=include.section_size 
+%}
