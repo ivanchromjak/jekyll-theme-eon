@@ -282,7 +282,7 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
 
 
 @mixin hook-heading-medium(){
-    font-weight: 100;
+    font-weight: 400;
 }
 
 // @mixin hook-card-media-top(){}
@@ -421,7 +421,7 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
     position: relative;
     font-size: 17px;
     line-height: $lh-l;
-    figure, .uk-slideshow {
+    .uk-slideshow {
         margin-top: $global-medium-margin * 1.1;
         margin-bottom: $global-medium-margin * 1.3;
     }

@@ -19,12 +19,12 @@
 {% assign block = site.blocks | where:"slug", include.block | first %}
 <div class="uk-grid-large" data-uk-grid>
   <div class="uk-width-expand@m">
-    <h3 class="uk-margin-remove-top">{{ block.title }}</h3>
+    <h3 class="uk-margin-remove-top uk-margin-small-bottom">{{ block.title }}</h3>
     {% if block.subtitle %}
       <div class="uk-text-lead">{{ block.subtitle }}</div>
     {% endif %}
   </div>
-  <div class="uk-width-{{ include.width | default: '2-3' }}@m">{{ block.content }}</div>
+  <div class="uk-width-{{ include.width | default: '2-3' }}@m{% if include.layout == 'right' %} uk-flex-first@m{% endif %}">{{ block.content }}</div>
 </div>
 
 {% include partials/section-close.html 

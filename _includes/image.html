@@ -1,5 +1,23 @@
+{% include partials/section-open.html 
+  section_size=include.section_size
+  section_padding=include.section_padding
+  section_align=include.section_align
+  section_height=include.section_height
+  section_color=include.section_color
+  section_container=include.section_container
+  section_title=include.section_title
+  section_subtitle=include.section_subtitle
+  background_color=include.background_color
+  background_image=include.background_image
+  background_video=include.background_video
+  background_align=include.background_align
+  background_overlay=include.background_overlay
+  content_align=include.content_align
+  content_color=include.content_color
+%}
+
 {% if include.lightbox == 'true' %}
-<figure data-uk-lightbox="animation: slide" class="{{ include.class }}">
+<figure data-uk-lightbox="animation: slide" class="{% unless include.section_size %}uk-margin-medium{% endunless %} {{ include.class }}">
     <a class="uk-inline" href="{% if include.img contains 'http' %}{{ include.img }}{% else %}{{ site.uploads | absolute_url }}{{ include.img }}{% endif %}"{% if include.caption %} caption="{{ include.caption }}"{% endif %}>
         <img src="{% if include.img contains 'http' %}{{ include.img }}{% else %}{{ site.uploads | absolute_url }}{{ include.img }}{% endif %}"{% if include.alt %} alt="{{ include.alt }}"{% endif %}>
         <div class="uk-position-center">
@@ -9,8 +27,12 @@
     {% if include.caption %}<figcaption data-uk-grid class="uk-flex-right"><span class="uk-width-auto">{{ include.caption }}</span></figcaption>{% endif %}
 </figure>
 {% else %}
-<figure class="{{ include.class }}">
+<figure class="{% unless include.section_size %}uk-margin-medium{% endunless %} {{ include.class }}">
     <img src="{% if include.img contains 'http' %}{{ include.img }}{% else %}{{ site.uploads | absolute_url }}{{ include.img }}{% endif %}"{% if include.alt %} alt="{{ include.alt }}"{% endif %}>
     {% if include.caption %}<figcaption data-uk-grid class="uk-flex-right"><span class="uk-width-auto">{{ include.caption }}</span></figcaption>{% endif %}
 </figure>
 {% endif %}
+
+{% include partials/section-close.html 
+  section_size=include.section_size 
+%}

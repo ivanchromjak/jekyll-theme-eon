@@ -32,8 +32,7 @@
   {% assign grid = 'uk-child-width-expand@m' %}
 {% endif %}
 
-{% assign blocks = (site.blocks | sort: 'card[slug]') %}
-
+{%- assign blocks = (site.blocks | sort: 'card[slug]') -%}
     <div class="{{ grid }} uk-grid-match uk-flex-center" data-uk-grid>
       {% for block in blocks %}
         {% if block.slug contains include.block %}

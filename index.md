@@ -18,7 +18,7 @@ header:
   background_overlay: "rgba(5, 15, 140, 0.9)"
   color: light
   # section_size: large
-  # height: full
+  height: full
   parallax: true
   container:
     block: header-home
@@ -89,6 +89,7 @@ header:
   %}
 
   {% include portfolio.html 
+    section_size="large"
     section_title="Portfolio" 
     section_align="center"
     background_color="muted"

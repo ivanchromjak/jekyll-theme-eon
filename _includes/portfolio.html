@@ -16,25 +16,23 @@
   content_color=include.content_color
 %}
 
-	{% assign topics = '' %}
+{% assign topics = '' %}
 
-	{% for post in site.portfolio %}
-		{% assign t = post.topics | join: "," %}
-		{% if t != "" %}
-			{% capture topics %}{{topics}}{{t}},{% endcapture %}
-		{% endif %}
-	{% endfor %}
+{% for post in site.portfolio %}
+  {% assign t = post.topics | join: "," %}
+  {% if t != "" %}
+    {% capture topics %}{{topics}}{{t}},{% endcapture %}
+  {% endif %}
+{% endfor %}
 
-	{% assign topics = topics | split: "," | uniq | sort: self %}
+{% assign topics = topics | split: "," | uniq | sort: self %}
 
-	{% if include.topic %}
-		{% assign portfolio = site.portfolio | where: "topics", include.topic %}
-	{% else %}
-		{% assign portfolio = site.portfolio %}
-	{% endif %}
-
-	<div data-uk-filter="target: [data-uk-grid]; animation: 500">
-
+{% if include.topic %}
+  {% assign portfolio = site.portfolio | where: "topics", include.topic %}
+{% else %}
+  {% assign portfolio = site.portfolio %}
+{% endif %}
+  <div data-uk-filter="target: [data-uk-grid]; animation: 500">
 		{% unless include.topic %}
 			<ul class="uk-subnav uk-subnav-pill uk-flex uk-flex-center uk-margin-medium-bottom">
 				<li class="uk-active" uk-filter-control><a href="#">All</a></li>
