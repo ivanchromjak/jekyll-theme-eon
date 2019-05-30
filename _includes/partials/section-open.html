@@ -10,7 +10,7 @@
 			<div class="{% unless include.section_container == 'none' %}uk-container{% endunless %}{% if include.section_container %} uk-container-{{ include.section_container | default: 'none' }}{% endif %} uk-position-relative uk-text-{{ include.content_align | default: include.section_align }}{% if include.content_color == 'light' %} uk-light{% endif %}"{% if include.content_color and include.content_color != 'light'%} style="color: {{ include.content_color }}"{% endif %}>
         {%- endif -%}
         {%- if include.section_title or include.section_subtitle -%}
-          <div class="section-title-{{ include.section_align | default: 'left' }} uk-margin-medium-bottom{% if include.section_color == 'light' %} uk-light{% endif %}">  
+          <div class="section-title-{{ include.section_align | default: 'left' }} uk-margin-large-bottom{% if include.section_color == 'light' %} uk-light{% endif %}">  
             {%- if include.section_title -%}
               <h2 class="uk-margin-remove uk-text-{{ include.section_align | default: 'left' }}"{% if include.section_color and include.section_color != 'light'%} style="color: {{ include.section_color }}"{% endif %}>{{ include.section_title }}</h2>
             {%- endif -%}

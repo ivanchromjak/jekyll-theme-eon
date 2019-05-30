@@ -1,7 +1,7 @@
 ---
 title: The example design case
 subtitle: Lorem ipsum dolor sit amet, consetetur sadipscing tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-image: https://source.unsplash.com/-WW6b0Mwplc/500x500
+image: alisha-hieb-thumb.jpg
 topics: [Portraits]
 # container: xsmall
 navbar:
@@ -12,9 +12,9 @@ header:
   layout: center # Options: center 1-2 or 2-3
   # height: full
   # background_color: "#1B33BF"
-  background_image: https://source.unsplash.com/-WW6b0Mwplc/1500x500
+  background_image: alisha-hieb.jpg
   # background_align: center-center
-  background_overlay: "rgba(0, 0, 0, 0.5)"
+  background_overlay: "rgba(0, 0, 0, 0.7)"
   color: light
   section_size: xlarge
   parallax: true
@@ -26,16 +26,8 @@ header:
 {% include columns.html 
 	width="2-3"
   block="content-post"
-  section_size="medium"
+  section_size="small"
   section_container="small"
-%}
-
-{% include columns.html 
-	width="2-3"
-  block="content-post2"
-  section_size="medium"
-  section_container="small"
-  section_padding="remove-top"
 %}
 
 {% include gallery.html 
@@ -43,17 +35,17 @@ header:
 	gallery="portfolio-1"
 	caption="true"
 	lightbox="true"
-  section_size="medium"
+  section_size="small"
 %}
 
 {% include columns.html 
 	width="2-3"
-  block="content-post3"
-  section_size="medium"
+  block="content-post2"
+  section_size="small"
   section_container="small"
 %}
 
 {% include image.html 
 	img="alexander-read.jpg"
-  section_size="medium"
+  section_size="small"
 %}

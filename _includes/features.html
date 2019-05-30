@@ -90,7 +90,7 @@
                 {% elsif block.image %}
                   <img class="uk-margin-medium-bottom" data-src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}" data-width data-height data-uk-img>
                 {% endif %}
-                <h3 class="uk-margin-remove">{{ block.title }}</h3>
+                <h3 class="uk-margin-remove uk-card-title">{{ block.title }}</h3>
                 {% if block.subtitle %}
                   <div class="uk-text-large uk-margin-small">{{ block.subtitle }}</div>
                 {% endif %}

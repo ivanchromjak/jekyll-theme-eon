@@ -78,13 +78,13 @@
             {% if page.header.container.block %}
               {%- assign container = site.blocks | where:"slug", page.header.container.block | first -%}
               {% unless page.header.container.title == false %}
-                <h1 class="uk-heading-medium">{{ container.title | escape }}</h1>
+                <h1 class="uk-heading-small">{{ container.title | escape }}</h1>
               {% endunless %}
               {% if container.subtitle %}
                 <div class="uk-text-lead">{{ container.subtitle }}</div>
               {% endif %}
               {% if container.content %}
-                <div class="uk-margin-medium-top">
+                <div class="uk-margin-large-top">
                   {{ container.content }}
                 </div>
               {% endif %}
@@ -97,13 +97,13 @@
             {% if page.header.container.block %}
               {%- assign container = site.blocks | where:"slug", page.header.container.block | first -%}
               {% unless page.header.container.title == false %}
-                <h1 class="uk-heading-medium">{{ container.title | escape }}</h1>
+                <h1 class="uk-heading-small">{{ container.title | escape }}</h1>
               {% endunless %}
               {% if container.subtitle %}
                 <div class="uk-text-lead">{{ container.subtitle }}</div>
               {% endif %}
               {% if container.content %}
-                <div class="uk-margin-medium-top">
+                <div class="uk-margin-large-top">
                   {{ container.content }}
                 </div>
               {% endif %}
@@ -119,7 +119,7 @@
                 <div class="uk-text-lead">{{ container-2.subtitle }}</div>
               {% endif %}
               {% if container-2.content %}
-                <div class="uk-margin-medium-top">
+                <div class="uk-margin-large-top">
                   {{ container-2.content }}
                 </div>
               {% endif %}
@@ -129,7 +129,7 @@
       {% elsif page.header.layout == 'left' %}
         <div class="uk-flex uk-flex-middle" data-uk-grid>
           <div class="uk-width-2-3@m">
-            <h1 class="uk-heading-medium">{{ page.title | escape }}</h1>
+            <h1 class="uk-heading-small">{{ page.title | escape }}</h1>
             {% if page.subtitle %}
               <div class="uk-text-lead">{{ page.subtitle }}</div>
             {% endif %}
@@ -138,7 +138,7 @@
       {% elsif page.header.layout == 'center' %}
         <div class="uk-flex uk-text-center uk-flex-middle uk-flex-center uk-container uk-container-small">
           <div class="uk-width-1-1">
-            <h1 class="uk-heading-medium">{{ page.title | escape }}</h1>
+            <h1 class="uk-heading-small">{{ page.title | escape }}</h1>
             {% if page.subtitle %}
               <div class="uk-text-lead">{{ page.subtitle }}</div>
             {% endif %}

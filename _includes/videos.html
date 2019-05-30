@@ -34,7 +34,7 @@
 			<div>
 				<div class="uk-card uk-card-default uk-box-shadow-small uk-box-shadow-hover-medium uk-card-body uk-inline border-radius-large border-xlight">
 					<a class="uk-position-cover" href="{{ block.video }}" data-caption="{{ block.title }}"></a>
-					<span data-uk-icon="icon: play-circle; ratio: 3.4" class=""></span>
+					<div class="icon">{% include icons/ios-play-button-circled.svg %}</div>
 					<h3 class="uk-card-title uk-margin">{{ block.title }}</h3>
 					{% if block.content %}
 						<p>{{ block.content }}</p>

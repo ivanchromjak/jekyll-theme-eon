@@ -12,8 +12,8 @@ navbar:
 header:
   layout: 1-1 # Options: left, center, 1-1, 1-2, 1-3 or 2-3
   # background_color: "#1B33BF"
-  background_image: sand.jpg
-  background_video: sand.mp4
+  # background_image: sand.jpg
+  # background_video: sand.mp4
   # background_align: center-center
   background_overlay: "rgba(5, 15, 140, 0.9)"
   color: light
@@ -31,8 +31,8 @@ header:
 
   {% include features.html 
     block="feature" 
-    background_color="muted" 
-    section_size="large"
+    background_color="default" 
+    section_size="medium"
     section_title="The first trully multipurpose Jekyll theme" 
     section_subtitle="Theme is loaded with awesome features and countless options giving you the flexibility to design your perfect site"
     section_align="center"
@@ -45,7 +45,7 @@ header:
     block="home-why-jekyll" 
     section_title="Why use Eon theme?"
     section_align="center"
-    section_size="large"
+    section_size="medium"
     section_color="light"
     background_color="primary"
     media="top" 
@@ -55,6 +55,7 @@ header:
 
   {% include cards.html 
     block="home-cta" 
+    section_size="medium"
     section_title="Why switch to Jekyll" 
     section_align="center"
     background_color="default" 
@@ -66,6 +67,7 @@ header:
 
   {% include cards.html 
     block="pricing" 
+    section_size="medium"
     section_title="Pricing" 
     section_align="center"
     background_color="muted" 
@@ -76,6 +78,7 @@ header:
   {% include videos.html 
     block="video" 
     columns="3" 
+    section_size="medium"
     section_align="center"
     section_title="Video Tutorials" 
     section_subtitle="Watch screencasts to get you started fast with Jekyll" 
@@ -84,12 +87,13 @@ header:
   {% include video.html 
     block="video-home2" 
     background_color="primary" 
+    section_size="medium"
     section_align="center" 
     section_container="small"
   %}
 
   {% include portfolio.html 
-    section_size="large"
+    section_size="medium"
     section_title="Portfolio" 
     section_align="center"
     background_color="muted"
@@ -97,6 +101,7 @@ header:
   %}
 
   {% include gallery.html 
+    section_size="medium"
     section_title="Gallery" 
     section_align="center"
     background_color="default"
@@ -109,7 +114,7 @@ header:
   {% include faqs.html 
     background_color="default"
     multiple="true" 
-    section_size="large"
+    section_size="medium"
     section_title="Frequently asked questions" 
     section_container="small"
     section_align="center"
@@ -121,6 +126,7 @@ header:
   {% include slider.html 
     block="home-cta" 
     layout="card-top" 
+    section_size="medium"
     section="muted" 
     section_align="center"  
     section_title="Slider" 
@@ -130,14 +136,12 @@ header:
   %}
 
   {% include slider.html 
-    section_size="none"
     section_container="none"
     block="home-cta" 
     color="light" 
   %}
 
   {% include map.html 
-    section_size="none"
     section_container="none"
     latitude="19.4230622" 
     longitude="-99.1583328" 
@@ -151,7 +155,7 @@ header:
     button_url="https://www.envato.com" 
     section_subtitle="Experience the advatages of running a static Jekyll site and concentrate an what is important."
     blank="true" 
-    section_size="large"
+    section_size="medium"
     section_align="center"
     background_image="mouse.jpg"
     background_video="mouse.mp4"
@@ -167,7 +171,7 @@ header:
     section_title="We are here to help" 
     section_subtitle="Our team is just an email away ready to answer your questions" 
     section_align="center"
-    section_size="large"
+    section_size="medium"
     background_color="muted" 
   %}
 
@@ -175,8 +179,6 @@ header:
     cols="5" 
     count="5" 
     gutter="false"
-    section_size="none"
-    section_container="none"
   %}
 {% else %}
 

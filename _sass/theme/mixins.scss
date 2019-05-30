@@ -281,7 +281,15 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
 }
 
 
+@mixin hook-heading-small(){
+    font-weight: 400;
+}
+
 @mixin hook-heading-medium(){
+    font-weight: 400;
+}
+
+@mixin hook-heading-large(){
     font-weight: 400;
 }
 
@@ -486,6 +494,15 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
 //
 // ========================================================================
 @mixin hook-utility-misc(){
+
+    .icon > svg {
+        fill: $global-primary-background;
+        width: 68px;
+    }
+
+    .uk-section-primary:not(.uk-preserve-color) .icon > svg {
+        fill: #fff
+    }
     .opacity:hover {
         opacity: .85;
     }
