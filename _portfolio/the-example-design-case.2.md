@@ -1,7 +1,7 @@
 ---
 title: Stationery design case
 subtitle: Lorem ipsum dolor sit amet, consetetur sadipscing tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-image: thumb-kinfolk-design.jpg
+image: thumb-cereal-travel-style.jpg
 topics: [Stationery]
 navbar:
   sticky: false

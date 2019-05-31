@@ -1,8 +1,8 @@
 ---
-title: Stationery design case
+title: Book design case
 subtitle: Lorem ipsum dolor sit amet, consetetur sadipscing tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-image: thumb-kinfolk-design.jpg
-topics: [Stationery]
+image: thumb-alisha-hieb.jpg
+topics: [Book]
 navbar:
   sticky: false
   transparent: true

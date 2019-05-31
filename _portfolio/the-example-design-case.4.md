@@ -1,7 +1,7 @@
 ---
-title: Stationery design case
+title: The example design case
 subtitle: Lorem ipsum dolor sit amet, consetetur sadipscing tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-image: thumb-kinfolk-design.jpg
+image: thumb-still.jpg
 topics: [Stationery]
 navbar:
   sticky: false
