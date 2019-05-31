@@ -34,7 +34,7 @@ header:
     background_color="default" 
     section_size="medium"
     section_title="The first trully multipurpose Jekyll theme" 
-    section_subtitle="Theme is loaded with awesome features and countless options giving you the flexibility to design your perfect site"
+    section_subtitle="Loaded with awesome features and options to design your perfect site"
     section_align="center"
     content_align="center"
     media="top"
@@ -68,7 +68,7 @@ header:
   {% include cards.html 
     block="pricing" 
     section_size="medium"
-    section_title="Pricing" 
+    section_title="Pricing Cards" 
     section_align="center"
     background_color="muted" 
     style="default"

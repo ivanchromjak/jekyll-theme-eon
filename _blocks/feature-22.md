@@ -3,4 +3,4 @@ title: Portfolio
 icon: ios-diamond.svg
 ---
 
-Show off your portfolio with options to view an image in lightbox or open a portfolio post.
+Show off your work and process with image and video galleries.

@@ -3,15 +3,14 @@ title: Standard
 heading: $9
 ---
 
-Monthly payment
-Minimum term 6 months
+Minimum six months payments
 
 {:.included}
 - Access to Video Courses
 - Access for Two Devices
+- 30-Days Free Trial
 
 {:.not-included}
-- 30-Days Free Trial
 - Unlimited Projects
 
 {% include button.html text="Download" url="download" style="primary" size="large" %}

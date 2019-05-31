@@ -3,4 +3,4 @@ title: Google Maps
 icon: ios-google-maps.svg
 ---
 
-Add maps to as sections or in pages and posts.
+Add Google maps as a page section or in post content.

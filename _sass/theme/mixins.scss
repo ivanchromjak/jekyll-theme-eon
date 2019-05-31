@@ -776,22 +776,19 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
     .included, .not-included {
         list-style: none;
         padding: 0;
-        li::before {
-            margin-right: 10px;
+        margin-bottom: $global-medium-margin;
+        li {
+            margin-top: $global-small-margin;
         }
     }
 
     .included {
-        li::before {
-            content: "+";
-        }
+        margin-top: $global-medium-margin;
     }
 
-    .not-included {
-        margin-top: -$global-margin;
-        li::before {
-            content: "-";
-        }
+    .included ~ .not-included {
+        margin-top: -(3 * $global-small-margin);
+        color: $global-muted-color;
     }
     
 

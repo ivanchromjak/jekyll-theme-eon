@@ -3,12 +3,11 @@ title: Free
 heading: $0
 ---
 
-Monthly payment
-Minimum term 6 months
+No monthly payments
 
 {:.included}
 - Access to Video Courses
-- Access for Two Devices
+- Access for One Devices
 
 {:.not-included}
 - 30-Days Free Trial

@@ -3,4 +3,4 @@ title: Videos
 icon: ios-play-button-circled.svg
 ---
 
-Sections with videos played in popup lihtbox.
+Section of cards with videos played in a popup lihtbox.

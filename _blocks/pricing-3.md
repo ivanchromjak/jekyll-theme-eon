@@ -3,14 +3,11 @@ title: Premium
 heading: $19
 ---
 
-Monthly payment
-Minimum term 6 months
+Minimum six months payments
 
 {:.included}
 - Access to Video Courses
-- Access for Two Devices
-
-{:.not-included}
+- Access for Three Devices
 - 30-Days Free Trial
 - Unlimited Projects
 
