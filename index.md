@@ -53,16 +53,17 @@ header:
     grid="1-3"
   %}
 
-  {% include cards.html 
-    block="home-cta" 
+  {% include blog.html 
     section_size="medium"
-    section_title="Why switch to Jekyll" 
+    section_title="Latest Posts" 
     section_align="center"
     background_color="default" 
     style="default" 
     media="top" 
     content_align="left"
     grid="1-3"
+    count="6"
+    view_all="blog/"
   %}
 
   {% include cards.html 
