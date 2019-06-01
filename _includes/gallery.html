@@ -17,14 +17,19 @@
 %}
 
 {% assign cols = include.cols | default: '4') %}
-<div class="uk-child-width-1-2@s uk-child-width-1-{{ cols }}@m" data-uk-grid="masonry: true"{% if include.lightbox %} data-uk-lightbox="animation: slide"{% endif %}>
+<div class="uk-child-width-1-2@s uk-child-width-1-{{ cols }}@m{% if include.gutter == 'false' %} uk-grid-collapse{% endif %}" data-uk-grid="masonry: true"{% if include.lightbox %} data-uk-lightbox="animation: slide"{% endif %}>
   {% for image in site.static_files %}
     {% if image.path contains include.gallery %}
       <div>
         {% if include.lightbox %}
-          <a class="uk-inline" href="{{ image.path | relative_url }}"{% if include.caption %} data-caption="{{ image.basename | replace: '-', ' ' | capitalize }}"{% endif %}>
+          <div class="uk-inline uk-light uk-transition-toggle">
             <img src="{{ image.path | relative_url }}" alt="{{ image.basename | replace: '-', ' ' | capitalize }}">
-          </a>
+            <a class="uk-overlay uk-overlay-primary uk-position-cover uk-transition-fade" href="{{ image.path | relative_url }}"{% if include.caption %} data-caption="{{ image.basename | replace: '-', ' ' | capitalize }}"{% endif %}>
+							<div class="uk-position-center">
+								<span data-uk-icon="icon: plus; ratio: 1.5"></span>
+							</div>
+            </a>
+          </div>
         {% else %}
           <img src="{{ image.path | relative_url }}" alt="{{ image.basename | replace: '-', ' ' | capitalize }}">
         {% endif %}
@@ -32,7 +37,6 @@
     {% endif %}
   {% endfor %}
 </div>
-
 {% include partials/section-close.html 
   section_size=include.section_size 
 %}

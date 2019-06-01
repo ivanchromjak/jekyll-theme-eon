@@ -2,7 +2,7 @@
 title: Cover design case
 subtitle: Lorem ipsum dolor sit amet, consetetur sadipscing tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
 image: thumb-olia-gozha.jpg
-topics: [Cover]
+topics: [Covers]
 navbar:
   sticky: false
   transparent: true

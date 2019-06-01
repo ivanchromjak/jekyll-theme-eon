@@ -17,22 +17,28 @@
 %}
 {%- assign block = site.blocks | where:"slug", include.block | first -%}
 {%- if include.section_align == 'center' -%}
-  <h2 class="uk-h1">{{ block.title }}</h2>
+  <h2 class="uk-margin-remove">{{ block.title }}</h2>
+  {% if block.subtitle %}
+    <p class="uk-margin-small-top uk-margin-remove-bottom uk-text-lead">{{ block.subtitle }}</p>
+  {% endif %}
   <div class="uk-margin-medium-top" data-uk-lightbox>
     <a href="{{ block.video }}" data-caption="{{ block.title }}"><div class="icon">{% include icons/ios-play-button-circled.svg %}</div></a>
   </div>
-  {% if block.content %}<div class="uk-margin-medium-top">{{ block.content }}</div>{% endif %}
+  {% unless block.content == blank %}<div class="uk-margin-medium-top">{{ block.content }}</div>{% endunless %}
 {%- else -%}
 	<div class="uk-flex uk-flex-middle uk-grid-large" data-uk-grid data-uk-lightbox>
 		<div class="uk-width-expand">
-			<h2 class="uk-h1">{{ block.title }}</h2>
+			<h2 class="uk-margin-remove">{{ block.title }}</h2>
+      {% if block.subtitle %}
+        <p class="uk-margin-small-top uk-margin-remove-bottom uk-text-lead">{{ block.subtitle }}</p>
+      {% endif %}
 		</div>
 		<div class="uk-width-auto">
 			<div data-uk-lightbox>
 				<a href="{{ block.video }}" data-caption="{{ block.title }}"><div class="icon">{% include icons/ios-play-button-circled.svg %}</div></a>
 			</div>
 		</div>
-		{% if block.content %}<div class="uk-width-expand">{{ block.content }}</div>{% endif %}
+		{% unless block.content == blank %}<div class="uk-width-expand">{{ block.content }}</div>{% endunless %}
 	</div>
 {%- endif -%}
 {% include partials/section-close.html 

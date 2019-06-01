@@ -76,7 +76,7 @@ header:
   %}
 
   {% include videos.html 
-    block="video" 
+    block="video-home" 
     columns="3" 
     section_size="medium"
     section_align="center"
@@ -85,7 +85,7 @@ header:
   %}
 
   {% include video.html 
-    block="video-home2" 
+    block="video-intro" 
     background_color="primary" 
     section_size="medium"
     section_align="center" 
@@ -102,11 +102,12 @@ header:
 
   {% include gallery.html 
     section_size="medium"
-    section_title="Gallery" 
+    section_title="Image Gallery" 
     section_align="center"
     background_color="default"
-    cols="2"
-    gallery="slideshow-1"
+    cols="3"
+    gutter="true"
+    gallery="gallery-1"
     caption="true"
     lightbox="true"
   %}
@@ -137,8 +138,9 @@ header:
 
   {% include slider.html 
     section_container="none"
-    block="home-cta" 
+    block="slider-home" 
     color="light" 
+    display_title="true"
   %}
 
   {% include map.html 

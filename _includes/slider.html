@@ -40,7 +40,7 @@
 						</div>
 					{% else %}
 						<img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
-						<div class="uk-position-center uk-panel"><h3 class="uk-card-title">{{ block.title }}</h3></div>
+						<div class="uk-position-center uk-panel">{% unless include.display_title == "false" %}<h3 class="uk-card-title">{{ block.title }}</h3>{% endunless %}</div>
 					{% endif %}
 				</li>
 			{% endif %}

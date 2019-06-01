@@ -13,4 +13,4 @@ Minimum six months payments
 {:.not-included}
 - Unlimited Projects
 
-{% include button.html text="Download" url="download" style="primary" size="large" %}
+{% include button.html text="Start Trial" url="#" style="primary" size="large" %}

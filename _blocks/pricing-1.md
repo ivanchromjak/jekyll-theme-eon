@@ -13,4 +13,4 @@ No monthly payments
 - 30-Days Free Trial
 - Unlimited Projects
 
-{% include button.html text="Download" url="download" style="default" size="large" %}
+{% include button.html text="Start Free" url="#" style="default" size="large" %}

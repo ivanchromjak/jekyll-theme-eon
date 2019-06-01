@@ -2,7 +2,7 @@
 title: Book design case
 subtitle: Lorem ipsum dolor sit amet, consetetur sadipscing tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
 image: thumb-alisha-hieb.jpg
-topics: [Book]
+topics: [Books]
 navbar:
   sticky: false
   transparent: true
