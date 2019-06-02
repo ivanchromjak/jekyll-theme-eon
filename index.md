@@ -15,9 +15,10 @@ header:
   background_image: BlackLavaField.jpg
   background_video: BlackLavaField.mp4
   # background_align: center-center
-  background_overlay: "rgba(5, 15, 140, 0.75)"
+  background_overlay: "rgba(0, 0, 0, 0.35)" #"rgba(5, 15, 140, 0.75)"
   color: light
   # section_size: large
+  heading_size: large
   height: full
   parallax: true
   container:

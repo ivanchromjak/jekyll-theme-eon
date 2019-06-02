@@ -78,7 +78,7 @@
             {% if page.header.container.block %}
               {%- assign container = site.blocks | where:"slug", page.header.container.block | first -%}
               {% unless page.header.container.title == false %}
-                <h1 class="uk-heading-small">{{ container.title | escape }}</h1>
+                <h1 class="uk-heading-{{ page.header.heading_size | default: 'medium' }}">{{ container.title | escape }}</h1>
               {% endunless %}
               {% if container.subtitle %}
                 <div class="uk-text-lead">{{ container.subtitle }}</div>
@@ -97,7 +97,7 @@
             {% if page.header.container.block %}
               {%- assign container = site.blocks | where:"slug", page.header.container.block | first -%}
               {% unless page.header.container.title == false %}
-                <h1 class="uk-heading-small">{{ container.title | escape }}</h1>
+                <h1 class="uk-heading-{{ page.header.heading_size | default: 'medium' }}">{{ container.title | escape }}</h1>
               {% endunless %}
               {% if container.subtitle %}
                 <div class="uk-text-lead">{{ container.subtitle }}</div>
@@ -113,7 +113,7 @@
             {% if page.header.container.block %}
               {%- assign container-2 = site.blocks | where:"slug", page.header.container-2.block | first -%}
               {% unless page.header.container-2.title == false %}
-                <h1 class="uk-heading-hero">{{ container-2.title | escape }}</h1>
+                <h1 class="uk-heading-{{ page.header.heading_size | default: 'medium' }}">{{ container-2.title | escape }}</h1>
               {% endunless %}
               {% if container-2.subtitle %}
                 <div class="uk-text-lead">{{ container-2.subtitle }}</div>
@@ -129,7 +129,7 @@
       {% elsif page.header.layout == 'left' %}
         <div class="uk-flex uk-flex-middle" data-uk-grid>
           <div class="uk-width-2-3@m">
-            <h1 class="uk-heading-small">{{ page.title | escape }}</h1>
+            <h1 class="uk-heading-{{ page.header.heading_size | default: 'medium' }}">{{ page.title | escape }}</h1>
             {% if page.subtitle %}
               <div class="uk-text-lead">{{ page.subtitle }}</div>
             {% endif %}
@@ -138,7 +138,7 @@
       {% elsif page.header.layout == 'center' %}
         <div class="uk-flex uk-text-center uk-flex-middle uk-flex-center uk-container uk-container-small">
           <div class="uk-width-1-1">
-            <h1 class="uk-heading-small">{{ page.title | escape }}</h1>
+            <h1 class="uk-heading-{{ page.header.heading_size | default: 'medium' }}">{{ page.title | escape }}</h1>
             {% if page.subtitle %}
               <div class="uk-text-lead">{{ page.subtitle }}</div>
             {% endif %}

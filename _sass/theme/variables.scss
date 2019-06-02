@@ -19,7 +19,7 @@ $global-muted-color:                            #A9AAAB;
 $global-border:                                 #cccace;
 
 
-$base-heading-font-family:                      'Merriweather', serif; //system-ui; //'Playfair Display', serif;
+// $base-heading-font-family:                      'Merriweather', serif; //system-ui; //'Playfair Display', serif;
 $base-heading-font-weight:                      bold;
 // $base-body-font-weight: 300;
 // $base-heading-font-weight: 300;
@@ -45,6 +45,8 @@ $button-warning-hover-background:               darken($button-warning-backgroun
 $button-success-background:                     $global-success-background;
 $button-success-hover-background:               darken($button-success-background, 5%);
 
+$inverse-button-primary-color:                  #222;
+$inverse-button-primary-hover-color:            #000;
 
 // Custom variables
 $lh-l:                                          1.8;
