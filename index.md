@@ -12,10 +12,10 @@ navbar:
 header:
   layout: 1-1 # Options: left, center, 1-1, 1-2, 1-3 or 2-3
   # background_color: "#1B33BF"
-  # background_image: sand.jpg
-  # background_video: sand.mp4
+  background_image: BlackLavaField.jpg
+  background_video: BlackLavaField.mp4
   # background_align: center-center
-  background_overlay: "rgba(5, 15, 140, 0.9)"
+  background_overlay: "rgba(5, 15, 140, 0.75)"
   color: light
   # section_size: large
   height: full
@@ -125,8 +125,31 @@ header:
     section_subtitle="Find quicke answers to frequent pre-sale questions asked by customers" 
   %}
 
+  {% include cards.html 
+    block="home-card-2" 
+    media="left" 
+    section_size="medium"
+    section="muted" 
+    section_align="center"  
+    content_align="left"
+    center="true-"
+  %}
+
+  {% include cards.html 
+    block="home-card-1" 
+    media="right" 
+    section_size="medium"
+    section="muted" 
+    section_align="center"  
+    background_color="muted"
+    content_align="left"
+    center="true-"
+  %}
+
+
+
   {% include slider.html 
-    block="home-cta" 
+    block="home-card" 
     layout="card-top" 
     section_size="medium"
     section="muted" 
@@ -162,7 +185,7 @@ header:
     section_align="center"
     background_image="mouse.jpg"
     background_video="mouse.mp4"
-    background_overlay="rgba(1, 3, 38, 0.88)"
+    background_overlay="rgba(0, 0, 0, 0.8)"
     section_container="small"
     section_color="#fff"
     content_align="center"

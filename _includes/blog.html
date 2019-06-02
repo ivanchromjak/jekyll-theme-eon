@@ -40,10 +40,12 @@
     {% for post in site.posts | limit: count %}
       <div>
         <div class="uk-card uk-card-default uk-card-blog">
-          <div class="uk-card-media-top uk-inline">
-            <img src="{% if post.image contains 'http' %}{{ post.image }}{% else %}{{ site.uploads | absolute_url }}{{ post.image }}{% endif %}" alt="{{ post.title }}">
-            <a class="uk-overlay uk-position-cover" href="{{ post.url | relative_url }}"></a>
-          </div>
+          {% if post.image %}
+            <div class="uk-card-media-top uk-inline">
+              <img src="{% if post.image contains 'http' %}{{ post.image }}{% else %}{{ site.uploads | absolute_url }}{{ post.image }}{% endif %}" alt="{{ post.title }}">
+              <a class="uk-overlay uk-position-cover" href="{{ post.url | relative_url }}"></a>
+            </div>
+          {% endif %}
           <div class="uk-card-body">
             <h3 class="uk-card-title"><a class="uk-link-heading" href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
           </div>
