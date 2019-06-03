@@ -32,13 +32,13 @@
 		{% for block in site.blocks %}
 			{% if block.slug contains include.block %}
 			<div>
-				<div class="uk-card uk-card-default uk-box-shadow-small uk-box-shadow-hover-medium uk-card-body uk-inline border-radius-large border-xlight">
+				<div class="uk-card uk-card-default uk-box-shadow-small uk-box-shadow-hover-medium uk-card-body uk-inline">
 					<a class="uk-position-cover" href="{{ block.video }}" data-caption="{{ block.title }}"></a>
 					<div class="icon">{% include icons/ios-play-button-circled.svg %}</div>
-					<h3 class="uk-card-title uk-margin">{{ block.title }}</h3>
-					{% if block.content %}
-						<p>{{ block.content }}</p>
-					{% endif %}
+					<h3 class="uk-card-title uk-margin-top uk-margin-small-bottom">{{ block.title }}</h3>
+					{% unless block.content == blank %}
+						<div class="card-content text-smaller">{{ block.content }}</div>
+					{% endunless %}
 				</div>
 			</div>
 			{% endif %}

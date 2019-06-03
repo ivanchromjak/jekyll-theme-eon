@@ -249,6 +249,10 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
 }
 
 @mixin hook-card-misc(){
+    .card-content>:last-child {
+        margin-bottom: 0;
+    }
+
 	.uk-position-cover {
 			// z-index: 1;
 	}
@@ -312,6 +316,12 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
     // .uk-accordion-content {
     //     padding: 0 25px 25px;
     // }
+}
+
+@mixin hook-height-misc(){
+  .height-xlarge {
+    height: 500px;
+  }
 }
 
 //
@@ -494,6 +504,10 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
 //
 // ========================================================================
 @mixin hook-utility-misc(){
+
+    .text-smaller {
+        font-size: 0.9375rem;
+    }
 
     .icon > svg {
         fill: $global-primary-background;

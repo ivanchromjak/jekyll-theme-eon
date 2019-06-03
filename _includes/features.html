@@ -32,7 +32,7 @@
   {% assign grid = 'uk-child-width-expand@m' %}
 {% endif %}
 
-    <div class="{{ grid }} uk-grid-match" data-uk-grid>
+    <div class="{{ grid }} uk-grid-match uk-grid-large" data-uk-grid>
       {% assign blocks = (site.blocks | sort: 'card[slug]') %}
       {% for block in blocks %}
         {% if block.slug contains include.block %}
@@ -55,7 +55,7 @@
                       <div class="uk-text-large uk-margin-small">{{ block.subtitle }}</div>
                     {% endif %}
                     {% if block.content %}
-                      <div class="uk-margin-top">{{ block.content }}</div>
+                      <div class="uk-margin-top text-smaller">{{ block.content }}</div>
                     {% endif %}
                   </div>
                 </div>
@@ -69,7 +69,7 @@
                       <div class="uk-text-large uk-margin-small">{{ block.subtitle }}</div>
                     {% endif %}
                     {% if block.content %}
-                      <div class="uk-margin-top">{{ block.content }}</div>
+                      <div class="uk-margin-top text-smaller">{{ block.content }}</div>
                     {% endif %}
                   </div>
                 </div>
@@ -86,16 +86,16 @@
             {% elsif include.media == 'top' %}
               <div class="box">
                 {% if block.icon %}
-                  <div class="uk-margin-medium-bottom">{% include icons/{{ block.icon }} %}</div>
+                  <div class="uk-margin-bottom">{% include icons/{{ block.icon }} %}</div>
                 {% elsif block.image %}
-                  <img class="uk-margin-medium-bottom" data-src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}" data-width data-height data-uk-img>
+                  <img class="uk-margin-bottom" data-src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}" data-width data-height data-uk-img>
                 {% endif %}
                 <h3 class="uk-margin-remove uk-card-title">{{ block.title }}</h3>
                 {% if block.subtitle %}
                   <div class="uk-text-large uk-margin-small">{{ block.subtitle }}</div>
                 {% endif %}
                 {% if block.content %}
-                  <div class="uk-margin-top">{{ block.content }}</div>
+                  <div class="uk-margin-small-top text-smaller">{{ block.content }}</div>
                 {% endif %}
               </div>
             {% else %}

@@ -1,15 +1,15 @@
-<footer class="uk-section uk-section-{{ site.footer.style | default: 'muted' }} uk-text-muted">
+<footer class="uk-section uk-section-large uk-section-{{ site.footer.style | default: 'muted' }} uk-text-muted">
   <div class="uk-container">
-    <div class="uk-grid-large uk-grid-margin-large" data-uk-grid>
-      <div class="uk-width-expand@l uk-width-1-2@m">
+    <div class="uk-grid-margin-large" data-uk-grid>
+      <div class="uk-width-medium@l uk-width-1-3@m">
         <div class="uk-margin">
-          <a class="uk-logo" href="{{ "/" | relative_url }}">
-            {% if site.logo_image.light or site.logo_image.dark %}
-              {% if site.logo_image.light %}
-                <img class="uk-logo-inverse" src="{{ "/assets/img/" | absolute_url }}{{ site.logo_image.light }}" alt="{{ site.title }}">
+          <a href="{{ "/" | relative_url }}">
+            {% if site.logo_light or site.logo %}
+              {% if site.logo_light %}
+                <img class="uk-logo-inverse" src="{{ site.uploads | absolute_url }}{{ site.logo_light }}" alt="{{ site.title }}">
               {% endif %}
-              {% if site.logo_image.dark %}
-                <img src="{{ "/assets/img/" | absolute_url }}{{ site.logo_image.dark }}" alt="{{ site.title }}">
+              {% if site.logo %}
+                <img src="{{ site.uploads | absolute_url }}{{ site.logo }}" alt="{{ site.title }}">
               {% endif %}
             {% else %}
               {{ site.title }}
@@ -25,15 +25,15 @@
           </div>
         {% endif %}
       </div>
-      {% for column in site.data.footer.columns %}
-        <div class="uk-width-expand@l uk-width-1-2@m">
+      {% for column in site.data.[site.template].footer.columns %}
+        <div class="uk-width-expand@l uk-width-1-3@m">
           <h5>{{ column.title }}</h5>
           <ul class="uk-list uk-text-small">
             {% for link in column.links %}
               {% if link.url contains 'http' %}
                 {% assign domain = '' %}
               {% else %}
-                {% assign domain = relative_url %}
+                {% assign domain = '' | relative_url %}
               {% endif %}
               {% if link.url == page.url %}
                 {% assign current = ' class="uk-active"' %}

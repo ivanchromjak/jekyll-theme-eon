@@ -10,8 +10,8 @@ description:        Multipurpose Jekyll theme.
 url:                # Site base hostname & protocol, e.g. http://example.com
 baseurl:            "/jekyll-theme-eon" # Site subpath, e.g. /blog
 lang:               en
-logo:               # logo-dark.svg
-logo_light:         # logo-light.svg
+logo:               logo-dark.svg
+logo_light:         logo-light.svg
 permalink:          /:title/ # Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
 date_format:        "%b %-d, %Y" # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 # paginate:	          5 # The number of posts to show per page on your blog page
@@ -32,7 +32,7 @@ google_maps_api_key: AIzaSyDozvEBl_XAzNqSPT2y1_hlU19REsmxhTE # Google maps API k
 disqus:
     shortname:      # Disqus comments shortname, requires Disqus account https://disqus.com/
 
-instagram_accesstoken: 1361941596.1677ed0.58119dea804549de96d313cfc870b3a7
+instagram_accesstoken: 9787042989.1677ed0.1dd0f134cfe84e1d88a05b9afbedec3c
 
 donations:
   paypal:
@@ -42,7 +42,7 @@ donations:
 
 footer:             # Default footer image settings
     style:          secondary # default, muted, primary, secondary
-    layout:         center # center or columns
+    layout:         columns # center or columns
     copyright:      Made by a <a href="https://ivanchromjak.com/">human</a> somewhere on the planet earth.
 
 # Style settings

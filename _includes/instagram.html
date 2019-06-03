@@ -27,7 +27,7 @@
   instafetch.init({
     accessToken: '{{ site.instagram_accesstoken }}',
     target: 'instagram',
-    numOfPics: {{ include.count | plus: 1 }},
+    numOfPics: {{ include.count | default: '5' }},
     caption: false
   });
 </script>

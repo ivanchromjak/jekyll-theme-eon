@@ -34,4 +34,4 @@ center:
 right:
   - title: Purchase
     url: https://themeforest.net/user/pressapps/portfolio
-    button: primary-outline
+    button: default

@@ -16,7 +16,7 @@
   content_color=include.content_color
 %}
 
-	<div class="uk-margin-medium-top uk-grid-small uk-flex-center uk-text-center uk-margin-medium-top section-team" data-uk-grid>
+	<div class="uk-margin-medium-top uk-flex-center uk-text-center uk-margin-medium-top section-team" data-uk-grid>
 
 		{% if include.authors %}
 				{% assign authors = include.authors | split: ", " %}
@@ -44,7 +44,7 @@
 										<img class="uk-border-circle" src="{{ domain }}{{ item.avatar }}" alt="{{ item.name }}">
 								{% endif %}
 								<h5 class="uk-margin-remove-bottom uk-margin-top">{{ item.name }}</h5>
-								<p class="uk-article-meta uk-margin-remove-bottom uk-margin-small-top">{{ item.title }}</p>
+								<p class="uk-article-meta uk-margin-remove">{{ item.title }}</p>
 						</div>
 				</div>
 		{% endfor %}

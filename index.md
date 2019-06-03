@@ -33,7 +33,7 @@ header:
   {% include features.html 
     block="feature" 
     background_color="default" 
-    section_size="medium"
+    section_size="large"
     section_title="The first trully multipurpose Jekyll theme" 
     section_subtitle="Loaded with awesome features and options to design your perfect site"
     section_align="center"
@@ -43,10 +43,10 @@ header:
   %}
 
   {% include features.html 
-    block="home-why-jekyll" 
+    block="home-why" 
     section_title="Why use Eon theme?"
     section_align="center"
-    section_size="medium"
+    section_size="large"
     section_color="light"
     background_color="primary"
     media="top" 
@@ -55,7 +55,7 @@ header:
   %}
 
   {% include blog.html 
-    section_size="medium"
+    section_size="large"
     section_title="Latest Posts" 
     section_align="center"
     background_color="default" 
@@ -69,7 +69,7 @@ header:
 
   {% include cards.html 
     block="pricing" 
-    section_size="medium"
+    section_size="large"
     section_title="Pricing Cards" 
     section_align="center"
     background_color="muted" 
@@ -80,7 +80,7 @@ header:
   {% include videos.html 
     block="video-home" 
     columns="3" 
-    section_size="medium"
+    section_size="large"
     section_align="center"
     section_title="Video Tutorials" 
     section_subtitle="Watch screencasts to get you started fast with Jekyll" 
@@ -89,13 +89,13 @@ header:
   {% include video.html 
     block="video-intro" 
     background_color="primary" 
-    section_size="medium"
+    section_size="large"
     section_align="center" 
     section_container="small"
   %}
 
   {% include portfolio.html 
-    section_size="medium"
+    section_size="large"
     section_title="Portfolio" 
     section_align="center"
     background_color="muted"
@@ -103,7 +103,7 @@ header:
   %}
 
   {% include gallery.html 
-    section_size="medium"
+    section_size="large"
     section_title="Image Gallery" 
     section_align="center"
     background_color="default"
@@ -117,7 +117,7 @@ header:
   {% include faqs.html 
     background_color="default"
     multiple="true" 
-    section_size="medium"
+    section_size="large"
     section_title="Frequently asked questions" 
     section_container="small"
     section_align="center"
@@ -129,7 +129,7 @@ header:
   {% include cards.html 
     block="home-card-2" 
     media="left" 
-    section_size="medium"
+    section_size="large"
     section="muted" 
     section_align="center"  
     content_align="left"
@@ -139,7 +139,7 @@ header:
   {% include cards.html 
     block="home-card-1" 
     media="right" 
-    section_size="medium"
+    section_size="large"
     section="muted" 
     section_align="center"  
     background_color="muted"
@@ -152,7 +152,7 @@ header:
   {% include slider.html 
     block="home-card" 
     layout="card-top" 
-    section_size="medium"
+    section_size="large"
     section="muted" 
     section_align="center"  
     section_title="Slider" 
@@ -182,7 +182,7 @@ header:
     button_url="https://www.envato.com" 
     section_subtitle="Experience the advatages of running a static Jekyll site and concentrate an what is important."
     blank="true" 
-    section_size="medium"
+    section_size="large"
     section_align="center"
     background_image="mouse.jpg"
     background_video="mouse.mp4"
@@ -198,13 +198,13 @@ header:
     section_title="We are here to help" 
     section_subtitle="Our team is just an email away ready to answer your questions" 
     section_align="center"
-    section_size="medium"
+    section_size="large"
     background_color="muted" 
   %}
 
   {% include instagram.html 
-    cols="5" 
-    count="5" 
+    cols="4" 
+    count="4" 
     gutter="false"
   %}
 {% else %}
