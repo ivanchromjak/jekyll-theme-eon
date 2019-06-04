@@ -1,6 +1,6 @@
 ---
-title: Save yourself website headaches
-subtitle: Tired of website maintenance, constant theme and plugin updates? <br>Create your website with Jekyll static generator and get on with your business.
+title: Tired of never ending site maintenance
+subtitle: Put an end to constant theme and plugin updates. Build your website with Jekyll static generator and get on with what matters the most, your business.
 ---
 
 <!-- {% include image.html img="website.png" %} -->

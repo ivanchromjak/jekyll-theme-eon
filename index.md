@@ -12,10 +12,10 @@ navbar:
 header:
   layout: 1-1 # Options: left, center, 1-1, 1-2, 1-3 or 2-3
   # background_color: "#1B33BF"
-  background_image: BlackLavaField.jpg
-  background_video: BlackLavaField.mp4
+  background_image: Working-Space.jpg
+  background_video: Working-Space.mp4
   # background_align: center-center
-  background_overlay: "rgba(27, 51, 191, 0.4)" #"rgba(0, 0, 0, 0.35)" #"rgba(5, 15, 140, 0.75)"
+  background_overlay: "rgba(27, 51, 191, 0.7)" #"rgba(0, 0, 0, 0.35)" #"rgba(5, 15, 140, 0.75)"
   color: light
   # section_size: large
   heading_size: large
@@ -47,137 +47,16 @@ header:
     section_title="Why use Eon theme?"
     section_align="center"
     section_size="large"
-    section_color="light"
-    background_color="primary"
+    section_color="light-"
+    background_color="muted"
     media="top" 
     content_align="left"
     grid="1-3"
-  %}
-
-  {% include blog.html 
-    section_size="large"
-    section_title="Latest Posts" 
-    section_align="center"
-    background_color="default" 
-    style="default" 
-    media="top" 
-    content_align="left"
-    grid="1-3"
-    count="6"
-    view_all="blog/"
-  %}
-
-  {% include cards.html 
-    block="pricing" 
-    section_size="large"
-    section_title="Pricing Cards" 
-    section_align="center"
-    background_color="muted" 
-    style="default"
-    align="center"
-  %}
-
-  {% include videos.html 
-    block="video-home" 
-    columns="3" 
-    section_size="large"
-    section_align="center"
-    section_title="Video Tutorials" 
-    section_subtitle="Watch screencasts to get you started fast with Jekyll" 
-  %}
-
-  {% include video.html 
-    block="video-intro" 
-    background_color="primary" 
-    section_size="large"
-    section_align="center" 
-    section_container="small"
-  %}
-
-  {% include portfolio.html 
-    section_size="large"
-    section_title="Portfolio" 
-    section_align="center"
-    background_color="muted"
-    cols="3"
-  %}
-
-  {% include gallery.html 
-    section_size="large"
-    section_title="Image Gallery" 
-    section_align="center"
-    background_color="default"
-    cols="3"
-    gutter="true"
-    gallery="gallery-1"
-    caption="true"
-    lightbox="true"
-  %}
-
-  {% include faqs.html 
-    background_color="default"
-    multiple="true" 
-    section_size="large"
-    section_title="Frequently asked questions" 
-    section_container="small"
-    section_align="center"
-    content_align="left"
-    category="presale" 
-    section_subtitle="Find quicke answers to frequent pre-sale questions asked by customers" 
-  %}
-
-  {% include cards.html 
-    block="home-card-2" 
-    media="left" 
-    section_size="large"
-    section="muted" 
-    section_align="center"  
-    content_align="left"
-    center="true-"
-  %}
-
-  {% include cards.html 
-    block="home-card-1" 
-    media="right" 
-    section_size="large"
-    section="muted" 
-    section_align="center"  
-    background_color="muted"
-    content_align="left"
-    center="true-"
-  %}
-
-
-
-  {% include slider.html 
-    block="home-card" 
-    layout="card-top" 
-    section_size="large"
-    section="muted" 
-    section_align="center"  
-    section_title="Slider" 
-    center="true"
-    autoplay="true"
-    sets="true"
-  %}
-
-  {% include slider.html 
-    section_container="none"
-    block="slider-home" 
-    color="light" 
-    display_title="true"
-  %}
-
-  {% include map.html 
-    section_container="none"
-    latitude="19.4230622" 
-    longitude="-99.1583328" 
-    zoom="16" 
   %}
 
   {% include cta.html 
     section_title="Create your website today!" 
-    button_style="primary" 
+    button_style="danger" 
     button_text="Purchase" 
     button_url="https://www.envato.com" 
     section_subtitle="Experience the advatages of running a static Jekyll site and concentrate an what is important."
@@ -186,27 +65,13 @@ header:
     section_align="center"
     background_image="mouse.jpg"
     background_video="mouse.mp4"
-    background_overlay="rgba(0, 0, 0, 0.8)"
+    background_overlay="rgba(27, 51, 191, 0.7)"
     section_container="small"
     section_color="#fff"
     content_align="center"
     layout="center"
   %}
   
-  {% include team.html 
-    authors="evan, john, sara, alex, tom, daniel" 
-    section_title="We are here to help" 
-    section_subtitle="Our team is just an email away ready to answer your questions" 
-    section_align="center"
-    section_size="large"
-    background_color="muted" 
-  %}
-
-  {% include instagram.html 
-    cols="4" 
-    count="4" 
-    gutter="false"
-  %}
 {% else %}
 
   {% include cards.html id="home-right" style="" media="right" section="muted" %}
