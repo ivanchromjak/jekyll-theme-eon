@@ -514,7 +514,11 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
         width: 68px;
     }
 
-    .uk-section-primary:not(.uk-preserve-color) .icon > svg {
+    .uk-section-primary:not(.uk-preserve-color) svg {
+        fill: #fff
+    }
+
+    .uk-section-secondary:not(.uk-preserve-color) svg {
         fill: #fff
     }
     .opacity:hover {

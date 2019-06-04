@@ -12,7 +12,7 @@
         {%- if include.section_title or include.section_subtitle -%}
           <div class="section-title-{{ include.section_align | default: 'left' }} uk-margin-large-bottom{% if include.section_color == 'light' %} uk-light{% endif %}">  
             {%- if include.section_title -%}
-              <h2 class="uk-margin-remove uk-text-{{ include.section_align | default: 'left' }}"{% if include.section_color and include.section_color != 'light'%} style="color: {{ include.section_color }}"{% endif %}>{{ include.section_title }}</h2>
+              <h2 class="uk-h1 uk-margin-remove uk-text-{{ include.section_align | default: 'left' }}"{% if include.section_color and include.section_color != 'light'%} style="color: {{ include.section_color }}"{% endif %}>{{ include.section_title }}</h2>
             {%- endif -%}
             {%- if include.section_subtitle -%}
               <p class="uk-margin-small-top uk-margin-remove-bottom uk-text-lead uk-text-{{ include.section_align | default: 'left' }}"{% if include.section_color and include.section_color != 'light'%} style="color: {{ include.section_color }}"{% endif %}>{{ include.section_subtitle | escape }}</p>

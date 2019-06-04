@@ -15,7 +15,7 @@ header:
   background_image: Working-Space.jpg
   background_video: Working-Space.mp4
   # background_align: center-center
-  background_overlay: "rgba(27, 51, 191, 0.7)" #"rgba(0, 0, 0, 0.35)" #"rgba(5, 15, 140, 0.75)"
+  background_overlay: "rgba(0, 0, 0, 0.6)" #"rgba(0, 0, 0, 0.35)" #"rgba(5, 15, 140, 0.75)"
   color: light
   # section_size: large
   heading_size: large
@@ -32,10 +32,9 @@ header:
 
   {% include features.html 
     block="feature" 
-    background_color="default" 
+    background_color="primary" 
     section_size="large"
-    section_title="The first trully multipurpose Jekyll theme" 
-    section_subtitle="Loaded with awesome features and options to design your perfect site"
+    section_title="The first multipurpose Jekyll theme" 
     section_align="center"
     content_align="center"
     media="top"
@@ -48,7 +47,7 @@ header:
     section_align="center"
     section_size="large"
     section_color="light-"
-    background_color="muted"
+    background_color="default"
     media="top" 
     content_align="left"
     grid="1-3"
@@ -63,9 +62,8 @@ header:
     blank="true" 
     section_size="large"
     section_align="center"
-    background_image="mouse.jpg"
-    background_video="mouse.mp4"
-    background_overlay="rgba(27, 51, 191, 0.7)"
+    background_image="https://source.unsplash.com/WHWYBmtn3_0/1600x900"
+    background_overlay="rgba(0, 0, 0, 0.5)"
     section_container="small"
     section_color="#fff"
     content_align="center"
