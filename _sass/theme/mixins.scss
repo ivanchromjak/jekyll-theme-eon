@@ -521,6 +521,11 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
     .uk-section-secondary:not(.uk-preserve-color) svg {
         fill: #fff
     }
+
+    .section-title {
+      font-size: 2.375rem;
+    }
+
     .opacity:hover {
         opacity: .85;
     }
