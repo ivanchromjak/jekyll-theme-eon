@@ -4,24 +4,24 @@
   {% assign author = site.author %}
 {% endif %}
 
-<div itemprop="author" itemscope itemtype="http://schema.org/Person">
+<div class="uk-text-center" itemprop="author" itemscope itemtype="http://schema.org/Person">
 
   {% if author.avatar %}
-    <div class="uk-text-center">
-      {% if author.avatar == 'github' and author.github %}
-        {% avatar {{ author.github }} size=300 %}
-      {% else %}
-        <img class="avatar" src="{% if author.avatar contains 'http' %}{{ author.avatar }}{% else %}{{ site.uploads | absolute_url }}{{ author.avatar }}{% endif %}" alt="{{ author.name }}">
-      {% endif %}
+    <div>
+      <img class="avatar" src="{% if author.avatar contains 'http' %}{{ author.avatar }}{% else %}{{ site.uploads | absolute_url }}{{ author.avatar }}{% endif %}" alt="{{ author.name }}">
     </div>
   {% endif %}
 
   {% if author.name %}
-      <h3 class="uk-text-center" itemprop="name">{{ author.name }}</h3>
+    <h3 itemprop="name">{{ author.name }}</h3>
   {% endif %}
 
-  {% if author.name %}
-      <p itemprop="description">{{ author.bio }}</p>
+  {% if author.title %}
+    <p class="author-title uk-text-meta uk-text-center">{{ author.title }}</p>
+  {% endif %}
+
+  {% if author.bio %}
+    <p class="uk-text-left line-height-medium" itemprop="description">{{ author.bio }}</p>
   {% endif %}
 
   <div class="uk-margin-small-top">

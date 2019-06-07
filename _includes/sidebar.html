@@ -4,33 +4,16 @@
   <div class="uk-margin-large-bottom">
     {% case widget.widget %}
 
-      {% when 'button' %}
-
-        {% if widget.url contains 'http' %}
-            {% assign domain = '' %}
-        {% else %}
-            {% assign domain = relative_url %}
-        {% endif %}
-        <a href="{{ domain }}{{ widget.url }}" class="uk-button uk-button-{{ widget.style }}"{% if widget.url contains 'http' %} target="_blank" {% endif %}>{{ widget.title }}</a>
-
-      {% when 'image' %}
-
-        {% if widget.url contains 'http' %}
-            {% assign domain = '' %}
-        {% else %}
-            {% assign domain = site.uploads | absolute_url %}
-        {% endif %}
-        <img src="{{ domain }}{{ widget.url }}" alt="{{ widget.alt }}">
-
       {% when 'recent' %}
 
         {% if widget.title %}<h3>{{ widget.title }}</h3>{% endif %}
         {% include recent.html type=widget.type count=widget.count %}
 
-      {% when 'content' %}
+      {% when 'block' %}
 
+        {%- assign block = site.blocks | where:"slug", widget.block | first -%}
         {% if widget.title %}<h3>{{ widget.title }}</h3>{% endif %}
-         {% if widget.content %}{{ widget.content | markdownify }}{% endif %}
+        <div class="line-height-medium{% if block.align %} uk-text-{{ block.align }}{% endif %}">{{ block.content }}</div>
 
       {% when 'author' %}
 
@@ -40,17 +23,17 @@
 
           {% for nav in widget.nav %}
             {% if nav.title %}<h5 class="uk-text-uppercase uk-margin-small-bottom">{{ nav.title }}</h5>{% endif %}
-            <ul class="uk-nav uk-nav-default">
+            <ul class="uk-nav">
               {% if nav.links != null %}
                 {% for link in nav.links %}
 
                   {% if link.url contains 'http' %}
                       {% assign domain = '' %}
                   {% else %}
-                      {% assign domain = relative_url %}
+                      {% assign domain = '' | relative_url %}
                   {% endif %}
 
-                  <li{% if link.url == page.url %} class="uk-active"{% endif %}><a href="{{ domain }}{{ link.url }}" class="{{ active }}"{% if link.url contains 'http' %} target="_blank" {% endif %}>{{ link.title }}</a></li>
+                  <li{% if link.url == page.url %} class="uk-active"{% endif %}><a href="{{ domain }}{{ link.url }}" class="uk-link-text"{% if link.url contains 'http' %} target="_blank" {% endif %}>{{ link.title }}</a></li>
 
                 {% endfor %}
               {% endif %}
@@ -59,7 +42,7 @@
 
       {% else %}
 
-         There is no such widget type! Valid widget types: button, image, recent, content, author, navigation.
+         There is no such widget type! Valid widget types: recent, block, author, navigation.
 
     {% endcase %}
   </div>

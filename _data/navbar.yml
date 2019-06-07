@@ -5,9 +5,6 @@ center:
   - title: Home
     url: /
 
-  - title: Home Two
-    url: /home-2/
-
   - title: Components
     dropdown:
       - title: Cards
@@ -24,6 +21,9 @@ center:
         url: /contact-form/
       - title: Utilities
         url: /utilities/
+
+  - title: Portfolio
+    url: /portfolio/
 
   - title: Blog
     url: /blog/

@@ -1,110 +1,80 @@
 ---
 layout: default
-width: full
+width: right
 title: Blog
-featured:
-    tag: featured
-list:
-    primary:
-        title: Product news
-        tag: news
-    secondary:
-        title: Editor picks
-        tag: pick
+sidebar: blog
+grid: 1-2
 ---
 
-<section class="uk-section">
-    <div class="uk-container">
-        <div class="uk-grid-match" data-uk-grid>
+{% if page.grid == '1-1' %}
+  {% assign grid = 'uk-child-width-1-1' %}
+{% elsif page.grid == '1-2' %}
+  {% assign grid = 'uk-child-width-1-2@m' %}
+{% elsif page.grid == '1-3' or page.grid == '1-4' %}
+  {% capture grid %}
+    uk-child-width-1-2@s uk-child-width-{{ page.grid }}@m
+  {% endcapture %}
+{% elsif page.grid == '1-5' or page.grid == '1-6' %}
+  {% capture grid %}
+    uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-{{ page.grid }}@l
+  {% endcapture %}
+{% else %}
+  {% assign grid = 'uk-child-width-1-2@m' %}
+{% endif %}
 
-            <div class="uk-width-2-3@m">
-                {% for post in site.posts %}
-                    {% if post.tags contains page.featured.tag %}
-                    <div class="uk-card uk-card-default uk-card-blog">
-                        <div class="uk-card-media-top uk-inline">
-                            <img src="{% if post.image contains 'http' %}{{ post.image }}{% else %}{{ site.uploads | absolute_url }}{{ post.image }}{% endif %}" alt="{{ post.title }}">
-                            <a class="uk-overlay uk-position-cover" href="{{ post.url | relative_url }}"></a>
-                        </div>
-                        <div class="uk-card-body">
-                            <h3 class="uk-card-title"><a class="uk-link-heading" href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-                        </div>
-                        <div class="uk-card-footer">
-                            <a class="uk-link-reset uk-text-small text-400" href="{{ post.url | relative_url }}">{{ site.data.translation[site.lang].read_more | default: "Read more" }}</a>
-                            {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
-                            <span class="uk-text-small uk-text-muted uk-align-right">{{ post.date | date: date_format }}</span>
-                        </div>                    
-                    </div>
-                    {% endif %}
-                {% endfor %}
-            </div>
+<section class="uk-section uk-padding-remove-top">
+  <div class="uk-container">
 
-            <div class="uk-width-1-3@m">
-                <div class="border-frame">
-                    <ul class="uk-child-width-expand" data-uk-tab>
-                        {% if page.list.primary %}
-                        <li class="uk-active"><a href="#">{{ page.list.primary.title }}</a></li>
-                        {% endif %}
-                        {% if page.list.secondary %}      
-                        <li><a href="#">{{ page.list.secondary.title }}</a></li>
-                        {% endif %}
-                    </ul>
-                    <ul class="uk-switcher article-content">
-                        {% if page.list.primary %}
-                            <li>
-                                <ul class="uk-list uk-list-large">
-                                    {% for post in site.posts %}
-                                        {% if post.tags contains page.list.primary.tag %}
-                                            <li><a class="uk-link-heading" href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-                                        {% endif %}
-                                    {% endfor %}
-                                </ul>
-                            </li>
-                        {% endif %}
-                        {% if page.list.secondary %}      
-                            <li>
-                                <ul class="uk-list uk-list-large">
-                                    {% for post in site.posts %}
-                                        {% if post.tags contains page.list.secondary.tag %}
-                                            <li><a class="uk-link-heading" href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-                                        {% endif %}
-                                    {% endfor %}
-                                </ul>
-                            </li>
-                        {% endif %}
-                    </ul>
-                </div>              
-            </div>
-        </div>
-
-
-        <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-match" data-uk-grid>
-            {% for post in paginator.posts %}
-            <div>
-                <div class="uk-card uk-card-default uk-card-blog">
-                    <div class="uk-card-media-top uk-inline">
-                        <img src="{% if post.image contains 'http' %}{{ post.image }}{% else %}{{ site.uploads | absolute_url }}{{ post.image }}{% endif %}" alt="{{ post.title }}">
-                        <a class="uk-overlay uk-position-cover" href="{{ post.url | relative_url }}"></a>
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title"><a class="uk-link-heading" href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-                    </div>
-                    <div class="uk-card-footer">
-                        <a class="uk-link-reset uk-text-small text-400" href="{{ post.url | relative_url }}">{{ site.data.translation[site.lang].read_more | default: "Read more" }}</a>
-                        {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
-                        <span class="uk-text-small uk-text-muted uk-align-right">{{ post.date | date: date_format }}</span>
-                    </div>                    
+    <div class="{{ grid }} uk-grid-match" data-uk-grid>
+      {% if page.featured.tag %}
+        <div class="uk-width-1-1">
+          {% for post in site.posts %}
+            {% if post.tags contains page.featured.tag %}
+              <div class="uk-card uk-card-default uk-card-blog">
+                <div class="uk-card-media-top uk-inline">
+                  <img src="{% if post.image contains 'http' %}{{ post.image }}{% else %}{{ site.uploads | absolute_url }}{{ post.image }}{% endif %}" alt="{{ post.title }}">
+                  <a class="uk-overlay uk-position-cover" href="{{ post.url | relative_url }}"></a>
                 </div>
-            </div>
-            {% endfor %}
-        </div>
-
-        <ul class="uk-pagination uk-flex-center uk-margin-large-top">
-            {% if paginator.previous_page %}
-            <li><h5 class="uk-margin-remove"><a href="{{ paginator.previous_page_path | relative_url }}">&larr; Previous</a></h5></li>
-            {% endif %} {% if paginator.next_page %}
-            <li><h5 class="uk-margin-remove"><a href="{{ paginator.next_page_path | relative_url }}">Next &rarr;</a></h5></li>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title"><a class="uk-link-heading" href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                </div>
+                <div class="uk-card-footer">
+                  <a class="uk-link-reset uk-text-small text-400" href="{{ post.url | relative_url }}">{{ site.data.translation[site.lang].read_more | default: "Read more" }}</a>
+                  {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+                  <span class="uk-text-small uk-text-muted uk-align-right">{{ post.date | date: date_format }}</span>
+                </div>                    
+              </div>
             {% endif %}
-        </ul>
-
+          {% endfor %}
+        </div>
+      {% endif %}
+      {% for post in paginator.posts %}
+        <div>
+          <div class="uk-card uk-card-default uk-card-blog">
+            <div class="uk-card-media-top uk-inline">
+              <img src="{% if post.image contains 'http' %}{{ post.image }}{% else %}{{ site.uploads | absolute_url }}{{ post.image }}{% endif %}" alt="{{ post.title }}">
+              <a class="uk-overlay uk-position-cover" href="{{ post.url | relative_url }}"></a>
+            </div>
+            <div class="uk-card-body">
+              <h3 class="uk-card-title"><a class="uk-link-heading" href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            </div>
+            <div class="uk-card-footer">
+              <a class="uk-link-reset uk-text-small text-400" href="{{ post.url | relative_url }}">{{ site.data.translation[site.lang].read_more | default: "Read more" }}</a>
+              {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+              <span class="uk-text-small uk-text-muted uk-align-right">{{ post.date | date: date_format }}</span>
+            </div>                    
+          </div>
+        </div>
+      {% endfor %}
     </div>
+
+    <ul class="uk-pagination uk-flex-center uk-margin-large-top">
+      {% if paginator.previous_page %}
+      <li><h5 class="uk-margin-remove"><a href="{{ paginator.previous_page_path | relative_url }}">&larr; Previous</a></h5></li>
+      {% endif %} {% if paginator.next_page %}
+      <li><h5 class="uk-margin-remove"><a href="{{ paginator.next_page_path | relative_url }}">Next &rarr;</a></h5></li>
+      {% endif %}
+    </ul>
+
+  </div>
 </section>

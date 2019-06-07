@@ -1,4 +1,44 @@
 # Sidebar widgets
+blog:
+  - widget: author
+    author: ivan
+
+  - widget: block
+    title: Block Widget
+    block: widget-blog
+
+  - widget: recent
+    title: Recent Widget
+    type: posts
+    count: 4
+
+  - widget: navigation
+    nav:
+    - title: Components
+      links:
+        - title: Cards
+          url: /cards/
+        - title: Images
+          url: /images/
+        - title: Gallery
+          url: /gallery/
+        - title: Slideshow
+          url: /slideshow/
+        - title: Google Maps
+          url: /google-maps/
+        - title: Contact Form
+          url: /contact-form/
+        - title: Utilities
+          url: /utilities/
+    - title: Pages
+      links:
+        - title: Portfolio
+          url: /portfolio/
+        - title: Blog
+          url: /blog/
+        - title: 404
+          url: /404/
+
 post:
   - widget: author
     author: ivan
@@ -14,47 +54,12 @@ post:
 
   - widget: recent
     title: Recent Widget
-    type: cards
+    type: posts
     count: 4
 
-  - widget: content
-    title: Content Widget
-    content: >
-      Etiam vestibulum risus vel arcu elementum eleifend. Cras at dolor eget urna varius faucibus tempus in elit.
-      Cras a dui imperdiet, **metus** quis, pharetra turpis.
-
-  - widget: navigation
-    nav:
-    - title: Content
-      links:
-        - title: "Working with Posts"
-          url: /post62/
-        - title: "Working with Pages"
-          url: /docs/pages/
-        - title: "Working with Collections"
-          url: /docs/collections/
-        - title: "Helpers"
-          url: /docs/helpers/
-        - title: "Utility Classes"
-          url: /docs/utility-classes/
-    - title: Extras
-      links:
-        - title: "Stylesheets"
-          url: /docs/stylesheets/
-        - title: "JavaScript"
-          url: /docs/javascript/
-    - title: Meta
-      links:
-        - title: "History"
-          url: /docs/history/
-        - title: "Contributing"
-          url: /docs/contributing/
-        - title: "Old 2.2 Docs"
-          url: /docs/docs-2-2/
-        - title: "License"
-          url: /docs/license/
-        - title: "Terms &amp; Privacy Policy"
-          url: /terms/
+  - widget: block
+    title: Block Widget
+    block: widget-blog
 
 page:
   - widget: author

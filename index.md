@@ -15,7 +15,7 @@ header:
   background_image: Working-Space.jpg
   background_video: Working-Space.mp4
   # background_align: center-center
-  background_overlay: "rgba(0, 0, 0, 0.6)" #"rgba(0, 0, 0, 0.35)" #"rgba(5, 15, 140, 0.75)"
+  background_overlay: "linear-gradient(to right bottom,rgba(28, 54, 191, 0.85) 15%,rgba(27, 51, 191, 0.8) 50%,rgba(67, 27, 191, 0.8) 80%)"
   color: light
   # section_size: large
   heading_size: medium
@@ -32,7 +32,7 @@ header:
 
   {% include features.html 
     block="feature" 
-    background_color="primary" 
+    background_color="default" 
     section_size="large"
     section_title="The first multipurpose Jekyll theme" 
     section_align="center"
@@ -47,7 +47,7 @@ header:
     section_align="center"
     section_size="large"
     section_color="light-"
-    background_color="default"
+    background_color="muted"
     media="top" 
     content_align="left"
     grid="1-3"

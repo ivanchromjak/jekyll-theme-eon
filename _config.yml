@@ -19,7 +19,7 @@ uploads:            /uploads/ # Path to post content assets directory i.e post i
 
 template:           base
 
-paginate:           4 # Number of posts displayed on blog page
+paginate:           6 # Number of posts displayed on blog page
 paginate_path:      "/blog/:num/" # Blog path
 
 mailchimp:
@@ -53,22 +53,21 @@ navbar:
   sticky:           true
   search:           false
 
-# Author settings
+# Default author settings
 author:
-  name:           Apostle C. Tyehimba Thonor-Kuykendall, II, D.D.
-  avatar:
-    image:
-    github:       pocclrmg
-  bio:            Abbott / Presiding Prelate / Chief-Apostle & Founder of the Life Ripples Ministries Global Faith-Community
+  name:           Pete Seth
+  avatar:         avatar-tom.png
+  title:          Support     
+  bio:            I am the CEO of this company, loved by everyone, just plain awesome so you want to follow me all the time.
   url:
   email:          lifesripplesministriesglobal@yahoo.com
   website:
-  facebook:       https://www.facebook.com/PCPCleveland/
+  facebook:       https://www.facebook.com/
   flickr:
   dribbble:
   github:
   googleplus:
-  instagram:      https://www.instagram.com/coveredundertheblood/
+  instagram:      https://www.instagram.com/
   linkedin:
   pinterest:
   twitter:
@@ -181,6 +180,7 @@ defaults:
     values:
       layout: post
       width: right
+      sidebar: post
       comments: # true
       share: true
       related: true
