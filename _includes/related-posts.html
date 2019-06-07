@@ -1,10 +1,9 @@
 <div class="uk-container uk-container-small">
-    <hr class="uk-margin-remove">
     <h4 class="uk-margin-remove-bottom uk-margin-large-top">{{ site.data.translation[site.lang].related_posts | default: "Related Posts" }}</h4>
     {% assign maxRelated = 4 %}
     {% assign minCommonTags =  1 %}
     {% assign maxRelatedCounter = 0 %}
-    <ul class="uk-list uk-list-large uk-grid-large uk-child-width-1-2@m uk-margin-large-bottom" data-uk-grid>
+    <ul class="uk-list uk-grid-large uk-child-width-1-2@m uk-margin-large-bottom" data-uk-grid>
         {% for post in site.posts %}
 
             {% assign sameTagCount = 0 %}
@@ -19,7 +18,7 @@
             {% endfor %}
 
             {% if sameTagCount >= minCommonTags %}
-                <li class="uk-margin-top"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+                <li class="uk-margin-top"><a class="uk-link-text" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
                 {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
                 {% if maxRelatedCounter >= maxRelated %}
                     {% break %}

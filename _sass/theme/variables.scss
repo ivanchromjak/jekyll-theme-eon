@@ -11,21 +11,25 @@ $global-font-family:                            system-ui;
 $global-link-color:                             $global-primary-background;
 $global-link-hover-color:                       $global-primary-background;
 // $global-xxlarge-font-size: 2rem;
-$global-xlarge-font-size:                       2.125rem;
-$global-large-font-size:                        1.5rem;
-$global-medium-font-size:                       1.25rem;
+// $global-xlarge-font-size:                       2.125rem;
+// $global-large-font-size:                        1.5rem;
+// $global-medium-font-size:                       1.25rem;
 $global-small-font-size:                        0.875rem;
 $global-muted-color:                            #A9AAAB;
 $global-border:                                 #cccace;
 
+$global-xxlarge-font-size:                      2.3125rem;
+$global-xlarge-font-size:                       1.9375rem;
+$global-large-font-size:                        1.5rem;
+$global-medium-font-size:                       1.25rem;
 
 // $base-heading-font-family:                      'Merriweather', serif; //system-ui; //'Playfair Display', serif;
-$base-heading-font-weight:                      bold;
+$base-heading-font-weight:                      500;
 // $base-body-font-weight: 300;
 // $base-heading-font-weight: 300;
 $base-heading-color:                            #111;
 $base-h2-line-height:                           1.4;
-$base-link-hover-text-decoration:               underline;
+$base-link-hover-text-decoration:               none;
 $base-body-color:                               #75797b;
 
 // $button-text-transform:                         none;

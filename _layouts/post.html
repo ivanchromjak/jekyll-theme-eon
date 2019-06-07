@@ -3,9 +3,9 @@ layout: default
 ---
 
 <article class="uk-article">
-  <img src="{% if page.image contains 'http' %}{{ page.image }}{% else %}{{ site.uploads | absolute_url }}{{ page.image }}{% endif %}" alt="{{ page.title | escape }}">
-  <h1 class="uk-article-title uk-margin-medium-top uk-margin-remove-bottom">{{ page.title | escape }}</h1>
+  <h1 class="uk-article-title uk-margin-remove">{{ page.title | escape }}</h1>
   {% include post-meta.html %}
+  <img class="uk-margin-medium-top" src="{% if page.image contains 'http' %}{{ page.image }}{% else %}{{ site.uploads | absolute_url }}{{ page.image }}{% endif %}" alt="{{ page.title | escape }}">
 
   <div class="article-content button-link uk-margin-medium-top">
     {{ content }}
@@ -15,7 +15,10 @@ layout: default
   </div>
   
   {% if page.mailchimp %}
+    <div class="uk-margin-large-top uk-background-muted uk-padding-large">
+      <h3 class="uk-margin-remove-top uk-margin-medium-bottom uk-text-center">{{ site.data.translation[site.lang].newsletter_signup | default: 'Newsletter Signup' }}</h3>
       {% include mailchimp.html %}
+    </div>
   {% endif %}
 
   {% if site.disqus.shortname %}

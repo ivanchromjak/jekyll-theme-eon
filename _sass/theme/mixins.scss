@@ -74,6 +74,12 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
 
 @mixin hook-button-misc(){
 
+    .uk-button-medium {
+        padding: 0 40px;
+        line-height: 46px;
+        font-size: .875rem;
+    }    
+
 	.uk-button-xlarge {
 			padding: 0 $button-large-padding-horizontal * 1.5;
 			line-height: $button-large-line-height;
@@ -88,8 +94,11 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
     }
 
     a.button-link:not(.uk-link-muted):not(.uk-accordion-title), .button-link a:not(.uk-link-muted):not(.uk-accordion-title) {
-        font-weight: 400;
+        color: $global-secondary-background;
         border-bottom: 1px solid $global-primary-background;
+        &:hover {
+            color: $global-primary-background;
+        }
     }
 
     // Warning
@@ -327,6 +336,26 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
   }
 }
 
+@mixin hook-nav-misc(){
+    // .uk-navbar-nav {
+    //     font-weight: 400;
+    // }
+
+    // .uk-nav-default > li > a:focus {
+    //     color: $base-heading-color;
+    // }
+
+    // Uikit navbar fix
+    nav>.uk-container .uk-navbar-left {
+        margin-left: -$navbar-nav-item-padding-horizontal;
+    }
+
+    nav>.uk-container .uk-navbar-right {
+        margin-right: -$navbar-nav-item-padding-horizontal;
+    }
+
+}
+
 //
 // Component: Navbar
 //
@@ -383,6 +412,14 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
 // ========================================================================
 @mixin hook-form(){
     border: solid 1px $global-border;
+}
+
+@mixin hook-form-misc(){
+    .uk-form-medium:not(textarea):not([multiple]):not([size]) {
+        height: 48px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
 }
 
 //

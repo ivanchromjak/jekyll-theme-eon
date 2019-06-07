@@ -1,4 +1,6 @@
-{% if page.author and site.authors[page.author] %}
+{% if include.author and site.authors[include.author] %}
+  {% assign author = site.authors[include.author] %}
+{% elsif page.author and site.authors[page.author] %}
   {% assign author = site.authors[page.author] %}
 {% else %}
   {% assign author = site.author %}
@@ -13,7 +15,7 @@
   {% endif %}
 
   {% if author.name %}
-    <h3 itemprop="name">{{ author.name }}</h3>
+    <h4 class="uk-margin" itemprop="name">{{ author.name }}</h4>
   {% endif %}
 
   {% if author.title %}

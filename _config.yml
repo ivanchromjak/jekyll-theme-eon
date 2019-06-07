@@ -105,10 +105,9 @@ authors:
 social_share:
   twitter:          true
   facebook:         true
-  linkedin:         false
-  googleplus:       false
-  pinterest:        false
-  reddit:           false
+  linkedin:         true
+  pinterest:        true
+  reddit:           true
 
 # Social buttons
 social_networks:
@@ -180,7 +179,7 @@ defaults:
     values:
       layout: post
       width: right
-      sidebar: post
+      sidebar: blog
       comments: # true
       share: true
       related: true

@@ -1,65 +1,31 @@
 # Sidebar widgets
 blog:
-  - widget: author
-    author: ivan
-
-  - widget: block
-    title: Block Widget
-    block: widget-blog
-
-  - widget: recent
-    title: Recent Widget
+  - widget: tagged
     type: posts
-    count: 4
+    primary:
+      title: Product news
+      tag: news
+    secondary:
+      title: Editor picks
+      tag: pick
+
+  - widget: latest
+    type: posts
+    count: 6
+    title: Latest Posts
 
   - widget: navigation
     nav:
-    - title: Components
-      links:
-        - title: Cards
-          url: /cards/
-        - title: Images
-          url: /images/
-        - title: Gallery
-          url: /gallery/
-        - title: Slideshow
-          url: /slideshow/
-        - title: Google Maps
-          url: /google-maps/
-        - title: Contact Form
-          url: /contact-form/
-        - title: Utilities
-          url: /utilities/
     - title: Pages
       links:
+        - title: Home Page
+          url: /
         - title: Portfolio
           url: /portfolio/
         - title: Blog
           url: /blog/
-        - title: 404
+        - title: 404 Page
           url: /404/
-
-post:
-  - widget: author
-    author: ivan
-
-  - widget: button
-    title: Buy Now
-    style: primary
-    url: /contact/
-
-  - widget: image
-    alt: Some img alt
-    url: https://source.unsplash.com/WLUHO9A_xik/800x500
-
-  - widget: recent
-    title: Recent Widget
-    type: posts
-    count: 4
-
-  - widget: block
-    title: Block Widget
-    block: widget-blog
 
 page:
   - widget: author
