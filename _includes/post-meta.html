@@ -4,7 +4,7 @@
   {% assign author = site.author %}
 {% endif %}
 
-<div class="uk-article-meta uk-margin-small-top" itemscope itemtype="http://schema.org/Person">
+<div class="uk-article-meta" itemscope itemtype="http://schema.org/Person">
   <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex uk-flex-middle">
 
     {% if author.avatar %}
@@ -21,7 +21,6 @@
           {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
           {{ page.date | date: date_format }}
       </time>
-      <br><span itemprop="description">{{ author.bio }}</span>
     </div>
 
   </div>

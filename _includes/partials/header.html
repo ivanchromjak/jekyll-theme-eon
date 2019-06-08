@@ -40,7 +40,13 @@
   {% endif %}
 {% endif %}
 
-{% assign background_image = page.header.background_image %}
+{% if page.layout =='post' and page.header.background_image %}
+  {% assign background_image = page.header.background_image %}
+{% elsif page.layout =='post' and page.image %}
+  {% assign background_image = page.image %}
+{% else %}
+  {% assign background_image = page.header.background_image %}
+{% endif %}
 <div class="uk-cover-container uk-background-{{ page.header.background_align | default: 'center-center' }} uk-background-cover" style="{% if page.header.background_color contains '#' or page.header.background_color contains 'rgb' %}background-color: {{ page.header.background_color }};{% endif %}{% if background_image %}background-image: url({% if background_image contains 'http' %}{{ background_image }}{% else %}{{ site.uploads | absolute_url }}{{ background_image }}{% endif %});{% endif %}"{% if page.header.height == 'full' %} data-uk-height-viewport{% endif %}>
   {%- if page.header.background_video -%}
     <video autoplay loop muted playsinline data-uk-cover>
@@ -133,6 +139,11 @@
             {% if page.subtitle %}
               <div class="uk-text-lead">{{ page.subtitle }}</div>
             {% endif %}
+            {% if page.layout =='post' %}
+              <div class="uk-margin-medium-top">
+                {% include post-meta.html %}
+              </div>
+            {% endif %}
           </div>
         </div>
       {% elsif page.header.layout == 'center' %}
@@ -141,6 +152,11 @@
             <h1 class="uk-heading-{{ page.header.heading_size | default: 'medium' }}">{{ page.title | escape }}</h1>
             {% if page.subtitle %}
               <div class="uk-text-lead">{{ page.subtitle }}</div>
+            {% endif %}
+            {% if page.layout =='post' %}
+              <div class="uk-flex uk-flex-center uk-margin-medium-top">
+                {% include post-meta.html %}
+              </div>
             {% endif %}
           </div>
         </div>

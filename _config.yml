@@ -184,6 +184,16 @@ defaults:
       share: true
       related: true
       mailchimp: true
+      navbar:
+        transparent: true
+        transparent_color: light
+      header:
+        layout: center
+        background_overlay: "rgba(0, 0, 0, 0.5)"
+        color: light
+        section_size: large
+        heading_size: medium
+        parallax: true
   # _pages
   - scope:
       path: ""
