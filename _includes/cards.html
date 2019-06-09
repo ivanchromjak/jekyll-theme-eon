@@ -38,7 +38,7 @@
         {% if block.slug contains include.block %}
           <div>
             {% if include.media == 'left' %}
-              <div class="uk-card uk-card-large uk-card-{{ include.style }} uk-grid-collapse uk-child-width-1-2@m uk-margin" data-uk-grid>
+              <div class="uk-card uk-card-large uk-card-{{ include.style | default: 'none' }} uk-grid-collapse uk-child-width-1-2@m uk-margin" data-uk-grid>
                 <div class="uk-card-media-left">
                   <img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
                 </div>
@@ -52,8 +52,8 @@
                 </div>
               </div>
             {% elsif include.media == 'right' %}
-              <div class="uk-card uk-card-large uk-card-{{ include.style }} uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
-                <div class="uk-flex-last@s uk-card-media-right">
+              <div class="uk-card uk-card-large uk-card-{{ include.style | default: 'none' }} uk-grid-collapse uk-child-width-1-2@m uk-margin" data-uk-grid>
+                <div class="uk-flex-last@m uk-card-media-right">
                   <img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
                 </div>
                 <div class=" uk-flex uk-flex-middle">
@@ -66,7 +66,7 @@
                 </div>
               </div>
             {% elsif include.media == 'top' %}
-              <div class="uk-card uk-card-large- uk-border-rounded uk-box-shadow-large uk-card-{{ include.style }}">
+              <div class="uk-card uk-card-large- uk-border-rounded uk-box-shadow-large uk-card-{{ include.style | default: 'none' }}">
                 <div class="uk-card-media-top{% if block.icon %} uk-padding uk-padding-remove-bottom{% endif %}">
                   {% if block.icon %}
                   <img class="icon" src="{% if block.icon contains 'http' %}{{ block.icon }}{% else %}{{ site.uploads | absolute_url }}{{ block.icon }}{% endif %}" alt="{{ block.title }}">
@@ -82,7 +82,7 @@
                 </div>
               </div>
             {% elsif include.media == 'bottom' %}
-            <div class="uk-card uk-card-large uk-card-{{ include.style }}">
+            <div class="uk-card uk-card-large uk-card-{{ include.style | default: 'none' }}">
               <div class="uk-card-body">
                 <h3 class="uk-card-title">{{ block.title }}</h3>
                 <div class="uk-card-content">
@@ -94,7 +94,7 @@
               </div>
             </div>
             {% else %}
-              <div class="uk-card uk-card-{{ include.style }} uk-card-body">
+              <div class="uk-card uk-card-{{ include.style | default: 'none' }} uk-card-body">
                 {% if block.icon %}
                   <span data-uk-icon="icon: {{ block.icon }}; ratio: 2"></span>
                 {% endif %}

@@ -15,42 +15,82 @@
   content_align=include.content_align
   content_color=include.content_color
 %}
-
-  <div class="uk-position-relative uk-visible-toggle{% if include.color == 'light' %} uk-light{% endif %}" tabindex="-1" data-uk-slider="{% if include.center %}center: true;{% endif %}{% if include.autoplay %} autoplay: true;{% endif %}{% if include.sets %} sets: true;{% endif %}">
-    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s- uk-child-width-1-4@m-{% if include.layout == 'card-top' %} uk-grid{% endif %}">
-		{% assign blocks = (site.blocks | sort: 'card[slug]') %}
-		{% for block in blocks %}
-			{% if block.slug contains include.block %}
-				<li>
-					{% if include.layout == 'card-top' %}
-						<div class="uk-card uk-card-large- uk-border-rounded uk-box-shadow-large uk-card-{{ include.style }}">
-							<div class="uk-card-media-top{% if block.icon %} uk-padding uk-padding-remove-bottom{% endif %}">
-								{% if block.icon %}
-								<img class="icon" src="{% if block.icon contains 'http' %}{{ block.icon }}{% else %}{{ site.uploads | absolute_url }}{{ block.icon }}{% endif %}" alt="{{ block.title }}">
-								{% elsif block.image %}
-								<img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
+{% if include.grid == '1-1' %}
+  {% assign grid = 'uk-child-width-1-1' %}
+{% elsif include.grid == '1-2' %}
+  {% assign grid = 'uk-child-width-1-2@m' %}
+{% elsif include.grid == '1-3' or include.grid == '1-4' %}
+  {% capture grid %}
+    uk-child-width-1-2@s uk-child-width-{{ include.grid }}@m
+  {% endcapture %}
+{% elsif include.grid == '1-5' or include.grid == '1-6' %}
+  {% capture grid %}
+    uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-{{ include.grid }}@l
+  {% endcapture %}
+{% else %}
+  {% assign grid = 'uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-6@l' %}
+{%- endif -%}
+<div data-uk-slider="{% if include.center %}center: true;{% endif %}{% if include.autoplay %} autoplay: true;{% endif %}{% if include.sets %} sets: true;{% endif %}">
+	<div class="uk-position-relative">
+		<div class="uk-visible-toggle uk-slider-container{% if include.style == 'default' %} slider-card-shadow-fix{% endif %}{% if include.color == 'light' %} uk-light{% endif %}">
+			<ul class="{{ grid }} uk-slider-items{% if include.layout == 'card-top' %} uk-grid uk-grid-match{% endif %}">
+			{% assign blocks = (site.blocks | sort: 'card[slug]') %}
+			{% for block in blocks %}
+				{% if block.slug contains include.block %}
+					<li>
+						{% if include.layout == 'card-top' %}
+							<div class="uk-card uk-border-rounded uk-card-{{ include.style }}">
+								{% if block.icon or block.image %}
+									<div class="uk-card-media-top{% if block.icon %} uk-padding uk-padding-remove-bottom{% endif %}">
+										{% if block.icon %}
+											{% include icons/{{ block.icon }} %}
+										{% elsif block.image %}
+										<img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
+										{% endif %}
+									</div>
 								{% endif %}
-							</div>
-							<div class="uk-card-body">
-								<h3 class="uk-card-title">{{ block.title }}</h3>
-								<div class="uk-card-content">
-								{{ block.content }}
+								<div class="uk-card-body">
+									<h3 class="uk-card-title">{{ block.title }}</h3>
+									<div class="uk-card-content">
+									{{ block.content }}
+									</div>
 								</div>
 							</div>
-						</div>
-					{% else %}
-						<img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
-						<div class="uk-position-center uk-panel">{% unless include.display_title == "false" %}<h3 class="uk-card-title">{{ block.title }}</h3>{% endunless %}</div>
-					{% endif %}
-				</li>
-			{% endif %}
-		{% endfor %}
-		</ul>
+						{% else %}
+							<img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
+							<div class="uk-position-center uk-panel">{% unless include.display_title == "false" %}<h3 class="uk-card-title">{{ block.title }}</h3>{% endunless %}</div>
+						{% endif %}
+					</li>
+				{% endif %}
+			{% endfor %}
+			</ul>
 
-		<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-		<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+		</div>
+
+    {% if include.navigation == 'outside' %}
+      <div class="uk-hidden@m uk-light">
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+      </div>
+      <div class="uk-visible@m">
+        <a class="uk-position-center-left-out uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right-out uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+      </div>
+    {% else %}
+      <div{% unless include.style == 'default' %} class="uk-light"{% endunless %}>
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+      </div>
+    {% endif %}
 
 	</div>
+
+  {% if include.dotnav %}
+    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin-medium-top"></ul>
+  {% endif %}
+
+</div>
+
 {% include partials/section-close.html 
   section_size=include.section_size 
 %}
