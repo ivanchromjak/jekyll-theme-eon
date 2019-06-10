@@ -14,6 +14,7 @@
   background_overlay=include.background_overlay
   content_align=include.content_align
   content_color=include.content_color
+  card_style=include.card_style
 %}
 
 {% if include.grid == '1-1' %}
@@ -33,76 +34,58 @@
 {% endif %}
 
 {%- assign blocks = (site.blocks | sort: 'card[slug]') -%}
-    <div class="{{ grid }} uk-grid-match uk-flex-center" data-uk-grid>
+    <div class="{{ grid }}{% if include.gutter %} uk-grid-{{ include.gutter }}{% endif %} uk-grid-match uk-flex-center" data-uk-grid>
       {% for block in blocks %}
         {% if block.slug contains include.block %}
           <div>
             {% if include.media == 'left' %}
-              <div class="uk-card uk-card-large uk-card-{{ include.style | default: 'none' }} uk-grid-collapse uk-child-width-1-2@m uk-margin" data-uk-grid>
-                <div class="uk-card-media-left">
-                  <img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
+              <div class="uk-card{% unless block.icon %} uk-card-large{% endunless %} uk-card-{{ include.card_style | default: 'none' }} uk-grid-collapse uk-margin{% if block.icon %} card-icon{% endif %}" data-uk-grid>
+                <div class="uk-card-media-left{% if block.icon %} uk-width-auto@m uk-flex uk-flex-middle{% if include.card_style %} uk-padding{% endif %}{% if include.content_align %} uk-flex-{{ include.content_align }}{% endif %}{% else %} uk-width-1-2@m{% endif %}">
+                  {% if block.icon %}
+                    {% include icons/{{ block.icon }} %}
+                  {% elsif block.image %}
+                    <img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
+                  {% endif %}
                 </div>
-                <div class=" uk-flex uk-flex-middle">
+                <div class="uk-flex uk-flex-middle{% if include.content_align %} uk-flex-{{ include.content_align }}{% endif %} uk-width-expand@m">
                   <div class="uk-card-body">
-                    <h3 class="uk-h1">{{ block.title }}</h3>
-                    <div class="uk-card-content">
-                      {{ block.content }}
-                    </div>
+                    <h3 class="{% if block.icon %}uk-card-title{% else %}uk-h1{% endif %}">{{ block.title }}</h3>
+                    {{ block.content }}
                   </div>
                 </div>
               </div>
             {% elsif include.media == 'right' %}
-              <div class="uk-card uk-card-large uk-card-{{ include.style | default: 'none' }} uk-grid-collapse uk-child-width-1-2@m uk-margin" data-uk-grid>
-                <div class="uk-flex-last@m uk-card-media-right">
-                  <img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
-                </div>
-                <div class=" uk-flex uk-flex-middle">
-                  <div class="uk-card-body">
-                    <h3 class="uk-h1">{{ block.title }}</h3>
-                    <div class="uk-card-content">
-                    {{ block.content }}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            {% elsif include.media == 'top' %}
-              <div class="uk-card uk-card-large- uk-border-rounded uk-box-shadow-large uk-card-{{ include.style | default: 'none' }}">
-                <div class="uk-card-media-top{% if block.icon %} uk-padding uk-padding-remove-bottom{% endif %}">
+              <div class="uk-card{% unless block.icon %} uk-card-large{% endunless %} uk-card-{{ include.card_style | default: 'none' }} uk-grid-collapse uk-margin{% if block.icon %} card-icon{% endif %}" data-uk-grid>
+                <div class="uk-flex-last@m uk-card-media-right{% if block.icon %} uk-width-auto@m uk-flex uk-flex-middle{% if include.card_style %} uk-padding{% endif %}{% if include.content_align %} uk-flex-{{ include.content_align }}{% endif %}{% else %} uk-width-1-2@m{% endif %}">
                   {% if block.icon %}
-                  <img class="icon" src="{% if block.icon contains 'http' %}{{ block.icon }}{% else %}{{ site.uploads | absolute_url }}{{ block.icon }}{% endif %}" alt="{{ block.title }}">
+                    {% include icons/{{ block.icon }} %}
                   {% elsif block.image %}
-                  <img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
+                    <img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
                   {% endif %}
                 </div>
-                <div class="uk-card-body">
-                  <h3 class="uk-card-title">{{ block.title }}</h3>
-                  <div class="uk-card-content">
-                  {{ block.content }}
+                <div class="uk-flex uk-flex-middle{% if include.content_align %} uk-flex-{{ include.content_align }}{% endif %} uk-width-expand@m">
+                  <div class="uk-card-body">
+                    <h3 class="{% if block.icon %}uk-card-title{% else %}uk-h1{% endif %}">{{ block.title }}</h3>
+                    {{ block.content }}
                   </div>
                 </div>
               </div>
-            {% elsif include.media == 'bottom' %}
-            <div class="uk-card uk-card-large uk-card-{{ include.style | default: 'none' }}">
-              <div class="uk-card-body">
-                <h3 class="uk-card-title">{{ block.title }}</h3>
-                <div class="uk-card-content">
-                {{ block.content }}
-                </div>
-              </div>
-              <div class="uk-card-media-bottom">
-                <img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
-              </div>
-            </div>
             {% else %}
-              <div class="uk-card uk-card-{{ include.style | default: 'none' }} uk-card-body">
-                {% if block.icon %}
-                  <span data-uk-icon="icon: {{ block.icon }}; ratio: 2"></span>
+              <div class="uk-card uk-card-{{ include.card_style | default: 'none' }}{% if block.icon %} card-icon{% endif %}">
+                {% if block.icon or block.image %}
+                  <div class="uk-card-media-top{% if block.icon and include.card_style %} uk-padding uk-padding-remove-bottom{% endif %}">
+                    {% if block.icon %}
+                      {% include icons/{{ block.icon }} %}
+                    {% elsif block.image %}
+                    <img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
+                    {% endif %}
+                  </div>
                 {% endif %}
-                <h3 class="uk-card-title">{{ block.title }}</h3>
-                {% if block.heading %}
-                  <h4 class="uk-heading-medium uk-margin">{{ block.heading }}</h4>
-                {% endif %}
-                <div class="uk-card-content">
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">{{ block.title }}</h3>
+                  {% if block.heading %}
+                    <h4 class="uk-heading-medium uk-margin">{{ block.heading }}</h4>
+                  {% endif %}
                   {{ block.content }}
                 </div>
               </div>

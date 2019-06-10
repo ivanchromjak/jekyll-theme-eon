@@ -251,22 +251,99 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
     padding-top: 0;
   }
 }
-@mixin hook-card-body(){
-    > p {
-        font-size: $global-small-font-size;
-    }
-    > span {
-        color: $global-primary-background;
-    }
-}
+// @mixin hook-card-body(){
+//     > p {
+//         font-size: $global-small-font-size;
+//     }
+//     > span {
+//         color: $global-primary-background;
+//     }
+// }
 
 @mixin hook-card-misc(){
+
+  .card-icon {
+
+    // Media top
+    .uk-card-media-top + .uk-card-body {
+      padding-top: $global-margin;
+
+      .uk-card-title {
+        margin-bottom: $global-small-margin;
+      }
+
+      p {
+        margin-top: $global-small-margin;
+      }
+    }
+
+    // Media left
+    @media (max-width: $breakpoint-medium) {
+      .uk-card-media-left {
+        padding-bottom: 0;
+      }
+    }
+
+    @media (min-width: $breakpoint-medium) {
+      .uk-card-media-left {
+        padding-right: 0;
+      }
+    }
+
+    .uk-card-media-left + div > .uk-card-body {
+      .uk-card-title {
+        margin-bottom: $global-small-margin;
+      }
+
+      p {
+        margin-top: $global-small-margin;
+      }
+    }
+
+    // Media right
+    @media (max-width: $breakpoint-medium) {
+      .uk-card-media-right {
+        padding-bottom: 0;
+      }
+    }
+
+    @media (min-width: $breakpoint-medium) {
+      .uk-card-media-right {
+        padding-left: 0;
+      }
+    }
+
+    .uk-card-media-right + div > .uk-card-body {
+      .uk-card-title {
+        margin-bottom: $global-small-margin;
+      }
+
+      p {
+        margin-top: $global-small-margin;
+      }
+    }
+    
+  }
+
+  .uk-card:not(.uk-card-none) {
+    border-radius: $border-rounded-border-radius;
+    overflow: hidden;
+  }
+
+  .uk-card-none {
+    .uk-card-media-top + .uk-card-body {
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+    }
+  }
 
   @media (max-width: $breakpoint-medium) {
     .uk-card-none {
       .uk-card-body {
         padding-left: 0;
         padding-right: 0;
+        padding-bottom: 0;
       }
     }
   }
@@ -274,11 +351,16 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
     .uk-card-none {
       .uk-card-media-left + div > .uk-card-body {
         padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
       }
 
       .uk-card-media-right + div > .uk-card-body {
         padding-left: 0;
+        padding-top: 0;
+        padding-bottom: 0;
       }
+
     }
   }
 

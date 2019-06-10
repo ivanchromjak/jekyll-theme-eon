@@ -39,7 +39,7 @@
 				{% if block.slug contains include.block %}
 					<li>
 						{% if include.layout == 'card-top' %}
-							<div class="uk-card uk-border-rounded uk-card-{{ include.style }}">
+							<div class="uk-card uk-card-{{ include.style | default: 'none' }}">
 								{% if block.icon or block.image %}
 									<div class="uk-card-media-top{% if block.icon %} uk-padding uk-padding-remove-bottom{% endif %}">
 										{% if block.icon %}
