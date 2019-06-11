@@ -15,8 +15,12 @@ center:
         url: /gallery/
       - title: Slideshow
         url: /slideshow/
-      - title: Google Maps
-        url: /google-maps/
+      - title: Map Default
+        url: /map-default/
+      - title: Map Silver
+        url: /map-silver/
+      - title: Map Dark
+        url: /map-dark/
       - title: Contact Form
         url: /contact-form/
       - title: Utilities
