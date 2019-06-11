@@ -71,7 +71,7 @@
                 </div>
               </div>
             {% else %}
-              <div class="uk-card{% if block.card_style %} uk-card-{{ block.card_style }}{% else %} uk-card-{{ include.card_style | default: 'none' }}{% endif %}{% if block.icon %} card-icon{% endif %}">
+              <div class="uk-card{% if block.card_style %} uk-card-{{ block.card_style }}{% else %} uk-card-{{ include.card_style | default: 'none' }}{% endif %}{% if block.icon %} card-icon{% endif %}{% if include.card_type == 'pricing' %} card-pricing{% endif %}">
                 {% if block.icon or block.image %}
                   <div class="uk-card-media-top{% if block.icon and include.card_style %} uk-padding uk-padding-remove-bottom{% endif %}">
                     {% if block.icon %}
@@ -84,7 +84,7 @@
                 <div class="uk-card-body">
                   <h3 class="uk-card-title">{{ block.title }}</h3>
                   {% if block.heading %}
-                    <h4 class="uk-heading-medium uk-margin">{{ block.heading }}</h4>
+                    <h4 class="uk-heading-medium">{{ block.heading }}</h4>
                   {% endif %}
                   {{ block.content }}
                 </div>

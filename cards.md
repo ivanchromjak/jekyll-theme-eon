@@ -11,8 +11,8 @@ navbar:
   transparent_color: light
 header:
   layout: center # Options: left, center, 1-1, 1-2, 1-3 or 2-3
-  background_image: Working-Space.jpg
-  background_overlay: "linear-gradient(to right bottom,rgba(28, 54, 191, 0.85) 15%,rgba(27, 51, 191, 0.8) 50%,rgba(67, 27, 191, 0.8) 80%)"
+  background_image: https://source.unsplash.com/FgSyP02I0gw/1800x700
+  background_overlay: "rgba(0, 0, 0, 0.45)"
   color: light
   section_size: large
   heading_size: medium
@@ -159,20 +159,22 @@ header:
 
 {% include cards.html 
   block="pricing" 
+  section_title="Pricing Cards" 
+  section_align="center"
   section_size="medium"
   section_container="small"
   background_color="muted" 
   content_align="center"
+  card_type="pricing"
 %}
 
 {% include cards.html 
   block="pricing" 
   section_size="medium"
-  section_title="Pricing Cards" 
-  section_align="center"
   background_color="muted" 
   content_align="center"
   card_style="default"
+  card_type="pricing"
 %}
 
 {% include cards.html 
@@ -181,5 +183,6 @@ header:
   background_color="muted" 
   content_align="center"
   card_style="secondary"
+  card_type="pricing"
 %}
 

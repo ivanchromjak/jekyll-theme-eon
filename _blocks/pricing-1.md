@@ -1,16 +1,13 @@
 ---
-title: Free
+title: FREE
 heading: $0
 ---
 
 No monthly payments
 
-{:.included}
+{% include button.html text="Start Free" url="#" style="default" %}
+
 - Access to Video Courses
 - Access for One Devices
 
-{:.not-included}
-- 30-Days Free Trial
-- Unlimited Projects
 
-{% include button.html text="Start Free" url="#" style="default" %}

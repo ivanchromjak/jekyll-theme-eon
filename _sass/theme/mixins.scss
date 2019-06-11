@@ -957,23 +957,39 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
     }
 
     // Pricing
-    .included, .not-included {
+    .card-pricing .uk-card-body {
+
+      > * {
+        margin-bottom: 0;
+      }
+
+      > *:nth-child(n+2) {
+        margin-top: $global-medium-margin;
+      }
+
+      .uk-heading-medium {
+        font-weight: 300;
+      }
+
+      ul {
         list-style: none;
         padding: 0;
-        margin-bottom: $global-medium-margin;
+        margin-bottom: 0;
         li {
-            margin-top: $global-small-margin;
+          margin-top: $global-small-margin;
         }
+      }
     }
 
-    .included {
-        margin-top: $global-medium-margin;
-    }
 
-    .included ~ .not-included {
-        margin-top: -(3 * $global-small-margin);
-        color: $global-muted-color;
-    }
+    // .included {
+    //     margin-top: $global-medium-margin;
+    // }
+
+    // .included ~ .not-included {
+    //     margin-top: -(3 * $global-small-margin);
+    //     color: $global-muted-color;
+    // }
     
 
 }
