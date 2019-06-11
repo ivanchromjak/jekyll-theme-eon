@@ -1,5 +1,5 @@
 ---
-title: Carefully was the instrument
+title: Carefully was instrument
 image: https://source.unsplash.com/gSSAEmEJH44/900x600
 ---
 

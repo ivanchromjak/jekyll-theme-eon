@@ -1,6 +1,7 @@
 ---
 title: Standard
 heading: $9
+card_style: primary
 ---
 
 Minimum six months payments
@@ -13,4 +14,4 @@ Minimum six months payments
 {:.not-included}
 - Unlimited Projects
 
-{% include button.html text="Start Trial" url="#" style="primary" size="large" %}
+{% include button.html text="Start Trial" url="#" style="default" %}

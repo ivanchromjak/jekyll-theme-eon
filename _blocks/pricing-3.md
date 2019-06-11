@@ -11,4 +11,4 @@ Minimum six months payments
 - 30-Days Free Trial
 - Unlimited Projects
 
-{% include button.html text="Start Trial" url="#" style="primary" size="large" %}
+{% include button.html text="Start Trial" url="#" style="default" %}

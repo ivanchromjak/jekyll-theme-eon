@@ -32,30 +32,63 @@
 {%- endif -%}
 <div data-uk-slider="{% if include.center %}center: true;{% endif %}{% if include.autoplay %} autoplay: true;{% endif %}{% if include.sets %} sets: true;{% endif %}">
 	<div class="uk-position-relative">
-		<div class="uk-visible-toggle uk-slider-container{% if include.style == 'default' %} slider-card-shadow-fix{% endif %}{% if include.color == 'light' %} uk-light{% endif %}">
-			<ul class="{{ grid }} uk-slider-items{% if include.layout == 'card-top' %} uk-grid uk-grid-match{% endif %}">
+		<div class="uk-visible-toggle uk-slider-container{% if include.card_style == 'default' %} slider-card-shadow-fix{% endif %}{% if include.color == 'light' %} uk-light{% endif %}">
+			<ul class="{{ grid }} uk-slider-items uk-grid uk-grid-match">
 			{% assign blocks = (site.blocks | sort: 'card[slug]') %}
 			{% for block in blocks %}
 				{% if block.slug contains include.block %}
 					<li>
-						{% if include.layout == 'card-top' %}
-							<div class="uk-card uk-card-{{ include.style | default: 'none' }}">
-								{% if block.icon or block.image %}
-									<div class="uk-card-media-top{% if block.icon %} uk-padding uk-padding-remove-bottom{% endif %}">
-										{% if block.icon %}
-											{% include icons/{{ block.icon }} %}
-										{% elsif block.image %}
-										<img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
-										{% endif %}
-									</div>
-								{% endif %}
-								<div class="uk-card-body">
-									<h3 class="uk-card-title">{{ block.title }}</h3>
-									<div class="uk-card-content">
-									{{ block.content }}
-									</div>
-								</div>
-							</div>
+            {% if include.media == 'left' %}
+              <div class="uk-card{% unless block.icon %} uk-card-large{% endunless %} uk-card-{{ include.card_style | default: 'none' }} uk-grid-collapse uk-margin{% if block.icon %} card-icon{% endif %}" data-uk-grid>
+                <div class="uk-card-media-left{% if block.icon %} uk-width-auto@m uk-flex uk-flex-middle{% if include.card_style %} uk-padding{% endif %}{% if include.content_align %} uk-flex-{{ include.content_align }}{% endif %}{% else %} uk-width-1-2@m{% endif %}">
+                  {% if block.icon %}
+                    {% include icons/{{ block.icon }} %}
+                  {% elsif block.image %}
+                    <img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
+                  {% endif %}
+                </div>
+                <div class="uk-flex uk-flex-middle{% if include.content_align %} uk-flex-{{ include.content_align }}{% endif %} uk-width-expand@m">
+                  <div class="uk-card-body">
+                    <h3 class="{% if block.icon %}uk-card-title{% else %}uk-h2{% endif %}">{{ block.title }}</h3>
+                    {{ block.content }}
+                  </div>
+                </div>
+              </div>
+            {% elsif include.media == 'right' %}
+              <div class="uk-card{% unless block.icon %} uk-card-large{% endunless %} uk-card-{{ include.card_style | default: 'none' }} uk-grid-collapse uk-margin{% if block.icon %} card-icon{% endif %}" data-uk-grid>
+                <div class="uk-flex-last@m uk-card-media-right{% if block.icon %} uk-width-auto@m uk-flex uk-flex-middle{% if include.card_style %} uk-padding{% endif %}{% if include.content_align %} uk-flex-{{ include.content_align }}{% endif %}{% else %} uk-width-1-2@m{% endif %}">
+                  {% if block.icon %}
+                    {% include icons/{{ block.icon }} %}
+                  {% elsif block.image %}
+                    <img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
+                  {% endif %}
+                </div>
+                <div class="uk-flex uk-flex-middle{% if include.content_align %} uk-flex-{{ include.content_align }}{% endif %} uk-width-expand@m">
+                  <div class="uk-card-body">
+                    <h3 class="{% if block.icon %}uk-card-title{% else %}uk-h2{% endif %}">{{ block.title }}</h3>
+                    {{ block.content }}
+                  </div>
+                </div>
+              </div>
+            {% elsif include.media == 'top' %}
+              <div class="uk-card uk-card-{{ include.card_style | default: 'none' }}{% if block.icon %} card-icon{% endif %}">
+                {% if block.icon or block.image %}
+                  <div class="uk-card-media-top{% if block.icon and include.card_style %} uk-padding uk-padding-remove-bottom{% endif %}">
+                    {% if block.icon %}
+                      {% include icons/{{ block.icon }} %}
+                    {% elsif block.image %}
+                    <img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
+                    {% endif %}
+                  </div>
+                {% endif %}
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">{{ block.title }}</h3>
+                  {% if block.heading %}
+                    <h4 class="uk-heading-medium uk-margin">{{ block.heading }}</h4>
+                  {% endif %}
+                  {{ block.content }}
+                </div>
+              </div>
 						{% else %}
 							<img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
 							<div class="uk-position-center uk-panel">{% unless include.display_title == "false" %}<h3 class="uk-card-title">{{ block.title }}</h3>{% endunless %}</div>
@@ -68,7 +101,7 @@
 		</div>
 
     {% if include.navigation == 'outside' %}
-      <div class="uk-hidden@m uk-light">
+      <div class="uk-hidden@m{% if include.card_style == 'secondary' or include.card_style == 'primary' %} uk-light{% endif %}">
         <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
         <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
       </div>
@@ -77,7 +110,7 @@
         <a class="uk-position-center-right-out uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
       </div>
     {% else %}
-      <div{% unless include.style == 'default' %} class="uk-light"{% endunless %}>
+      <div{% if include.card_style == 'secondary' or include.card_style == 'primary' %} class="uk-ligh"{% endif %}>
         <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
         <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
       </div>
