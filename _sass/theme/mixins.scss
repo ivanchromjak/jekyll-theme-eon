@@ -662,7 +662,7 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
         margin-bottom: $global-medium-margin * .4;
       }
 
-      > div {
+      > #map {
         margin-bottom: $global-medium-margin * .9;
       }
       
@@ -672,6 +672,9 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
 
     }
 
+  .uk-container + .uk-container {
+    margin-top: $global-medium-margin;
+  }
 
     // h1.uk-article-title {
     //   margin-bottom: $global-medium-margin;

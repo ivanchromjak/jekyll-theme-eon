@@ -178,8 +178,8 @@ defaults:
       type: posts
     values:
       layout: post
-      width: right
-      sidebar: blog
+      sidebar: 
+        right: blog
       comments: # true
       share: true
       related: true
@@ -200,13 +200,9 @@ defaults:
       type: pages
     values:
       layout: page
-      width: single
-      sidebar: page
   # _portfolio
   - scope:
       path: ""
       type: portfolio
     values:
       layout: portfolio
-      width: single
-      sidebar: page

@@ -1,4 +1,9 @@
-{% assign sidebar = page.sidebar | default: site.sidebar | default: 'posts' %}
+{% if page.sidebar.left %}
+  {% assign sidebar = page.sidebar.left %}
+{% elsif page.sidebar.right %}
+  {% assign sidebar = page.sidebar.right %}
+{% endif %}
+
 
 {% for widget in site.data.sidebar.[sidebar] %}
   <div class="uk-margin-large-bottom">

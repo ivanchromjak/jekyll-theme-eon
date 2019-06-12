@@ -70,7 +70,7 @@ header:
     grid="1-3"
   %}
 
-  {% include features.html 
+  {% include cards.html 
     block="feature" 
     background_color="muted" 
     section_title="Awesome Features" 
@@ -80,14 +80,14 @@ header:
     grid="1-3"
   %}
 
-  {% include features.html 
+  {% include cards.html 
     block="feature-6" 
     background_color="default" 
     media="left"
     grid="1-1"
   %}
 
-  {% include features.html 
+  {% include cards.html 
     block="feature-6" 
     background_color="primary" 
     media="right"

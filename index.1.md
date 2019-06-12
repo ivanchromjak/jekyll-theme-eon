@@ -30,7 +30,7 @@ header:
 
 {% if site.template == 'base' %}
 
-  {% include features.html 
+  {% include cards.html 
     block="feature" 
     background_color="default" 
     section_size="large"
@@ -42,7 +42,7 @@ header:
     grid="1-4"
   %}
 
-  {% include features.html 
+  {% include cards.html 
     block="home-why" 
     section_title="Why use Eon theme?"
     section_align="center"
