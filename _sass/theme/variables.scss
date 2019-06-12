@@ -23,14 +23,14 @@ $global-xlarge-font-size:                       1.9375rem;
 $global-large-font-size:                        1.5rem;
 $global-medium-font-size:                       1.25rem;
 
-// $base-heading-font-family:                      'Merriweather', serif; //system-ui; //'Playfair Display', serif;
-$base-heading-font-weight:                      bold;
+$base-heading-font-family:                      'Varela Round', 'Montserrat', system-ui, serif;
+$base-heading-font-weight:                      400;
 // $base-body-font-weight: 300;
 // $base-heading-font-weight: 300;
-$base-heading-color:                            #111;
+$base-heading-color:                            darken($global-primary-background, 25%);
 $base-h2-line-height:                           1.4;
 $base-link-hover-text-decoration:               none;
-$base-body-color:                               #75797b;
+$base-body-color:                               #868585;
 
 // $button-text-transform:                         none;
 $button-font-weight:                            400;
@@ -80,6 +80,8 @@ $card-small-body-padding-horizontal:            25px;
 $card-small-body-padding-vertical:              25px;
 $card-title-font-size:                          1.3125rem;
 
+$card-default-title-color:                      $base-heading-color;
+$card-default-color:                            $base-body-color;
 //$container-max-width: 1100px;
 // $container-small-max-width:                     740px;
 
@@ -103,12 +105,12 @@ $inverse-logo-hover-color:                      #fff;
 $nav-primary-item-font-size:                    $global-large-font-size !default;
 
 $navbar-background:                             #fff;
-$navbar-nav-item-color:                         $base-heading-color;
+$navbar-nav-item-color:                         #333;
 $navbar-nav-item-hover-color:                   #000;
 $navbar-nav-item-active-color:                  #000;
 $navbar-nav-item-font-size:                     13px;
 $navbar-nav-item-text-transform:                uppercase;
-$navbar-toggle-color:                           $base-heading-color;
+$navbar-toggle-color:                           #333;
 $navbar-toggle-hover-color:                     #000;
 // $navbar-dropdown-nav-item-active-color:
 $offcanvas-bar-color-mode:                      dark;

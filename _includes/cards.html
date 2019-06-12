@@ -40,7 +40,7 @@
           <div>
             {% if include.media == 'left' %}
               <div class="uk-card{% unless block.icon %} uk-card-large{% endunless %} uk-card-{{ include.card_style | default: 'none' }} uk-grid-collapse uk-margin{% if block.icon %} card-icon{% endif %}" data-uk-grid>
-                <div class="uk-card-media-left{% if block.icon %} uk-width-auto@m uk-flex uk-flex-middle{% if include.card_style %} uk-padding{% endif %}{% if include.content_align %} uk-flex-{{ include.content_align }}{% endif %}{% else %} uk-width-1-2@m{% endif %}">
+                <div class="uk-card-media-left{% if block.icon %} uk-width-auto@m uk-flex uk-flex-middle{% if include.card_style %} uk-padding{% endif %}{% if include.content_align %} uk-flex-{{ include.content_align }}{% endif %}{% else %} uk-width-1-2@m{% endif %}"{% if include.icon_color %} style="color: {{ include.icon_color }}"{% endif %}>
                   {% if block.icon %}
                     {% include icons/{{ block.icon }} %}
                   {% elsif block.image %}
@@ -56,7 +56,7 @@
               </div>
             {% elsif include.media == 'right' %}
               <div class="uk-card{% unless block.icon %} uk-card-large{% endunless %} uk-card-{{ include.card_style | default: 'none' }} uk-grid-collapse uk-margin{% if block.icon %} card-icon{% endif %}" data-uk-grid>
-                <div class="uk-flex-last@m uk-card-media-right{% if block.icon %} uk-width-auto@m uk-flex uk-flex-middle{% if include.card_style %} uk-padding{% endif %}{% if include.content_align %} uk-flex-{{ include.content_align }}{% endif %}{% else %} uk-width-1-2@m{% endif %}">
+                <div class="uk-flex-last@m uk-card-media-right{% if block.icon %} uk-width-auto@m uk-flex uk-flex-middle{% if include.card_style %} uk-padding{% endif %}{% if include.content_align %} uk-flex-{{ include.content_align }}{% endif %}{% else %} uk-width-1-2@m{% endif %}"{% if include.icon_color %} style="color: {{ include.icon_color }}"{% endif %}>
                   {% if block.icon %}
                     {% include icons/{{ block.icon }} %}
                   {% elsif block.image %}
@@ -73,7 +73,7 @@
             {% else %}
               <div class="uk-card{% if block.card_style %} uk-card-{{ block.card_style }}{% else %} uk-card-{{ include.card_style | default: 'none' }}{% endif %}{% if block.icon %} card-icon{% endif %}{% if include.card_type == 'pricing' %} card-pricing{% endif %}">
                 {% if block.icon or block.image %}
-                  <div class="uk-card-media-top{% if block.icon and include.card_style %} uk-padding uk-padding-remove-bottom{% endif %}">
+                  <div class="uk-card-media-top{% if block.icon and include.card_style %} uk-padding uk-padding-remove-bottom{% endif %}"{% if include.icon_color %} style="color: {{ include.icon_color }}"{% endif %}>
                     {% if block.icon %}
                       {% include icons/{{ block.icon }} %}
                     {% elsif block.image %}

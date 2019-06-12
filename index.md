@@ -30,7 +30,7 @@ header:
 
 {% if site.template == 'base' %}
 
-  {% include features.html 
+  {% include cards.html 
     block="feature" 
     background_color="default" 
     section_size="large"
@@ -39,18 +39,18 @@ header:
     content_align="center"
     media="top"
     grid="1-4"
+    gutter="large"
+    icon_color="#D95B72"
   %}
 
-  {% include features.html 
+  {% include cards.html 
     block="home-why" 
     section_title="Why use Eon theme?"
     section_align="center"
     section_size="large"
-    section_color="light-"
     background_color="muted"
-    media="top" 
-    content_align="left"
     grid="1-3"
+    gutter="large"
   %}
 
   {% include cta.html 
