@@ -20,7 +20,7 @@
       {%- if include.title -%}
         <h2 class="uk-margin-medium-bottom">{{- block.title -}}</h2>
       {%- endif -%}
-      <div>{{ block.content }}</div>
+      <div class="uk-article-content">{{ block.content }}</div>
 
 {% include partials/section-close.html 
   section_size=include.section_size 

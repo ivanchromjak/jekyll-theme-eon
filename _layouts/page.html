@@ -2,6 +2,9 @@
 layout: default
 ---
 
+{% if page.width == 'full' %}
+  {{ content }}
+{% else %}
 <article class="uk-article">
 
   {% unless page.header %}
@@ -13,11 +16,4 @@ layout: default
   </div>
 
 </article>
-
-<script>
-  // Table of contents scroll to
-  UIkit.scroll('#markdown-toc a', {
-      duration: 400,
-      offset: 120
-  });
-</script>
+{% endif %}
