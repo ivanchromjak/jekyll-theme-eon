@@ -21,8 +21,7 @@
   <p>Create Instagram <a href="https://instagram.pixelunion.net/">access token</a> and add it to _config.yml file, e.g. instagram_accesstoken: 12537527232323223</p>
 </div>
 {% endunless %}
-{%- assign cols = include.cols | default: '4') -%}
-<div id="instagram" class="uk-child-width-1-2@s uk-child-width-1-{{ cols }}@m{% if include.gutter == 'false' %} uk-grid-collapse{% endif %}" data-uk-grid></div>
+<div id="instagram" class="uk-child-width-1-2@s uk-child-width-{{ include.grid | default: '1-4' }}@m{% if include.gutter == 'false' %} uk-grid-collapse{% endif %}{% if include.gutter == 'small' or include.gutter == 'large' %} uk-grid-{{ include.gutter }}{% endif %}" data-uk-grid></div>
 <script type="text/javascript">
   instafetch.init({
     accessToken: '{{ site.instagram_accesstoken }}',

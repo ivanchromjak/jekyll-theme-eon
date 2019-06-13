@@ -30,10 +30,10 @@
 {% else %}
   {% assign grid = 'uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-6@l' %}
 {%- endif -%}
-<div data-uk-slider="{% if include.center %}center: true;{% endif %}{% if include.autoplay %} autoplay: true;{% endif %}{% if include.sets %} sets: true;{% endif %}">
+<div data-uk-slider="{% if include.center %}center: true;{% endif %}{% if include.autoplay %} autoplay: true;{% endif %}{% if include.sets %} sets: true;{% endif %}" tabindex="-1">
 	<div class="uk-position-relative">
 		<div class="uk-visible-toggle uk-slider-container{% if include.card_style == 'default' %} slider-card-shadow-fix{% endif %}{% if include.color == 'light' %} uk-light{% endif %}">
-			<ul class="{{ grid }} uk-slider-items uk-grid uk-grid-match">
+			<ul class="{{ grid }} uk-slider-items uk-grid uk-grid-match{% if include.gutter == 'false' %} uk-grid-collapse{% endif %}{% if include.gutter == 'small' or include.gutter == 'large' %} uk-grid-{{ include.gutter }}{% endif %}">
 			{% assign blocks = (site.blocks | sort: 'card[slug]') %}
 			{% for block in blocks %}
 				{% if block.slug contains include.block %}
@@ -90,9 +90,11 @@
                 </div>
               </div>
 						{% else %}
-							<img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
-							<div class="uk-position-center uk-panel">{% unless include.display_title == "false" %}<h3 class="uk-card-title">{{ block.title }}</h3>{% endunless %}</div>
-						{% endif %}
+              <div class="uk-panel">
+                <img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
+                <div class="uk-position-center uk-panel">{% unless include.display_title == "false" %}<h3 class="uk-card-title-">{{ block.title }}</h3>{% endunless %}</div>
+              </div>
+            {% endif %}
 					</li>
 				{% endif %}
 			{% endfor %}

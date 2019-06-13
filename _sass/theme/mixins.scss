@@ -391,6 +391,13 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
     }
   }
 
+  .uk-card-primary,
+  .uk-card-secondary {
+    .uk-card-media {
+        color: #fff;
+    }
+  }
+
 	// .uk-card, .box {
 	// 	svg {
 	// 		fill: $global-primary-background;
@@ -654,13 +661,13 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
         margin-bottom: $global-medium-margin * .6;
       }
 
-      p, ul, ol, dl, pre, address, fieldset, figure, blockquote {
+      p, ul, ol, dl, pre, address, fieldset, figure:not(.uk-align-left):not(.uk-align-right), blockquote {
         margin-bottom: $global-medium-margin * .9;
       }
 
-      img {
-        margin-bottom: $global-medium-margin * .4;
-      }
+    //   img {
+    //     margin-bottom: $global-medium-margin * .4;
+    //   }
 
       > #map {
         margin-bottom: $global-medium-margin * .9;
@@ -670,6 +677,17 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
         margin-bottom: 0;
       }
 
+
+    }
+
+    figcaption.uk-overlay {
+        padding: 7px 12px;
+    }
+
+    .uk-section {
+        figure {
+            margin-top: 0;
+        }
     }
 
   .uk-container + .uk-container {
