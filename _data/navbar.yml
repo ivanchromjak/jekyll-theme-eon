@@ -9,12 +9,8 @@ center:
     dropdown:
       - title: Cards
         url: /cards/
-      - title: Images
-        url: /images/
-      - title: Gallery
-        url: /gallery/
-      - title: Slideshow
-        url: /slideshow/
+      - title: Media
+        url: /media/
       - title: Map Default
         url: /map-default/
       - title: Map Silver

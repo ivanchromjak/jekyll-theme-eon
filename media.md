@@ -1,5 +1,5 @@
 ---
-title: Cards
+title: Media
 subtitle: The options and posibilities are endless
 width: full
 navbar:
@@ -10,7 +10,7 @@ navbar:
   transparent_color: light
 header:
   layout: center # Options: left, center, 1-1, 1-2, 1-3 or 2-3
-  background_image: header-2.jpeg
+  background_image: https://source.unsplash.com/FgSyP02I0gw/1800x700
   background_overlay: "rgba(0, 0, 0, 0.45)"
   color: light
   section_size: large
