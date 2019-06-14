@@ -103,8 +103,6 @@ header:
     align="center"
   %}
 
-  {% include block.html id="support" section="default" type="center" padding="remove-bottom" %}
-
   {% include cta.html 
     title="Create your new website today!" button_style="danger" button_text="Join Us" button_url="https://www.envato.com" 
     subtitle="Experience the advatages of static Jekyll site and piece of mind."

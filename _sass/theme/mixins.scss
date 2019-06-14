@@ -423,17 +423,20 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
 }
 
 
-// @mixin hook-heading-small(){
-//     font-weight: 400;
-// }
+@mixin hook-heading-small(){
+    // font-weight: 400;
+    color: #000;
+}
 
-// @mixin hook-heading-medium(){
-//     font-weight: 400;
-// }
+@mixin hook-heading-medium(){
+    // font-weight: 400;
+    color: #000;
+}
 
-// @mixin hook-heading-large(){
-//     font-weight: 400;
-// }
+@mixin hook-heading-large(){
+    // font-weight: 400;
+    color: #000;
+}
 
 // @mixin hook-card-media-top(){}
 // @mixin hook-card-media-bottom(){}

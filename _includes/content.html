@@ -15,13 +15,11 @@
   content_align=include.content_align
   content_color=include.content_color
 %}
-
-      {%- assign block = site.blocks | where:"slug", include.block | first -%}
-      {%- if include.title -%}
-        <h2 class="uk-margin-medium-bottom">{{- block.title -}}</h2>
-      {%- endif -%}
-      <div class="uk-article-content">{{ block.content }}</div>
-
+{%- assign block = site.blocks | where:"slug", include.block | first -%}
+{%- if include.title -%}
+  <h2 class="uk-margin-medium-bottom">{{- block.title -}}</h2>
+{%- endif -%}
+<div class="uk-article-content">{{ block.content }}</div>
 {% include partials/section-close.html 
   section_size=include.section_size 
 	background_color=include.background_color

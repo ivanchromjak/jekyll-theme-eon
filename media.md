@@ -87,6 +87,16 @@ header:
   gutter="small"
 %}
 
+{% include videos.html 
+  block="video-home" 
+  columns="3" 
+  section_size="large"
+  section_align="center"
+  section_padding="remove-bottom"
+  section_title="Videos in Lightbox" 
+  card_style="default"
+%}
+
 {% include content.html 
   block="videos"
   section_size="large"
