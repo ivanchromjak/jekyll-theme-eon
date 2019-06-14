@@ -87,35 +87,10 @@ header:
   gutter="small"
 %}
 
-<!-- {% include video.html 
-  block="video-intro" 
-  background_color="default" 
+{% include content.html 
+  block="videos"
   section_size="large"
-  section_padding="remove-bottom"
-  section_align="center" 
-  section_container="small"
-  content_align="center" 
-%}
-
-{% include video.html 
-  block="video-intro" 
-  section_size="large"
-  section_padding="remove-bottom"
-  section_container="small"
-%}
-
-{% include video.html 
-  block="video-home2" 
-  section_size="large"
-  section_padding="remove-bottom"
-%} -->
-
-{% include videos.html 
-  block="video-home" 
-  grid="1-3" 
-  section_size="large"
-  section_padding="remove-bottom"
+  section_title="Responsive videos" 
+  section_container="xsmall"
   section_align="center"
-  section_title="Videos in lightbox" 
-  card_style="default"
 %}

@@ -15,35 +15,24 @@
   content_align=include.content_align
   content_color=include.content_color
 %}
-{%- assign block = site.blocks | where:"slug", include.block | first -%}
-{%- if include.section_align == 'center' -%}
-  <h2 class="uk-margin-remove">{{ block.title }}</h2>
-  {% if block.subtitle %}
-    <p class="uk-margin-small-top uk-margin-remove-bottom uk-text-lead">{{ block.subtitle }}</p>
-  {% endif %}
+{% if include.lightbox %}
   <div class="uk-margin-medium-top" data-uk-lightbox>
     <a href="{{ block.video }}" data-caption="{{ block.title }}"><div class="icon">{% include icons/ios-play-button-circled.svg %}</div></a>
   </div>
-  {% unless block.content == blank %}<div class="uk-margin-medium-top">{{ block.content }}</div>{% endunless %}
-{%- else -%}
-	<div class="uk-flex uk-flex-middle uk-grid-large" data-uk-grid data-uk-lightbox>
-		<div class="uk-width-expand">
-			<h2 class="uk-margin-remove">{{ block.title }}</h2>
-      {% if block.subtitle %}
-        <p class="uk-margin-small-top uk-margin-remove-bottom uk-text-lead">{{ block.subtitle }}</p>
-      {% endif %}
-		</div>
-		<div class="uk-width-auto">
-			<div data-uk-lightbox>
-				<a href="{{ block.video }}" data-caption="{{ block.title }}"><div class="icon">{% include icons/ios-play-button-circled.svg %}</div></a>
-			</div>
-		</div>
-		{% unless block.content == blank %}<div class="uk-width-expand">{{ block.content }}</div>{% endunless %}
-	</div>
-{%- endif -%}
+{% else %}
+  {% if include.type == 'youtube' %}
+    <iframe src="https://www.youtube-nocookie.com/embed/{{ include.id }}?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1"  frameborder="0" allowfullscreen  uk-responsive data-uk-video="{% if include.automute %} automute: true;{% endif %}"></iframe>
+  {% elsif include.type == 'vimeo' %}
+    <iframe src="https://player.vimeo.com/video/{{ include.id }}?title=0&byline=0&portrait=0"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen uk-responsive data-uk-video="{% if include.autoplay %}autoplay: inview;{% endif %}{% if include.automute %} automute: true;{% endif %}"></iframe>
+  {% else %}
+    <video src="{% if include.id contains 'http' %}{{ include.id }}{% else %}{{ site.uploads | absolute_url }}{{ include.id }}{% endif %}" data-uk-video="{% if include.autoplay %}autoplay: inview;{% endif %}"></video>
+  {% endif %}
+{% endif %}
 {% include partials/section-close.html 
   section_size=include.section_size 
 	background_color=include.background_color
 	background_image=include.background_image
 	background_video=include.background_video
 %}
+
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/181667982" width="640" height="360" frameborder="0" allowfullscreen></iframe>
