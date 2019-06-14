@@ -11,6 +11,8 @@ center:
         url: /cards/
       - title: Media
         url: /media/
+      - title: Call To Action
+        url: /cta/
       - title: Map Default
         url: /map-default/
       - title: Map Silver

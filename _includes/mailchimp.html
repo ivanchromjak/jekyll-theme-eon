@@ -1,3 +1,20 @@
+{% include partials/section-open.html 
+  section_size=include.section_size
+  section_padding=include.section_padding
+  section_align=include.section_align
+  section_height=include.section_height
+  section_color=include.section_color
+  section_container=include.section_container
+  section_title=include.section_title
+  section_subtitle=include.section_subtitle
+  background_color=include.background_color
+  background_image=include.background_image
+  background_video=include.background_video
+  background_align=include.background_align
+  background_overlay=include.background_overlay
+  content_align=include.content_align
+  content_color=include.content_color
+%}
 <!-- Begin Mailchimp Signup Form -->
 <div id="mc_embed_signup">
     <form action="{{ site.mailchimp.form_action }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -19,3 +36,9 @@
     </form>
 </div>
 <!--End mc_embed_signup-->
+{% include partials/section-close.html 
+  section_size=include.section_size 
+	background_color=include.background_color
+	background_image=include.background_image
+	background_video=include.background_video
+%}

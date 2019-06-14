@@ -15,33 +15,70 @@
   content_align=include.content_align
   content_color=include.content_color
 %}
-
-{% if include.layout == 'center' %}
-	<div data-uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
-		{% if include.title %}
-			<h3 class="uk-h2 uk-margin-remove">{{ include.title }}</h3>
-		{% endif %}
-		{% if include.subtitle %}
-			<p class="uk-text-lead uk-margin-small">{{ include.subtitle }}</p>
-		{% endif %}
-		<a class="uk-button uk-button-xlarge uk-button-{{ include.button_style | default: 'primary' }}" href="{{ domain }}{{ include.button_url }}">{{ include.button_text }}</a>
-	</div>
-{% else %}
-	<div class="uk-grid-large uk-flex-middle" data-uk-grid data-uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
-		<div class="uk-width-3-4@m">
-			{% if include.title %}
-				<h3 class="uk-h2 uk-margin-remove">{{ include.title }}</h3>
-			{% endif %}
-			{% if include.subtitle %}
-				<p class="uk-text-lead uk-margin-small">{{ include.subtitle }}</p>
-			{% endif %}
-		</div>
-		<div class="uk-width-1-4@m">
-			<a class="uk-button uk-button-large uk-button-{{ include.button_style | default: 'primary' }}" href="{{ domain }}{{ include.button_url }}">{{ include.button_text }}</a>
-		</div>
-	</div>
+{%- assign block = site.blocks | where:"slug", include.block | first -%}
+{% if include.layout == 'one' %}
+  <div data-uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
+    <h2 class="section-title uk-margin-remove">{{ block.title }}</h2>
+    {% if block.subtitle %}
+      <p class="uk-margin-top uk-margin-remove-bottom uk-text-lead">{{ block.subtitle }}</p>
+    {% endif %}
+    {% unless block.content == blank %}<div class="uk-margin-medium-top">{{ block.content }}</div>{% endunless %}
+    {% if block.video %}
+    <div class="uk-margin-medium-top" data-uk-lightbox>
+      <a href="{{ block.video }}" data-caption="{{ block.title }}"><div class="icon">{% include icons/ios-play-button-circled.svg %}</div></a>
+    </div>
+    {% endif %}
+    {% if block.button %}
+      <a class="uk-margin-medium-top uk-button uk-button-xlarge uk-button-{{ block.button.style | default: 'primary' }}" href="{{ domain }}{{ block.button.url }}"{% if block.button.blank %} target="_blank"{% endif %}>{{ block.button.text }}</a>
+    {% endif %}
+  </div>
+{% elsif include.layout == 'two' %}
+  <div class="uk-grid-large uk-flex-middle" data-uk-grid data-uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
+    <div class="uk-width-expand@m">
+      {% if block.title %}
+        <h2 class="section-title uk-margin-remove">{{ block.title }}</h2>
+      {% endif %}
+      {% if block.subtitle %}
+        <p class="uk-text-lead uk-margin-small">{{ block.subtitle }}</p>
+      {% endif %}
+      {% unless block.content == blank %}<div class="uk-margin-medium-top">{{ block.content }}</div>{% endunless %}
+    </div>
+    <div class="uk-width-auto@m">
+      {% if block.video %}
+      <div class="uk-margin-medium-top" data-uk-lightbox>
+        <a href="{{ block.video }}" data-caption="{{ block.title }}"><div class="icon">{% include icons/ios-play-button-circled.svg %}</div></a>
+      </div>
+      {% endif %}
+      {% if block.button %}
+        <a class="uk-button uk-button-xlarge uk-button-{{ block.button.style | default: 'primary' }}" href="{{ domain }}{{ block.button.url }}"{% if block.button.blank %} target="_blank"{% endif %}>{{ block.button.text }}</a>
+      {% endif %}
+    </div>
+  </div>
+{% elsif include.layout == 'three' %}
+  <div class="uk-grid-large uk-flex-middle" data-uk-grid data-uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
+    <div class="uk-width-expand@m">
+      {% if block.title %}
+        <h2 class="section-title uk-margin-remove">{{ block.title }}</h2>
+      {% endif %}
+      {% if block.subtitle %}
+        <p class="uk-text-lead uk-margin-small-top">{{ block.subtitle }}</p>
+      {% endif %}
+    </div>
+    <div class="uk-width-auto@m">
+      {% if block.video %}
+      <div data-uk-lightbox>
+        <a href="{{ block.video }}" data-caption="{{ block.title }}"><div class="icon">{% include icons/ios-play-button-circled.svg %}</div></a>
+      </div>
+      {% endif %}
+      {% if block.button %}
+        <a class="uk-button uk-button-xlarge uk-button-{{ block.button.style | default: 'primary' }}" href="{{ domain }}{{ block.button.url }}"{% if block.button.blank %} target="_blank"{% endif %}>{{ block.button.text }}</a>
+      {% endif %}
+    </div>
+    <div class="uk-width-expand@m">
+      {% unless block.content == blank %}<div class="uk-article-content">{{ block.content }}</div>{% endunless %}
+    </div>    
+  </div>
 {% endif %}
-
 {% include partials/section-close.html 
   section_size=include.section_size 
 	background_color=include.background_color

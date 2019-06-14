@@ -53,20 +53,14 @@ header:
   %}
 
   {% include cta.html 
-    section_title="Create your website today!" 
-    button_style="danger" 
-    button_text="Purchase" 
-    button_url="https://www.envato.com" 
-    section_subtitle="Experience the advatages of running a static Jekyll site and concentrate an what is important."
-    blank="true" 
     section_size="large"
-    section_align="center"
     background_image="https://source.unsplash.com/WHWYBmtn3_0/1600x900"
     background_overlay="rgba(0, 0, 0, 0.5)"
     section_container="small"
-    section_color="#fff"
     content_align="center"
-    layout="center"
+    content_color="light"
+    layout="one"
+    block="cta-4"
   %}
   
 {% else %}
