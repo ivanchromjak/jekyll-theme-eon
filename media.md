@@ -18,7 +18,7 @@ header:
   parallax: true
 ---
 
-{% include content.html 
+{% include block.html 
   block="content-image"
   section_size="large"
   section_title="Images aligned in content"
@@ -97,7 +97,7 @@ header:
   card_style="default"
 %}
 
-{% include content.html 
+{% include block.html 
   block="videos"
   section_size="large"
   section_title="Responsive videos" 

@@ -14,7 +14,7 @@ header:
   parallax: true
 ---
 
-{% include content.html 
+{% include block.html 
   block="content-post2"
   section_container="xsmall"
   section_size="medium"
@@ -30,7 +30,7 @@ header:
   height="large"
 %}
 
-{% include content.html 
+{% include block.html 
   block="content-post2"
   section_container="xsmall"
   section_size="medium"

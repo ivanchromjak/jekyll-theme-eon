@@ -15,17 +15,26 @@
   content_align=include.content_align
   content_color=include.content_color
 %}
-
 {% assign block = site.blocks | where:"slug", include.block | first %}
-<div class="uk-grid-large" data-uk-grid>
-  <div class="uk-width-expand@m">
-    <h3 class="uk-margin-remove-top uk-margin-small-bottom">{{ block.title }}</h3>
+{% unless include.width == '1-1' %}
+  <div class="uk-grid-large" data-uk-grid>
+    <div class="uk-width-expand@m">
+      <h3 class="uk-h2 uk-margin-remove-top uk-margin-small-bottom">{{ block.title }}</h3>
+      {% if block.subtitle %}
+        <div class="uk-text-lead">{{ block.subtitle }}</div>
+      {% endif %}
+    </div>
+    <div class="uk-width-{{ include.width | default: '2-3' }}@m{% if include.layout == 'right' %} uk-flex-first@m{% endif %} uk-article-content">{{ block.content }}</div>
+  </div>
+{% else %}
+  <div>
+    <h3 class="uk-h2 uk-margin-remove-top uk-margin-small-bottom">{{ block.title }}</h3>
     {% if block.subtitle %}
       <div class="uk-text-lead">{{ block.subtitle }}</div>
     {% endif %}
+    <div class="uk-margin-medium-top uk-article-content">{{ block.content }}</div>
   </div>
-  <div class="uk-width-{{ include.width | default: '2-3' }}@m{% if include.layout == 'right' %} uk-flex-first@m{% endif %}">{{ block.content }}</div>
-</div>
+{% endunless %}
 {% include partials/section-close.html 
   section_size=include.section_size 
 	background_color=include.background_color

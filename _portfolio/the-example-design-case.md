@@ -16,14 +16,14 @@ header:
   parallax: true
 ---
 
-{% include columns.html 
+{% include block.html 
 	width="2-3"
   block="content-post3"
   section_size="small"
   section_container="small"
 %}
 
-{% include columns.html 
+{% include block.html 
 	width="2-3"
   block="content-post"
   section_size="small"
@@ -38,7 +38,7 @@ header:
   section_size="small"
 %}
 
-{% include columns.html 
+{% include block.html 
 	width="2-3"
   block="content-post2"
   section_size="small"

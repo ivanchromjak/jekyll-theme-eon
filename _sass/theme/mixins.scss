@@ -535,6 +535,40 @@ $section-large-padding-vertical-m:                 $global-large-margin * 1.8;
       background-color: $navbar-background;
     }
 // }
+
+
+@mixin hook-table-misc() {
+    table {
+        font-size: $global-small-font-size;
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        margin-bottom: $global-medium-margin;
+        >tr:not(:first-child), >:not(:first-child)>tr, >:first-child>tr:not(:first-child) {
+            border-top: 1px solid $table-divider-border;
+        }  
+        tbody tr {
+            transition: background-color .1s linear;
+        }
+        th, td {
+            padding: 10px 12px;
+        }  
+        td {
+            vertical-align: top;
+        }  
+        th {
+            text-align: left;
+            vertical-align: bottom;
+        }
+        th:first-child, td:first-child {
+            padding-left: 0;
+        }  
+        th:last-child, td:last-child {
+            padding-right: 0;
+        }
+    }         
+}
+
 //
 // Component: Form
 //

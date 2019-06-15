@@ -27,7 +27,7 @@ header:
 
 {% if site.template == 'base' %}
 
-  {% include content.html 
+  {% include block.html 
     block="content-post"
     section_size="large"
     section_padding="remove-vertical-"
