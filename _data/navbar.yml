@@ -13,11 +13,16 @@ center:
         url: /media/
       - title: Call To Action
         url: /cta/
-      - title: Map Default
+      - title: Team
+        url: /team/
+      - title: FAQ
+        url: /faq/
+      - title: Google Maps
+      - title: Default
         url: /map-default/
-      - title: Map Silver
+      - title: Silver
         url: /map-silver/
-      - title: Map Dark
+      - title: Dark
         url: /map-dark/
       - title: Contact Form
         url: /contact/

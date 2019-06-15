@@ -47,13 +47,11 @@
 {% else %}
   {% assign background_image = page.header.background_image %}
 {% endif %}
-<div class="uk-position-relative uk-background-{{ page.header.background_align | default: 'center-center' }} uk-background-cover" style="{% if page.header.background_color contains '#' or page.header.background_color contains 'rgb' %}background-color: {{ page.header.background_color }};{% endif %}{% if background_image %}background-image: url({% if background_image contains 'http' %}{{ background_image }}{% else %}{{ site.uploads | absolute_url }}{{ background_image }}{% endif %});{% endif %}"{% if page.header.height == 'full' %} data-uk-height-viewport{% endif %}>
+<div class="{% if page.header %}uk-cover-container {% endif %}uk-background-{{ page.header.background_align | default: 'center-center' }} uk-background-cover" style="{% if page.header.background_color contains '#' or page.header.background_color contains 'rgb' %}background-color: {{ page.header.background_color }};{% endif %}{% if background_image %}background-image: url({% if background_image contains 'http' %}{{ background_image }}{% else %}{{ site.uploads | absolute_url }}{{ background_image }}{% endif %});{% endif %}"{% if page.header.height == 'full' %} data-uk-height-viewport{% endif %}>
   {%- if page.header.background_video -%}
-  <div class="uk-position-cover uk-cover-container">
     <video autoplay loop muted playsinline data-uk-cover>
       <source src="{% if page.header.background_video contains 'http' %}{{ page.header.background_video }}{% else %}{{ site.uploads | absolute_url }}{{ page.header.background_video }}{% endif %}" type="video/mp4">
     </video>
-  </div>
   {%- endif -%}
   <div class="uk-position-cover" style="{% if page.header.background_overlay %} background: {{ page.header.background_overlay }};{% endif %}"></div>
 

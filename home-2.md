@@ -127,7 +127,6 @@ header:
 
   {% include videos.html id="video" columns="3" title="Video Tutorials" subtitle="Watch screencasts to get you started fast with Jekyll" %}
 
-  {% include faqs.html multiple="true" title="Frequently asked questions" category="presale" subtitle="Find quicke answers to frequent pre-sale questions asked by customers" %}
 
   {% include video.html id="video-home2" section="primary" layout="center" %}
 
@@ -161,7 +160,6 @@ header:
 
 {% endif %}
 
-{% include team.html authors="evan, john, sara, alex, tom, daniel" title="We are here to help" subtitle="Our team is just an email away ready to answer your questions" %}
 
 
 <!--
