@@ -1,25 +1,25 @@
 {%- if include.section_size -%}
-  {% if include.background_color or include.background_image or include.background_video %}
-  <div class="uk-cover-container{% if include.background_color == 'muted' or include.background_color == 'secondary' or include.background_color == 'primary' %} uk-section-{{ include.background_color }}{% if include.card_style %} uk-preserve-color{% endif %}{% endif %}{% if include.background_image %} uk-background-cover uk-background-{{ include.background_align | default: 'center-center' }}{% endif %}" style="{% if include.background_color contains '#' or include.background_color contains 'rgb' %}background-color: {{ include.background_color }};{% endif %}{% if include.background_image %}background-image: url({% if include.background_image contains 'http' %}{{ include.background_image }}{% else %}{{ site.uploads | absolute_url }}{{ include.background_image }}{% endif %});{% endif %}">
+  {% if include.section_background or include.section_image or include.section_video %}
+  <div class="uk-cover-container{% if include.section_background == 'muted' or include.section_background == 'secondary' or include.section_background == 'primary' %} uk-section-{{ include.section_background }}{% if include.card_style %} uk-preserve-color{% endif %}{% endif %}{% if include.section_image %} uk-background-cover uk-background-{{ include.section_image_align | default: 'center-center' }}{% endif %}" style="{% if include.section_background contains '#' or include.section_background contains 'rgb' %}background-color: {{ include.section_background }};{% endif %}{% if include.section_image %}background-image: url({% if include.section_image contains 'http' %}{{ include.section_image }}{% else %}{{ site.uploads | absolute_url }}{{ include.section_image }}{% endif %});{% endif %}">
   {% endif %}  
-    {%- if include.background_video -%}
+    {%- if include.section_video -%}
       <video autoplay loop muted playsinline data-uk-cover data-uk-video="autoplay: inview">
-        <source src="{% if include.background_video contains 'http' %}{{ include.background_video }}{% else %}{{ site.uploads | absolute_url }}{{ include.background_video }}{% endif %}" type="video/mp4">
+        <source src="{% if include.section_video contains 'http' %}{{ include.section_video }}{% else %}{{ site.uploads | absolute_url }}{{ include.section_video }}{% endif %}" type="video/mp4">
       </video>
     {%- endif -%}
-    {% if include.background_overlay %}
-      <div class="uk-position-cover" style="background: {{ include.background_overlay }};"></div>
+    {% if include.section_overlay %}
+      <div class="uk-position-cover" style="background: {{ include.section_overlay }};"></div>
     {%- endif -%}
-      <div class="uk-section uk-section-{{ include.section_size | default: 'regular' }}{% if include.section_padding %} uk-padding-{{ include.section_padding }}{% endif %}{% if include.section_height == 'viewport' %} uk-flex uk-flex-middle{% endif %}"{% if include.section_height == 'viewport' %} data-uk-height-viewport="offset-bottom: 80px"{% endif %}>
-        <div class="{% unless include.section_container == 'none' %}uk-container{% endunless %}{% if include.section_container %} uk-container-{{ include.section_container | default: 'none' }}{% endif %} uk-position-relative{% if include.content_align %} uk-text-{{ include.content_align }}{% endif %}{% if include.content_color == 'light' %} uk-light{% endif %}"{% if include.content_color and include.content_color != 'light'%} style="color: {{ include.content_color }}"{% endif %}>
+      <div class="uk-section uk-section-{{ include.section_size | default: 'regular' }}{% if include.section_padding_remove %} uk-padding-{{ include.section_padding_remove }}{% endif %}{% if include.section_height == 'viewport' %} uk-flex uk-flex-middle{% endif %}"{% if include.section_height == 'viewport' %} data-uk-height-viewport="offset-bottom: 80px"{% endif %}>
+        <div class="{% unless include.section_container == 'none' %}uk-container{% endunless %}{% if include.section_container %} uk-container-{{ include.section_container | default: 'none' }}{% endif %} uk-position-relative{% if include.section_content_align %} uk-text-{{ include.section_content_align }}{% endif %}{% if include.section_content_color == 'light' %} uk-light{% endif %}"{% if include.section_content_color and include.section_content_color != 'light'%} style="color: {{ include.section_content_color }}"{% endif %}>
 {%- endif -%}
           {%- if include.section_title or include.section_subtitle -%}
-            <div class="section-title-{{ include.section_align | default: 'left' }}{% if include.section_size == 'large' %} uk-margin-large-bottom{% else %} uk-margin-medium-bottom{% endif %}{% if include.section_color == 'light' %} uk-light{% endif %}">  
+            <div class="section-title-{{ include.section_header_align | default: 'left' }}{% if include.section_size == 'large' %} uk-margin-large-bottom{% else %} uk-margin-medium-bottom{% endif %}{% if include.section_header_color == 'light' %} uk-light{% endif %}">  
               {%- if include.section_title -%}
-                <h2 class="section-title uk-margin-remove uk-text-{{ include.section_align | default: 'left' }}"{% if include.section_color and include.section_color != 'light'%} style="color: {{ include.section_color }}"{% endif %}>{{ include.section_title }}</h2>
+                <h2 class="section-title uk-margin-remove uk-text-{{ include.section_header_align | default: 'left' }}"{% if include.section_header_color and include.section_header_color != 'light'%} style="color: {{ include.section_header_color }}"{% endif %}>{{ include.section_title }}</h2>
               {%- endif -%}
               {%- if include.section_subtitle -%}
-                <p class="uk-margin-small-top uk-margin-remove-bottom uk-text-lead uk-text-{{ include.section_align | default: 'left' }}"{% if include.section_color and include.section_color != 'light'%} style="color: {{ include.section_color }}"{% endif %}>{{ include.section_subtitle | escape }}</p>
+                <p class="uk-margin-small-top uk-margin-remove-bottom uk-text-lead uk-text-{{ include.section_header_align | default: 'left' }}"{% if include.section_header_color and include.section_header_color != 'light'%} style="color: {{ include.section_header_color }}"{% endif %}>{{ include.section_subtitle | escape }}</p>
               {%- endif -%}
             </div>
           {%- endif -%}

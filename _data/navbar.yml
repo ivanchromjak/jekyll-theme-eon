@@ -5,8 +5,27 @@ center:
   - title: Home
     url: /
 
-  - title: Components
+  - title: Features
     dropdown:
+      - title: Headers
+      - title: Header One
+        url: /header-one/
+      - title: Header Two
+        url: /header-two/
+      - title: Header Three
+        url: /header-three/
+      - title: Header Four
+        url: /header-four/
+
+      - title: Layout
+      - title: Sections
+        url: /sections/
+      - title: Containers
+        url: /containers/
+      - title: Sidebars
+        url: /sidebars/
+
+      - title: Components
       - title: Cards
         url: /cards/
       - title: Media
@@ -17,19 +36,29 @@ center:
         url: /team/
       - title: FAQ
         url: /faq/
-      - title: Google Maps
+      - title: Contact Form
+        url: /contact/
+      - title: Content
+        url: /content/
+
+      - title: Map Styles
       - title: Default
         url: /map-default/
       - title: Silver
         url: /map-silver/
       - title: Dark
         url: /map-dark/
-      - title: Contact Form
-        url: /contact/
-      - title: Layout
-        url: /layout/
-      - title: Content
-        url: /content/
+
+  - title: Pages
+    dropdown:
+    - title: Portfolio
+      url: /portfolio/
+
+    - title: Blog
+      url: /blog/
+
+    - title: 404
+      url: /404/
 
   - title: Portfolio
     url: /portfolio/
@@ -37,8 +66,8 @@ center:
   - title: Blog
     url: /blog/
 
-  - title: 404
-    url: /404/
+  - title: Docs
+    url: /theme-docs/
 
 right:
   - title: Purchase
