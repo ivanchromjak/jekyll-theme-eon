@@ -205,4 +205,4 @@ defaults:
       path: ""
       type: portfolio
     values:
-      layout: portfolio
+      layout: page

@@ -1,8 +1,8 @@
 ---
-title: Zürich
+title:  Stonehenge
 subtitle: Lorem ipsum dolor sit amet, consetetur sadipscing tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-image: portfolio-5-thumb.jpg
-topics: [Switzerland]
+image: portfolio-9-thumb.jpg
+topics: [United Kingdom]
 width: full
 navbar:
   sticky: false
@@ -10,7 +10,7 @@ navbar:
   transparent_color: light
 header:
   layout: center # Options: center 1-2 or 2-3
-  background_image: portfolio-5-header.jpg
+  background_image: portfolio-9-header.jpg
   background_overlay: "rgba(0, 0, 0, 0.5)"
   color: light
   section_size: xlarge

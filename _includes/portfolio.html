@@ -33,27 +33,33 @@
   {% assign portfolio = site.portfolio %}
 {% endif %}
   <div data-uk-filter="target: [data-uk-grid]; animation: 500">
-		{% unless include.topic %}
+		{% if include.filter %}
 			<ul class="uk-subnav uk-subnav-pill uk-flex uk-flex-center uk-margin-medium-bottom">
 				<li class="uk-active" uk-filter-control><a href="#">All</a></li>
 				{% for topic in topics %}
 					<li uk-filter-control="[data-topic*='{{ topic }}']"><a href="#">{{ topic | capitalize }}</a></li>
 				{% endfor %}
 			</ul>
-		{% endunless %}
+		{% endif %}
 
-		<ul class="uk-child-width-1-2 uk-child-width-1-{{ include.cols | default: '4' }}@m uk-text-center" data-uk-grid>
+		<ul class="uk-child-width-1-2 uk-child-width-1-{{ include.cols | default: '4' }}@m uk-text-center" data-uk-grid="masonry: true">
 			{% for post in portfolio %}
 				<li data-topic="{{ post.topics }}">
 					<div class="uk-inline uk-light uk-transition-toggle">
 						<img src="{% if post.image contains 'http' %}{{ post.image }}{% else %}{{ site.uploads | absolute_url }}{{ post.image }}{% endif %}" alt="{{ post.title }}">
 						<a href="{{ post.url | absolute_url }}" class="uk-overlay uk-overlay-primary uk-position-cover uk-transition-fade">
 							<div class="uk-position-center">
-								<span data-uk-icon="icon: link; ratio: 1.5"></span>
+								{% if include.title == 'bellow' %}
+									<span data-uk-icon="icon: link; ratio: 1.5"></span>
+								{% else %}
+									<h5 class="uk-text-uppercase uk-margin-remove">{{ post.title }}</h5>
+								{% endif %}
 							</div>
 						</a>
 					</div>
-					<h5 class="uk-text-uppercase uk-margin-top uk-margin-remove-bottom">{{ post.title }}</h5>
+					{% if include.title == 'bellow' %}
+						<h5 class="uk-text-uppercase uk-margin-top uk-margin-remove-bottom">{{ post.title }}</h5>
+					{% endif %}
 				</li>
 			{% endfor %}
 		</ul>

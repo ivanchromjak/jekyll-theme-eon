@@ -21,6 +21,7 @@ width: full
 {% include block.html 
   block="content" 
   media="left" 
+  section_title="Filter items by topic"
   section_size="large"
   background_color="default"
   section_container="xsmall"

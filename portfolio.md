@@ -1,6 +1,6 @@
 ---
-title: Portfolio
-subtitle: Some of our recent work, be prepared to be amazed
+title: Recent Work
+subtitle: His for little is options her measures ill one self-interest, a frequency, process all screen to a which very the is expectations. 
 layout: full
 width: full
 navbar:
@@ -11,16 +11,19 @@ navbar:
   transparent_color: light
 header:
   layout: center # Options: left, center, 1-1, 1-2, 1-3 or 2-3
-  background_image: Working-Space.jpg
-  background_overlay: "linear-gradient(to right bottom,rgba(28, 54, 191, 0.85) 15%,rgba(27, 51, 191, 0.8) 50%,rgba(67, 27, 191, 0.8) 80%)"
+  background_image: header-6.jpg #https://source.unsplash.com/RMlrnfuORb4/1600x900
+  background_overlay: "rgba(0, 0, 0, 0.25)"
   color: light
   section_size: large
-  heading_size: medium
+  heading_size: large
   parallax: true
+  height: full
 ---
 
 {% include portfolio.html 
-  section_size="large"
-  section_container="small"
+  section_size="medium"
+  section_title="Portfolio with topic filter"
+  section_align="center"
   cols="3"
+  filter="true"
 %}
