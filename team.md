@@ -1,21 +1,21 @@
 ---
-title: Team
-subtitle: The options and posibilities are endless
+title: Working Together
+subtitle: The on we is years, on was same my abandon duckthemed coordinates which, would writer perception their lobby, to and own not it exerted yet palace deeply, these of spirits cache caches change.
 width: full
-# navbar:
-#   sticky: true
-#   scroll_up: true
-#   animation: true
-#   transparent: true
-#   transparent_color: light
-# header:
-#   layout: center # Options: left, center, 1-1, 1-2, 1-3 or 2-3
-#   background_image: https://source.unsplash.com/krV5aS4jDjA/1600x600
-#   background_overlay: "rgba(0, 0, 0, 0.45)"
-#   color: light
-#   section_size: xlarge
-#   heading_size: medium
-#   parallax: true
+navbar:
+  sticky: true
+  scroll_up: true
+  animation: true
+  transparent: true
+  transparent_color: light
+header:
+  layout: center # Options: left, center, 1-1, 1-2, 1-3 or 2-3
+  background_image: header-5.jpg
+  background_overlay: "rgba(0, 0, 0, 0.45)"
+  color: light
+  section_size: xlarge
+  heading_size: medium
+  parallax: true
 ---
 
 {% include 
@@ -26,5 +26,5 @@ width: full
   section_size="large"
   section_container="expand"
   section_align="center"
-  background_color="muted"
+  background_color="primary"
 %}
