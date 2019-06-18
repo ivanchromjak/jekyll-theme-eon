@@ -25,7 +25,7 @@ header:
   longitude="-99.164967" 
   zoom="12" 
   section_size="medium"
-  section_padding="remove-top"
+  section_padding_remove="top"
   section_container="small"
   height="large"
 %}
@@ -34,5 +34,5 @@ header:
   block="content-post2"
   section_container="xsmall"
   section_size="medium"
-  section_padding="remove-top"
+  section_padding_remove="top"
 %}

@@ -18,7 +18,7 @@ header:
 ---
 
 {% include block.html 
-	width="1-1"
+	layout="1-1"
   block="content-post"
   section_size="medium"
   section_container="xsmall"
@@ -30,20 +30,20 @@ header:
 	caption="true"
 	lightbox="true"
   section_size="medium"
-  section_padding="remove-top"
+  section_padding_remove="top"
 %}
 
 {% include block.html 
-	width="1-1"
+	layout="1-1"
   block="content-post2"
   section_size="medium"
-  section_padding="remove-top"
+  section_padding_remove="top"
   section_container="xsmall"
 %}
 
 {% include image.html 
 	src="portfolio-4-header.jpg"
   section_size="medium"
-  section_padding="remove-top"
+  section_padding_remove="top"
   section_container="small"
 %}

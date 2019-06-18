@@ -20,27 +20,25 @@ width: full
 
 {% include block.html 
   block="block-1" 
-  media="left" 
   section_size="large"
   section_background="default"
   section_container="small"
-  width="1-1"
+  layout="1-1"
 %}
 
 {% include block.html 
   block="block-1" 
-  media="left" 
   section_size="large"
-  section_padding="remove-top"
+  section_padding_remove="top"
   section_container="small"
-  width="2-3"
+  layout="2-3"
 %}
 
 {% include block.html 
   block="block-1" 
-  layout="right" 
+  align="right" 
   section_size="large"
-  section_padding="remove-top"
+  section_padding_remove="top"
   section_container="small"
-  width="2-3"
+  layout="2-3"
 %}

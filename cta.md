@@ -33,7 +33,7 @@ header:
   section_background="secondary"
   section_overlay="rgba(0, 0, 0, 0.8)"
   section_content_color="light"
-  layout="three"
+  layout="3"
   block="cta-1"
 %}
 
@@ -44,13 +44,13 @@ header:
   section_container="small"
   section_content_align="center"
   section_content_color="light"
-  layout="one"
+  layout="1"
   block="cta-3"
 %}
 
 {% include cta.html 
   section_size="large"
   section_container="small"
-  layout="two"
+  layout="2"
   block="cta-2"
 %}

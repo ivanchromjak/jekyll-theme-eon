@@ -30,7 +30,7 @@ header:
   {% include block.html 
     block="content-post"
     section_size="large"
-    section_padding="remove-vertical-"
+    section_padding_remove="vertical-"
     section_height="viewport-"
     section_color="light"
     section_container="small"

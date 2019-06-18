@@ -10,7 +10,7 @@
   {% assign color = site.navbar.color %}
 {% endif %}
 
-{% if page.navbar.sticky %}
+{% if page.navbar.sticky == true %}
   {% assign sticky = true %}
 {% elsif page.navbar.sticky != false %}
   {% if site.navbar.sticky %}

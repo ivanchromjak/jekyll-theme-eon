@@ -24,6 +24,6 @@ header:
   section_size="medium"
   section_title="Portfolio with topic filter"
   section_header_align="center"
-  cols="3"
+  grid="1-3"
   filter="true"
 %}

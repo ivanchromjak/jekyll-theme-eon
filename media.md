@@ -22,7 +22,7 @@ header:
   block="content-image"
   section_size="large"
   section_title="Images aligned in content"
-  section_padding="remove-bottom"
+  section_padding_remove="bottom"
   section_container="xsmall"
   section_header_align="center"
 %}
@@ -31,7 +31,7 @@ header:
 	src="alexander-read.jpg"
   alt="Alt for image"
   section_size="large"
-  section_padding="remove-bottom"
+  section_padding_remove="bottom"
   section_title="Image in lightbox"
   section_header_align="center"
   section_container="small"
@@ -40,7 +40,7 @@ header:
 
 {% include gallery.html 
   section_size="large"
-  section_padding="remove-bottom"
+  section_padding_remove="bottom"
   section_title="Image Gallery Lightbox" 
   section_header_align="center"
   cols="3"
@@ -51,7 +51,7 @@ header:
 
 {% include slider.html 
   section_size="large"
-  section_padding="remove-bottom"
+  section_padding_remove="bottom"
   section_title="Image Slider" 
   section_header_align="center"
   section_container="xsmall"
@@ -64,21 +64,20 @@ header:
 {% include slider.html 
   block="slider-home" 
   section_size="large"
-  section_padding="remove-bottom"
-  section_header_align="center" 
-  section_title="Cards in slider" 
+  section_padding_remove="bottom"
   section_content_align="center"
-  color="light"
+  display_title="false"
   autoplay="true"
   sets="true"
   grid="1-3"
+  gutter="large"
   navigation="outside"
   dotnav="true"
 %}
 
 {% include instagram.html 
   section_size="large"
-  section_padding="remove-bottom"
+  section_padding_remove="bottom"
   section_container="default"
   section_title="Instagram Images"
   section_header_align="center"
@@ -92,7 +91,7 @@ header:
   columns="3" 
   section_size="large"
   section_header_align="center"
-  section_padding="remove-bottom"
+  section_padding_remove="bottom"
   section_title="Videos in Lightbox" 
   card_style="default"
 %}

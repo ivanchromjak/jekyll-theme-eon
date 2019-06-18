@@ -16,25 +16,29 @@
   section_content_color=include.section_content_color
 %}
 {% assign block = site.blocks | where:"slug", include.block | first %}
-{% unless include.width == '1-1' %}
+{% if include.layout == '1-2' or include.layout == '1-3' or include.layout == '1-4' %}
   <div class="uk-grid-large" data-uk-grid>
     <div class="uk-width-expand@m">
-      <h3 class="uk-h2 uk-margin-remove-top uk-margin-small-bottom">{{ block.title }}</h3>
+      {% unless include.block_title == 'false' %}
+        <h3 class="uk-h2 uk-margin-remove-top uk-margin-small-bottom">{{ block.title }}</h3>
+      {% endunless %}
       {% if block.subtitle %}
         <div class="uk-text-lead">{{ block.subtitle }}</div>
       {% endif %}
     </div>
-    <div class="uk-width-{{ include.width | default: '2-3' }}@m{% if include.layout == 'right' %} uk-flex-first@m{% endif %} uk-article-content">{{ block.content }}</div>
+    <div class="uk-width-{{ include.layout | default: '2-3' }}@m{% if include.align == 'right' %} uk-flex-first@m{% endif %} uk-article-content">{{ block.content }}</div>
   </div>
 {% else %}
   <div>
-    <h3 class="uk-h2 uk-margin-remove-top uk-margin-small-bottom">{{ block.title }}</h3>
+    {% unless include.block_title == 'false' %}
+      <h3 class="uk-h2 uk-margin-remove-top uk-margin-small-bottom">{{ block.title }}</h3>
+    {% endunless %}
     {% if block.subtitle %}
       <div class="uk-text-lead">{{ block.subtitle }}</div>
     {% endif %}
     <div class="uk-margin-medium-top uk-article-content">{{ block.content }}</div>
   </div>
-{% endunless %}
+{% endif %}
 {% include partials/section-close.html 
   section_size=include.section_size 
 	section_background=include.section_background

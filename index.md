@@ -59,7 +59,7 @@ header:
     section_container="small"
     section_content_align="center"
     section_content_color="light"
-    layout="one"
+    layout="1"
     block="cta-4"
   %}
   

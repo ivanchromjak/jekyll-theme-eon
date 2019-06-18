@@ -2,14 +2,14 @@
 title: Theme Docs
 width: xsmall
 navbar:
-  sticky: true
+  sticky: false
   scroll_up: true
   animation: true
   transparent: true
   transparent_color: light
 header:
   layout: center # Options: left, center, 1-1, 1-2, 1-3 or 2-3
-  background_image: https://source.unsplash.com/f77Bh3inUpE/1600x700
+  background_image: header-8.jpg
   background_overlay: "rgba(0, 0, 0, 0.5)"
   color: light
   section_size: large

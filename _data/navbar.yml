@@ -7,23 +7,23 @@ center:
 
   - title: Features
     dropdown:
-      - title: Headers
-      - title: Header One
-        url: /header-one/
-      - title: Header Two
-        url: /header-two/
-      - title: Header Three
-        url: /header-three/
-      - title: Header Four
-        url: /header-four/
+      # - title: Headers
+      # - title: Header One
+      #   url: /header-one/
+      # - title: Header Two
+      #   url: /header-two/
+      # - title: Header Three
+      #   url: /header-three/
+      # - title: Header Four
+      #   url: /header-four/
 
-      - title: Layout
-      - title: Sections
-        url: /sections/
-      - title: Containers
-        url: /containers/
-      - title: Sidebars
-        url: /sidebars/
+      # - title: Layout
+      # - title: Sections
+      #   url: /sections/
+      # - title: Containers
+      #   url: /containers/
+      # - title: Sidebars
+      #   url: /sidebars/
 
       - title: Components
       - title: Cards

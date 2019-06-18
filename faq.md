@@ -35,17 +35,17 @@ header:
   section_title="Product questions" 
   section_size="medium"
   section_background="default"
-  section_padding="remove-top"
+  section_padding_remove="top"
   section_container="xsmall"
   section_header_align="center"
 %}
 
 {% include block.html 
   block="contact-button" 
-  width="1-1"
+  layout="1-1"
   section_size="medium"
   section_background="default"
-  section_padding="remove-top"
+  section_padding_remove="top"
   section_container="xsmall"
   section_content_align="center"
 %}

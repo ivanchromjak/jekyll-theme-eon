@@ -20,10 +20,9 @@ width: full
 
 {% include block.html 
   block="content" 
-  media="left" 
-  section_title="Filter items by topic"
-  section_size="large"
+  section_size="medium"
   section_background="default"
   section_container="xsmall"
-  width="1-1"
+  layout="1-1"
+  block_title="false"
 %}
