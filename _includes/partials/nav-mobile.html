@@ -5,7 +5,7 @@
 
         <ul class="uk-nav uk-nav-primary">
             <li><a class="uk-logo uk-margin-small-bottom" href="{{ "/" | relative_url }}">{% if site.logo %}<img src="{{ site.uploads | absolute_url }}{{ site.logo }}" alt="{{ site.title }}">{% else %}{{ site.title }}{% endif %}</a></li>
-            {% for link in site.data.mobile %}
+            {% for link in site.data.[site.template].mobile %}
                 {% if link.url contains 'http' %}
                     {% assign domain = '' %}
                 {% else %}

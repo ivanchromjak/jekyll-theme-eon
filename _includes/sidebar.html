@@ -5,7 +5,7 @@
 {% endif %}
 
 
-{% for widget in site.data.sidebar.[sidebar] %}
+{% for widget in site.data.[site.template].sidebar.[sidebar] %}
   <div class="uk-margin-large-bottom">
     {% case widget.widget %}
 
