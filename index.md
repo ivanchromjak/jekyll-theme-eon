@@ -54,8 +54,8 @@ header:
 
   {% include cta.html 
     section_size="large"
-    section_image="https://source.unsplash.com/WHWYBmtn3_0/1600x900"
-   section_overlay="rgba(0, 0, 0, 0.5)"
+    section_image="header-9.jpeg"
+    section_overlay="rgba(0, 0, 0, 0.5)"
     section_container="small"
     section_content_align="center"
     section_content_color="light"
@@ -65,17 +65,5 @@ header:
   
 {% else %}
 
-  {% include cards.html id="home-right" style="" media="right" section="muted" %}
-
-  {% include cards.html id="home-next" style="primary" align="center" section="muted" %}
-
-  {% include instagram.html count="8" section="default" %}
 
 {% endif %}
-
-
-
-<!--
-background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
-background-image: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
-background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%); -->
