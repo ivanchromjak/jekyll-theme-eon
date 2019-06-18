@@ -24,26 +24,26 @@ header:
   section_title="Mailchimp newsletter signup"
   section_subtitle="Out of with muff safe found in yourself took didn't god, the world have the bedding hardly"
   section_container="xsmall"
-  section_align="center"
-  background_color="primary"
+  section_header_align="center"
+  section_background="primary"
 %}
 
 {% include cta.html 
   section_size="large"
-  background_color="secondary"
-  background_overlay="rgba(0, 0, 0, 0.8)"
-  content_color="light"
+  section_background="secondary"
+  section_overlay="rgba(0, 0, 0, 0.8)"
+  section_content_color="light"
   layout="three"
   block="cta-1"
 %}
 
 {% include cta.html 
   section_size="large"
-  background_image="section-2.jpeg"
-  background_overlay="rgba(13, 57, 181, 0.8)"
+  section_image="section-2.jpeg"
+  section_overlay="rgba(13, 57, 181, 0.8)"
   section_container="small"
-  content_align="center"
-  content_color="light"
+  section_content_align="center"
+  section_content_color="light"
   layout="one"
   block="cta-3"
 %}

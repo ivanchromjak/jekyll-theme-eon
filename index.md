@@ -31,11 +31,11 @@ header:
 
   {% include cards.html 
     block="feature" 
-    background_color="default" 
+    section_background="default" 
     section_size="large"
     section_title="The first multipurpose Jekyll theme" 
-    section_align="center"
-    content_align="center"
+    section_header_align="center"
+    section_content_align="center"
     media="top"
     grid="1-4"
     gutter="large"
@@ -45,20 +45,20 @@ header:
   {% include cards.html 
     block="home-why" 
     section_title="Why use Eon theme?"
-    section_align="center"
+    section_header_align="center"
     section_size="large"
-    background_color="muted"
+    section_background="muted"
     grid="1-3"
     gutter="large"
   %}
 
   {% include cta.html 
     section_size="large"
-    background_image="https://source.unsplash.com/WHWYBmtn3_0/1600x900"
-    background_overlay="rgba(0, 0, 0, 0.5)"
+    section_image="https://source.unsplash.com/WHWYBmtn3_0/1600x900"
+   section_overlay="rgba(0, 0, 0, 0.5)"
     section_container="small"
-    content_align="center"
-    content_color="light"
+    section_content_align="center"
+    section_content_color="light"
     layout="one"
     block="cta-4"
   %}

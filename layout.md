@@ -22,7 +22,7 @@ width: full
   block="block-1" 
   media="left" 
   section_size="large"
-  background_color="default"
+  section_background="default"
   section_container="small"
   width="1-1"
 %}

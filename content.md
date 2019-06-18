@@ -23,7 +23,7 @@ width: full
   media="left" 
   section_title="Filter items by topic"
   section_size="large"
-  background_color="default"
+  section_background="default"
   section_container="xsmall"
   width="1-1"
 %}

@@ -1,19 +1,19 @@
 {% include partials/section-open.html 
   section_size=include.section_size
-  section_padding=include.section_padding
-  section_align=include.section_align
+  section_padding_remove=include.section_padding_remove
+  section_header_align=include.section_header_align
   section_height=include.section_height
-  section_color=include.section_color
+  section_header_color=include.section_header_color
   section_container=include.section_container
   section_title=include.section_title
   section_subtitle=include.section_subtitle
-  background_color=include.background_color
-  background_image=include.background_image
-  background_video=include.background_video
-  background_align=include.background_align
-  background_overlay=include.background_overlay
-  content_align=include.content_align
-  content_color=include.content_color
+  section_background=include.section_background
+  section_image=include.section_image
+  section_video=include.section_video
+  section_image_align=include.section_image_align
+  section_overlay=include.section_overlay
+  section_content_align=include.section_content_align
+  section_content_color=include.section_content_color
 %}
 
 	{% if include.category %}
@@ -33,7 +33,7 @@
 
 {% include partials/section-close.html 
   section_size=include.section_size 
-	background_color=include.background_color
-	background_image=include.background_image
-	background_video=include.background_video
+	section_background=include.section_background
+	section_image=include.section_image
+	section_video=include.section_video
 %}

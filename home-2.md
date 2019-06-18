@@ -36,11 +36,11 @@ header:
     section_container="small"
     section_title="This is section title"
     section_subtitle="This is section subtitle"
-    section_align="center"
-    background_image="sand.jpg"
-    background_video=""
+    section_header_align="center"
+    section_image="sand.jpg"
+    section_video=""
     background_align="top-left"
-    background_overlay="linear-gradient(to right bottom,rgba(12, 180, 206, 0.85) 5%,rgba(0, 108, 255, 0.85) 30%,rgba(144, 18, 254, 0.85) 80%)"
+    section_overlay="linear-gradient(to right bottom,rgba(12, 180, 206, 0.85) 5%,rgba(0, 108, 255, 0.85) 30%,rgba(144, 18, 254, 0.85) 80%)"
     align="center" 
   %}
 
@@ -49,47 +49,47 @@ header:
     section_title="This is section title"
     section_subtitle="This is section subtitle"
     section_color="red"
-    section_align="center"
+    section_header_align="center"
     section_size="large"
     background_overlay1="rgba(255, 255, 255, 0.73)"
-    background_color="#563493"
+    section_background="#563493"
     style="default" 
     media="top" 
-    content_align="center"
+    section_content_align="center"
     grid="1-4"
   %}
 
   {% include cards.html 
     block="home-cta" 
     section_title="Why switch to Jekyll" 
-    section_align="center"
-    background_color="default" 
+    section_header_align="center"
+    section_background="default" 
     style="default" 
     media="top" 
-    content_align="left"
+    section_content_align="left"
     grid="1-3"
   %}
 
   {% include cards.html 
     block="feature" 
-    background_color="muted" 
+    section_background="muted" 
     section_title="Awesome Features" 
-    section_align="center"
-    content_align="center"
+    section_header_align="center"
+    section_content_align="center"
     media="top"
     grid="1-3"
   %}
 
   {% include cards.html 
     block="feature-6" 
-    background_color="default" 
+    section_background="default" 
     media="left"
     grid="1-1"
   %}
 
   {% include cards.html 
     block="feature-6" 
-    background_color="primary" 
+    section_background="primary" 
     media="right"
     grid="1-1"
   %}
@@ -97,8 +97,8 @@ header:
   {% include cards.html 
     block="pricing" 
     section_title="Pricing" 
-    section_align="center"
-    background_color="muted" 
+    section_header_align="center"
+    section_background="muted" 
     style="default"
     align="center"
   %}
@@ -108,11 +108,11 @@ header:
     subtitle="Experience the advatages of static Jekyll site and piece of mind."
     blank="true" 
     section_size="xlarge"
-    background_image="multipurpose.webp"
-    background_overlay="rgba(0, 0, 0, 0.8)"
+    section_image="multipurpose.webp"
+    section_overlay="rgba(0, 0, 0, 0.8)"
     section_container="small"
-    content_align="center"
-    content_color="light"
+    section_content_align="center"
+    section_content_color="light"
     layout="center"
   %}
 
@@ -121,8 +121,8 @@ header:
     subtitle="Experience the advatages of static Jekyll site and piece of mind."
     blank="true" 
     section_size="xlarge"
-    background_image="multipurpose.webp"
-    background_overlay="rgba(255, 255, 255, 0.8)"
+    section_image="multipurpose.webp"
+    section_overlay="rgba(255, 255, 255, 0.8)"
   %}
 
   {% include videos.html id="video" columns="3" title="Video Tutorials" subtitle="Watch screencasts to get you started fast with Jekyll" %}

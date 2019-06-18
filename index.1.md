@@ -32,12 +32,12 @@ header:
 
   {% include cards.html 
     block="feature" 
-    background_color="default" 
+    section_background="default" 
     section_size="large"
     section_title="The first trully multipurpose Jekyll theme" 
     section_subtitle="Loaded with awesome features and options to design your perfect site"
-    section_align="center"
-    content_align="center"
+    section_header_align="center"
+    section_content_align="center"
     media="top"
     grid="1-4"
   %}
@@ -45,31 +45,31 @@ header:
   {% include cards.html 
     block="home-why" 
     section_title="Why use Eon theme?"
-    section_align="center"
+    section_header_align="center"
     section_size="large"
     section_color="light"
-    background_color="primary"
+    section_background="primary"
     media="top" 
-    content_align="left"
+    section_content_align="left"
     grid="1-3"
   %}
 
   {% include video.html 
     block="video-intro" 
-    background_color="default" 
+    section_background="default" 
     section_size="large"
-    section_align="center" 
+    section_header_align="center" 
     section_container="small"
   %}
 
   {% include blog.html 
     section_size="large"
     section_title="Latest Posts" 
-    section_align="center"
-    background_color="muted" 
+    section_header_align="center"
+    section_background="muted" 
     style="default" 
     media="top" 
-    content_align="left"
+    section_content_align="left"
     grid="1-3"
     count="3"
     view_all="blog/"
@@ -79,8 +79,8 @@ header:
     block="pricing" 
     section_size="large"
     section_title="Pricing Cards" 
-    section_align="center"
-    background_color="muted" 
+    section_header_align="center"
+    section_background="muted" 
     style="default"
     align="center"
   %}
@@ -89,7 +89,7 @@ header:
     block="video-home" 
     columns="3" 
     section_size="large"
-    section_align="center"
+    section_header_align="center"
     section_title="Video Tutorials" 
     section_subtitle="Watch screencasts to get you started fast with Jekyll" 
   %}
@@ -99,8 +99,8 @@ header:
   {% include portfolio.html 
     section_size="large"
     section_title="Portfolio" 
-    section_align="center"
-    background_color="muted"
+    section_header_align="center"
+    section_background="muted"
     cols="3"
   %}
 
@@ -109,8 +109,8 @@ header:
     media="left" 
     section_size="large"
     section="muted" 
-    section_align="center"  
-    content_align="left"
+    section_header_align="center"  
+    section_content_align="left"
     center="true-"
   %}
 
@@ -119,17 +119,17 @@ header:
     media="right" 
     section_size="large"
     section="muted" 
-    section_align="center"  
-    background_color="muted"
-    content_align="left"
+    section_header_align="center"  
+    section_background="muted"
+    section_content_align="left"
     center="true-"
   %}
 
   {% include gallery.html 
     section_size="large"
     section_title="Image Gallery" 
-    section_align="center"
-    background_color="default"
+    section_header_align="center"
+    section_background="default"
     cols="3"
     gutter="true"
     gallery="gallery-1"
@@ -159,13 +159,13 @@ header:
     section_subtitle="Experience the advatages of running a static Jekyll site and concentrate an what is important."
     blank="true" 
     section_size="large"
-    section_align="center"
-    background_image="mouse.jpg"
-    background_video="mouse.mp4"
-    background_overlay="rgba(0, 0, 0, 0.8)"
+    section_header_align="center"
+    section_image="mouse.jpg"
+    section_video="mouse.mp4"
+    section_overlay="rgba(0, 0, 0, 0.8)"
     section_container="small"
     section_color="#fff"
-    content_align="center"
+    section_content_align="center"
     layout="center"
   %}
   
@@ -173,9 +173,9 @@ header:
     authors="evan, john, sara, alex, tom, daniel" 
     section_title="We are here to help" 
     section_subtitle="Our team is just an email away ready to answer your questions" 
-    section_align="center"
+    section_header_align="center"
     section_size="large"
-    background_color="muted" 
+    section_background="muted" 
   %}
 
   {% include instagram.html 

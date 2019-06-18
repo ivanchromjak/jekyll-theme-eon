@@ -10,7 +10,7 @@
     {% if include.section_overlay %}
       <div class="uk-position-cover" style="background: {{ include.section_overlay }};"></div>
     {%- endif -%}
-      <div class="uk-section uk-section-{{ include.section_size | default: 'regular' }}{% if include.section_padding_remove %} uk-padding-{{ include.section_padding_remove }}{% endif %}{% if include.section_height == 'viewport' %} uk-flex uk-flex-middle{% endif %}"{% if include.section_height == 'viewport' %} data-uk-height-viewport="offset-bottom: 80px"{% endif %}>
+      <div class="uk-section uk-section-{{ include.section_size | default: 'regular' }}{% if include.section_padding_remove %} uk-padding-remove-{{ include.section_padding_remove }}{% endif %}{% if include.section_height == 'viewport' %} uk-flex uk-flex-middle{% endif %}"{% if include.section_height == 'viewport' %} data-uk-height-viewport="offset-bottom: 80px"{% endif %}>
         <div class="{% unless include.section_container == 'none' %}uk-container{% endunless %}{% if include.section_container %} uk-container-{{ include.section_container | default: 'none' }}{% endif %} uk-position-relative{% if include.section_content_align %} uk-text-{{ include.section_content_align }}{% endif %}{% if include.section_content_color == 'light' %} uk-light{% endif %}"{% if include.section_content_color and include.section_content_color != 'light'%} style="color: {{ include.section_content_color }}"{% endif %}>
 {%- endif -%}
           {%- if include.section_title or include.section_subtitle -%}

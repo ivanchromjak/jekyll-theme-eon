@@ -25,6 +25,6 @@ header:
   section_subtitle="Our team is just an email away ready to answer your questions" 
   section_size="large"
   section_container="expand"
-  section_align="center"
-  background_color="primary"
+  section_header_align="center"
+  section_background="primary"
 %}

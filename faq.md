@@ -24,9 +24,9 @@ header:
   category="presale" 
   section_title="Presale questions" 
   section_size="medium"
-  background_color="default"
+  section_background="default"
   section_container="xsmall"
-  section_align="center"
+  section_header_align="center"
 %}
 
 {% include faqs.html 
@@ -34,18 +34,18 @@ header:
   category="presale" 
   section_title="Product questions" 
   section_size="medium"
-  background_color="default"
+  section_background="default"
   section_padding="remove-top"
   section_container="xsmall"
-  section_align="center"
+  section_header_align="center"
 %}
 
 {% include block.html 
   block="contact-button" 
   width="1-1"
   section_size="medium"
-  background_color="default"
+  section_background="default"
   section_padding="remove-top"
   section_container="xsmall"
-  content_align="center"
+  section_content_align="center"
 %}
