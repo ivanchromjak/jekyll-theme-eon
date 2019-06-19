@@ -129,9 +129,9 @@ social_networks:
 markdown:           kramdown
 highlighter:        rouge
 
-kramdown:
-  toc_levels: "2,3"
-  parse_block_html: true
+# kramdown:
+#   toc_levels: "2,3"
+#   parse_block_html: true
 
 plugins:
   - jekyll-paginate
