@@ -1,6 +1,4 @@
 ---
-title: Some title
-subtitle: Some subbbbtitle
 width: full
 navbar:
   sticky: false
@@ -19,6 +17,6 @@ header:
   parallax: true
   container: xsmall
   content:
-    block: block-search
+    block: block-signup
     # title: false
 ---

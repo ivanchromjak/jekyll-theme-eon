@@ -83,7 +83,7 @@ $article-meta-font-size: 	                    0.8125rem;
 $article-meta-line-height:                      1.6;
 
 
-// $border-rounded-border-radius: 4px;
+$border-rounded-border-radius:                  2px;
 
 $card-small-body-padding-horizontal:            25px;
 $card-small-body-padding-vertical:              25px;
@@ -130,6 +130,8 @@ $offcanvas-bar-background:                      #fff;
 
 $search-default-background:                     #fff;
 $search-default-focus-background:               #fff;
+$inverse-search-default-background:             rgba(0, 0, 0, 0.3);
+$inverse-search-default-focus-background:       rgba(0, 0, 0, 0.5);
 
 $section-success-background:                    $global-success-background;
 $section-success-color-mode:                    light;

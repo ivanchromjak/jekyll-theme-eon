@@ -10,11 +10,11 @@ center:
       - title: Search
         url: /header-search/
       - title: Video
-        url: /header-media/
-      - title: Call To Action
+        url: /header-video/
+      - title: Signup
+        url: /header-signup/
+      - title: CTA
         url: /header-cta/
-      - title: Team
-        url: /header-team/
 
   - title: Features
     dropdown:
