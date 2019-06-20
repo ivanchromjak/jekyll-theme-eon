@@ -5,6 +5,17 @@ center:
   - title: Home
     url: /
 
+  - title: Headers
+    dropdown:
+      - title: Search
+        url: /header-search/
+      - title: Video
+        url: /header-media/
+      - title: Call To Action
+        url: /header-cta/
+      - title: Team
+        url: /header-team/
+
   - title: Features
     dropdown:
       # - title: Headers
