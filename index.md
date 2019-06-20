@@ -21,7 +21,8 @@ header:
   heading_size: medium
   height: full
   parallax: true
-  container:
+  container: small
+  content:
     block: header-home
     # title: false
 ---
