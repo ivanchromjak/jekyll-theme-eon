@@ -1,6 +1,6 @@
 ---
 title: Center aligned with Mailchimp signup form
-subtitle: Conduct, in such sure have small the that want one often concepts based address be for at their with trust, supplies so, leather have through skyline the violin.
+subtitle: Header come in two layouts one or two columns, each column accepting any content, text, images, videos or any includes.
 ---
 
 {% include mailchimp.html %}
