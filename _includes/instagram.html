@@ -22,7 +22,7 @@
 </div>
 {% endunless %}
 <div id="instagram" class="uk-child-width-1-2@s uk-child-width-{{ include.grid | default: '1-4' }}@m{% if include.gutter == 'false' %} uk-grid-collapse{% endif %}{% if include.gutter == 'small' or include.gutter == 'large' %} uk-grid-{{ include.gutter }}{% endif %}" data-uk-grid></div>
-<script type="text/javascript">
+<script>
   instafetch.init({
     accessToken: '{{ site.instagram_accesstoken }}',
     target: 'instagram',
