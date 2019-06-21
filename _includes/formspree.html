@@ -4,28 +4,28 @@
     <div class="uk-margin-bottom">
         <label class="uk-form-label" for="name">{{ site.data[site.template].translation[site.lang].contact_name | default: "Name" }}</label>
         <div class="uk-form-controls">
-            <input class="uk-input uk-border-rounded" name="name" type="text" required>
+            <input class="uk-input uk-border-rounded" id="name" name="name" type="text" required>
         </div>
     </div>
     {% endif %}
     <div class="uk-margin-bottom">
         <label class="uk-form-label" for="_replyto">{{ site.data[site.template].translation[site.lang].contact_email | default: "Email" }}</label>
         <div class="uk-form-controls">
-            <input class="uk-input uk-border-rounded" name="_replyto" type="email" required>
+            <input class="uk-input uk-border-rounded" id="_replyto" name="_replyto" type="email" required>
         </div>
     </div>
     {% if include.subject == 'true' %}
     <div class="uk-margin-bottom">
         <label class="uk-form-label" for="_subject">{{ site.data[site.template].translation[site.lang].contact_subject | default: "Subject" }}</label>
         <div class="uk-form-controls">
-            <input class="uk-input uk-border-rounded" name="_subject" type="text">
+            <input class="uk-input uk-border-rounded" id="_subject" name="_subject" type="text">
         </div>
     </div>
     {% endif %}
     <div class="uk-margin-bottom">
         <label class="uk-form-label" for="message">{{ site.data[site.template].translation[site.lang].contact_message | default: "Message" }}</label>
         <div class="uk-form-controls">
-            <textarea class="uk-textarea uk-border-rounded" name="message" rows="5" minlength="10" required></textarea>
+            <textarea class="uk-textarea uk-border-rounded" id="message" name="message" rows="5" minlength="10" required></textarea>
         </div>
     </div>
     <div>
