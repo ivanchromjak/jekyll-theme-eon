@@ -1,20 +1,20 @@
 ---
-title: Theme Docs
-width: xsmall
+title:                  Theme Docs
+width:                  small
 navbar:
-  sticky: false
-  scroll_up: true
-  animation: true
-  transparent: true
-  transparent_color: light
+  sticky:               false
+  scroll_up:            true
+  animation:            true
+  transparent:          true
+  transparent_color:    light
 header:
-  layout: center # Options: left, center, 1-1, 1-2, 1-3 or 2-3
-  background_image: header-8.jpg
-  background_overlay: "rgba(0, 0, 0, 0.5)"
-  color: light
-  section_size: large
-  heading_size: medium
-  parallax: true
+  layout:               center # Options: left, center, 1-1, 1-2, 1-3 or 2-3
+  background_image:     header-8.jpg
+  background_overlay:   "rgba(0, 0, 0, 0.5)"
+  color:                light
+  section_size:         large
+  heading_size:         medium
+  parallax:             true
 ---
 
 {% include toc.html %}
@@ -42,7 +42,7 @@ You can find more on [Deployment Methods](https://jekyllrb.com/docs/deployment-m
 The base hostname and protocol for your site. If you’re hosting with GitHub Pages this will be something like `url: "https://username.github.io"` or `url: "https://mydomain.com"` if you have a custom domain name.
 
 ```yaml
-url:                "https://eon.jekyll.plus"
+url:                    "https://eon.jekyll.plus"
 ```
 
 ### Site base URL
@@ -53,95 +53,191 @@ If you want to host your site in a subfolder (eg: /blog) set it as `baseurl: "/b
 Add your site and author details in `_config.yml`:
 
 ```yaml
-title:              Eon
-description:        Multipurpose Jekyll theme.
+title:                  Eon
+description:            Multipurpose Jekyll theme.
 
 # Default author settings
 author:
-  name:             Pete Seth
-  avatar:           avatar-tom.png
-  title:            Support     
+  name:                 Pete Seth
+  avatar:               avatar-tom.png
+  title:                Support     
 ```
 
 ### Update favicon
-
 You can find the current favicon (favicon.png) inside the theme `/uploads/` directory, just replace it with your new favicon.
 
-## Navigation bar
+### Update logo
+The theme uses two logo files one dark for display on light backgrounds and one light logo for display on dark backgrounds. If you don't intent to use dark navigation backgrounds you dont need to upload the light logo.
+Add your logo image files to `/uploads/` directory, then specify the logo files in `_config.yml`:
+
+```yaml
+logo:                   logo-dark.svg
+logo_light:             logo-light.svg
+```
+If logo image files are not set, the site title text is displayed instead.
+
+## Navigation
 {: .uk-heading-divider}
+
+### Main navigation bar
+There are two navigation bar layouts `default` or `center`, the default layout offers left, center or right aligned navigation with logo on the left, the center layout display logo in the center and navigation link on the left and right. 
+
+Set navbar layout options in `_config.yml`, these setting can be overridden on per page basis in page front matter:
+
+```yaml
+navbar:
+  layout:               default   # Options: default, center
+  color:                dark      # Text color, Options: dark or light
+  animation:            true
+  sticky:               true
+  search:               false
+  scroll_up:            true
+  transparent:          true
+  transparent_color:    light  
+```
+
 
 Set in the main navigation links in `_data/base/navbar.yml`:
 
 ```yaml
+left:
+  - title: About
+    url: /about/
+center:
+  - title: About
+    url: /about/
+right:
   - title: About
     url: /about/
 ```
 
-To add a button to navigation use:
+To display a link as a button use:
 ```yaml
-  - title: Contact
-    url: /contact/
-    button: success
+- title: Contact
+  url: /contact/
+  button: success
 ```
 
-All available buttons:
+All available button styles:
 ```yaml
-  - title: Changelog
-    url: /contact/
-    button: default
+- title: Changelog
+  url: /contact/
+  button: default
 
-  - title: Contact
-    url: /contact/
-    button: primary
+- title: Contact
+  url: /contact/
+  button: primary
 
-  - title: Changelog
-    url: /contact/
-    button: secondary
+- title: Changelog
+  url: /contact/
+  button: secondary
 
-  - title: Contact
-    url: /contact/
-    button: danger
+- title: Contact
+  url: /contact/
+  button: danger
 
-  - title: Changelog
-    url: /contact/
-    button: success
+- title: Changelog
+  url: /contact/
+  button: success
 
-  - title: Contact
-    url: /contact/
-    button: warning
+- title: Contact
+  url: /contact/
+  button: warning
 
-  - title: Changelog
-    url: /contact/
-    button: primary-outline
+- title: Changelog
+  url: /contact/
+  button: primary-outline
 
-  - title: Contact
-    url: /contact/
-    button: danger-outline
+- title: Contact
+  url: /contact/
+  button: danger-outline
 
-  - title: Changelog
-    url: /contact/
-    button: success-outline
+- title: Changelog
+  url: /contact/
+  button: success-outline
 
-  - title: Contact
-    url: /contact/
-    button: warning-outline
+- title: Contact
+  url: /contact/
+  button: warning-outline
 ```
 
-## Footer options
-{: .uk-heading-divider}
+### Mobile navigation
+Set in the mobile navigation links in `_data/base/mobile.yml`:
 
-Edit copyright notice in `_config.yml`:
-```yaml
-footer:           # Default footer settings
-  style:          secondary # default, muted, primary, secondary
-  layout:         columns # center or columns
-  copyright:      Made by a <a href="https://mysite.com/">human</a>.
-```
-
-Set in the footer navigation links in `_data/base/footer.yml`:
 ```yaml
 - title: About
   url: /about/
+```
+
+## Header
+Page headers offer numerous content, layout and styling options.
+
+#### Background options
+Set header background color, image, video and overlar color:
+```yaml
+header:
+  background_color:     "#1B33BF"
+  background_image:     working-space.jpg
+  background_align:     center-center # Image position, Options: center-center, top-center, bottom-center, center-right, center-left
+  background_video:     working-space.mp4
+  background_overlay:   "rgba(0, 0, 0, 0.5)"
+```
+Upload images and videos to `/uploads/` directory.
+
+#### Content options
+```yaml
+header:
+  layout:               1-1           # Options: left, center, 1-1, 1-2, 1-3 or 2-3. Left, right options display this pages title and subtitle. 1-1, 1-2, 1-3 or 2-3 options display content of block file/s.
+  color:                light         # Content font color, Options: light, dark
+  section_size:         large         # Content top and bottom padding, Options: small, medium, large
+  heading_size:         medium        # Title size, Options: small, medium, large
+  height:               full          # Enable viewport height, Options: full
+  parallax:             true          # Enable content parallax, Options: true
+  container:            small         # Content width, Options: expand, small, xsmall
+  content:                            # Source block file for first column if layout set to 1-1, 1-2, 1-3 or 2-3
+    block:              header-one    # Reference block file e.g. for _blocks/header-one.md enter header-one
+  content-2:                          # Source block file for second column if layout is set to 1-1, 1-2, 1-3 or 2-3
+    block:              header-two    # Reference block file e.g. for _blocks/header-two.md enter header-two 
+    title:              false         # Do not display block title, Options: false
+```
+
+## Footer
+{: .uk-heading-divider}
+
+Edit footer layout, background color style and copyright notice in `_config.yml`:
+```yaml
+footer:           
+  style:                secondary     # default, muted, primary, secondary
+  layout:               columns       # center or columns
+  copyright:            Made by a <a href="https://mysite.com/">human</a>.
+```
+
+Set in the footer navigation links in `_data/base/mobile.yml`. There are two footer layouts `center` or `columns`, the layout is set in `_config.yml`. Set the footer links under the chosen footer layout variable:
+
+The center layout has one horizontal navigation:
+```yaml
+center:
+  - title: Services
+    url: /services/
+```
+
+The columns layout offers multiple (up to six) columns of navigation links:
+```yaml
+columns:
+  - title: COLUMN ONE
+    links:
+      - title: Marketing Tools
+        url: /#
+      - title: Presentations
+        url: /#
+      - title: Professionals
+  - title: COLUMN TWO
+    links:
+      - title: Small Businesses
+        url: /#
+      - title: Photographers
+        url: /#
+      - title: Restaurants
 ```
 
 ## Creating your first post in Jekyll
