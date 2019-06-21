@@ -22,8 +22,8 @@ paginate:           6 # Number of posts displayed on blog page
 paginate_path:      "/blog/:num/" # Blog path
 
 mailchimp:
-  form_action:
-  hidden_name:
+  form_action:      000000
+  hidden_name:      000000
   
 google_analytics:   # Google analytics code, get your code here https://www.google.com/analytics/
 google_maps_api_key: AIzaSyDozvEBl_XAzNqSPT2y1_hlU19REsmxhTE # Google maps API key, get your key here: https://developers.google.com/maps/documentation/javascript/get-api-key
