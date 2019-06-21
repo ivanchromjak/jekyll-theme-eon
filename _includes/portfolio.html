@@ -35,9 +35,9 @@
   <div data-uk-filter="target: [data-uk-grid]; animation: 500">
 		{% if include.filter %}
 			<ul class="uk-subnav uk-subnav-pill uk-flex uk-flex-center uk-margin-medium-bottom">
-				<li class="uk-active" uk-filter-control><a href="#">All</a></li>
+				<li class="uk-active" data-uk-filter-control><a href="#">All</a></li>
 				{% for topic in topics %}
-					<li uk-filter-control="[data-topic*='{{ topic }}']"><a href="#">{{ topic | capitalize }}</a></li>
+					<li data-uk-filter-control="[data-topic*='{{ topic }}']"><a href="#">{{ topic | capitalize }}</a></li>
 				{% endfor %}
 			</ul>
 		{% endif %}
