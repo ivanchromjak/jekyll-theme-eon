@@ -43,6 +43,7 @@ header:
 
 {% include image.html 
 	src="portfolio-4-header.jpg"
+  alt="Some alt title"
   section_size="medium"
   section_padding_remove="top"
   section_container="small"
