@@ -6,11 +6,11 @@ navbar:
   transparent_color: light
 header:
   layout: center # Options: left, center, 1-1, 1-2, 1-3 or 2-3
-  background_image: https://source.unsplash.com/A5rCN8626Ck/1800x700
-  background_overlay: "rgba(0, 0, 0, 0.45)"
+  background_image: header-11.jpeg
+  background_overlay: "rgba(0, 0, 0, 0.6)"
   color: light
   section_size: xlarge
-  heading_size: medium
+  heading_size: large
   parallax: true
 ---
 
@@ -18,6 +18,7 @@ header:
   block="content-post2"
   section_container="xsmall"
   section_size="medium"
+  block_title="false"
 %}
 
 {% include map.html 
@@ -32,6 +33,7 @@ header:
 
 {% include block.html 
   block="content-post2"
+  block_title="false"
   section_container="xsmall"
   section_size="medium"
   section_padding_remove="top"

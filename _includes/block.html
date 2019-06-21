@@ -34,9 +34,9 @@
       <h3 class="uk-h2 uk-margin-remove-top uk-margin-small-bottom">{{ block.title }}</h3>
     {% endunless %}
     {% if block.subtitle %}
-      <div class="uk-text-lead">{{ block.subtitle }}</div>
+      <div class="uk-text-lead uk-margin-medium-bottom">{{ block.subtitle }}</div>
     {% endif %}
-    <div class="uk-margin-medium-top uk-article-content">{{ block.content }}</div>
+    <div class="uk-article-content">{{ block.content }}</div>
   </div>
 {% endif %}
 {% include partials/section-close.html 

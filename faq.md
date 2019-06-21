@@ -44,8 +44,7 @@ header:
   block="contact-button" 
   layout="1-1"
   section_size="medium"
-  section_background="default"
-  section_padding_remove="top"
+  section_background="muted"
   section_container="xsmall"
   section_content_align="center"
 %}

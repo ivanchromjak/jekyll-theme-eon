@@ -68,9 +68,9 @@ $color-dark:                                    #000;
 
 // Accordion
 $accordion-item-margin-top:                     20px;
-// $accordion-title-font-size:                     $global-medium-font-size;
-$accordion-title-color:                         $global-primary-background;
-$accordion-title-hover-color:                   $global-primary-background;
+$accordion-title-font-size:                     1.1875rem;
+// $accordion-title-color:                         $global-primary-background;
+// $accordion-title-hover-color:                   $global-primary-background;
 $accordion-content-margin-top:                  20px;
 $accordion-icon-color:                          $global-primary-background;
 $accordion-icon-background-color:               lighten( $global-primary-background, 57% );

@@ -14,7 +14,8 @@ header:
   heading_size: large
   color: light
   parallax: true
-  container:
+  container: small
+  content:
     block: header-1
 ---
 
