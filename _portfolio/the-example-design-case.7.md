@@ -25,7 +25,7 @@ header:
 %}
 
 {% include gallery.html 
-	cols="2"
+	grid="1-2"
 	gallery="portfolio-set-1"
 	caption="true"
 	lightbox="true"

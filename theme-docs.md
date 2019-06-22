@@ -496,6 +496,53 @@ image: card-2.jpeg
 ---
 ```
 
+## Gallery
+Gallery include displays images in specific directory as a gallery. Use the following include to add a gallery to a page:
+{% raw %}
+```yml
+{% include gallery.html 
+  gallery="gallery-1"
+  grid="1-4"
+  gutter="large"
+  caption="true"
+  lightbox="true"
+%}
+```
+{% endraw %}
+
+#### Attributes
+
+| Attribute | Description | Choices |
+| --- | --- | --- |
+| gallery | Reference a gallery directory name containing images | directory name e.g. `gallery="gallery-1"` for `/uploads/gallery-1/` |
+| grid | Display slides in columns | 1-2, 1-3, 1-4, 1-5, 1-6 |
+| gutter | Spacing between columns | small, medium, large, collapse, leave blank for default |
+| caption | Image caption created from the file name | true |
+| lightbox | Display image in popup lightbox on a click | true |
+
+## Instagram feed
+Display the latest images from your Instagram account. Generate Instagram access token here: [http://instagram.pixelunion.net/](http://instagram.pixelunion.net/) and set the token in `_config.yml`:
+```yml
+instagram_accesstoken:  x8dnfii4489rhfhrufh4dd
+```
+Use the following include to add a Instagram feed to a page:
+{% raw %}
+```yml
+{% include instagram.html 
+  grid="1-4"
+  gutter="large"
+  count="8" 
+%}
+```
+{% endraw %}
+
+#### Attributes
+
+| Attribute | Description | Choices |
+| --- | --- | --- |
+| grid | Display slides in columns | 1-2, 1-3, 1-4, 1-5, 1-6 |
+| gutter | Spacing between columns | small, medium, large, collapse, leave blank for default |
+| count | Number of images to display | integer between 1 and 20 |
 
 
 

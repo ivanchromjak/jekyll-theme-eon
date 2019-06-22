@@ -43,7 +43,7 @@ header:
   section_padding_remove="bottom"
   section_title="Image Gallery Lightbox" 
   section_header_align="center"
-  cols="3"
+  grid="1-3"
   gallery="gallery-1"
   caption="true"
   lightbox="true"
@@ -81,7 +81,7 @@ header:
   section_container="default"
   section_title="Instagram Images"
   section_header_align="center"
-  cols="4" 
+  grid="1-4" 
   count="8" 
   gutter="small"
 %}

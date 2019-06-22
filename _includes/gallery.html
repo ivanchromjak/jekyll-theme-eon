@@ -15,9 +15,7 @@
   section_content_align=include.section_content_align
   section_content_color=include.section_content_color
 %}
-
-{% assign cols = include.cols | default: '4') %}
-<div class="uk-child-width-1-2@s uk-child-width-1-{{ cols }}@m{% if include.gutter == 'false' %} uk-grid-collapse{% endif %}" data-uk-grid="masonry: true"{% if include.lightbox %} data-uk-lightbox="animation: slide"{% endif %}>
+<div class="uk-child-width-1-2@s uk-child-width-{{ include.grid | default: '1-4' }}@m{% if include.gutter %} uk-grid-{{ include.gutter }}{% endif %}" data-uk-grid="masonry: true"{% if include.lightbox %} data-uk-lightbox="animation: slide"{% endif %}>
   {% for image in site.static_files %}
     {% if image.path contains include.gallery %}
       <div>
