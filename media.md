@@ -58,7 +58,7 @@ header:
   color="light"
   block="slider-home" 
   grid="1-1"
-  gutter="false"
+  gutter="collapse"
 %}
 
 {% include slider.html 

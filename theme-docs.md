@@ -335,6 +335,8 @@ Image include with a section wrapper, includes all options for demonstration:
 ```
 {% endraw %}
 
+#### Attributes
+
 | Attribute | Description | Choices |
 | --- | --- | --- |
 | section_size | Section size (top and bottom padding) required to enable section | xsmall, small, medium, large, xlarge |
@@ -350,6 +352,162 @@ Image include with a section wrapper, includes all options for demonstration:
 | section_container | Content container width | expand, small, xsmall |
 | section_content_align | Content alignment | left, center, right |
 | section_content_color | Content font color | light, hex or rgb color value |
+
+## Introduction to blocks
+
+Theme uses blocks as source of content for many includes. Blocks is a Jekyll collection with its posts in `_blocks` directory. Some includes such as call to action will pull content only from one block post e.g.:
+{% raw %}
+```yml
+{% include cta.html 
+  block="cta-2"
+%}
+```
+{% endraw %}
+The above include references `cta-2` as block source, this displays contents of `_blocks/cta-2.md` file.
+
+Other includes such as gallery, cards or sliders display contents of multiple block posts ordered by file name e.g.:
+{% raw %}
+```yml
+{% include cards.html 
+  block="feature" 
+%}
+```
+{% endraw %}
+The above include references `feature` as block source, this displays contents of all files that have `feature` as a part of their filename:
+```yml
+_blocks/
+    feature-1.md
+    feature-2.md
+    feature-3.md
+    feature-4.md
+    feature-5.md
+    feature-6.md
+```
+All the above files would display as cards (one file per card) ordered from 1 to 6.
+
+## Cards
+Use the following include to add cards to a page:
+
+{% raw %}
+```yml
+{% include cards.html 
+  block="home-card" 
+  media="top" 
+  card_style="default"
+  grid="1-2"
+%}
+```
+{% endraw %}
+
+#### Attributes
+
+| Attribute | Description | Choices |
+| --- | --- | --- |
+| block | Block posts to display | block file name without extension e.g. to display `home-card-1.md` and `home-card-2.md` as cards, reference `block="home-card"` |
+| media | Alignment of media (image or icon) | left, top, right |
+| card_style | Card style | default, primary, secondary, leave blank for borderless style |
+| grid | Display cards in columns | 1-2, 1-3, 1-4, 1-5, 1-6 |
+| gutter | Spacing between columns | small, medium, large, collapse, leave blank for default |
+
+Example of card block post with image media, upload the image to `/uploads/` directory:
+```yml
+---
+title: Are of brief house annoyed
+image: card-2.jpeg
+---
+
+Suspendisse quis turpis quis, semper consequat vehicula dolor consequat quam, ac consequat posuere leo dapibus.
+```
+
+Example of card block post with icon media, use one of the icons from `_includes/icons/` directory or add your own:
+```yml
+---
+title: Navbar
+icon: ios-navigation-toolbar-top.svg
+---
+
+Fixed or sticky navbar with left, center and right aligned navigation.
+```
+
+## Image
+Use the following include to add an image to a page:
+{% raw %}
+```yml
+{% include image.html 
+	src="alexander-read.jpg"
+  alt="Alt for image"
+  align="right"
+  caption="Caption example"
+  lightbox="true"
+%}
+```
+{% endraw %}
+
+#### Attributes
+
+| Attribute | Description | Choices |
+| --- | --- | --- |
+| src | Image file source | image file name, upload the image to `/uploads/` directory or external image URL |
+| alt | Image alt text | string |
+| align | Align within text | left, right |
+| caption | Image caption | string |
+| lightbox | Display image in popup lightbox on a click | true |
+
+## Slider
+Use the following include to add a slider to a page:
+{% raw %}
+```yml
+{% include slider.html 
+  block="slider-home" 
+  color="light"
+  display_title="false"
+  autoplay="true"
+  sets="true"
+  grid="1-3"
+  gutter="large"
+  navigation="outside"
+  dotnav="true"
+  card_style="default"
+%}
+```
+{% endraw %}
+
+#### Attributes
+
+| Attribute | Description | Choices |
+| --- | --- | --- |
+| block | Block posts to display | block file name without extension |
+| color | Enable light font color for dark content | light |
+| display_title | Disable slide title | false |
+| autoplay | Auto slide slider | true |
+| sets | Slide slides in sets | true |
+| navigation | Display navigation outside of slides | outside |
+| dotnav | Enable dot navigation | true |
+| grid | Display slides in columns | 1-1, 1-2, 1-3, 1-4, 1-5, 1-6 |
+| gutter | Spacing between columns | small, medium, large, collapse, leave blank for default |
+| card_style | Display slides as card style | default, primary, secondary, leave blank for borderless style |
+| media | Alignment of card media (image or icon) if card_style attribute used | left, top, right |
+
+Example of slide block post, upload the image to `/uploads/` directory:
+```yml
+---
+title: Are of brief house annoyed
+image: card-2.jpeg
+---
+```
+
+
+
+
+
+
+{% raw %}
+```yml
+
+```
+{% endraw %}
+
+
 
 
 ## Creating your first post in Jekyll

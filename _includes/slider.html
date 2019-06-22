@@ -33,7 +33,7 @@
 <div data-uk-slider="{% if include.center %}center: true;{% endif %}{% if include.autoplay %} autoplay: true;{% endif %}{% if include.sets %} sets: true;{% endif %}" tabindex="-1">
 	<div class="uk-position-relative">
 		<div class="uk-visible-toggle uk-slider-container{% if include.card_style == 'default' %} slider-card-shadow-fix{% endif %}{% if include.color == 'light' %} uk-light{% endif %}">
-			<ul class="{{ grid }} uk-slider-items uk-grid uk-grid-match{% if include.gutter == 'false' %} uk-grid-collapse{% endif %}{% if include.gutter == 'small' or include.gutter == 'large' %} uk-grid-{{ include.gutter }}{% endif %} uk-flex uk-flex-middle">
+			<ul class="{{ grid }} uk-slider-items uk-grid uk-grid-match{% if include.gutter %} uk-grid-{{ include.gutter }}{% endif %} uk-flex uk-flex-middle">
 			{% assign blocks = (site.blocks | sort: 'card[slug]') %}
 			{% for block in blocks %}
 				{% if block.slug contains include.block %}
