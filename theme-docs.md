@@ -240,6 +240,66 @@ columns:
       - title: Restaurants
 ```
 
+## Page layouts and sidebars
+
+#### Page container width
+Width of the page content, the following page widths are available:
+- `full` suitable when adding full browser width sections to a page
+- `expand` full browser width with horizontal padding
+- `small` small container
+- `xsmall` extra small container
+
+Set page width by adding the following to page front matter block:
+```yml
+width:                full
+```
+
+#### Sidebars
+Add sidebar to a page by adding the following to page front matter block:
+Set page width by adding the following to page front matter block:
+```yml
+sidebar: 
+  right:              sidebar-left
+  left:               sidebar-right
+```
+
+Sidebar widgets are defied in `_data/base/sidebar.yml` data file, the following widget are available:
+```yml
+sidebar-left:
+
+  - widget:           latest        # Display list of latest posts
+    type:             posts         # Post type: posts
+    count:            15            # Number of posts to display
+    title:            Latest Posts
+
+  - widget:           author        # Display user information
+    author:           john          # User variable from _config.yml 'authors' setting
+
+  - widget:           tagged        # Display list of posts by tag
+    type:             posts         # Post type: posts
+    primary:
+      title:          Product news
+      tag:            news          # Display post tagged with 'news' tag
+    secondary:                      # Optional second tab
+      title:          Editor picks
+      tag:            pick          # Display post tagged with 'pick' tag
+
+  - widget:           navigation    # Navigation links widget
+    nav:
+    - title:          Pages         
+      links:
+        - title:      Portfolio
+          url:        /portfolio/
+        - title:      Blog
+          url:        /blog/
+
+  - widget:           block         # Display contents of a block file
+    block:            block-1       # Block _blocks/block-1.md file to display
+    title:            Content of a block
+```
+
+
+
 ## Creating your first post in Jekyll
 {: .uk-heading-divider}
 

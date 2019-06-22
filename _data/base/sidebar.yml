@@ -18,16 +18,12 @@ page:
   - widget: author
     author: ivan
 
-  - widget: image
-    alt: Some img alt
-    url: https://source.unsplash.com/WLUHO9A_xik/800x500
+  - widget: latest
+    type: posts
+    count: 15
+    title: Latest Posts
 
-  - widget: recent
-    title: Recent Widget
-    type: cards
-    count: 4
-
-someother:
+allwidgets:
   - widget: tagged
     type: posts
     primary:
@@ -54,3 +50,10 @@ someother:
           url: /blog/
         - title: 404 Page
           url: /404/
+
+  - widget: author
+    author: ivan
+
+  - widget: block
+    block: block-1
+    title: Content of a block
