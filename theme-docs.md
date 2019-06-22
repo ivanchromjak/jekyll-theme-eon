@@ -12,7 +12,7 @@ header:
   background_image:     header-8.jpg
   background_overlay:   "rgba(0, 0, 0, 0.5)"
   color:                light
-  section_size:         large
+  header_size:         large
   heading_size:         medium
   parallax:             true
 ---
@@ -189,7 +189,7 @@ Upload images and videos to `/uploads/` directory.
 header:
   layout:               1-1           # Options: left, center, 1-1, 1-2, 1-3 or 2-3. Left, right options display this pages title and subtitle. 1-1, 1-2, 1-3 or 2-3 options display content of block file/s.
   color:                light         # Content font color, Options: light, dark
-  section_size:         large         # Content top and bottom padding, Options: small, medium, large
+  header_size:         large         # Content top and bottom padding, Options: small, medium, large
   heading_size:         medium        # Title size, Options: small, medium, large
   height:               full          # Enable viewport height, Options: full
   parallax:             true          # Enable content parallax, Options: true
@@ -298,6 +298,58 @@ sidebar-left:
     title:            Content of a block
 ```
 
+## Sections
+Section is a wrapper arround piece of included content that allows setting custom backgrounds and layout options. Section options are defined as attributed in include, for example:
+
+Image include without a section wrapper:
+{% raw %}
+```yml
+{% include image.html 
+  src="portfolio-4-header.jpg"
+  alt="Some alt title"
+%}
+```
+{% endraw %}
+
+Image include with a section wrapper, includes all options for demonstration:
+{% raw %}
+```yml
+{% include image.html 
+  src="portfolio-4-header.jpg"
+  alt="Some alt title"
+  section_size="medium"
+  section_padding_remove="top"
+  section_title="Section title" 
+  section_subtitle="Section subtitle" 
+  section_header_align="center"
+  section_header_color="#fff"
+  section_background="primary" 
+  section_image="image-3.jpg"
+  section_image_align="center-center"
+  section_video="video-3.mp4"
+  section_overlay="rgba(0, 0, 0, 0.5)"
+  section_container="small"
+  section_content_align="center"
+  section_content_color="light"
+%}
+```
+{% endraw %}
+
+| Attribute | Description | Choices |
+| --- | --- | --- |
+| section_size | Section size (top and bottom padding) required to enable section | xsmall, small, medium, large, xlarge |
+| section_title | Optional section title | string |
+| section_subtitle | Optional section subtitle | string |
+| section_header_align | Aligns section title and subtitle | left, center, right |
+| section_header_color | Section title and subtitle font color | light, hex or rgb color value |
+| section_background | Section background color | muted, primary, secondary, hex or rgb color value |
+| section_image | Background image | Image file name (upload image to `/uploads/` directory), external image URL |
+| section_image_align | Background image position | center-center, top-center, bottom-center, center-right, center-left |
+| section_video | Background video | MP4 file name, (upload video to `/uploads/` directory), external video URL|
+| section_overlay | Background overlay color | rgba color value |
+| section_container | Content container width | expand, small, xsmall |
+| section_content_align | Content alignment | left, center, right |
+| section_content_color | Content font color | light, hex or rgb color value |
 
 
 ## Creating your first post in Jekyll
@@ -450,7 +502,7 @@ header:
   background_align: center-center
   background_overlay: "rgba(0, 0, 0, 0.5)"
   color: light
-  section_size: large
+  header_size: large
   heading_size: medium
   height: full
   parallax: true

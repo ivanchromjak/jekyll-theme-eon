@@ -10,7 +10,7 @@ navbar:
 header:
   layout: 1-1 # Options: left, center, 1-1, 1-2, 1-3 or 2-3
   background_color: "#D95B72"
-  section_size: large
+  header_size: large
   heading_size: large
   color: light
   parallax: true

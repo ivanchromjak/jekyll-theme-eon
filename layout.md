@@ -13,7 +13,7 @@ width: full
 #   background_image: https://source.unsplash.com/krV5aS4jDjA/1600x600
 #   background_overlay: "rgba(0, 0, 0, 0.45)"
 #   color: light
-#   section_size: xlarge
+#   header_size: xlarge
 #   heading_size: medium
 #   parallax: true
 ---

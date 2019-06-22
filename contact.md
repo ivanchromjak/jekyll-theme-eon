@@ -12,7 +12,7 @@ header:
   background_image: header-10.jpeg
   background_overlay: "rgba(0, 0, 0, 0.6)"
   color: light
-  section_size: large
+  header_size: large
   heading_size: medium
   parallax: true
 ---

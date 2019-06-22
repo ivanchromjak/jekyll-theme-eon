@@ -13,7 +13,7 @@ header:
   background_image: portfolio-5-header.jpg
   background_overlay: "rgba(0, 0, 0, 0.5)"
   color: light
-  section_size: xlarge
+  header_size: xlarge
   parallax: true
 ---
 

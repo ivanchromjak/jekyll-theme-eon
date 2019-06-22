@@ -79,7 +79,7 @@
 
   {% if page.header %}
   <div class="uk-position-relative uk-container{% if page.header.container %} uk-container-{{ page.header.container }}{% endif %}{% if page.header.height == 'full' %} uk-flex uk-flex-middle{% endif %}"{% if page.header.height == 'full' %} data-uk-height-viewport="offset-top: true"{% endif %}>
-    <div class="uk-section uk-section-{{ page.header.section_size | default: 'regular' }}{% if page.header.section_padding %} uk-padding-{{ page.header.section_padding }}{% endif %} uk-width-1-1 uk-{{ page.header.color | default: 'dark' }}"{% if page.header.parallax %} data-uk-parallax="y: 100;"{% endif %}>
+    <div class="uk-section uk-section-{{ page.header.header_size | default: 'regular' }}{% if page.header.header_padding_remove %} uk-padding-remove-{{ page.header.header_padding_remove }}{% endif %} uk-width-1-1 uk-{{ page.header.color | default: 'dark' }}"{% if page.header.parallax %} data-uk-parallax="y: 100;"{% endif %}>
       {% if page.header.layout == '1-1' %}
         <div class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
           <div class="uk-width-1-1">

@@ -194,7 +194,7 @@ defaults:
         layout: center
         background_overlay: "rgba(0, 0, 0, 0.5)"
         color: light
-        section_size: large
+        header_size: large
         heading_size: medium
         parallax: true
   # _pages

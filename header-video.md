@@ -6,7 +6,7 @@ navbar:
 header:
   layout: 1-2 # Options: left, center, 1-1, 1-2, 1-3 or 2-3
   background_color: "rgba(184, 154, 255, 0.5)"
-  section_size: large
+  header_size: large
   heading_size: large
   content:
     block: block-video

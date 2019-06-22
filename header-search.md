@@ -13,7 +13,7 @@ header:
   # background_align: center-center
   # background_overlay: "linear-gradient(to right bottom,rgba(28, 54, 191, 0.85) 15%,rgba(27, 51, 191, 0.8) 50%,rgba(67, 27, 191, 0.8) 80%)"
   color: light
-  # section_size: large
+  # header_size: large
   heading_size: medium
   height: full
   parallax: true

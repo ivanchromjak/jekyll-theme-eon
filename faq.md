@@ -14,7 +14,7 @@ header:
   background_overlay: "rgba(0, 0, 0, 0.45)"
   background_align: top-center
   color: light
-  section_size: xlarge
+  header_size: xlarge
   heading_size: medium
   parallax: true
 ---

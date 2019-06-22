@@ -14,7 +14,7 @@ header:
   background_image: header-6.jpg #https://source.unsplash.com/RMlrnfuORb4/1600x900
   background_overlay: "rgba(0, 0, 0, 0.25)"
   color: light
-  section_size: large
+  header_size: large
   heading_size: large
   parallax: true
   height: full
