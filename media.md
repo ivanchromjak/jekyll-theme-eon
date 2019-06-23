@@ -88,7 +88,7 @@ header:
 
 {% include videos.html 
   block="video-home" 
-  columns="3" 
+  grid="1-3" 
   section_size="large"
   section_header_align="center"
   section_padding_remove="bottom"

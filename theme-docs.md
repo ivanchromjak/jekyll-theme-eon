@@ -544,6 +544,142 @@ Use the following include to add a Instagram feed to a page:
 | gutter | Spacing between columns | small, medium, large, collapse, leave blank for default |
 | count | Number of images to display | integer between 1 and 20 |
 
+## Team
+Display team member (authors) info, avatar, name and title. Create a list of authors in `_config.yml`:
+```yml
+authors:
+  john:
+    name:         John Brown
+    title:        Support     
+    avatar:       avatar-john.png
+  evan:
+    name:         Evan Wells
+    title:        Support    
+    avatar:       avatar-evan.png
+```
+Use the following include to add a team members to a page:
+{% raw %}
+```yml
+{% include 
+  team.html 
+  authors="evan, john, sara, alex, tom, daniel" 
+%}
+```
+{% endraw %}
+
+#### Attributes
+
+| Attribute | Description | Choices |
+| --- | --- | --- |
+| authors | Authors to display | Comma separated list of authors, leave balnk to display all authors |
+
+## Videos
+Display clickable cards with video lightbox, use the following include to add video cards to a page:
+{% raw %}
+```yml
+{% include videos.html 
+  block="video-home" 
+  grid="1-3" 
+  gutter="large"
+  card_style="default"
+%}
+```
+{% endraw %}
+
+#### Attributes
+
+| Attribute | Description | Choices |
+| --- | --- | --- |
+| block | Block posts to display | block file name without extension |
+| grid | Display slides in columns | 1-1, 1-2, 1-3, 1-4, 1-5, 1-6 |
+| gutter | Spacing between columns | small, medium, large, collapse, leave blank for default |
+| card_style | Display slides as card style | default, primary, secondary, leave blank for borderless style |
+
+Example of video block post:
+```yml
+---
+title: Creating Pages
+video: https://youtu.be/1na-IWfv08M
+---
+
+Praesent tincidunt elit, eget sagittis turpis ornare non mauris non leo tortor.
+```
+
+## Call to action
+Use the following include to add call to action to a page:
+{% raw %}
+```yml
+{% include cta.html 
+  block="cta-2"
+  layout="2"
+%}
+```
+{% endraw %}
+
+#### Attributes
+
+| Attribute | Description | Choices |
+| --- | --- | --- |
+| block | Block posts to display | block file name without extension |
+| layout | Chose from one column layout, two column layout, three column layout with middle column displaying a play icon for popup lightbox video | 1, 2, 3 |
+
+Example of video block post for layout 1:
+```yml
+---
+title: Learn why switch to Jekyll
+video: https://youtu.be/fqFjuX4VZmU
+---
+
+Dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id.
+```
+
+Example of video block post for layouts 1 and 2:
+```yml
+---
+title: Create your new website today!
+subtitle: Dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id. Cras fringilla convallis elit, at eleifend mi interdum.
+button:
+  style: primary
+  text: Join Us
+  url: https://www.envato.com
+  blank: true
+---
+```
+
+Example of video block post for layout 3:
+```yml
+---
+title: Learn why switch to Jekyll
+video: https://youtu.be/fqFjuX4VZmU
+---
+
+Dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id.
+```
+
+## Block
+Display contents of a block post, either as one column layout `1-1` or two column layout with one column displaying title and subtitle, and the second column displaying content, use one of layout width settings `1-2, 1-3, 1-4, 1-5, 1-6` for two column layout, this will set the content column width.
+{% raw %}
+```yml
+{% include block.html 
+  block="content" 
+  layout="1-1"
+  block_title="false"
+  align="right"
+%}
+```
+{% endraw %}
+
+#### Attributes
+
+| Attribute | Description | Choices |
+| --- | --- | --- |
+| block | Block posts to display | block file name without extension |
+| layout | Width of the content column | 1-1, 1-2, 1-3, 1-4, 1-5, 1-6 |
+| block_title | Disable diplaying block title | false |
+| align | Display title/subtitle column on the right | right |
+
+
+
 
 
 
