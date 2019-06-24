@@ -15,5 +15,4 @@ header:
   container: xsmall
   content:
     block: block-signup
-    # title: false
 ---

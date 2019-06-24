@@ -1,9 +1,6 @@
-// Theme variables
-
-
-// Primary template color
-$global-primary-background:                     #1B33BF; //#2d9cff; //rgb(0, 160, 222);
-$global-secondary-background:                   #000; //rgb(27, 40, 49);
+// Global variables
+$global-primary-background:                     #1B33BF;
+$global-secondary-background:                   #000;
 $global-success-background:                     #32d296;
 $global-warning-background:                     #faa05a;
 $global-danger-background:                      #D95B72;
@@ -17,22 +14,19 @@ $global-link-hover-color:                       $global-primary-background;
 $global-small-font-size:                        0.875rem;
 $global-muted-color:                            #A9AAAB;
 $global-border:                                 #cccace;
-
 $global-xxlarge-font-size:                      2.3125rem;
 $global-xlarge-font-size:                       1.9375rem;
 $global-large-font-size:                        1.5rem;
 $global-medium-font-size:                       1.25rem;
 $xsmall-font-size:                              0.875rem;
 
+// Base variables
 $base-heading-font-family:                      'Montserrat', system-ui, san-serif;
 $base-heading-font-weight:                      400;
-// $base-body-font-weight: 300;
-// $base-heading-font-weight: 300;
 $base-heading-color:                            darken($global-primary-background, 25%);
 $base-h2-line-height:                           1.4;
 $base-link-hover-text-decoration:               none;
 $base-body-color:                               #868585;
-
 $base-code-font-family:                         Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
 $base-code-color:                               #6a6b71;
 $base-code-font-size:                           $xsmall-font-size;
@@ -40,11 +34,27 @@ $base-pre-font-size:                            $xsmall-font-size;
 $base-pre-line-height:                          1.65;
 $base-pre-font-family:                          $base-code-font-family;
 $base-pre-color:                                $base-code-color;
+$border-light:                                  #edeff1;
+$border-rounded-border-radius:                  2px;
+$text-lead-font-size:                           1.125rem;
 
-// $button-text-transform:                         none;
+// Accordion variables
+$accordion-item-margin-top:                     20px;
+$accordion-title-font-size:                     1.1875rem;
+$accordion-content-margin-top:                  20px;
+$accordion-icon-color:                          $global-primary-background;
+$accordion-icon-background-color:               lighten( $global-primary-background, 57% );
+$internal-accordion-open-image:                 "data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline fill='none' stroke='#000' stroke-width='1.03' points='4 13 10 7 16 13' /%3E%3C/svg%3E";
+$internal-accordion-close-image:                "data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline fill='none' stroke='#000' stroke-width='1.03' points='16 7 10 13 4 7' /%3E%3C/svg%3E";
+
+// Article variables
+$article-title-font-size:                       2.375rem;
+$article-title-line-height:                     1.4;
+$article-meta-font-size: 	                    0.8125rem;
+$article-meta-line-height:                      1.6;
+
+// Button variables
 $button-font-weight:                            400;
-// $button-font-size:                              $xsmall-font-size;
-// $button-large-font-size:                        $xsmall-font-size;
 $button-default-color:                          #222;
 $button-default-hover-background:               $button-default-color;
 $button-default-hover-color:                    #fff;
@@ -57,64 +67,33 @@ $button-warning-background:                     $global-warning-background;
 $button-warning-hover-background:               darken($button-warning-background, 7%);
 $button-success-background:                     $global-success-background;
 $button-success-hover-background:               darken($button-success-background, 5%);
-
 $inverse-button-primary-color:                  #222;
 $inverse-button-primary-hover-color:            #000;
 
-// Custom variables
-$lh-l:                                          1.8;
-$border-light:                                  #edeff1;
-$color-dark:                                    #000;
-
-// Accordion
-$accordion-item-margin-top:                     20px;
-$accordion-title-font-size:                     1.1875rem;
-// $accordion-title-color:                         $global-primary-background;
-// $accordion-title-hover-color:                   $global-primary-background;
-$accordion-content-margin-top:                  20px;
-$accordion-icon-color:                          $global-primary-background;
-$accordion-icon-background-color:               lighten( $global-primary-background, 57% );
-$internal-accordion-open-image:                 "data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline fill='none' stroke='#000' stroke-width='1.03' points='4 13 10 7 16 13' /%3E%3C/svg%3E";
-$internal-accordion-close-image:                "data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline fill='none' stroke='#000' stroke-width='1.03' points='16 7 10 13 4 7' /%3E%3C/svg%3E";
-
-$article-title-font-size:                       2.375rem;
-$article-title-line-height:                     1.4;
-$article-meta-font-size: 	                    0.8125rem;
-$article-meta-line-height:                      1.6;
-
-
-$border-rounded-border-radius:                  2px;
-
+// Card variables
 $card-small-body-padding-horizontal:            25px;
 $card-small-body-padding-vertical:              25px;
 $card-title-font-size:                          1.3125rem;
-
 $card-default-title-color:                      $base-heading-color;
 $card-default-color:                            $base-body-color;
-//$container-max-width: 1100px;
-// $container-small-max-width:                     740px;
 
-
-// $grid-large-gutter-horizontal:                  100px;
-
-
+// Heading variables
 $heading-large-font-size-l:                     5rem; 
 $heading-divider-border-width:                  1px;
 $heading-divider-border:                        #d0d5de;
 
-// $icon-link-color:                               $global-primary-background;
-// $icon-link-hover-color:                         $color-dark;
-// $icon-link-active-color:                        darken($global-primary-background, 5%);
+// Link variables
 $link-muted-hover-color:                        #222;
 
+// Logo variables
 $logo-font-size:                                1.35rem;
 $logo-color:                                    #000;
 $logo-hover-color:                              #000;
 $inverse-logo-color:                            #fff;
 $inverse-logo-hover-color:                      #fff;
 
+// Navigation variables
 $nav-primary-item-font-size:                    $global-large-font-size !default;
-
 $navbar-background:                             #fff;
 $navbar-nav-item-color:                         #333;
 $navbar-nav-item-hover-color:                   #000;
@@ -123,77 +102,20 @@ $navbar-nav-item-font-size:                     13px;
 $navbar-nav-item-text-transform:                uppercase;
 $navbar-toggle-color:                           #333;
 $navbar-toggle-hover-color:                     #000;
-// $navbar-dropdown-nav-item-active-color:
 $offcanvas-bar-color-mode:                      dark;
 $offcanvas-bar-background:                      #fff;
+$subnav-item-font-size:                         $global-small-font-size;
+$subnav-item-text-transform:                    uppercase;
 
-
+// Search variables
 $search-default-background:                     #fff;
 $search-default-focus-background:               #fff;
 $inverse-search-default-background:             rgba(0, 0, 0, 0.3);
 $inverse-search-default-focus-background:       rgba(0, 0, 0, 0.5);
 
+// Section variables
 $section-success-background:                    $global-success-background;
 $section-success-color-mode:                    light;
 $section-danger-background:                     $global-danger-background;
 $section-danger-color-mode:                     light;
-
-
-$subnav-item-font-size:                         $global-small-font-size;
-$subnav-item-text-transform:                    uppercase;
-
-$text-lead-font-size:                           1.125rem;
-// $text-lead-color:                               lighten($base-body-color, 5%);
-
-
-// $search-color:                                       $global-color !default;
-// $search-placeholder-color:                           $global-muted-color !default;
-//
-// $search-icon-color:                                  $global-muted-color !default;
-//
-// $search-default-width:                               180px !default;
-// $search-default-height:                              $global-control-height !default;
-// $search-default-padding-horizontal:                  6px !default;
-
-// $search-default-icon-width:                          $global-control-height !default;
-//
-// $search-navbar-width:                                400px !default;
-// $search-navbar-height:                               40px !default;
-// $search-navbar-background:                           transparent !default;
-// $search-navbar-font-size:                            $global-large-font-size !default;
-//
-// $search-navbar-icon-width:                           40px !default;
-//
-// $search-large-width:                                 500px !default;
-// $search-large-height:                                80px !default;
-// $search-large-background:                            transparent !default;
-// $search-large-font-size:                             $global-xxlarge-font-size !default;
-//
-// $search-large-icon-width:                            80px !default;
-//
-// $search-toggle-color:                                $global-muted-color !default;
-// $search-toggle-hover-color:                          $global-color !default;
-
-
-
-// $inverse-search-color:                          $base-body-color;
-// $inverse-search-placeholder-color:              $global-muted-color;
-// $inverse-search-icon-color:                     $global-muted-color;
-// $inverse-search-default-background:             #fff;
-// $inverse-search-default-focus-background:       #fff;
-
-// $search-navbar-width:                                400px !default;
-// $search-navbar-height:                               40px !default;
-//$search-navbar-background:                           #fff;
-// $search-navbar-font-size:                            $global-large-font-size !default;
-//
-// $search-navbar-icon-width:                           40px !default;
-//
-// $search-large-width:                                 500px !default;
-// $search-large-height:                                80px !default;
-//$search-large-background:                            #fff;
-// $search-large-font-size:                             $global-xxlarge-font-size !default;
-
-//$inverse-search-navbar-background:              #fff;
-
-//$inverse-search-large-background:               #fff;
+// $section-large-padding-vertical-m:              $global-large-margin * 1.8;

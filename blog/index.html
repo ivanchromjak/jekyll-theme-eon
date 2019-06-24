@@ -3,7 +3,7 @@ layout: default
 title: Blog Grid Boxed
 subtitle: Set number of card columns, chose from sigle layout or left or right sidebar
 sidebar: 
-  right: allwidgets
+  right: blog
 grid: 1-2
 navbar:
   transparent: true
@@ -82,8 +82,8 @@ header:
 
 <ul class="uk-pagination uk-flex-center uk-margin-large-top">
   {% if paginator.previous_page %}
-  <li><h5 class="uk-margin-remove"><a href="{{ paginator.previous_page_path | relative_url }}">&larr; Previous</a></h5></li>
+  <li><h5 class="uk-margin-remove"><a href="{{ paginator.previous_page_path | relative_url }}">&larr; {{ site.data[site.template].translation[site.lang].previous | default: "Previous" }}</a></h5></li>
   {% endif %} {% if paginator.next_page %}
-  <li><h5 class="uk-margin-remove"><a href="{{ paginator.next_page_path | relative_url }}">Next &rarr;</a></h5></li>
+  <li><h5 class="uk-margin-remove"><a href="{{ paginator.next_page_path | relative_url }}">{{ site.data[site.template].translation[site.lang].next | default: "Next" }} &rarr;</a></h5></li>
   {% endif %}
 </ul>

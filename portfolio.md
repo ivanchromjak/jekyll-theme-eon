@@ -10,8 +10,8 @@ navbar:
   transparent: true
   transparent_color: light
 header:
-  layout: center # Options: left, center, 1-1, 1-2, 1-3 or 2-3
-  background_image: header-6.jpg #https://source.unsplash.com/RMlrnfuORb4/1600x900
+  layout: center
+  background_image: header-6.jpg
   background_overlay: "rgba(0, 0, 0, 0.25)"
   color: light
   header_size: large

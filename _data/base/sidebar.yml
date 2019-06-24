@@ -16,7 +16,7 @@ blog:
 
 page:
   - widget: author
-    author: ivan
+    author: john
 
   - widget: latest
     type: posts

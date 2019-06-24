@@ -2,7 +2,7 @@
 <div class="uk-position-relative uk-text-left">
     <form class="search-live uk-search uk-search-default uk-width-1-1" name="search-live" onsubmit="return false;">
         <span class="uk-search-icon-flip" data-uk-search-icon></span>
-        <input id="search-live" class="uk-search-input uk-box-shadow-large" type="search" placeholder="{{ site.data.translation[site.lang].search_placeholder | default: "Search for answers" }}" autocomplete="off">
+        <input id="search-live" class="uk-search-input uk-box-shadow-large" type="search" placeholder="{{ site.data[site.template].translation[site.lang].search_placeholder | default: "Search for answers" }}" autocomplete="off">
     </form>
     <ul id="search-live-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
 </div>
@@ -107,7 +107,7 @@ function searchResults() {
 SimpleJekyllSearch({
     searchInput: document.getElementById('search-live'),
     resultsContainer: document.getElementById('search-live-results'),
-    noResultsText: '<li class="no-results">{{ site.data.translation[site.lang].search_no_results | default: "No results found" }}</li>',
+    noResultsText: '<li class="no-results">{{ site.data[site.template].translation[site.lang].search_no_results | default: "No results found" }}</li>',
     searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
     json: "{{ '/search.json' | relative_url }}"
 });
