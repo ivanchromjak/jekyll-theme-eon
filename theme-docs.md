@@ -821,11 +821,11 @@ Submit the form and confirm your email address at [FormSpree](https://formspree.
 | redirect | Where to redirect the user after submission | page permalink |
 | name | Display name field | true |
 | subject | Display subject field | true |
-| layout | Stacked or horozontal layout | horizontal, leave blank for stacked layout |
+| layout | Stacked or horizontal layout | horizontal, leave blank for stacked layout |
 
 ## Google Analytics
 
-To enable Google Anaytics, add the following lines to your Jekyll site:
+To enable Google Analytics, add the following lines to your Jekyll site:
 
 ```yaml
   google_analytics: UA-NNNNNNNN-N
@@ -845,7 +845,7 @@ topics: [United Kingdom]
 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
 ```
 
-Use the following include to add portfolio to a page:
+Use the following include to add a portfolio to a page:
 {% raw %}
 ```yml
 {% include portfolio.html 
@@ -867,7 +867,7 @@ Use the following include to add portfolio to a page:
 | title | Display title bellow image or on image overlay | bellow, leave blank for overlay position |
 
 ## Blog
-By default blog is diplayed under `/blog/` permalink and blog page can be found in `/blog/index.html` location. Blog options can be modified in `_config.yml`:
+By default blog is displayed under `/blog/` permalink and blog page can be found in `/blog/index.html` location. Blog options can be modified in `_config.yml`:
 ```yml
 paginate:           6               # Number of posts displayed on blog page
 paginate_path:      "/blog/:num/"   # Blog path
@@ -971,7 +971,7 @@ Add scroll to top icon to content using the following include:
 ```
 {% endraw %}
 
-For general markdown syntax see [Cheetsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+For general markdown syntax see [Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 ## Translation
 {: .uk-heading-divider}
@@ -980,7 +980,7 @@ Set your language code in `_config.yml`:
 ```yml
 lang: en
 ```
-Theme strings can be translated in `_data/base/translation.yml`, copy the current English translation and paste it bellow the Eglish translation, then replace `en` with you language code that you set in `_config.yml` and translate the strings.
+Theme strings can be translated in `_data/base/translation.yml`, copy the current English translation and paste it below the Eglish translation, then replace `en` with your language code that you set in `_config.yml` and translate the strings.
 
 ```yml
 en:
@@ -1011,7 +1011,7 @@ To modify the primary color, open `/_sass/theme/variables.scss` and replace the 
 $global-primary-background:                   #05c896;
 ```
 
-Further style customisation can be done in the following files:
+Further style customization can be done in the following files:
 ```
 /_sass/theme/mixins.scss
 /_sass/theme/variables.scss
@@ -1041,7 +1041,7 @@ npm run build
 ```
 
 ### Hooks
-There are two hook inlude files that simplify adding content or scripts in the theme locations:
+There are two hook include files that simplify adding content or scripts in the theme locations:
 - `_includes/hook-head.html`
 - `_includes/hook-pre-closing-body.html`
 
