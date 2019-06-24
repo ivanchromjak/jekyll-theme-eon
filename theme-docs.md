@@ -67,7 +67,7 @@ author:
 You can find the current favicon (favicon.png) inside the theme `/uploads/` directory, just replace it with your new favicon.
 
 ### Update logo
-The theme uses two logo files one dark for display on light backgrounds and one light logo for display on dark backgrounds. If you don't intent to use dark navigation backgrounds you dont need to upload the light logo.
+The theme uses two logo files one dark for display on light backgrounds and one light logo for display on dark backgrounds. If you don't intend to use dark navigation backgrounds you don't need to upload the light logo.
 Add your logo image files to `/uploads/` directory, then specify the logo files in `_config.yml`:
 
 ```yaml
@@ -240,7 +240,7 @@ columns:
       - title: Restaurants
 ```
 
-## Page layouts and sidebars
+## Page width and sidebars
 
 #### Page container width
 Width of the page content, the following page widths are available:
@@ -263,7 +263,7 @@ sidebar:
   left:               sidebar-right
 ```
 
-Sidebar widgets are defied in `_data/base/sidebar.yml` data file, the following widget are available:
+Sidebar widgets are defined in `_data/base/sidebar.yml` data file, the following widgets are available:
 ```yml
 sidebar-left:
 
@@ -299,7 +299,7 @@ sidebar-left:
 ```
 
 ## Sections
-Section is a wrapper arround piece of included content that allows setting custom backgrounds and layout options. Section options are defined as attributed in include, for example:
+The section is a wrapper around piece of included content that allows setting custom backgrounds and layout options. Section options are defined as attributed in include, for example:
 
 Image include without a section wrapper:
 {% raw %}
@@ -426,7 +426,7 @@ title: Navbar
 icon: ios-navigation-toolbar-top.svg
 ---
 
-Fixed or sticky navbar with left, center and right aligned navigation.
+Fixed or sticky navbar with left, center, and right aligned navigation.
 ```
 
 ## Image
@@ -497,7 +497,7 @@ image: card-2.jpeg
 ```
 
 ## Gallery
-Gallery include displays images in specific directory as a gallery. Use the following include to add a gallery to a page:
+Gallery include displays images in a specific directory as a gallery. Use the following include to add a gallery to a page:
 {% raw %}
 ```yml
 {% include gallery.html 
@@ -525,7 +525,7 @@ Display the latest images from your Instagram account. Generate Instagram access
 ```yml
 instagram_accesstoken:  x8dnfii4489rhfhrufh4dd
 ```
-Use the following include to add a Instagram feed to a page:
+Use the following include to add an Instagram feed to a page:
 {% raw %}
 ```yml
 {% include instagram.html 
@@ -545,7 +545,7 @@ Use the following include to add a Instagram feed to a page:
 | count | Number of images to display | integer between 1 and 20 |
 
 ## Team
-Display team member (authors) info, avatar, name and title. Create a list of authors in `_config.yml`:
+Display team member (authors) info, avatar, name, and title. Create a list of authors in `_config.yml`:
 ```yml
 authors:
   john:
@@ -557,7 +557,7 @@ authors:
     title:        Support    
     avatar:       avatar-evan.png
 ```
-Use the following include to add a team members to a page:
+Use the following include to add team members to a page:
 {% raw %}
 ```yml
 {% include 
@@ -571,7 +571,7 @@ Use the following include to add a team members to a page:
 
 | Attribute | Description | Choices |
 | --- | --- | --- |
-| authors | Authors to display | Comma separated list of authors, leave balnk to display all authors |
+| authors | Authors to display | Comma-separated list of authors, leave blank to display all authors |
 
 ## Videos
 Display clickable cards with video lightbox, use the following include to add video cards to a page:
@@ -606,7 +606,7 @@ Praesent tincidunt elit, eget sagittis turpis ornare non mauris non leo tortor.
 ```
 
 ## Call to action
-Use the following include to add call to action to a page:
+Use the following include to add a call to action to a page:
 {% raw %}
 ```yml
 {% include cta.html 
@@ -621,7 +621,7 @@ Use the following include to add call to action to a page:
 | Attribute | Description | Choices |
 | --- | --- | --- |
 | block | Block posts to display | block file name without extension |
-| layout | Chose from one column layout, two column layout, three column layout with middle column displaying a play icon for popup lightbox video | 1, 2, 3 |
+| layout | Chose from one column layout, two column layout, three column layout with a middle column displaying a play icon for popup lightbox video | 1, 2, 3 |
 
 Example of video block post for layout 1:
 ```yml
@@ -678,271 +678,50 @@ Display contents of a block post, either as one column layout `1-1` or two colum
 | block_title | Disable diplaying block title | false |
 | align | Display title/subtitle column on the right | right |
 
-
-
-
-
-
+## Latest blog posts
+Display latest blog posts (no pagination, suitable as a short section, for full blog page see bellow under "Blog" heading), use the following include:
 
 {% raw %}
 ```yml
-
-```
-{% endraw %}
-
-
-
-
-## Creating your first post in Jekyll
-{: .uk-heading-divider}
-
-To create a new post, you can create a new markdown file inside the `_posts` directory by following the recommended file naming format:
-```
-YEAR-MONTH-DAY-title.MARKUP
-```
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. For example, the following are examples of valid post filenames:
-
-```
-2011-12-31-new-years-eve-is-awesome.md
-2012-09-12-how-to-write-a-blog.md
-```
-
-Post requires front matter, everything in between the first and second --- are part of the YAML Front Matter, and everything after the second --- will be rendered with Markdown and show up as “Content”.
-The following is a post file with different configurations you can add as example:
-
-```yaml
----
-layout: post
-title: How To Travel On Low Budget
----
-```
-
-You can rebuild the site in many different ways, but the most common way is to run `bundle exec jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To keep things more organized, add post images to `/uploads/` directory.
-
-## Creating FAQ posts
-{: .uk-heading-divider}
-
-Create new FAQ post entries in `_faqs` folder, similar to creating posts, but with following front matter settings:
-
-```yml
----
-title: Do you provide customer support?
-categories: [presale]
----
-```
-
-## Enabling comments (via Disqus)
-{: .uk-heading-divider}
-
-Optionally, if you have a Disqus account, you can tell Jekyll to use it to show a comments section below each post. To enable it, add the following lines to your Jekyll site:
-
-```yaml
-disqus:
-    shortname: my_disqus_shortname
-```
-
-You can find out more about Disqus' shortnames [here](https://help.disqus.com/customer/portal/articles/466208).
-
-Comments are enabled by default and will only appear in production, i.e., `JEKYLL_ENV=production`. If you don't want to display comments for a particular post you can disable them by adding `comments: false` to that post's YAML Front Matter.
-
-## Adding media to post content
-{: .uk-heading-divider}
-
-### Adding images
-To add an image to a post or page use the following codes:
-Local image from `/uploads/` directory:
-{% raw %}
-```yaml
-{% include image.html src="girl.jpg" alt="Alt for image" caption="Girl on a rock" %}
-```
-{% endraw %}
-
-External wide image with lightbox:
-{% raw %}
-```yaml
-{% include image.html src="https://source.unsplash.com/TT-ROxWj9nA.jpg" lightbox="true" alt="Alt for image" caption="Image in lightbox" %}
-```
-{% endraw %}
-
-Uploads folder location can be changed in `_config.yml`.
-
-### Slideshow
-
-{% raw %}
-```yaml
-{% include slideshow.html gallery="slideshow-1" %}
-```
-{% endraw %}
-
-The `gallery` attribute refers to a folder inside your `uploads` folder, all images in `slideshow-1` folder will be displyed in slideshow. Uploads folder location can be changed in `_config.yml`.
-
-### Responsive Videos
-Embed local videos:
-```html
-<video controls playsinline uk-video="automute: true">
-    <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
-    <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv" type="video/ogg">
-</video>
-```
-Embed YouTube videos:
-```html
-<iframe src="http://www.youtube.com/embed/YE7VzlLtp-4?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" width="600" height="340" frameborder="0" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
-```
-
-## Adding alerts to content
-{: .uk-heading-divider}
-
-There are four alert styles:
-
-{% include alert.html style="primary" text="Cras at dolor eget urna varius faucibus tempus in elit." %}
-
-{% include alert.html style="success" text="Cras at dolor eget urna varius faucibus tempus in elit." %}
-
-{% include alert.html style="warning" text="Cras at dolor eget urna varius faucibus tempus in elit." %}
-
-{% include alert.html style="danger" text="Cras at dolor eget urna varius faucibus tempus in elit." %}
-
-Add alerts to a post using the following includes:
-
-{% raw %}
-```yaml
-{% include alert.html style="primary" text="Cras at dolor eget urna varius faucibus tempus in elit." %}
-
-{% include alert.html style="success" text="Cras at dolor eget urna varius faucibus tempus in elit." %}
-
-{% include alert.html style="warning" text="Cras at dolor eget urna varius faucibus tempus in elit." %}
-
-{% include alert.html style="danger" text="Cras at dolor eget urna varius faucibus tempus in elit." %}
-```
-{% endraw %}
-
-## Page header
-{: .uk-heading-divider}
-
-To add a hero header to a page add the following to a YAML Front Matter:
-
-{% raw %}
-```yaml
----
-title: Page title
-subtitle: Page subtitle optional
-width: full
-navbar:
-  sticky: true
-  scroll_up: true
-  animation: true
-  transparent: true
-  transparent_color: light
-header:
-  layout: 1-1 # Options: left, center, 1-1, 1-2, 1-3 or 2-3
-  background_color: "#1B33BF"
-  background_image: Working-Space.jpg
-  background_video: Working-Space.mp4
-  background_align: center-center
-  background_overlay: "rgba(0, 0, 0, 0.5)"
-  color: light
-  header_size: large
-  heading_size: medium
-  height: full
-  parallax: true
-  container:
-    block: header-home
-    # title: false
----
-```
-{% endraw %}
-
-## Frequently asked questions section
-{: .uk-heading-divider}
-
-Create FAQ post in `_faqs` folder (categories are optional):
-```yml
----
-title: Do you provide customer support?
-categories: [presale]
----
-```
-
-To add the following to a page:
-{% raw %}
-```yaml
-{% include faqs.html 
-  multiple="true" 
-  title="Frequently asked questions" 
-  category="presale"
+{% include blog.html 
+  grid="1-3"
+  gutter="large"
+  count="3"
+  view_all="/blog/"
 %}
 ```
 {% endraw %}
 
-Specifying category is optional, if not defined all FAQ posts will be displayed. To display multiple FAQs at the same time without one collapsing when the other one is opened, add the `multiple="true"` attribute.
+#### Attributes
 
-## Call to action
-{: .uk-heading-divider}
+| Attribute | Description | Choices |
+| --- | --- | --- |
+| grid | Display slides in columns | 1-2, 1-3, 1-4, 1-5, 1-6 |
+| gutter | Spacing between columns | small, medium, large, collapse, leave blank for default |
+| count | Number of post to display | integer |
+| view_all | Display "View All" link to blog page | blog page permalink e.g. `/blog/` |
 
-To add the following to a page:
+## Seach
+Use the following include:
 {% raw %}
-```yaml
-{% include cta.html 
-  section_size="large"
-  section_image="header-9.jpeg"
-  section_overlay="rgba(0, 0, 0, 0.5)"
-  section_container="small"
-  section_content_align="center"
-  section_content_color="light"
-  layout="1"
-  block="cta-4"
-%}
+```yml
+{% include search.html %}
 ```
 {% endraw %}
 
-## Contact form (via FormSpree)
-{: .uk-heading-divider}
-
-Submit the form and confirm your email address at [FormSpree](https://formspree.io/). Then add the following include to a page, replacing the email address:
-
+## Mailchimp
+Use the following include:
 {% raw %}
-```yaml
-{% include 
-  formspree.html 
-  email="my_name@gmail.com" 
-  redirect="/thanks/" 
-  name="true" 
-  subject="true" 
-%}
+```yml
+{% include mailchimp.html %}
 ```
 {% endraw %}
 
-
-## Google Analytics
-{: .uk-heading-divider}
-
-To enable Google Anaytics, add the following lines to your Jekyll site:
-
-```yaml
-  google_analytics: UA-NNNNNNNN-N
-```
-
-Google Analytics will only appear in production, i.e., `JEKYLL_ENV=production`
-
-## Displaying mailchimp newsletter sign up form on a blog post
-{: .uk-heading-divider}
-
-Add the following code in `_congig.yml`:
+Set Mailchimp `form_action` and `hidden_name` values in `_congig.yml`, the bellow example values are dummy for illustration purpose only:
 ```yaml
 mailchimp:
-  form_action:    "https://mycompany.us8.list-manage.com/subscribe/post?u=2e56c13452bd&amp;id=e682645464"
-  hidden_name:    "b_2e56c1231057fjsd4fd_e685657"
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      mailchimp: true
+  form_action:    "https://mycompany.us8.list-manage.com/subscribe/post?u=2e56c12fcd37e5dab02bd&amp;id=e6e94847464"
+  hidden_name:    "b_2e56c123105fcd37e5dab02bd_e68475657"
 ```
 
 Get the values for `form_action` and `hidden_name` from your mailchimp embed form:
@@ -957,6 +736,242 @@ Get `hidden_name` value from:
 ```
 <input type="text" name="b_2e56c123105fcd37e5dab02bd_e68475657" tabindex="-1" value="">
 ```
+
+## Google map
+
+Get a Google maps API key here: [https://developers.google.com/maps/documentation/javascript/get-api-key](https://developers.google.com/maps/documentation/javascript/get-api-key) and add it to `_config.yml`:
+```yml
+google_maps_api_key: nd7h4end8rnflkfif8ifrjmfjf
+```
+
+Use the following include to insert map to a page:
+{% raw %}
+```yml
+{% include map.html 
+  latitude="19.419897" 
+  longitude="-99.164967" 
+  zoom="12" 
+  style="silver" 
+%}
+```
+{% endraw %}
+
+#### Attributes
+
+| Attribute | Description | Choices |
+| --- | --- | --- |
+| latitude | Location latitude | |
+| longitude | Location longitude | |
+| zoom | Zoom level | integer 0 to 20 |
+| style | Map theme | silver, dark, leave blank for default |
+
+Follow the steps below to get the latitude and longitude coordinates for a location on Google Maps:
+
+1. Open Google Maps in a browser.
+2. Right-click the exact location on the map for which you require coordinates.
+3. Select What's here from the context menu that appears. The map displays a card at the bottom of the screen. Find the latitude and longitude coordinates in the last row of the card.
+
+## Frequently asked questions
+Create FAQ post in `_faqs` folder (categories are optional):
+```yml
+---
+title: Do you provide customer support?
+categories: [presale]
+---
+
+Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+```
+
+Use the following include to add FAQs to a page:
+{% raw %}
+```yml
+{% include faqs.html 
+  multiple="true" 
+  category="presale" 
+%}
+```
+{% endraw %}
+
+#### Attributes
+
+| Attribute | Description | Choices |
+| --- | --- | --- |
+| multiple |  Display multiple FAQs open at the same time without one collapsing when the other one is opened | true |
+| category | Specifying category is optional, if not defined all FAQ posts will be displayed. | |
+
+## Formspree contact form
+Submit the form and confirm your email address at [FormSpree](https://formspree.io/). Then add the following include to a page, replacing the email address:
+
+{% raw %}
+```yaml
+{% include formspree.html 
+  email="my_name@gmail.com" 
+  redirect="/thanks/" 
+  name="true" 
+  subject="true" 
+  layout="horizontal"
+%}
+```
+
+#### Attributes
+
+| Attribute | Description | Choices |
+| --- | --- | --- |
+| email | FormSpree form email | |
+| redirect | Where to redirect the user after submission | page permalink |
+| name | Display name field | true |
+| subject | Display subject field | true |
+| layout | Stacked or horozontal layout | horizontal, leave blank for stacked layout |
+
+## Google Analytics
+
+To enable Google Anaytics, add the following lines to your Jekyll site:
+
+```yaml
+  google_analytics: UA-NNNNNNNN-N
+```
+
+Google Analytics will only appear in production, i.e., `JEKYLL_ENV=production`
+
+## Portfolio
+Create portfolio posts in `_portfolio` folder (topics is optional for filter option):
+```yml
+---
+title: Shoreditch
+image: portfolio-1-thumb.jpg
+topics: [United Kingdom]
+---
+
+Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+```
+
+Use the following include to add portfolio to a page:
+{% raw %}
+```yml
+{% include portfolio.html 
+  grid="1-3"
+  gutter="large"
+  filter="true"
+  title="bellow"
+%}
+```
+{% endraw %}
+
+#### Attributes
+
+| Attribute | Description | Choices |
+| --- | --- | --- |
+| grid | Display slides in columns | 1-2, 1-3, 1-4, 1-5, 1-6 |
+| gutter | Spacing between columns | small, medium, large, collapse, leave blank for default |
+| filter |  Display topics filter | true |
+| title | Display title bellow image or on image overlay | bellow, leave blank for overlay position |
+
+## Blog
+By default blog is diplayed under `/blog/` permalink and blog page can be found in `/blog/index.html` location. Blog options can be modified in `_config.yml`:
+```yml
+paginate:           6               # Number of posts displayed on blog page
+paginate_path:      "/blog/:num/"   # Blog path
+```
+
+### Creating your first post in Jekyll
+
+To create a new post, you can create a new markdown file inside the `_posts` directory by following the recommended file naming format:
+```
+YEAR-MONTH-DAY-title.MARKUP
+```
+Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. For example, the following are examples of valid post filenames:
+
+```
+2011-12-31-new-years-eve-is-awesome.md
+2012-09-12-how-to-write-a-blog.md
+```
+
+Post requires front matter, everything in between the first and second --- are part of the YAML Front Matter, and everything after the second --- will be rendered with Markdown and show up as “Content”.
+The following is a post file with different configurations you can add as an example:
+
+```yaml
+---
+title: How To Travel On Low Budget
+---
+```
+
+You can rebuild the site in many different ways, but the most common way is to run `bundle exec jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+
+### Enabling comments (via Disqus)
+
+Optionally, if you have a Disqus account, you can tell Jekyll to use it to show a comments section below each post. To enable it, add the following lines to your Jekyll site:
+
+```yaml
+disqus:
+    shortname: my_disqus_shortname
+```
+
+You can find out more about Disqus' shortnames [here](https://help.disqus.com/customer/portal/articles/466208).
+
+Comments are enabled by default and will only appear in production, i.e., `JEKYLL_ENV=production`. If you don't want to display comments for a particular post you can disable them by adding `comments: false` to that post's YAML Front Matter.
+
+## Content includes
+
+### Alerts
+Add alerts to content using the following include:
+
+{% raw %}
+```yaml
+{% include alert.html style="primary" text="Cras at dolor eget urna varius faucibus tempus in elit." %}
+```
+{% endraw %}
+#### Attributes
+
+| Attribute | Description | Choices |
+| --- | --- | --- |
+| text | Alert text | string |
+| style | Alert style | primary, success, warning, danger, leave blank for default |
+
+### Labels
+Add labels to content using the following include:
+
+{% raw %}
+```yaml
+{% include label.html text="Success" style="success" %}
+```
+{% endraw %}
+
+#### Attributes
+
+| Attribute | Description | Choices |
+| --- | --- | --- |
+| text | Label text | string |
+| style | Label style | success, warning, danger, leave blank for primary |
+
+### Buttons
+Add buttons to content using the following include:
+
+{% raw %}
+```yaml
+{% include button.html text="Button text" url="#" style="primary" size="xlarge" width="full" %}
+```
+{% endraw %}
+
+#### Attributes
+
+| Attribute | Description | Choices |
+| --- | --- | --- |
+| text | Button text | string |
+| url | Button url | page permalink or full URL |
+| style | Button style | default, primary, success, warning, danger, primary-outline, success-outline, warning-outline, danger-outline, custom hex or rgb color value |
+| size | Button size | small, large, xlarge, leave blank for default size |
+| width | Button will take up full width | full |
+
+
+### Scroll to top
+Add scroll to top icon to content using the following include:
+{% raw %}
+```yaml
+{% include totop.html %}
+```
+{% endraw %}
+
+For general markdown syntax see [Cheetsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 ## Translation
 {: .uk-heading-divider}

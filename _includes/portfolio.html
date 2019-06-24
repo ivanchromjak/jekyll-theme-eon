@@ -42,7 +42,7 @@
 			</ul>
 		{% endif %}
 
-		<ul class="uk-child-width-1-2 uk-child-width-{{ include.grid | default: '1-4' }}@m uk-text-center" data-uk-grid="masonry: true">
+		<ul class="uk-child-width-1-2 uk-child-width-{{ include.grid | default: '1-4' }}@m{% if include.gutter %} uk-grid-{{ include.gutter }}{% endif %} uk-text-center" data-uk-grid="masonry: true">
 			{% for post in portfolio %}
 				<li data-topic="{{ post.topics }}">
 					<div class="uk-inline uk-light uk-transition-toggle">

@@ -36,7 +36,7 @@
 {% else %}
   {% assign grid = 'uk-child-width-expand@m' %}
 {% endif %}
-  <div class="{{ grid }} uk-grid-match uk-flex-center" data-uk-grid>
+  <div class="{{ grid }}{% if include.gutter %} uk-grid-{{ include.gutter }}{% endif %} uk-grid-match uk-flex-center" data-uk-grid>
     {% for post in site.posts | limit: count %}
       <div>
         <div class="uk-card uk-card-default uk-card-blog">
@@ -58,8 +58,8 @@
       </div>
     {% endfor %}
   </div>
-  {% if include.view_all %}
-    <div class="uk-margin-medium-top uk-text-center"><a href="{{ include.view_all }}" class="uk-button uk-button-default uk-button-small">{{ site.data[site.template].translation[site.lang].view_all | default: 'View All' }}</a></div>
+  {%- if include.view_all -%}
+    <div class="uk-margin-medium-top uk-text-center"><a href="{{ include.view_all | relative_url }}" class="uk-button uk-button-default uk-button-small">{{ site.data[site.template].translation[site.lang].view_all | default: 'View All' }}</a></div>
   {% endif %}
 {% include partials/section-close.html 
   section_size=include.section_size 
