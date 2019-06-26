@@ -1,6 +1,6 @@
 // Component: Base
 @mixin hook-base-body(){
-  //filter: blur(7px);
+  // filter: blur(7px);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
@@ -189,6 +189,7 @@
 }
 
 @mixin hook-text-lead(){
+  font-family: $base-heading-font-family;
   span{
     font-style: normal;
   }
@@ -514,6 +515,10 @@
   padding: 20px;
 }
 
+// @mixin hook-article-title(){
+//   margin-bottom: $global-medium-margin;
+// }
+
 @mixin hook-article(){
   position: relative;
   .uk-slideshow {
@@ -568,6 +573,15 @@
     font-size: 1.0625rem;;
     line-height: 1.6;
 
+    a:not(.uk-link-muted):not(.uk-accordion-title) {
+      // font-weight: 400;
+      border-bottom: 1px solid lighten($global-link-color, 20%);
+      // color: $global-secondary-background;
+
+      &:hover {
+        border-bottom: 1px solid $global-link-color;
+      }
+    }
     * + h1, * + .uk-h1, * + h2, * + .uk-h2 {
       margin-top: $global-large-margin;
     }
@@ -641,7 +655,7 @@
   }    
 
   .section-title {
-    font-size: 2.375rem;
+    font-size: 2.625rem;
   }
 
   .opacity:hover {
@@ -698,7 +712,7 @@
     }
   }
 
-  .section-title-center, .section-title-left, .section-title-right {
+  .section-title-left, .section-title-right {
     max-width: $container-xsmall-max-width;
   }
 

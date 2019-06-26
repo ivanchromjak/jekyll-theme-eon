@@ -21,7 +21,7 @@ header:
 ---
 
 {% include portfolio.html 
-  section_size="medium"
+  section_size="large"
   section_title="Portfolio with topic filter"
   section_header_align="center"
   grid="1-3"

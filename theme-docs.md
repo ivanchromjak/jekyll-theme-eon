@@ -3,24 +3,23 @@ title:                  Theme Docs
 width:                  small
 navbar:
   sticky:               false
-  scroll_up:            true
-  animation:            true
-  transparent:          true
-  transparent_color:    light
-header:
-  layout:               center # Options: left, center, 1-1, 1-2, 1-3 or 2-3
-  background_image:     header-8.jpg
-  background_overlay:   "rgba(0, 0, 0, 0.5)"
-  color:                light
-  header_size:         large
-  heading_size:         medium
-  parallax:             true
+# header:
+#   layout:               center # Options: left, center, 1-1, 1-2, 1-3 or 2-3
+#   background_image:     header-8.jpg
+#   background_overlay:   "rgba(0, 0, 0, 0.5)"
+#   color:                light
+#   header_size:          large
+  # heading_size:         large
 ---
 
-{% include toc.html %}
+<!-- {% include toc.html %} -->
+
+Get familiar with the basic setup and options of Eon theme. Customer support is provided through our Envato item page [contact form](https://themeforest.net/user/pressapps).
+
+---
+{: .uk-margin-large}
 
 ## Theme installation
-{: .uk-heading-divider}
 
 Install the dependencies with [Bundler](http://bundler.io/):
 
@@ -35,8 +34,10 @@ bundle exec jekyll serve
 
 You can find more on [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
 
+---
+{: .uk-margin-large}
+
 ## Basic theme setup
-{: .uk-heading-divider}
 
 ### Site URL
 The base hostname and protocol for your site. If you’re hosting with GitHub Pages this will be something like `url: "https://username.github.io"` or `url: "https://mydomain.com"` if you have a custom domain name.
@@ -76,8 +77,10 @@ logo_light:             logo-light.svg
 ```
 If logo image files are not set, the site title text is displayed instead.
 
+---
+{: .uk-margin-large}
+
 ## Navigation
-{: .uk-heading-divider}
 
 ### Main navigation bar
 There are two navigation bar layouts `default` or `center`, the default layout offers left, center or right aligned navigation with logo on the left, the center layout display logo in the center and navigation link on the left and right. 
@@ -169,6 +172,9 @@ Set in the mobile navigation links in `_data/base/mobile.yml`:
   url: /about/
 ```
 
+---
+{: .uk-margin-large}
+
 ## Header
 Page headers offer numerous content, layout and styling options.
 
@@ -201,8 +207,10 @@ header:
     title:              false         # Do not display block title, Options: false
 ```
 
+---
+{: .uk-margin-large}
+
 ## Footer
-{: .uk-heading-divider}
 
 Edit footer layout, background color style and copyright notice in `_config.yml`:
 ```yaml
@@ -239,6 +247,9 @@ columns:
         url: /#
       - title: Restaurants
 ```
+
+---
+{: .uk-margin-large}
 
 ## Page width and sidebars
 
@@ -298,6 +309,9 @@ sidebar-left:
     title:            Content of a block
 ```
 
+---
+{: .uk-margin-large}
+
 ## Sections
 The section is a wrapper around piece of included content that allows setting custom backgrounds and layout options. Section options are defined as attributed in include, for example:
 
@@ -353,6 +367,9 @@ Image include with a section wrapper, includes all options for demonstration:
 | section_content_align | Content alignment | left, center, right |
 | section_content_color | Content font color | light, hex or rgb color value |
 
+---
+{: .uk-margin-large}
+
 ## Introduction to blocks
 
 Theme uses blocks as source of content for many includes. Blocks is a Jekyll collection with its posts in `_blocks` directory. Some includes such as call to action will pull content only from one block post e.g.:
@@ -384,6 +401,9 @@ _blocks/
     feature-6.md
 ```
 All the above files would display as cards (one file per card) ordered from 1 to 6.
+
+---
+{: .uk-margin-large}
 
 ## Cards
 Use the following include to add cards to a page:
@@ -429,6 +449,9 @@ icon: ios-navigation-toolbar-top.svg
 Fixed or sticky navbar with left, center, and right aligned navigation.
 ```
 
+---
+{: .uk-margin-large}
+
 ## Image
 Use the following include to add an image to a page:
 {% raw %}
@@ -452,6 +475,9 @@ Use the following include to add an image to a page:
 | align | Align within text | left, right |
 | caption | Image caption | string |
 | lightbox | Display image in popup lightbox on a click | true |
+
+---
+{: .uk-margin-large}
 
 ## Slider
 Use the following include to add a slider to a page:
@@ -496,6 +522,9 @@ image: card-2.jpeg
 ---
 ```
 
+---
+{: .uk-margin-large}
+
 ## Gallery
 Gallery include displays images in a specific directory as a gallery. Use the following include to add a gallery to a page:
 {% raw %}
@@ -520,6 +549,9 @@ Gallery include displays images in a specific directory as a gallery. Use the fo
 | caption | Image caption created from the file name | true |
 | lightbox | Display image in popup lightbox on a click | true |
 
+---
+{: .uk-margin-large}
+
 ## Instagram feed
 Display the latest images from your Instagram account. Generate Instagram access token here: [http://instagram.pixelunion.net/](http://instagram.pixelunion.net/) and set the token in `_config.yml`:
 ```yml
@@ -543,6 +575,9 @@ Use the following include to add an Instagram feed to a page:
 | grid | Display slides in columns | 1-2, 1-3, 1-4, 1-5, 1-6 |
 | gutter | Spacing between columns | small, medium, large, collapse, leave blank for default |
 | count | Number of images to display | integer between 1 and 20 |
+
+---
+{: .uk-margin-large}
 
 ## Team
 Display team member (authors) info, avatar, name, and title. Create a list of authors in `_config.yml`:
@@ -572,6 +607,9 @@ Use the following include to add team members to a page:
 | Attribute | Description | Choices |
 | --- | --- | --- |
 | authors | Authors to display | Comma-separated list of authors, leave blank to display all authors |
+
+---
+{: .uk-margin-large}
 
 ## Videos
 Display clickable cards with video lightbox, use the following include to add video cards to a page:
@@ -604,6 +642,9 @@ video: https://youtu.be/1na-IWfv08M
 
 Praesent tincidunt elit, eget sagittis turpis ornare non mauris non leo tortor.
 ```
+
+---
+{: .uk-margin-large}
 
 ## Call to action
 Use the following include to add a call to action to a page:
@@ -656,6 +697,9 @@ video: https://youtu.be/fqFjuX4VZmU
 Dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam, ac posuere leo dapibus id.
 ```
 
+---
+{: .uk-margin-large}
+
 ## Block
 Display contents of a block post, either as one column layout `1-1` or two column layout with one column displaying title and subtitle, and the second column displaying content, use one of layout width settings `1-2, 1-3, 1-4, 1-5, 1-6` for two column layout, this will set the content column width.
 {% raw %}
@@ -677,6 +721,9 @@ Display contents of a block post, either as one column layout `1-1` or two colum
 | layout | Width of the content column | 1-1, 1-2, 1-3, 1-4, 1-5, 1-6 |
 | block_title | Disable diplaying block title | false |
 | align | Display title/subtitle column on the right | right |
+
+---
+{: .uk-margin-large}
 
 ## Latest blog posts
 Display latest blog posts (no pagination, suitable as a short section, for full blog page see bellow under "Blog" heading), use the following include:
@@ -701,6 +748,9 @@ Display latest blog posts (no pagination, suitable as a short section, for full 
 | count | Number of post to display | integer |
 | view_all | Display "View All" link to blog page | blog page permalink e.g. `/blog/` |
 
+---
+{: .uk-margin-large}
+
 ## Seach
 Use the following include:
 {% raw %}
@@ -708,6 +758,9 @@ Use the following include:
 {% include search.html %}
 ```
 {% endraw %}
+
+---
+{: .uk-margin-large}
 
 ## Mailchimp
 Use the following include:
@@ -736,6 +789,9 @@ Get `hidden_name` value from:
 ```
 <input type="text" name="b_2e56c123105fcd37e5dab02bd_e68475657" tabindex="-1" value="">
 ```
+
+---
+{: .uk-margin-large}
 
 ## Google map
 
@@ -771,6 +827,9 @@ Follow the steps below to get the latitude and longitude coordinates for a locat
 2. Right-click the exact location on the map for which you require coordinates.
 3. Select What's here from the context menu that appears. The map displays a card at the bottom of the screen. Find the latitude and longitude coordinates in the last row of the card.
 
+---
+{: .uk-margin-large}
+
 ## Frequently asked questions
 Create FAQ post in `_faqs` folder (categories are optional):
 ```yml
@@ -799,6 +858,9 @@ Use the following include to add FAQs to a page:
 | multiple |  Display multiple FAQs open at the same time without one collapsing when the other one is opened | true |
 | category | Specifying category is optional, if not defined all FAQ posts will be displayed. | |
 
+---
+{: .uk-margin-large}
+
 ## Formspree contact form
 Submit the form and confirm your email address at [FormSpree](https://formspree.io/). Then add the following include to a page, replacing the email address:
 
@@ -823,6 +885,9 @@ Submit the form and confirm your email address at [FormSpree](https://formspree.
 | subject | Display subject field | true |
 | layout | Stacked or horizontal layout | horizontal, leave blank for stacked layout |
 
+---
+{: .uk-margin-large}
+
 ## Google Analytics
 
 To enable Google Analytics, add the following lines to your Jekyll site:
@@ -832,6 +897,9 @@ To enable Google Analytics, add the following lines to your Jekyll site:
 ```
 
 Google Analytics will only appear in production, i.e., `JEKYLL_ENV=production`
+
+---
+{: .uk-margin-large}
 
 ## Portfolio
 Create portfolio posts in `_portfolio` folder (topics is optional for filter option):
@@ -865,6 +933,9 @@ Use the following include to add a portfolio to a page:
 | gutter | Spacing between columns | small, medium, large, collapse, leave blank for default |
 | filter |  Display topics filter | true |
 | title | Display title bellow image or on image overlay | bellow, leave blank for overlay position |
+
+---
+{: .uk-margin-large}
 
 ## Blog
 By default blog is displayed under `/blog/` permalink and blog page can be found in `/blog/index.html` location. Blog options can be modified in `_config.yml`:
@@ -909,6 +980,9 @@ disqus:
 You can find out more about Disqus' shortnames [here](https://help.disqus.com/customer/portal/articles/466208).
 
 Comments are enabled by default and will only appear in production, i.e., `JEKYLL_ENV=production`. If you don't want to display comments for a particular post you can disable them by adding `comments: false` to that post's YAML Front Matter.
+
+---
+{: .uk-margin-large}
 
 ## Content includes
 
@@ -973,8 +1047,10 @@ Add scroll to top icon to content using the following include:
 
 For general markdown syntax see [Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
+---
+{: .uk-margin-large}
+
 ## Translation
-{: .uk-heading-divider}
 
 Set your language code in `_config.yml`:
 ```yml
@@ -1002,8 +1078,10 @@ en:
   contact_send:               "Send"
 ```
 
+---
+{: .uk-margin-large}
+
 ## Customization
-{: .uk-heading-divider}
 
 To modify the primary color, open `/_sass/theme/variables.scss` and replace the color values e.g.:
 
@@ -1018,8 +1096,10 @@ Further style customization can be done in the following files:
 /assets/css/main.scss
 ```
 
+---
+{: .uk-margin-large}
+
 ## Development
-{: .uk-heading-divider}
 
 ### Build process
 Install [UIkit](https://getuikit.com/) font end framework dependency via Npm:
@@ -1045,13 +1125,17 @@ There are two hook include files that simplify adding content or scripts in the 
 - `_includes/hook-head.html`
 - `_includes/hook-pre-closing-body.html`
 
+---
+{: .uk-margin-large}
+
 ## Contacting support
-{: .uk-heading-divider}
 
 Customer support is provided through our Envato item page [contact form](https://themeforest.net/user/pressapps) for up to six months from the purchase date and is provided Monday to Friday during the business week. We aim to answer all support requests daily, most are handled within 24h.
 
+---
+{: .uk-margin-large}
+
 ## Sources and credits
-{: .uk-heading-divider}
 
 - Google analytics [https://www.google.com/analytics/](https://www.google.com/analytics/)
 - Google maps [https://www.google.com/maps](https://www.google.com/maps)

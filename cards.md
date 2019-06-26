@@ -1,6 +1,5 @@
 ---
-title: Cards
-subtitle: The options and posibilities are endless
+title: All about cards
 width: full
 navbar:
   sticky: true
@@ -10,18 +9,18 @@ navbar:
   transparent_color: light
 header:
   layout: center # Options: left, center, 1-1, 1-2, 1-3 or 2-3
-  background_image: header-2.jpeg
-  background_overlay: "rgba(0, 0, 0, 0.45)"
+  background_image: header-2b.jpg
+  background_overlay: "rgba(0, 0, 0, 0.85)"
   color: light
   header_size: xlarge
-  heading_size: medium
+  heading_size: large
   parallax: true
 ---
 
 {% include cards.html 
   block="card-media-11" 
   media="left" 
-  section_size="medium"
+  section_size="large"
   section_background="default"
   section_title="Cards with images"
   section_header_align="center"
@@ -30,7 +29,8 @@ header:
 {% include cards.html 
   block="card-media-12" 
   media="right" 
-  section_size="medium"
+  section_size="large"
+  section_padding_remove="top"
   section_background="default"
   card_style="default"
 %}
@@ -38,7 +38,8 @@ header:
 {% include cards.html 
   block="card-media-21" 
   media="left" 
-  section_size="medium"
+  section_size="large"
+  section_padding_remove="top"
   section_background="default"
   card_style="secondary"
 %}
@@ -46,7 +47,8 @@ header:
 {% include cards.html 
   block="card-media-22" 
   media="right" 
-  section_size="medium"
+  section_size="large"
+  section_padding_remove="top"
   section_background="default"
   card_style="primary"
 %}
@@ -54,7 +56,8 @@ header:
 {% include cards.html 
   block="card-media" 
   media="top" 
-  section_size="medium"
+  section_size="large"
+  section_padding_remove="top"
   section_container="expand"
   section_background="default"
   card_style="default"
@@ -64,7 +67,8 @@ header:
 {% include cards.html 
   block="card-media-1" 
   media="top" 
-  section_size="medium"
+  section_size="large"
+  section_padding_remove="top"
   section_container="small"
   section_background="default"
   card_style="secondary"
@@ -73,7 +77,8 @@ header:
 {% include cards.html 
   block="card-media-2" 
   media="top" 
-  section_size="medium"
+  section_size="large"
+  section_padding_remove="top"
   section_container="xsmall"
   section_background="default"
   card_style="primary"
@@ -83,7 +88,7 @@ header:
 {% include cards.html 
   block="feature-1" 
   media="top" 
-  section_size="medium"
+  section_size="large"
   section_title="Cards with SVG icons"
   section_header_align="center"
   section_background="muted"
@@ -94,7 +99,8 @@ header:
 {% include cards.html 
   block="feature-2" 
   media="top" 
-  section_size="medium"
+  section_size="large"
+  section_padding_remove="top"
   section_background="muted"
   section_content_align="center"
   card_style="default"
@@ -104,7 +110,8 @@ header:
 {% include cards.html 
   block="feature-3" 
   media="left" 
-  section_size="medium"
+  section_size="large"
+  section_padding_remove="top"
   section_background="muted"
   card_style="secondary"
   grid="1-2"
@@ -113,7 +120,8 @@ header:
 {% include cards.html 
   block="feature-4" 
   media="right" 
-  section_size="medium"
+  section_size="large"
+  section_padding_remove="top"
   section_background="muted"
   section_content_align="right"
   card_style="primary"
@@ -124,7 +132,7 @@ header:
   block="feature" 
   media="top" 
   section_background="default"
-  section_size="medium"
+  section_size="large"
   section_header_align="center" 
   section_title="Cards in slider" 
   section_content_align="center"
@@ -139,7 +147,8 @@ header:
   section_background="default"
   block="card-media" 
   media="top" 
-  section_size="medium"
+  section_size="large"
+  section_padding_remove="top"
   section_content_align="center"
   section_container="small"
   card_style="default"
@@ -151,7 +160,8 @@ header:
   block="feature" 
   media="left" 
   section_background="default"
-  section_size="medium"
+  section_size="large"
+  section_padding_remove="top"
   card_style="secondary"
   grid="1-2"
 %}
@@ -160,7 +170,7 @@ header:
   block="pricing" 
   section_title="Pricing Cards" 
   section_header_align="center"
-  section_size="medium"
+  section_size="large"
   section_container="small"
   section_background="muted" 
   section_content_align="center"
@@ -169,7 +179,8 @@ header:
 
 {% include cards.html 
   block="pricing" 
-  section_size="medium"
+  section_size="large"
+  section_padding_remove="top"
   section_background="muted" 
   section_content_align="center"
   card_style="default"
@@ -178,7 +189,8 @@ header:
 
 {% include cards.html 
   block="pricing" 
-  section_size="medium"
+  section_size="large"
+  section_padding_remove="top"
   section_background="muted" 
   section_content_align="center"
   card_style="secondary"

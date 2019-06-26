@@ -12,7 +12,7 @@ header:
   layout: 1-1 # Options: left, center, 1-1, 1-2, 1-3 or 2-3
   background_image: Working-Space.jpg
   background_video: Working-Space.mp4
-  background_overlay:   "linear-gradient(to right bottom,rgba(218, 91, 114, 0.8) 15%,rgba(151, 27, 191, 0.8) 50%,rgba(2, 8, 212, 0.8) 80%)"
+  background_overlay: "linear-gradient(to left top,rgba(218, 91, 197, 0.8) 0%,rgba(151, 27, 191, 0.8) 30%,rgba(2, 8, 212, 0.8) 80%)"
   color: light
   heading_size: medium
   height: full
@@ -36,7 +36,7 @@ header:
     media="top"
     grid="1-4"
     gutter="large"
-    icon_color="#D95B72"
+    icon_color="#1B33BF"
   %}
 
   {% include cards.html 
