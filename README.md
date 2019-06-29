@@ -9,4 +9,4 @@ Product documentation is available online [https://eon.jekyll.plus/theme-docs/](
 Customer support is provided through our Envato profile page [contact form](https://themeforest.net/user/pressapps) for up to six months from the purchase date and is provided Monday to Friday during the business week. We aim to answer all support requests daily, most are handled within 48h.
 
 ### Author
-Desk was developed by [Ivan Chromjak](https://ivanchromjak.com), theme [live demo](https://eon.jekyll.plus/) available.
+Eon was developed by [Ivan Chromjak](https://ivanchromjak.com), theme [live demo](https://eon.jekyll.plus/) available.
