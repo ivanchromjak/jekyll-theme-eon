@@ -1,5 +1,5 @@
 ---
-title: Map Dark
+title: Map dark style
 width: small
 ---
 

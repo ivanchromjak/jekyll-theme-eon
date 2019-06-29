@@ -1,6 +1,6 @@
 ---
 title: Working Together
-subtitle: The on we is years, on was same my abandon duckthemed coordinates which, would writer perception their lobby, to and own not it exerted yet palace deeply, these of spirits cache caches change.
+subtitle: The on we is years, on was same my abandon duckthemed coordinates which, would writer perception their lobby, to and own not it exerted yet palace deeply, these of spirits cache change.
 width: full
 navbar:
   sticky: true
@@ -26,5 +26,5 @@ header:
   section_size="large"
   section_container="expand"
   section_header_align="center"
-  section_background="primary"
+  section_background="muted"
 %}

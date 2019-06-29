@@ -23,7 +23,7 @@ header:
 {% include mailchimp.html 
   section_size="large"
   section_title="Mailchimp newsletter signup"
-  section_subtitle="Out of with muff safe found in yourself took didn't god, the world have the bedding hardly"
+  section_subtitle="Out of with muff safe found in yourself took didn't god, the world have the bedding"
   section_container="xsmall"
   section_header_align="center"
   section_background="primary"
@@ -51,7 +51,6 @@ header:
 
 {% include cta.html 
   section_size="large"
-  section_container="small"
   layout="2"
   block="cta-2"
 %}

@@ -1,6 +1,4 @@
 ---
-title: Some title
-subtitle: Some subbbbtitle
 width: full
 navbar:
   sticky: true

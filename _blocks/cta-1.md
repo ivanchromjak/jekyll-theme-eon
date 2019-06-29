@@ -1,5 +1,5 @@
 ---
-title: Learn why switch to Jekyll
+title: Why switch to Jekyll
 video: https://youtu.be/fqFjuX4VZmU
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Contact Us Forms
 width: xsmall
+section: large
 navbar:
   sticky: true
   scroll_up: true
@@ -12,16 +13,17 @@ header:
   background_image: header-10.jpeg
   background_overlay: "rgba(0, 0, 0, 0.6)"
   color: light
-  header_size: large
+  header_size: xlarge
   heading_size: medium
   parallax: true
 ---
 
 Example contact forms using free third party service [Formspree](https://formspree.io/). There are two form layouts with optional name and subject fields.
+{: .uk-text-lead}
 
 ## Stacked basic form
 {% include formspree.html email="my_name@gmail.com" redirect="/thanks/" name="false" subject="false" %}
 
-## Horizontal layout with subject and name fields
+## Horizontal layout with subject and name
 {% include formspree.html email="my_name@gmail.com" redirect="/thanks/" name="true" subject="true" layout="horizontal" %}
 

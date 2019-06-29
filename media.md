@@ -1,6 +1,6 @@
 ---
 title: Media
-subtitle: Show off your images and videos, the options and posibilities are endless.
+subtitle: Show off your images and videos, the options and possibilities are endless.
 width: full
 navbar:
   sticky: true
@@ -20,6 +20,7 @@ header:
 
 {% include block.html 
   block="content-image"
+  block_title="false"
   section_size="large"
   section_title="Images aligned in content"
   section_padding_remove="bottom"
@@ -57,6 +58,7 @@ header:
   section_container="xsmall"
   color="light"
   block="slider-home" 
+  navigation="outside"
   grid="1-1"
   gutter="collapse"
 %}
@@ -98,6 +100,7 @@ header:
 
 {% include block.html 
   block="videos"
+  block_title="false"
   section_size="large"
   section_title="Responsive videos" 
   section_container="xsmall"

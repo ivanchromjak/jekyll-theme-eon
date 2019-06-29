@@ -1,5 +1,5 @@
 ---
-title: Map Default
+title: Map default style
 width: full
 navbar:
   transparent: true

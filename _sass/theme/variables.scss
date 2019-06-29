@@ -7,15 +7,10 @@ $global-danger-background:                      #D95B72;
 $global-font-family:                            system-ui;
 $global-link-color:                             lighten($global-primary-background, 20%);
 $global-link-hover-color:                       lighten($global-primary-background, 20%);
-// $global-xxlarge-font-size: 2rem;
-// $global-xlarge-font-size:                       2.125rem;
-// $global-large-font-size:                        1.5rem;
-// $global-medium-font-size:                       1.25rem;
 $global-small-font-size:                        0.875rem;
 $global-muted-color:                            #A9AAAB;
-// $global-border:                                 #cccace;
-$global-xxlarge-font-size:                      2.625rem; //2.3125rem;
-$global-xlarge-font-size:                       2rem; //1.9375rem;
+$global-xxlarge-font-size:                      2.625rem;
+$global-xlarge-font-size:                       2rem;
 $global-large-font-size:                        1.5rem;
 $global-medium-font-size:                       1.25rem;
 $xsmall-font-size:                              0.875rem;
@@ -23,7 +18,7 @@ $xsmall-font-size:                              0.875rem;
 // Base variables
 $base-heading-font-family:                      'Montserrat', system-ui, san-serif;
 $base-heading-font-weight:                      600;
-$base-heading-color:                            #000; //darken($global-primary-background, 25%);
+$base-heading-color:                            #000;
 $base-h2-line-height:                           1.4;
 $base-link-hover-text-decoration:               none;
 $base-body-color:                               #8c8d90;
@@ -35,13 +30,17 @@ $base-pre-line-height:                          1.65;
 $base-pre-font-family:                          $base-code-font-family;
 $base-pre-color:                                $base-code-color;
 $border-light:                                  #edeff1;
-// $base-hr-border:
 $border-rounded-border-radius:                  2px;
 $text-lead-font-size:                           1.125rem;
+$link-muted-hover-color:                        #222;
+$link-text-hover-color:                         #555;
+$overlay-primary-background:                    rgba(34,34,34,0.8);
 
 // Accordion variables
 $accordion-item-margin-top:                     20px;
 $accordion-title-font-size:                     1.1875rem;
+$accordion-title-color:                         $global-link-color;
+$accordion-title-hover-color:                   $global-link-color;
 $accordion-content-margin-top:                  20px;
 $accordion-icon-color:                          $global-primary-background;
 $accordion-icon-background-color:               lighten( $global-primary-background, 57% );
@@ -49,7 +48,6 @@ $internal-accordion-open-image:                 "data:image/svg+xml,%3Csvg width
 $internal-accordion-close-image:                "data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline fill='none' stroke='#000' stroke-width='1.03' points='16 7 10 13 4 7' /%3E%3C/svg%3E";
 
 // Article variables
-// $article-title-font-size:                       
 $article-title-font-size-m:                     2.625rem;
 $article-title-line-height:                     1.4;
 $article-meta-font-size: 	                    0.8125rem;
@@ -84,9 +82,6 @@ $heading-large-font-size-l:                     5rem;
 $heading-divider-border-width:                  1px;
 $heading-divider-border:                        #d0d5de;
 
-// Link variables
-$link-muted-hover-color:                        #222;
-
 // Logo variables
 $logo-font-size:                                1.35rem;
 $logo-color:                                    #000;
@@ -95,7 +90,7 @@ $inverse-logo-color:                            #fff;
 $inverse-logo-hover-color:                      #fff;
 
 // Navigation variables
-$nav-primary-item-font-size:                    $global-large-font-size !default;
+$nav-primary-item-font-size:                    $global-large-font-size;
 $navbar-background:                             #fff;
 $navbar-nav-item-color:                         #333;
 $navbar-nav-item-hover-color:                   #000;
@@ -104,6 +99,7 @@ $navbar-nav-item-font-size:                     13px;
 $navbar-nav-item-text-transform:                uppercase;
 $navbar-toggle-color:                           #333;
 $navbar-toggle-hover-color:                     #000;
+$navbar-dropdown-nav-item-color:                $base-body-color;
 $offcanvas-bar-color-mode:                      dark;
 $offcanvas-bar-background:                      #fff;
 $subnav-item-font-size:                         $global-small-font-size;

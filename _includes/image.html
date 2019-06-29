@@ -23,14 +23,14 @@
         <span data-uk-overlay-icon></span>
       </div>
     </a>
-    {% if include.caption %}<figcaption class="uk-overlay uk-overlay-default uk-position-bottom-right uk-text-small">{{ include.caption }}</figcaption>{% endif %}
+    {% if include.caption %}<figcaption class="uk-overlay uk-overlay-primary uk-position-bottom-right uk-text-small">{{ include.caption }}</figcaption>{% endif %}
   </figure>
 {% else %}
   {%- if include.caption -%}
     <figure class="uk-inline{% if include.align %} uk-align-{{ include.align }}{% endif %}">
   {%- endif -%}    
     <img{% if include.align %}{% unless include.caption %} class="uk-align-{{ include.align }}"{% endunless %}{% endif %} src="{% if include.src contains 'http' %}{{ include.src }}{% else %}{{ site.uploads | absolute_url }}{{ include.src }}{% endif %}"{% if include.alt %} alt="{{ include.alt }}"{% endif %}>
-    {% if include.caption %}<figcaption class="uk-overlay uk-overlay-default uk-position-bottom-right uk-text-small">{{ include.caption }}</figcaption>{% endif %}
+    {% if include.caption %}<figcaption class="uk-overlay uk-overlay-primary uk-position-bottom-right uk-text-small">{{ include.caption }}</figcaption>{% endif %}
   {% if include.caption %}
     </figure>
   {% endif %}

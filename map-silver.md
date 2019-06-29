@@ -1,5 +1,5 @@
 ---
-title: Map Silver
+title: Map silver style
 subtitle: Siver themed Google map covering whole section
 width: full
 navbar:

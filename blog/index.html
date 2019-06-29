@@ -2,6 +2,7 @@
 layout: default
 title: Blog Grid Boxed
 subtitle: Set number of card columns, chose from sigle layout or left or right sidebar
+section: large
 sidebar: 
   right: blog
 grid: 1-2
@@ -12,7 +13,7 @@ header:
   layout: center
   background_image: header-7.jpg
   background_overlay: "rgba(0, 0, 0, 0.5)"
-  header_size: large
+  header_size: xlarge
   color: light
   heading_size: medium
 ---
@@ -33,7 +34,7 @@ header:
   {% assign grid = 'uk-child-width-1-2@m' %}
 {% endif %}
 
-<div class="{{ grid }} uk-grid-match" data-uk-grid>
+<div class="{{ grid }}{% if page.gutter %} uk-grid-{{ page.gutter }}{% endif %} uk-grid-match" data-uk-grid>
   {% if page.featured.tag %}
     <div class="uk-width-1-1">
       {% for post in site.posts %}

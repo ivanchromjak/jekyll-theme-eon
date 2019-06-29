@@ -14,7 +14,7 @@
     {% if width == 'full' %}
       {{ content }}
     {% else %}
-      <div class="uk-section">
+      <div class="uk-section{% if page.section %} uk-section-{{ page.section }}{% endif %}">
         <div class="uk-container{% if width %} uk-container-{{ width }}{% endif %}">
           {% if sidebar_left %}
             <div class="uk-flex uk-grid-large" data-uk-grid>

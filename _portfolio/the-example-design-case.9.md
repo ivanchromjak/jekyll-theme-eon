@@ -18,10 +18,12 @@ header:
 ---
 
 {% include block.html 
-	layout="1-1"
   block="content-post"
   section_size="medium"
   section_container="xsmall"
+  section_header_align="center"
+  section_title="The challenge"
+  block_title="false"
 %}
 
 {% include gallery.html 
@@ -34,11 +36,13 @@ header:
 %}
 
 {% include block.html 
-	layout="1-1"
   block="content-post2"
   section_size="medium"
   section_padding_remove="top"
   section_container="xsmall"
+  section_header_align="center"
+  section_title="The solution"
+  block_title="false"
 %}
 
 {% include image.html 

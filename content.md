@@ -1,6 +1,6 @@
 ---
 title: Content
-subtitle: The options and posibilities are endless
+subtitle: The options and possibilities are endless
 width: full
 ---
 
