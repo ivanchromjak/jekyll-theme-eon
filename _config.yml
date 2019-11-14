@@ -7,7 +7,7 @@
 # Site settings
 title:                  Eon
 description:            Multipurpose Jekyll theme.
-url:                    "http://eon.drifter.works" # Site base hostname & protocol, e.g. http://example.com
+url:                    "" # Site base hostname & protocol, e.g. http://example.com
 baseurl:                # Site subpath, e.g. /blog
 lang:                   en
 logo:                   logo-dark.svg
