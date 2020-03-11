@@ -91,3 +91,7 @@ alert(s);
 <div style="margin-top: 1000px">
 <img src="{{ site.uploads | absolute_url }}card-1.jpeg" data-src="{{ site.uploads | absolute_url }}card-1.jpeg" alt="Alt Text!" data-uk-img>
 </div>
+
+<img src="data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;1100&quot; height=&quot;1100&quot;></svg>" width="1000" height="1000" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="https://picsum.photos/600/600/?image=1000 600w,
+		             https://picsum.photos/900/900/?image=1000 900w,
+	               https://picsum.photos/1500/1500/?image=1000 1500w" data-sizes="(max-width: 1100px) 100vw, 1100px" class="uk-margin-medium-bottom" data-uk-img="" alt="image alt">
