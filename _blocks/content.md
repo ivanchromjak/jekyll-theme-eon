@@ -86,8 +86,8 @@ alert(s);
 
 > The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a footer or cite element.
 
-<img src="http://localhost:4000/uploads/card-2.jpeg" data-src="http://localhost:4000/uploads/card-2.jpeg" alt="Alt Text!" uk-img>
+<img src="/uploads/card-2.jpeg" data-src="/uploads/card-2.jpeg" alt="Alt Text!" uk-img>
 
 <div style="margin-top: 1000px">
-<img src="http://localhost:4000/uploads/card-1.jpeg" data-src="http://localhost:4000/uploads/card-1.jpeg" alt="Alt Text!" data-uk-img>
+<img src="/uploads/card-1.jpeg" data-src="/uploads/card-1.jpeg" alt="Alt Text!" data-uk-img>
 </div>
