@@ -492,7 +492,6 @@
   overflow: hidden;
   border: solid 1px $border-light;
   padding: 15px 20px;
-  font-weight: 500;
 
   &::after {
     content: "";
@@ -725,7 +724,6 @@
     .uk-subnav>.uk-active>a {
       color: $global-muted-color;
     }
-    font-weight: 300;
   }
 
   #category-section hr {
@@ -949,7 +947,7 @@
     }
 
     .uk-heading-medium {
-      font-weight: 300;
+      font-weight: 400;
     }
 
     ul {

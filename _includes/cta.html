@@ -29,7 +29,7 @@
     </div>
     {% endif %}
     {% if block.button %}
-      <a class="uk-margin-medium-top uk-button uk-button-xlarge uk-button-{{ block.button.style | default: 'primary' }}" href="{{ domain }}{{ block.button.url }}"{% if block.button.blank %} target="_blank"{% endif %}>{{ block.button.text }}</a>
+      <a class="uk-margin-medium-top uk-button uk-button-xlarge uk-button-{{ block.button.style | default: 'primary' }}" href="{{ domain }}{{ block.button.url }}"{% if block.button.blank %} target="_blank" rel="noopener"{% endif %}>{{ block.button.text }}</a>
     {% endif %}
   </div>
 {% elsif include.layout == '2' %}
@@ -50,7 +50,7 @@
       </div>
       {% endif %}
       {% if block.button %}
-        <a class="uk-button uk-button-xlarge uk-button-{{ block.button.style | default: 'primary' }}" href="{{ domain }}{{ block.button.url }}"{% if block.button.blank %} target="_blank"{% endif %}>{{ block.button.text }}</a>
+        <a class="uk-button uk-button-xlarge uk-button-{{ block.button.style | default: 'primary' }}" href="{{ domain }}{{ block.button.url }}"{% if block.button.blank %} target="_blank" rel="noopener"{% endif %}>{{ block.button.text }}</a>
       {% endif %}
     </div>
   </div>
@@ -71,7 +71,7 @@
       </div>
       {% endif %}
       {% if block.button %}
-        <a class="uk-button uk-button-xlarge uk-button-{{ block.button.style | default: 'primary' }}" href="{{ domain }}{{ block.button.url }}"{% if block.button.blank %} target="_blank"{% endif %}>{{ block.button.text }}</a>
+        <a class="uk-button uk-button-xlarge uk-button-{{ block.button.style | default: 'primary' }}" href="{{ domain }}{{ block.button.url }}"{% if block.button.blank %} target="_blank" rel="noopener"{% endif %}>{{ block.button.text }}</a>
       {% endif %}
     </div>
     <div class="uk-width-expand@m">

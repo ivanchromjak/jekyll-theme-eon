@@ -31,9 +31,9 @@
             <li{{ current }}>
               {% if link.url %}
                 {% if link.button %}
-                  <div class="uk-navbar-item"><a class="uk-button uk-button-small uk-button-{{ link.button | default: 'default' }}" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></div>
+                  <div class="uk-navbar-item"><a class="uk-button uk-button-small uk-button-{{ link.button | default: 'default' }}" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noopener" {% endif %}>{{ link.title }}</a></div>
                 {% else %}
-                  <a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a>
+                  <a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noopener" {% endif %}>{{ link.title }}</a>
                 {% endif %}
               {% else %}
                 <a href="#">{{ link.title }}</a>
@@ -84,9 +84,9 @@
             <li{{ current }}>
               {% if link.url %}
                 {% if link.button %}
-                  <div class="uk-navbar-item"><a class="uk-button uk-button-small uk-button-{{ link.button | default: 'default' }}" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></div>
+                  <div class="uk-navbar-item"><a class="uk-button uk-button-small uk-button-{{ link.button | default: 'default' }}" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noopener" {% endif %}>{{ link.title }}</a></div>
                 {% else %}
-                  <a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a>
+                  <a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noopener" {% endif %}>{{ link.title }}</a>
                 {% endif %}
               {% else %}
                 <a href="#">{{ link.title }}</a>
@@ -137,9 +137,9 @@
             <li{{ current }}>
               {% if link.url %}
                 {% if link.button %}
-                  <div class="uk-navbar-item"><a class="uk-button uk-button-small uk-button-{{ link.button | default: 'default' }}" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a></div>
+                  <div class="uk-navbar-item"><a class="uk-button uk-button-small uk-button-{{ link.button | default: 'default' }}" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noopener" {% endif %}>{{ link.title }}</a></div>
                 {% else %}
-                  <a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" {% endif %}>{{ link.title }}</a>
+                  <a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noopener" {% endif %}>{{ link.title }}</a>
                 {% endif %}
               {% else %}
                 <a href="#">{{ link.title }}</a>
@@ -174,7 +174,7 @@
 
       {% unless page.header.search or site.navbar.search == false %}
         <div>
-            <a class="uk-navbar-toggle" uk-search-icon href="#"></a>
+            <a class="uk-navbar-toggle" aria-label="Search" uk-search-icon href="#"></a>
             <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
                 <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
                     <input id="search-input" class="uk-search-input" type="search" placeholder="Search..." autofocus>
@@ -200,7 +200,7 @@
         </div>
       {% endif %}
 
-      <a class="uk-navbar-toggle uk-hidden@m" href="#nav-mobile" data-uk-navbar-toggle-icon data-uk-toggle></a>
+      <a class="uk-navbar-toggle uk-hidden@m" href="#nav-mobile" aria-label="Mobile Navigation" data-uk-navbar-toggle-icon data-uk-toggle></a>
 
     </div>
     

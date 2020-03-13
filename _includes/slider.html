@@ -104,17 +104,17 @@
 
     {% if include.navigation == 'outside' %}
       <div class="uk-hidden@m{% if include.card_style == 'secondary' or include.card_style == 'primary' %} uk-light{% endif %}">
-        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-previous data-uk-slider-item="previous"></a>
-        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-next data-uk-slider-item="next"></a>
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" aria-label="Previous" data-uk-slidenav-previous data-uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" aria-label="Next" data-uk-slidenav-next data-uk-slider-item="next"></a>
       </div>
       <div class="uk-visible@m">
-        <a class="uk-position-center-left-out uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-previous data-uk-slider-item="previous"></a>
-        <a class="uk-position-center-right-out uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-next data-uk-slider-item="next"></a>
+        <a class="uk-position-center-left-out uk-position-small uk-hidden-hover" href="#" aria-label="Previous" data-uk-slidenav-previous data-uk-slider-item="previous"></a>
+        <a class="uk-position-center-right-out uk-position-small uk-hidden-hover" href="#" aria-label="Next" data-uk-slidenav-next data-uk-slider-item="next"></a>
       </div>
     {% else %}
       <div{% if include.card_style == 'secondary' or include.card_style == 'primary' %} class="uk-ligh"{% endif %}>
-        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-previous data-uk-slider-item="previous"></a>
-        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-next data-uk-slider-item="next"></a>
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" aria-label="Previous" data-uk-slidenav-previous data-uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" aria-label="Next" data-uk-slidenav-next data-uk-slider-item="next"></a>
       </div>
     {% endif %}
 

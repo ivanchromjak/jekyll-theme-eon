@@ -43,7 +43,7 @@
                       {% assign domain = '' | relative_url %}
                   {% endif %}
 
-                  <li><a href="{{ domain }}{{ link.url }}" class="uk-link-text"{% if link.url contains 'http' %} target="_blank" {% endif %}>{{ link.title }}</a></li>
+                  <li><a href="{{ domain }}{{ link.url }}" class="uk-link-text"{% if link.url contains 'http' %} target="_blank" rel="noopener" {% endif %}>{{ link.title }}</a></li>
 
                 {% endfor %}
               {% endif %}
