@@ -141,7 +141,7 @@ header:
   sets="true"
   grid="1-4"
   navigation="outside"
-  dotnav="true"
+  dotnav="false"
 %}
 
 {% include slider.html 
