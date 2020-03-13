@@ -6,10 +6,10 @@
           <a href="{{ "/" | relative_url }}">
             {% if site.logo_light or site.logo %}
               {% if site.logo_light %}
-                <img class="uk-logo-inverse" data-src="{{ site.uploads | absolute_url }}{{ site.logo_light }}" alt="{{ site.title }}" data-uk-img>
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="uk-logo-inverse" data-src="{{ site.uploads | absolute_url }}{{ site.logo_light }}" alt="{{ site.title }}" data-uk-img>
               {% endif %}
               {% if site.logo %}
-                <img data-src="{{ site.uploads | absolute_url }}{{ site.logo }}" alt="{{ site.title }}" data-uk-img>
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ site.uploads | absolute_url }}{{ site.logo }}" alt="{{ site.title }}" data-uk-img>
               {% endif %}
             {% else %}
               {{ site.title }}
