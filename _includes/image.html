@@ -18,7 +18,7 @@
 {% if include.lightbox == 'true' %}
   <figure data-uk-lightbox="animation: slide" class="uk-inline{% if include.align %} uk-align-{{ include.align }}{% endif %}">
     <a class="uk-inline" href="{% if include.src contains 'http' %}{{ include.src }}{% else %}{{ site.uploads | absolute_url }}{{ include.src }}{% endif %}"{% if include.caption %} caption="{{ include.caption }}"{% endif %}>
-      <img data-src="{% if include.src contains 'http' %}{{ include.src }}{% else %}{{ site.uploads | absolute_url }}{{ include.src }}{% endif %}"{% if include.alt %} alt="{{ include.alt }}"{% endif %} data-uk-img>
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{% if include.src contains 'http' %}{{ include.src }}{% else %}{{ site.uploads | absolute_url }}{{ include.src }}{% endif %}"{% if include.alt %} alt="{{ include.alt }}"{% endif %} data-uk-img>
       <div class="uk-position-center">
         <span data-uk-overlay-icon></span>
       </div>
@@ -29,7 +29,7 @@
   {%- if include.caption -%}
     <figure class="uk-inline{% if include.align %} uk-align-{{ include.align }}{% endif %}">
   {%- endif -%}    
-    <img{% if include.align %}{% unless include.caption %} class="uk-align-{{ include.align }}"{% endunless %}{% endif %} data-src="{% if include.src contains 'http' %}{{ include.src }}{% else %}{{ site.uploads | absolute_url }}{{ include.src }}{% endif %}"{% if include.alt %} alt="{{ include.alt }}"{% endif %} data-uk-img>
+    <img{% if include.align %}{% unless include.caption %} class="uk-align-{{ include.align }}"{% endunless %}{% endif %} src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{% if include.src contains 'http' %}{{ include.src }}{% else %}{{ site.uploads | absolute_url }}{{ include.src }}{% endif %}"{% if include.alt %} alt="{{ include.alt }}"{% endif %} data-uk-img>
     {% if include.caption %}<figcaption class="uk-overlay uk-overlay-primary uk-position-bottom-right uk-text-small">{{ include.caption }}</figcaption>{% endif %}
   {% if include.caption %}
     </figure>
