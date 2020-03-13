@@ -44,7 +44,7 @@
                   {% if block.icon %}
                     {% include icons/{{ block.icon }} %}
                   {% elsif block.image %}
-                    <img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
+                    <img data-src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}" data-uk-img>
                   {% endif %}
                 </div>
                 <div class="uk-flex uk-flex-middle{% if include.section_content_align %} uk-flex-{{ include.section_content_align }}{% endif %} uk-width-expand@m">
@@ -60,7 +60,7 @@
                   {% if block.icon %}
                     {% include icons/{{ block.icon }} %}
                   {% elsif block.image %}
-                    <img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
+                    <img data-src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}" data-uk-img>
                   {% endif %}
                 </div>
                 <div class="uk-flex uk-flex-middle{% if include.section_content_align %} uk-flex-{{ include.section_content_align }}{% endif %} uk-width-expand@m">
@@ -77,7 +77,7 @@
                     {% if block.icon %}
                       {% include icons/{{ block.icon }} %}
                     {% elsif block.image %}
-                    <img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
+                    <img data-src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}" data-uk-img>
                     {% endif %}
                   </div>
                 {% endif %}
@@ -91,7 +91,7 @@
               </div>
 						{% else %}
               <div class="uk-panel">
-                <img src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}">
+                <img data-src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}" data-uk-img>
                 <div class="uk-position-center uk-panel">{% unless include.display_title == "false" %}<h3 class="uk-card-title-">{{ block.title }}</h3>{% endunless %}</div>
               </div>
             {% endif %}
