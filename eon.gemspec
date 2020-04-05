@@ -3,7 +3,7 @@
 Gem::Specification.new do |spec|
     spec.name                    = "eon"
     spec.version                 = "1.0.0"
-    spec.authors                 = ["Ivan Chromjak"]
+    spec.authors                 = ["Ivan"]
   
     spec.summary                 = %q{A flexible two-column Jekyll theme.}
     spec.homepage                = "https://github.com/ivanchromjak/jekyll-theme-eon"

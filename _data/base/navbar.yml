@@ -50,10 +50,7 @@ center:
   - title: 404
     url: /404/
     
-  - title: Docs
-    url: /theme-docs/
-
 right:
   - title: Purchase
-    url: https://themeforest.net/user/pressapps/portfolio
+    url: https://themeforest.net/item/eon-multipurpose-responsive-jekyll-theme/24065900
     button: default

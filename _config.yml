@@ -78,7 +78,7 @@ navbar:
 footer:                 # Default footer image settings
   style:                secondary # default, muted, primary, secondary
   layout:               columns # center or columns
-  copyright:            Made by a <a href="https://ivanchromjak.com/">human</a> somewhere on the planet earth.
+  copyright:            Made by <a href="https://unbound.studio/">Unbound Studio</a> in Mexico City.
 
 mailchimp:
   form_action:          000000
