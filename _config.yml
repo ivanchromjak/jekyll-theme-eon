@@ -7,7 +7,7 @@
 # Site settings
 title:                  Eon
 description:            Multipurpose Jekyll theme.
-url:                    "https://eon.unbound.studio" # Site base hostname & protocol, e.g. http://example.com
+url:                    "http://eon.unbound.studio" # Site base hostname & protocol, e.g. http://example.com
 baseurl:                # Site subpath, e.g. /blog
 lang:                   en
 logo:                   logo-dark.svg
