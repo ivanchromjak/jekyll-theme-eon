@@ -5,3 +5,7 @@
 ### Documentation
 Product documentation is available online [https://docs.unbound.studio/eon-multipurpose-jekyll-theme/](https://docs.unbound.studio/eon-multipurpose-jekyll-theme/). 
 
+```
+bundle exec jekyll s --livereload
+```
+

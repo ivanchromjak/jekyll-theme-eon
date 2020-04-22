@@ -1,7 +1,7 @@
 {
   "name": "jekyll-theme-eon",
-  "version": "1.0.0",
-  "description": "Advanced Jekyll theme",
+  "version": "2.0.0",
+  "description": "Multipurpose Jekyll theme",
   "repository": {
     "type": "git",
     "url": "https://github.com/ivanchromjak/jekyll-theme-eon.git"
@@ -13,16 +13,17 @@
   },
   "homepage": "https://plus.jekyll.plus",
   "dependencies": {
+    "core-js": "^3.6.5",
     "instafetch.js": "^1.5.0",
-    "sharer.js": "^0.3.8",
-    "simple-jekyll-search": "^1.7.2",
+    "sharer.js": "^0.4.0",
+    "simple-jekyll-search": "^1.7.7",
     "system-font-css": "^2.0.2",
-    "uikit": "^3.3.6"
+    "uikit": "^3.4.2"
   },
   "devDependencies": {
-    "jshint": "^2.10.2",
+    "jshint": "^2.11.0",
     "ncp": "latest",
-    "uglify-js": "^3.4.10",
+    "uglify-js": "^3.9.1",
     "watch": "^1.0.2"
   },
   "scripts": {
