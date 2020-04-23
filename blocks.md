@@ -5,7 +5,9 @@ title: Blocks test page
 subtitle: xzvxcvxvxv
 blocks:
 - template: call-to-action
-  title: Subscribe Today!
-  subtitle: Lorem something impsum go forit biy
+  block: call-to-action
+  title: Sign Up Today
+  subtitle: Phosfluorescently supply long-term high-impact customer service with technically
+    sound
 
 ---
