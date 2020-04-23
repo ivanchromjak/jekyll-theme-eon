@@ -1,7 +1,7 @@
 ---
 layout: blocks
 page_sections: 
-title: xxxx
+title: Blocks test page
 subtitle: xzvxcvxvxv
 
 ---
