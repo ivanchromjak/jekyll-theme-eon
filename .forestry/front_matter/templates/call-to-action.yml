@@ -1,5 +1,5 @@
 ---
-label: Call to action
+label: Call To Action
 hide_body: true
 fields:
 - name: block
@@ -19,3 +19,34 @@ fields:
   config:
     required: false
   label: Subtitle
+- name: layout
+  type: select
+  default: Center
+  config:
+    required: true
+    options:
+    - Center
+    - Left
+    - Video
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Layout
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Content
+- name: video
+  type: text
+  config:
+    required: false
+  label: Video
+  showOnly:
+    value: Video
