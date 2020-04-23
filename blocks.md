@@ -1,4 +1,7 @@
 ---
 layout: blocks
-page_sections:
+page_sections: 
+title: xxxx
+subtitle: xzvxcvxvxv
+
 ---

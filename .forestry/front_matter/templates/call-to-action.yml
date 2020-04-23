@@ -12,3 +12,5 @@ fields:
   config:
     required: false
   label: Subtitle
+pages:
+- blocks.md
