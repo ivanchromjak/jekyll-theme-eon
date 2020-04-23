@@ -5,13 +5,17 @@
 
     <body>
 
-    {% include partials/header.html %}
+    {% unless page.layout == 'block' %}
+      {% include partials/header.html %}
+    {% endunless %}
+
+
 
     {% assign width = page.width | default: 'default' %}
     {% assign sidebar_left = page.sidebar.left %}
     {% assign sidebar_right = page.sidebar.right %}
 
-    {% if width == 'full' %}
+    {% if width == 'full' or page.layout == 'block' %}
       {{ content }}
     {% else %}
       <div class="uk-section{% if page.section %} uk-section-{{ page.section }}{% endif %}">
@@ -41,11 +45,11 @@
       </div>
     {% endif %}
 
-    {% if site.footer.layout == 'columns' %}
+    <!-- {% if site.footer.layout == 'columns' %}
       {% include partials/footer-columns.html %}
     {% else %}
       {% include partials/footer-center.html %}
-    {% endif %}
+    {% endif %} -->
 
     {% include partials/nav-mobile.html %}
 
