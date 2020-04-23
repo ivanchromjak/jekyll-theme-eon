@@ -2,6 +2,13 @@
 label: Call to action
 hide_body: true
 fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: call-to-action
 - name: title
   type: text
   config:
