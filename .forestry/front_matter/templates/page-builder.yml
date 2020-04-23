@@ -7,7 +7,7 @@ fields:
   config:
     required: false
   label: Title
-- name: blocks
+- name: sections
   type: blocks
   label: Blocks
   template_types:
