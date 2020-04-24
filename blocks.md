@@ -8,13 +8,14 @@ sections:
   block: call-to-action
   layout: center
   button:
-    text: Click now
+    text: Text
     url: "#"
-    style: primary
+    style: success
     blank: true
-  title: Sign up today
-  subtitle: dsgsgdsfg dsgdf gdfsg dfsgdsfg
-  content: Contenttttt g fdg dsfg dsfg dfsg dfg fff
+  size: xlarge
+  title: vxvcxv
+  subtitle: 'xvxcvx vrth reht erh rteh '
+  content: ''
   video: ''
 
 ---
