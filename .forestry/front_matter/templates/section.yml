@@ -5,6 +5,22 @@ fields:
 - name: is_section
   type: boolean
   label: Section
+- name: section_title
+  type: text
+  config:
+    required: false
+  label: Title
+  showOnly:
+    field: is_section
+    value: true
+- name: section_subtitle
+  type: text
+  config:
+    required: false
+  label: Subtitle
+  showOnly:
+    field: is_section
+    value: true
 - name: section_size
   type: select
   default: medium
@@ -22,6 +38,159 @@ fields:
       file: 
       path: 
   label: Size
+  showOnly:
+    field: is_section
+    value: true
+- name: section_height
+  type: boolean
+  label: Viewport Height
+  showOnly:
+    field: is_section
+    value: true
+- name: section_container
+  type: select
+  default: medium
+  config:
+    required: false
+    options:
+    - xsmall
+    - small
+    - medium
+    - large
+    - xlarge
+    - expand
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Container
+  showOnly:
+    field: is_section
+    value: true
+- name: section_background
+  type: color
+  label: Background Color
+  config:
+    required: false
+    color_format: Hex
+  showOnly:
+    field: is_section
+    value: true
+- name: section_image
+  type: file
+  config:
+    maxSize: 250
+  label: Background Image
+  showOnly:
+    field: is_section
+    value: true
+- name: section_image_align
+  type: select
+  default: center-center
+  config:
+    required: false
+    options:
+    - top-left
+    - top-center
+    - top-right
+    - center-left
+    - center-center
+    - center-right
+    - bottom-left
+    - bottom-center
+    - bottom-right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Background Image Align
+  showOnly:
+    field: is_section
+    value: true
+- name: section_video
+  type: text
+  config:
+    required: false
+  label: Background Video
+  showOnly:
+    field: is_section
+    value: true
+- name: section_overlay_color
+  type: color
+  label: Background Overlay Color
+  config:
+    required: false
+    color_format: Hex
+  showOnly:
+    field: is_section
+    value: true
+  default: 
+- name: section_overlay_opacity
+  type: number
+  label: Background Overlay Opacity
+  description: ''
+  default: 0.5
+  required: true
+  config:
+    min: 0
+    max: 1
+    step: 0.1
+  showOnly:
+    field: is_section
+    value: true
+- name: section_header_align
+  type: select
+  default: left
+  config:
+    required: false
+    options:
+    - left
+    - center
+    - right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Header Align
+  showOnly:
+    field: is_section
+    value: true
+- name: section_header_color
+  type: color
+  label: Header Color
+  config:
+    required: false
+    color_format: Hex
+  showOnly:
+    field: is_section
+    value: true
+- name: section_content_align
+  type: select
+  default: ''
+  config:
+    required: false
+    options:
+    - left
+    - center
+    - right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Content Align
+  showOnly:
+    field: is_section
+    value: true
+- name: section_content_color
+  type: color
+  label: Content Color
+  config:
+    required: false
+    color_format: Hex
   showOnly:
     field: is_section
     value: true
