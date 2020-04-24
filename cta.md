@@ -8,7 +8,7 @@ navbar:
   transparent: true
   transparent_color: light
 header:
-  layout: 1-1 # Options: left, center, 1-1, 1-2, 1-3 or 2-3
+  layout: 1-1
   background_color: "#D95B72"
   header_size: large
   heading_size: large
@@ -17,9 +17,12 @@ header:
   container: small
   content:
     block: header-1
+menu:
+  footer:
+    weight: 2
+    title: Call to action page
+
 ---
-
-
 {% include mailchimp.html 
   section_size="large"
   section_title="Mailchimp newsletter signup"
