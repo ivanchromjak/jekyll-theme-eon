@@ -28,3 +28,10 @@ fields:
     schema:
       format: markdown
   label: Copyright
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: footer-center
