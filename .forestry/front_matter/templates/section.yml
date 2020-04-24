@@ -144,3 +144,26 @@ fields:
   showOnly:
     field: is_section
     value: true
+- name: section_overlay_color
+  type: color
+  label: Overlay Color
+  config:
+    required: false
+    color_format: Hex
+  showOnly:
+    field: is_section
+    value: true
+  default: "#000000"
+- name: section_overlay_opacity
+  type: number
+  label: Overlay Opacity
+  description: ''
+  default: 0.5
+  required: true
+  config:
+    min: 0
+    max: 1
+    step: 0.1
+  showOnly:
+    field: is_section
+    value: true
