@@ -153,7 +153,7 @@ fields:
   showOnly:
     field: is_section
     value: true
-  default: "#000000"
+  default: 
 - name: section_overlay_opacity
   type: number
   label: Overlay Opacity
@@ -164,6 +164,24 @@ fields:
     min: 0
     max: 1
     step: 0.1
+  showOnly:
+    field: is_section
+    value: true
+- name: section_content_align
+  type: select
+  default: ''
+  config:
+    required: false
+    options:
+    - left
+    - center
+    - right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Content Align
   showOnly:
     field: is_section
     value: true
