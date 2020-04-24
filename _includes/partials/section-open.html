@@ -7,8 +7,8 @@
         <source src="{% if section.section_video contains 'http' %}{{ section.section_video }}{% else %}{{ site.uploads | absolute_url }}{{ section.section_video }}{% endif %}" type="video/mp4">
       </video>
     {%- endif -%}
-    {% if section.section_overlay %}
-      <div class="uk-position-cover" style="background: {{ section.section_overlay }};"></div>
+    {% if section.section_overlay_color %}
+      <div class="uk-position-cover" style="background: {{ section.section_overlay_color }};"></div>
     {%- endif -%}
       <div class="uk-section uk-section-{{ section.section_size | default: 'regular' }}{% if section.section_padding_remove %} uk-padding-remove-{{ section.section_padding_remove }}{% endif %}{% if section.section_height == 'viewport' %} uk-flex uk-flex-middle{% endif %}"{% if section.section_height == 'viewport' %} data-uk-height-viewport="offset-bottom: 80px"{% endif %}>
         <div class="{% unless section.section_container == 'none' %}uk-container{% endunless %}{% if section.section_container %} uk-container-{{ section.section_container | default: 'none' }}{% endif %} uk-position-relative{% if section.section_content_align %} uk-text-{{ section.section_content_align }}{% endif %}{% if section.section_content_color == 'light' %} uk-light{% endif %}"{% if section.section_content_color and section.section_content_color != 'light'%} style="color: {{ section.section_content_color }}"{% endif %}>
