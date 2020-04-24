@@ -1,0 +1,20 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+// 1. Custom variables and variable overwrites.
+@import "base/variables";
+
+// 2. Import default variables and available mixins.
+@import "uikit/variables-theme";
+@import "uikit/mixins-theme";
+
+// 3. Custom mixin overwrites.
+@import "base/mixins";
+@import "base/_sharer";
+
+// 4. Import UIkit.
+@import "base/uikit";
+
+// 5. Other vendor styles
+@import "syntax-highlighting/bw";

@@ -1,5 +1,6 @@
 ---
 layout: blocks
+template: crypto
 title: Blocks test page
 subtitle: xzvxcvxvxv
 sections:

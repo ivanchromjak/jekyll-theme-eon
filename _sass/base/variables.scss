@@ -4,7 +4,7 @@ $global-secondary-background:                   #000;
 $global-success-background:                     #32d296;
 $global-warning-background:                     #faa05a;
 $global-danger-background:                      #D95B72;
-$global-font-family:                            system-ui;
+// $global-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $global-link-color:                             lighten($global-primary-background, 20%);
 $global-link-hover-color:                       lighten($global-primary-background, 20%);
 $global-small-font-size:                        0.875rem;

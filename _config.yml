@@ -15,7 +15,7 @@ logo_light:             logo-light.svg
 permalink:              /:title/ # Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
 date_format:            "%b %-d, %Y" # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 uploads:                /uploads/ # Path to post content assets directory i.e post images, pdfs etc
-template:               base
+template:               base # default theme, base, crypto
 
 paginate:               6 # Number of posts displayed on blog page
 paginate_path:          "/blog/:num/" # Blog path

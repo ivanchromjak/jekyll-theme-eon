@@ -17,7 +17,6 @@
     "instafetch.js": "^1.5.0",
     "sharer.js": "^0.4.0",
     "simple-jekyll-search": "^1.7.7",
-    "system-font-css": "^2.0.2",
     "uikit": "^3.4.2"
   },
   "devDependencies": {
@@ -27,7 +26,7 @@
     "watch": "^1.0.2"
   },
   "scripts": {
-    "copy:sass": "ncp node_modules/uikit/src/scss/ _sass/uikit/ && ncp node_modules/system-font-css/ _sass/system-font-css/",
+    "copy:sass": "ncp node_modules/uikit/src/scss/ _sass/uikit/",
     "lint": "jshint assets/js/custom.js",
     "uglify": "uglifyjs node_modules/uikit/dist/js/uikit.js node_modules/uikit/dist/js/uikit-icons.js node_modules/simple-jekyll-search/dest/simple-jekyll-search.js node_modules/instafetch.js/dist/instafetch.js node_modules/sharer.js/sharer.js assets/js/custom.js -m -c -o assets/js/main.min.js",
     "concat": "uglifyjs node_modules/uikit/dist/js/uikit.js node_modules/uikit/dist/js/uikit-icons.js node_modules/simple-jekyll-search/dest/simple-jekyll-search.js node_modules/instafetch.js/dist/instafetch.js node_modules/sharer.js/sharer.js assets/js/custom.js -b -o assets/js/main.js",
