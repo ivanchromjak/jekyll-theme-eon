@@ -60,5 +60,33 @@ sections:
   section_header_color: ''
   section_content_align: ''
   section_content_color: ''
+- template: call-to-action
+  block: call-to-action
+  layout: center
+  button:
+    text: Text
+    url: "#"
+    style: primary
+    blank: false
+  section_size: medium
+  section_container: medium
+  section_image_align: center-center
+  section_overlay_opacity: 0.5
+  section_header_align: left
+  title: CTA without section
+  content: some content
+  subtitle: ''
+  video: ''
+  is_section: false
+  section_title: ''
+  section_subtitle: ''
+  section_height: false
+  section_background: ''
+  section_image: ''
+  section_video: ''
+  section_overlay_color: ''
+  section_header_color: ''
+  section_content_align: ''
+  section_content_color: ''
 
 ---
