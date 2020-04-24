@@ -1,29 +1,29 @@
 {% if section.layout == 'center' %}
   <div{% if section.animation != empty %} data-uk-scrollspy="cls: uk-animation-{{ section.animation | default: 'slide-bottom' }}; repeat: true"{% endif %}>
     <h2 class="section-title uk-margin-remove">{{ section.title }}</h2>
-    {% if section.subtitle %}
+    {% if section.subtitle != empty %}
       <p class="uk-margin-top uk-margin-remove-bottom uk-text-lead">{{ section.subtitle }}</p>
     {% endif %}
-    {% unless section.content == blank %}<div class="uk-margin-medium-top">{{ section.content }}</div>{% endunless %}
+    {% unless section.content == empty %}<div class="uk-margin-medium-top">{{ section.content }}</div>{% endunless %}
     {% if section.video != empty %}
     <div class="uk-margin-medium-top" data-uk-lightbox>
       <a href="{{ section.video }}" data-caption="{{ section.title }}"><div class="icon">{% include icons/ios-play-button-circled.svg %}</div></a>
     </div>
     {% endif %}
-    {% if section.button %}
+    {% if section.button.url != empty %}
       <a class="uk-margin-medium-top uk-button uk-button-xlarge uk-button-{{ section.button.style | default: 'primary' }}" href="{{ domain }}{{ section.button.url }}"{% if section.button.blank %} target="_blank" rel="noopener"{% endif %}>{{ section.button.text }}</a>
     {% endif %}
   </div>
 {% elsif section.layout == 'left' %}
   <div class="uk-grid-large uk-flex-middle" data-uk-grid{% if section.animation != empty %} data-uk-scrollspy="cls: uk-animation-{{ section.animation | default: 'slide-bottom' }}; repeat: true"{% endif %}>
     <div class="uk-width-expand@m">
-      {% if section.title %}
+      {% if section.title != empty %}
         <h2 class="section-title uk-margin-remove">{{ section.title }}</h2>
       {% endif %}
-      {% if section.subtitle %}
+      {% if section.subtitle != empty %}
         <p class="uk-text-lead uk-margin-small">{{ section.subtitle }}</p>
       {% endif %}
-      {% unless section.content == blank %}<div class="uk-margin-medium-top">{{ section.content }}</div>{% endunless %}
+      {% unless section.content == empty %}<div class="uk-margin-medium-top">{{ section.content }}</div>{% endunless %}
     </div>
     <div class="uk-width-auto@m">
       {% if section.video != empty %}
@@ -31,7 +31,7 @@
         <a href="{{ section.video }}" data-caption="{{ section.title }}"><div class="icon">{% include icons/ios-play-button-circled.svg %}</div></a>
       </div>
       {% endif %}
-      {% if section.button %}
+      {% if section.button.url != empty %}
         <a class="uk-button uk-button-xlarge uk-button-{{ section.button.style | default: 'primary' }}" href="{{ domain }}{{ section.button.url }}"{% if section.button.blank %} target="_blank" rel="noopener"{% endif %}>{{ section.button.text }}</a>
       {% endif %}
     </div>
@@ -39,10 +39,10 @@
 {% elsif section.layout == 'video' %}
   <div class="uk-grid-large uk-flex-middle" data-uk-grid{% if section.animation != empty %} data-uk-scrollspy="cls: uk-animation-{{ section.animation | default: 'slide-bottom' }}; repeat: true"{% endif %}>
     <div class="uk-width-expand@m">
-      {% if section.title %}
+      {% if section.title != empty %}
         <h2 class="section-title uk-margin-remove">{{ section.title }}</h2>
       {% endif %}
-      {% if section.subtitle %}
+      {% if section.subtitle != empty %}
         <p class="uk-text-lead uk-margin-small-top">{{ section.subtitle }}</p>
       {% endif %}
     </div>
@@ -52,12 +52,12 @@
         <a href="{{ section.video }}" data-caption="{{ section.title }}"><div class="icon-cta">{% include icons/ios-play-button-circled.svg %}</div></a>
       </div>
       {% endif %}
-      {% if section.button %}
+      {% if section.button.url != empty %}
         <a class="uk-button uk-button-xlarge uk-button-{{ section.button.style | default: 'primary' }}" href="{{ domain }}{{ section.button.url }}"{% if section.button.blank %} target="_blank" rel="noopener"{% endif %}>{{ section.button.text }}</a>
       {% endif %}
     </div>
     <div class="uk-width-expand@m">
-      {% unless section.content == blank %}<div class="uk-article-content">{{ section.content }}</div>{% endunless %}
+      {% unless section.content == empty %}<div class="uk-article-content">{{ section.content }}</div>{% endunless %}
     </div>    
   </div>
 {% endif %}
