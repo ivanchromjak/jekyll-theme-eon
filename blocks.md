@@ -16,5 +16,6 @@ sections:
   subtitle: 'xvxcvx vrth reht erh rteh '
   content: ''
   video: ''
+  section_size: large
 
 ---

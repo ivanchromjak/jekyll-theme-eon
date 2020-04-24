@@ -2,7 +2,7 @@
 label: Section
 hide_body: true
 fields:
-- name: size
+- name: section_size
   type: select
   default: []
   config:
