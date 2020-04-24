@@ -61,7 +61,7 @@ sections:
   section_header_color: ''
   section_content_align: ''
   section_content_color: ''
-  animation: ''
+  animation: slide-left
 - template: call-to-action
   block: call-to-action
   layout: center
