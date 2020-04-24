@@ -73,6 +73,7 @@ footer_1:
   parent: item_eX2NmCM
   title: Forum
 - weight: 2
+  identifier: item_eX2NmCM
   title: Col 2
 - url: "#"
   weight: 2
@@ -83,6 +84,7 @@ footer_1:
   title: Company
   parent: item_d9zsg9Y
 - weight: 1
+  identifier: item_d9zsg9Y
   title: Col 1
 header:
 - identifier: header
