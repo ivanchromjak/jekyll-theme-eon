@@ -6,7 +6,15 @@ subtitle: xzvxcvxvxv
 sections:
 - template: call-to-action
   block: call-to-action
-  title: jhgjhgjhggh
-  subtitle: nbmnhgj kggyy ttuyf rtutiututiutuy ytu iuyt    fggghjfjh gjhg
+  layout: Center
+  button:
+    text: Click now
+    url: "#"
+    style: Secondary
+    blank: true
+  title: Sign up today
+  subtitle: dsgsgdsfg dsgdf gdfsg dfsgdsfg
+  content: Contenttttt g fdg dsfg dsfg dfsg dfg
+  video: ''
 
 ---
