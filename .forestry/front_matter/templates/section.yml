@@ -7,12 +7,13 @@ fields:
   label: Section
 - name: section_size
   type: select
-  default: []
+  default: medium
   config:
     required: false
     options:
     - xsmall
     - small
+    - medium
     - large
     - xlarge
     source:
