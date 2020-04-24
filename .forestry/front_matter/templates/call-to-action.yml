@@ -89,6 +89,23 @@ fields:
     label: Blank
     description: Open in new window
   label: Button
+- name: animation
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - none
+    - slide-top
+    - slide-left
+    - slide-right
+    - slide-bottom
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Animation
 - name: section
   type: include
   config: {}
