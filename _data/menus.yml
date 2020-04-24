@@ -1,14 +1,89 @@
 ---
+columns:
+- title: CONTACT
+  links:
+  - title: Contact Form
+    url: "/#"
+  - title: LinkedIn
+    url: "/#"
+  - title: Facebook
+    url: "/#"
+  - title: Visit Us
+    url: "/#"
+  weight: 1
+- title: COMMUNITY
+  links:
+  - title: Webinars
+    url: "/#"
+  - title: Developers
+    url: "/#"
+  - title: Platforms
+    url: "/#"
+  - title: Workshops
+    url: "/#"
+  - title: Local Meetups
+    url: "/#"
+  weight: 2
+- title: JOIN US
+  links:
+  - title: Our Initiatives
+    url: "/#"
+  - title: Giving Back
+    url: "/#"
+  - title: Communities
+    url: "/#"
+  - title: Youth Program
+    url: "/#"
+  - title: Charity
+    url: "/#"
+  weight: 3
+- title: PRODUCTS
+  links:
+  - title: Small Businesses
+    url: "/#"
+  - title: Photographers
+    url: "/#"
+  - title: Restaurants
+    url: "/#"
+  - title: Designers
+    url: "/#"
+  - title: Artists
+    url: "/#"
+  weight: 4
+- title: COMPANY
+  links:
+  - title: Marketing Tools
+    url: "/#"
+  - title: Presentations
+    url: "/#"
+  - title: Professionals
+    url: "/#"
+  - title: Appointments
+    url: "/#"
+  - title: Stores
+    url: "/#"
+  weight: 5
 footer_1:
 - url: "#"
-  weight: 3
-  title: Shops
+  weight: 2
+  parent: item_eX2NmCM
+  title: Contact
+- url: "#"
+  weight: 1
+  parent: item_eX2NmCM
+  title: Forum
+- weight: 2
+  title: Col 2
 - url: "#"
   weight: 2
-  title: Company
-- identifier: footer_1
+  title: Shops
+  parent: item_d9zsg9Y
+- url: "#"
   weight: 1
-  title: 
+  title: Company
+  parent: item_d9zsg9Y
+- weight: 1
+  title: Col 1
 header:
 - identifier: header
   weight: 1
@@ -18,67 +93,3 @@ footer:
   url: "/"
   weight: 1
   title: Home
-
-columns:
-  - title: COMPANY
-    links:
-      - title: Marketing Tools
-        url: /#
-      - title: Presentations
-        url: /#
-      - title: Professionals
-        url: /#
-      - title: Appointments
-        url: /#
-      - title: Stores
-        url: /#
-
-  - title: PRODUCTS
-    links:
-      - title: Small Businesses
-        url: /#
-      - title: Photographers
-        url: /#
-      - title: Restaurants
-        url: /#
-      - title: Designers
-        url: /#
-      - title: Artists
-        url: /#
-
-  - title: JOIN US
-    links:
-      - title: Our Initiatives
-        url: /#
-      - title: Giving Back
-        url: /#
-      - title: Communities
-        url: /#
-      - title: Youth Program
-        url: /#
-      - title: Charity
-        url: /#
-
-  - title: COMMUNITY
-    links:
-      - title: Webinars
-        url: /#
-      - title: Developers
-        url: /#
-      - title: Platforms
-        url: /#
-      - title: Workshops
-        url: /#
-      - title: Local Meetups
-        url: /#
-
-  - title: CONTACT
-    links:
-      - title: Contact Form
-        url: /#
-      - title: LinkedIn
-        url: /#
-      - title: Facebook
-        url: /#
-      - title: Visit Us
-        url: /#
