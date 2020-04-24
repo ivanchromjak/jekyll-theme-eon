@@ -8,7 +8,21 @@ fields:
     required: false
   label: Block
   hidden: true
-  default: footer-center
+  default: footer
+- name: layout
+  type: select
+  default: center
+  config:
+    required: false
+    options:
+    - center
+    - columns
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Layout
 - name: style
   type: select
   default: secondary
@@ -25,12 +39,7 @@ fields:
       file: 
       path: 
   label: Style
-- name: copyright
-  type: textarea
-  default: Copyright [https://unbound.studio/](https://unbound.studio/ "Unbound Studio")
-  config:
-    required: false
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: Copyright
+- name: social_networks
+  type: boolean
+  label: Social Networks
+  default: true
