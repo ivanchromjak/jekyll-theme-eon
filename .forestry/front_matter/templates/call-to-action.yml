@@ -89,3 +89,8 @@ fields:
     label: Blank
     description: Open in new window
   label: Button
+- name: section
+  type: include
+  config: {}
+  template: section
+  label: Section

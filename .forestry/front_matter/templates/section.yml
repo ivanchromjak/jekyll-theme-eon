@@ -1,0 +1,20 @@
+---
+label: Section
+hide_body: true
+fields:
+- name: size
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - xsmall
+    - small
+    - large
+    - xlarge
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Size
