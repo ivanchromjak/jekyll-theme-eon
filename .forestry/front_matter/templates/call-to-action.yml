@@ -21,13 +21,13 @@ fields:
   label: Subtitle
 - name: layout
   type: select
-  default: Center
+  default: center
   config:
     required: true
     options:
-    - Center
-    - Left
-    - Video
+    - center
+    - left
+    - video
     source:
       type: simple
       section: 
@@ -68,16 +68,16 @@ fields:
     default: "#"
   - name: style
     type: select
-    default: Primary
+    default: primary
     config:
       required: false
       options:
-      - Primary
-      - Secondary
-      - Success
-      - Danger
-      - Warning
-      - Default
+      - primary
+      - secondary
+      - success
+      - warning
+      - danger
+      - default
       source:
         type: simple
         section: 
