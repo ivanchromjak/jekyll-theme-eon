@@ -17,7 +17,7 @@
           </a>
         </div>
         <div class="uk-margin uk-text-small copyright">{{ site.footer.copyright }}</div>
-        {% if site.social_networks %}
+        {% if section.social_networks and site.social_networks %}
           <div class="uk-margin">
             <div data-uk-grid class="uk-child-width-auto uk-grid-small">
               {% include social-networks.html %}
