@@ -1,12 +1,20 @@
 ---
+footer_1:
+- url: "#"
+  weight: 3
+  title: Shops
+- url: "#"
+  weight: 2
+  title: Company
+- identifier: footer_1
+  weight: 1
+  title: 
+header:
+- identifier: header
+  weight: 1
+  title: 
 footer:
 - identifier: footer
   url: "/"
   weight: 1
   title: Home
-
-header:
-- identifier: header
-
-footer_1:
-- identifier: footer_1
