@@ -25,3 +25,27 @@ fields:
   showOnly:
     field: is_section
     value: true
+- name: section_header_align
+  type: select
+  default: left
+  config:
+    required: false
+    options:
+    - left
+    - center
+    - right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Header Align
+  showOnly:
+    field: is_section
+    value: true
+- name: section_height
+  type: boolean
+  label: Viewport Height
+  showOnly:
+    field: is_section
+    value: true
