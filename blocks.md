@@ -25,7 +25,7 @@ sections:
   section_background: "#4A90E2"
   section_image: "/uploads/header-5.jpg"
   section_image_align: ''
-  section_video: ''
+  section_video: mouse.mp4
   section_overlay_color: ''
   section_overlay_opacity: 
   section_header_align: center
