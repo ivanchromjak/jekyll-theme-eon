@@ -12,6 +12,7 @@ fields:
   label: Blocks
   template_types:
   - call-to-action
+  - footer-center
   config:
     min: 
     max: 
