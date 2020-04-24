@@ -32,6 +32,7 @@ sections:
   section_header_color: "#F8E71C"
   section_content_align: right
   section_content_color: "#7ED321"
+  animation: none
 - template: call-to-action
   block: call-to-action
   layout: left
@@ -60,6 +61,7 @@ sections:
   section_header_color: ''
   section_content_align: ''
   section_content_color: ''
+  animation: ''
 - template: call-to-action
   block: call-to-action
   layout: center
@@ -88,5 +90,6 @@ sections:
   section_header_color: ''
   section_content_align: ''
   section_content_color: ''
+  animation: ''
 
 ---
