@@ -122,8 +122,8 @@ sections:
   section_content_align: ''
   section_content_color: ''
 - template: footer-center
+  block: footer-center
   style: secondary
-  copyright: Copyright \[Unbound Studio\]([https://unbound.studio/](https://unbound.studio/
-    "Unbound Studio"))
+  copyright: Copyright \[Unbound Studio\](https://unbound.studio)
 
 ---
