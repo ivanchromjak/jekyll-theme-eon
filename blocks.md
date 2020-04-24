@@ -10,12 +10,13 @@ sections:
     text: Text
     url: "#"
     style: success
-    blank: true
+    blank: false
   size: xlarge
   title: vxvcxv
   subtitle: 'xvxcvx vrth reht erh rteh '
   content: ''
   video: ''
-  section_size: large
+  section_size: medium
+  is_section: true
 
 ---
