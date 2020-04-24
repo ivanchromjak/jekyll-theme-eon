@@ -1,63 +1,63 @@
-{% if include.layout == 'center' %}
+{% if section.layout == 'center' %}
   <div data-uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
-    <h2 class="section-title uk-margin-remove">{{ block.title }}</h2>
-    {% if block.subtitle %}
-      <p class="uk-margin-top uk-margin-remove-bottom uk-text-lead">{{ block.subtitle }}</p>
+    <h2 class="section-title uk-margin-remove">{{ section.title }}</h2>
+    {% if section.subtitle %}
+      <p class="uk-margin-top uk-margin-remove-bottom uk-text-lead">{{ section.subtitle }}</p>
     {% endif %}
-    {% unless block.content == blank %}<div class="uk-margin-medium-top">{{ block.content }}</div>{% endunless %}
-    {% if block.video %}
+    {% unless section.content == blank %}<div class="uk-margin-medium-top">{{ section.content }}</div>{% endunless %}
+    {% if section.video %}
     <div class="uk-margin-medium-top" data-uk-lightbox>
-      <a href="{{ block.video }}" data-caption="{{ block.title }}"><div class="icon">{% include icons/ios-play-button-circled.svg %}</div></a>
+      <a href="{{ section.video }}" data-caption="{{ section.title }}"><div class="icon">{% include icons/ios-play-button-circled.svg %}</div></a>
     </div>
     {% endif %}
-    {% if block.button %}
-      <a class="uk-margin-medium-top uk-button uk-button-xlarge uk-button-{{ block.button.style | default: 'primary' }}" href="{{ domain }}{{ block.button.url }}"{% if block.button.blank %} target="_blank" rel="noopener"{% endif %}>{{ block.button.text }}</a>
+    {% if section.button %}
+      <a class="uk-margin-medium-top uk-button uk-button-xlarge uk-button-{{ section.button.style | default: 'primary' }}" href="{{ domain }}{{ section.button.url }}"{% if section.button.blank %} target="_blank" rel="noopener"{% endif %}>{{ section.button.text }}</a>
     {% endif %}
   </div>
-{% elsif include.layout == 'left' %}
+{% elsif section.layout == 'left' %}
   <div class="uk-grid-large uk-flex-middle" data-uk-grid data-uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
     <div class="uk-width-expand@m">
-      {% if block.title %}
-        <h2 class="section-title uk-margin-remove">{{ block.title }}</h2>
+      {% if section.title %}
+        <h2 class="section-title uk-margin-remove">{{ section.title }}</h2>
       {% endif %}
-      {% if block.subtitle %}
-        <p class="uk-text-lead uk-margin-small">{{ block.subtitle }}</p>
+      {% if section.subtitle %}
+        <p class="uk-text-lead uk-margin-small">{{ section.subtitle }}</p>
       {% endif %}
-      {% unless block.content == blank %}<div class="uk-margin-medium-top">{{ block.content }}</div>{% endunless %}
+      {% unless section.content == blank %}<div class="uk-margin-medium-top">{{ section.content }}</div>{% endunless %}
     </div>
     <div class="uk-width-auto@m">
-      {% if block.video %}
+      {% if section.video %}
       <div class="uk-margin-medium-top" data-uk-lightbox>
-        <a href="{{ block.video }}" data-caption="{{ block.title }}"><div class="icon">{% include icons/ios-play-button-circled.svg %}</div></a>
+        <a href="{{ section.video }}" data-caption="{{ section.title }}"><div class="icon">{% include icons/ios-play-button-circled.svg %}</div></a>
       </div>
       {% endif %}
-      {% if block.button %}
-        <a class="uk-button uk-button-xlarge uk-button-{{ block.button.style | default: 'primary' }}" href="{{ domain }}{{ block.button.url }}"{% if block.button.blank %} target="_blank" rel="noopener"{% endif %}>{{ block.button.text }}</a>
+      {% if section.button %}
+        <a class="uk-button uk-button-xlarge uk-button-{{ section.button.style | default: 'primary' }}" href="{{ domain }}{{ section.button.url }}"{% if section.button.blank %} target="_blank" rel="noopener"{% endif %}>{{ section.button.text }}</a>
       {% endif %}
     </div>
   </div>
-{% elsif include.layout == 'video' %}
+{% elsif section.layout == 'video' %}
   <div class="uk-grid-large uk-flex-middle" data-uk-grid data-uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
     <div class="uk-width-expand@m">
-      {% if block.title %}
-        <h2 class="section-title uk-margin-remove">{{ block.title }}</h2>
+      {% if section.title %}
+        <h2 class="section-title uk-margin-remove">{{ section.title }}</h2>
       {% endif %}
-      {% if block.subtitle %}
-        <p class="uk-text-lead uk-margin-small-top">{{ block.subtitle }}</p>
+      {% if section.subtitle %}
+        <p class="uk-text-lead uk-margin-small-top">{{ section.subtitle }}</p>
       {% endif %}
     </div>
     <div class="uk-width-auto@m">
-      {% if block.video %}
+      {% if section.video %}
       <div data-uk-lightbox>
-        <a href="{{ block.video }}" data-caption="{{ block.title }}"><div class="icon-cta">{% include icons/ios-play-button-circled.svg %}</div></a>
+        <a href="{{ section.video }}" data-caption="{{ section.title }}"><div class="icon-cta">{% include icons/ios-play-button-circled.svg %}</div></a>
       </div>
       {% endif %}
-      {% if block.button %}
-        <a class="uk-button uk-button-xlarge uk-button-{{ block.button.style | default: 'primary' }}" href="{{ domain }}{{ block.button.url }}"{% if block.button.blank %} target="_blank" rel="noopener"{% endif %}>{{ block.button.text }}</a>
+      {% if section.button %}
+        <a class="uk-button uk-button-xlarge uk-button-{{ section.button.style | default: 'primary' }}" href="{{ domain }}{{ section.button.url }}"{% if section.button.blank %} target="_blank" rel="noopener"{% endif %}>{{ section.button.text }}</a>
       {% endif %}
     </div>
     <div class="uk-width-expand@m">
-      {% unless block.content == blank %}<div class="uk-article-content">{{ block.content }}</div>{% endunless %}
+      {% unless section.content == blank %}<div class="uk-article-content">{{ section.content }}</div>{% endunless %}
     </div>    
   </div>
 {% endif %}
