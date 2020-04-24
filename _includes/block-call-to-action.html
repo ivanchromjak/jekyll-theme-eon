@@ -5,7 +5,7 @@
       <p class="uk-margin-top uk-margin-remove-bottom uk-text-lead">{{ section.subtitle }}</p>
     {% endif %}
     {% unless section.content == blank %}<div class="uk-margin-medium-top">{{ section.content }}</div>{% endunless %}
-    {% if section.video %}
+    {% if section.video != empty %}
     <div class="uk-margin-medium-top" data-uk-lightbox>
       <a href="{{ section.video }}" data-caption="{{ section.title }}"><div class="icon">{% include icons/ios-play-button-circled.svg %}</div></a>
     </div>
@@ -26,7 +26,7 @@
       {% unless section.content == blank %}<div class="uk-margin-medium-top">{{ section.content }}</div>{% endunless %}
     </div>
     <div class="uk-width-auto@m">
-      {% if section.video %}
+      {% if section.video != empty %}
       <div class="uk-margin-medium-top" data-uk-lightbox>
         <a href="{{ section.video }}" data-caption="{{ section.title }}"><div class="icon">{% include icons/ios-play-button-circled.svg %}</div></a>
       </div>
@@ -47,7 +47,7 @@
       {% endif %}
     </div>
     <div class="uk-width-auto@m">
-      {% if section.video %}
+      {% if section.video != empty %}
       <div data-uk-lightbox>
         <a href="{{ section.video }}" data-caption="{{ section.title }}"><div class="icon-cta">{% include icons/ios-play-button-circled.svg %}</div></a>
       </div>
@@ -61,3 +61,5 @@
     </div>    
   </div>
 {% endif %}
+
+{{section}}
