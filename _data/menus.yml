@@ -1,0 +1,6 @@
+---
+footer:
+- identifier: footer
+  url: "/"
+  weight: 1
+  title: Home
