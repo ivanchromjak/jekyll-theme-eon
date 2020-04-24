@@ -26,8 +26,8 @@ sections:
   section_image: "/uploads/header-5.jpg"
   section_image_align: ''
   section_video: Working-Space.mp4
-  section_overlay_color: ''
-  section_overlay_opacity: 
+  section_overlay_color: "#000000"
+  section_overlay_opacity: '0.5'
   section_header_align: center
   section_header_color: "#F8E71C"
   section_content_align: right
