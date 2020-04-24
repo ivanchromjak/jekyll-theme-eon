@@ -4,3 +4,9 @@ footer:
   url: "/"
   weight: 1
   title: Home
+
+header:
+- identifier: header
+
+footer_1:
+- identifier: footer_1
