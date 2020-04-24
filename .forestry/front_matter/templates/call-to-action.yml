@@ -91,7 +91,7 @@ fields:
   label: Button
 - name: animation
   type: select
-  default: []
+  default: none
   config:
     required: false
     options:
