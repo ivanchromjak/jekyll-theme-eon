@@ -20,8 +20,8 @@ fields:
   label: Style
 - name: copyright
   type: textarea
-  default: 'Copyright \[Unbound Studio\]([https://unbound.studio/](https://unbound.studio/
-    "Unbound Studio")) '
+  default: Copyright \[Unbound Studio\]([https://unbound.studio/](https://unbound.studio/
+    "Unbound Studio"))
   config:
     required: false
     wysiwyg: true
