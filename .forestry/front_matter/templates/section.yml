@@ -2,6 +2,9 @@
 label: Section
 hide_body: true
 fields:
+- name: is_section
+  type: boolean
+  label: Section
 - name: section_size
   type: select
   default: []
@@ -18,3 +21,6 @@ fields:
       file: 
       path: 
   label: Size
+  showOnly:
+    field: is_section
+    value: true
