@@ -49,3 +49,33 @@ fields:
   showOnly:
     field: is_section
     value: true
+- name: section_header_color
+  type: color
+  label: Header Color
+  config:
+    required: false
+    color_format: Hex
+  showOnly:
+    field: is_section
+    value: true
+- name: section_container
+  type: select
+  default: medium
+  config:
+    required: false
+    options:
+    - xsmall
+    - small
+    - medium
+    - large
+    - xlarge
+    - expand
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Container
+  showOnly:
+    field: is_section
+    value: true
