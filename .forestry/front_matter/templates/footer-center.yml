@@ -2,6 +2,13 @@
 label: Footer Center
 hide_body: true
 fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: footer-center
 - name: style
   type: select
   default: secondary
@@ -28,10 +35,3 @@ fields:
     schema:
       format: markdown
   label: Copyright
-- name: block
-  type: text
-  config:
-    required: false
-  label: Block
-  hidden: true
-  default: footer-center
