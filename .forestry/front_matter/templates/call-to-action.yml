@@ -65,7 +65,7 @@ fields:
     config:
       required: true
     label: Url
-    default: "#"
+    default: ''
   - name: style
     type: select
     default: primary
