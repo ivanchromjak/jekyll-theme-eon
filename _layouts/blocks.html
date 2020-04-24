@@ -3,5 +3,7 @@ layout: default
 ---
 
 {% for section in page.sections %}
+  {% include partials/section-open.html %}
   {% include block-{{ section.block }}.html %}
+  {% include partials/section-close.html %}
 {% endfor %}

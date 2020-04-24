@@ -5,7 +5,7 @@
 
     <body>
 
-    {% unless page.layout == 'block' %}
+    {% unless page.layout == 'blocks' %}
       {% include partials/header.html %}
     {% endunless %}
 
@@ -15,7 +15,7 @@
     {% assign sidebar_left = page.sidebar.left %}
     {% assign sidebar_right = page.sidebar.right %}
 
-    {% if width == 'full' or page.layout == 'block' %}
+    {% if width == 'full' or page.layout == 'blocks' %}
       {{ content }}
     {% else %}
       <div class="uk-section{% if page.section %} uk-section-{{ page.section }}{% endif %}">
