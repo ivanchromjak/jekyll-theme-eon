@@ -1,22 +1,29 @@
 ---
-title:  Stonehenge
-subtitle: Lorem ipsum dolor sit amet, consetetur sadipscing tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+title: Stonehenge
+subtitle: Lorem ipsum dolor sit amet, consetetur sadipscing tempor invidunt ut labore
+  et dolore magna aliquyam erat, sed diam voluptua.
 image: portfolio-9-thumb.jpg
-topics: [United Kingdom]
+topics:
+- United Kingdom
 width: full
 navbar:
   sticky: false
   transparent: true
   transparent_color: light
 header:
-  layout: center # Options: center 1-2 or 2-3
+  layout: center
   background_image: portfolio-9-header.jpg
-  background_overlay: "rgba(0, 0, 0, 0.5)"
+  background_overlay: rgba(0, 0, 0, 0.5)
   color: light
   header_size: xlarge
   parallax: true
----
+menu:
+  footer_1:
+    weight: 2
+    identifier: item_d9zsg9Y
+    title: Col 1
 
+---
 {% include block.html 
   block="content-post"
   section_size="medium"
