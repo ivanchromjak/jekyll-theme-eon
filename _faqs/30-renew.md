@@ -1,8 +1,14 @@
 ---
 title: Can I extend or renew my item support?
-categories: [presale]
----
+categories:
+- presale
+menu:
+  footer_1:
+    weight: 1
+    identifier: item_eX2NmCM
+    title: Col 2
 
+---
 #### Item support option
 The support options available to you depend on when you make the support purchase.
 
