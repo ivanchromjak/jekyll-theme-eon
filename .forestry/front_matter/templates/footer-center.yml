@@ -1,4 +1,30 @@
 ---
 label: Footer Center
 hide_body: true
-fields: []
+fields:
+- name: style
+  type: select
+  default: secondary
+  config:
+    required: false
+    options:
+    - muted
+    - primary
+    - secondary
+    - default
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Style
+- name: copyright
+  type: textarea
+  default: 'Copyright \[Unbound Studio\]([https://unbound.studio/](https://unbound.studio/
+    "Unbound Studio")) '
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Copyright
