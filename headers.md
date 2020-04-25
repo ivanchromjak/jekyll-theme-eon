@@ -25,9 +25,9 @@ sections:
   height: true
   parallax: true
   container_one:
-    title: ''
-    subtitle: ''
-    content: ''
+    title: Title 1
+    subtitle: suntitle 1
+    content: olisticly incentivize revolutionary communities with high-quality vortals.
   container_two:
     title: ''
     subtitle: ''
