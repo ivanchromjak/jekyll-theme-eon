@@ -1,7 +1,7 @@
 ---
 layout: blocks
 template: base
-title: Blocks test page
+title: Footers
 subtitle: xzvxcvxvxv
 sections:
 - template: footer
