@@ -52,7 +52,7 @@ sections:
   container: medium
   padding_remove: none
   heading_size: xlarge
-  layout: 1-2
+  layout: 1-1
   background_image: "/uploads/header-5.jpg"
   background_video: Working-Space.mp4
   background_color: ''
@@ -62,7 +62,7 @@ sections:
   container_one:
     title: Title 1
     subtitle: suntitle 1
-    content: olisticly incentivize revolutionary communities with high-quality vortals.
+    content: "{% include mailchimp.html %}"
   container_two:
     title: Title 2
     subtitle: subtitl e2
