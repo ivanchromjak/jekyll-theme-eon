@@ -13,15 +13,18 @@ fields:
   type: field_group
   config: {}
   fields:
+  - name: light_color
+    type: boolean
+    label: Light Color
   - name: transparent
     type: boolean
     label: Transparent
   - name: transparent_light_color
     type: boolean
     label: Transparent Light Color
-  - name: light_color
-    type: boolean
-    label: Light Color
+    showOnly:
+      field: transparent
+      value: true
   - name: sticky
     type: boolean
     label: Sticky
