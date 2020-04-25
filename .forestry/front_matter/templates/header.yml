@@ -13,6 +13,20 @@ fields:
   type: field_group
   config: {}
   fields:
+  - name: layout
+    type: select
+    default: default
+    config:
+      required: false
+      options:
+      - default
+      - center
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Layout
   - name: light_color
     type: boolean
     label: Light Color
