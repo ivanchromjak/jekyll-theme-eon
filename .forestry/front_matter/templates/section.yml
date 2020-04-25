@@ -5,6 +5,7 @@ fields:
 - name: is_section
   type: boolean
   label: Enable Section
+  default: true
 - name: title
   type: text
   config:
@@ -69,14 +70,31 @@ fields:
     field: is_section
     value: true
 - name: background
+  type: select
+  default: default
+  config:
+    required: false
+    options:
+    - default
+    - muted
+    - primary
+    - secondary
+    - custom
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Background
+- name: background_color
   type: color
   label: Background Color
   config:
     required: false
     color_format: Hex
   showOnly:
-    field: is_section
-    value: true
+    field: background
+    value: custom
 - name: image
   type: file
   config:
@@ -131,7 +149,7 @@ fields:
   type: number
   label: Background Overlay Opacity
   description: ''
-  default: 0.5
+  default: 0.7
   required: true
   config:
     min: 0
@@ -158,12 +176,9 @@ fields:
   showOnly:
     field: is_section
     value: true
-- name: header_color
-  type: color
-  label: Header Color
-  config:
-    required: false
-    color_format: Hex
+- name: header_color_light
+  type: boolean
+  label: Header Color Light
   showOnly:
     field: is_section
     value: true
@@ -185,12 +200,25 @@ fields:
   showOnly:
     field: is_section
     value: true
-- name: content_color
-  type: color
-  label: Content Color
+- name: content_color_light
+  type: boolean
+  label: Content Color Light
+  showOnly:
+    field: is_section
+    value: true
+- name: id
+  type: text
   config:
     required: false
-    color_format: Hex
+  label: ID
+  showOnly:
+    field: is_section
+    value: true
+- name: class
+  type: text
+  config:
+    required: false
+  label: Class
   showOnly:
     field: is_section
     value: true
