@@ -23,6 +23,16 @@ fields:
   - name: light_color
     type: boolean
     label: Light Color
+  - name: sticky
+    type: boolean
+    label: Sticky
+    default: true
+  - name: scroll_up
+    type: boolean
+    label: Sticky On Scroll Up
+    showOnly:
+      field: sticky
+      value: true
   label: Navbar
 - name: background_style
   type: select
