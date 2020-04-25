@@ -31,7 +31,7 @@ sections:
   container_one:
     title: vbvcxbx
     subtitle: xcvbxc
-    content: xcbvxcbcxvbvcbcv **bcvxb** cvb vcxb
+    content: "{block-signup}"
   container_two:
     title: cxvbvcx b
     subtitle: 'cv bcv bvcb vcxb '
