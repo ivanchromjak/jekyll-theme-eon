@@ -67,3 +67,24 @@ fields:
     required: false
   label: Background Video
   hidden: false
+- name: height
+  type: boolean
+  label: Viewport Height
+- name: container
+  type: select
+  default: medium
+  config:
+    required: false
+    options:
+    - xsmall
+    - small
+    - medium
+    - large
+    - xlarge
+    - expand
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Container
