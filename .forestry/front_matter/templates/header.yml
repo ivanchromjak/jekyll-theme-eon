@@ -99,6 +99,11 @@ fields:
         file: 
         path: 
     label: Image Align
+  - name: video
+    type: text
+    config:
+      required: false
+    label: Video
   label: Background
 - name: light_color
   type: boolean
