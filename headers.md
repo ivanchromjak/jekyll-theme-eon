@@ -13,17 +13,17 @@ sections:
     light_color: true
   background_style: primary
   background_align: center-center
-  header_size: medium
+  header_size: large
   container: medium
   padding_remove: none
-  heading_size: medium
-  layout: 1-1
+  heading_size: xlarge
+  layout: 1-2
   background_image: "/uploads/header-5.jpg"
   background_video: Working-Space.mp4
   background_color: ''
-  light_color: false
-  height: false
-  parallax: false
+  light_color: true
+  height: true
+  parallax: true
   container_one:
     title: ''
     subtitle: ''
