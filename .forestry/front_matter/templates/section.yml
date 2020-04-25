@@ -149,7 +149,7 @@ fields:
   type: number
   label: Background Overlay Opacity
   description: ''
-  default: 0.5
+  default: 0.7
   required: true
   config:
     min: 0
