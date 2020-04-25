@@ -69,14 +69,31 @@ fields:
     field: is_section
     value: true
 - name: background
+  type: select
+  default: default
+  config:
+    required: false
+    options:
+    - default
+    - muted
+    - primary
+    - secondary
+    - custom
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Background
+- name: background_color
   type: color
   label: Background Color
   config:
     required: false
     color_format: Hex
   showOnly:
-    field: is_section
-    value: true
+    field: background
+    value: custom
 - name: image
   type: file
   config:
