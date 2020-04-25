@@ -11,6 +11,7 @@ sections:
     transparent: true
     transparent_light_color: true
     light_color: true
+    layout: default
   background_style: primary
   background_align: center-center
   header_size: large
@@ -33,5 +34,14 @@ sections:
     subtitle: subtitl e2
     content_two: Authoritatively whiteboard innovative niche markets after effective
       processes.
+    content: ''
+  background:
+    style: ''
+    color: ''
+    image: ''
+    align: ''
+    video: ''
+    overlay_color: ''
+    overlay_opacity: 
 
 ---
