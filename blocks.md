@@ -44,5 +44,38 @@ sections:
   layout: center
   style: primary
   social_networks: true
+- template: call-to-action
+  block: call-to-action
+  layout: center
+  button:
+    text: Text
+    style: warning
+    url: "#"
+    blank: false
+  animation: slide-top
+  section:
+    is_section: false
+    size: medium
+    container: medium
+    background: default
+    image_align: center-center
+    overlay_opacity: 0.7
+    header_align: left
+    content_align: left
+    title: ''
+    subtitle: ''
+    height: false
+    background_color: ''
+    image: ''
+    video: ''
+    overlay_color: ''
+    header_color_light: false
+    content_color_light: false
+    id: ''
+    class: ''
+  title: CTA without section
+  subtitle: dvdfvdfv
+  content: ''
+  video: ''
 
 ---
