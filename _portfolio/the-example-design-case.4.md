@@ -19,7 +19,7 @@ header:
   parallax: true
 menu:
   footer:
-    weight: 3
+    weight: 2
     title: Zurich
 
 ---

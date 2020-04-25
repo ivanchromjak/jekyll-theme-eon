@@ -19,7 +19,7 @@ header:
     block: header-1
 menu:
   footer:
-    weight: 2
+    weight: 6
     title: Call to action page
 
 ---

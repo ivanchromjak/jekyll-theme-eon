@@ -4,7 +4,7 @@ categories:
 - presale
 menu:
   footer:
-    weight: 4
+    weight: 3
     title: Ivan
 
 ---
