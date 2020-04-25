@@ -1,6 +1,6 @@
 ---
 base:
-  primary_color: ''
-  secondary_color: ''
+  primary_color: "#EA1919"
+  secondary_color: "#222121"
 crypto: 
 layout: options
