@@ -39,11 +39,6 @@ sections:
   subtitle: ''
   content: ''
   video: ''
-- template: footer-center
-  block: footer
-  layout: center
-  style: secondary
-  social_networks: true
 - template: footer
   block: footer
   layout: center
