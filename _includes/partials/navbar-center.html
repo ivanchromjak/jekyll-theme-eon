@@ -4,7 +4,7 @@
           <div class="uk-navbar-center-left">
             <div>
               <ul class="uk-navbar-nav uk-visible@m">
-                  {% for link in site.data.[site.template].navbar.left %}
+                  {% for link in site.data.navbar.[site.template].left %}
                       {% if link.url contains 'http' %}
                           {% assign domain = '' %}
                       {% else %}
@@ -68,7 +68,7 @@
           <div class="uk-navbar-center-right">
             <div>
               <ul class="uk-navbar-nav uk-visible@m">
-                  {% for link in site.data.[site.template].navbar.right %}
+                  {% for link in site.data.navbar.[site.template].right %}
                       {% if link.url contains 'http' %}
                           {% assign domain = '' %}
                       {% else %}
