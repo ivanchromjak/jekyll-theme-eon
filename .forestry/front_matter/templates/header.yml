@@ -44,4 +44,13 @@ fields:
       section: 
       file: 
       path: 
-  label: Background
+  label: Background Style
+- name: background_color
+  type: color
+  label: Background Color
+  config:
+    required: false
+    color_format: Hex
+  showOnly:
+    field: background_style
+    value: custom
