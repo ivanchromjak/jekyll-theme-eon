@@ -88,3 +88,41 @@ fields:
       file: 
       path: 
   label: Container
+- name: light_color
+  type: boolean
+  label: Light Color
+- name: parallax
+  type: boolean
+  label: Parallax
+- name: padding_remove
+  type: select
+  default: none
+  config:
+    required: false
+    options:
+    - none
+    - top
+    - bottom
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Remove Padding
+- name: header_size
+  type: select
+  default: medium
+  config:
+    required: false
+    options:
+    - xsmall
+    - small
+    - medium
+    - large
+    - xlarge
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Header Size
