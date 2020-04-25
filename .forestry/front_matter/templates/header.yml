@@ -9,6 +9,10 @@ fields:
   label: Block
   default: header
   hidden: true
+- name: navbar
+  type: field_group
+  config: {}
+  label: Navbar
 - name: background_style
   type: select
   default: muted
