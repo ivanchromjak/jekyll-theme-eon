@@ -36,12 +36,12 @@ sections:
       processes.
     content: ''
   background:
-    style: ''
+    style: primary
     color: ''
-    image: ''
-    align: ''
-    video: ''
-    overlay_color: ''
-    overlay_opacity: 
+    image: "/uploads/header-5.jpg"
+    align: top-right
+    video: Working-Space.mp4
+    overlay_color: "#190000"
+    overlay_opacity: '0.7'
 
 ---
