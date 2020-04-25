@@ -2,37 +2,4 @@
 base:
   primary_color: "#EA1919"
   secondary_color: "#222121"
-crypto: 
 layout: options
-block: header
-navbar:
-  layout: default
-  sticky: true
-  animation: true
-  light_color: false
-  transparent: false
-  transparent_light_color: false
-  scroll_up: false
-background:
-  style: muted
-  align: center-center
-  overlay_opacity: 0.7
-  color: ''
-  image: ''
-  video: ''
-  overlay_color: ''
-header_size: medium
-container: medium
-padding_remove: none
-heading_size: medium
-light_color: false
-height: false
-parallax: false
-container_one:
-  title: ''
-  subtitle: ''
-  content: ''
-container_two:
-  title: ''
-  subtitle: ''
-  content: ''
