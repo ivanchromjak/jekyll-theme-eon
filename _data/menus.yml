@@ -25,6 +25,9 @@ header:
   weight: 1
   title: 
 footer:
+- url: "#"
+  weight: 6
+  title: Custom link
 - identifier: footer
   url: "/"
   weight: 1
