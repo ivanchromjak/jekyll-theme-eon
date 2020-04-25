@@ -8,6 +8,5 @@ sections:
   background_style: primary
   background_video: Working-Space.mp4
   background_color: ''
-published: false
 
 ---
