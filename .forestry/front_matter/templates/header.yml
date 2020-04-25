@@ -43,37 +43,42 @@ fields:
       field: sticky
       value: true
   label: Navbar
-- name: background_style
-  type: select
-  default: muted
-  config:
-    required: false
-    options:
-    - default
-    - muted
-    - primary
-    - secondary
-    - custom
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Background Style
-- name: background_color
-  type: color
-  label: Background Color
-  config:
-    required: false
-    color_format: Hex
-  showOnly:
-    field: background_style
-    value: custom
-- name: background_image
-  type: file
-  config:
-    maxSize: 250
-  label: Background Image
+- name: background
+  type: field_group
+  config: {}
+  fields:
+  - name: style
+    type: select
+    default: muted
+    config:
+      required: false
+      options:
+      - default
+      - muted
+      - primary
+      - secondary
+      - custom
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Style
+  - name: color
+    type: color
+    label: Color
+    config:
+      required: false
+      color_format: Hex
+    showOnly:
+      field: style
+      value: custom
+  - name: image
+    type: file
+    config:
+      maxSize: 250
+    label: Image
+  label: Background
 - name: background_align
   type: select
   default: center-center
@@ -194,7 +199,7 @@ fields:
       section: 
       file: 
       path: 
-  label: Layout
+  label: Content Layout
 - name: container_one
   type: field_group
   config: {}
