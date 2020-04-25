@@ -40,25 +40,25 @@
   {% endif %}
 {% endif %}
 
-{% if page.layout =='post' and section.background_image %}
-  {% assign background_image = section.background_image %}
+{% if page.layout =='post' and page.header.background_image %}
+  {% assign background_image = page.header.background_image %}
 {% elsif page.layout =='post' and page.image %}
   {% assign background_image = page.image %}
 {% else %}
-  {% assign background_image = section.background_image %}
+  {% assign background_image = section.background.image %}
 {% endif %}
-<div class="uk-position-relative{% if background_image %} uk-background-{{ section.background_align | default: 'center-center' }} uk-background-cover{% endif %}{% if section.background_style != 'custom' %} uk-background-{{ section.background_style | default: 'default' }};{% endif %}" 
-  style="{% if section.background_style == 'custom' %}background-color: {{ section.background_color }};{% endif %}{% if background_image %}background-image: url({{ background_image | absolute_url }});{% endif %}"{% if section.height %} data-uk-height-viewport{% endif %}>
-  {%- if section.background_video -%}
+<div class="uk-position-relative{% if background_image %} uk-background-{{ section.background.align | default: 'center-center' }} uk-background-cover{% endif %}{% if section.background.style != 'custom' %} uk-background-{{ section.background.style | default: 'default' }};{% endif %}" 
+  style="{% if section.background.style == 'custom' %}background-color: {{ section.background.color }};{% endif %}{% if background_image %}background-image: url({{ background_image | absolute_url }});{% endif %}"{% if section.height %} data-uk-height-viewport{% endif %}>
+  {%- if section.background.video -%}
   <div class="uk-position-cover uk-cover-container">
     <video autoplay loop muted playsinline data-uk-cover>
-      <source src="{% if section.background_video contains 'http' %}{{ section.background_video }}{% else %}{{ site.uploads | absolute_url }}{{ section.background_video }}{% endif %}" type="video/mp4">
+      <source src="{% if section.background.video contains 'http' %}{{ section.background.video }}{% else %}{{ site.uploads | absolute_url }}{{ section.background.video }}{% endif %}" type="video/mp4">
     </video>
   </div>
   {%- endif -%}
 
-  {%- if section.background_overlay_color != empty -%}
-  <div class="uk-position-cover" style="background: {{ section.background_overlay_color }}; opacity: {{ section.background_overlay_opacity | default: '0.6' }}"></div>
+  {%- if section.background.overlay_color != empty -%}
+  <div class="uk-position-cover" style="background: {{ section.background.overlay_color }}; opacity: {{ section.background.overlay_opacity | default: '0.6' }}"></div>
   {%- endif -%}
 
   {% if sticky %}
@@ -81,7 +81,7 @@
     </nav>
   {% endif %}
 
-  {% if page.header %}
+  {% if section.header != empty %}
   <div class="uk-position-relative uk-container{% if section.container %} uk-container-{{ section.container }}{% endif %}{% if section.height %} uk-flex uk-flex-middle{% endif %}"{% if section.height %} data-uk-height-viewport="offset-top: true"{% endif %}>
     <div class="uk-section uk-section-{{ section.header_size | default: 'medium' }}{% if section.padding_remove != 'none' %} uk-padding-remove-{{ section.padding_remove }}{% endif %} uk-width-1-1{% if section.color_light %} uk-light{% endif %}"{% if section.parallax %} data-uk-parallax="y: 100;"{% endif %}>
       {% if section.layout == '1-1' %}
