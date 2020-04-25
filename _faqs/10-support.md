@@ -1,8 +1,13 @@
 ---
 title: Do you provide customer support?
-categories: [presale]
----
+categories:
+- presale
+menu:
+  footer:
+    weight: 4
+    title: Ivan
 
+---
 Having support for your purchased item means that we will be available to you to iron out any potential issues you have in using the item.
 
 #### The item support period

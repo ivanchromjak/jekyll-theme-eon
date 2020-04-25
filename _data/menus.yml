@@ -12,14 +12,14 @@ footer_1:
   identifier: item_t4UuX_z
 - url: "#"
   weight: 1
-  parent: item_eX2NmCM
-  title: Forum
-  identifier: item_GxSMZUo
-- url: "#"
-  weight: 1
   title: Company
   parent: item_d9zsg9Y
   identifier: item_CyYJyBS
+- url: "#"
+  weight: 1
+  parent: item_eX2NmCM
+  title: Forum
+  identifier: item_GxSMZUo
 header:
 - identifier: header
   weight: 1
