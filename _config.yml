@@ -111,7 +111,6 @@ plugins:
 - jekyll-gist
 - jekyll-sitemap
 - jemoji
-- jekyll-menus
 exclude:
 - vendor
 - ".bundle"

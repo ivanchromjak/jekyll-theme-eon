@@ -3,7 +3,11 @@ layout: default
 ---
 
 {% for section in page.sections %}
-  {% include partials/section-open.html %}
+  {%- if section.section.is_section -%}
+    {% include partials/section-open.html %}
+  {%- endif -%}
   {% include block-{{ section.block }}.html %}
-  {% include partials/section-close.html %}
+  {%- if section.section.is_section -%}
+    {% include partials/section-close.html %}
+  {%- endif -%}
 {% endfor %}
