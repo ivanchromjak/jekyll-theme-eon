@@ -42,7 +42,7 @@ sections:
 - template: footer-center
   block: footer
   layout: center
-  style: primary
+  style: muted
   social_networks: true
 
 ---
