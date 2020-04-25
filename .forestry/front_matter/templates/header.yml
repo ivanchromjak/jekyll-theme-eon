@@ -13,10 +13,9 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: animation
+  - name: transparent
     type: boolean
-    label: Animation
-    default: true
+    label: Transparent
   - name: transparent_light_color
     type: boolean
     label: Transparent Light Color
@@ -27,6 +26,13 @@ fields:
     type: boolean
     label: Sticky
     default: true
+  - name: animation
+    type: boolean
+    label: Animation
+    default: true
+    showOnly:
+      field: sticky
+      value: true
   - name: scroll_up
     type: boolean
     label: Sticky On Scroll Up
