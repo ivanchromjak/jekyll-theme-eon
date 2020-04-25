@@ -34,8 +34,8 @@ sections:
   path: _config.yml
   label: Config
 - type: document
-  path: _data/theme-settings.yml
-  label: Theme Settings
+  path: _data/options.yml
+  label: Options
 - type: heading
   label: Navigation
 - type: document
