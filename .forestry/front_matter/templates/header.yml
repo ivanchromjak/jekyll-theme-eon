@@ -235,7 +235,7 @@ fields:
     config:
       required: false
     label: Subtitle
-  - name: content_two
+  - name: content
     type: textarea
     default: ''
     config:
