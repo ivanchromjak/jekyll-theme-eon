@@ -1,4 +1,30 @@
 ---
 label: Header
 hide_body: true
-fields: []
+fields:
+- name: background_video
+  type: text
+  config:
+    required: false
+  label: Background Video
+- name: background_align
+  type: select
+  default: center-center
+  config:
+    required: false
+    options:
+    - top-left
+    - top-center
+    - top-right
+    - center-left
+    - center-center
+    - center-right
+    - bottom-left
+    - bottom-center
+    - bottom-right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Background Image Align
