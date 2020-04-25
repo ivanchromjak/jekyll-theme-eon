@@ -36,6 +36,10 @@ sections:
 - type: heading
   label: Navigation
 - type: document
+  path: _data/navbar.yml
+  label: Navbar
+  match: "**/*"
+- type: document
   path: _data/footer.yml
   label: Footer
 upload_dir: uploads
