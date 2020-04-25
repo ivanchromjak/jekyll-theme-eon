@@ -3,7 +3,7 @@ base:
   primary_color: "#EA1919"
   secondary_color: "#222121"
 crypto: 
-layout: ''
+layout: options
 block: header
 navbar:
   layout: default
