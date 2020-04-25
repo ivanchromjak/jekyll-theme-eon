@@ -29,8 +29,9 @@ sections:
     subtitle: suntitle 1
     content: olisticly incentivize revolutionary communities with high-quality vortals.
   container_two:
-    title: ''
-    subtitle: ''
-    content_two: ''
+    title: Title 2
+    subtitle: subtitl e2
+    content_two: Authoritatively whiteboard innovative niche markets after effective
+      processes.
 
 ---
