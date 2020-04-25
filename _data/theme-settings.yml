@@ -1,5 +1,6 @@
+---
 base:
-  primary_color:
-  secondary_color:
-
-crypto:
+  primary_color: ''
+  secondary_color: ''
+crypto: 
+layout: options
