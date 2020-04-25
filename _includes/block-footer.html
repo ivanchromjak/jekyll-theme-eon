@@ -4,7 +4,7 @@
     <div class="uk-container uk-container-small">
       <div>
         <ul class="uk-subnav uk-flex-center">
-          {% for link in site.data.[site.template].footer.center %}
+          {% for link in site.data.footer.[site.template].center %}
           {% if link.url contains 'http' %}
           {% assign domain = '' %}
           {% else %}
@@ -34,7 +34,7 @@
     </div>
   </footer>
 {% else %}
-  <footer class="uk-section uk-section-large uk-section-{{ site.footer.style | default: 'muted' }} uk-text-muted">
+  <footer class="uk-section uk-section-large uk-section-{{ section.style | default: site.footer.style }} uk-text-muted">
     <div class="uk-container">
       <div class="uk-grid-margin-large" data-uk-grid>
         <div class="uk-width-medium@l uk-width-1-3@m">
@@ -61,7 +61,7 @@
             </div>
           {% endif %}
         </div>
-        {% for column in site.data.[site.template].footer.columns %}
+        {% for column in site.data.footer.[site.template].columns %}
           <div class="uk-width-expand@l uk-width-1-3@m">
             <h5>{{ column.title }}</h5>
             <ul class="uk-list uk-text-small">
