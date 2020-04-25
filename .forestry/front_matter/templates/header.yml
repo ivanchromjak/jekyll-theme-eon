@@ -8,12 +8,13 @@ fields:
     required: false
   label: Block
   default: header
+  hidden: true
 - name: background_video
   type: text
   config:
     required: false
   label: Background Video
-  hidden: true
+  hidden: false
 - name: background_align
   type: select
   default: center-center
