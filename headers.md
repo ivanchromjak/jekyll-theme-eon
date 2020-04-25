@@ -5,6 +5,40 @@ sections:
 - template: header
   block: header
   navbar:
+    layout: center
+    sticky: true
+    animation: true
+    transparent: true
+    transparent_light_color: true
+    scroll_up: true
+    light_color: false
+  background:
+    style: secondary
+    align: bottom-left
+    overlay_opacity: 0.7
+    image: "/uploads/portfolio-5-header.jpg"
+    video: Working-Space.mp4
+    overlay_color: "#000000"
+    color: ''
+  header_size: large
+  container: medium
+  padding_remove: none
+  heading_size: xlarge
+  layout: 1-2
+  light_color: true
+  height: true
+  parallax: true
+  container_one:
+    title: vbvcxbx
+    subtitle: xcvbxc
+    content: xcbvxcbcxvbvcbcv **bcvxb** cvb vcxb
+  container_two:
+    title: cxvbvcx b
+    subtitle: 'cv bcv bvcb vcxb '
+    content: cv bvcxb cxvbcvxbcxvbvcxb xcv bvcxb cvb cvb cvx b
+- template: header
+  block: header
+  navbar:
     sticky: true
     animation: true
     scroll_up: true
