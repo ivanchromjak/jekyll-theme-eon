@@ -104,6 +104,23 @@ fields:
     config:
       required: false
     label: Video
+  - name: overlay_color
+    type: color
+    label: Overlay Color
+    config:
+      required: false
+      color_format: Hex
+    default: "#000000"
+  - name: overlay_opacity
+    type: number
+    label: Overlay Opacity
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
   label: Background
 - name: light_color
   type: boolean
