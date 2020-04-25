@@ -28,3 +28,20 @@ fields:
       file: 
       path: 
   label: Background Image Align
+- name: background_style
+  type: select
+  default: muted
+  config:
+    required: false
+    options:
+    - default
+    - muted
+    - primary
+    - secondary
+    - custom
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Background
