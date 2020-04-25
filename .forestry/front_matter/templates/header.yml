@@ -126,3 +126,21 @@ fields:
       file: 
       path: 
   label: Header Size
+- name: layout
+  type: select
+  default: 1-1
+  config:
+    required: false
+    options:
+    - left
+    - center
+    - 1-1
+    - 1-2
+    - 2-3
+    - 5-6
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Layout
