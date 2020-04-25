@@ -2,6 +2,12 @@
 label: Header
 hide_body: true
 fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  default: header
 - name: background_video
   type: text
   config:
@@ -55,9 +61,3 @@ fields:
   showOnly:
     field: background_style
     value: custom
-- name: block
-  type: text
-  config:
-    required: false
-  label: Block
-  default: header
