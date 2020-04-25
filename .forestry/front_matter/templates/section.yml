@@ -85,7 +85,7 @@ fields:
       section: 
       file: 
       path: 
-  label: Background
+  label: Background Style
 - name: background_color
   type: color
   label: Background Color
