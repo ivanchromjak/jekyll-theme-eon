@@ -9,33 +9,6 @@ fields:
   label: Block
   default: header
   hidden: true
-- name: background_video
-  type: text
-  config:
-    required: false
-  label: Background Video
-  hidden: false
-- name: background_align
-  type: select
-  default: center-center
-  config:
-    required: false
-    options:
-    - top-left
-    - top-center
-    - top-right
-    - center-left
-    - center-center
-    - center-right
-    - bottom-left
-    - bottom-center
-    - bottom-right
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Background Image Align
 - name: background_style
   type: select
   default: muted
@@ -62,3 +35,35 @@ fields:
   showOnly:
     field: background_style
     value: custom
+- name: background_image
+  type: file
+  config:
+    maxSize: 250
+  label: Background Image
+- name: background_align
+  type: select
+  default: center-center
+  config:
+    required: false
+    options:
+    - top-left
+    - top-center
+    - top-right
+    - center-left
+    - center-center
+    - center-right
+    - bottom-left
+    - bottom-center
+    - bottom-right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Background Image Align
+- name: background_video
+  type: text
+  config:
+    required: false
+  label: Background Video
+  hidden: false
