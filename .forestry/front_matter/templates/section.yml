@@ -176,12 +176,9 @@ fields:
   showOnly:
     field: is_section
     value: true
-- name: header_color
-  type: color
-  label: Header Color
-  config:
-    required: false
-    color_format: Hex
+- name: header_color_light
+  type: boolean
+  label: Header Color Light
   showOnly:
     field: is_section
     value: true
@@ -203,12 +200,9 @@ fields:
   showOnly:
     field: is_section
     value: true
-- name: content_color
-  type: color
-  label: Content Color
-  config:
-    required: false
-    color_format: Hex
+- name: content_color_light
+  type: boolean
+  label: Content Color Light
   showOnly:
     field: is_section
     value: true
