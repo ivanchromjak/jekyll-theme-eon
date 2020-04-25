@@ -1,0 +1,45 @@
+---
+label: Footer
+hide_body: true
+fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: footer
+- name: layout
+  type: select
+  default: center
+  config:
+    required: false
+    options:
+    - center
+    - columns
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Layout
+- name: style
+  type: select
+  default: secondary
+  config:
+    required: false
+    options:
+    - muted
+    - primary
+    - secondary
+    - default
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Style
+- name: social_networks
+  type: boolean
+  label: Social Networks
+  default: true
