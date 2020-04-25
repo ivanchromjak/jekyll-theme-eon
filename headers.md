@@ -20,22 +20,22 @@ sections:
     video: Working-Space.mp4
     overlay_color: "#000000"
     color: ''
-  header_size: medium
+  header_size: large
   container: medium
   padding_remove: none
-  heading_size: medium
-  layout: 1-1
-  light_color: false
-  height: false
-  parallax: false
+  heading_size: xlarge
+  layout: 1-2
+  light_color: true
+  height: true
+  parallax: true
   container_one:
-    title: ''
-    subtitle: ''
-    content: ''
+    title: vbvcxbx
+    subtitle: xcvbxc
+    content: xcbvxcbcxvbvcbcv **bcvxb** cvb vcxb
   container_two:
-    title: ''
-    subtitle: ''
-    content: ''
+    title: cxvbvcx b
+    subtitle: 'cv bcv bvcb vcxb '
+    content: cv bvcxb cxvbcvxbcxvbvcxb xcv bvcxb cvb cvb cvx b
 - template: header
   block: header
   navbar:
