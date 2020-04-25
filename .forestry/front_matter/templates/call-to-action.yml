@@ -107,17 +107,12 @@ fields:
       path: 
   label: Animation
 - name: section
-  type: include
-  config: {}
-  template: section
-  label: Section
-- name: section_t
   type: field_group
   config: {}
   fields:
-  - name: dsadasd
+  - name: section
     type: include
     config: {}
     template: section
-    label: dsadasd
-  label: Section Test
+    label: Section
+  label: Section
