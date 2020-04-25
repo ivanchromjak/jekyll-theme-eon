@@ -12,6 +12,17 @@ fields:
 - name: navbar
   type: field_group
   config: {}
+  fields:
+  - name: animation
+    type: boolean
+    label: Animation
+    default: true
+  - name: transparent_light_color
+    type: boolean
+    label: Transparent Light Color
+  - name: light_color
+    type: boolean
+    label: Light Color
   label: Navbar
 - name: background_style
   type: select
