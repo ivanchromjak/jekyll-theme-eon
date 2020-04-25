@@ -15,14 +15,14 @@ test:
   show_feature: true
   order_number: "5"
   order: "3"
-  description: " usiy iueyrtieiuryi uetiurye"
+  description_text: " usiy iueyrtieiuryi uetiurye"
   publishdd_date: ''
   some_tags: nbnbn
   authors:
   - scott-gallant
   - adasdas
   - jordan-patterson
-  background_color: ''
+  background_color: '#181818'
   some_file: ''
 columns:
 - title: COMPANY
