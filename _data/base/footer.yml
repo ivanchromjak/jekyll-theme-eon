@@ -13,17 +13,18 @@ center:
 test:
   is_cool: false
   show_feature: true
-  order_number: "5"
+  number_jhjhvc: "5"
   order: "3"
   description_text: " usiy iueyrtieiuryi uetiurye"
-  publishdd_date: ''
+  date_ytyt: ''
   some_tags: nbnbn
   authors:
   - scott-gallant
   - adasdas
   - jordan-patterson
   background_color: '#181818'
-  some_file: ''
+  color_of _some: '#181818'
+  file_ddd: ''
 columns:
 - title: COMPANY
   links:
