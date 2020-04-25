@@ -26,3 +26,4 @@ fields:
     max: 
 pages:
 - footers.md
+- headers.md
