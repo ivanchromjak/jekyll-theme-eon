@@ -34,9 +34,8 @@ sections:
   path: _config.yml
   label: Config
 - type: document
-  path: _settings.yml
+  path: _theme-settings.yml
   label: Theme Settings
-  match: "**/*"
 - type: heading
   label: Navigation
 - type: document
