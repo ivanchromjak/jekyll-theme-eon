@@ -28,5 +28,3 @@ fields:
       color_format: Hex
     default: "#202020"
   label: Base
-pages:
-- _data/theme-settings.yml
