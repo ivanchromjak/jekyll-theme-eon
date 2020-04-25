@@ -33,6 +33,10 @@ sections:
 - type: document
   path: _config.yml
   label: Config
+- type: document
+  path: _settings.yml
+  label: Theme Settings
+  match: "**/*"
 - type: heading
   label: Navigation
 - type: document
