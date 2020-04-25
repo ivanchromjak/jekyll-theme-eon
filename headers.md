@@ -5,6 +5,40 @@ sections:
 - template: header
   block: header
   navbar:
+    layout: center
+    sticky: true
+    animation: true
+    transparent: true
+    transparent_light_color: true
+    scroll_up: true
+    light_color: false
+  background:
+    style: secondary
+    align: bottom-left
+    overlay_opacity: 0.7
+    image: "/uploads/portfolio-5-header.jpg"
+    video: Working-Space.mp4
+    overlay_color: "#000000"
+    color: ''
+  header_size: medium
+  container: medium
+  padding_remove: none
+  heading_size: medium
+  layout: 1-1
+  light_color: false
+  height: false
+  parallax: false
+  container_one:
+    title: ''
+    subtitle: ''
+    content: ''
+  container_two:
+    title: ''
+    subtitle: ''
+    content: ''
+- template: header
+  block: header
+  navbar:
     sticky: true
     animation: true
     scroll_up: true
