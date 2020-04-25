@@ -1,7 +1,7 @@
-{%- if section.is_section -%}
+{%- if section.section.is_section -%}
         </div>
       </div>
-  {% if include.section_background != empty or include.section_image != empty or section.section_video != empty %}
+  {% if section.section.background != empty or section.section.image != empty or section.section.video != empty %}
     </div>
   {% endif %}
 {%- endif -%}
