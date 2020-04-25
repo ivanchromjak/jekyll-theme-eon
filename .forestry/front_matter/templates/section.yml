@@ -5,6 +5,7 @@ fields:
 - name: is_section
   type: boolean
   label: Enable Section
+  default: true
 - name: title
   type: text
   config:
@@ -208,6 +209,22 @@ fields:
   config:
     required: false
     color_format: Hex
+  showOnly:
+    field: is_section
+    value: true
+- name: id
+  type: text
+  config:
+    required: false
+  label: ID
+  showOnly:
+    field: is_section
+    value: true
+- name: class
+  type: text
+  config:
+    required: false
+  label: Class
   showOnly:
     field: is_section
     value: true
