@@ -21,11 +21,11 @@ footer_1:
   title: Forum
   identifier: item_GxSMZUo
 header:
-- identifier: hhhhhh
+- identifier: header
   weight: 1
   title: 
 footer:
-- identifier: fffff
+- identifier: footer
   url: "/"
   weight: 1
   title: Home
