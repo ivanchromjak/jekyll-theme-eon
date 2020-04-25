@@ -144,3 +144,29 @@ fields:
       file: 
       path: 
   label: Layout
+- name: content
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: subtitle
+    type: text
+    config:
+      required: false
+    label: Subtitle
+  - name: content
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Content
+  label: Content
+  description: Contain shows when Layout setting above is set to 1-1, 1-2, 1-3 or
+    5-6
