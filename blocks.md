@@ -20,7 +20,7 @@ sections:
     background: custom
     image_align: center-center
     overlay_opacity: 0.5
-    header_align: left
+    header_align: center
     title: section title
     subtitle: czzvsdvsdv
     height: true
@@ -29,7 +29,7 @@ sections:
     video: ''
     overlay_color: ''
     header_color: ''
-    content_align: ''
+    content_align: center
     content_color: ''
     id: xxx
     class: ssssss rfrfrfrf
