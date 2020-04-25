@@ -17,22 +17,24 @@ sections:
     is_section: true
     size: medium
     container: medium
-    background: primary
+    background: custom
     image_align: center-center
     overlay_opacity: 0.5
     header_align: left
     title: section title
     subtitle: czzvsdvsdv
     height: true
-    background_color: ''
+    background_color: "#DA2222"
     image: ''
     video: ''
     overlay_color: ''
     header_color: ''
     content_align: ''
     content_color: ''
-    id: ''
-    class: ''
+    id: xxx
+    class: ssssss rfrfrfrf
+    header_color_light: true
+    content_color_light: true
   title: ''
   subtitle: ''
   content: ''
