@@ -31,7 +31,7 @@ sections:
     section_header_align: left
     is_section: true
     section_background: "#A02A2A"
-    section_title: ''
+    section_title: sccsdcsc
     section_subtitle: ''
     section_height: false
     section_image: ''
