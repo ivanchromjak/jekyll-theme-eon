@@ -4,10 +4,10 @@
   {% assign transparent_light_color = site.navbar.transparent_light_color %}
 {% endif %}
 
-{% if section.navbar.color %}
-  {% assign color = section.navbar.color %}
+{% if section.navbar.light_color %}
+  {% assign color = section.navbar.light_color %}
 {% else %}
-  {% assign color = site.navbar.color %}
+  {% assign color = site.navbar.light_color %}
 {% endif %}
 
 {% if section.navbar.sticky == true %}
@@ -47,7 +47,7 @@
 {% else %}
   {% assign background_image = section.background.image %}
 {% endif %}
-<div class="uk-position-relative{% if background_image %} uk-background-{{ section.background.align | default: 'center-center' }} uk-background-cover{% endif %}{% if section.background.style != 'custom' %} uk-background-{{ section.background.style | default: 'default' }};{% endif %}" 
+<div class="uk-position-relative{% if background_image %} uk-background-{{ section.background.align | default: 'center-center' }} uk-background-cover{% endif %}{% if section.background.style != 'custom' %} uk-background-{{ section.background.style | default: 'default' }}{% endif %}" 
   style="{% if section.background.style == 'custom' %}background-color: {{ section.background.color }};{% endif %}{% if background_image %}background-image: url({{ background_image | absolute_url }});{% endif %}"{% if section.height %} data-uk-height-viewport{% endif %}>
   {%- if section.background.video -%}
   <div class="uk-position-cover uk-cover-container">
@@ -62,7 +62,7 @@
   {%- endif -%}
 
   {% if sticky %}
-    <div data-uk-sticky="{% if scroll_up %}show-on-up: true; {% endif %}{% if animation %}animation: uk-animation-slide-top; top: 200; {% endif %}sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky navbar-background uk-{{ color | default: 'dark' }}; cls-inactive: {% if section.navbar.transparent %}uk-navbar-transparent{% if transparent_light_color %} uk-light{% endif %}{% else %} navbar-background uk-{{ color | default: 'dark' }}{% endif %}">
+    <div data-uk-sticky="{% if scroll_up %}show-on-up: true; {% endif %}{% if animation %}animation: uk-animation-slide-top; top: 200; {% endif %}sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky navbar-background{% if light_color %} uk-light{% endif %}; cls-inactive: {% if section.navbar.transparent %}uk-navbar-transparent{% if transparent_light_color %} uk-light{% endif %}{% else %} navbar-background uk-dark{% endif %}">
       <nav class="uk-navbar-container">
         {% if site.navbar.layout == 'center' %}
           {% include partials/navbar-center.html %}
@@ -72,7 +72,7 @@
       </nav>
     </div>
   {% else %}
-    <nav class="uk-navbar-container {% if section.navbar.transparent %}uk-navbar-transparent{% if transparent_light_color %} uk-light{% endif %}{% else %} navbar-background uk-{{ color | default: 'dark' }}{% endif %}">
+    <nav class="uk-navbar-container {% if section.navbar.transparent %}uk-navbar-transparent{% if transparent_light_color %} uk-light{% endif %}{% else %} navbar-background {% if light_color %} uk-light{% endif %}{% endif %}">
       {% if site.navbar.layout == 'center' %}
         {% include partials/navbar-center.html %}
       {% else %}
@@ -83,19 +83,19 @@
 
   {% if section.header != empty %}
   <div class="uk-position-relative uk-container{% if section.container %} uk-container-{{ section.container }}{% endif %}{% if section.height %} uk-flex uk-flex-middle{% endif %}"{% if section.height %} data-uk-height-viewport="offset-top: true"{% endif %}>
-    <div class="uk-section uk-section-{{ section.header_size | default: 'medium' }}{% if section.padding_remove != 'none' %} uk-padding-remove-{{ section.padding_remove }}{% endif %} uk-width-1-1{% if section.color_light %} uk-light{% endif %}"{% if section.parallax %} data-uk-parallax="y: 100;"{% endif %}>
+    <div class="uk-section uk-section-{{ section.header_size | default: 'medium' }}{% if section.padding_remove != 'none' %} uk-padding-remove-{{ section.padding_remove }}{% endif %} uk-width-1-1{% if section.light_color %} uk-light{% endif %}"{% if section.parallax %} data-uk-parallax="y: 100;"{% endif %}>
       {% if section.layout == '1-1' %}
         <div class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
           <div class="uk-width-1-1">
             {% if section.container_one.title != empty %}
-              <h1 class="uk-heading-{{ section.heading_size | default: 'medium' }}">{{ section.container_one.title }}</h1>
+              <h1 class="uk-heading-{{ section.heading_size | default: 'medium' }}">{{ section.container_one.title | markdownify }}</h1>
             {% endif %}
             {% if section.container_one.subtitle != empty %}
-              <div class="uk-text-lead">{{ section.container_one.subtitle }}</div>
+              <div class="uk-text-lead">{{ section.container_one.subtitle | markdownify }}</div>
             {% endif %}
             {% if section.container_one.content != empty %}
               <div{% if section.content.title == false %} class="uk-margin-large-top"{% endif %}>
-                {{ section.container_one.content }}
+                {{ section.container_one.content | markdownify }}
               </div>
             {% endif %}
           </div>
@@ -104,27 +104,27 @@
         <div class="uk-grid-large uk-flex uk-flex-middle uk-flex-center@m" data-uk-grid>
           <div class="uk-width-{{ section.layout | default: '2-3' }}@m">
             {% if section.container_one.title != empty %}
-              <h1 class="uk-heading-{{ section.heading_size | default: 'medium' }}">{{ section.container_one.title }}</h1>
+              <h1 class="uk-heading-{{ section.heading_size | default: 'medium' }}">{{ section.container_one.title | markdownify }}</h1>
             {% endif %}
             {% if section.container_one.subtitle != empty %}
-              <div class="uk-text-lead">{{ section.container_one.subtitle }}</div>
+              <div class="uk-text-lead">{{ section.container_one.subtitle | markdownify }}</div>
             {% endif %}
             {% if section.container_one.content != empty %}
               <div{% if section.content.title == false %} class="uk-margin-large-top"{% endif %}>
-                {{ section.container_one.content }}
+                {{ section.container_one.content | markdownify }}
               </div>
             {% endif %}
           </div>
           <div class="uk-width-expand@m">
             {% if section.container_two.title != empty %}
-              <h1 class="uk-heading-{{ section.heading_size | default: 'medium' }}">{{ section.container_two.title }}</h1>
+              <h1 class="uk-heading-{{ section.heading_size | default: 'medium' }}">{{ section.container_two.title | markdownify }}</h1>
             {% endif %}
             {% if section.container_two.subtitle != empty %}
-              <div class="uk-text-lead">{{ section.container_two.subtitle }}</div>
+              <div class="uk-text-lead">{{ section.container_two.subtitle | markdownify }}</div>
             {% endif %}
             {% if section.container_two.content != empty %}
               <div{% if section.content.title == false %} class="uk-margin-large-top"{% endif %}>
-                {{ section.container_two.content }}
+                {{ section.container_two.content | markdownify }}
               </div>
             {% endif %}
           </div>
@@ -162,4 +162,3 @@
   </div>
   {% endif %}
 </div>
-{{section}}

@@ -59,7 +59,7 @@ authors:
     avatar: avatar-tom.png
 navbar:
   layout: default
-  color: dark
+  light_color: false
   animation: true
   sticky: true
   search: false
