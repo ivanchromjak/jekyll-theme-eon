@@ -15,7 +15,7 @@ base:
     is_cool: false
     show_feature: true
     number_jhjhvc: "5"
-    order: "3"
+    order: "6"
     description_text: " usiy iueyrtieiuryi uetiurye"
     date_ytyt: ''
     some_tags: nbnbn
@@ -23,8 +23,8 @@ base:
     - scott-gallant
     - adasdas
     - jordan-patterson
-    background_color: '#181818'
-    color_of _some: '#181818'
+    background_color: "#181818"
+    color_of _some: "#181818"
     file_ddd: ''
   columns:
   - title: COMPANY
