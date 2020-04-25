@@ -67,9 +67,26 @@ fields:
     required: false
   label: Background Video
   hidden: false
-- name: height
+- name: light_color
   type: boolean
-  label: Viewport Height
+  label: Light Color
+- name: header_size
+  type: select
+  default: medium
+  config:
+    required: false
+    options:
+    - xsmall
+    - small
+    - medium
+    - large
+    - xlarge
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Header Size
 - name: container
   type: select
   default: medium
@@ -88,12 +105,6 @@ fields:
       file: 
       path: 
   label: Width
-- name: light_color
-  type: boolean
-  label: Light Color
-- name: parallax
-  type: boolean
-  label: Parallax
 - name: padding_remove
   type: select
   default: none
@@ -109,23 +120,29 @@ fields:
       file: 
       path: 
   label: Remove Padding
-- name: header_size
+- name: height
+  type: boolean
+  label: Viewport Height
+- name: parallax
+  type: boolean
+  label: Parallax
+- name: heading_size
   type: select
   default: medium
   config:
     required: false
     options:
-    - xsmall
     - small
     - medium
     - large
     - xlarge
+    - 2xlarge
     source:
       type: simple
       section: 
       file: 
       path: 
-  label: Header Size
+  label: Heading Size
 - name: layout
   type: select
   default: 1-1
@@ -144,23 +161,6 @@ fields:
       file: 
       path: 
   label: Layout
-- name: heading_size
-  type: select
-  default: medium
-  config:
-    required: false
-    options:
-    - small
-    - medium
-    - large
-    - xlarge
-    - 2xlarge
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Heading Size
 - name: container_one
   type: field_group
   config: {}
