@@ -2,6 +2,13 @@
 label: Options
 hide_body: true
 fields:
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Layout
+  default: options
+  hidden: true
 - name: base
   type: field_group
   config: {}
@@ -13,4 +20,11 @@ fields:
       required: true
       color_format: Hex
     default: "#4A90E2"
+  - name: secondary_color
+    type: color
+    label: Secondary Color
+    config:
+      required: true
+      color_format: Hex
+    default: "#202020"
   label: Base
