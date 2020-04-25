@@ -8,9 +8,9 @@ sections:
   block: call-to-action
   layout: center
   button:
-    text: Text
-    style: primary
-    url: ''
+    text: Contact
+    style: danger
+    url: "/contact/"
     blank: false
   animation: none
   section:
