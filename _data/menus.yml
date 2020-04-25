@@ -1,27 +1,6 @@
 ---
-footer_1:
-- url: "#"
-  weight: 2
-  parent: item_eX2NmCM
-  title: Contact
-- url: "#"
-  weight: 1
-  parent: item_eX2NmCM
-  title: Forum
-- url: "#"
-  weight: 2
-  title: Shops
-  parent: item_d9zsg9Y
-- url: "#"
-  weight: 1
-  title: Company
-  parent: item_d9zsg9Y
-header:
-- identifier: header
-  weight: 1
-  title: 
 footer:
-- identifier: footer
+- identifier: hhhhhhh
   url: "/"
   weight: 1
   title: Home
