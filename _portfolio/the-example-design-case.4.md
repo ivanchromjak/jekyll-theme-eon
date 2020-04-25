@@ -1,22 +1,28 @@
 ---
 title: Zürich
-subtitle: Lorem ipsum dolor sit amet, consetetur sadipscing tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+subtitle: Lorem ipsum dolor sit amet, consetetur sadipscing tempor invidunt ut labore
+  et dolore magna aliquyam erat, sed diam voluptua.
 image: portfolio-4-thumb.jpg
 width: full
-topics: [Switzerland]
+topics:
+- Switzerland
 navbar:
   sticky: false
   transparent: true
   transparent_color: light
 header:
-  layout: center # Options: center 1-2 or 2-3
+  layout: center
   background_image: portfolio-4-header.jpg
-  background_overlay: "rgba(0, 0, 0, 0.5)"
+  background_overlay: rgba(0, 0, 0, 0.5)
   color: light
   header_size: xlarge
   parallax: true
----
+menu:
+  footer:
+    weight: 3
+    title: Zurich
 
+---
 {% include block.html 
   block="content-post"
   section_size="medium"
