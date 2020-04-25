@@ -62,7 +62,7 @@ sections:
   container_one:
     title: Title 1
     subtitle: suntitle 1
-    content: "\\[header-home\\]"
+    content: "{header-home}"
   container_two:
     title: Title 2
     subtitle: subtitl e2
