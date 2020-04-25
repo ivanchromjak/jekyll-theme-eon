@@ -14,7 +14,7 @@
     {%- endif -%}
       <div class="uk-section uk-section-{{ section.section.size | default: 'medium' }}{% if section.section.padding_remove %} uk-padding-remove-{{ section.section.padding_remove }}{% endif %}{% if section.section.height %} uk-flex uk-flex-middle{% endif %}" 
         {% if section.section.height %} data-uk-height-viewport{% endif %}>
-        <div class="{% unless section.section.container == 'none' %}uk-container{% endunless %}{% if section.section.container %} uk-container-{{ section.section.container | default: 'none' }}{% endif %} uk-position-relative{% if section.section.content_align %} uk-text-{{ section.section.content_align }}{% endif %}{% if section.section.content_color_light %} uk-light{% endif %}">
+        <div class="{% unless section.section.container == 'none' %}uk-container{% endunless %}{% if section.section.container %} uk-container-{{ section.section.container | default: 'none' }}{% endif %} uk-position-relative">
 {%- endif -%}
           {%- if section.section.title != empty or section.section.subtitle != empty -%}
             <div class="section-title-{{ section.section.header_align | default: 'left' }}{% if section.section.size == 'large' %} uk-margin-large-bottom{% else %} uk-margin-medium-bottom{% endif %}{% if section.section.header_color_light %} uk-light{% endif %}">  
@@ -26,3 +26,4 @@
               {%- endif -%}
             </div>
           {%- endif -%}
+          <div class="{% if section.section.content_align %} uk-text-{{ section.section.content_align }}{% endif %}{% if section.section.content_color_light %} uk-light{% endif %}">
