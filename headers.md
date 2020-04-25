@@ -23,7 +23,7 @@ sections:
   header_size: large
   container: medium
   padding_remove: none
-  heading_size: xlarge
+  heading_size: medium
   layout: 2-3
   light_color: true
   height: true
