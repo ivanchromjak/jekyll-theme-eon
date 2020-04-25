@@ -13,6 +13,20 @@ fields:
   type: field_group
   config: {}
   fields:
+  - name: layout
+    type: select
+    default: default
+    config:
+      required: false
+      options:
+      - default
+      - center
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Layout
   - name: light_color
     type: boolean
     label: Light Color
@@ -43,64 +57,85 @@ fields:
       field: sticky
       value: true
   label: Navbar
-- name: background_style
-  type: select
-  default: muted
-  config:
-    required: false
-    options:
-    - default
-    - muted
-    - primary
-    - secondary
-    - custom
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Background Style
-- name: background_color
-  type: color
-  label: Background Color
-  config:
-    required: false
-    color_format: Hex
-  showOnly:
-    field: background_style
-    value: custom
-- name: background_image
-  type: file
-  config:
-    maxSize: 250
-  label: Background Image
-- name: background_align
-  type: select
-  default: center-center
-  config:
-    required: false
-    options:
-    - top-left
-    - top-center
-    - top-right
-    - center-left
-    - center-center
-    - center-right
-    - bottom-left
-    - bottom-center
-    - bottom-right
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Background Image Align
-- name: background_video
-  type: text
-  config:
-    required: false
-  label: Background Video
-  hidden: false
+- name: background
+  type: field_group
+  config: {}
+  fields:
+  - name: style
+    type: select
+    default: muted
+    config:
+      required: false
+      options:
+      - default
+      - muted
+      - primary
+      - secondary
+      - custom
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Style
+  - name: color
+    type: color
+    label: Color
+    config:
+      required: false
+      color_format: Hex
+    showOnly:
+      field: style
+      value: custom
+  - name: image
+    type: file
+    config:
+      maxSize: 250
+    label: Image
+  - name: align
+    type: select
+    default: center-center
+    config:
+      required: false
+      options:
+      - top-left
+      - top-center
+      - top-right
+      - center-left
+      - center-center
+      - center-right
+      - bottom-left
+      - bottom-center
+      - bottom-right
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Image Align
+  - name: video
+    type: text
+    config:
+      required: false
+    label: Video
+  - name: overlay_color
+    type: color
+    label: Overlay Color
+    config:
+      required: false
+      color_format: Hex
+    default: 
+  - name: overlay_opacity
+    type: number
+    label: Overlay Opacity
+    description: ''
+    default: 0.7
+    required: true
+    config:
+      min: 0
+      max: 1
+      step: 0.1
+  label: Background
 - name: light_color
   type: boolean
   label: Light Color
@@ -194,7 +229,7 @@ fields:
       section: 
       file: 
       path: 
-  label: Layout
+  label: Content Layout
 - name: container_one
   type: field_group
   config: {}
@@ -235,7 +270,7 @@ fields:
     config:
       required: false
     label: Subtitle
-  - name: content_two
+  - name: content
     type: textarea
     default: ''
     config:
