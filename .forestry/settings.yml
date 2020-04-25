@@ -41,7 +41,6 @@ sections:
 - type: document
   path: _data/mobile.yml
   label: Mobile
-  match: "**/*"
 - type: document
   path: _data/footer.yml
   label: Footer

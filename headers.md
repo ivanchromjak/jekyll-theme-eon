@@ -62,7 +62,7 @@ sections:
   container_one:
     title: Title 1
     subtitle: suntitle 1
-    content: "{% include mailchimp.html %}"
+    content: "\\[mailchimp.html\\]"
   container_two:
     title: Title 2
     subtitle: subtitl e2
