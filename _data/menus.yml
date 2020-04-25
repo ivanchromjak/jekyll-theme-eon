@@ -28,7 +28,7 @@ footer:
 - url: "#"
   weight: 6
   title: Custom link
-- identifier: footer
+- identifier: home
   url: "/"
   weight: 1
   title: Home
