@@ -4,9 +4,6 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: _data/base/footer.yml
-  label: Footer
 - type: jekyll-pages
   label: Pages
   create: all
@@ -36,6 +33,11 @@ sections:
 - type: document
   path: _config.yml
   label: Config
+- type: heading
+  label: Navigation
+- type: document
+  path: _data/footer.yml
+  label: Footer
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
