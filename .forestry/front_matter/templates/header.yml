@@ -144,6 +144,23 @@ fields:
       file: 
       path: 
   label: Layout
+- name: heading_size
+  type: select
+  default: medium
+  config:
+    required: false
+    options:
+    - small
+    - medium
+    - large
+    - xlarge
+    - 2xlarge
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Heading Size
 - name: container_one
   type: field_group
   config: {}
