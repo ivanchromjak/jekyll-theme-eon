@@ -111,3 +111,13 @@ fields:
   config: {}
   template: section
   label: Section
+- name: section_t
+  type: field_group
+  config: {}
+  fields:
+  - name: dsadasd
+    type: include
+    config: {}
+    template: section
+    label: dsadasd
+  label: Section Test
