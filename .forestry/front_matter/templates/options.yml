@@ -1,4 +1,16 @@
 ---
 label: Options
 hide_body: true
-fields: []
+fields:
+- name: base
+  type: field_group
+  config: {}
+  fields:
+  - name: primary_color
+    type: color
+    label: Primary Color
+    config:
+      required: true
+      color_format: Hex
+    default: "#4A90E2"
+  label: Base
