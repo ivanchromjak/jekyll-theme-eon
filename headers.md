@@ -24,7 +24,7 @@ sections:
   container: medium
   padding_remove: none
   heading_size: xlarge
-  layout: 1-2
+  layout: 2-3
   light_color: true
   height: true
   parallax: true
