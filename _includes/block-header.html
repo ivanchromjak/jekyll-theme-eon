@@ -94,8 +94,14 @@
               <div class="uk-text-lead">{{ section.container_one.subtitle | markdownify }}</div>
             {% endif %}
             {% if section.container_one.content != empty %}
-              <div{% if section.content.title == false %} class="uk-margin-large-top"{% endif %}>
-                {{ section.container_one.content | markdownify }}
+              <div{% if section.container_one.title != empty %} class="uk-margin-medium-top"{% endif %}>
+                {% if section.container_one.content contains '{' and section.container_one.content contains '}' %}
+                  {% assign slug = section.container_one.content | remove: '{' | remove: '}' %}
+                  {%- assign block = site.blocks | where:"slug", slug | first -%}
+                  {{ block.content }}
+                {% else %}
+                  {{ section.container_one.content | markdownify }}
+                {% endif %}
               </div>
             {% endif %}
           </div>
@@ -110,8 +116,14 @@
               <div class="uk-text-lead">{{ section.container_one.subtitle | markdownify }}</div>
             {% endif %}
             {% if section.container_one.content != empty %}
-              <div{% if section.content.title == false %} class="uk-margin-large-top"{% endif %}>
-                {{ section.container_one.content | markdownify }}
+              <div{% if section.container_one.title != empty %} class="uk-margin-medium-top"{% endif %}>
+                {% if section.container_one.content contains '{' and section.container_one.content contains '}' %}
+                  {% assign slug = section.container_one.content | remove: '{' | remove: '}' %}
+                  {%- assign block = site.blocks | where:"slug", slug | first -%}
+                  {{ block.content }}
+                {% else %}
+                  {{ section.container_one.content | markdownify }}
+                {% endif %}
               </div>
             {% endif %}
           </div>
@@ -123,8 +135,14 @@
               <div class="uk-text-lead">{{ section.container_two.subtitle | markdownify }}</div>
             {% endif %}
             {% if section.container_two.content != empty %}
-              <div{% if section.content.title == false %} class="uk-margin-large-top"{% endif %}>
-                {{ section.container_two.content | markdownify }}
+              <div{% if section.container_two.title != empty %} class="uk-margin-medium-top"{% endif %}>
+                {% if section.container_two.content contains '{' and section.container_two.content contains '}' %}
+                  {% assign slug = section.container_two.content | remove: '{' | remove: '}' %}
+                  {%- assign block = site.blocks | where:"slug", slug | first -%}
+                  {{ block.content }}
+                {% else %}
+                  {{ section.container_two.content | markdownify }}
+                {% endif %}
               </div>
             {% endif %}
           </div>
