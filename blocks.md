@@ -44,5 +44,10 @@ sections:
   layout: center
   style: secondary
   social_networks: true
+- template: footer
+  block: footer
+  layout: center
+  style: primary
+  social_networks: true
 
 ---
