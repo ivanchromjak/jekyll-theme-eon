@@ -9,33 +9,40 @@ fields:
   label: Block
   default: header
   hidden: true
-- name: background_video
-  type: text
-  config:
-    required: false
-  label: Background Video
-  hidden: false
-- name: background_align
-  type: select
-  default: center-center
-  config:
-    required: false
-    options:
-    - top-left
-    - top-center
-    - top-right
-    - center-left
-    - center-center
-    - center-right
-    - bottom-left
-    - bottom-center
-    - bottom-right
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Background Image Align
+- name: navbar
+  type: field_group
+  config: {}
+  fields:
+  - name: light_color
+    type: boolean
+    label: Light Color
+  - name: transparent
+    type: boolean
+    label: Transparent
+  - name: transparent_light_color
+    type: boolean
+    label: Transparent Light Color
+    showOnly:
+      field: transparent
+      value: true
+  - name: sticky
+    type: boolean
+    label: Sticky
+    default: true
+  - name: animation
+    type: boolean
+    label: Animation
+    default: true
+    showOnly:
+      field: sticky
+      value: true
+  - name: scroll_up
+    type: boolean
+    label: Sticky On Scroll Up
+    showOnly:
+      field: sticky
+      value: true
+  label: Navbar
 - name: background_style
   type: select
   default: muted
@@ -62,3 +69,180 @@ fields:
   showOnly:
     field: background_style
     value: custom
+- name: background_image
+  type: file
+  config:
+    maxSize: 250
+  label: Background Image
+- name: background_align
+  type: select
+  default: center-center
+  config:
+    required: false
+    options:
+    - top-left
+    - top-center
+    - top-right
+    - center-left
+    - center-center
+    - center-right
+    - bottom-left
+    - bottom-center
+    - bottom-right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Background Image Align
+- name: background_video
+  type: text
+  config:
+    required: false
+  label: Background Video
+  hidden: false
+- name: light_color
+  type: boolean
+  label: Light Color
+- name: header_size
+  type: select
+  default: medium
+  config:
+    required: false
+    options:
+    - xsmall
+    - small
+    - medium
+    - large
+    - xlarge
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Header Size
+- name: container
+  type: select
+  default: medium
+  config:
+    required: false
+    options:
+    - xsmall
+    - small
+    - medium
+    - large
+    - xlarge
+    - expand
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Width
+- name: padding_remove
+  type: select
+  default: none
+  config:
+    required: false
+    options:
+    - none
+    - top
+    - bottom
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Remove Padding
+- name: height
+  type: boolean
+  label: Viewport Height
+- name: parallax
+  type: boolean
+  label: Parallax
+- name: heading_size
+  type: select
+  default: medium
+  config:
+    required: false
+    options:
+    - small
+    - medium
+    - large
+    - xlarge
+    - 2xlarge
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Heading Size
+- name: layout
+  type: select
+  default: 1-1
+  config:
+    required: false
+    options:
+    - left
+    - center
+    - 1-1
+    - 1-2
+    - 2-3
+    - 5-6
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Layout
+- name: container_one
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: subtitle
+    type: text
+    config:
+      required: false
+    label: Subtitle
+  - name: content
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Content
+  label: Container One
+  description: Contain shows when Layout setting above is set to 1-1, 1-2, 1-3 or
+    5-6
+- name: container_two
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: subtitle
+    type: text
+    config:
+      required: false
+    label: Subtitle
+  - name: content_two
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Content
+  label: Container Two
+  description: Contain shows when Layout setting above is set to 1-2, 1-3 or 5-6
