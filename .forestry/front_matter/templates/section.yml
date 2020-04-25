@@ -184,7 +184,7 @@ fields:
     value: true
 - name: content_align
   type: select
-  default: ''
+  default: left
   config:
     required: false
     options:
