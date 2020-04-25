@@ -6,7 +6,7 @@ navbar:
   scroll_up: true
   animation: true
   transparent: true
-  transparent_color: light
+  transparent_light_color: true
 header:
   layout: 1-1
   background_color: "#D95B72"

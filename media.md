@@ -7,7 +7,7 @@ navbar:
   scroll_up: true
   animation: true
   transparent: true
-  transparent_color: light
+  transparent_light_color: true
 header:
   layout: center # Options: left, center, 1-1, 1-2, 1-3 or 2-3
   background_image: header-3.jpeg

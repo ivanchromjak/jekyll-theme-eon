@@ -9,7 +9,7 @@ topics:
 navbar:
   sticky: false
   transparent: true
-  transparent_color: light
+  transparent_light_color: true
 header:
   layout: center
   background_image: portfolio-4-header.jpg

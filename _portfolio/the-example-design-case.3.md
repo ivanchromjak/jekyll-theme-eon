@@ -7,7 +7,7 @@ width: full
 navbar:
   sticky: false
   transparent: true
-  transparent_color: light
+  transparent_light_color: true
 header:
   layout: center # Options: center 1-2 or 2-3
   background_image: portfolio-3-header.jpg

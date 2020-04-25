@@ -8,7 +8,7 @@ navbar:
   scroll_up: true
   animation: true
   transparent: true
-  transparent_color: light
+  transparent_light_color: true
 header:
   layout: center
   background_image: header-6.jpg
