@@ -78,34 +78,28 @@ fields:
     config:
       maxSize: 250
     label: Image
+  - name: align
+    type: select
+    default: center-center
+    config:
+      required: false
+      options:
+      - top-left
+      - top-center
+      - top-right
+      - center-left
+      - center-center
+      - center-right
+      - bottom-left
+      - bottom-center
+      - bottom-right
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Image Align
   label: Background
-- name: background_align
-  type: select
-  default: center-center
-  config:
-    required: false
-    options:
-    - top-left
-    - top-center
-    - top-right
-    - center-left
-    - center-center
-    - center-right
-    - bottom-left
-    - bottom-center
-    - bottom-right
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Background Image Align
-- name: background_video
-  type: text
-  config:
-    required: false
-  label: Background Video
-  hidden: false
 - name: light_color
   type: boolean
   label: Light Color
