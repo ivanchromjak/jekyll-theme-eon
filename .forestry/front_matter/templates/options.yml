@@ -82,6 +82,22 @@ fields:
           file: 
           path: 
       label: Layout
+    - name: style
+      type: select
+      default: secondary
+      config:
+        required: false
+        options:
+        - default
+        - muted
+        - primary
+        - secondary
+        source:
+          type: simple
+          section: 
+          file: 
+          path: 
+      label: Style
     label: Footer
   label: Base
 pages:
