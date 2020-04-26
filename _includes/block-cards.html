@@ -14,10 +14,10 @@
   {% assign grid = 'uk-child-width-expand@m' %}
 {% endif %}
 
-{%- assign blocks = (section.blocks | sort: 'card[slug]') -%}
+{%- assign blocks = (site.blocks | sort: 'card[slug]') -%}
 <div class="{{ grid }}{% if include.gutter %} uk-grid-{{ include.gutter }}{% endif %} uk-grid-match uk-flex-center" data-uk-grid>
   {% for block in blocks %}
-    {% if block.slug contains include.block %}
+    {% if block.slug contains section.blocks %}
       <div>
         {% if include.media == 'left' %}
           <div class="uk-card{% unless block.icon %} uk-card-large{% endunless %} uk-card-{{ include.card_style | default: 'none' }} uk-grid-collapse uk-margin{% if block.icon %} card-icon{% endif %}" data-uk-grid>
