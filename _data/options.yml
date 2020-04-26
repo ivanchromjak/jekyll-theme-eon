@@ -2,4 +2,13 @@
 base:
   primary_color: "#4A90E2"
   secondary_color: "#222121"
+  navbar:
+    layout: default
+    light_color: false
+    search: false
+    sticky: true
+    animation: true
+  footer:
+    layout: ''
+    style: ''
 layout: options
