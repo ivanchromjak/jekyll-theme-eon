@@ -93,8 +93,9 @@ fields:
     required: false
     color_format: Hex
   showOnly:
-    field: background
+    field: is_section
     value: custom
+  description: Applies when "custom" is selected in Background Style setting
 - name: image
   type: file
   config:
