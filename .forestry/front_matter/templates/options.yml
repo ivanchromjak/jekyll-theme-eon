@@ -113,6 +113,10 @@ fields:
           file: 
           path: 
       label: Style
+    - name: social_networks
+      type: boolean
+      label: Social Networks
+      default: true
     label: Footer
     description: The default setting for the site footer.
   label: Base
