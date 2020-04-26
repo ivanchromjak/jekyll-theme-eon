@@ -70,7 +70,7 @@ fields:
     fields:
     - name: layout
       type: select
-      default: center
+      default: columns
       config:
         required: false
         options:
