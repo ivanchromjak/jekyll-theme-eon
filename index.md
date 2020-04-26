@@ -60,6 +60,10 @@ sections:
     id: ''
     class: ''
   cards:
+  - icon: "/uploads/icons/ios-work.svg"
+    image: ''
+    title: kjhkjhkj
+    content: " kjhjk hjkhjkhjkh jkh kjhjk jkhjk"
   - icon: "/uploads/icons/ios-youtube.svg"
     image: ''
     title: hgjhg
