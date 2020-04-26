@@ -27,6 +27,26 @@ fields:
       required: true
       color_format: Hex
     default: "#202020"
+  - name: navbar
+    type: field_group
+    config: {}
+    fields:
+    - name: layout
+      type: select
+      default: default
+      config:
+        required: false
+        options:
+        - default
+        - center
+        source:
+          type: simple
+          section: 
+          file: 
+          path: 
+      label: Layout
+    label: Navbar
+    description: The default setting for the header navigation bar.
   label: Base
 pages:
 - _data/options.yml
