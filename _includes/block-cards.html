@@ -13,7 +13,6 @@
 {% else %}
   {% assign grid = 'uk-child-width-expand@m' %}
 {% endif %}
-{{section}}
 <div class="{{ grid }}{% if section.gutter %} uk-grid-{{ section.gutter }}{% endif %} uk-grid-match uk-flex-center" data-uk-grid>
   {% for block in section.cards %}
     <div>
