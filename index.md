@@ -11,7 +11,7 @@ sections:
     transparent: true
     transparent_light_color: true
     scroll_up: true
-    search: false
+    search: true
   background:
     style: primary
     align: center-center
