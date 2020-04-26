@@ -60,6 +60,9 @@ sections:
     id: ''
     class: ''
   cards:
+  - icon: "/uploads/color-address-book.svg"
+    title: Card 2
+    content: Dynamically revolutionize intuitive synergy before revolutionary
   - icon: "/uploads/color-500px-2.svg"
     content: Synergistically conceptualize an expanded array of meta-services vis-a-vis
       cross-media synergy.
