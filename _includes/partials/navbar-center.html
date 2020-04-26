@@ -115,7 +115,7 @@
                   {% endfor %}
               </ul>
 
-              {% if section.navbar.search != empty %}
+              {% if section.navbar.search != nill %}
                 {% assign navbar_search = section.navbar.search %}
               {% else %}
                 {% assign navbar_search = site.data.options.[template].navbar.search %}
