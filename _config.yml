@@ -57,15 +57,15 @@ authors:
     title: Developer
     name: Tom Farrell
     avatar: avatar-tom.png
-navbar:
-  layout: default
-  light_color: false
-  animation: true
-  sticky: true
-  search: false
+# navbar:
+#   layout: default
+#   light_color: false
+#   animation: true
+#   sticky: true
+#   search: false
 footer:
-  style: center
-  layout: columns
+  # style: center
+  # layout: columns
   copyright: Made by <a href="https://unbound.studio/">Unbound Studio</a> in Mexico
     City.
 mailchimp:
