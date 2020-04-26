@@ -10,7 +10,7 @@ sections:
     light_color: false
     transparent: true
     transparent_light_color: true
-    scroll_up: true
+    scroll_up: false
     search: false
   background:
     style: primary
