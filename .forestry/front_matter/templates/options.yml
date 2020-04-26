@@ -99,6 +99,7 @@ fields:
           path: 
       label: Style
     label: Footer
+    description: The default setting for the site footer.
   label: Base
 pages:
 - _data/options.yml
