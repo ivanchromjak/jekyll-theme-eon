@@ -94,3 +94,19 @@ fields:
       file: 
       path: 
   label: Grid
+- name: gutter
+  type: select
+  default: default
+  config:
+    required: false
+    options:
+    - small
+    - default
+    - large
+    - collapse
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Gutter
