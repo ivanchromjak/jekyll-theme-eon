@@ -13,20 +13,6 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: layout
-    type: select
-    default: default
-    config:
-      required: false
-      options:
-      - default
-      - center
-      source:
-        type: simple
-        section: 
-        file: 
-        path: 
-    label: Layout
   - name: light_color
     type: boolean
     label: Light Color
@@ -38,23 +24,6 @@ fields:
     label: Transparent Light Color
     showOnly:
       field: transparent
-      value: true
-  - name: sticky
-    type: boolean
-    label: Sticky
-    default: true
-  - name: animation
-    type: boolean
-    label: Animation
-    default: true
-    showOnly:
-      field: sticky
-      value: true
-  - name: scroll_up
-    type: boolean
-    label: Sticky On Scroll Up
-    showOnly:
-      field: sticky
       value: true
   - name: search
     type: boolean

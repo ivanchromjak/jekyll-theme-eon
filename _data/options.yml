@@ -8,7 +8,7 @@ base:
     search: false
     sticky: true
     animation: true
-    scroll_up: true
+    scroll_up: false
     transparent: false
     transparent_light_color: false
   footer:
