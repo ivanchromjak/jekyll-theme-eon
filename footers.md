@@ -16,7 +16,7 @@ sections:
   social_networks: true
 - template: footer
   block: footer
-  layout: columns
+  layout: center
   style: secondary
   social_networks: false
 - template: footer
