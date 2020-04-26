@@ -1,10 +1,9 @@
 {% assign template = page.template | default: site.template %}
 
-{% if section.navbar.layout != empty %}
-  {% assign navbar_layout = section.navbar.layout %}
-{% else %}
-  {% assign navbar_layout = site.data.options.[template].navbar.layout %}
-{% endif %}
+{% assign navbar_layout = site.data.options.[template].navbar.layout %}
+{% assign sticky = site.data.options.[template].navbar.sticky %}
+{% assign scroll_up = site.data.options.[template].navbar.scroll_up %}
+{% assign animation = site.data.options.[template].navbar.animation %}
 
 {% if section.navbar.transparent != empty %}
   {% assign transparent = section.navbar.transparent %}
@@ -22,36 +21,6 @@
   {% assign color = section.navbar.light_color %}
 {% else %}
   {% assign color = site.data.options.[template].navbar.light_color %}
-{% endif %}
-
-{% if section.navbar.sticky == true %}
-  {% assign sticky = true %}
-{% elsif section.navbar.sticky != false %}
-  {% if site.data.options.[template].navbar.sticky %}
-    {% assign sticky = true %}
-  {% else %}
-    {% assign sticky = false %}
-  {% endif %}
-{% endif %}
-
-{% if section.navbar.scroll_up != empty %}
-  {% assign scroll_up = section.navbar.scroll_up %}
-{% elsif section.navbar.scroll_up != false %}
-  {% if site.data.options.[template].navbar.scroll_up %}
-    {% assign scroll_up = true %}
-  {% else %}
-    {% assign scroll_up = false %}
-  {% endif %}
-{% endif %}
-
-{% if section.navbar.animation %}
-  {% assign animation = true %}
-{% elsif section.navbar.animation != false %}
-  {% if site.data.options.[template].navbar.animation %}
-    {% assign animation = true %}
-  {% else %}
-    {% assign animation = false %}
-  {% endif %}
 {% endif %}
 
 {% if page.layout =='post' and page.header.background_image %}
