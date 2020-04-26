@@ -34,8 +34,8 @@
   {% endif %}
 {% endif %}
 
-{% if section.navbar.scroll_up %}
-  {% assign scroll_up = true %}
+{% if section.navbar.scroll_up != empty %}
+  {% assign scroll_up = section.navbar.scroll_up %}
 {% elsif section.navbar.scroll_up != false %}
   {% if site.data.options.[template].navbar.scroll_up %}
     {% assign scroll_up = true %}

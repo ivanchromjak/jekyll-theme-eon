@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-    {% include head.html %}
+  {% include head.html %}
 
-    <body>
-
-    {% unless page.layout == 'blocks' %}
+  <body>
+    {% assign header_block = page.sections | where:"block", 'header' | first %}
+    {% unless header_block %}
       {% include block-header.html %}
     {% endunless %}
 
@@ -43,7 +43,8 @@
       </div>
     {% endif %}
 
-    {% unless page.layout == 'blocks' %}
+    {% assign footer_block = page.sections | where:"block", 'footer' | first %}
+    {% unless footer_block %}
       {% include block-footer.html %}
     {% endunless %}
 
