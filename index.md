@@ -82,7 +82,7 @@ sections:
   style: default
   grid: 1-4
   gutter: default
-  icon_color: ''
+  icon_color: "#D62020"
 layout: blocks
 
 ---
