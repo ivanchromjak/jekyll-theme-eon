@@ -80,8 +80,8 @@ sections:
   blocks: ''
   media: left
   style: default
-  grid: 1-4
-  gutter: default
+  grid: 1-3
+  gutter: large
   icon_color: "#9412AF"
   icon_size: '100'
 - template: cards
