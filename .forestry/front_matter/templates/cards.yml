@@ -52,6 +52,12 @@ fields:
       file: 
       path: 
   label: Media
+- name: icon_color
+  type: color
+  label: Icon Color
+  config:
+    required: false
+    color_format: Hex
 - name: style
   type: select
   default: default
