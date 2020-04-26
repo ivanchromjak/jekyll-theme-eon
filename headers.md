@@ -12,6 +12,7 @@ sections:
     transparent_light_color: true
     scroll_up: true
     light_color: false
+    search: true
   background:
     style: secondary
     align: bottom-left
@@ -46,6 +47,7 @@ sections:
     transparent_light_color: true
     light_color: true
     layout: default
+    search: false
   background_style: primary
   background_align: center-center
   header_size: large
