@@ -173,7 +173,12 @@
         {% endfor %}
       </ul>
 
-      {% unless section.navbar.search or site.data.options.[template].navbar.search == false %}
+      {% if section.navbar.search %}
+        {% assign navbar_search = section.navbar.search %}
+      {% else %}
+        {% assign navbar_search = site.data.options.[template].navbar.search %}
+      {% endif %}
+      {% if navbar_search %}
         <div>
             <a class="uk-navbar-toggle" aria-label="Search" uk-search-icon href="#"></a>
             <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
@@ -193,7 +198,7 @@
             json: '/search.json'
           });
         </script>
-      {% endunless %}
+      {% endif %}
 
       {% if site.donations.paypal.navbar %}
         <div class="uk-navbar-item">

@@ -9,8 +9,6 @@
       {% include block-header.html %}
     {% endunless %}
 
-
-
     {% assign width = page.width | default: 'default' %}
     {% assign sidebar_left = page.sidebar.left %}
     {% assign sidebar_right = page.sidebar.right %}
@@ -44,6 +42,10 @@
         </div>
       </div>
     {% endif %}
+
+    {% unless page.layout == 'blocks' %}
+      {% include block-footer.html %}
+    {% endunless %}
 
     {% include partials/nav-mobile.html %}
 
