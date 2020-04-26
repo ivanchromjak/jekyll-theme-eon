@@ -41,14 +41,14 @@ sections:
   block: cards
   section:
     is_section: true
-    size: medium
+    size: large
     container: medium
-    background: default
+    background: muted
     image_align: center-center
     overlay_opacity: 0.7
-    header_align: left
-    content_align: left
-    title: ''
+    header_align: center
+    content_align: center
+    title: The first multipurpose Jekyll theme
     subtitle: ''
     height: false
     background_color: ''
