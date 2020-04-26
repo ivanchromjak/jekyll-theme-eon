@@ -39,26 +39,32 @@ sections:
     content: ''
 - template: cards
   block: cards
-  is_section: true
-  size: medium
-  container: medium
-  background: muted
-  image_align: center-center
-  overlay_opacity: 0.7
-  header_align: left
-  content_align: left
-  blocks: feature
-  title: ''
-  subtitle: ''
-  height: false
-  background_color: ''
-  image: ''
-  video: ''
-  overlay_color: ''
-  header_color_light: false
-  content_color_light: false
-  id: ''
-  class: ''
+  section:
+    is_section: true
+    size: medium
+    container: medium
+    background: default
+    image_align: center-center
+    overlay_opacity: 0.7
+    header_align: left
+    content_align: left
+    title: ''
+    subtitle: ''
+    height: false
+    background_color: ''
+    image: ''
+    video: ''
+    overlay_color: ''
+    header_color_light: false
+    content_color_light: false
+    id: ''
+    class: ''
+  cards:
+  - icon: "/uploads/color-500px-2.svg"
+    content: Synergistically conceptualize an expanded array of meta-services vis-a-vis
+      cross-media synergy.
+    title: Card 1
+  blocks: ''
 layout: blocks
 
 ---
