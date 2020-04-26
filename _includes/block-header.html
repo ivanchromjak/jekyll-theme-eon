@@ -1,4 +1,17 @@
 {% assign template = page.template | default: site.template %}
+
+{% if section.navbar.layout %}
+  {% assign navbar_layout = section.navbar.layout %}
+{% else %}
+  {% assign navbar_layout = site.data.options.[template].navbar.layout %}
+{% endif %}
+
+{% if section.navbar.transparent %}
+  {% assign transparent = section.navbar.transparent %}
+{% else %}
+  {% assign transparent = site.data.options.[template].navbar.transparent %}
+{% endif %}
+
 {% if section.navbar.transparent_light_color %}
   {% assign transparent_light_color = section.navbar.transparent_light_color %}
 {% else %}
@@ -63,9 +76,9 @@
   {%- endif -%}
 
   {% if sticky %}
-    <div data-uk-sticky="{% if scroll_up %}show-on-up: true; {% endif %}{% if animation %}animation: uk-animation-slide-top; top: 200; {% endif %}sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky navbar-background{% if light_color %} uk-light{% endif %}; cls-inactive: {% if section.navbar.transparent %}uk-navbar-transparent{% if transparent_light_color %} uk-light{% endif %}{% else %} navbar-background uk-dark{% endif %}">
+    <div data-uk-sticky="{% if scroll_up %}show-on-up: true; {% endif %}{% if animation %}animation: uk-animation-slide-top; top: 200; {% endif %}sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky navbar-background{% if light_color %} uk-light{% endif %}; cls-inactive: {% if transparent %}uk-navbar-transparent{% if transparent_light_color %} uk-light{% endif %}{% else %} navbar-background uk-dark{% endif %}">
       <nav class="uk-navbar-container">
-        {% if site.data.options.[template].navbar.layout == 'center' %}
+        {% if navbar_layout == 'center' %}
           {% include partials/navbar-center.html %}
         {% else %}
           {% include partials/navbar-default.html %}
@@ -73,8 +86,8 @@
       </nav>
     </div>
   {% else %}
-    <nav class="uk-navbar-container {% if section.navbar.transparent %}uk-navbar-transparent{% if transparent_light_color %} uk-light{% endif %}{% else %} navbar-background {% if light_color %} uk-light{% endif %}{% endif %}">
-      {% if site.data.options.[template].navbar.layout == 'center' %}
+    <nav class="uk-navbar-container {% if transparent %}uk-navbar-transparent{% if transparent_light_color %} uk-light{% endif %}{% else %} navbar-background {% if light_color %} uk-light{% endif %}{% endif %}">
+      {% if navbar_layout == 'center' %}
         {% include partials/navbar-center.html %}
       {% else %}
         {% include partials/navbar-default.html %}
