@@ -86,7 +86,7 @@ sections:
   icon_size: '100'
 - template: cards
   block: cards
-  media: top
+  media: left
   style: default
   grid: 1-2
   gutter: default
