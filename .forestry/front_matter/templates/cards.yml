@@ -38,13 +38,14 @@ fields:
   label: Cards
 - name: media
   type: select
-  default: []
+  default: none
   config:
     required: false
     options:
     - left
     - top
     - right
+    - none
     source:
       type: simple
       section: 
