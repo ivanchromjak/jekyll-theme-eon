@@ -14,11 +14,6 @@ fields:
   config:
     required: false
   label: Blocks
-- name: section
-  type: include
-  config: {}
-  template: section
-  label: Section
 - name: cards
   type: field_group_list
   fields:
@@ -46,3 +41,13 @@ fields:
     max: 
     labelField: 
   label: Cards
+- name: section
+  type: field_group
+  config: {}
+  fields:
+  - name: section
+    type: include
+    config: {}
+    template: section
+    label: Section
+  label: Section
