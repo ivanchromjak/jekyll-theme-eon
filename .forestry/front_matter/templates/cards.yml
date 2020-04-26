@@ -9,21 +9,6 @@ fields:
   label: Block
   hidden: true
   default: cards
-- name: media
-  type: select
-  default: []
-  config:
-    required: false
-    options:
-    - left
-    - top
-    - right
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Media
 - name: cards
   type: field_group_list
   fields:
@@ -51,16 +36,21 @@ fields:
     max: 
     labelField: 
   label: Cards
-- name: section
-  type: field_group
-  config: {}
-  fields:
-  - name: section
-    type: include
-    config: {}
-    template: section
-    label: Section
-  label: Section
+- name: media
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - left
+    - top
+    - right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Media
 - name: style
   type: select
   default: default
@@ -110,3 +100,13 @@ fields:
       file: 
       path: 
   label: Gutter
+- name: section
+  type: field_group
+  config: {}
+  fields:
+  - name: section
+    type: include
+    config: {}
+    template: section
+    label: Section
+  label: Section
