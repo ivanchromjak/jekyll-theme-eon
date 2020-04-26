@@ -11,8 +11,8 @@ sections:
   social_networks: true
 - template: footer
   block: footer
-  layout: center
-  style: muted
+  layout: columns
+  style: secondary
   social_networks: false
 - template: footer
   block: footer
