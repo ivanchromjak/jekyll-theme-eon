@@ -64,6 +64,25 @@ fields:
       default: true
     label: Navbar
     description: The default setting for the header navigation bar.
+  - name: footer
+    type: field_group
+    config: {}
+    fields:
+    - name: layout
+      type: select
+      default: center
+      config:
+        required: false
+        options:
+        - center
+        - columns
+        source:
+          type: simple
+          section: 
+          file: 
+          path: 
+      label: Layout
+    label: Footer
   label: Base
 pages:
 - _data/options.yml
