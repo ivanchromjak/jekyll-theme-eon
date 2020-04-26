@@ -14,7 +14,7 @@ base:
   footer:
     layout: center
     style: primary
-    social_networks: false
+    social_networks: true
 layout: options
 crypto:
   navbar:
