@@ -1,7 +1,7 @@
 ---
 base:
   primary_color: "#0F4C81"
-  secondary_color: "#1B1B1B"
+  secondary_color: "#000000"
   navbar:
     layout: default
     light_color: false
