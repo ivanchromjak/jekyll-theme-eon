@@ -67,7 +67,7 @@ fields:
   type: number
   label: Icon Size
   description: The height and width of SVG icons, requires square icons.
-  default: 0
+  default: 
   required: true
   config:
     min: 
