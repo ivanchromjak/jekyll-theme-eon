@@ -2,6 +2,9 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+$global-primary-background:     {{ site.data.options.base.primary_color | default: '#1B33BF' }};
+$global-secondary-background:   {{ site.data.options.base.secondary_color | default: '#000' }};
+
 // 1. Custom variables and variable overwrites.
 @import "base/variables";
 
