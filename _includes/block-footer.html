@@ -1,10 +1,11 @@
+{% assign template = page.template | default: site.template %}
 {% if section.layout == 'center' %}  
   <footer
     class="uk-section uk-section-{{ section.style | default: site.footer.style }} uk-text-center uk-text-muted uk-link-muted">
     <div class="uk-container uk-container-small">
       <div>
         <ul class="uk-subnav uk-flex-center">
-          {% for link in site.data.footer.[site.template].center %}
+          {% for link in site.data.footer.[template].center %}
           {% if link.url contains 'http' %}
           {% assign domain = '' %}
           {% else %}
@@ -61,7 +62,7 @@
             </div>
           {% endif %}
         </div>
-        {% for column in site.data.footer.[site.template].columns %}
+        {% for column in site.data.footer.[template].columns %}
           <div class="uk-width-expand@l uk-width-1-3@m">
             <h5>{{ column.title }}</h5>
             <ul class="uk-list uk-text-small">

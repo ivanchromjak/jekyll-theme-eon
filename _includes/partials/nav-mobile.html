@@ -1,3 +1,4 @@
+{% assign template = page.template | default: site.template %}
 <div id="nav-mobile" data-uk-offcanvas="flip: true; overlay: true">
     <div class="uk-offcanvas-bar">
 
@@ -5,7 +6,7 @@
 
         <ul class="uk-nav uk-nav-primary">
             <li><a class="uk-logo uk-margin-small-bottom" href="{{ "/" | relative_url }}">{% if site.logo %}<img src="{{ site.uploads | absolute_url }}{{ site.logo }}" alt="{{ site.title }}">{% else %}{{ site.title }}{% endif %}</a></li>
-            {% for link in site.data.[site.template].mobile %}
+            {% for link in site.data.mobile.[template] %}
                 {% if link.url contains 'http' %}
                     {% assign domain = '' %}
                 {% else %}

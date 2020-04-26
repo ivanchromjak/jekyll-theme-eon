@@ -1,10 +1,11 @@
+{% assign template = page.template | default: site.template %}
 <div class="uk-container">
     <div data-uk-navbar>
         <div class="uk-navbar-center">
           <div class="uk-navbar-center-left">
             <div>
               <ul class="uk-navbar-nav uk-visible@m">
-                  {% for link in site.data.navbar.[site.template].left %}
+                  {% for link in site.data.navbar.[template].left %}
                       {% if link.url contains 'http' %}
                           {% assign domain = '' %}
                       {% else %}
@@ -68,7 +69,7 @@
           <div class="uk-navbar-center-right">
             <div>
               <ul class="uk-navbar-nav uk-visible@m">
-                  {% for link in site.data.navbar.[site.template].right %}
+                  {% for link in site.data.navbar.[template].right %}
                       {% if link.url contains 'http' %}
                           {% assign domain = '' %}
                       {% else %}
@@ -114,7 +115,7 @@
                   {% endfor %}
               </ul>
 
-              {% unless page.header.search or site.navbar.search == false %}
+              {% unless page.header.search or site.data.options.[template].navbar.search == false %}
                 <div>
                     <a class="uk-navbar-toggle" aria-label="Search" uk-search-icon href="#"></a>
                     <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">

@@ -1,19 +1,20 @@
+{% assign template = page.template | default: site.template %}
 {% if section.navbar.transparent_light_color %}
   {% assign transparent_light_color = section.navbar.transparent_light_color %}
 {% else %}
-  {% assign transparent_light_color = site.navbar.transparent_light_color %}
+  {% assign transparent_light_color = site.data.options.[template].navbar.transparent_light_color %}
 {% endif %}
 
 {% if section.navbar.light_color %}
   {% assign color = section.navbar.light_color %}
 {% else %}
-  {% assign color = site.navbar.light_color %}
+  {% assign color = site.data.options.[template].navbar.light_color %}
 {% endif %}
 
 {% if section.navbar.sticky == true %}
   {% assign sticky = true %}
 {% elsif section.navbar.sticky != false %}
-  {% if site.navbar.sticky %}
+  {% if site.data.options.[template].navbar.sticky %}
     {% assign sticky = true %}
   {% else %}
     {% assign sticky = false %}
@@ -23,7 +24,7 @@
 {% if section.navbar.scroll_up %}
   {% assign scroll_up = true %}
 {% elsif section.navbar.scroll_up != false %}
-  {% if site.navbar.scroll_up %}
+  {% if site.data.options.[template].navbar.scroll_up %}
     {% assign scroll_up = true %}
   {% else %}
     {% assign scroll_up = false %}
@@ -33,7 +34,7 @@
 {% if section.navbar.animation %}
   {% assign animation = true %}
 {% elsif section.navbar.animation != false %}
-  {% if site.navbar.animation %}
+  {% if site.data.options.[template].navbar.animation %}
     {% assign animation = true %}
   {% else %}
     {% assign animation = false %}
@@ -64,7 +65,7 @@
   {% if sticky %}
     <div data-uk-sticky="{% if scroll_up %}show-on-up: true; {% endif %}{% if animation %}animation: uk-animation-slide-top; top: 200; {% endif %}sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky navbar-background{% if light_color %} uk-light{% endif %}; cls-inactive: {% if section.navbar.transparent %}uk-navbar-transparent{% if transparent_light_color %} uk-light{% endif %}{% else %} navbar-background uk-dark{% endif %}">
       <nav class="uk-navbar-container">
-        {% if site.navbar.layout == 'center' %}
+        {% if site.data.options.[template].navbar.layout == 'center' %}
           {% include partials/navbar-center.html %}
         {% else %}
           {% include partials/navbar-default.html %}
@@ -73,7 +74,7 @@
     </div>
   {% else %}
     <nav class="uk-navbar-container {% if section.navbar.transparent %}uk-navbar-transparent{% if transparent_light_color %} uk-light{% endif %}{% else %} navbar-background {% if light_color %} uk-light{% endif %}{% endif %}">
-      {% if site.navbar.layout == 'center' %}
+      {% if site.data.options.[template].navbar.layout == 'center' %}
         {% include partials/navbar-center.html %}
       {% else %}
         {% include partials/navbar-default.html %}
