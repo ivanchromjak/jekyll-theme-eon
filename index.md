@@ -83,7 +83,7 @@ sections:
   grid: 1-4
   gutter: default
   icon_color: "#9412AF"
-  icon_size: 
+  icon_size: '100'
 layout: blocks
 
 ---
