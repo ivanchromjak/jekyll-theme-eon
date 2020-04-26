@@ -61,3 +61,19 @@ fields:
     template: section
     label: Section
   label: Section
+- name: style
+  type: select
+  default: default
+  config:
+    required: false
+    options:
+    - none
+    - default
+    - primary
+    - secondary
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Style
