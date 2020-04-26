@@ -1,4 +1,21 @@
 ---
 label: Cards
 hide_body: true
-fields: []
+fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: cards
+- name: blocks
+  type: text
+  config:
+    required: false
+  label: Blocks
+- name: section
+  type: include
+  config: {}
+  template: section
+  label: Section
