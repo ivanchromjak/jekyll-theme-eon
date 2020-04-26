@@ -9,6 +9,6 @@ base:
     sticky: true
     animation: true
   footer:
-    layout: ''
-    style: ''
+    layout: columns
+    style: secondary
 layout: options
