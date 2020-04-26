@@ -68,6 +68,10 @@ sections:
     title: Card 2
     content: Dynamically revolutionize intuitive synergy before revolutionary
   blocks: ''
+  media: top
+  style: default
+  grid: 1-4
+  gutter: default
 layout: blocks
 
 ---
