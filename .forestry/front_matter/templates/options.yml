@@ -62,6 +62,15 @@ fields:
         field: sticky
         value: true
       default: true
+    - name: transparent_light_color
+      type: boolean
+      label: Transparent Light Color
+    - name: scroll_up
+      type: boolean
+      label: Sticky On Scroll Up
+      showOnly:
+        field: sticky
+        value: true
     label: Navbar
     description: The default setting for the header navigation bar.
   - name: footer
