@@ -78,7 +78,7 @@ sections:
     content: Dynamically revolutionize intuitive synergy before revolutionary
     image: ''
   blocks: ''
-  media: left
+  media: right
   style: default
   grid: 1-3
   gutter: large
