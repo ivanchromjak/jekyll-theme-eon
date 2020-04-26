@@ -25,13 +25,14 @@ sections:
   padding_remove: none
   heading_size: medium
   layout: 1-1
-  light_color: false
-  height: false
-  parallax: false
+  light_color: true
+  height: true
+  parallax: true
   container_one:
-    title: ''
-    subtitle: ''
-    content: ''
+    title: Tired of never ending site maintenance
+    subtitle: Put an end to constant theme and plugin updates. Build your website
+      with Jekyll static generator and get on with what matters the most, your business.
+    content: "{header-home}"
   container_two:
     title: ''
     subtitle: ''
