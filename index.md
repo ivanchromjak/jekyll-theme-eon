@@ -10,7 +10,7 @@ sections:
     light_color: false
     transparent: true
     transparent_light_color: true
-    scroll_up: false
+    scroll_up: true
     search: false
   background:
     style: primary
@@ -37,6 +37,6 @@ sections:
     title: ''
     subtitle: ''
     content: ''
-layout: 'blocks'
+layout: blocks
 
 ---
