@@ -1,24 +1,24 @@
 {% assign template = page.template | default: site.template %}
 
-{% if section.navbar.layout %}
+{% if section.navbar.layout != empty %}
   {% assign navbar_layout = section.navbar.layout %}
 {% else %}
   {% assign navbar_layout = site.data.options.[template].navbar.layout %}
 {% endif %}
 
-{% if section.navbar.transparent %}
+{% if section.navbar.transparent != empty %}
   {% assign transparent = section.navbar.transparent %}
 {% else %}
   {% assign transparent = site.data.options.[template].navbar.transparent %}
 {% endif %}
 
-{% if section.navbar.transparent_light_color %}
+{% if section.navbar.transparent_light_color != empty %}
   {% assign transparent_light_color = section.navbar.transparent_light_color %}
 {% else %}
   {% assign transparent_light_color = site.data.options.[template].navbar.transparent_light_color %}
 {% endif %}
 
-{% if section.navbar.light_color %}
+{% if section.navbar.light_color != empty %}
   {% assign color = section.navbar.light_color %}
 {% else %}
   {% assign color = site.data.options.[template].navbar.light_color %}

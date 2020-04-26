@@ -1,18 +1,16 @@
 {% assign template = page.template | default: site.template %}
 
-{% if section.layout %}
+{% if section.layout != empty %}
   {% assign footer_layout = section.layout %}
 {% else %}
   {% assign footer_layout = site.data.options.[template].footer.layout %}
 {% endif %}
 
-{% if section.social_networks %}
+{% if section.social_networks != empty %}
   {% assign social_networks = section.social_networks %}
 {% else %}
   {% assign social_networks = site.data.options.[template].footer.social_networks %}
 {% endif %}
-
-{{section}}
 
 {% if footer_layout == 'center' %}  
   <footer
@@ -38,7 +36,7 @@
             {% endfor %}
         </ul>
       </div>
-      {% if social_networks and site.social_networks %}
+      {% if social_networks == true %}
       <div class="uk-margin-medium">
         <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
           {% include social-networks.html %}
@@ -69,7 +67,7 @@
             </a>
           </div>
           <div class="uk-margin uk-text-small copyright">{{ site.footer.copyright }}</div>
-          {% if social_networks and site.social_networks %}
+          {% if social_networks == true %}
             <div class="uk-margin">
               <div data-uk-grid class="uk-child-width-auto uk-grid-small">
                 {% include social-networks.html %}

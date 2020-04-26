@@ -173,7 +173,7 @@
         {% endfor %}
       </ul>
 
-      {% if section.navbar.search %}
+      {% if section.navbar.search != empty %}
         {% assign navbar_search = section.navbar.search %}
       {% else %}
         {% assign navbar_search = site.data.options.[template].navbar.search %}
