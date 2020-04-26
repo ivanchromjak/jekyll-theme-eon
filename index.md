@@ -87,7 +87,7 @@ sections:
 - template: cards
   block: cards
   media: right
-  style: default
+  style: secondary
   grid: 1-1
   gutter: default
   section:
