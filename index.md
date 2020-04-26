@@ -7,10 +7,11 @@ navbar:
   transparent: true
   transparent_light_color: true
 header:
-  layout: 1-1 # Options: left, center, 1-1, 1-2, 1-3 or 2-3
+  layout: 1-1
   background_image: Working-Space.jpg
   background_video: Working-Space.mp4
-  background_overlay: "linear-gradient(to left top,rgba(218, 91, 197, 0.8) 0%,rgba(151, 27, 191, 0.8) 30%,rgba(2, 8, 212, 0.8) 80%)"
+  background_overlay: linear-gradient(to left top,rgba(218, 91, 197, 0.8) 0%,rgba(151,
+    27, 191, 0.8) 30%,rgba(2, 8, 212, 0.8) 80%)
   color: light
   heading_size: medium
   height: full
@@ -18,8 +19,11 @@ header:
   container: small
   content:
     block: header-home
----
+layout: blocks
+title: ''
+sections: []
 
+---
 [comment]: # (This actually is the most platform independent comment)
 
 {% if site.template == 'base' %}
