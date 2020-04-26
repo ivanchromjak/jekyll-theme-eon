@@ -63,7 +63,12 @@ sections:
   - icon: "/uploads/icons/ios-work.svg"
     image: ''
     title: kjhkjhkj
-    content: " kjhjk hjkhjkhjkh jkh kjhjk jkhjk"
+    content: |-
+      kjhjk hjkhjkhjkh jkh kjhjk jkhjk
+
+      * Access to Video Courses
+      * Access for Two Devices
+      * 30-Days Free Trial
   - icon: "/uploads/icons/ios-youtube.svg"
     image: ''
     title: hgjhg
