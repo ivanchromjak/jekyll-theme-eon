@@ -5,7 +5,7 @@ base:
   navbar:
     layout: default
     light_color: false
-    search: false
+    search: true
     sticky: true
     animation: true
     scroll_up: false
