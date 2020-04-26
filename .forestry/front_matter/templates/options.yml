@@ -55,6 +55,12 @@ fields:
       type: boolean
       label: Sticky
       default: true
+    - name: scroll_up
+      type: boolean
+      label: Sticky On Scroll Up
+      showOnly:
+        field: sticky
+        value: true
     - name: animation
       type: boolean
       label: Animation
@@ -62,14 +68,14 @@ fields:
         field: sticky
         value: true
       default: true
+    - name: transparent
+      type: boolean
+      label: Transparent
     - name: transparent_light_color
       type: boolean
       label: Transparent Light Color
-    - name: scroll_up
-      type: boolean
-      label: Sticky On Scroll Up
       showOnly:
-        field: sticky
+        field: transparent
         value: true
     label: Navbar
     description: The default setting for the header navigation bar.
