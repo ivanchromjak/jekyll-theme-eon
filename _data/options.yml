@@ -13,7 +13,8 @@ base:
     transparent_light_color: false
   footer:
     layout: center
-    style: muted
+    style: primary
+    social_networks: false
 layout: options
 crypto:
   navbar:
