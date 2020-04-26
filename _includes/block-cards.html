@@ -28,7 +28,7 @@
           <div class="uk-flex uk-flex-middle{% if section.section_content_align != empty %} uk-flex-{{ section.section_content_align }}{% endif %} uk-width-expand@m">
             <div class="uk-card-body">
               <h3 class="{% if block.icon != empty %}uk-card-title{% else %}uk-h2{% endif %}">{{ block.title }}</h3>
-              {{ block.content }}
+              {{ block.content | markdownify }}
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@
           <div class="uk-flex uk-flex-middle{% if section.section_content_align %} uk-flex-{{ section.section_content_align }}{% endif %} uk-width-expand@m">
             <div class="uk-card-body">
               <h3 class="{% if block.icon != empty %}uk-card-title{% else %}uk-h2{% endif %}">{{ block.title }}</h3>
-              {{ block.content }}
+              {{ block.content | markdownify }}
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@
             {% if block.heading %}
               <h4 class="uk-heading-medium">{{ block.heading }}</h4>
             {% endif %}
-            {{ block.content }}
+            {{ block.content | markdownify }}
           </div>
         </div>
       {% endif %}
