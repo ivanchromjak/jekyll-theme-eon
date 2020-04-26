@@ -84,6 +84,43 @@ sections:
   gutter: default
   icon_color: "#9412AF"
   icon_size: '100'
+- template: cards
+  block: cards
+  media: top
+  style: default
+  grid: 1-2
+  gutter: default
+  section:
+    is_section: true
+    size: medium
+    container: medium
+    background: default
+    image_align: center-center
+    overlay_opacity: 0.7
+    header_align: left
+    content_align: left
+    title: ''
+    subtitle: ''
+    height: false
+    background_color: ''
+    image: ''
+    video: ''
+    overlay_color: ''
+    header_color_light: false
+    content_color_light: false
+    id: ''
+    class: ''
+  cards:
+  - icon: ''
+    image: "/uploads/card-2.jpeg"
+    title: ghjghjg
+    content: " htrjt jtjuyju uj ujyt ujuj"
+  - icon: ''
+    image: "/uploads/card-1.jpeg"
+    title: dfgfd gd f dfg d
+    content: g dfgdg dfg
+  icon_color: ''
+  icon_size: 
 layout: blocks
 
 ---
