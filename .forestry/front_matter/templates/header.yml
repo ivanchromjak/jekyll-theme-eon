@@ -56,6 +56,9 @@ fields:
     showOnly:
       field: sticky
       value: true
+  - name: search
+    type: boolean
+    label: Search
   label: Navbar
 - name: background
   type: field_group
