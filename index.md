@@ -37,6 +37,6 @@ sections:
     title: ''
     subtitle: ''
     content: ''
-layout: ''
+layout: 'blocks'
 
 ---
