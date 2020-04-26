@@ -45,6 +45,23 @@ fields:
           file: 
           path: 
       label: Layout
+    - name: light_color
+      type: boolean
+      label: Light Color
+    - name: search
+      type: boolean
+      label: Search
+    - name: sticky
+      type: boolean
+      label: Sticky
+      default: true
+    - name: animation
+      type: boolean
+      label: Animation
+      showOnly:
+        field: sticky
+        value: true
+      default: true
     label: Navbar
     description: The default setting for the header navigation bar.
   label: Base
