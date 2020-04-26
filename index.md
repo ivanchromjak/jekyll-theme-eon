@@ -4,14 +4,14 @@ sections:
 - template: header
   block: header
   navbar:
-    layout: default
+    layout: ''
     sticky: true
     animation: true
-    light_color: false
+    light_color: true
     transparent: true
     transparent_light_color: true
-    scroll_up: false
-    search: false
+    scroll_up: true
+    search: true
   background:
     style: primary
     align: center-center
