@@ -21,6 +21,7 @@ fields:
   - header
   - call-to-action
   - footer
+  - cards
   config:
     min: 
     max: 
