@@ -206,3 +206,5 @@
     
   </div>
 </div>
+{% assign template = page.template | default: 'base' %}
+{{ site.data.options.[template].navbar.sticky }}
