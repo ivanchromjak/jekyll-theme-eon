@@ -48,9 +48,15 @@ fields:
     - name: light_color
       type: boolean
       label: Light Color
-    - name: search
+    - name: transparent
       type: boolean
-      label: Search
+      label: Transparent
+    - name: transparent_light_color
+      type: boolean
+      label: Transparent Light Color
+      showOnly:
+        field: transparent
+        value: true
     - name: sticky
       type: boolean
       label: Sticky
@@ -68,15 +74,9 @@ fields:
         field: sticky
         value: true
       default: true
-    - name: transparent
+    - name: search
       type: boolean
-      label: Transparent
-    - name: transparent_light_color
-      type: boolean
-      label: Transparent Light Color
-      showOnly:
-        field: transparent
-        value: true
+      label: Search
     label: Navbar
     description: The default setting for the header navigation bar.
   - name: footer
