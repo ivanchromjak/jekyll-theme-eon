@@ -118,7 +118,10 @@ sections:
   - icon: ''
     image: "/uploads/card-1.jpeg"
     title: dfgfd gd f dfg d
-    content: g dfgdg dfg
+    content: |-
+      g dfgdg dfg
+
+      {% include button.html text="Join Us" url="#" style="default" %}
   icon_color: ''
   icon_size: 
 layout: blocks
