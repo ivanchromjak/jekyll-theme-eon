@@ -9,11 +9,21 @@ fields:
   label: Block
   hidden: true
   default: cards
-- name: blocks
-  type: text
+- name: media
+  type: select
+  default: []
   config:
     required: false
-  label: Blocks
+    options:
+    - left
+    - top
+    - right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Media
 - name: cards
   type: field_group_list
   fields:
