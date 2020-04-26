@@ -101,5 +101,19 @@ fields:
     label: Footer
     description: The default setting for the site footer.
   label: Base
+- name: crypto
+  type: field_group
+  config: {}
+  fields:
+  - name: navbar
+    type: field_group
+    config: {}
+    fields:
+    - name: sticky
+      type: boolean
+      label: Sticky
+      default: true
+    label: Navbar
+  label: Crypto
 pages:
 - _data/options.yml
