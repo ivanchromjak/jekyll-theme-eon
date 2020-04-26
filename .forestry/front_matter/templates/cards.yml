@@ -63,6 +63,16 @@ fields:
   config:
     required: false
     color_format: Hex
+- name: icon_size
+  type: number
+  label: Icon Size
+  description: The height and width of SVG icons, requires square icons.
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 1
 - name: style
   type: select
   default: default
