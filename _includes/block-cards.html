@@ -13,49 +13,49 @@
 {% else %}
   {% assign grid = 'uk-child-width-expand@m' %}
 {% endif %}
-
+{{section}}
 <div class="{{ grid }}{% if section.gutter %} uk-grid-{{ section.gutter }}{% endif %} uk-grid-match uk-flex-center" data-uk-grid>
   {% for block in section.cards %}
     <div>
       {% if section.media == 'left' %}
-        <div class="uk-card{% unless block.icon %} uk-card-large{% endunless %} uk-card-{{ section.card_style | default: 'none' }} uk-grid-collapse uk-margin{% if block.icon %} card-icon{% endif %}" data-uk-grid>
-          <div class="uk-card-media-left{% if block.icon %} uk-width-auto@m uk-flex uk-flex-middle{% if section.card_style %} uk-padding{% endif %}{% if section.section_content_align %} uk-flex-{{ section.section_content_align }}{% endif %}{% else %} uk-width-1-2@m{% endif %}"{% if section.icon_color != empty %} style="color: {{ section.icon_color }}"{% endif %}>
-            {% if block.icon %}
-              <img src="{{ block.icon | absolute_url }}" alt="{{ block.title }}"{% if section.icon_size != empty %} width="{{ section.icon-size }}" height="{{ section.icon_size }}"{% endif %}{% if section.icon_color != empty %} data-uk-svg{% endif %}>
-            {% elsif block.image %}
+        <div class="uk-card{% unless block.icon != empty %} uk-card-large{% endunless %} uk-card-{{ section.style | default: 'none' }} uk-grid-collapse uk-margin{% if block.icon != empty %} card-icon{% endif %}" data-uk-grid>
+          <div class="uk-card-media-left{% if block.icon != empty %} uk-width-auto@m uk-flex uk-flex-middle{% if section.style != 'none' %} uk-padding{% endif %}{% if section.section_content_align != empty %} uk-flex-{{ section.section_content_align }}{% endif %}{% else %} uk-width-1-2@m{% endif %}"{% if section.icon_color != empty %} style="color: {{ section.icon_color }}"{% endif %}>
+            {% if block.icon != empty %}
+              <img src="{{ block.icon }}" alt="{{ block.title }}"{% if section.icon_size != empty %} width="{{ section.icon_size }}" height="{{ section.icon_size }}"{% endif %}{% if section.icon_color != empty %} data-uk-svg{% endif %}>
+            {% elsif block.image != empty %}
               <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ block.image | absolute_url }}" alt="{{ block.title }}" data-uk-img>
             {% endif %}
           </div>
-          <div class="uk-flex uk-flex-middle{% if section.section_content_align %} uk-flex-{{ section.section_content_align }}{% endif %} uk-width-expand@m">
+          <div class="uk-flex uk-flex-middle{% if section.section_content_align != empty %} uk-flex-{{ section.section_content_align }}{% endif %} uk-width-expand@m">
             <div class="uk-card-body">
-              <h3 class="{% if block.icon %}uk-card-title{% else %}uk-h2{% endif %}">{{ block.title }}</h3>
+              <h3 class="{% if block.icon != empty %}uk-card-title{% else %}uk-h2{% endif %}">{{ block.title }}</h3>
               {{ block.content }}
             </div>
           </div>
         </div>
       {% elsif section.media == 'right' %}
-        <div class="uk-card{% unless block.icon %} uk-card-large{% endunless %} uk-card-{{ section.card_style | default: 'none' }} uk-grid-collapse uk-margin{% if block.icon %} card-icon{% endif %}" data-uk-grid>
-          <div class="uk-flex-last@m uk-card-media-right{% if block.icon %} uk-width-auto@m uk-flex uk-flex-middle{% if section.card_style %} uk-padding{% endif %}{% if section.section_content_align %} uk-flex-{{ section.section_content_align }}{% endif %}{% else %} uk-width-1-2@m{% endif %}"{% if section.icon_color != empty %} style="color: {{ section.icon_color }}"{% endif %}>
-            {% if block.icon %}
-              <img src="{{ block.icon | absolute_url }}" alt="{{ block.title }}"{% if section.icon_size != empty %} width="{{ section.icon-size }}" height="{{ section.icon_size }}"{% endif %}{% if section.icon_color != empty %} data-uk-svg{% endif %}>
-            {% elsif block.image %}
+        <div class="uk-card{% unless block.icon != empty %} uk-card-large{% endunless %} uk-card-{{ section.style | default: 'none' }} uk-grid-collapse uk-margin{% if block.icon != empty %} card-icon{% endif %}" data-uk-grid>
+          <div class="uk-flex-last@m uk-card-media-right{% if block.icon != empty %} uk-width-auto@m uk-flex uk-flex-middle{% if section.style != empty %} uk-padding{% endif %}{% if section.section_content_align != empty %} uk-flex-{{ section.section_content_align }}{% endif %}{% else %} uk-width-1-2@m{% endif %}"{% if section.icon_color != empty %} style="color: {{ section.icon_color }}"{% endif %}>
+            {% if block.icon != empty %}
+              <img src="{{ block.icon }}" alt="{{ block.title }}"{% if section.icon_size != empty %} width="{{ section.icon_size }}" height="{{ section.icon_size }}"{% endif %}{% if section.icon_color != empty %} data-uk-svg{% endif %}>
+            {% elsif block.image != empty %}
               <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ block.image | absolute_url }}" alt="{{ block.title }}" data-uk-img>
             {% endif %}
           </div>
           <div class="uk-flex uk-flex-middle{% if section.section_content_align %} uk-flex-{{ section.section_content_align }}{% endif %} uk-width-expand@m">
             <div class="uk-card-body">
-              <h3 class="{% if block.icon %}uk-card-title{% else %}uk-h2{% endif %}">{{ block.title }}</h3>
+              <h3 class="{% if block.icon != empty %}uk-card-title{% else %}uk-h2{% endif %}">{{ block.title }}</h3>
               {{ block.content }}
             </div>
           </div>
         </div>
       {% else %}
-        <div class="uk-card{% if block.card_style %} uk-card-{{ block.card_style }}{% else %} uk-card-{{ section.card_style | default: 'none' }}{% endif %}{% if block.icon %} card-icon{% endif %}{% if section.card_type == 'pricing' %} card-pricing{% endif %}">
-          {% if block.icon or block.image %}
-            <div class="uk-card-media-top{% if block.icon and section.card_style %} uk-padding uk-padding-remove-bottom{% endif %}"{% if section.icon_color != empty %} style="color: {{ section.icon_color }}"{% endif %}>
-              {% if block.icon %}
-                <img src="{{ block.icon | absolute_url }}" alt="{{ block.title }}"{% if section.icon_size != empty %} width="{{ section.icon-size }}" height="{{ section.icon_size }}"{% endif %}{% if section.icon_color != empty %} data-uk-svg{% endif %}>
-              {% elsif block.image %}
+        <div class="uk-card{% if section.style != empty %} uk-card-{{ section.style }}{% endif %}{% if block.icon != empty %} card-icon{% endif %}{% if section.card_type == 'pricing' %} card-pricing{% endif %}">
+          {% if block.icon != empty or block.image != empty %}
+            <div class="uk-card-media-top{% if block.icon != empty and section.style != empty %} uk-padding uk-padding-remove-bottom{% endif %}"{% if section.icon_color != empty %} style="color: {{ section.icon_color }}"{% endif %}>
+              {% if block.icon != empty %}
+                <img src="{{ block.icon }}" alt="{{ block.title }}"{% if section.icon_size != empty %} width="{{ section.icon_size }}" height="{{ section.icon_size }}"{% endif %}{% if section.icon_color != empty %} data-uk-svg{% endif %}>
+              {% elsif block.image != empty %}
               <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ block.image | absolute_url }}" alt="{{ block.title }}" data-uk-img>
               {% endif %}
             </div>
