@@ -60,18 +60,25 @@ sections:
     id: ''
     class: ''
   cards:
+  - icon: "/uploads/icons/ios-youtube.svg"
+    image: ''
+    title: hgjhg
+    content: hjghjgjhgjh
   - icon: "/uploads/icons/ios-slack.svg"
     content: Synergistically conceptualize an expanded array of meta-services vis-a-vis
       cross-media synergy.
     title: Card 1
+    image: ''
   - icon: "/uploads/icons/ios-visa.svg"
     title: Card 2
     content: Dynamically revolutionize intuitive synergy before revolutionary
+    image: ''
   blocks: ''
   media: top
   style: default
   grid: 1-4
   gutter: default
+  icon_color: ''
 layout: blocks
 
 ---
