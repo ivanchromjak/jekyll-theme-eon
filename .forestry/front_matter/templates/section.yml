@@ -86,6 +86,9 @@ fields:
       file: 
       path: 
   label: Background Style
+  showOnly:
+    field: is_section
+    value: true
 - name: background_color
   type: color
   label: Background Color
@@ -93,7 +96,7 @@ fields:
     required: false
     color_format: Hex
   showOnly:
-    field: is_section
+    field: background
     value: custom
   description: Applies when "custom" is selected in Background Style setting
 - name: image
