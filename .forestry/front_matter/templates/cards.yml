@@ -9,11 +9,6 @@ fields:
   label: Block
   hidden: true
   default: cards
-- name: blocks
-  type: text
-  config:
-    required: false
-  label: Blocks
 - name: cards
   type: field_group_list
   fields:
@@ -22,6 +17,11 @@ fields:
     config:
       maxSize: 250
     label: Icon
+  - name: image
+    type: file
+    config:
+      maxSize: 250
+    label: Image
   - name: title
     type: text
     config:
@@ -41,6 +41,77 @@ fields:
     max: 
     labelField: 
   label: Cards
+- name: media
+  type: select
+  default: none
+  config:
+    required: false
+    options:
+    - left
+    - top
+    - right
+    - none
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Media
+- name: icon_color
+  type: color
+  label: Icon Color
+  config:
+    required: false
+    color_format: Hex
+- name: style
+  type: select
+  default: default
+  config:
+    required: false
+    options:
+    - none
+    - default
+    - primary
+    - secondary
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Style
+- name: grid
+  type: select
+  default: 1-3
+  config:
+    required: false
+    options:
+    - 1-2
+    - 1-3
+    - 1-4
+    - 1-5
+    - 1-6
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Grid
+- name: gutter
+  type: select
+  default: default
+  config:
+    required: false
+    options:
+    - small
+    - default
+    - large
+    - collapse
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Gutter
 - name: section
   type: field_group
   config: {}

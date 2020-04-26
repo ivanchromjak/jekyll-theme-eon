@@ -60,14 +60,29 @@ sections:
     id: ''
     class: ''
   cards:
-  - icon: "/uploads/color-500px-2.svg"
+  - icon: "/uploads/icons/ios-work.svg"
+    image: ''
+    title: kjhkjhkj
+    content: " kjhjk hjkhjkhjkh jkh kjhjk jkhjk"
+  - icon: "/uploads/icons/ios-youtube.svg"
+    image: ''
+    title: hgjhg
+    content: hjghjgjhgjh
+  - icon: "/uploads/icons/ios-slack.svg"
     content: Synergistically conceptualize an expanded array of meta-services vis-a-vis
       cross-media synergy.
     title: Card 1
-  - icon: "/uploads/color-address-book.svg"
+    image: ''
+  - icon: "/uploads/icons/ios-visa.svg"
     title: Card 2
     content: Dynamically revolutionize intuitive synergy before revolutionary
+    image: ''
   blocks: ''
+  media: top
+  style: default
+  grid: 1-4
+  gutter: default
+  icon_color: "#D62020"
 layout: blocks
 
 ---
