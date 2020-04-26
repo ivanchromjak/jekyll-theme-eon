@@ -21,9 +21,9 @@
         <div class="uk-card{% unless block.icon %} uk-card-large{% endunless %} uk-card-{{ section.card_style | default: 'none' }} uk-grid-collapse uk-margin{% if block.icon %} card-icon{% endif %}" data-uk-grid>
           <div class="uk-card-media-left{% if block.icon %} uk-width-auto@m uk-flex uk-flex-middle{% if section.card_style %} uk-padding{% endif %}{% if section.section_content_align %} uk-flex-{{ section.section_content_align }}{% endif %}{% else %} uk-width-1-2@m{% endif %}"{% if section.icon_color != empty %} style="color: {{ section.icon_color }}"{% endif %}>
             {% if block.icon %}
-              <img src="{{ block.icon }}" alt="{{ block.title }}"{% if section.icon_size != empty %} width="{{ section.icon-size }}" height="{{ section.icon_size }}"{% endif %}{% if section.icon_color != empty %} data-uk-svg{% endif %}>
+              <img src="{{ block.icon | absolute_url }}" alt="{{ block.title }}"{% if section.icon_size != empty %} width="{{ section.icon-size }}" height="{{ section.icon_size }}"{% endif %}{% if section.icon_color != empty %} data-uk-svg{% endif %}>
             {% elsif block.image %}
-              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}" data-uk-img>
+              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ block.image | absolute_url }}" alt="{{ block.title }}" data-uk-img>
             {% endif %}
           </div>
           <div class="uk-flex uk-flex-middle{% if section.section_content_align %} uk-flex-{{ section.section_content_align }}{% endif %} uk-width-expand@m">
@@ -37,9 +37,9 @@
         <div class="uk-card{% unless block.icon %} uk-card-large{% endunless %} uk-card-{{ section.card_style | default: 'none' }} uk-grid-collapse uk-margin{% if block.icon %} card-icon{% endif %}" data-uk-grid>
           <div class="uk-flex-last@m uk-card-media-right{% if block.icon %} uk-width-auto@m uk-flex uk-flex-middle{% if section.card_style %} uk-padding{% endif %}{% if section.section_content_align %} uk-flex-{{ section.section_content_align }}{% endif %}{% else %} uk-width-1-2@m{% endif %}"{% if section.icon_color != empty %} style="color: {{ section.icon_color }}"{% endif %}>
             {% if block.icon %}
-              <img src="{{ block.icon }}" alt="{{ block.title }}"{% if section.icon_size != empty %} width="{{ section.icon-size }}" height="{{ section.icon_size }}"{% endif %}{% if section.icon_color != empty %} data-uk-svg{% endif %}>
+              <img src="{{ block.icon | absolute_url }}" alt="{{ block.title }}"{% if section.icon_size != empty %} width="{{ section.icon-size }}" height="{{ section.icon_size }}"{% endif %}{% if section.icon_color != empty %} data-uk-svg{% endif %}>
             {% elsif block.image %}
-              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}" data-uk-img>
+              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ block.image | absolute_url }}" alt="{{ block.title }}" data-uk-img>
             {% endif %}
           </div>
           <div class="uk-flex uk-flex-middle{% if section.section_content_align %} uk-flex-{{ section.section_content_align }}{% endif %} uk-width-expand@m">
@@ -54,9 +54,9 @@
           {% if block.icon or block.image %}
             <div class="uk-card-media-top{% if block.icon and section.card_style %} uk-padding uk-padding-remove-bottom{% endif %}"{% if section.icon_color != empty %} style="color: {{ section.icon_color }}"{% endif %}>
               {% if block.icon %}
-                <img src="{{ block.icon }}" alt="{{ block.title }}"{% if section.icon_size != empty %} width="{{ section.icon-size }}" height="{{ section.icon_size }}"{% endif %}{% if section.icon_color != empty %} data-uk-svg{% endif %}>
+                <img src="{{ block.icon | absolute_url }}" alt="{{ block.title }}"{% if section.icon_size != empty %} width="{{ section.icon-size }}" height="{{ section.icon_size }}"{% endif %}{% if section.icon_color != empty %} data-uk-svg{% endif %}>
               {% elsif block.image %}
-              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ site.uploads | absolute_url }}{{ block.image }}{% endif %}" alt="{{ block.title }}" data-uk-img>
+              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ block.image | absolute_url }}" alt="{{ block.title }}" data-uk-img>
               {% endif %}
             </div>
           {% endif %}
