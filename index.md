@@ -37,6 +37,28 @@ sections:
     title: ''
     subtitle: ''
     content: ''
+- template: cards
+  block: cards
+  is_section: true
+  size: medium
+  container: medium
+  background: muted
+  image_align: center-center
+  overlay_opacity: 0.7
+  header_align: left
+  content_align: left
+  blocks: feature
+  title: ''
+  subtitle: ''
+  height: false
+  background_color: ''
+  image: ''
+  video: ''
+  overlay_color: ''
+  header_color_light: false
+  content_color_light: false
+  id: ''
+  class: ''
 layout: blocks
 
 ---
