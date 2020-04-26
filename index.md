@@ -8,8 +8,8 @@ sections:
     sticky: true
     animation: true
     light_color: false
-    transparent: false
-    transparent_light_color: false
+    transparent: true
+    transparent_light_color: true
     scroll_up: false
     search: false
   background:
