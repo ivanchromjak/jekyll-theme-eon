@@ -8,7 +8,7 @@ sections:
   block: footer
   layout: columns
   style: primary
-  social_networks: true
+  social_networks: false
 - template: footer
   block: footer
   layout: columns
