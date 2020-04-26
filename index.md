@@ -79,7 +79,7 @@ sections:
     image: ''
   blocks: ''
   media: right
-  style: default
+  style: primary
   grid: 1-3
   gutter: large
   icon_color: "#9412AF"
