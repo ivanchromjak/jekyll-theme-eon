@@ -6,7 +6,7 @@ subtitle: xzvxcvxvxv
 sections:
 - template: footer
   block: footer
-  layout: center
+  layout: columns
   style: primary
   social_networks: true
 - template: footer
