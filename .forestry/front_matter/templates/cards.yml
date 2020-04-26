@@ -14,8 +14,40 @@ fields:
   config:
     required: false
   label: Blocks
+- name: cards
+  type: field_group_list
+  fields:
+  - name: icon
+    type: file
+    config:
+      maxSize: 250
+    label: Icon
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: content
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Content
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Cards
 - name: section
-  type: include
+  type: field_group
   config: {}
-  template: section
+  fields:
+  - name: section
+    type: include
+    config: {}
+    template: section
+    label: Section
   label: Section
