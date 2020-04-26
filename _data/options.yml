@@ -12,3 +12,6 @@ base:
     layout: columns
     style: secondary
 layout: options
+crypto:
+  navbar:
+    sticky: false
