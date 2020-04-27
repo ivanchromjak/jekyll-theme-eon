@@ -1,6 +1,6 @@
 ---
 base:
-  primary_color: "#0F4C81"
+  primary_color: "#0E6BBE"
   secondary_color: "#000000"
   navbar:
     layout: default
@@ -12,8 +12,8 @@ base:
     transparent: false
     transparent_light_color: false
   footer:
-    layout: center
-    style: primary
+    layout: columns
+    style: secondary
     social_networks: true
 layout: options
 crypto:
