@@ -34,7 +34,7 @@ sections:
   id: ss
   class: dddd
 - template: section
-  columns: one
+  columns: two
   background:
     style: custom
     image_align: center-center
@@ -61,7 +61,20 @@ sections:
     size: large
     url: "#"
     blank: false
-  column_two: []
+  column_two:
+  - template: call-to-action
+    block: call-to-action
+    layout: left
+    button:
+      text: Text
+      style: danger
+      url: dfgdf
+      blank: false
+    animation: none
+    title: xggfdg
+    subtitle: dfgdfg
+    content: gdgdfgdg
+    video: ''
   height: false
   id: ''
   class: ''

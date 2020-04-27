@@ -15,7 +15,7 @@ fields:
       section: 
       file: 
       path: 
-  label: Number of Columns
+  label: Section Columns
 - name: column_one
   type: blocks
   label: Column One
