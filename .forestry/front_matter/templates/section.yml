@@ -49,36 +49,6 @@ fields:
   showOnly:
     field: is_section
     value: true
-- name: background1
-  type: select
-  default: default
-  config:
-    required: false
-    options:
-    - default
-    - muted
-    - primary
-    - secondary
-    - custom
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Background Style
-  showOnly:
-    field: is_section
-    value: true
-- name: background_color
-  type: color
-  label: Background Color
-  config:
-    required: false
-    color_format: Hex
-  showOnly:
-    field: background
-    value: custom
-  description: Applies when "custom" is selected in Background Style setting
 - name: image
   type: file
   config:
@@ -172,10 +142,20 @@ fields:
       - muted
       - primary
       - secondary
+      - custom
       source:
         type: simple
         section: 
         file: 
         path: 
     label: Style
+  - name: color
+    type: color
+    label: Custom Color
+    config:
+      required: false
+      color_format: Hex
+    showOnly:
+      field: style
+      value: custom
   label: Background
