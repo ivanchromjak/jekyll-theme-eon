@@ -36,6 +36,12 @@ fields:
       schema:
         format: markdown
     label: Content
+  - name: haeding
+    type: text
+    config:
+      required: false
+    label: Haeding
+    description: Large text, suitable for pricing table price.
   config:
     min: 
     max: 
