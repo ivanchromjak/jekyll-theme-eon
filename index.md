@@ -143,7 +143,42 @@ sections:
     content_color_light: false
     id: ''
     class: ''
-  cards: []
+  cards:
+  - icon: ''
+    image: ''
+    title: Host for free
+    haeding: ''
+    content: Jekyll site can be hosted completely free on GitHub or Gitlab pages.
+    button:
+      text: Text
+      style: primary
+      size: regular
+      url: ''
+      blank: false
+  - icon: ''
+    image: ''
+    title: Secure
+    haeding: ''
+    content: There are only static files on a web server, there’s nothing dynamic
+      that can be exploited.
+    button:
+      text: Text
+      style: primary
+      size: regular
+      url: ''
+      blank: false
+  - icon: ''
+    image: ''
+    title: Blazing fast
+    haeding: Static sites are faster, nearly half of all visitors leave a site if
+      not loaded in three seconds.
+    content: ''
+    button:
+      text: Text
+      style: primary
+      size: regular
+      url: ''
+      blank: false
   icon_color: ''
   icon_size: 
 layout: blocks
