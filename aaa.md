@@ -1,6 +1,6 @@
 ---
 layout: sections
-title: ''
+title: aaa
 sections:
 - template: section
   columns: one
