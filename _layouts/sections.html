@@ -10,15 +10,15 @@ layout: default
       {% include block-{{ block.block }}.html %}
     {% endfor %}
   {% else %}
-    <div class="uk-grid-large uk-flex- uk-flex-middle- uk-flex-center@m-" data-uk-grid>
-      <div class="uk-width-expand@m">
+    <div class="uk-grid-large" data-uk-grid>
+      <div class="uk-width-expand@m{% if section.vertical_align_middle %} uk-flex uk-flex-middle{% endif %}">
         <div>
           {% for block in section.column_one %}
             {% include block-{{ block.block }}.html %}
           {% endfor %}
         </div>
       </div>
-      <div class="uk-width-{{ section.grid | default: '1-3' }}@m">
+      <div class="uk-width-{{ section.grid | default: '1-3' }}@m{% if section.vertical_align_middle %} uk-flex uk-flex-middle{% endif %}">
         <div>
           {% for block in section.column_two %}
             {% include block-{{ block.block }}.html %}
