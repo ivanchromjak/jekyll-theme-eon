@@ -8,7 +8,7 @@ fields:
     required: false
   label: Layout
   hidden: true
-  default: builder
+  default: sections
 - name: title
   type: text
   config:
