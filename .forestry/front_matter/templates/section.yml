@@ -135,9 +135,6 @@ fields:
       file: 
       path: 
   label: Container
-  showOnly:
-    field: is_section
-    value: true
 - name: size
   type: select
   default: medium
@@ -155,16 +152,10 @@ fields:
       file: 
       path: 
   label: Size
-  showOnly:
-    field: is_section
-    value: true
   description: Top and bottom padding.
 - name: height
   type: boolean
   label: Viewport Height
-  showOnly:
-    field: is_section
-    value: true
 - name: remove_padding
   type: select
   default: none
@@ -185,14 +176,8 @@ fields:
   config:
     required: false
   label: ID
-  showOnly:
-    field: is_section
-    value: true
 - name: class
   type: text
   config:
     required: false
   label: Class
-  showOnly:
-    field: is_section
-    value: true
