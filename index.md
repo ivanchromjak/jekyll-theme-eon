@@ -111,7 +111,7 @@ sections:
       size: ''
       blank: false
   blocks: ''
-  media: left
+  media: top
   style: default
   grid: 1-3
   gutter: small
