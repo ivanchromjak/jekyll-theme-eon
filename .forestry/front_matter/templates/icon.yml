@@ -1,4 +1,37 @@
 ---
 label: Icon
 hide_body: true
-fields: []
+fields:
+- name: icon
+  type: file
+  config:
+    maxSize: 64
+  label: Icon
+- name: color
+  type: color
+  label: Color
+  config:
+    required: false
+    color_format: Hex
+- name: size
+  type: number
+  label: Size
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: url
+  type: text
+  config:
+    required: false
+  label: Url
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: icon
