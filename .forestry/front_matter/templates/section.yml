@@ -23,6 +23,7 @@ fields:
   - block-button
   - cards
   - call-to-action
+  - icon
   config:
     min: 
     max: 
@@ -33,6 +34,7 @@ fields:
   - block-button
   - cards
   - call-to-action
+  - icon
   config:
     min: 
     max: 
