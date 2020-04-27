@@ -14,7 +14,7 @@ sections:
     overlay_color: ''
   size: large
   container: medium
-  remove_padding: none
+  remove_padding: top
   column_one:
   - template: call-to-action
     block: call-to-action
