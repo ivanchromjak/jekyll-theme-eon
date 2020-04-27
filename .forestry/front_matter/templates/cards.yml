@@ -15,12 +15,12 @@ fields:
   - name: icon
     type: file
     config:
-      maxSize: 250
+      maxSize: 64
     label: Icon
   - name: image
     type: file
     config:
-      maxSize: 250
+      maxSize: 64
     label: Image
   - name: title
     type: text
