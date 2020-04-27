@@ -117,27 +117,6 @@ fields:
       max: 1
       step: 0.1
   label: Background
-- name: size
-  type: select
-  default: medium
-  config:
-    required: false
-    options:
-    - xsmall
-    - small
-    - medium
-    - large
-    - xlarge
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Size
-  showOnly:
-    field: is_section
-    value: true
-  description: Top and bottom padding.
 - name: container
   type: select
   default: medium
@@ -159,6 +138,27 @@ fields:
   showOnly:
     field: is_section
     value: true
+- name: size
+  type: select
+  default: medium
+  config:
+    required: false
+    options:
+    - xsmall
+    - small
+    - medium
+    - large
+    - xlarge
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Size
+  showOnly:
+    field: is_section
+    value: true
+  description: Top and bottom padding.
 - name: height
   type: boolean
   label: Viewport Height
