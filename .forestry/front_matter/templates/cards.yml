@@ -27,6 +27,12 @@ fields:
     config:
       required: false
     label: Title
+  - name: haeding
+    type: text
+    config:
+      required: false
+    label: Haeding
+    description: Large text, suitable for pricing table price.
   - name: content
     type: textarea
     default: ''
@@ -36,12 +42,64 @@ fields:
       schema:
         format: markdown
     label: Content
-  - name: haeding
-    type: text
-    config:
-      required: false
-    label: Haeding
-    description: Large text, suitable for pricing table price.
+  - name: button
+    type: field_group
+    config: {}
+    fields:
+    - name: text
+      type: text
+      config:
+        required: false
+      label: Text
+      default: Text
+    - name: url
+      type: text
+      config:
+        required: false
+      label: Url
+    - name: style
+      type: select
+      default: primary
+      config:
+        required: false
+        options:
+        - default
+        - primary
+        - secondary
+        - success
+        - warning
+        - danger
+        - primary-outline
+        - danger-outline
+        - success-outline
+        - warning-outline
+        source:
+          type: simple
+          section: 
+          file: 
+          path: 
+      label: Style
+    - name: size
+      type: select
+      default: regular
+      config:
+        required: false
+        options:
+        - small
+        - regular
+        - medium
+        - large
+        source:
+          type: simple
+          section: 
+          file: 
+          path: 
+      label: Size
+    - name: blank
+      type: boolean
+      label: Blank
+      description: Open link in a new window.
+    label: Button
   config:
     min: 
     max: 
