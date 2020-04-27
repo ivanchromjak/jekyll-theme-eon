@@ -119,20 +119,20 @@ sections:
   icon_size: '100'
 - template: cards
   block: cards
-  media: right
-  style: secondary
-  grid: 1-1
+  media: none
+  style: none
+  grid: 1-3
   gutter: default
   section:
     is_section: true
-    size: medium
+    size: large
     container: medium
-    background: default
+    background: muted
     image_align: center-center
     overlay_opacity: 0.7
-    header_align: left
+    header_align: center
     content_align: left
-    title: ''
+    title: Why use Eon theme?
     subtitle: ''
     height: false
     background_color: ''
@@ -143,32 +143,7 @@ sections:
     content_color_light: false
     id: ''
     class: ''
-  cards:
-  - icon: ''
-    image: "/uploads/card-2.jpeg"
-    title: ghjghjg
-    content: " htrjt jtjuyju uj ujyt ujuj"
-    haeding: ''
-    button:
-      text: ''
-      url: ''
-      style: ''
-      size: ''
-      blank: false
-  - icon: ''
-    image: "/uploads/card-1.jpeg"
-    title: dfgfd gd f dfg d
-    content: |-
-      g dfgdg dfg
-
-      {% include button.html text="Join Us" url="#" style="default" %}
-    haeding: ''
-    button:
-      text: ''
-      url: ''
-      style: ''
-      size: ''
-      blank: false
+  cards: []
   icon_color: ''
   icon_size: 
 layout: blocks
