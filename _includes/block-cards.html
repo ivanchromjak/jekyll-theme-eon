@@ -65,9 +65,9 @@
               <h4 class="uk-heading-medium">{{ block.heading }}</h4>
             {% endif %}
             {{ block.content | markdownify }}
-            {% if section.button.url != empty %}
-              <a href="{{ section.button.url }}" class="uk-button uk-button-{{ section.button.style }} uk-button-{{ section.button.size }}"{% if section.button.blank %} target="_blank"{% endif %}>{{ section.button.text }}</a>
-            {% endif %}
+            {% if block.button.url != empty %}
+              <a href="{{ block.button.url }}" class="uk-button uk-button-{{ block.button.style }} uk-button-{{ block.button.size }}"{% if block.button.blank %} target="_blank"{% endif %}>{{ block.button.text }}</a>
+            {% endif %}{{block.button}}
           </div>
         </div>
       {% endif %}
