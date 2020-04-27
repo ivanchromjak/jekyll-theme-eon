@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% for section in page.sections %}
+{% for section in page.sections %}{{section}}
   {%- if section.section.is_section -%}
     {% include partials/section-open.html %}
   {%- endif -%}
