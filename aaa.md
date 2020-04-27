@@ -36,12 +36,12 @@ sections:
 - template: section
   columns: one
   background:
-    style: secondary
+    style: custom
     image_align: center-center
     overlay_opacity: '0.8'
     image: "/uploads/header-9.jpeg"
     overlay_color: "#000000"
-    color: ''
+    color: "#000000"
     video: ''
   size: medium
   container: medium
