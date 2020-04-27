@@ -33,5 +33,23 @@ sections:
   height: false
   id: ''
   class: ''
+- template: section
+  columns: one
+  background:
+    style: secondary
+    image_align: center-center
+    overlay_opacity: '0.8'
+    image: "/uploads/header-9.jpeg"
+    overlay_color: "#000000"
+    color: ''
+    video: ''
+  size: medium
+  container: medium
+  remove_padding: none
+  column_one: []
+  column_two: []
+  height: false
+  id: ''
+  class: ''
 
 ---
