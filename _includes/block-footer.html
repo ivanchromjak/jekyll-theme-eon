@@ -1,16 +1,6 @@
 {% assign template = page.template | default: site.template %}
-
-{% if section.layout != empty %}
-  {% assign footer_layout = section.layout %}
-{% else %}
-  {% assign footer_layout = site.data.options.[template].footer.layout %}
-{% endif %}
-
-{% if section.social_networks != empty %}
-  {% assign social_networks = section.social_networks %}
-{% else %}
-  {% assign social_networks = site.data.options.[template].footer.social_networks %}
-{% endif %}
+{% assign footer_layout = site.data.options.[template].footer.layout %}
+{% assign social_networks = site.data.options.[template].footer.social_networks %}
 
 {% if footer_layout == 'center' %}  
   <footer
