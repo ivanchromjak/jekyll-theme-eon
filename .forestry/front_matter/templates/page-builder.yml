@@ -24,6 +24,7 @@ fields:
     min: 
     max: 
 pages:
+- a-test.md
 - footers.md
 - headers.md
 - index.md
