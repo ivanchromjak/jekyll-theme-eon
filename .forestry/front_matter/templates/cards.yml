@@ -187,13 +187,3 @@ fields:
       file: 
       path: 
   label: Gutter
-- name: section
-  type: field_group
-  config: {}
-  fields:
-  - name: section
-    type: include
-    config: {}
-    template: section
-    label: Section
-  label: Section

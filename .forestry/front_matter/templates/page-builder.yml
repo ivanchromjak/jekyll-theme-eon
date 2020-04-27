@@ -14,18 +14,17 @@ fields:
   config:
     required: false
   label: Title
-- name: sections
+- name: section
   type: blocks
-  label: Blocks
+  label: Sections
   template_types:
   - header
-  - call-to-action
-  - footer
-  - cards
+  - section
   config:
     min: 
     max: 
 pages:
+- a-test.md
 - footers.md
 - headers.md
 - index.md

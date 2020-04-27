@@ -2,26 +2,121 @@
 label: Section
 hide_body: true
 fields:
-- name: is_section
-  type: boolean
-  label: Enable Section
-  default: true
-- name: title
-  type: text
+- name: columns
+  type: select
+  default: one
   config:
     required: false
-  label: Title
-  showOnly:
-    field: is_section
-    value: true
-- name: subtitle
-  type: text
+    options:
+    - one
+    - two
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Number of Columns
+- name: column_one
+  type: blocks
+  label: Column One
+  template_types:
+  - block-button
+  - cards
+  - call-to-action
   config:
-    required: false
-  label: Subtitle
+    min: 
+    max: 
+- name: column_two
+  type: blocks
+  label: Column Two
+  template_types:
+  - block-button
+  - cards
+  - call-to-action
+  config:
+    min: 
+    max: 
   showOnly:
-    field: is_section
-    value: true
+    field: columns
+    value: two
+- name: background
+  type: field_group
+  config: {}
+  fields:
+  - name: style
+    type: select
+    default: default
+    config:
+      required: false
+      options:
+      - default
+      - muted
+      - primary
+      - secondary
+      - custom
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Style
+  - name: color
+    type: color
+    label: Custom Color
+    config:
+      required: false
+      color_format: Hex
+    showOnly:
+      field: style
+      value: custom
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
+  - name: image_align
+    type: select
+    default: center-center
+    config:
+      required: false
+      options:
+      - top-left
+      - top-center
+      - top-right
+      - center-left
+      - center-center
+      - center-right
+      - bottom-left
+      - bottom-center
+      - bottom-right
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Image Align
+  - name: video
+    type: text
+    config:
+      required: false
+    label: Video
+  - name: overlay_color
+    type: color
+    label: Overlay Color
+    config:
+      required: false
+      color_format: Hex
+  - name: overlay_opacity
+    type: number
+    label: Overlay Opacity
+    description: ''
+    default: 0.6
+    required: true
+    config:
+      min: 0
+      max: 1
+      step: 0.1
+  label: Background
 - name: size
   type: select
   default: medium
@@ -42,12 +137,7 @@ fields:
   showOnly:
     field: is_section
     value: true
-- name: height
-  type: boolean
-  label: Viewport Height
-  showOnly:
-    field: is_section
-    value: true
+  description: Top and bottom padding.
 - name: container
   type: select
   default: medium
@@ -69,147 +159,27 @@ fields:
   showOnly:
     field: is_section
     value: true
-- name: background
-  type: select
-  default: default
-  config:
-    required: false
-    options:
-    - default
-    - muted
-    - primary
-    - secondary
-    - custom
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Background Style
-  showOnly:
-    field: is_section
-    value: true
-- name: background_color
-  type: color
-  label: Background Color
-  config:
-    required: false
-    color_format: Hex
-  showOnly:
-    field: background
-    value: custom
-  description: Applies when "custom" is selected in Background Style setting
-- name: image
-  type: file
-  config:
-    maxSize: 250
-  label: Background Image
-  showOnly:
-    field: is_section
-    value: true
-- name: image_align
-  type: select
-  default: center-center
-  config:
-    required: false
-    options:
-    - top-left
-    - top-center
-    - top-right
-    - center-left
-    - center-center
-    - center-right
-    - bottom-left
-    - bottom-center
-    - bottom-right
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Background Image Align
-  showOnly:
-    field: is_section
-    value: true
-- name: video
-  type: text
-  config:
-    required: false
-  label: Background Video
-  showOnly:
-    field: is_section
-    value: true
-- name: overlay_color
-  type: color
-  label: Background Overlay Color
-  config:
-    required: false
-    color_format: Hex
-  showOnly:
-    field: is_section
-    value: true
-  default: 
-- name: overlay_opacity
-  type: number
-  label: Background Overlay Opacity
-  description: ''
-  default: 0.7
-  required: true
-  config:
-    min: 0
-    max: 1
-    step: 0.1
-  showOnly:
-    field: is_section
-    value: true
-- name: header_align
-  type: select
-  default: left
-  config:
-    required: false
-    options:
-    - left
-    - center
-    - right
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Header Align
-  showOnly:
-    field: is_section
-    value: true
-- name: header_color_light
+- name: height
   type: boolean
-  label: Header Color Light
+  label: Viewport Height
   showOnly:
     field: is_section
     value: true
-- name: content_align
+- name: remove_padding
   type: select
-  default: left
+  default: none
   config:
     required: false
     options:
-    - left
-    - center
-    - right
+    - none
+    - top
+    - bottom
     source:
       type: simple
       section: 
       file: 
       path: 
-  label: Content Align
-  showOnly:
-    field: is_section
-    value: true
-- name: content_color_light
-  type: boolean
-  label: Content Color Light
-  showOnly:
-    field: is_section
-    value: true
+  label: Remove Padding
 - name: id
   type: text
   config:
