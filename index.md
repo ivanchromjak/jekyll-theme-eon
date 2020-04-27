@@ -69,24 +69,28 @@ sections:
       * Access to Video Courses
       * Access for Two Devices
       * 30-Days Free Trial
+    haeding: "$99"
   - icon: "/uploads/icons/ios-youtube.svg"
     image: ''
     title: hgjhg
     content: hjghjgjhgjh
+    haeding: ''
   - icon: "/uploads/icons/ios-slack.svg"
     content: Synergistically conceptualize an expanded array of meta-services vis-a-vis
       cross-media synergy.
     title: Card 1
     image: ''
+    haeding: ''
   - icon: "/uploads/icons/ios-visa.svg"
     title: Card 2
     content: Dynamically revolutionize intuitive synergy before revolutionary
     image: ''
+    haeding: ''
   blocks: ''
   media: right
-  style: primary
+  style: default
   grid: 1-3
-  gutter: large
+  gutter: small
   icon_color: "#9412AF"
   icon_size: '100'
 - template: cards
@@ -120,6 +124,7 @@ sections:
     image: "/uploads/card-2.jpeg"
     title: ghjghjg
     content: " htrjt jtjuyju uj ujyt ujuj"
+    haeding: ''
   - icon: ''
     image: "/uploads/card-1.jpeg"
     title: dfgfd gd f dfg d
@@ -127,6 +132,7 @@ sections:
       g dfgdg dfg
 
       {% include button.html text="Join Us" url="#" style="default" %}
+    haeding: ''
   icon_color: ''
   icon_size: 
 layout: blocks
