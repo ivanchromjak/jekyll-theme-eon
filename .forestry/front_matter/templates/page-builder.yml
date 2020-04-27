@@ -9,27 +9,15 @@ fields:
   label: Layout
   hidden: true
   default: blocks
-- name: sections
+- name: section
   type: blocks
-  label: Blocks
+  label: Sections
   template_types:
   - header
-  - call-to-action
-  - footer
-  - cards
+  - section
   config:
     min: 
     max: 
-- name: section
-  type: include
-  config: {}
-  template: section
-  label: Section
-- name: header
-  type: include
-  config: {}
-  template: header
-  label: Header
 pages:
 - footers.md
 - headers.md
