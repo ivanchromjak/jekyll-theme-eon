@@ -8,7 +8,7 @@ fields:
     required: false
   label: Layout
   hidden: true
-  default: builder
+  default: sections
 - name: title
   type: text
   config:
@@ -24,7 +24,7 @@ fields:
     min: 
     max: 
 pages:
-- b-page.md
+- aaa.md
 - footers.md
 - headers.md
 - index.md
