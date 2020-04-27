@@ -9,7 +9,7 @@
   {% if section.background.overlay_color != empty %}
     <div class="uk-position-cover" style="background: {{ section.background.overlay_color }}; opacity: {{ section.background.overlay_opacity | default: '0.6' }}"></div>
   {%- endif -%}
-    <div class="uk-section uk-section-{{ section.size | default: 'medium' }}{% if section.padding_remove %} uk-padding-remove-{{ section.padding_remove }}{% endif %}{% if section.height %} uk-flex uk-flex-middle{% endif %}" 
+    <div class="uk-section uk-section-{{ section.size | default: 'medium' }}{% if section.remove_padding %} uk-padding-remove-{{ section.remove_padding }}{% endif %}{% if section.height %} uk-flex uk-flex-middle{% endif %}" 
       {% if section.height %} data-uk-height-viewport{% endif %}>
       <div class="{% unless section.container == 'none' %}uk-container{% endunless %}{% if section.container %} uk-container-{{ section.container | default: 'none' }}{% endif %} uk-position-relative">
         <!-- {%- if section.title != empty or section.subtitle != empty -%}
