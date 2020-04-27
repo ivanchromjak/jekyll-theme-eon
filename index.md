@@ -160,6 +160,39 @@ sections:
     heading: ''
   icon_color: ''
   icon_size: 
+- template: call-to-action
+  block: call-to-action
+  layout: center
+  button:
+    text: Text
+    style: primary
+    url: ''
+    blank: false
+  animation: none
+  section:
+    is_section: true
+    size: large
+    container: small
+    background: secondary
+    image_align: center-center
+    overlay_opacity: '0.5'
+    header_align: left
+    content_align: center
+    image: "/uploads/header-9.jpeg"
+    overlay_color: "#000000"
+    title: ''
+    subtitle: ''
+    height: false
+    background_color: ''
+    video: ''
+    header_color_light: false
+    content_color_light: false
+    id: ''
+    class: ''
+  title: ''
+  subtitle: ''
+  content: ''
+  video: ''
 layout: blocks
 
 ---
