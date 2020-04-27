@@ -49,6 +49,12 @@ sections:
   container: medium
   remove_padding: none
   column_one:
+  - template: icon
+    block: icon
+    size: '70'
+    icon: "/uploads/icons/ios-water.svg"
+    color: "#D0021B"
+    url: "#"
   - template: block-button
     block: button
     text: Text
