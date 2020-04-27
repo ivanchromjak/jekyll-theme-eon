@@ -29,6 +29,9 @@
             <div class="uk-card-body">
               <h3 class="{% if block.icon != empty %}uk-card-title{% else %}uk-h2{% endif %}">{{ block.title }}</h3>
               {{ block.content | markdownify }}
+              {% if block.button.url != empty %}
+                <a href="{{ block.button.url }}" class="uk-button uk-button-{{ block.button.style }} uk-button-{{ block.button.size }}"{% if block.button.blank %} target="_blank"{% endif %}>{{ block.button.text }}</a>
+              {% endif %}
             </div>
           </div>
         </div>
@@ -45,6 +48,9 @@
             <div class="uk-card-body">
               <h3 class="{% if block.icon != empty %}uk-card-title{% else %}uk-h2{% endif %}">{{ block.title }}</h3>
               {{ block.content | markdownify }}
+              {% if block.button.url != empty %}
+                <a href="{{ block.button.url }}" class="uk-button uk-button-{{ block.button.style }} uk-button-{{ block.button.size }}"{% if block.button.blank %} target="_blank"{% endif %}>{{ block.button.text }}</a>
+              {% endif %}
             </div>
           </div>
         </div>
@@ -67,7 +73,7 @@
             {{ block.content | markdownify }}
             {% if block.button.url != empty %}
               <a href="{{ block.button.url }}" class="uk-button uk-button-{{ block.button.style }} uk-button-{{ block.button.size }}"{% if block.button.blank %} target="_blank"{% endif %}>{{ block.button.text }}</a>
-            {% endif %}{{block.button}}
+            {% endif %}
           </div>
         </div>
       {% endif %}
