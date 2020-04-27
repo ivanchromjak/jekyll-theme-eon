@@ -12,7 +12,7 @@ sections:
     image: ''
     video: ''
     overlay_color: ''
-  size: medium
+  size: large
   container: medium
   remove_padding: none
   column_one:
@@ -31,8 +31,8 @@ sections:
     video: ''
   column_two: []
   height: false
-  id: ''
-  class: ''
+  id: ss
+  class: dddd
 - template: section
   columns: one
   background:
