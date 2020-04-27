@@ -46,7 +46,14 @@ sections:
   size: medium
   container: medium
   remove_padding: none
-  column_one: []
+  column_one:
+  - template: block-button
+    block: button
+    text: Text
+    style: primary-outline
+    size: large
+    url: "#"
+    blank: false
   column_two: []
   height: false
   id: ''
