@@ -226,6 +226,15 @@ fields:
       schema:
         format: markdown
     label: Content
+  - name: blocks
+    type: blocks
+    label: Blocks
+    template_types:
+    - block-button
+    - cards
+    config:
+      min: 
+      max: 
   label: Container One
   description: Contain shows when Layout setting above is set to 1-1, 1-2, 1-3 or
     5-6
