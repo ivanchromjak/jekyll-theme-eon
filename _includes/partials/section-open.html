@@ -1,25 +1,25 @@
-<div{% if section.section.id %} id="{{ section.section.id }}"{% endif %} class="uk-cover-container{% if section.section.background == 'muted' or section.section.background == 'secondary' or section.section.background == 'primary' %} uk-section-{{ section.section.background }}{% if include.card_style %} uk-preserve-color{% endif %}{% endif %}{% if section.section.image %} uk-background-cover uk-background-{{ section.section.image_align | default: 'center-center' }}{% endif %}{% if section.section.class %} {{ section.section.class }}{% endif %}" 
-  style="{% if section.section.background == 'custom' %}background-color: {{ section.section.background_color }};{% endif %}" 
-  {% if section.section.image %} data-src="{{ section.section.image | absolute_url }}" data-uk-img{% endif %}>
-  {%- if section.section.video != empty -%}
+<div{% if section.id %} id="{{ section.id }}"{% endif %} class="uk-cover-container{% if section.background.style == 'muted' or section.background.style == 'secondary' or section.background.style == 'primary' %} uk-section-{{ section.background.style }}{% endif %}{% if section.background.image %} uk-background-cover uk-background-{{ section.background.image_align | default: 'center-center' }}{% endif %}{% if section.class %} {{ section.class }}{% endif %}" 
+  style="{% if section.background.style == 'custom' %}background-color: {{ section.background.color }};{% endif %}" 
+  {% if section.background.image %} data-src="{{ section.background.image | absolute_url }}" data-uk-img{% endif %}>
+  {%- if section.background.video != empty -%}
     <video autoplay loop muted playsinline data-uk-cover data-uk-video="autoplay: inview">
-      <source src="{% if section.section.video contains 'http' %}{{ section.section.video }}{% else %}{{ site.uploads | absolute_url }}{{ section.section.video }}{% endif %}" type="video/mp4">
+      <source src="{% if section.background.video contains 'http' %}{{ section.background.video }}{% else %}{{ site.uploads | absolute_url }}{{ section.background.video }}{% endif %}" type="video/mp4">
     </video>
   {%- endif -%}
-  {% if section.section.overlay_color != empty %}
-    <div class="uk-position-cover" style="background: {{ section.section.overlay_color }}; opacity: {{ section.section.overlay_opacity | default: '0.6' }}"></div>
+  {% if section.background.overlay_color != empty %}
+    <div class="uk-position-cover" style="background: {{ section.background.overlay_color }}; opacity: {{ section.background.overlay_opacity | default: '0.6' }}"></div>
   {%- endif -%}
-    <div class="uk-section uk-section-{{ section.section.size | default: 'medium' }}{% if section.section.padding_remove %} uk-padding-remove-{{ section.section.padding_remove }}{% endif %}{% if section.section.height %} uk-flex uk-flex-middle{% endif %}" 
-      {% if section.section.height %} data-uk-height-viewport{% endif %}>
-      <div class="{% unless section.section.container == 'none' %}uk-container{% endunless %}{% if section.section.container %} uk-container-{{ section.section.container | default: 'none' }}{% endif %} uk-position-relative">
-        {%- if section.section.title != empty or section.section.subtitle != empty -%}
-          <div class="section-title-{{ section.section.header_align | default: 'left' }}{% if section.section.size == 'large' %} uk-margin-large-bottom{% else %} uk-margin-medium-bottom{% endif %}{% if section.section.header_color_light %} uk-light{% endif %}">  
-            {%- if section.section.title != empty -%}
-              <h2 class="section-title uk-margin-remove uk-text-{{ section.section.header_align | default: 'left' }}">{{ section.section.title }}</h2>
+    <div class="uk-section uk-section-{{ section.size | default: 'medium' }}{% if section.padding_remove %} uk-padding-remove-{{ section.padding_remove }}{% endif %}{% if section.height %} uk-flex uk-flex-middle{% endif %}" 
+      {% if section.height %} data-uk-height-viewport{% endif %}>
+      <div class="{% unless section.container == 'none' %}uk-container{% endunless %}{% if section.container %} uk-container-{{ section.container | default: 'none' }}{% endif %} uk-position-relative">
+        {%- if section.title != empty or section.subtitle != empty -%}
+          <div class="section-title-{{ section.header_align | default: 'left' }}{% if section.size == 'large' %} uk-margin-large-bottom{% else %} uk-margin-medium-bottom{% endif %}{% if section.header_color_light %} uk-light{% endif %}">  
+            {%- if section.title != empty -%}
+              <h2 class="section-title uk-margin-remove uk-text-{{ section.header_align | default: 'left' }}">{{ section.title }}</h2>
             {%- endif -%}
-            {%- if section.section.subtitle != empty -%}
-              <p class="uk-margin-small-top uk-margin-remove-bottom uk-text-lead uk-text-{{ section.section.header_align | default: 'left' }}">{{ section.section.subtitle | escape }}</p>
+            {%- if section.subtitle != empty -%}
+              <p class="uk-margin-small-top uk-margin-remove-bottom uk-text-lead uk-text-{{ section.header_align | default: 'left' }}">{{ section.subtitle | escape }}</p>
             {%- endif -%}
           </div>
         {%- endif -%}
-          <div class="{% if section.section.content_align %} uk-text-{{ section.section.content_align }}{% endif %}{% if section.section.content_color_light %} uk-light{% endif %}">
+          <div class="{% if section.content_align %} uk-text-{{ section.content_align }}{% endif %}{% if section.content_color_light %} uk-light{% endif %}">

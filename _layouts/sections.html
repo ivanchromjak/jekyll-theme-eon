@@ -2,12 +2,12 @@
 layout: default
 ---
 
-{% for section in page.sections %}{{section}}
-  {%- if section.section.is_section -%}
-    {% include partials/section-open.html %}
-  {%- endif -%}
-  {% include block-{{ section.block }}.html %}
-  {%- if section.section.is_section -%}
-    {% include partials/section-close.html %}
-  {%- endif -%}
+{% for section in page.sections %}
+  {% include partials/section-open.html %}
+
+  {% for block in section.column_one %}{{block}}
+    {% include block-{{ block.block }}.html %}
+  {% endfor %}
+
+  {% include partials/section-close.html %}
 {% endfor %}

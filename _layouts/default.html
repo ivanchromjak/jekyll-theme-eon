@@ -13,7 +13,7 @@
     {% assign sidebar_left = page.sidebar.left %}
     {% assign sidebar_right = page.sidebar.right %}
 
-    {% if width == 'full' or page.layout == 'blocks' %}
+    {% if width == 'full' or page.layout == 'sections' %}
       {{ content }}
     {% else %}
       <div class="uk-section{% if page.section %} uk-section-{{ page.section }}{% endif %}">
