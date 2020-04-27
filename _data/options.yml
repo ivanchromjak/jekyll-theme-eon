@@ -12,7 +12,7 @@ base:
     transparent: false
     transparent_light_color: false
   footer:
-    layout: columns
+    layout: center
     style: secondary
     social_networks: true
 layout: options
