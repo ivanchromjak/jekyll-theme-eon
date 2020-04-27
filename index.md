@@ -70,22 +70,46 @@ sections:
       * Access for Two Devices
       * 30-Days Free Trial
     haeding: "$99"
+    button:
+      text: Buy Now
+      url: "#"
+      style: primary-outline
+      size: medium
+      blank: true
   - icon: "/uploads/icons/ios-youtube.svg"
     image: ''
     title: hgjhg
     content: hjghjgjhgjh
     haeding: ''
+    button:
+      text: ''
+      url: ''
+      style: ''
+      size: ''
+      blank: false
   - icon: "/uploads/icons/ios-slack.svg"
     content: Synergistically conceptualize an expanded array of meta-services vis-a-vis
       cross-media synergy.
     title: Card 1
     image: ''
     haeding: ''
+    button:
+      text: ''
+      url: ''
+      style: ''
+      size: ''
+      blank: false
   - icon: "/uploads/icons/ios-visa.svg"
     title: Card 2
     content: Dynamically revolutionize intuitive synergy before revolutionary
     image: ''
     haeding: ''
+    button:
+      text: ''
+      url: ''
+      style: ''
+      size: ''
+      blank: false
   blocks: ''
   media: right
   style: default
@@ -125,6 +149,12 @@ sections:
     title: ghjghjg
     content: " htrjt jtjuyju uj ujyt ujuj"
     haeding: ''
+    button:
+      text: ''
+      url: ''
+      style: ''
+      size: ''
+      blank: false
   - icon: ''
     image: "/uploads/card-1.jpeg"
     title: dfgfd gd f dfg d
@@ -133,6 +163,12 @@ sections:
 
       {% include button.html text="Join Us" url="#" style="default" %}
     haeding: ''
+    button:
+      text: ''
+      url: ''
+      style: ''
+      size: ''
+      blank: false
   icon_color: ''
   icon_size: 
 layout: blocks
