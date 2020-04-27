@@ -12,7 +12,7 @@
     <div class="uk-section uk-section-{{ section.size | default: 'medium' }}{% if section.padding_remove %} uk-padding-remove-{{ section.padding_remove }}{% endif %}{% if section.height %} uk-flex uk-flex-middle{% endif %}" 
       {% if section.height %} data-uk-height-viewport{% endif %}>
       <div class="{% unless section.container == 'none' %}uk-container{% endunless %}{% if section.container %} uk-container-{{ section.container | default: 'none' }}{% endif %} uk-position-relative">
-        {%- if section.title != empty or section.subtitle != empty -%}
+        <!-- {%- if section.title != empty or section.subtitle != empty -%}
           <div class="section-title-{{ section.header_align | default: 'left' }}{% if section.size == 'large' %} uk-margin-large-bottom{% else %} uk-margin-medium-bottom{% endif %}{% if section.header_color_light %} uk-light{% endif %}">  
             {%- if section.title != empty -%}
               <h2 class="section-title uk-margin-remove uk-text-{{ section.header_align | default: 'left' }}">{{ section.title }}</h2>
@@ -21,5 +21,5 @@
               <p class="uk-margin-small-top uk-margin-remove-bottom uk-text-lead uk-text-{{ section.header_align | default: 'left' }}">{{ section.subtitle | escape }}</p>
             {%- endif -%}
           </div>
-        {%- endif -%}
+        {%- endif -%} -->
           <div class="{% if section.content_align %} uk-text-{{ section.content_align }}{% endif %}{% if section.content_color_light %} uk-light{% endif %}">

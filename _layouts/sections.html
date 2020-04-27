@@ -5,7 +5,7 @@ layout: default
 {% for section in page.sections %}
   {% include partials/section-open.html %}
 
-  {% for block in section.column_one %}{{block}}
+  {% for block in section.column_one %}
     {% include block-{{ block.block }}.html %}
   {% endfor %}
 
