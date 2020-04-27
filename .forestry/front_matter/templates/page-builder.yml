@@ -8,7 +8,7 @@ fields:
     required: false
   label: Layout
   hidden: true
-  default: blocks
+  default: builder
 - name: title
   type: text
   config:
@@ -24,7 +24,7 @@ fields:
     min: 
     max: 
 pages:
-- a-test.md
+- b-page.md
 - footers.md
 - headers.md
 - index.md
