@@ -49,46 +49,6 @@ fields:
   showOnly:
     field: is_section
     value: true
-- name: image
-  type: file
-  config:
-    maxSize: 
-  label: Background Image
-  showOnly:
-    field: is_section
-    value: true
-- name: image_align
-  type: select
-  default: center-center
-  config:
-    required: false
-    options:
-    - top-left
-    - top-center
-    - top-right
-    - center-left
-    - center-center
-    - center-right
-    - bottom-left
-    - bottom-center
-    - bottom-right
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Background Image Align
-  showOnly:
-    field: is_section
-    value: true
-- name: video
-  type: text
-  config:
-    required: false
-  label: Background Video
-  showOnly:
-    field: is_section
-    value: true
 - name: overlay_opacity
   type: number
   label: Background Overlay Opacity
@@ -184,4 +144,25 @@ fields:
         file: 
         path: 
     label: Image Align
+  - name: video
+    type: text
+    config:
+      required: false
+    label: Video
+  - name: overlay_color
+    type: color
+    label: Overlay Color
+    config:
+      required: false
+      color_format: Hex
+  - name: overlay_opacity
+    type: number
+    label: Overlay Opacity
+    description: ''
+    default: 0.6
+    required: true
+    config:
+      min: 0
+      max: 1
+      step: 0.1
   label: Background
