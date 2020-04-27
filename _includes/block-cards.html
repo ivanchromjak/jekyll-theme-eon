@@ -49,7 +49,7 @@
           </div>
         </div>
       {% else %}
-        <div class="uk-card{% if section.style != empty %} uk-card-{{ section.style }}{% endif %}{% if block.icon != empty %} card-icon{% endif %}{% if section.card_type == 'pricing' %} card-pricing{% endif %}">
+        <div class="uk-card{% if section.style != empty %} uk-card-{{ section.style }}{% endif %}{% if block.icon != empty %} card-icon{% endif %}{% if section.heading != empty %} card-pricing{% endif %}">
           {% if block.icon != empty or block.image != empty %}
             <div class="uk-card-media-top{% if block.icon != empty and section.style != empty %} uk-padding uk-padding-remove-bottom{% endif %}"{% if section.icon_color != empty %} style="color: {{ section.icon_color }}"{% endif %}>
               {% if block.icon != empty %}
@@ -65,6 +65,9 @@
               <h4 class="uk-heading-medium">{{ block.heading }}</h4>
             {% endif %}
             {{ block.content | markdownify }}
+            {% if section.button.url != empty %}
+              <a href="{{ section.button.url }}" class="uk-button uk-button-{{ section.button.style }} uk-button-{{ section.button.size }}"{% if section.button.blank %} target="_blank"{% endif %}>{{ section.button.text }}</a>
+            {% endif %}
           </div>
         </div>
       {% endif %}
