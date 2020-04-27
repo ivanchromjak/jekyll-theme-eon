@@ -150,9 +150,10 @@ sections:
   cards:
   - icon: ''
     image: ''
-    title: Host for free
-    haeding: ''
-    content: Jekyll site can be hosted completely free on GitHub or Gitlab pages.
+    title: Blazing fast
+    haeding: Static sites are faster, nearly half of all visitors leave a site if
+      not loaded in three seconds.
+    content: ''
     button:
       text: Text
       style: primary
@@ -175,10 +176,9 @@ sections:
     heading: ''
   - icon: ''
     image: ''
-    title: Blazing fast
-    haeding: Static sites are faster, nearly half of all visitors leave a site if
-      not loaded in three seconds.
-    content: ''
+    title: Host for free
+    haeding: ''
+    content: Jekyll site can be hosted completely free on GitHub or Gitlab pages.
     button:
       text: Text
       style: primary
