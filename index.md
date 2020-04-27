@@ -165,7 +165,7 @@ sections:
   layout: center
   button:
     text: Purchase
-    style: primary
+    style: success
     url: https://themeforest.net/item/eon-multipurpose-responsive-jekyll-theme/24065900
     blank: true
   animation: slide-bottom
