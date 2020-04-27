@@ -43,7 +43,7 @@ sections:
     is_section: true
     size: large
     container: medium
-    background: muted
+    background: default
     image_align: center-center
     overlay_opacity: 0.7
     header_align: center
@@ -60,35 +60,6 @@ sections:
     id: ''
     class: ''
   cards:
-  - icon: "/uploads/icons/ios-work.svg"
-    image: ''
-    title: kjhkjhkj
-    content: |-
-      kjhjk hjkhjkhjkh jkh kjhjk jkhjk
-
-      * Access to Video Courses
-      * Access for Two Devices
-      * 30-Days Free Trial
-    haeding: "$99"
-    button:
-      text: Buy Now
-      url: "#"
-      style: primary-outline
-      size: medium
-      blank: true
-    heading: '99'
-  - icon: "/uploads/icons/ios-youtube.svg"
-    image: ''
-    title: hgjhg
-    content: hjghjgjhgjh
-    haeding: ''
-    button:
-      text: ''
-      url: ''
-      style: ''
-      size: ''
-      blank: false
-    heading: ''
   - icon: "/uploads/icons/ios-slack.svg"
     content: Synergistically conceptualize an expanded array of meta-services vis-a-vis
       cross-media synergy.
@@ -116,11 +87,11 @@ sections:
     heading: ''
   blocks: ''
   media: top
-  style: default
-  grid: 1-3
+  style: none
+  grid: 1-4
   gutter: small
-  icon_color: "#9412AF"
-  icon_size: '100'
+  icon_color: "#1B33BF"
+  icon_size: 
 - template: cards
   block: cards
   media: none
