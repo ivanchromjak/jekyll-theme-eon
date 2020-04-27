@@ -164,11 +164,11 @@ sections:
   block: call-to-action
   layout: center
   button:
-    text: Text
+    text: Purchase
     style: primary
-    url: ''
-    blank: false
-  animation: none
+    url: https://themeforest.net/item/eon-multipurpose-responsive-jekyll-theme/24065900
+    blank: true
+  animation: slide-bottom
   section:
     is_section: true
     size: large
@@ -189,8 +189,9 @@ sections:
     content_color_light: false
     id: ''
     class: ''
-  title: ''
-  subtitle: ''
+  title: Create your new website today!
+  subtitle: Experience the advatages and peace of mind of running a static Jekyll
+    site. Save time and concentrate an what is the most important, your business.
   content: ''
   video: ''
 layout: blocks
