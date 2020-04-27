@@ -25,6 +25,16 @@ fields:
   config:
     min: 
     max: 
+- name: section
+  type: include
+  config: {}
+  template: section
+  label: Section
+- name: header
+  type: include
+  config: {}
+  template: header
+  label: Header
 pages:
 - footers.md
 - headers.md
