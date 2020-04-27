@@ -2,6 +2,13 @@
 label: Icon
 hide_body: true
 fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: icon
 - name: icon
   type: file
   config:
@@ -28,10 +35,3 @@ fields:
   config:
     required: false
   label: Url
-- name: block
-  type: text
-  config:
-    required: false
-  label: Block
-  hidden: true
-  default: icon
