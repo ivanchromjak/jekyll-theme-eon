@@ -9,6 +9,11 @@ fields:
   label: Layout
   hidden: true
   default: blocks
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
 - name: section
   type: blocks
   label: Sections
