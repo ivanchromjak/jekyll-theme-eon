@@ -128,6 +128,7 @@ fields:
     - medium
     - large
     - xlarge
+    - expand
     source:
       type: simple
       section: 
