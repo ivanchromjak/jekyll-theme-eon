@@ -158,4 +158,30 @@ fields:
     showOnly:
       field: style
       value: custom
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
+  - name: image_align
+    type: select
+    default: center-center
+    config:
+      required: false
+      options:
+      - top-left
+      - top-center
+      - top-right
+      - center-left
+      - center-center
+      - center-right
+      - bottom-left
+      - bottom-center
+      - bottom-right
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Image Align
   label: Background
