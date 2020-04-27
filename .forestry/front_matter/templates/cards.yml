@@ -12,26 +12,16 @@ fields:
 - name: cards
   type: field_group_list
   fields:
-  - name: icon
-    type: file
-    config:
-      maxSize: 64
-    label: Icon
-  - name: image
-    type: file
-    config:
-      maxSize: 64
-    label: Image
   - name: title
     type: text
     config:
       required: false
     label: Title
-  - name: haeding
+  - name: heading
     type: text
     config:
       required: false
-    label: Haeding
+    label: Heading
     description: Large text, suitable for pricing table price.
   - name: content
     type: textarea
@@ -42,6 +32,16 @@ fields:
       schema:
         format: markdown
     label: Content
+  - name: icon
+    type: file
+    config:
+      maxSize: 64
+    label: Icon
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
   - name: button
     type: field_group
     config: {}
