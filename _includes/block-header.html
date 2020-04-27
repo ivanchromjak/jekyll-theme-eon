@@ -86,6 +86,9 @@
                   {{ section.container_one.content | markdownify }}
                 {% endif %}
               </div>
+              {% for section in section.container_one.blocks %}
+                <div class="uk-margin-medium-top">{% include block-{{ section.block }}.html %}</div>
+              {% endfor %}
             {% endif %}
           </div>
         </div>

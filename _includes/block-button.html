@@ -1,0 +1,6 @@
+{% if section.url contains 'http' %}
+    {% assign domain = '' %}
+{% else %}
+    {% assign domain = '' | absolute_url %}
+{% endif %}
+<a class="uk-button{% unless section.style contains '#' or section.style contains 'rbg' %} uk-button-{{ section.style | default: 'default' }}{% endunless %}{% if section.size %} uk-button-{{ section.size }}{% endif %}{% if section.style contains '#' or section.style contains 'rbg' %} opacity{% endif %}{% if section.width == 'full' %} uk-width-1-1{% endif %}" href="{{ domain }}{{ section.url }}" {% if section.style contains '#' or section.style contains 'rbg' %} style="background: {{ section.style }}; color: #fff;"{% endif %}{% if section.blank %} target="_blank" rel="noopener"{% endif %}>{% if section.icon %}<span data-uk-icon="{{ section.icon }}"></span> {% endif %}{{ section.text | default: 'Text' }}</a>
