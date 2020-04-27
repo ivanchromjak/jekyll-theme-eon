@@ -2,6 +2,43 @@
 label: Section
 hide_body: true
 fields:
+- name: columns
+  type: select
+  default: one
+  config:
+    required: false
+    options:
+    - one
+    - two
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Number of Columns
+- name: column_one
+  type: blocks
+  label: Column One
+  template_types:
+  - block-button
+  - cards
+  - call-to-action
+  config:
+    min: 
+    max: 
+- name: column_two
+  type: blocks
+  label: Column Two
+  template_types:
+  - block-button
+  - cards
+  - call-to-action
+  config:
+    min: 
+    max: 
+  showOnly:
+    field: columns
+    value: two
 - name: background
   type: field_group
   config: {}
