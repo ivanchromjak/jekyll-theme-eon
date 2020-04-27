@@ -173,7 +173,7 @@ sections:
     is_section: true
     size: large
     container: small
-    background: secondary
+    background: default
     image_align: center-center
     overlay_opacity: '0.5'
     header_align: left
