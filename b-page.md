@@ -57,7 +57,7 @@ sections:
       style: warning
       url: "#"
       blank: false
-    animation: none
+    animation: slide-bottom
     title: dh hgfhfhf
     subtitle: h fhfhfh f
     content: h fh fh fh
