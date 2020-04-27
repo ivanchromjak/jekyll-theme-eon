@@ -5,9 +5,27 @@ layout: default
 {% for section in page.sections %}
   {% include partials/section-open.html %}
 
-  {% for block in section.column_one %}
-    {% include block-{{ block.block }}.html %}
-  {% endfor %}
-
+  {% if section.columns == 'one' %}
+    {% for block in section.column_one %}
+      {% include block-{{ block.block }}.html %}
+    {% endfor %}
+  {% else %}
+    <div class="uk-grid-large uk-flex- uk-flex-middle- uk-flex-center@m-" data-uk-grid>
+      <div class="uk-width-expand@m">
+        <div>
+          {% for block in section.column_one %}
+            {% include block-{{ block.block }}.html %}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="uk-width-{{ section.grid | default: '1-3' }}@m">
+        <div>
+          {% for block in section.column_two %}
+            {% include block-{{ block.block }}.html %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
   {% include partials/section-close.html %}
 {% endfor %}
