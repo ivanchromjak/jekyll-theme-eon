@@ -186,7 +186,7 @@ sections:
     background_color: "#000000"
     video: ''
     header_color_light: false
-    content_color_light: false
+    content_color_light: true
     id: ''
     class: ''
   title: Create your new website today!
