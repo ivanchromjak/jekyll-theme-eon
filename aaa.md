@@ -33,6 +33,5 @@ sections:
   height: false
   id: ''
   class: ''
-published: false
 
 ---
