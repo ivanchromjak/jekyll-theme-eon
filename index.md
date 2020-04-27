@@ -173,7 +173,7 @@ sections:
     is_section: true
     size: large
     container: small
-    background: default
+    background: custom
     image_align: center-center
     overlay_opacity: '0.5'
     header_align: left
@@ -183,7 +183,7 @@ sections:
     title: ''
     subtitle: ''
     height: false
-    background_color: ''
+    background_color: "#000000"
     video: ''
     header_color_light: false
     content_color_light: false
