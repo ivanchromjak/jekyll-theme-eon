@@ -33,6 +33,8 @@ sections:
   height: false
   id: ss
   class: dddd
+  grid: ''
+  vertical_align_middle: false
 - template: section
   columns: two
   background:
@@ -73,10 +75,15 @@ sections:
     animation: none
     title: xggfdg
     subtitle: dfgdfg
-    content: gdgdfgdg
+    content: |-
+      Compellingly build quality action items through transparent mindshare. Phosfluorescently implement e-business innovation via multidisciplinary total linkage. Credibly underwhelm highly efficient innovation through collaborative mindshare. Compellingly disintermediate leveraged e-tailers for next-generation vortals. Synergistically re-engineer economically sound results for scalable leadership.
+
+      Competently pursue virtual manufactured products for optimal e-commerce. Competently network excellent data before focused niche markets. Competently revolutionize long-term high-impact e-business whereas resource maximizing action items. Conveniently re-engineer tactical value before holistic innovation. Appropriately transition end-to-end infomediaries with proactive leadership skills.
     video: ''
   height: false
   id: ''
   class: ''
+  grid: 1-2
+  vertical_align_middle: true
 
 ---
