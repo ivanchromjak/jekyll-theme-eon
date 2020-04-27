@@ -54,6 +54,13 @@ sections:
     size: large
     url: "#"
     blank: false
+  - template: block-button
+    block: button
+    text: Text2
+    style: primary
+    size: large
+    url: "#"
+    blank: false
   column_two: []
   height: false
   id: ''
