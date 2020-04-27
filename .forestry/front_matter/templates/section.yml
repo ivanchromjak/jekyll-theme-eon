@@ -101,12 +101,6 @@ fields:
     field: is_section
     value: true
   description: Top and bottom padding.
-- name: height
-  type: boolean
-  label: Viewport Height
-  showOnly:
-    field: is_section
-    value: true
 - name: container
   type: select
   default: medium
@@ -125,6 +119,12 @@ fields:
       file: 
       path: 
   label: Container
+  showOnly:
+    field: is_section
+    value: true
+- name: height
+  type: boolean
+  label: Viewport Height
   showOnly:
     field: is_section
     value: true
