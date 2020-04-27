@@ -1,4 +1,64 @@
 ---
 label: Block Button
 hide_body: true
-fields: []
+fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  default: button
+  hidden: true
+- name: text
+  type: text
+  config:
+    required: false
+  label: Text
+  default: Text
+- name: url
+  type: text
+  config:
+    required: false
+  label: Url
+- name: style
+  type: select
+  default: primary
+  config:
+    required: false
+    options:
+    - default
+    - primary
+    - secondary
+    - success
+    - warning
+    - danger
+    - primary-outline
+    - success-outline
+    - warning-outline
+    - danger-outline
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Style
+- name: size
+  type: select
+  default: regular
+  config:
+    required: false
+    options:
+    - small
+    - regular
+    - medium
+    - large
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Size
+- name: blank
+  type: boolean
+  label: Blank
+  description: Open link in a new window.
