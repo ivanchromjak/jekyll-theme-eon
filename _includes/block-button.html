@@ -1,6 +1,6 @@
-{% if section.url contains 'http' %}
+{% if block.url contains 'http' %}
     {% assign domain = '' %}
 {% else %}
     {% assign domain = '' | absolute_url %}
 {% endif %}
-<a class="uk-button{% unless section.style contains '#' or section.style contains 'rbg' %} uk-button-{{ section.style | default: 'default' }}{% endunless %}{% if section.size %} uk-button-{{ section.size }}{% endif %}{% if section.style contains '#' or section.style contains 'rbg' %} opacity{% endif %}{% if section.width == 'full' %} uk-width-1-1{% endif %}" href="{{ domain }}{{ section.url }}" {% if section.style contains '#' or section.style contains 'rbg' %} style="background: {{ section.style }}; color: #fff;"{% endif %}{% if section.blank %} target="_blank" rel="noopener"{% endif %}>{% if section.icon %}<span data-uk-icon="{{ section.icon }}"></span> {% endif %}{{ section.text | default: 'Text' }}</a>
+<a class="uk-button{% unless block.style contains '#' or block.style contains 'rbg' %} uk-button-{{ block.style | default: 'default' }}{% endunless %}{% if block.size %} uk-button-{{ block.size }}{% endif %}{% if block.style contains '#' or block.style contains 'rbg' %} opacity{% endif %}{% if block.width == 'full' %} uk-width-1-1{% endif %}" href="{{ domain }}{{ block.url }}" {% if block.style contains '#' or block.style contains 'rbg' %} style="background: {{ block.style }}; color: #fff;"{% endif %}{% if block.blank %} target="_blank" rel="noopener"{% endif %}>{% if block.icon %}<span data-uk-icon="{{ block.icon }}"></span> {% endif %}{{ block.text | default: 'Text' }}</a>
