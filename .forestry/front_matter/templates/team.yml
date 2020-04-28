@@ -1,4 +1,17 @@
 ---
 label: Team
 hide_body: true
-fields: []
+fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  default: team
+  hidden: true
+- name: authors
+  type: text
+  config:
+    required: false
+  label: Authors
+  description: A comma-separated list of authors, leave blank to display all authors.
