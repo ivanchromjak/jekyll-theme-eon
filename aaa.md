@@ -16,6 +16,9 @@ sections:
   container: medium
   remove_padding: none
   column_one:
+  - template: title-h2
+    block: h2
+    title: This a section title
   - template: call-to-action
     block: call-to-action
     layout: center

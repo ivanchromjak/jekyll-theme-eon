@@ -24,6 +24,7 @@ fields:
   - cards
   - call-to-action
   - icon
+  - title-h2
   config:
     min: 
     max: 
@@ -35,6 +36,7 @@ fields:
   - cards
   - call-to-action
   - icon
+  - title-h2
   config:
     min: 
     max: 
