@@ -1,4 +1,11 @@
 ---
 label: Mailchimp
 hide_body: true
-fields: []
+fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: mailchimp
