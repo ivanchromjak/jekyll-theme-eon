@@ -632,6 +632,10 @@
 
 @mixin hook-utility-misc(){
 
+  .uk-text-spacing-medium {
+    letter-spacing: 1.8px;
+  }
+
   .line-height-medium {
     line-height: 1.7;
   }
