@@ -197,5 +197,39 @@ sections:
   height: false
   id: ''
   class: ''
+- template: section
+  columns: one
+  grid: 1-2
+  horizontal_align: left
+  vertical_align: top
+  background:
+    style: primary
+    image_align: center-center
+    overlay_opacity: 0.6
+    color: ''
+    image: ''
+    video: ''
+    overlay_color: ''
+  container: medium
+  size: medium
+  remove_padding: none
+  column_one:
+  - template: videos
+    block: videos
+    icon_color: "#000000"
+    grid: 1-2
+    gutter: medium
+    card_style: default
+    videos:
+    - url: https://youtu.be/J9oEc0wCQDE
+      title: hngu uy yuk y
+      text: " hr r trhrth rt"
+    - url: https://youtu.be/J9oEc0wCQDE
+      title: 'fgdgvrth '
+      text: y yuj yuj uyj ut jyuj y
+  column_two: []
+  height: false
+  id: ''
+  class: ''
 
 ---
