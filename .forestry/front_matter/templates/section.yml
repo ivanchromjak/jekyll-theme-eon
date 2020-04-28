@@ -79,13 +79,22 @@ fields:
       section: 
       file: 
       path: 
-  label: Horizontal Alignment
-- name: vertical_align_middle
-  type: boolean
-  label: Vertical Align Middle
-  showOnly:
-    field: columns
-    value: two
+  label: Horizontal Align
+- name: vertical_align
+  type: select
+  default: top
+  config:
+    required: false
+    options:
+    - top
+    - middle
+    - bottom
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Vertical Align
 - name: background
   type: field_group
   config: {}
