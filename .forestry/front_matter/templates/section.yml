@@ -25,6 +25,9 @@ fields:
   - call-to-action
   - icon
   - title-h2
+  - text
+  - lead
+  - title-h5
   config:
     min: 
     max: 
@@ -37,6 +40,9 @@ fields:
   - call-to-action
   - icon
   - title-h2
+  - text
+  - lead
+  - title-h5
   config:
     min: 
     max: 
