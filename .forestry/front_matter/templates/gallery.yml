@@ -1,4 +1,15 @@
 ---
 label: Gallery
 hide_body: true
-fields: []
+fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: gallery
+- name: lightbox
+  type: boolean
+  label: Lightbox
+  default: true
