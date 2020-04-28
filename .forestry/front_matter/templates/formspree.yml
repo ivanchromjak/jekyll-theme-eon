@@ -9,3 +9,17 @@ fields:
   label: Block
   hidden: true
   default: formspree
+- name: layout
+  type: select
+  default: stacked
+  config:
+    required: false
+    options:
+    - horizontal
+    - stacked
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Layout
