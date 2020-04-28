@@ -39,3 +39,9 @@ fields:
   label: Subject
   description: Display a subject field.
   default: true
+- name: redirect
+  type: text
+  config:
+    required: false
+  label: Redirect
+  description: Redirect to thank you page e.g. <strong>/thanks/</strong>
