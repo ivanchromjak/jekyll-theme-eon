@@ -1,4 +1,17 @@
 ---
 label: Faq
 hide_body: true
-fields: []
+fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: faq
+- name: category
+  type: text
+  config:
+    required: false
+  label: Category
+  description: Enter faq category tag
