@@ -250,8 +250,3 @@ fields:
   config:
     required: false
   label: Class
-- name: xxxx
-  type: include
-  config: {}
-  template: blocks
-  label: xxxx
