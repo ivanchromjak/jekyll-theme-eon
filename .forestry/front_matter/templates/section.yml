@@ -61,7 +61,7 @@ fields:
       section: 
       file: 
       path: 
-  label: Container Two Width
+  label: Column Two Width
   showOnly:
     field: columns
     value: two
