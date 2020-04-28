@@ -306,5 +306,139 @@ sections:
   height: false
   id: ''
   class: ''
+- template: section
+  columns: one
+  grid: 1-2
+  horizontal_align: left
+  vertical_align: top
+  background:
+    style: default
+    image_align: center-center
+    overlay_opacity: 0.6
+    color: ''
+    image: ''
+    video: ''
+    overlay_color: ''
+  container: medium
+  size: medium
+  remove_padding: none
+  column_one:
+  - template: portfolio
+    block: portfolio
+    filter: true
+    title: image
+    grid: 1-3
+    gutter: medium
+    topic: ''
+  column_two: []
+  height: false
+  id: ''
+  class: ''
+- template: section
+  columns: one
+  grid: 1-2
+  horizontal_align: left
+  vertical_align: top
+  background:
+    style: muted
+    image_align: center-center
+    overlay_opacity: 0.6
+    color: ''
+    image: ''
+    video: ''
+    overlay_color: ''
+  container: medium
+  size: medium
+  remove_padding: none
+  column_one:
+  - template: mailchimp
+    block: mailchimp
+  column_two: []
+  height: false
+  id: ''
+  class: ''
+- template: section
+  columns: one
+  grid: 1-2
+  horizontal_align: left
+  vertical_align: top
+  background:
+    style: default
+    image_align: center-center
+    overlay_opacity: 0.6
+    color: ''
+    image: ''
+    video: ''
+    overlay_color: ''
+  container: medium
+  size: medium
+  remove_padding: none
+  column_one:
+  - template: instagram
+    block: instagram
+    count: 6
+    grid: 1-3
+    gutter: medium
+  column_two: []
+  height: false
+  id: ''
+  class: ''
+- template: section
+  columns: one
+  grid: 1-2
+  horizontal_align: left
+  vertical_align: top
+  background:
+    style: default
+    image_align: center-center
+    overlay_opacity: 0.6
+    color: ''
+    image: ''
+    video: ''
+    overlay_color: ''
+  container: medium
+  size: medium
+  remove_padding: none
+  column_one:
+  - template: gallery
+    block: gallery
+    lightbox: true
+    grid: 1-3
+    gutter: medium
+    images:
+    - "/uploads/image5.jpg"
+    - "/uploads/image7.jpg"
+  column_two: []
+  height: false
+  id: ''
+  class: ''
+- template: section
+  columns: one
+  grid: 1-2
+  horizontal_align: left
+  vertical_align: top
+  background:
+    style: default
+    image_align: center-center
+    overlay_opacity: 0.6
+    color: ''
+    image: ''
+    video: ''
+    overlay_color: ''
+  container: medium
+  size: medium
+  remove_padding: none
+  column_one:
+  - template: formspree
+    block: formspree
+    layout: stacked
+    name: true
+    subject: true
+    id: '878'
+    redirect: ''
+  column_two: []
+  height: false
+  id: ''
+  class: ''
 
 ---
