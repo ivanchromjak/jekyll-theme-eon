@@ -2,6 +2,12 @@
 label: Title H2
 hide_body: true
 fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  default: h2
 - name: title
   type: text
   config:
