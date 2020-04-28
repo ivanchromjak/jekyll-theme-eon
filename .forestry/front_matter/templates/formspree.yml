@@ -9,6 +9,12 @@ fields:
   label: Block
   hidden: true
   default: formspree
+- name: id
+  type: text
+  config:
+    required: false
+  label: Form ID
+  description: Formspree form ID
 - name: layout
   type: select
   default: stacked
