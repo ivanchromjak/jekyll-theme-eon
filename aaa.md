@@ -51,8 +51,8 @@ sections:
     align: center
     image: "/uploads/image1.jpg"
     alt: Alt text
-    caption: Some caption
-    lightbox: true
+    caption: ''
+    lightbox: false
   height: false
   id: ''
   class: ''
