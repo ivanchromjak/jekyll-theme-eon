@@ -76,3 +76,18 @@ fields:
 - name: dotnav
   type: boolean
   label: Dotnav
+- name: media
+  type: select
+  default: top
+  config:
+    required: false
+    options:
+    - left
+    - top
+    - right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Media
