@@ -17,11 +17,25 @@ fields:
     config:
       maxSize: 64
     label: Image
+  - name: icon
+    type: file
+    config:
+      maxSize: 64
+    label: Icon
   - name: title
     type: text
     config:
       required: false
     label: Title
+  - name: text
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Text
   config:
     min: 
     max: 
