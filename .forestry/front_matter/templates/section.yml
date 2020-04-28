@@ -242,8 +242,13 @@ fields:
   config:
     required: false
   label: Class
-- name: zzzz
-  type: include
+- name: contttt
+  type: field_group
   config: {}
-  template: blocks
-  label: zzzz
+  fields:
+  - name: blocks
+    type: include
+    config: {}
+    template: blocks
+    label: Blocks
+  label: contttt
