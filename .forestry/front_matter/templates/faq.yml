@@ -15,3 +15,7 @@ fields:
     required: false
   label: Category
   description: Enter faq category tag
+- name: multiple
+  type: boolean
+  label: Multiple
+  description: Display multiple faqs open at the same time
