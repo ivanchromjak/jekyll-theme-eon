@@ -1,4 +1,16 @@
 ---
 label: Title H5
 hide_body: true
-fields: []
+fields:
+- name: block
+  type: text
+  config:
+    required: false
+  hidden: true
+  label: Block
+  default: h5
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
