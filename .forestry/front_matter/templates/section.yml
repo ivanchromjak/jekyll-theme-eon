@@ -95,6 +95,9 @@ fields:
       file: 
       path: 
   label: Vertical Align
+  showOnly:
+    field: columns
+    value: two
 - name: background
   type: field_group
   config: {}
