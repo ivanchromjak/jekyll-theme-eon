@@ -1,0 +1,69 @@
+---
+label: Portfolio
+hide_body: true
+fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: portfolio
+- name: topic
+  type: text
+  config:
+    required: false
+  label: Topic
+  description: Enter the portfolio topic tag.
+- name: filter
+  type: boolean
+  label: Filter
+  default: true
+- name: title
+  type: select
+  default: image
+  config:
+    required: false
+    options:
+    - bellow
+    - image
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Title
+  description: Display portfolio title bellow the image or over the image hover.
+- name: grid
+  type: select
+  default: 1-3
+  config:
+    required: false
+    options:
+    - 1-1
+    - 1-2
+    - 1-3
+    - 1-4
+    - 1-5
+    - 1-6
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Grid
+- name: gutter
+  type: select
+  default: medium
+  config:
+    required: false
+    options:
+    - small
+    - medium
+    - large
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Gutter

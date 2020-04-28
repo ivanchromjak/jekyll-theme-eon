@@ -1,0 +1,95 @@
+---
+label: Videos
+hide_body: true
+fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: videos
+- name: videos
+  type: field_group_list
+  fields:
+  - name: url
+    type: text
+    config:
+      required: false
+    label: Url
+    description: Full video URL.
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: text
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Text
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Videos
+- name: icon_color
+  type: color
+  label: Icon Color
+  config:
+    required: false
+    color_format: Hex
+  default: "#000000"
+- name: grid
+  type: select
+  default: 1-3
+  config:
+    required: false
+    options:
+    - 1-1
+    - 1-2
+    - 1-3
+    - 1-4
+    - 1-5
+    - 1-6
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Grid
+- name: gutter
+  type: select
+  default: medium
+  config:
+    required: false
+    options:
+    - small
+    - medium
+    - large
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Gutter
+- name: card_style
+  type: select
+  default: default
+  config:
+    required: false
+    options:
+    - none
+    - default
+    - primary
+    - secondary
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Card Style

@@ -1,0 +1,63 @@
+---
+label: Google Map
+hide_body: true
+fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: google-map
+- name: latitude
+  type: text
+  config:
+    required: true
+  label: Latitude
+- name: longitude
+  type: text
+  config:
+    required: true
+  label: Longitude
+- name: zoom
+  type: number
+  label: Zoom
+  description: ''
+  default: 12
+  required: true
+  config:
+    min: 0
+    max: 20
+    step: 1
+    required: true
+- name: style
+  type: select
+  default: default
+  config:
+    required: false
+    options:
+    - default
+    - silver
+    - dark
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Style
+- name: height
+  type: select
+  default: xlarge
+  config:
+    required: false
+    options:
+    - small
+    - medium
+    - large
+    - xlarge
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Height

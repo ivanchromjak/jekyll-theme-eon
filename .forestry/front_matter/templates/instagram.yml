@@ -1,0 +1,54 @@
+---
+label: Instagram
+hide_body: true
+fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: instagram
+- name: count
+  type: number
+  label: Count
+  description: The number of images to display, max 20.
+  default: 6
+  required: true
+  config:
+    min: 1
+    max: 20
+    step: 1
+- name: grid
+  type: select
+  default: 1-3
+  config:
+    required: false
+    options:
+    - 1-1
+    - 1-2
+    - 1-3
+    - 1-4
+    - 1-5
+    - 1-6
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Grid
+- name: gutter
+  type: select
+  default: medium
+  config:
+    required: false
+    options:
+    - small
+    - medium
+    - large
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Gutter

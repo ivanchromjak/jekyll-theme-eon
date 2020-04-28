@@ -29,6 +29,17 @@ fields:
   - lead
   - title-h5
   - image
+  - slider
+  - videos
+  - team
+  - google-map
+  - search
+  - portfolio
+  - mailchimp
+  - instagram
+  - gallery
+  - formspree
+  - faq
   config:
     min: 
     max: 
@@ -45,6 +56,17 @@ fields:
   - lead
   - title-h5
   - image
+  - slider
+  - videos
+  - team
+  - google-map
+  - search
+  - portfolio
+  - mailchimp
+  - instagram
+  - gallery
+  - formspree
+  - faq
   config:
     min: 
     max: 

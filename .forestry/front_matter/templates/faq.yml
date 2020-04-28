@@ -1,0 +1,21 @@
+---
+label: Faq
+hide_body: true
+fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: faq
+- name: category
+  type: text
+  config:
+    required: false
+  label: Category
+  description: Enter faq category tag
+- name: multiple
+  type: boolean
+  label: Multiple
+  description: Display multiple faqs open at the same time

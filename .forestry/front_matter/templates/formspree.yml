@@ -1,0 +1,47 @@
+---
+label: Formspree
+hide_body: true
+fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: formspree
+- name: id
+  type: text
+  config:
+    required: false
+  label: Form ID
+  description: Formspree form ID
+- name: layout
+  type: select
+  default: stacked
+  config:
+    required: false
+    options:
+    - horizontal
+    - stacked
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Layout
+- name: name
+  type: boolean
+  label: Name
+  description: Display a name field.
+  default: true
+- name: subject
+  type: boolean
+  label: Subject
+  description: Display a subject field.
+  default: true
+- name: redirect
+  type: text
+  config:
+    required: false
+  label: Redirect
+  description: Redirect to thank you page e.g. <strong>/thanks/</strong>
