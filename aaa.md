@@ -45,7 +45,14 @@ sections:
     size: medium
     url: "#"
     blank: false
-  column_two: []
+  column_two:
+  - template: image
+    block: image
+    align: center
+    image: "/uploads/image1.jpg"
+    alt: Alt text
+    caption: Some caption
+    lightbox: true
   height: false
   id: ''
   class: ''
