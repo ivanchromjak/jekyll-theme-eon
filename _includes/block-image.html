@@ -1,5 +1,5 @@
 {% if block.lightbox %}
-  <figure data-uk-lightbox="animation: slide" class="uk-inline{% if block.align %} uk-align-{{ block.align }}{% endif %}">
+  <figure data-uk-lightbox="animation: slide" class="uk-inline{% if block.align != 'none' %} uk-align-{{ block.align }}{% endif %}">
     <a class="uk-inline" href="{{ block.image | absolute_url }}"{% if block.caption %} caption="{{ block.caption }}"{% endif %}>
       <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ block.image | absolute_url }}"{% if block.alt %} alt="{{ block.alt }}"{% endif %} data-uk-img>
       <div class="uk-position-center">
@@ -10,9 +10,9 @@
   </figure>
 {% else %}
   {%- if block.caption -%}
-    <figure class="uk-inline{% if block.align %} uk-align-{{ block.align }}{% endif %}">
+    <figure class="uk-inline{% if block.align != 'none' %} uk-align-{{ block.align }}{% endif %}">
   {%- endif -%}    
-    <img{% if block.align %}{% unless block.caption %} class="uk-align-{{ block.align }}"{% endunless %}{% endif %} src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ block.image | absolute_url }}"{% if block.alt %} alt="{{ block.alt }}"{% endif %} data-uk-img>
+    <img{% if block.align != 'none' %}{% unless block.caption %} class="uk-align-{{ block.align }}"{% endunless %}{% endif %} src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ block.image | absolute_url }}"{% if block.alt %} alt="{{ block.alt }}"{% endif %} data-uk-img>
     {% if block.caption %}<figcaption class="uk-overlay uk-overlay-primary uk-position-bottom-right uk-text-small">{{ block.caption }}</figcaption>{% endif %}
   {% if block.caption %}
     </figure>
