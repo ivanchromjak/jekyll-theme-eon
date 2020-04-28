@@ -9,6 +9,10 @@ fields:
   label: Block
   hidden: true
   default: gallery
+- name: images
+  type: image_gallery
+  config: {}
+  label: Images
 - name: lightbox
   type: boolean
   label: Lightbox
