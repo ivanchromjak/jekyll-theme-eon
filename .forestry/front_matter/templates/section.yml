@@ -28,6 +28,7 @@ fields:
   - text
   - lead
   - title-h5
+  - image
   config:
     min: 
     max: 
@@ -43,6 +44,7 @@ fields:
   - text
   - lead
   - title-h5
+  - image
   config:
     min: 
     max: 
