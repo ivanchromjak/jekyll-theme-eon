@@ -1,4 +1,19 @@
 ---
 label: Blocks
 hide_body: true
-fields: []
+fields:
+- name: blocks
+  type: blocks
+  label: Blocks
+  template_types:
+  - call-to-action
+  - cards
+  - block-button
+  - icon
+  - text
+  - lead
+  - title-h5
+  - title-h2
+  config:
+    min: 
+    max: 
