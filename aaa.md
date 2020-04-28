@@ -3,6 +3,38 @@ layout: sections
 title: aaa
 sections:
 - template: section
+  columns: two
+  grid: 1-2
+  horizontal_align: left
+  vertical_align: top
+  background:
+    style: muted
+    image_align: center-center
+    overlay_opacity: 0.6
+    color: ''
+    image: ''
+    video: ''
+    overlay_color: ''
+  container: medium
+  size: medium
+  remove_padding: none
+  column_one:
+  - template: title-h5
+    block: h5
+    title: Featured
+  - template: title-h2
+    block: h2
+    title: Lorem Ipsoom
+  - template: text
+    block: text
+    text: Dramatically deliver multimedia based synergy with cross-unit materials.
+      Interactively negotiate web-enabled methods of empowerment via web-enabled relationships.
+      Uniquely build market positioning models with integrated initiatives.
+  column_two: []
+  height: false
+  id: ''
+  class: ''
+- template: section
   columns: one
   background:
     style: muted
