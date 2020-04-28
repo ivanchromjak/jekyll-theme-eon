@@ -152,5 +152,50 @@ sections:
   vertical_align_middle: true
   horizontal_align: right
   vertical_align: bottom
+- template: section
+  columns: one
+  grid: 1-2
+  horizontal_align: left
+  vertical_align: top
+  background:
+    style: default
+    image_align: center-center
+    overlay_opacity: 0.6
+    color: ''
+    image: ''
+    video: ''
+    overlay_color: ''
+  container: medium
+  size: medium
+  remove_padding: none
+  column_one:
+  - template: slider
+    block: slider
+    grid: 1-2
+    gutter: medium
+    center: true
+    autoplay: true
+    layout: default
+    card_style: none
+    navigation_outside: true
+    slides:
+    - image: "/uploads/image3.jpg"
+      icon: ''
+      title: rgvrtey rty
+      text: r yrty rt tu
+    - image: "/uploads/image6.jpg"
+      icon: ''
+      title: xfvcfgfh fh
+      text: gh gj ghjm hj
+    - image: "/uploads/image8.jpg"
+      icon: ''
+      title: tytyt
+      text: "  dhfh rty ryjtyhjt jty"
+    dotnav: true
+    sets: false
+  column_two: []
+  height: false
+  id: ''
+  class: ''
 
 ---
