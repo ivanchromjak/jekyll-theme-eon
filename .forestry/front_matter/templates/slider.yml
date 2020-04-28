@@ -1,4 +1,44 @@
 ---
 label: Slider
 hide_body: true
-fields: []
+fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: slider
+- name: grid
+  type: select
+  default: 1-3
+  config:
+    required: false
+    options:
+    - 1-1
+    - 1-2
+    - 1-3
+    - 1-4
+    - 1-5
+    - 1-6
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Grid
+- name: gutter
+  type: select
+  default: medium
+  config:
+    required: false
+    options:
+    - small
+    - medium
+    - large
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Gutter
