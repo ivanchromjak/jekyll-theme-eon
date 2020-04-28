@@ -242,3 +242,8 @@ fields:
   config:
     required: false
   label: Class
+- name: zzzz
+  type: include
+  config: {}
+  template: blocks
+  label: zzzz
