@@ -1,4 +1,21 @@
 ---
 label: Google Map
 hide_body: true
-fields: []
+fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: google-map
+- name: latitude
+  type: text
+  config:
+    required: true
+  label: Latitude
+- name: longitude
+  type: text
+  config:
+    required: true
+  label: Longitude
