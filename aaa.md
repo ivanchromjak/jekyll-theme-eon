@@ -6,7 +6,7 @@ sections:
   columns: two
   grid: 1-2
   horizontal_align: left
-  vertical_align: top
+  vertical_align: middle
   background:
     style: muted
     image_align: center-center
