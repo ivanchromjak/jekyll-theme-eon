@@ -19,6 +19,21 @@ fields:
   type: boolean
   label: Filter
   default: true
+- name: title
+  type: select
+  default: image
+  config:
+    required: false
+    options:
+    - bellow
+    - image
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Title
+  description: Display portfolio title bellow the image or over the image hover.
 - name: grid
   type: select
   default: 1-3
