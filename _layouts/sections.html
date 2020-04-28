@@ -10,8 +10,8 @@ layout: default
       {% include block-{{ block.block }}.html %}
     {% endfor %}
   {% else %}
-    <div class="uk-grid-large" data-uk-grid>
-      <div class="uk-width-expand@m{% if section.vertical_align_middle %} uk-flex uk-flex-middle{% endif %}">
+    <div class="uk-grid-large uk-text-{{ section.horizontal_align | default: 'left' }}" data-uk-grid>
+      <div class="uk-width-expand@m uk-flex uk-flex-{{ section.vertical_align | default: 'top' }}">
         <div>
           {% for block in section.column_one %}
             {% include block-{{ block.block }}.html %}
