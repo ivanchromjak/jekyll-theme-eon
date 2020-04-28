@@ -1,4 +1,21 @@
 ---
 label: Portfolio
 hide_body: true
-fields: []
+fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: portfolio
+- name: topic
+  type: text
+  config:
+    required: false
+  label: Topic
+  description: Enter the portfolio topic tag.
+- name: filter
+  type: boolean
+  label: Filter
+  default: true
