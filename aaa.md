@@ -158,10 +158,10 @@ sections:
   horizontal_align: left
   vertical_align: top
   background:
-    style: default
+    style: custom
     image_align: center-center
     overlay_opacity: 0.6
-    color: ''
+    color: "#ECE0E0"
     image: ''
     video: ''
     overlay_color: ''
