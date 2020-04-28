@@ -418,7 +418,7 @@ sections:
   horizontal_align: left
   vertical_align: top
   background:
-    style: default
+    style: secondary
     image_align: center-center
     overlay_opacity: 0.6
     color: ''
@@ -436,6 +436,31 @@ sections:
     subject: true
     id: '878'
     redirect: ''
+  column_two: []
+  height: false
+  id: ''
+  class: ''
+- template: section
+  columns: one
+  grid: 1-2
+  horizontal_align: left
+  vertical_align: top
+  background:
+    style: default
+    image_align: center-center
+    overlay_opacity: 0.6
+    color: ''
+    image: ''
+    video: ''
+    overlay_color: ''
+  container: medium
+  size: medium
+  remove_padding: none
+  column_one:
+  - template: faq
+    block: faq
+    category: presale
+    multiple: false
   column_two: []
   height: false
   id: ''
