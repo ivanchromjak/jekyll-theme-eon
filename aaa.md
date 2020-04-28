@@ -19,17 +19,32 @@ sections:
   size: medium
   remove_padding: none
   column_one:
+  - template: icon
+    block: icon
+    size: '0'
+    icon: "/uploads/icons/ios-webcam.svg"
+    color: "#4A90E2"
   - template: title-h5
     block: h5
     title: Featured
   - template: title-h2
     block: h2
     title: Lorem Ipsoom
+  - template: lead
+    block: lead
+    text: Uniquely build market positioning models with integrated initiatives
   - template: text
     block: text
     text: Dramatically deliver multimedia based synergy with cross-unit materials.
       Interactively negotiate web-enabled methods of empowerment via web-enabled relationships.
       Uniquely build market positioning models with integrated initiatives.
+  - template: block-button
+    block: button
+    text: Contact Us
+    style: primary
+    size: medium
+    url: "#"
+    blank: false
   column_two: []
   height: false
   id: ''
