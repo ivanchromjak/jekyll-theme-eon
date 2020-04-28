@@ -7,7 +7,9 @@ layout: default
 
   {% if section.columns == 'one' %}
     {% for block in section.column_one %}
-      {% include block-{{ block.block }}.html %}
+      <div class="uk-text-{{ section.horizontal_align | default: 'left' }}">
+        {% include block-{{ block.block }}.html %}
+      </div>
     {% endfor %}
   {% else %}
     <div class="uk-grid-large uk-text-{{ section.horizontal_align | default: 'left' }}" data-uk-grid>
