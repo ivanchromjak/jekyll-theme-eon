@@ -55,10 +55,14 @@ fields:
   label: Sets
 - name: card_style
   type: select
-  default: []
+  default: default
   config:
     required: false
-    options: []
+    options:
+    - none
+    - default
+    - primary
+    - secondary
     source:
       type: simple
       section: 
