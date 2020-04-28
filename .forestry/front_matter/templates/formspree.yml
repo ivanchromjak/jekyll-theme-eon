@@ -29,3 +29,13 @@ fields:
       file: 
       path: 
   label: Layout
+- name: name
+  type: boolean
+  label: Name
+  description: Display a name field.
+  default: true
+- name: subject
+  type: boolean
+  label: Subject
+  description: Display a subject field.
+  default: true
