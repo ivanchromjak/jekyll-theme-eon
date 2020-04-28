@@ -65,6 +65,21 @@ fields:
   showOnly:
     field: columns
     value: two
+- name: horizontal_align
+  type: select
+  default: left
+  config:
+    required: false
+    options:
+    - left
+    - center
+    - right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Horizontal Alignment
 - name: vertical_align_middle
   type: boolean
   label: Vertical Align Middle
