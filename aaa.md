@@ -14,7 +14,7 @@ sections:
     overlay_color: ''
   size: large
   container: medium
-  remove_padding: top
+  remove_padding: none
   column_one:
   - template: call-to-action
     block: call-to-action
@@ -93,7 +93,7 @@ sections:
   class: ''
   grid: 1-2
   vertical_align_middle: true
-  horizontal_align: left
-  vertical_align: middle
+  horizontal_align: right
+  vertical_align: bottom
 
 ---
