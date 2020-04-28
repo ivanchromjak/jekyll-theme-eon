@@ -13,7 +13,7 @@
     <figure class="uk-inline{% if block.align != 'none' %} uk-align-{{ block.align }}{% endif %}">
   {%- endif -%}    
     <img{% if block.align != 'none' %}{% if block.caption != empty %} class="uk-align-{{ block.align }}"{% endif %}{% endif %} src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ block.image | absolute_url }}"{% if block.alt %} alt="{{ block.alt }}"{% endif %} data-uk-img>
-    {% if block.caption %}<figcaption class="uk-overlay uk-overlay-primary uk-position-bottom-right uk-text-small">{{ block.caption }}</figcaption>{% endif %}
+    {% if block.caption != empty %}<figcaption class="uk-overlay uk-overlay-primary uk-position-bottom-right uk-text-small">{{ block.caption }}</figcaption>{% endif %}
   {% if block.caption %}
     </figure>
   {% endif %}

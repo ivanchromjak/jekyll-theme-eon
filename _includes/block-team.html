@@ -1,0 +1,33 @@
+<div class="uk-margin-medium-top uk-flex-center uk-text-center uk-margin-medium-top section-team" data-uk-grid>
+
+	{% if block.authors %}
+			{% assign authors = block.authors | split: ", " %}
+	{% else %}
+			{% assign authors = site.authors %}
+	{% endif %}
+
+	{% for author in authors %}
+
+			{% if block.authors %}
+					{% assign item = site.authors[author] %}
+			{% else %}
+					{% assign item = author[1] %}
+			{% endif %}
+
+			<div>
+					<div class="uk-card">
+							{% if item.avatar %}
+									{% if item.avatar contains 'http' %}
+											{% assign domain = '' %}
+									{% else %}
+											{% assign domain = site.uploads | absolute_url %}
+									{% endif %}
+
+									<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="uk-border-circle" data-src="{{ domain }}{{ item.avatar }}" alt="{{ item.name }}" data-uk-img>
+							{% endif %}
+							<h5 class="uk-margin-remove-bottom uk-margin-top">{{ item.name }}</h5>
+							<p class="uk-article-meta uk-margin-remove">{{ item.title }}</p>
+					</div>
+			</div>
+	{% endfor %}
+</div>

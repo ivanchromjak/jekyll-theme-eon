@@ -1,0 +1,2 @@
+{% assign block_file = site.blocks | where:"slug", block.file | first %}
+{{ block_file.content }}

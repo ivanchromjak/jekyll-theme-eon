@@ -1,0 +1,14 @@
+<div class="uk-child-width-{{ block.grid | default: '1-3' }}@m{% if block.gutter %} uk-grid-{{ block.gutter }}{% endif %} uk-grid-match uk-text-center uk-margin-medium-top" data-uk-grid data-uk-lightbox>
+  {% for video in block.videos %}
+    <div>
+      <div class="uk-card uk-card-{{ block.card_style | default: 'none' }} uk-card-body uk-card-hover uk-inline">
+        <a class="uk-position-cover" href="{{ video.url }}" data-caption="{{ video.title }}"></a>
+        <div class="uk-card-media" {% if block.icon_color %} style="color: {{ block.icon_color }}"{% endif %}>{% include icons/ios-play-button-circled.svg %}</div>
+        <h3 class="uk-card-title uk-margin-top uk-margin-small-bottom">{{ video.title }}</h3>
+        {% if video.text != empty %}
+          <div class="card-content text-smaller">{{ video.text }}</div>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>

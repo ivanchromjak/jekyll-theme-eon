@@ -1,0 +1,14 @@
+{% if block.category %}
+  {% assign faqs = site.faqs | where: "categories", block.category %}
+{% else %}
+  {% assign faqs = site.faqs %}
+{% endif %}
+
+<ul class="uk-margin-medium-top" data-uk-accordion{% if block.multiple %}="multiple: true"{% endif %}>
+  {% for faq in faqs %}
+    <li>
+      <a class="uk-accordion-title uk-box-shadow-hover-small uk-border-rounded" href="#">{{ faq.title }}</a>
+      <div class="uk-article-content uk-accordion-content link-primary">{{ faq.content }}</div>                
+    </li>
+  {% endfor %}
+</ul>

@@ -632,6 +632,16 @@
 
 @mixin hook-utility-misc(){
 
+  .uk-margin-remove-last {
+    > *:last-child {
+      margin-bottom: 0;
+    }
+
+    > * + * {
+      margin-top: $global-margin;
+    }
+  }
+
   .uk-text-spacing-medium {
     letter-spacing: 1.8px;
   }

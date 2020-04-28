@@ -1,0 +1,104 @@
+{% if block.grid == '1-1' %}
+  {% assign grid = 'uk-child-width-1-1' %}
+{% elsif block.grid == '1-2' %}
+  {% assign grid = 'uk-child-width-1-2@m' %}
+{% elsif block.grid == '1-3' or block.grid == '1-4' %}
+  {% capture grid %}
+    uk-child-width-1-2@s uk-child-width-{{ block.grid }}@m
+  {% endcapture %}
+{% elsif block.grid == '1-5' or block.grid == '1-6' %}
+  {% capture grid %}
+    uk-child-width-1-3@s uk-child-width-1-4@m uk-child-width-{{ block.grid }}@l
+  {% endcapture %}
+{% else %}
+  {% assign grid = 'uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-6@l' %}
+{%- endif -%}
+<div data-uk-slider="{% if block.center %}center: true;{% endif %}{% if block.autoplay %} autoplay: true;{% endif %}{% if block.sets %} sets: true;{% endif %}" tabindex="-1">
+	<div class="uk-position-relative">
+		<div class="uk-visible-toggle uk-slider-container{% if block.card_style == 'default' %} slider-card-shadow-fix{% endif %}">
+			<ul class="{{ grid }} uk-slider-items uk-grid uk-grid-match{% if block.gutter %} uk-grid-{{ block.gutter }}{% endif %} uk-flex uk-flex-middle">
+			{% for slide in block.slides %}
+        <li>
+          {% if block.layout == 'card-left' %}
+            <div class="uk-card{% unless block.icon %} uk-card-large{% endunless %} uk-card-{{ block.card_style | default: 'none' }} uk-grid-collapse uk-margin{% if slide.icon != empty %} card-icon{% endif %}" data-uk-grid>
+              <div class="uk-card-media-left{% if slide.icon != empty %} uk-width-auto@m uk-flex uk-flex-middle{% if block.card_style %} uk-padding{% endif %}{% if block.section_content_align %} uk-flex-{{ block.section_content_align }}{% endif %}{% else %} uk-width-1-2@m{% endif %}">
+                {% if slide.icon != empty %}
+                  <img src="{{ slide.icon }}" alt="{{ slide.title }}"{% if section.icon_size != empty %} width="{{ section.icon_size }}" height="{{ section.icon_size }}"{% endif %}{% if section.icon_color != empty %} data-uk-svg{% endif %}>
+                {% elsif slide.image != empty %}
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ slide.image | absolute_url }}" alt="{{ slide.title }}" data-uk-img>
+                {% endif %}
+              </div>
+              <div class="uk-flex uk-flex-middle{% if block.section_content_align %} uk-flex-{{ block.section_content_align }}{% endif %} uk-width-expand@m">
+                <div class="uk-card-body">
+                  <h3 class="{% if slide.icon != empty %}uk-card-title{% else %}uk-h2{% endif %}">{{ slide.title }}</h3>
+                  {{ slide.text }}
+                </div>
+              </div>
+            </div>
+          {% elsif block.layout == 'card-right' %}
+            <div class="uk-card{% unless slide.icon %} uk-card-large{% endunless %} uk-card-{{ block.card_style | default: 'none' }} uk-grid-collapse uk-margin{% if slide.icon != empty %} card-icon{% endif %}" data-uk-grid>
+              <div class="uk-flex-last@m uk-card-media-right{% if slide.icon != empty %} uk-width-auto@m uk-flex uk-flex-middle{% if block.card_style %} uk-padding{% endif %}{% if block.section_content_align %} uk-flex-{{ block.section_content_align }}{% endif %}{% else %} uk-width-1-2@m{% endif %}">
+                {% if slide.icon != empty %}
+                  <img src="{{ slide.icon }}" alt="{{ slide.title }}"{% if section.icon_size != empty %} width="{{ section.icon_size }}" height="{{ section.icon_size }}"{% endif %}{% if section.icon_color != empty %} data-uk-svg{% endif %}>
+                {% elsif slide.image != empty %}
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ slide.image | absolute_url }}" alt="{{ slide.title }}" data-uk-img>
+                {% endif %}
+              </div>
+              <div class="uk-flex uk-flex-middle{% if block.section_content_align %} uk-flex-{{ block.section_content_align }}{% endif %} uk-width-expand@m">
+                <div class="uk-card-body">
+                  <h3 class="{% if slide.icon != empty %}uk-card-title{% else %}uk-h2{% endif %}">{{ slide.title }}</h3>
+                  {{ slide.text }}
+                </div>
+              </div>
+            </div>
+          {% elsif block.layout == 'card-top' %}
+            <div class="uk-card uk-card-{{ block.card_style | default: 'none' }}{% if slide.icon != empty %} card-icon{% endif %}">
+              {% if slide.icon or slide.image %}
+                <div class="uk-card-media-top{% if slide.icon and block.card_style %} uk-padding uk-padding-remove-bottom{% endif %}">
+                  {% if slide.icon != empty %}
+                    <img src="{{ slide.icon }}" alt="{{ slide.title }}"{% if section.icon_size != empty %} width="{{ section.icon_size }}" height="{{ section.icon_size }}"{% endif %}{% if section.icon_color != empty %} data-uk-svg{% endif %}>
+                  {% elsif slide.image != empty %}
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ slide.image | absolute_url }}" alt="{{ slide.title }}" data-uk-img>
+                  {% endif %}
+                </div>
+              {% endif %}
+              <div class="uk-card-body">
+                <h3 class="uk-card-title">{{ slide.title }}</h3>
+                {{ slide.text }}
+              </div>
+            </div>
+          {% else %}
+            <div class="uk-panel">
+              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{% if slide.image contains 'http' %}{{ slide.image }}{% else %}{{ site.uploads | absolute_url }}{{ slide.image }}{% endif %}" alt="{{ slide.title }}" data-uk-img>
+              <div class="uk-position-center uk-panel">{% if block.title != empty %}<h3 class="uk-card-title-">{{ slide.title }}</h3>{% endif %}</div>
+            </div>
+          {% endif %}
+        </li>
+			{% endfor %}
+			</ul>
+
+		</div>
+
+    {% if block.navigation %}
+      <div class="uk-hidden@m{% if block.card_style == 'secondary' or block.card_style == 'primary' %} uk-light{% endif %}">
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" aria-label="Previous" data-uk-slidenav-previous data-uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" aria-label="Next" data-uk-slidenav-next data-uk-slider-item="next"></a>
+      </div>
+      <div class="uk-visible@m">
+        <a class="uk-position-center-left-out uk-position-small uk-hidden-hover" href="#" aria-label="Previous" data-uk-slidenav-previous data-uk-slider-item="previous"></a>
+        <a class="uk-position-center-right-out uk-position-small uk-hidden-hover" href="#" aria-label="Next" data-uk-slidenav-next data-uk-slider-item="next"></a>
+      </div>
+    {% else %}
+      <div{% if block.card_style == 'secondary' or block.card_style == 'primary' %} class="uk-ligh"{% endif %}>
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" aria-label="Previous" data-uk-slidenav-previous data-uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" aria-label="Next" data-uk-slidenav-next data-uk-slider-item="next"></a>
+      </div>
+    {% endif %}
+
+	</div>
+
+  {% if block.dotnav %}
+    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin-medium-top"></ul>
+  {% endif %}
+
+</div>
