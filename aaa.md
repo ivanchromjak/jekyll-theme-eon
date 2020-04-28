@@ -93,7 +93,7 @@ sections:
   class: ''
   grid: 1-2
   vertical_align_middle: true
-  horizontal_align: ''
-  vertical_align: ''
+  horizontal_align: left
+  vertical_align: middle
 
 ---
