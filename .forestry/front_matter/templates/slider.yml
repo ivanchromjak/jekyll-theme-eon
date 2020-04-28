@@ -42,3 +42,33 @@ fields:
       file: 
       path: 
   label: Gutter
+- name: center
+  type: boolean
+  label: Center
+  default: true
+- name: autoplay
+  type: boolean
+  label: Autoplay
+  default: true
+- name: sets
+  type: boolean
+  label: Sets
+- name: card_style
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Card Style
+- name: navigation_outside
+  type: boolean
+  label: Navigation Outside
+  default: true
+- name: dotnav
+  type: boolean
+  label: Dotnav
