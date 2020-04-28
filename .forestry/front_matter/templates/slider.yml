@@ -53,9 +53,25 @@ fields:
 - name: sets
   type: boolean
   label: Sets
-- name: card_style
+- name: layout
   type: select
   default: default
+  config:
+    required: false
+    options:
+    - card-left
+    - card-top
+    - card-right
+    - default
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Layout
+- name: card_style
+  type: select
+  default: none
   config:
     required: false
     options:
@@ -69,6 +85,7 @@ fields:
       file: 
       path: 
   label: Card Style
+  description: Applies when one of the card layouts selected above.
 - name: navigation_outside
   type: boolean
   label: Navigation Outside
@@ -76,18 +93,3 @@ fields:
 - name: dotnav
   type: boolean
   label: Dotnav
-- name: media
-  type: select
-  default: top
-  config:
-    required: false
-    options:
-    - left
-    - top
-    - right
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Media
