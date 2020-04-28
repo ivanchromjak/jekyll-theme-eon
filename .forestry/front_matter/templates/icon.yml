@@ -30,8 +30,3 @@ fields:
     min: 
     max: 
     step: 
-- name: url
-  type: text
-  config:
-    required: false
-  label: Url

@@ -61,16 +61,40 @@ fields:
       section: 
       file: 
       path: 
-  label: Container Two Width
+  label: Column Two Width
   showOnly:
     field: columns
     value: two
-- name: vertical_align_middle
-  type: boolean
-  label: Vertical Align Middle
-  showOnly:
-    field: columns
-    value: two
+- name: horizontal_align
+  type: select
+  default: left
+  config:
+    required: false
+    options:
+    - left
+    - center
+    - right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Horizontal Align
+- name: vertical_align
+  type: select
+  default: top
+  config:
+    required: false
+    options:
+    - top
+    - middle
+    - bottom
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Vertical Align
 - name: background
   type: field_group
   config: {}

@@ -35,6 +35,8 @@ sections:
   class: dddd
   grid: ''
   vertical_align_middle: false
+  horizontal_align: center
+  vertical_align: top
 - template: section
   columns: two
   background:
@@ -91,5 +93,7 @@ sections:
   class: ''
   grid: 1-2
   vertical_align_middle: true
+  horizontal_align: left
+  vertical_align: middle
 
 ---
