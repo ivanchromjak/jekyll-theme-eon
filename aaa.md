@@ -179,6 +179,10 @@ sections:
     card_style: none
     navigation_outside: true
     slides:
+    - image: "/uploads/image5.jpg"
+      icon: ''
+      title: gjhgjhgjhg
+      text: gjhgjhgjhghjg
     - image: "/uploads/image3.jpg"
       icon: ''
       title: rgvrtey rty
