@@ -69,7 +69,7 @@
             </div>
           {% else %}
             <div class="uk-panel">
-              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{% if slide.image contains 'http' %}{{ slide.image }}{% else %}{{ site.uploads | absolute_url }}{{ slide.image }}{% endif %}" alt="{{ slide.title }}" data-uk-img>
+              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ slide.image | absolute_url }}" alt="{{ slide.title }}" data-uk-img>
               <div class="uk-position-center uk-panel">{% if block.title != empty %}<h3 class="uk-card-title-">{{ slide.title }}</h3>{% endif %}</div>
             </div>
           {% endif %}
