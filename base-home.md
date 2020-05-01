@@ -18,9 +18,9 @@ sections:
   heading_size: medium
   layout: 1-2
   navbar:
-    light_color: false
-    transparent: false
-    transparent_light_color: false
+    light_color: true
+    transparent: true
+    transparent_light_color: true
     search: false
   light_color: true
   height: true
