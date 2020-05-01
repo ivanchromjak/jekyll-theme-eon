@@ -9,10 +9,6 @@ fields:
   label: Block
   hidden: true
   default: gallery
-- name: images
-  type: image_gallery
-  config: {}
-  label: Images
 - name: lightbox
   type: boolean
   label: Lightbox
@@ -50,3 +46,21 @@ fields:
       file: 
       path: 
   label: Gutter
+- name: images
+  type: field_group_list
+  fields:
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
+  - name: caption
+    type: text
+    config:
+      required: false
+    label: Caption
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Images
