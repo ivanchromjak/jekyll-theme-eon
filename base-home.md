@@ -2,6 +2,38 @@
 layout: sections
 title: Base Home
 sections:
+- template: header
+  block: header
+  background:
+    style: primary
+    align: center-center
+    overlay_opacity: 0.7
+    image: "/uploads/Working-Space.jpg"
+    video: Working-Space.mp4
+    overlay_color: "#0038E3"
+    color: ''
+  header_size: medium
+  container: medium
+  padding_remove: none
+  heading_size: medium
+  layout: 1-1
+  navbar:
+    light_color: false
+    transparent: false
+    transparent_light_color: false
+    search: false
+  light_color: false
+  height: false
+  parallax: false
+  container_one:
+    title: ''
+    subtitle: ''
+    content: ''
+    blocks: []
+  container_two:
+    title: ''
+    subtitle: ''
+    content: ''
 - template: section
   columns: one
   grid: 1-2
