@@ -1,20 +1,18 @@
-<div class="uk-child-width-1-2@s uk-child-width-{{ block.grid | default: '1-4' }}@m{% if block.gutter %} uk-grid-{{ block.gutter }}{% endif %}" data-uk-grid="masonry: true"{% if block.lightbox %} data-uk-lightbox="animation: slide"{% endif %}>
-  {% for image in images %}
-    {% if image.path contains block.gallery %}
-      <div>
-        {% if block.lightbox %}
-          <div class="uk-inline uk-light uk-transition-toggle">
-            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ image.path | relative_url }}" alt="{{ image.basename | replace: '-', ' ' | capitalize }}" data-uk-img>
-            <a class="uk-overlay uk-overlay-primary uk-position-cover uk-transition-fade" href="{{ image.path | relative_url }}"{% if block.caption %} data-caption="{{ image.basename | replace: '-', ' ' | capitalize }}"{% endif %}>
-							<div class="uk-position-center">
-								<span data-uk-icon="icon: plus; ratio: 1.5"></span>
-							</div>
-            </a>
-          </div>
-        {% else %}
-          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ image.path | relative_url }}" alt="{{ image.basename | replace: '-', ' ' | capitalize }}" data-uk-img>
-        {% endif %}
-      </div>      
-    {% endif %}
+<div class="uk-child-width-1-2@s uk-child-width-{{ block.grid | default: '1-4' }}@m{% if block.gutter != empty %} uk-grid-{{ block.gutter }}{% endif %}" data-uk-grid="masonry: true"{% if block.lightbox %} data-uk-lightbox="animation: slide"{% endif %}>
+  {% for image in block.images %}
+    <div>
+      {% if block.lightbox %}
+        <div class="uk-inline uk-light uk-transition-toggle">
+          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ image.image | absolute_url }}" alt="{{ image.caption }}" data-uk-img>
+          <a class="uk-overlay uk-overlay-primary uk-position-cover uk-transition-fade" href="{{ image.image | absolute_url }}"{% if block.caption != empty %} data-caption="{{ image.caption }}"{% endif %}>
+            <div class="uk-position-center">
+              <span data-uk-icon="icon: plus; ratio: 1.5"></span>
+            </div>
+          </a>
+        </div>
+      {% else %}
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ image.image | absolute_url }}" alt="{{ image.caption }}" data-uk-img>
+      {% endif %}
+    </div>      
   {% endfor %}
 </div>
