@@ -12,18 +12,18 @@ sections:
     video: Working-Space.mp4
     overlay_color: "#0038E3"
     color: ''
-  header_size: medium
+  header_size: large
   container: medium
   padding_remove: none
   heading_size: medium
-  layout: 1-1
+  layout: 1-2
   navbar:
     light_color: false
     transparent: false
     transparent_light_color: false
     search: false
-  light_color: false
-  height: false
+  light_color: true
+  height: true
   parallax: false
   container_one:
     title: ''
