@@ -1,6 +1,6 @@
-<div class="uk-margin-medium-top uk-flex-center uk-text-center uk-margin-medium-top section-team" data-uk-grid>
+<div class="uk-flex-center uk-text-center section-team" data-uk-grid>
 
-	{% if block.authors %}
+	{% if block.authors != empty %}
 			{% assign authors = block.authors | split: ", " %}
 	{% else %}
 			{% assign authors = site.authors %}
@@ -8,13 +8,12 @@
 
 	{% for author in authors %}
 
-			{% if block.authors %}
+			{% if block.authors != empty %}
 					{% assign item = site.authors[author] %}
 			{% else %}
 					{% assign item = author[1] %}
 			{% endif %}
-
-			<div>
+				<div>
 					<div class="uk-card">
 							{% if item.avatar %}
 									{% if item.avatar contains 'http' %}

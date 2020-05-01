@@ -1,4 +1,4 @@
-<div class="uk-child-width-{{ block.grid | default: '1-3' }}@m{% if block.gutter %} uk-grid-{{ block.gutter }}{% endif %} uk-grid-match uk-text-center uk-margin-medium-top" data-uk-grid data-uk-lightbox>
+<div class="uk-child-width-{{ block.grid | default: '1-3' }}@m{% if block.gutter %} uk-grid-{{ block.gutter }}{% endif %} uk-grid-match" data-uk-grid data-uk-lightbox>
   {% for video in block.videos %}
     <div>
       <div class="uk-card uk-card-{{ block.card_style | default: 'none' }} uk-card-body uk-card-hover uk-inline">
