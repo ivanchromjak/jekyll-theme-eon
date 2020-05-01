@@ -1,6 +1,6 @@
 ---
 layout: sections
-title: ''
+title: Base Home
 sections:
 - template: section
   columns: one
