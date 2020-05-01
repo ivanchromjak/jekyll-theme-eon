@@ -410,6 +410,7 @@ sections:
     grid: 1-3
     gutter: medium
     images:
+    - "/uploads/image3.jpg"
     - "/uploads/image5.jpg"
     - "/uploads/image7.jpg"
   column_two: []
