@@ -135,10 +135,10 @@ sections:
         size: regular
         url: ''
         blank: false
-    - title: ''
+    - title: Sliders
       heading: ''
-      content: ''
-      icon: ''
+      content: Sliders can display image galleries or cards with content.
+      icon: "/uploads/icons/ios-right-arrow.svg"
       image: ''
       button:
         text: Text
