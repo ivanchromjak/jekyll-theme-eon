@@ -1,8 +1,8 @@
 // Component: Base
-@mixin hook-base-body(){
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-}
+// @mixin hook-base-body(){
+//   -moz-osx-font-smoothing: grayscale;
+//   -webkit-font-smoothing: antialiased;
+// }
 
 @mixin hook-base-misc(){
   .uk-section-success {
@@ -400,17 +400,17 @@
 }
 
 @mixin hook-heading-small(){
-  font-weight: 600;
+  // font-weight: 600;
   color: #000;
 }
 
 @mixin hook-heading-medium(){
-  font-weight: 600;
+  // font-weight: 600;
   color: #000;
 }
 
 @mixin hook-heading-large(){
-  font-weight: 600;
+  // font-weight: 600;
   color: #000;
 }
 
@@ -457,7 +457,7 @@
   -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
   letter-spacing: 2px;
-  font-weight: 400;
+  // font-weight: 400;
 }
 
 @mixin hook-navbar-misc(){
@@ -534,7 +534,7 @@
 }
 
 @mixin hook-offcanvas-bar(){
-  font-weight: 400;
+  // font-weight: 400;
 }
 
 @mixin hook-list-misc(){

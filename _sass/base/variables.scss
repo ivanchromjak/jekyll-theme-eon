@@ -2,7 +2,7 @@
 $global-success-background:                     #32d296;
 $global-warning-background:                     #faa05a;
 $global-danger-background:                      #D95B72;
-// $global-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$global-font-family:                            'Nunito Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $global-link-color:                             lighten($global-primary-background, 20%);
 $global-link-hover-color:                       lighten($global-primary-background, 20%);
 $global-small-font-size:                        0.875rem;
@@ -14,8 +14,8 @@ $global-medium-font-size:                       1.25rem;
 $xsmall-font-size:                              0.875rem;
                                 
 // Base variables
-$base-heading-font-family:                      'Poppins', 'Montserrat', system-ui, san-serif;
-$base-heading-font-weight:                      600;
+$base-heading-font-family:                      'Nunito Sans', 'Poppins', 'Montserrat', system-ui, san-serif;
+$base-heading-font-weight:                      700;
 $base-heading-color:                            #000;
 $base-h2-line-height:                           1.4;
 $base-link-hover-text-decoration:               none;
@@ -93,8 +93,8 @@ $navbar-background:                             #fff;
 $navbar-nav-item-color:                         #333;
 $navbar-nav-item-hover-color:                   #000;
 $navbar-nav-item-active-color:                  #000;
-$navbar-nav-item-font-size:                     13px;
-$navbar-nav-item-text-transform:                uppercase;
+$navbar-nav-item-font-size:                     15px;
+$navbar-nav-item-text-transform:                none;
 $navbar-toggle-color:                           #333;
 $navbar-toggle-hover-color:                     #000;
 $navbar-dropdown-nav-item-color:                $base-body-color;
