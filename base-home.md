@@ -51,6 +51,9 @@ sections:
   size: large
   remove_padding: none
   column_one:
+  - template: title-h2
+    block: h2
+    title: The first multipurpose Jekyll theme
   - template: cards
     block: cards
     media: top
