@@ -327,7 +327,7 @@ sections:
     image: ''
     video: ''
     overlay_color: ''
-    shape: ''
+    shape: "/uploads/shape-1.svg"
     shape_position: top
   container: medium
   size: large
