@@ -37,7 +37,7 @@ sections:
 - template: section
   columns: one
   grid: 1-2
-  horizontal_align: center
+  horizontal_align: left
   vertical_align: top
   background:
     style: default
