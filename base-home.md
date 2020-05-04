@@ -300,7 +300,7 @@ sections:
     image: ''
     video: ''
     overlay_color: ''
-    shape_top: ''
+    shape_top: curve
   container: medium
   size: medium
   remove_padding: none
