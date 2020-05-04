@@ -213,12 +213,13 @@ fields:
       step: 0.1
   - name: shape_top
     type: select
-    default: angle
+    default: none
     config:
       required: false
       options:
       - angle
       - curve
+      - none
       source:
         type: simple
         section: 
