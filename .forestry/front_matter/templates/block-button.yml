@@ -36,6 +36,8 @@ fields:
     - success-outline
     - warning-outline
     - danger-outline
+    - light
+    - light-outline
     source:
       type: simple
       section: 
