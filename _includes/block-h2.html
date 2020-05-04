@@ -1,1 +1,1 @@
-<h2 class="uk-h1">{{ block.title }}</h2>
+<h2 class="uk-h1"{% if block.color != empty %} style="color: {{ block.color }};"{% endif %}>{{ block.title }}</h2>

@@ -1,1 +1,1 @@
-<h5 class="uk-text-uppercase uk-text-spacing-medium">{{ block.title }}</h5>
+<h5 class="uk-text-uppercase uk-text-spacing-medium"{% if block.color != empty %} style="color: {{ block.color }};"{% endif %}>{{ block.title }}</h5>
