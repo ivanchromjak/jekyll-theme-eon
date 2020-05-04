@@ -6,7 +6,7 @@ sections:
   block: header
   background:
     style: secondary
-    align: center-center
+    align: center-right
     overlay_opacity: '0.9'
     image: "/uploads/blob-1.svg"
     video: ''
