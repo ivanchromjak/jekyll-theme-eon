@@ -124,10 +124,10 @@ sections:
         size: regular
         url: ''
         blank: false
-    - title: ''
+    - title: Galleries
       heading: ''
-      content: ''
-      icon: ''
+      content: Display image galleries with lightbox and masonry layout options.
+      icon: "/uploads/icons/ios-compact-camera.svg"
       image: ''
       button:
         text: Text
