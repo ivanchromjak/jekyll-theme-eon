@@ -62,7 +62,7 @@ sections:
   - template: block-button
     block: button
     text: Text
-    style: light-outline
+    style: light
     size: large
     width: medium
     url: "#"
