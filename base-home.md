@@ -91,6 +91,17 @@ sections:
         size: regular
         url: ''
         blank: false
+    - title: FAQs
+      heading: ''
+      content: Address customer concerns with accordion styled FAQs.
+      icon: "/uploads/icons/ios-faq.svg"
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
     icon_color: "#074DF8"
     icon_size: 
   column_two: []
