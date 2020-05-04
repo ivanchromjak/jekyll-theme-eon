@@ -428,10 +428,10 @@ sections:
     block: button
     text: Demo
     style: default
-    size: regular
+    size: large
     url: "#"
     blank: false
-    width: small
+    width: medium
   column_two: []
   height: false
   id: ''
