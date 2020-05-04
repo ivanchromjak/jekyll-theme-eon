@@ -52,7 +52,7 @@ sections:
     blank: true
     url: https://themeforest.net/item/eon-multipurpose-responsive-jekyll-theme/24065900
   column_two: []
-  column_two_width: ''
+  column_two_width: 1-5
 - template: section
   columns: one
   grid: 1-2
