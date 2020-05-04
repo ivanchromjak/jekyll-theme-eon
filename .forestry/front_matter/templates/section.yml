@@ -211,25 +211,20 @@ fields:
       min: 0
       max: 1
       step: 0.1
-  - name: shape
-    type: file
-    config:
-      maxSize: 64
-    label: Shape
-  - name: shape_position
+  - name: shape_top
     type: select
-    default: top
+    default: angle
     config:
       required: false
       options:
-      - top
-      - bottom
+      - angle
+      - curve
       source:
         type: simple
         section: 
         file: 
         path: 
-    label: Shape Position
+    label: Shape Top
   label: Background
 - name: container
   type: select
