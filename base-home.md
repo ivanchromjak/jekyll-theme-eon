@@ -96,6 +96,78 @@ sections:
         size: regular
         url: ''
         blank: false
+    - title: Version control
+      heading: ''
+      content: The site source code lives in a version control system and you can
+        go back to any version in history.
+      icon: ''
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: Simplicity
+      heading: ''
+      content: Jekyll is a static site using Liquid language, it is easy to learn
+        if you already know HTML and JS.
+      icon: ''
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: Low maintenance
+      heading: ''
+      content: There are no constant plugin or software updates required to keep your
+        site up-to-date and secure.
+      icon: ''
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: Actively developed
+      heading: ''
+      content: New ready to use demos are being added continuously and new features
+        developed.
+      icon: ''
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: Documented
+      heading: ''
+      content: Not familiar with Jekyll? We have documented the setup and features
+        to get you started fast.
+      icon: ''
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: Customer support
+      heading: ''
+      content: Should you have questions, we are here to help. Each purchase includes
+        six months of support.
+      icon: ''
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
     icon_color: ''
     icon_size: 
   column_two: []
