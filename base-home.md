@@ -212,10 +212,10 @@ sections:
         size: regular
         url: ''
         blank: false
-    - title: ''
+    - title: Call To Action
       heading: ''
-      content: ''
-      icon: ''
+      content: Chose from three call to action section layouts.
+      icon: "/uploads/icons/ios-rocket.svg"
       image: ''
       button:
         text: Text
@@ -223,10 +223,10 @@ sections:
         size: regular
         url: ''
         blank: false
-    - title: ''
+    - title: Footers
       heading: ''
-      content: ''
-      icon: ''
+      content: Select from two footer layouts, centered and columns.
+      icon: "/uploads/icons/ios-down-arrow.svg"
       image: ''
       button:
         text: Text
