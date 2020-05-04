@@ -1,5 +1,5 @@
 <div{% if section.id %} id="{{ section.id }}"{% endif %} 
-  class="uk-cover-container{% if section.background.style != 'custom' and section.block != 'header' %} uk-section-{{ section.background.style }}{% elsif section.background.style != 'custom' and section.block == 'header' %} uk-background-{{ section.background.style }}{% endif %}{% if section.background.image %} uk-background-cover uk-background-{{ section.background.image_align | default: 'center-center' }}{% endif %}{% if section.class %} {{ section.class }}{% endif %}" 
+  class="uk-cover-container{% if section.background.style != 'custom' %} uk-background-{{ section.background.style }}{% endif %}{% if section.background.image %} uk-background-cover uk-background-{{ section.background.image_align | default: 'center-center' }}{% endif %}{% if section.class %} {{ section.class }}{% endif %}" 
   style="{% if section.background.style == 'custom' %}background-color: {{ section.background.color }};{% endif %}" 
   {% if section.background.image %} data-src="{{ section.background.image | absolute_url }}" data-uk-img{% endif %}>
   {%- if section.background.video != empty -%}

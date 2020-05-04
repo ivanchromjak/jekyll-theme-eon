@@ -48,6 +48,8 @@
   .uk-button-primary,
   .uk-button-secondary,
   .uk-button-danger,
+  .uk-button-light,
+  .uk-button-light-outline,
   .uk-button-primary-outline,
   .uk-button-danger-outline,
   .uk-button-success-outline,
@@ -100,6 +102,46 @@
   .uk-button-success.uk-active {
     background-color: $button-success-hover-background;
     color: $button-primary-active-color;
+  }
+
+  // Light
+  .uk-button-light {
+    background-color: $inverse-button-primary-background;
+    color: $inverse-button-primary-color;
+    border: 1px solid transparent;
+  }
+
+  .uk-button-light:hover,
+  .uk-button-light:focus {
+    background-color: $inverse-button-primary-hover-background;
+    color: $inverse-button-primary-color;
+  }
+
+  .uk-button-light:active,
+  .uk-button-light.uk-active {
+    background-color: $inverse-button-primary-hover-background;
+    color: $inverse-button-primary-color;
+  }
+
+  // Light outline
+  .uk-button-light-outline {
+    background-color: $inverse-button-default-background;
+    color: $inverse-button-default-color;
+    border: $button-border-width solid $inverse-button-default-hover-background;
+  }
+
+  .uk-button-light-outline:hover,
+  .uk-button-light-outline:focus {
+    background-color: $inverse-button-default-background;
+    color: $inverse-button-default-color;
+    border: $button-border-width solid $inverse-button-default-hover-background;
+  }
+
+  .uk-button-light-outline:active,
+  .uk-button-light-outline.uk-active {
+    background-color: $inverse-button-default-background;
+    color: $inverse-button-default-color;
+    border: $button-border-width solid $inverse-button-default-hover-background;
   }
 
   // Primary outline
