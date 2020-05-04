@@ -59,7 +59,7 @@ sections:
     media: none
     style: none
     grid: 1-3
-    gutter: default
+    gutter: large
     cards:
     - title: Blazing fast
       heading: ''
