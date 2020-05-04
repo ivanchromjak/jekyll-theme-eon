@@ -1,3 +1,8 @@
+{% if section.background.shape != empty %}
+<div class="uk-section-shape uk-shape-angle-bottom{% if section.background.style != 'custom' %} uk-background-{{ section.background.style }}{% endif %}" 
+  style="{% if section.background.style == 'custom' %}background-color: {{ section.background.color }};{% endif %}"></div>
+{% endif %}
+
 <div{% if section.id %} id="{{ section.id }}"{% endif %} 
   class="uk-cover-container{% if section.background.style != 'custom' %} uk-background-{{ section.background.style }}{% endif %}{% if section.background.image %} uk-background-cover uk-background-{{ section.background.image_align | default: 'center-center' }}{% endif %}{% if section.class %} {{ section.class }}{% endif %}" 
   style="{% if section.background.style == 'custom' %}background-color: {{ section.background.color }};{% endif %}" 
