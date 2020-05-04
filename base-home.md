@@ -48,7 +48,7 @@ sections:
     video: ''
     overlay_color: ''
   container: medium
-  size: medium
+  size: large
   remove_padding: none
   column_one:
   - template: title-h2
@@ -59,7 +59,7 @@ sections:
     media: none
     style: none
     grid: 1-3
-    gutter: default
+    gutter: large
     cards:
     - title: Blazing fast
       heading: ''
@@ -170,6 +170,41 @@ sections:
         blank: false
     icon_color: ''
     icon_size: 
+  column_two: []
+  height: false
+  id: ''
+  class: ''
+- template: section
+  columns: one
+  grid: 1-2
+  horizontal_align: center
+  vertical_align: top
+  background:
+    style: custom
+    image_align: center-center
+    overlay_opacity: '0.7'
+    image: "/uploads/header-9.jpeg"
+    color: "#000000"
+    overlay_color: "#000000"
+    video: ''
+  container: small
+  size: large
+  remove_padding: none
+  column_one:
+  - template: title-h2
+    block: h2
+    title: Create your new website today!
+  - template: lead
+    block: lead
+    text: Experience the advatages and peace of mind of running a static Jekyll site.
+      Save time and concentrate an what is the most important, your business.
+  - template: block-button
+    block: button
+    text: Purchase
+    style: primary
+    size: medium
+    blank: true
+    url: https://themeforest.net/item/eon-multipurpose-responsive-jekyll-theme/24065900
   column_two: []
   height: false
   id: ''
