@@ -1,1 +1,1 @@
-<div class="uk-margin-{{ block.size | default: 'medium' }}-top"></div>
+<div class="{% if block.size == 'default' %}uk-margin-top{% else %}uk-margin-{{ block.size | default: 'medium' }}-top{% else %}"></div>
