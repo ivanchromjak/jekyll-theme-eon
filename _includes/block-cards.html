@@ -57,7 +57,7 @@
       {% else %}
         <div class="uk-card{% if block.style != empty %} uk-card-{{ block.style }}{% endif %}{% if card.icon != empty %} card-icon{% endif %}{% if card.heading != empty %} card-pricing{% endif %}">
           {% if card.icon != empty or card.image != empty %}
-            <div class="uk-card-media-top{% if card.icon != empty and block.style != empty %} uk-padding uk-padding-remove-bottom{% endif %}"{% if block.icon_color != empty %} style="color: {{ block.icon_color }}"{% endif %}>
+            <div class="uk-card-media-top{% if card.icon != empty and block.style != 'none' %} uk-padding uk-padding-remove-bottom{% endif %}"{% if block.icon_color != empty %} style="color: {{ block.icon_color }}"{% endif %}>
               {% if card.icon != empty %}
                 <img src="{{ card.icon }}" alt="{{ card.title }}"{% if block.icon_size != empty %} width="{{ block.icon_size }}" height="{{ block.icon_size }}"{% endif %}{% if block.icon_color != empty %} data-uk-svg{% endif %}>
               {% elsif card.image != empty %}
