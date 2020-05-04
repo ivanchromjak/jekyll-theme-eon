@@ -10,7 +10,7 @@ sections:
     overlay_opacity: '0.8'
     image: "/uploads/Working-Space.jpg"
     video: Working-Space.mp4
-    overlay_color: "#030214"
+    overlay_color: "#000000"
     color: ''
   header_size: large
   container: medium
