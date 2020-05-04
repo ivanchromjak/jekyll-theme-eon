@@ -9,6 +9,54 @@
   {% if section.background.overlay_color != empty %}
     <div class="uk-position-cover" style="background: {{ section.background.overlay_color }}; opacity: {{ section.background.overlay_opacity | default: '0.6' }}"></div>
   {%- endif -%}
+
+  {% if section.block == 'header' %}
+    {% assign template = page.template | default: site.template %}
+
+    {% assign navbar_layout = site.data.options.[template].navbar.layout %}
+    {% assign sticky = site.data.options.[template].navbar.sticky %}
+    {% assign scroll_up = site.data.options.[template].navbar.scroll_up %}
+    {% assign animation = site.data.options.[template].navbar.animation %}
+
+    {% if section.navbar.transparent != empty %}
+      {% assign transparent = section.navbar.transparent %}
+    {% else %}
+      {% assign transparent = site.data.options.[template].navbar.transparent %}
+    {% endif %}
+
+    {% if section.navbar.transparent_light_color != empty %}
+      {% assign transparent_light_color = section.navbar.transparent_light_color %}
+    {% else %}
+      {% assign transparent_light_color = site.data.options.[template].navbar.transparent_light_color %}
+    {% endif %}
+
+    {% if section.navbar.light_color != empty %}
+      {% assign color = section.navbar.light_color %}
+    {% else %}
+      {% assign color = site.data.options.[template].navbar.light_color %}
+    {% endif %}
+    
+    {% if sticky %}
+      <div data-uk-sticky="{% if scroll_up %}show-on-up: true; {% endif %}{% if animation %}animation: uk-animation-slide-top; top: 200; {% endif %}sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky navbar-background{% if light_color %} uk-light{% endif %}; cls-inactive: {% if transparent %}uk-navbar-transparent{% if transparent_light_color %} uk-light{% endif %}{% else %} navbar-background uk-dark{% endif %}">
+        <nav class="uk-navbar-container">
+          {% if navbar_layout == 'center' %}
+            {% include partials/navbar-center.html %}
+          {% else %}
+            {% include partials/navbar-default.html %}
+          {% endif %}
+        </nav>
+      </div>
+    {% else %}
+      <nav class="uk-navbar-container {% if transparent %}uk-navbar-transparent{% if transparent_light_color %} uk-light{% endif %}{% else %} navbar-background {% if light_color %} uk-light{% endif %}{% endif %}">
+        {% if navbar_layout == 'center' %}
+          {% include partials/navbar-center.html %}
+        {% else %}
+          {% include partials/navbar-default.html %}
+        {% endif %}
+      </nav>
+    {% endif %}
+  {% endif %}
+
     <div class="uk-section uk-section-{{ section.size | default: 'medium' }}{% if section.remove_padding %} uk-padding-remove-{{ section.remove_padding }}{% endif %}{% if section.height %} uk-flex uk-flex-middle{% endif %}" 
       {% if section.height %} data-uk-height-viewport{% endif %}>
       <div class="{% unless section.container == 'none' %}uk-container{% endunless %}{% if section.container %} uk-container-{{ section.container | default: 'none' }}{% endif %} uk-position-relative">
