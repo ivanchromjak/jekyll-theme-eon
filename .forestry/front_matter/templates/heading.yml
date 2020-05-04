@@ -47,6 +47,12 @@ fields:
       file: 
       path: 
   label: Size
+- name: color
+  type: color
+  label: Color
+  config:
+    required: false
+    color_format: Hex
 - name: align
   type: select
   default: left
