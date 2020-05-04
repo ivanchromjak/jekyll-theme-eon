@@ -102,6 +102,28 @@ sections:
         size: regular
         url: ''
         blank: false
+    - title: Cards
+      heading: ''
+      content: Display content such as features or pricing options in a card layout.
+      icon: "/uploads/icons/ios-unchecked-checkbox.svg"
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: Portfolio
+      heading: ''
+      content: Show off your work and process with image and video galleries.
+      icon: "/uploads/icons/ios-diamond.svg"
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
     icon_color: "#074DF8"
     icon_size: 
   column_two: []
