@@ -58,6 +58,22 @@ fields:
       file: 
       path: 
   label: Size
+- name: width
+  type: select
+  default: default
+  config:
+    required: false
+    options:
+    - default
+    - 1-1
+    - small
+    - medium
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Width
 - name: blank
   type: boolean
   label: Blank
