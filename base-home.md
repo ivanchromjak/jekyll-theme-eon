@@ -413,6 +413,9 @@ sections:
     block: lead
     text: Experience the advatages and peace of mind of running a static Jekyll site.
       Save time and concentrate an what is the most important, your business.
+  - template: margin
+    block: margin
+    size: default
   - template: block-button
     block: button
     text: Purchase
