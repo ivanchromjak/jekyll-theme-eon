@@ -7,7 +7,7 @@ sections:
   background:
     style: secondary
     align: center-center
-    overlay_opacity: '0.8'
+    overlay_opacity: '0.9'
     image: "/uploads/Working-Space.jpg"
     video: ''
     overlay_color: "#0E0B2B"
