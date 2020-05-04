@@ -184,25 +184,6 @@ fields:
       file: 
       path: 
   label: Heading Size
-- name: layout
-  type: select
-  default: 1-1
-  config:
-    required: false
-    options:
-    - left
-    - center
-    - 1-1
-    - 1-2
-    - 1-3
-    - 2-3
-    - 5-6
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Content Layout
 - name: container_one
   type: field_group
   config: {}
@@ -263,3 +244,20 @@ fields:
     label: Content
   label: Container Two
   description: Contain shows when Layout setting above is set to 1-2, 1-3 or 5-6
+- name: column_two_width
+  type: select
+  default: 1-2
+  config:
+    required: false
+    options:
+    - 1-2
+    - 1-3
+    - 1-4
+    - 1-5
+    - 1-6
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Column Two Width
