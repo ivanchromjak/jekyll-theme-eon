@@ -447,7 +447,7 @@ sections:
   - template: block-button
     block: button
     text: Purchase
-    style: primary
+    style: light
     size: large
     blank: true
     url: https://themeforest.net/item/eon-multipurpose-responsive-jekyll-theme/24065900
@@ -455,7 +455,7 @@ sections:
   - template: block-button
     block: button
     text: Demo
-    style: default
+    style: light-outline
     size: large
     url: "#"
     blank: false
