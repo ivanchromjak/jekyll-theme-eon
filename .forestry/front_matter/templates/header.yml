@@ -252,20 +252,3 @@ fields:
 - name: parallax
   type: boolean
   label: Parallax
-- name: heading_size
-  type: select
-  default: medium
-  config:
-    required: false
-    options:
-    - small
-    - medium
-    - large
-    - xlarge
-    - 2xlarge
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Heading Size
