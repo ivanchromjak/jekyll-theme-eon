@@ -1,4 +1,64 @@
 ---
 label: Heading
 hide_body: true
-fields: []
+fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: heading
+- name: tag
+  type: select
+  default: h2
+  config:
+    required: false
+    options:
+    - h1
+    - h2
+    - h3
+    - h4
+    - h5
+    - h5
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Tag
+- name: size
+  type: select
+  default: default
+  config:
+    required: false
+    options:
+    - default
+    - h1
+    - h2
+    - small
+    - medium
+    - large
+    - xlarge
+    - 2xlarge
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Size
+- name: align
+  type: select
+  default: left
+  config:
+    required: false
+    options:
+    - left
+    - center
+    - right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Align
