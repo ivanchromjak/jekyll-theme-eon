@@ -146,10 +146,10 @@ sections:
         size: regular
         url: ''
         blank: false
-    - title: ''
+    - title: Mailchimp
       heading: ''
-      content: ''
-      icon: ''
+      content: Add a newsletter signup form to sections or headers.
+      icon: "/uploads/icons/ios-mailbox-closed-flag-up.svg"
       image: ''
       button:
         text: Text
@@ -157,10 +157,10 @@ sections:
         size: regular
         url: ''
         blank: false
-    - title: ''
+    - title: Google Maps
       heading: ''
-      content: ''
-      icon: ''
+      content: Add Google maps as a page section or in post content.
+      icon: "/uploads/icons/ios-google-maps.svg"
       image: ''
       button:
         text: Text
