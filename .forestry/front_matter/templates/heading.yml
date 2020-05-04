@@ -9,6 +9,11 @@ fields:
   label: Block
   hidden: true
   default: heading
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
 - name: tag
   type: select
   default: h2
