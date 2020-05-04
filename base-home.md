@@ -174,5 +174,26 @@ sections:
   height: false
   id: ''
   class: ''
+- template: section
+  columns: one
+  grid: 1-2
+  horizontal_align: left
+  vertical_align: top
+  background:
+    style: custom
+    image_align: center-center
+    overlay_opacity: '0.7'
+    image: "/uploads/header-9.jpeg"
+    color: "#000000"
+    overlay_color: "#000000"
+    video: ''
+  container: medium
+  size: medium
+  remove_padding: none
+  column_one: []
+  column_two: []
+  height: false
+  id: ''
+  class: ''
 
 ---
