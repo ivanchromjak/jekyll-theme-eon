@@ -19,6 +19,19 @@
 }
 
 @mixin hook-button-misc(){
+
+  .uk-button-width-full {
+    width: 100%;
+  }
+  
+  .uk-button-width-medium {
+    min-width: 200px;
+  }
+
+  .uk-button-width-large {
+    min-width: 250px;
+  }
+
   .uk-button-medium {
     padding: 0 40px;
     line-height: 46px;
