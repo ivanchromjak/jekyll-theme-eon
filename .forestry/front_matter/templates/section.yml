@@ -211,6 +211,25 @@ fields:
       min: 0
       max: 1
       step: 0.1
+  - name: shape
+    type: file
+    config:
+      maxSize: 64
+    label: Shape
+  - name: shape_position
+    type: select
+    default: top
+    config:
+      required: false
+      options:
+      - top
+      - bottom
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Shape Position
   label: Background
 - name: container
   type: select
