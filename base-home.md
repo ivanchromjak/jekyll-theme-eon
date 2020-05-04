@@ -36,10 +36,6 @@ sections:
     content: ''
   columns: two
   column_one:
-  - template: title-h2
-    block: h2
-    title: Tired of never ending site maintenance
-    color: "#FFFFFF"
   - template: lead
     block: lead
     text: Put an end to constant theme and plugin updates. Build your website with
