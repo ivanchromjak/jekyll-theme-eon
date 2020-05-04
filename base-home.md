@@ -423,7 +423,7 @@ sections:
     size: large
     blank: true
     url: https://themeforest.net/item/eon-multipurpose-responsive-jekyll-theme/24065900
-    width: small
+    width: medium
   - template: block-button
     block: button
     text: Demo
