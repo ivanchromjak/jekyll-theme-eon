@@ -16,6 +16,7 @@
 @mixin hook-button(){
   font-weight: $button-font-weight;
   letter-spacing: 1px;
+  border-radius: $border-rounded-border-radius;
 }
 
 @mixin hook-button-misc(){
