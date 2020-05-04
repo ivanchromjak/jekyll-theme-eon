@@ -37,6 +37,47 @@ sections:
 - template: section
   columns: one
   grid: 1-2
+  horizontal_align: center
+  vertical_align: top
+  background:
+    style: default
+    image_align: center-center
+    overlay_opacity: 0.6
+    color: ''
+    image: ''
+    video: ''
+    overlay_color: ''
+  container: medium
+  size: large
+  remove_padding: none
+  column_one:
+  - template: cards
+    block: cards
+    media: top
+    style: none
+    grid: 1-4
+    gutter: large
+    cards:
+    - title: Backgrounds
+      heading: ''
+      content: Set section and header background color, image, video, and overlay.
+      icon: "/uploads/icons/ios-adjust.svg"
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    icon_color: "#074DF8"
+    icon_size: 
+  column_two: []
+  height: false
+  id: ''
+  class: ''
+- template: section
+  columns: one
+  grid: 1-2
   horizontal_align: left
   vertical_align: top
   background:
