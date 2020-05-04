@@ -423,6 +423,7 @@ sections:
     size: large
     blank: true
     url: https://themeforest.net/item/eon-multipurpose-responsive-jekyll-theme/24065900
+    width: small
   - template: block-button
     block: button
     text: Demo
@@ -430,6 +431,7 @@ sections:
     size: regular
     url: "#"
     blank: false
+    width: small
   column_two: []
   height: false
   id: ''
