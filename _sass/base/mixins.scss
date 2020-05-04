@@ -206,11 +206,11 @@
     font-style: normal;
   }
 }
-@mixin hook-section-misc(){
-  .uk-section-default + .uk-section-default, .uk-section-muted + .uk-section-muted, .uk-section-primary + .uk-section-primary, .uk-section-secondary + .uk-section-secondary {
-    padding-top: 0;
-  }
-}
+// @mixin hook-section-misc(){
+//   .uk-section-default + .uk-section-default, .uk-section-muted + .uk-section-muted, .uk-section-primary + .uk-section-primary, .uk-section-secondary + .uk-section-secondary {
+//     padding-top: 0;
+//   }
+// }
 
 @mixin hook-card-misc(){
   .card-icon {
@@ -665,6 +665,10 @@
 
     > * + * {
       margin-top: $global-margin;
+    }
+
+    .uk-button + .uk-button {
+      margin-left: $global-margin;
     }
   }
 
