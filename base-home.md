@@ -69,6 +69,17 @@ sections:
         size: regular
         url: ''
         blank: false
+    - title: Navbar
+      heading: ''
+      content: Fixed or sticky navbar with left, center and right-aligned navigation.
+      icon: "/uploads/icons/ios-navigation-toolbar-top.svg"
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
     icon_color: "#074DF8"
     icon_size: 
   column_two: []
