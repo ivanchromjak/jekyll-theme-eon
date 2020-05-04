@@ -168,10 +168,10 @@ sections:
         size: regular
         url: ''
         blank: false
-    - title: ''
+    - title: Instagram Feed
       heading: ''
-      content: ''
-      icon: ''
+      content: Display your latest Instagram image feed on the site.
+      icon: "/uploads/icons/ios-instagram.svg"
       image: ''
       button:
         text: Text
