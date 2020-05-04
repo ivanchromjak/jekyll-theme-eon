@@ -132,6 +132,42 @@ sections:
         size: regular
         url: ''
         blank: false
+    - title: Actively developed
+      heading: ''
+      content: New ready to use demos are being added continuously and new features
+        developed.
+      icon: ''
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: Documented
+      heading: ''
+      content: Not familiar with Jekyll? We have documented the setup and features
+        to get you started fast.
+      icon: ''
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: Customer support
+      heading: ''
+      content: Should you have questions, we are here to help. Each purchase includes
+        six months of support.
+      icon: ''
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
     icon_color: ''
     icon_size: 
   column_two: []
