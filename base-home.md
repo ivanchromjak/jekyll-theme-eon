@@ -44,7 +44,7 @@ sections:
     block: lead
     text: Put an end to constant theme and plugin updates. Build your website with
       Jekyll static generator and get on with what matters the most, your business.
-    color: false
+    color: "#FFFFFF"
   - template: block-button
     block: button
     text: Purchase
@@ -437,7 +437,7 @@ sections:
     block: lead
     text: Experience the advatages and peace of mind of running a static Jekyll site.
       Save time and concentrate an what is the most important, your business.
-    color: false
+    color: ''
   - template: margin
     block: margin
     size: default
