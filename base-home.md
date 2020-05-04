@@ -61,9 +61,10 @@ sections:
     grid: 1-3
     gutter: default
     cards:
-    - title: ''
+    - title: Blazing fast
       heading: ''
-      content: ''
+      content: Static sites are faster, nearly half of all visitors leave a site if
+        not loaded in three seconds.
       icon: ''
       image: ''
       button:
