@@ -432,15 +432,18 @@ sections:
   size: large
   remove_padding: none
   column_one:
-  - template: title-h2
-    block: h2
+  - template: heading
+    block: heading
+    tag: h2
+    size: h1
+    align: center
     title: Create your new website today!
-    color: ''
+    color: "#FFFFFF"
   - template: lead
     block: lead
     text: Experience the advatages and peace of mind of running a static Jekyll site.
       Save time and concentrate an what is the most important, your business.
-    color: ''
+    color: "#FFFFFF"
   - template: margin
     block: margin
     size: default
