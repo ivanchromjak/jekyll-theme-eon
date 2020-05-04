@@ -1,5 +1,5 @@
-{% if section.background.shape != empty %}
-<div class="uk-section-shape uk-shape-angle-bottom{% if section.background.style != 'custom' %} uk-background-{{ section.background.style }}{% endif %}" 
+{% if section.background.shape_top != 'none' %}
+<div class="uk-section-shape uk-shape-{{ section.background.shape_top }}{% if section.background.style != 'custom' %} uk-background-{{ section.background.style }}{% endif %}" 
   style="{% if section.background.style == 'custom' %}background-color: {{ section.background.color }};{% endif %}"></div>
 {% endif %}
 
