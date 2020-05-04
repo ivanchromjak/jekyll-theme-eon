@@ -56,7 +56,7 @@ sections:
     title: The first multipurpose Jekyll theme
   - template: margin
     block: margin
-    size: medium
+    size: large
   - template: cards
     block: cards
     media: top
