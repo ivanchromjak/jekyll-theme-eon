@@ -40,7 +40,7 @@ sections:
   horizontal_align: left
   vertical_align: top
   background:
-    style: default
+    style: muted
     image_align: center-center
     overlay_opacity: 0.6
     color: ''
@@ -51,42 +51,53 @@ sections:
   size: medium
   remove_padding: none
   column_one:
-  - template: gallery
-    block: gallery
-    lightbox: true
+  - template: title-h2
+    block: h2
+    title: Why use Eon theme?
+  - template: cards
+    block: cards
+    media: none
+    style: none
     grid: 1-3
-    gutter: medium
-    images:
-    - image: "/uploads/image8.jpg"
-      caption: nhghgh
-  column_two: []
-  height: false
-  id: ''
-  class: ''
-- template: section
-  columns: one
-  grid: 1-2
-  horizontal_align: left
-  vertical_align: top
-  background:
-    style: default
-    image_align: center-center
-    overlay_opacity: 0.6
-    color: ''
-    image: ''
-    video: ''
-    overlay_color: ''
-  container: medium
-  size: medium
-  remove_padding: none
-  column_one:
-  - template: formspree
-    block: formspree
-    layout: stacked
-    name: true
-    subject: true
-    id: '878787'
-    redirect: ''
+    gutter: default
+    cards:
+    - title: Blazing fast
+      heading: ''
+      content: Static sites are faster, nearly half of all visitors leave a site if
+        not loaded in three seconds.
+      icon: ''
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: Secure
+      heading: ''
+      content: There are only static files on a web server, there’s nothing dynamic
+        that can be exploited.
+      icon: ''
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: Host for free
+      heading: ''
+      content: Jekyll site can be hosted completely free on GitHub or Gitlab pages.
+      icon: ''
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    icon_color: ''
+    icon_size: 
   column_two: []
   height: false
   id: ''
