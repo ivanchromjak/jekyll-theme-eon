@@ -36,11 +36,6 @@ sections:
     content: ''
   columns: two
   column_one:
-  - template: lead
-    block: lead
-    text: Put an end to constant theme and plugin updates. Build your website with
-      Jekyll static generator and get on with what matters the most, your business.
-    color: "#FFFFFF"
   - template: block-button
     block: button
     text: Purchase
@@ -49,6 +44,11 @@ sections:
     width: medium
     blank: true
     url: https://themeforest.net/item/eon-multipurpose-responsive-jekyll-theme/24065900
+  - template: lead
+    block: lead
+    text: Put an end to constant theme and plugin updates. Build your website with
+      Jekyll static generator and get on with what matters the most, your business.
+    color: "#FFFFFF"
   column_two: []
   column_two_width: 1-5
 - template: section
