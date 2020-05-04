@@ -84,6 +84,7 @@ sections:
     overlay_color: ''
     shape: ''
     shape_position: ''
+    shape_top: angle
   container: medium
   size: large
   remove_padding: none
@@ -299,6 +300,7 @@ sections:
     image: ''
     video: ''
     overlay_color: ''
+    shape_top: ''
   container: medium
   size: medium
   remove_padding: none
@@ -329,6 +331,7 @@ sections:
     overlay_color: ''
     shape: "/uploads/shape-1.svg"
     shape_position: top
+    shape_top: ''
   container: medium
   size: large
   remove_padding: none
@@ -475,6 +478,7 @@ sections:
     video: ''
     shape: ''
     shape_position: ''
+    shape_top: ''
   container: small
   size: large
   remove_padding: none
