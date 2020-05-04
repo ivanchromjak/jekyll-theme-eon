@@ -179,10 +179,10 @@ sections:
         size: regular
         url: ''
         blank: false
-    - title: ''
+    - title: Formspree
       heading: ''
-      content: ''
-      icon: ''
+      content: Add contact forms to the site using free Formspree service.
+      icon: "/uploads/icons/ios-closed-envelope.svg"
       image: ''
       button:
         text: Text
