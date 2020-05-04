@@ -51,42 +51,15 @@ sections:
   size: medium
   remove_padding: none
   column_one:
-  - template: gallery
-    block: gallery
-    lightbox: true
-    grid: 1-3
-    gutter: medium
-    images:
-    - image: "/uploads/image8.jpg"
-      caption: nhghgh
-  column_two: []
-  height: false
-  id: ''
-  class: ''
-- template: section
-  columns: one
-  grid: 1-2
-  horizontal_align: left
-  vertical_align: top
-  background:
+  - template: cards
+    block: cards
+    media: none
     style: default
-    image_align: center-center
-    overlay_opacity: 0.6
-    color: ''
-    image: ''
-    video: ''
-    overlay_color: ''
-  container: medium
-  size: medium
-  remove_padding: none
-  column_one:
-  - template: formspree
-    block: formspree
-    layout: stacked
-    name: true
-    subject: true
-    id: '878787'
-    redirect: ''
+    grid: 1-3
+    gutter: default
+    cards: []
+    icon_color: ''
+    icon_size: 
   column_two: []
   height: false
   id: ''
