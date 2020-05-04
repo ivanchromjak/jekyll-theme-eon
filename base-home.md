@@ -408,7 +408,7 @@ sections:
     block: button
     text: Purchase
     style: primary
-    size: medium
+    size: large
     blank: true
     url: https://themeforest.net/item/eon-multipurpose-responsive-jekyll-theme/24065900
   column_two: []
