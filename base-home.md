@@ -190,7 +190,21 @@ sections:
   container: small
   size: large
   remove_padding: none
-  column_one: []
+  column_one:
+  - template: title-h2
+    block: h2
+    title: Create your new website today!
+  - template: lead
+    block: lead
+    text: Experience the advatages and peace of mind of running a static Jekyll site.
+      Save time and concentrate an what is the most important, your business.
+  - template: block-button
+    block: button
+    text: Purchase
+    style: primary
+    size: medium
+    blank: true
+    url: https://themeforest.net/item/eon-multipurpose-responsive-jekyll-theme/24065900
   column_two: []
   height: false
   id: ''
