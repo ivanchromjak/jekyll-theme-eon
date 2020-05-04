@@ -61,11 +61,11 @@ sections:
     url: https://themeforest.net/item/eon-multipurpose-responsive-jekyll-theme/24065900
   - template: block-button
     block: button
-    text: Text
-    style: light-outline
+    text: Demos
+    style: light
     size: large
     width: medium
-    url: "#"
+    url: "#demos"
     blank: false
   column_two: []
   column_two_width: 1-5
