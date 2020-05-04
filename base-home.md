@@ -61,6 +61,29 @@ sections:
     grid: 1-3
     gutter: default
     cards:
+    - title: Host for free
+      heading: ''
+      content: Jekyll site can be hosted completely free on GitHub or Gitlab pages.
+      icon: ''
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: Secure
+      heading: ''
+      content: There are only static files on a web server, there’s nothing dynamic
+        that can be exploited.
+      icon: ''
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
     - title: Blazing fast
       heading: ''
       content: Static sites are faster, nearly half of all visitors leave a site if
