@@ -24,7 +24,7 @@ sections:
     search: false
   light_color: true
   height: true
-  parallax: false
+  parallax: true
   container_one:
     title: ''
     subtitle: ''
