@@ -1,0 +1,28 @@
+---
+label: Margin
+hide_body: true
+fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: margin
+- name: size
+  type: select
+  default: default
+  config:
+    required: false
+    options:
+    - small
+    - default
+    - medium
+    - large
+    - xlarge
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Size
