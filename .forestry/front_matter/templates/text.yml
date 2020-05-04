@@ -18,3 +18,9 @@ fields:
     schema:
       format: markdown
   label: Text
+- name: color
+  type: color
+  label: Color
+  config:
+    required: false
+    color_format: Hex

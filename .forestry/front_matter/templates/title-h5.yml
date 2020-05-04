@@ -14,3 +14,9 @@ fields:
   config:
     required: false
   label: Title
+- name: color
+  type: color
+  label: Color
+  config:
+    required: false
+    color_format: Hex
