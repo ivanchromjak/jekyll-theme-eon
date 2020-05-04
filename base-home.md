@@ -328,7 +328,7 @@ sections:
     video: ''
     overlay_color: ''
     shape: ''
-    shape_position: ''
+    shape_position: top
   container: medium
   size: large
   remove_padding: none
