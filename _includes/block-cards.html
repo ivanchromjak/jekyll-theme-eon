@@ -55,7 +55,7 @@
           </div>
         </div>
       {% else %}
-        <div class="uk-card{% if block.style != empty %} uk-card-{{ block.style }}{% endif %}{% if card.icon != empty %} card-icon{% endif %}{% if block.heading != empty %} card-pricing{% endif %}">
+        <div class="uk-card{% if block.style != empty %} uk-card-{{ block.style }}{% endif %}{% if card.icon != empty %} card-icon{% endif %}{% if card.heading != empty %} card-pricing{% endif %}">
           {% if card.icon != empty or card.image != empty %}
             <div class="uk-card-media-top{% if card.icon != empty and block.style != empty %} uk-padding uk-padding-remove-bottom{% endif %}"{% if block.icon_color != empty %} style="color: {{ block.icon_color }}"{% endif %}>
               {% if card.icon != empty %}
@@ -67,7 +67,7 @@
           {% endif %}
           <div class="uk-card-body">
             <h3 class="uk-card-title">{{ card.title }}</h3>
-            {% if card.heading %}
+            {% if card.heading != empty %}
               <h4 class="uk-heading-medium">{{ card.heading }}</h4>
             {% endif %}
             {{ card.content | markdownify }}

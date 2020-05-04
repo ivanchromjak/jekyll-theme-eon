@@ -6,22 +6,22 @@ layout: default
   {% include partials/section-open.html %}
 
   {% if section.columns == 'one' %}
-    {% for block in section.column_one %}
-      <div class="uk-margin-remove-last uk-text-{{ section.horizontal_align | default: 'left' }}">
+    <div class="uk-section-column uk-text-{{ section.horizontal_align | default: 'left' }}">
+      {% for block in section.column_one %}
         {% include block-{{ block.block }}.html %}
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
   {% else %}
     <div class="uk-grid-large uk-text-{{ section.horizontal_align | default: 'left' }}" data-uk-grid>
       <div class="uk-width-expand@m uk-flex uk-flex-{{ section.vertical_align | default: 'top' }}">
-        <div class="uk-margin-remove-last">
+        <div class="uk-section-column">
           {% for block in section.column_one %}
             {% include block-{{ block.block }}.html %}
           {% endfor %}
         </div>
       </div>
       <div class="uk-width-{{ section.grid | default: '1-3' }}@m uk-flex uk-flex-{{ section.vertical_align | default: 'top' }}">
-        <div class="uk-margin-remove-last">
+        <div class="uk-section-column">
           {% for block in section.column_two %}
             {% include block-{{ block.block }}.html %}
           {% endfor %}
