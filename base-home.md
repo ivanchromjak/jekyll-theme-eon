@@ -40,7 +40,7 @@ sections:
   horizontal_align: left
   vertical_align: top
   background:
-    style: default
+    style: muted
     image_align: center-center
     overlay_opacity: 0.6
     color: ''
@@ -61,9 +61,10 @@ sections:
     grid: 1-3
     gutter: default
     cards:
-    - title: Host for free
+    - title: Blazing fast
       heading: ''
-      content: Jekyll site can be hosted completely free on GitHub or Gitlab pages.
+      content: Static sites are faster, nearly half of all visitors leave a site if
+        not loaded in three seconds.
       icon: ''
       image: ''
       button:
@@ -84,10 +85,9 @@ sections:
         size: regular
         url: ''
         blank: false
-    - title: Blazing fast
+    - title: Host for free
       heading: ''
-      content: Static sites are faster, nearly half of all visitors leave a site if
-        not loaded in three seconds.
+      content: Jekyll site can be hosted completely free on GitHub or Gitlab pages.
       icon: ''
       image: ''
       button:
