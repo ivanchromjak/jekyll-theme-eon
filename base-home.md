@@ -34,6 +34,13 @@ sections:
     title: ''
     subtitle: ''
     content: ''
+  columns: two
+  column_one:
+  - template: title-h2
+    block: h2
+    title: Tired of never ending site maintenance
+  column_two: []
+  column_two_width: ''
 - template: section
   columns: one
   grid: 1-2
