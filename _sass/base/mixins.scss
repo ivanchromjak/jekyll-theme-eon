@@ -127,21 +127,21 @@
   .uk-button-light-outline {
     background-color: $inverse-button-default-background;
     color: $inverse-button-default-color;
-    border: $button-border-width solid $inverse-button-default-hover-background;
+    border: $button-border-width solid $inverse-button-primary-background;
   }
 
   .uk-button-light-outline:hover,
   .uk-button-light-outline:focus {
     background-color: $inverse-button-default-background;
     color: $inverse-button-default-color;
-    border: $button-border-width solid $inverse-button-default-hover-background;
+    border: $button-border-width solid darken($inverse-button-primary-background, 20%);
   }
 
   .uk-button-light-outline:active,
   .uk-button-light-outline.uk-active {
     background-color: $inverse-button-default-background;
     color: $inverse-button-default-color;
-    border: $button-border-width solid $inverse-button-default-hover-background;
+    border: $button-border-width solid darken($inverse-button-primary-background, 20%);
   }
 
   // Primary outline
