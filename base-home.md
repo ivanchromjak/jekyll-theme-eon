@@ -190,10 +190,10 @@ sections:
         size: regular
         url: ''
         blank: false
-    - title: ''
+    - title: Videos
       heading: ''
-      content: ''
-      icon: ''
+      content: Section of cards with videos played in a popup lightbox.
+      icon: "/uploads/icons/ios-play-button-circled.svg"
       image: ''
       button:
         text: Text
@@ -201,10 +201,10 @@ sections:
         size: regular
         url: ''
         blank: false
-    - title: ''
+    - title: Team
       heading: ''
-      content: ''
-      icon: ''
+      content: Team section displaying member names, avatars, and positions.
+      icon: "/uploads/icons/ios-user-groups.svg"
       image: ''
       button:
         text: Text
