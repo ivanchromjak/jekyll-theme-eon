@@ -8,7 +8,7 @@ sections:
     style: secondary
     align: center-center
     overlay_opacity: '0.9'
-    image: ''
+    image: "/uploads/blob-1.svg"
     video: ''
     overlay_color: ''
     color: ''
