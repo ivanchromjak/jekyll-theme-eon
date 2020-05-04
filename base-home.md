@@ -177,7 +177,7 @@ sections:
 - template: section
   columns: one
   grid: 1-2
-  horizontal_align: left
+  horizontal_align: center
   vertical_align: top
   background:
     style: custom
@@ -187,8 +187,8 @@ sections:
     color: "#000000"
     overlay_color: "#000000"
     video: ''
-  container: medium
-  size: medium
+  container: small
+  size: large
   remove_padding: none
   column_one: []
   column_two: []
