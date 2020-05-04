@@ -5,7 +5,7 @@ sections:
 - template: header
   block: header
   background:
-    style: primary
+    style: secondary
     align: center-center
     overlay_opacity: 0.7
     image: "/uploads/Working-Space.jpg"
