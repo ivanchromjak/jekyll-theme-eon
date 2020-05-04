@@ -56,7 +56,7 @@ sections:
     title: The first multipurpose Jekyll theme
   - template: margin
     block: margin
-    size: medium
+    size: large
   - template: cards
     block: cards
     media: top
@@ -266,6 +266,9 @@ sections:
   - template: title-h2
     block: h2
     title: Why use Eon theme?
+  - template: margin
+    block: margin
+    size: large
   - template: cards
     block: cards
     media: none
@@ -410,6 +413,9 @@ sections:
     block: lead
     text: Experience the advatages and peace of mind of running a static Jekyll site.
       Save time and concentrate an what is the most important, your business.
+  - template: margin
+    block: margin
+    size: default
   - template: block-button
     block: button
     text: Purchase
