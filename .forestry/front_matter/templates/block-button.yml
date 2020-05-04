@@ -65,9 +65,9 @@ fields:
     required: false
     options:
     - default
-    - 1-1
-    - small
     - medium
+    - large
+    - full
     source:
       type: simple
       section: 
