@@ -51,13 +51,27 @@ sections:
   size: medium
   remove_padding: none
   column_one:
+  - template: title-h2
+    block: h2
+    title: Why use Eon theme?
   - template: cards
     block: cards
     media: none
-    style: default
+    style: none
     grid: 1-3
     gutter: default
-    cards: []
+    cards:
+    - title: ''
+      heading: ''
+      content: ''
+      icon: ''
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
     icon_color: ''
     icon_size: 
   column_two: []
