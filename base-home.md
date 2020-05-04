@@ -39,10 +39,12 @@ sections:
   - template: title-h2
     block: h2
     title: Tired of never ending site maintenance
+    color: "#FFFFFF"
   - template: lead
     block: lead
     text: Put an end to constant theme and plugin updates. Build your website with
       Jekyll static generator and get on with what matters the most, your business.
+    color: false
   - template: block-button
     block: button
     text: Purchase
@@ -73,6 +75,7 @@ sections:
   - template: title-h2
     block: h2
     title: The first multipurpose Jekyll theme
+    color: ''
   - template: margin
     block: margin
     size: large
@@ -285,6 +288,7 @@ sections:
   - template: title-h2
     block: h2
     title: Why use Eon theme?
+    color: ''
   - template: margin
     block: margin
     size: large
@@ -428,10 +432,12 @@ sections:
   - template: title-h2
     block: h2
     title: Create your new website today!
+    color: ''
   - template: lead
     block: lead
     text: Experience the advatages and peace of mind of running a static Jekyll site.
       Save time and concentrate an what is the most important, your business.
+    color: false
   - template: margin
     block: margin
     size: default
