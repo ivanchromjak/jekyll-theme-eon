@@ -48,7 +48,7 @@ sections:
     video: ''
     overlay_color: ''
   container: medium
-  size: medium
+  size: large
   remove_padding: none
   column_one:
   - template: title-h2
