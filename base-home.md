@@ -8,9 +8,9 @@ sections:
     style: secondary
     align: center-center
     overlay_opacity: '0.8'
-    image: ''
+    image: "/uploads/Working-Space.jpg"
     video: ''
-    overlay_color: ''
+    overlay_color: "#0E0B2B"
     color: ''
   header_size: large
   container: medium
