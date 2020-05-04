@@ -143,6 +143,7 @@ fields:
   - cards
   - text
   - title-h2
+  - heading
   config:
     min: 
     max: 
@@ -167,6 +168,7 @@ fields:
   - cards
   - text
   - title-h2
+  - heading
   config:
     min: 
     max: 

@@ -36,8 +36,11 @@ sections:
     content: ''
   columns: two
   column_one:
-  - template: title-h2
-    block: h2
+  - template: heading
+    block: heading
+    tag: h1
+    size: small
+    align: left
     title: Tired of never ending site maintenance
     color: "#FFFFFF"
   - template: lead
