@@ -266,6 +266,9 @@ sections:
   - template: title-h2
     block: h2
     title: Why use Eon theme?
+  - template: margin
+    block: margin
+    size: large
   - template: cards
     block: cards
     media: none
