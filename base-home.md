@@ -395,7 +395,7 @@ sections:
   horizontal_align: center
   vertical_align: top
   background:
-    style: default
+    style: secondary
     image_align: center-center
     overlay_opacity: '0.7'
     image: "/uploads/header-9.jpeg"
