@@ -8,9 +8,9 @@ sections:
     style: secondary
     align: center-center
     overlay_opacity: '0.9'
-    image: "/uploads/Working-Space.jpg"
+    image: ''
     video: ''
-    overlay_color: "#0E0B2B"
+    overlay_color: ''
     color: ''
   header_size: large
   container: medium
@@ -82,6 +82,8 @@ sections:
     image: ''
     video: ''
     overlay_color: ''
+    shape: ''
+    shape_position: ''
   container: medium
   size: large
   remove_padding: none
@@ -295,6 +297,8 @@ sections:
     image: ''
     video: ''
     overlay_color: ''
+    shape: ''
+    shape_position: ''
   container: medium
   size: large
   remove_padding: none
@@ -439,6 +443,8 @@ sections:
     color: "#000000"
     overlay_color: "#000000"
     video: ''
+    shape: ''
+    shape_position: ''
   container: small
   size: large
   remove_padding: none
