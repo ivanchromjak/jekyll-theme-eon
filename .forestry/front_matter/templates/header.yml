@@ -122,6 +122,77 @@ fields:
       file: 
       path: 
   label: Header Columns
+- name: column_one
+  type: blocks
+  label: Column One
+  template_types:
+  - videos
+  - block-button
+  - instagram
+  - google-map
+  - title-h5
+  - gallery
+  - slider
+  - margin
+  - image
+  - formspree
+  - icon
+  - lead
+  - mailchimp
+  - search
+  - cards
+  - text
+  - title-h2
+  config:
+    min: 
+    max: 
+- name: column_two
+  type: blocks
+  label: Column Two
+  template_types:
+  - videos
+  - block-button
+  - instagram
+  - google-map
+  - title-h5
+  - gallery
+  - slider
+  - margin
+  - image
+  - formspree
+  - icon
+  - lead
+  - mailchimp
+  - search
+  - cards
+  - text
+  - title-h2
+  config:
+    min: 
+    max: 
+  showOnly:
+    field: columns
+    value: two
+- name: column_two_width
+  type: select
+  default: 1-2
+  config:
+    required: false
+    options:
+    - 1-2
+    - 1-3
+    - 1-4
+    - 1-5
+    - 1-6
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Column Two Width
+  showOnly:
+    field: columns
+    value: two
 - name: light_color
   type: boolean
   label: Light Color
@@ -198,23 +269,3 @@ fields:
       file: 
       path: 
   label: Heading Size
-- name: column_two_width
-  type: select
-  default: 1-2
-  config:
-    required: false
-    options:
-    - 1-2
-    - 1-3
-    - 1-4
-    - 1-5
-    - 1-6
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Column Two Width
-  showOnly:
-    field: columns
-    value: two
