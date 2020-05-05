@@ -359,7 +359,7 @@ sections:
     tag: h2
     size: h1
     align: center
-    title: Why chose Jekyll static generator?
+    title: Why choose Jekyll static generator?
     color: ''
   - template: margin
     block: margin
