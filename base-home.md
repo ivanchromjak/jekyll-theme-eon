@@ -50,7 +50,7 @@ sections:
     block: lead
     text: Put an end to constant theme and plugin updates. Build your website with
       Jekyll static generator and get on with what matters the most, your business.
-    color: "#EDEDED"
+    color: "#BFC1C3"
   - template: margin
     block: margin
     size: default
