@@ -13,6 +13,8 @@ sections:
     overlay_color: ''
     color: ''
     size: contain
+    image_align: ''
+    shape_top: ''
   header_size: small
   container: medium
   padding_remove: none
@@ -84,6 +86,9 @@ sections:
   vertical_align: middle
   horizontal_align: left
   size: large
+  remove_padding: ''
+  id: ''
+  class: ''
 - template: section
   columns: one
   grid: 1-2
@@ -318,7 +323,7 @@ sections:
     image: ''
     video: ''
     overlay_color: ''
-    shape_top: curve
+    shape_top: angle
   container: medium
   size: medium
   remove_padding: none
