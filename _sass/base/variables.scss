@@ -52,6 +52,9 @@ $article-meta-font-size: 	                    0.8125rem;
 $article-meta-line-height:                      1.6;
 
 // Button variables
+// $button-font-size:                              $global-font-size;
+// $button-small-font-size:                        $global-small-font-size;
+$button-large-font-size:                        1.0625rem;
 $button-font-weight:                            400;
 $button-default-color:                          #222;
 $button-default-hover-background:               $button-default-color;
@@ -71,7 +74,7 @@ $inverse-button-primary-hover-color:            #000;
 // Card variables
 $card-small-body-padding-horizontal:            25px;
 $card-small-body-padding-vertical:              25px;
-$card-title-font-size:                          1.25rem;
+$card-title-font-size:                          1.375rem;
 $card-default-title-color:                      $base-heading-color;
 $card-default-color:                            $base-body-color;
 

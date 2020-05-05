@@ -280,7 +280,7 @@ sections:
         size: regular
         url: ''
         blank: false
-    icon_color: "#074DF8"
+    icon_color: "#008aff"
     icon_size: 
   column_two: []
   height: false
