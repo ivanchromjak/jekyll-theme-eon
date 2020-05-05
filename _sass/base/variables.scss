@@ -12,7 +12,8 @@ $global-xlarge-font-size:                       2rem;
 $global-large-font-size:                        1.5rem;
 $global-medium-font-size:                       1.25rem;
 $xsmall-font-size:                              0.875rem;
-                                
+$border-rounded-border-radius:                  5px;
+                             
 // Base variables
 $base-heading-font-family:                      'Nunito Sans', 'Poppins', 'Montserrat', system-ui, san-serif;
 $base-heading-font-weight:                      700;
@@ -23,12 +24,19 @@ $base-body-color:                               #64748a;
 $base-code-font-family:                         Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
 $base-code-color:                               #6a6b71;
 $base-code-font-size:                           $xsmall-font-size;
-$base-pre-font-size:                            $xsmall-font-size;
+$base-pre-font-size:                            0.9375rem;
 $base-pre-line-height:                          1.65;
 $base-pre-font-family:                          $base-code-font-family;
-$base-pre-color:                                $base-code-color;
+$base-pre-color:                                lighten($global-primary-background, 25%);
+
+$base-pre-padding:                              30px;
+$base-pre-background:                           $global-secondary-background;
+// $base-pre-border-width: $global-border-width !default;
+// $base-pre-border: $global-border !default;
+$base-pre-border-radius:                        7px;
+
+
 $border-light:                                  #edeff1;
-// $border-rounded-border-radius:                  2px;
 $text-lead-font-size:                           1.3125rem;
 $link-muted-hover-color:                        #222;
 $link-text-hover-color:                         #555;

@@ -1,1 +1,1 @@
-<div{% if block.color != empty %} style="color: {{ block.color }};"{% endif %}>{{ block.text }}</div>
+<div{% if block.color != empty %} style="color: {{ block.color }};"{% endif %}>{{ block.text | markdownify }}</div>

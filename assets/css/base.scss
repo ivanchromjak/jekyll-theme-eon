@@ -20,4 +20,4 @@ $global-secondary-background:   {{ site.data.options.base.secondary_color | defa
 @import "base/uikit";
 
 // 5. Other vendor styles
-@import "syntax-highlighting/bw";
+// @import "base/syntax-highlighting";

@@ -2,6 +2,11 @@
 {% assign footer_layout = site.data.options.[template].footer.layout %}
 {% assign social_networks = site.data.options.[template].footer.social_networks %}
 
+{% if section.background.shape_top != 'none' %}
+<div class="uk-section-shape uk-shape-{{ section.background.shape_top }}{% if section.background.style != 'custom' %} uk-background-{{ section.background.style }}{% endif %}" 
+  style="{% if section.background.style == 'custom' %}background-color: {{ section.background.color }};{% endif %}"></div>
+{% endif %}
+
 {% if footer_layout == 'center' %}  
   <footer
     class="uk-section uk-section-{{ section.style | default: site.data.options.[template].footer.style }} uk-text-center uk-text-muted uk-link-muted">
