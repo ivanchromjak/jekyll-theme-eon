@@ -70,7 +70,7 @@ sections:
     blank: false
   - template: margin
     block: margin
-    size: default
+    size: medium
   column_two:
   - template: image
     block: image
