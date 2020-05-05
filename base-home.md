@@ -104,10 +104,13 @@ sections:
   size: large
   remove_padding: none
   column_one:
-  - template: title-h2
-    block: h2
+  - template: heading
+    block: heading
+    tag: h2
+    size: h1
+    align: center
     title: The first multipurpose Jekyll theme
-    color: ''
+    color: "#FFFFFF"
   - template: margin
     block: margin
     size: large
