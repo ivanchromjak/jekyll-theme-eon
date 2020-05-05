@@ -68,7 +68,14 @@ sections:
     width: medium
     url: "#demos"
     blank: false
-  column_two: []
+  column_two:
+  - template: image
+    block: image
+    align: none
+    alt: Wibsite
+    image: "/uploads/site-1.svg"
+    caption: ''
+    lightbox: false
   column_two_width: 1-5
 - template: section
   columns: one
