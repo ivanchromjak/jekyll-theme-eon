@@ -110,7 +110,7 @@ sections:
     size: h1
     align: center
     title: The first multipurpose Jekyll theme
-    color: "#FFFFFF"
+    color: ''
   - template: margin
     block: margin
     size: large
