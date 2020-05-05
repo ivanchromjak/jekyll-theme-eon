@@ -367,6 +367,61 @@ sections:
 - template: section
   columns: one
   grid: 1-2
+  horizontal_align: center
+  vertical_align: top
+  background:
+    style: secondary
+    image_align: center-center
+    overlay_opacity: '0.5'
+    image: "/uploads/header-9.jpeg"
+    color: "#000000"
+    overlay_color: "#000810"
+    video: ''
+    shape: ''
+    shape_position: ''
+    shape_top: ''
+  container: small
+  size: large
+  remove_padding: none
+  column_one:
+  - template: heading
+    block: heading
+    tag: h2
+    size: h1
+    align: center
+    title: Create your new website today!
+    color: "#FFFFFF"
+  - template: lead
+    block: lead
+    text: Experience the advatages and peace of mind of running a static Jekyll site.
+      Save time and concentrate an what is the most important, your business.
+    color: "#FFFFFF"
+  - template: margin
+    block: margin
+    size: default
+  - template: block-button
+    block: button
+    text: Purchase
+    style: primary
+    size: large
+    blank: true
+    url: https://themeforest.net/item/eon-multipurpose-responsive-jekyll-theme/24065900
+    width: medium
+  - template: block-button
+    block: button
+    text: Demo
+    style: light-outline
+    size: large
+    url: "#"
+    blank: false
+    width: medium
+  column_two: []
+  height: false
+  id: ''
+  class: ''
+- template: section
+  columns: one
+  grid: 1-2
   horizontal_align: left
   vertical_align: top
   background:
@@ -510,61 +565,6 @@ sections:
         blank: false
     icon_color: ''
     icon_size: 
-  column_two: []
-  height: false
-  id: ''
-  class: ''
-- template: section
-  columns: one
-  grid: 1-2
-  horizontal_align: center
-  vertical_align: top
-  background:
-    style: secondary
-    image_align: center-center
-    overlay_opacity: '0.5'
-    image: "/uploads/header-9.jpeg"
-    color: "#000000"
-    overlay_color: "#000810"
-    video: ''
-    shape: ''
-    shape_position: ''
-    shape_top: ''
-  container: small
-  size: large
-  remove_padding: none
-  column_one:
-  - template: heading
-    block: heading
-    tag: h2
-    size: h1
-    align: center
-    title: Create your new website today!
-    color: "#FFFFFF"
-  - template: lead
-    block: lead
-    text: Experience the advatages and peace of mind of running a static Jekyll site.
-      Save time and concentrate an what is the most important, your business.
-    color: "#FFFFFF"
-  - template: margin
-    block: margin
-    size: default
-  - template: block-button
-    block: button
-    text: Purchase
-    style: primary
-    size: large
-    blank: true
-    url: https://themeforest.net/item/eon-multipurpose-responsive-jekyll-theme/24065900
-    width: medium
-  - template: block-button
-    block: button
-    text: Demo
-    style: light-outline
-    size: large
-    url: "#"
-    blank: false
-    width: medium
   column_two: []
   height: false
   id: ''
