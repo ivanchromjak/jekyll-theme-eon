@@ -76,7 +76,7 @@ sections:
     image: "/uploads/site-1.svg"
     caption: ''
     lightbox: false
-  column_two_width: 1-5
+  column_two_width: 1-3
 - template: section
   columns: one
   grid: 1-2
