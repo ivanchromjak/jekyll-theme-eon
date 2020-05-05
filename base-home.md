@@ -68,6 +68,9 @@ sections:
     width: medium
     url: "#demos"
     blank: false
+  - template: margin
+    block: margin
+    size: default
   column_two:
   - template: image
     block: image
