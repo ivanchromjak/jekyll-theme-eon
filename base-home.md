@@ -352,9 +352,14 @@ sections:
   size: large
   remove_padding: none
   column_one:
-  - template: code
-    block: code
-    code: xxx
+  - template: text
+    block: text
+    text: |2-
+          bundle install
+          bundle exec jekyll serve
+          npm install
+          bundle exec jekyll s --livereload
+    color: ''
   column_two: []
   height: false
   id: ''
