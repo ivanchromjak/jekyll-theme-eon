@@ -189,7 +189,7 @@ fields:
   showOnly:
     field: columns
     value: two
-- name: column_two_width
+- name: grid
   type: select
   default: 1-2
   config:
@@ -268,3 +268,33 @@ fields:
 - name: parallax
   type: boolean
   label: Parallax
+- name: vertical_align
+  type: select
+  default: top
+  config:
+    required: false
+    options:
+    - top
+    - middle
+    - bottom
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Vertical Align
+- name: horizontal_align
+  type: select
+  default: left
+  config:
+    required: false
+    options:
+    - left
+    - center
+    - right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Horizontal Align

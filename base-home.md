@@ -77,6 +77,9 @@ sections:
     caption: ''
     lightbox: false
   column_two_width: 1-2
+  grid: 1-2
+  vertical_align: middle
+  horizontal_align: left
 - template: section
   columns: one
   grid: 1-2
