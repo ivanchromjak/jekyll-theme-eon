@@ -354,9 +354,12 @@ sections:
   size: large
   remove_padding: none
   column_one:
-  - template: title-h2
-    block: h2
-    title: Why use Eon theme?
+  - template: heading
+    block: heading
+    tag: h2
+    size: h1
+    align: center
+    title: Why chose Jekyll static generator?
     color: ''
   - template: margin
     block: margin
