@@ -12,6 +12,7 @@ sections:
     video: ''
     overlay_color: ''
     color: ''
+    size: contain
   header_size: medium
   container: medium
   padding_remove: none
