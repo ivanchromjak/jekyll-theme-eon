@@ -80,7 +80,7 @@ sections:
   grid: 1-2
   vertical_align: middle
   horizontal_align: left
-  size: small
+  size: xsmall
 - template: section
   columns: one
   grid: 1-2
