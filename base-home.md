@@ -13,7 +13,7 @@ sections:
     overlay_color: ''
     color: ''
     size: contain
-  header_size: medium
+  header_size: small
   container: medium
   padding_remove: none
   heading_size: medium
@@ -48,10 +48,10 @@ sections:
     block: lead
     text: Put an end to constant theme and plugin updates. Build your website with
       Jekyll static generator and get on with what matters the most, your business.
-    color: "#FFFFFF"
+    color: "#EDEDED"
   - template: margin
     block: margin
-    size: medium
+    size: default
   - template: block-button
     block: button
     text: Purchase
