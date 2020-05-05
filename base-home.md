@@ -8,7 +8,7 @@ sections:
     style: secondary
     align: center-right
     overlay_opacity: '0.9'
-    image: "/uploads/blob-3.svg"
+    image: "/uploads/blob-1.svg"
     video: ''
     overlay_color: ''
     color: ''
@@ -73,7 +73,7 @@ sections:
     block: image
     align: none
     alt: Wibsite
-    image: "/uploads/site-1.svg"
+    image: "/uploads/site-2.svg"
     caption: ''
     lightbox: false
   column_two_width: 1-2

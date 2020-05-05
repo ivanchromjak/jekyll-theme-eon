@@ -34,6 +34,11 @@ $link-muted-hover-color:                        #222;
 $link-text-hover-color:                         #555;
 $overlay-primary-background:                    rgba(34,34,34,0.8);
 
+$global-inverse-color:                          #fff;
+$inverse-global-emphasis-color:                 $global-inverse-color;
+$inverse-global-muted-color:                    rgba($global-inverse-color, 0.5);
+$inverse-global-color:                          rgba($global-inverse-color, 0.8);
+
 // Accordion variables
 $accordion-item-margin-top:                     20px;
 $accordion-title-font-size:                     1.1875rem;
@@ -93,18 +98,31 @@ $inverse-logo-hover-color:                      #fff;
 // Navigation variables
 $nav-primary-item-font-size:                    $global-large-font-size;
 $navbar-background:                             #fff;
-$navbar-nav-item-color:                         #333;
-$navbar-nav-item-hover-color:                   #000;
-$navbar-nav-item-active-color:                  #000;
-$navbar-nav-item-font-size:                     15px;
+$navbar-nav-item-color:                         #222;
+$navbar-nav-item-hover-color:                   $global-primary-background;
+$navbar-nav-item-active-color:                  $global-primary-background;
+$navbar-nav-item-font-size:                     0.9375rem;
 $navbar-nav-item-text-transform:                none;
 $navbar-toggle-color:                           #333;
-$navbar-toggle-hover-color:                     #000;
-$navbar-dropdown-nav-item-color:                $base-body-color;
+$navbar-toggle-hover-color:                     $global-primary-background;
+
+$navbar-dropdown-nav-font-size:                 $navbar-nav-item-font-size;
+$navbar-dropdown-nav-item-color:                $navbar-nav-item-color;
+$navbar-dropdown-nav-item-hover-color:          $global-primary-background;
+$navbar-dropdown-nav-item-active-color:         $global-primary-background;
+
 $offcanvas-bar-color-mode:                      dark;
 $offcanvas-bar-background:                      #fff;
 $subnav-item-font-size:                         $global-small-font-size;
 $subnav-item-text-transform:                    uppercase;
+
+$inverse-navbar-nav-item-color:                 $inverse-global-color;
+$inverse-navbar-nav-item-hover-color:           $inverse-global-emphasis-color;
+$inverse-navbar-nav-item-onclick-color:         $inverse-global-emphasis-color;
+$inverse-navbar-nav-item-active-color:          $inverse-global-emphasis-color;
+$inverse-navbar-item-color:                     $inverse-global-color;
+$inverse-navbar-toggle-color:                   $inverse-global-color;
+$inverse-navbar-toggle-hover-color:             $inverse-global-emphasis-color;
 
 // Search variables
 $search-default-background:                     #fff;

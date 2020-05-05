@@ -68,6 +68,25 @@
   }
 
   // Warning
+  .uk-button-primary-preserve {
+    background-color: $button-primary-background;
+    color: $button-primary-color;
+    border: 1px solid transparent;
+  }
+
+  .uk-button-primary-preserve:hover,
+  .uk-button-primary-preserve:focus {
+    background-color: $button-primary-hover-background;
+    color: $button-primary-color;
+  }
+
+  .uk-button-primary-preserve:active,
+  .uk-button-primary-preserve.uk-active {
+    background-color: $button-primary-hover-background;
+    color: $button-primary-color;
+  }
+
+  // Warning
   .uk-button-warning {
     background-color: $button-warning-background;
     color: $button-primary-color;
@@ -456,7 +475,7 @@
   transition: 0.1s ease-in-out;
   -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   // font-weight: 400;
 }
 
