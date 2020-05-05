@@ -212,7 +212,7 @@ fields:
 - name: light_color
   type: boolean
   label: Light Color
-- name: header_size
+- name: size
   type: select
   default: medium
   config:
