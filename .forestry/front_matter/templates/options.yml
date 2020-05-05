@@ -134,5 +134,20 @@ fields:
       default: true
     label: Navbar
   label: Crypto
+- name: shape_top
+  type: select
+  default: none
+  config:
+    required: false
+    options:
+    - angle
+    - curve
+    - none
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Shape Top
 pages:
 - _data/options.yml
