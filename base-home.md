@@ -492,10 +492,10 @@ sections:
   background:
     style: secondary
     image_align: center-center
-    overlay_opacity: '0.7'
+    overlay_opacity: '0.5'
     image: "/uploads/header-9.jpeg"
     color: "#000000"
-    overlay_color: "#000000"
+    overlay_color: "#000810"
     video: ''
     shape: ''
     shape_position: ''
@@ -522,7 +522,7 @@ sections:
   - template: block-button
     block: button
     text: Purchase
-    style: light
+    style: primary
     size: large
     blank: true
     url: https://themeforest.net/item/eon-multipurpose-responsive-jekyll-theme/24065900
