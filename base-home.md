@@ -24,7 +24,7 @@ sections:
     transparent_light_color: true
     search: false
   light_color: true
-  height: true
+  height: false
   parallax: true
   container_one:
     title: ''
@@ -83,7 +83,7 @@ sections:
   grid: 1-2
   vertical_align: middle
   horizontal_align: left
-  size: xsmall
+  size: large
 - template: section
   columns: one
   grid: 1-2
