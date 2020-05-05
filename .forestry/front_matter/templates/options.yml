@@ -119,6 +119,21 @@ fields:
       default: true
     label: Footer
     description: The default setting for the site footer.
+  - name: shape_top
+    type: select
+    default: none
+    config:
+      required: false
+      options:
+      - angle
+      - curve
+      - none
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Shape Top
   label: Base
 - name: crypto
   type: field_group
@@ -134,20 +149,5 @@ fields:
       default: true
     label: Navbar
   label: Crypto
-- name: shape_top
-  type: select
-  default: none
-  config:
-    required: false
-    options:
-    - angle
-    - curve
-    - none
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Shape Top
 pages:
 - _data/options.yml
