@@ -1,9 +1,10 @@
 {% assign template = page.template | default: site.template %}
 {% assign footer_layout = site.data.options.[template].footer.layout %}
 {% assign social_networks = site.data.options.[template].footer.social_networks %}
+{% assign shape_top = site.data.options.[template].footer.shape_top %}
 
-{% if section.background.shape_top != 'none' %}
-<div class="uk-section-shape uk-shape-{{ section.background.shape_top }}{% if section.background.style != 'custom' %} uk-background-{{ section.background.style }}{% endif %}" 
+{% if shape_top != 'none' %}
+<div class="uk-section-shape uk-shape-{{ shape_top }} uk-background-{{ section.style | default: site.data.options.[template].footer.style }}" 
   style="{% if section.background.style == 'custom' %}background-color: {{ section.background.color }};{% endif %}"></div>
 {% endif %}
 
