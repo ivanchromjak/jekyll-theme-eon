@@ -30,7 +30,7 @@
 {% else %}
   {% assign background_image = section.background.image %}
 {% endif %}
-<div class="uk-position-relative{% if background_image %} uk-background-{{ section.background.align | default: 'center-center' }} uk-background-cover{% endif %}{% if section.background.style != 'custom' %} uk-background-{{ section.background.style | default: 'default' }}{% endif %}" 
+<div class="uk-position-relative{% if background_image %} uk-background-{{ section.background.align | default: 'center-center' }} uk-background-{{ section.background.size | default: 'cover' }}{% endif %}{% if section.background.style != 'custom' %} uk-background-{{ section.background.style | default: 'default' }}{% endif %}" 
   style="{% if section.background.style == 'custom' %}background-color: {{ section.background.color }};{% endif %}{% if background_image %}background-image: url({{ background_image | absolute_url }});{% endif %}"{% if section.height %} data-uk-height-viewport{% endif %}>
   {%- if section.background.video -%}
   <div class="uk-position-cover uk-cover-container">
