@@ -343,6 +343,31 @@ sections:
     style: muted
     image_align: center-center
     overlay_opacity: 0.6
+    shape_top: none
+    color: ''
+    image: ''
+    video: ''
+    overlay_color: ''
+  container: xsmall
+  size: large
+  remove_padding: none
+  column_one:
+  - template: code
+    block: code
+    code: xxx
+  column_two: []
+  height: false
+  id: ''
+  class: ''
+- template: section
+  columns: one
+  grid: 1-2
+  horizontal_align: left
+  vertical_align: top
+  background:
+    style: muted
+    image_align: center-center
+    overlay_opacity: 0.6
     color: ''
     image: ''
     video: ''
