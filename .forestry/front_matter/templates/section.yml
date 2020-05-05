@@ -42,6 +42,7 @@ fields:
   - faq
   - margin
   - heading
+  - code
   config:
     min: 
     max: 
@@ -71,6 +72,7 @@ fields:
   - faq
   - margin
   - heading
+  - code
   config:
     min: 
     max: 
