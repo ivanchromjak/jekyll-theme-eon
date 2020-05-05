@@ -189,7 +189,7 @@ fields:
   showOnly:
     field: columns
     value: two
-- name: column_two_width
+- name: grid
   type: select
   default: 1-2
   config:
