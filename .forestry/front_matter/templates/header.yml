@@ -85,6 +85,20 @@ fields:
         file: 
         path: 
     label: Image Align
+  - name: size
+    type: select
+    default: cover
+    config:
+      required: false
+      options:
+      - cover
+      - contain
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Image Size
   - name: video
     type: text
     config:
