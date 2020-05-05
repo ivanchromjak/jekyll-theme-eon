@@ -298,3 +298,8 @@ fields:
       file: 
       path: 
   label: Horizontal Align
+- name: section
+  type: include
+  config: {}
+  template: section
+  label: Section
