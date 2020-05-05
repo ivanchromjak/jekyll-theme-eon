@@ -42,7 +42,7 @@ sections:
   - template: heading
     block: heading
     tag: h1
-    size: medium
+    size: small
     align: left
     title: Tired of never ending site maintenance
     color: "#FFFFFF"
