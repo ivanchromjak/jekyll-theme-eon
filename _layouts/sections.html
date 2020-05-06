@@ -6,34 +6,22 @@ layout: default
   {% include partials/section-open.html %}
     <div class="uk-section-column uk-text-{{ section.horizontal_align | default: 'left' }}">
       {% for block in section.blocks %}
-        {% include block-{{ block.block }}.html %}
+        {% if block.block == 'grid' %}
+          <div class="uk-grid-large uk-text-{{ section.horizontal_align | default: 'left' }}" data-uk-grid>
+            {% for cell in block.cells %}
+              <div class="uk-width-{{ cell.width | default: '1-1' }}@m uk-flex uk-flex-{{ block.vertical_align | default: 'top' }}">
+                <div class="uk-section-column">
+                  {% for block in cell.blocks %}
+                    {% include block-{{ block.block }}.html %}
+                  {% endfor %}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        {% else %}
+          {% include block-{{ block.block }}.html %}
+        {% endif %}
       {% endfor %}
     </div>
-
-
-  {% if section.columns == 'one' %}
-    <div class="uk-section-column uk-text-{{ section.horizontal_align | default: 'left' }}">
-      {% for block in section.column_one %}
-        {% include block-{{ block.block }}.html %}
-      {% endfor %}
-    </div>
-  {% else %}
-    <div class="uk-grid-large uk-text-{{ section.horizontal_align | default: 'left' }}" data-uk-grid>
-      <div class="uk-width-expand@m uk-flex uk-flex-{{ section.vertical_align | default: 'top' }}">
-        <div class="uk-section-column">
-          {% for block in section.column_one %}
-            {% include block-{{ block.block }}.html %}
-          {% endfor %}
-        </div>
-      </div>
-      <div class="uk-width-{{ section.grid | default: '1-3' }}@m uk-flex uk-flex-{{ section.vertical_align | default: 'top' }}">
-        <div class="uk-section-column">
-          {% for block in section.column_two %}
-            {% include block-{{ block.block }}.html %}
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-  {% endif %}
   {% include partials/section-close.html %}
 {% endfor %}
