@@ -85,7 +85,7 @@ sections:
   height: false
   id: ''
   class: ''
-  animation: ''
+  animation: none
 - template: section
   columns: one
   grid: 1-2
