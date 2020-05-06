@@ -27,6 +27,24 @@ fields:
       required: true
       color_format: Hex
     default: "#202020"
+  - name: heading_color
+    type: color
+    label: Heading Color
+    config:
+      required: false
+      color_format: Hex
+  - name: body_color
+    type: color
+    label: Body Color
+    config:
+      required: false
+      color_format: Hex
+  - name: muted_color
+    type: color
+    label: Muted Color
+    config:
+      required: false
+      color_format: Hex
   - name: navbar
     type: field_group
     config: {}
