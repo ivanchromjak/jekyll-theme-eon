@@ -5,17 +5,17 @@ sections:
 - template: header
   block: header
   container: medium
-  size: medium
+  size: large
   remove_padding: none
   horizontal_align: left
   vertical_align: top
   background:
-    style: default
-    image_align: center-center
+    style: secondary
+    image_align: center-right
     overlay_opacity: 0.6
     shape_top: none
     color: ''
-    image: ''
+    image: "/uploads/blob-1.svg"
     video: ''
     overlay_color: ''
   blocks:
@@ -68,8 +68,8 @@ sections:
     masonry: false
   navbar:
     light_color: false
-    transparent: false
-    transparent_light_color: false
+    transparent: true
+    transparent_light_color: true
     search: false
   height: false
   id: ''
