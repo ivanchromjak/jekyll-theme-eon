@@ -113,7 +113,7 @@ sections:
   container: medium
   size: large
   remove_padding: none
-  column_one:
+  blocks:
   - template: heading
     block: heading
     tag: h2
@@ -319,27 +319,6 @@ sections:
   divider: false
   masonry: false
   parallax: 
-  blocks:
-  - template: cards
-    block: cards
-    media: none
-    style: default
-    grid: 1-3
-    gutter: default
-    cards:
-    - title: ssss
-      heading: ''
-      content: ssss
-      icon: ''
-      image: ''
-      button:
-        text: Text
-        style: primary
-        size: regular
-        url: ''
-        blank: false
-    icon_color: ''
-    icon_size: 
 - template: section
   columns: one
   grid: 1-2
@@ -395,7 +374,7 @@ sections:
   container: xsmall
   size: large
   remove_padding: none
-  column_one:
+  blocks:
   - template: text
     block: text
     text: |2-
@@ -471,7 +450,7 @@ sections:
   container: small
   size: large
   remove_padding: none
-  column_one:
+  blocks:
   - template: heading
     block: heading
     tag: h2
@@ -533,7 +512,7 @@ sections:
   container: medium
   size: large
   remove_padding: none
-  column_one:
+  blocks:
   - template: heading
     block: heading
     tag: h2
