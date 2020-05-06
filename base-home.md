@@ -388,6 +388,27 @@ sections:
   block: ''
   cells:
   - width: 2-3
+    blocks:
+    - template: heading
+      block: heading
+      tag: h2
+      size: default
+      align: left
+      title: Adsdfsdf sdf sdf dsf sd fsdf sdf
+      color: ''
+    - template: text
+      block: text
+      text: sources and customer directed human capital. Quickly formulate empowered
+        methodologies before future-proof content.
+      color: ''
+    - template: block-button
+      block: button
+      text: Buy Now
+      style: primary
+      size: regular
+      width: default
+      url: dffd
+      blank: false
   gap: ''
   divider: false
   masonry: false
