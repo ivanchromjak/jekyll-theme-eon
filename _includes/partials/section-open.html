@@ -4,9 +4,19 @@
 {% endif %}
 
 <div{% if section.id %} id="{{ section.id }}"{% endif %} 
-  class="uk-cover-container{% if section.background.style != 'custom' %} uk-background-{{ section.background.style }}{% endif %}{% if section.background.image %} uk-background-{{ section.background.size | default: 'cover' }} uk-background-{{ section.background.align | default: 'center-center' }}{% endif %}{% if section.class %} {{ section.class }}{% endif %}" 
+  class="uk-cover-container{% if section.background.style != 'custom' %} uk-background-{{ section.background.style }}{% endif %}{% if section.background.image and section.background.width == 'full' %} uk-background-norepeat uk-background-{{ section.background.size | default: 'cover' }} uk-background-{{ section.background.align | default: 'center-center' }}{% endif %}{% if section.class %} {{ section.class }}{% endif %}" 
   style="{% if section.background.style == 'custom' %}background-color: {{ section.background.color }};{% endif %}" 
-  {% if section.background.image %} data-src="{{ section.background.image | absolute_url }}" data-uk-img{% endif %}>
+  {% if section.background.image and section.background.width == 'full' %} data-src="{{ section.background.image | absolute_url }}" data-uk-img{% endif %}>
+  
+  {% if section.background.width != 'full' %}
+    <div class="uk-position-cover">
+      <div data-uk-grid>
+        <div class="uk-width-1-2@s">
+          <div class="uk-background-norepeat uk-background-{{ section.background.size | default: 'cover' }} uk-background-{{ section.background.align | default: 'center-center' }}" data-src="{{ section.background.image | absolute_url }}" data-uk-img></div>
+        </div>
+      </div>
+    </div>
+  {%- endif -%}
   {%- if section.background.video != empty -%}
     <video autoplay loop muted playsinline data-uk-cover data-uk-video="autoplay: inview">
       <source src="{% if section.background.video contains 'http' %}{{ section.background.video }}{% else %}{{ site.uploads | absolute_url }}{{ section.background.video }}{% endif %}" type="video/mp4">
