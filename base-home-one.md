@@ -322,7 +322,7 @@ sections:
     style: secondary
     image_align: center-center
     overlay_opacity: 0.6
-    shape_top: angle
+    shape_top: none
     color: ''
     image: "/uploads/header-9.jpeg"
     video: ''
