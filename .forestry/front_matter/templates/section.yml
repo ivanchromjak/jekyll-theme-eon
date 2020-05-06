@@ -193,7 +193,7 @@ fields:
   - name: partial_image
     type: boolean
     label: Partial Image
-  - name: width
+  - name: partial_image_width
     type: select
     default: 1-2
     config:
@@ -211,7 +211,7 @@ fields:
         section: 
         file: 
         path: 
-    label: Image Width
+    label: Partial Image Width
     showOnly:
       field: custom_width
       value: true
