@@ -190,6 +190,49 @@ fields:
         file: 
         path: 
     label: Image Size
+  - name: custom_image_width
+    type: boolean
+    label: Custom Image Width
+  - name: image_width
+    type: select
+    default: 1-2
+    config:
+      required: false
+      options:
+      - 1-2
+      - 1-3
+      - 2-3
+      - 1-4
+      - 3-4
+      - 1-5
+      - 4-5
+      - 1-6
+      - 5-6
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Image Width
+    showOnly:
+      field: custom_image_width
+      value: true
+  - name: horizontal_align
+    type: select
+    default: left
+    config:
+      required: false
+      options:
+      - left
+      - right
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Horizontal Align
+    showOnly:
+      field: custom_image_width
   - name: video
     type: text
     config:
@@ -226,33 +269,6 @@ fields:
         file: 
         path: 
     label: Shape Top
-  - name: custom_image_width
-    type: boolean
-    label: Custom Image Width
-  - name: image_width
-    type: select
-    default: 1-2
-    config:
-      required: false
-      options:
-      - 1-2
-      - 1-3
-      - 2-3
-      - 1-4
-      - 3-4
-      - 1-5
-      - 4-5
-      - 1-6
-      - 5-6
-      source:
-        type: simple
-        section: 
-        file: 
-        path: 
-    label: Image Width
-    showOnly:
-      field: custom_image_width
-      value: true
   label: Background
 - name: id
   type: text
