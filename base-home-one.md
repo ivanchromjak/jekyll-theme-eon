@@ -39,6 +39,22 @@ sections:
           with Jekyll static generator and get on with what matters the most, your
           business.
         color: "#D7D7D7"
+      - template: block-button
+        block: button
+        text: Purchase
+        style: primary
+        size: large
+        width: medium
+        url: https://themeforest.net/item/eon-multipurpose-responsive-jekyll-theme/24065900
+        blank: true
+      - template: block-button
+        block: button
+        text: Demos
+        style: light
+        size: large
+        width: medium
+        url: "#demos"
+        blank: false
     divider: false
     masonry: false
   navbar:
