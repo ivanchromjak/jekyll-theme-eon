@@ -2,20 +2,6 @@
 label: Section
 hide_body: true
 fields:
-- name: columns
-  type: select
-  default: one
-  config:
-    required: false
-    options:
-    - one
-    - two
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Section Columns
 - name: blocks
   type: blocks
   label: Blocks
@@ -47,63 +33,60 @@ fields:
   config:
     min: 
     max: 
-- name: column_two
-  type: blocks
-  label: Column Two
-  template_types:
-  - block-button
-  - cards
-  - call-to-action
-  - icon
-  - title-h2
-  - text
-  - lead
-  - title-h5
-  - image
-  - slider
-  - videos
-  - team
-  - google-map
-  - search
-  - portfolio
-  - mailchimp
-  - instagram
-  - gallery
-  - formspree
-  - faq
-  - margin
-  - heading
-  - code
-  config:
-    min: 
-    max: 
-  showOnly:
-    field: columns
-    value: two
-- name: grid
+- name: container
   type: select
-  default: 1-2
+  default: medium
   config:
     required: false
     options:
-    - 1-2
-    - 1-3
-    - 1-4
-    - 1-5
-    - 1-6
-    - 2-3
-    - 3-4
-    - 4-5
-    - 5-6
+    - xsmall
+    - small
+    - medium
+    - large
+    - xlarge
+    - expand
     source:
       type: simple
       section: 
       file: 
       path: 
-  label: Column Two Width
-  showOnly:
-    field: columns
-    value: two
+  label: Container
+- name: size
+  type: select
+  default: medium
+  config:
+    required: false
+    options:
+    - xsmall
+    - small
+    - medium
+    - large
+    - xlarge
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Size
+  description: Top and bottom padding.
+- name: remove_padding
+  type: select
+  default: none
+  config:
+    required: false
+    options:
+    - none
+    - top
+    - bottom
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Remove Padding
+- name: height
+  type: boolean
+  label: Viewport Height
 - name: horizontal_align
   type: select
   default: left
@@ -230,60 +213,6 @@ fields:
         path: 
     label: Shape Top
   label: Background
-- name: container
-  type: select
-  default: medium
-  config:
-    required: false
-    options:
-    - xsmall
-    - small
-    - medium
-    - large
-    - xlarge
-    - expand
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Container
-- name: size
-  type: select
-  default: medium
-  config:
-    required: false
-    options:
-    - xsmall
-    - small
-    - medium
-    - large
-    - xlarge
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Size
-  description: Top and bottom padding.
-- name: height
-  type: boolean
-  label: Viewport Height
-- name: remove_padding
-  type: select
-  default: none
-  config:
-    required: false
-    options:
-    - none
-    - top
-    - bottom
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Remove Padding
 - name: id
   type: text
   config:
@@ -294,8 +223,3 @@ fields:
   config:
     required: false
   label: Class
-- name: gridd
-  type: include
-  config: {}
-  template: grid
-  label: Grid

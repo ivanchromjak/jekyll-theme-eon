@@ -2,6 +2,78 @@
 layout: sections
 title: Base Home One
 sections:
+- template: header
+  block: header
+  container: medium
+  size: medium
+  remove_padding: none
+  horizontal_align: left
+  vertical_align: top
+  background:
+    style: default
+    image_align: center-center
+    overlay_opacity: 0.6
+    shape_top: none
+    color: ''
+    image: ''
+    video: ''
+    overlay_color: ''
+  blocks:
+  - template: grid
+    block: grid
+    gap: default
+    parallax: '0'
+    cells:
+    - width: 1-2
+      blocks:
+      - template: heading
+        block: heading
+        tag: h1
+        size: small
+        align: left
+        title: Tired of never ending site maintenance
+        color: "#FFFFFF"
+      - template: text
+        block: text
+        text: Put an end to constant theme and plugin updates. Build your website
+          with Jekyll static generator and get on with what matters the most, your
+          business.
+        color: "#D7D7D7"
+      - template: block-button
+        block: button
+        text: Purchase
+        style: primary
+        size: large
+        width: medium
+        url: https://themeforest.net/item/eon-multipurpose-responsive-jekyll-theme/24065900
+        blank: true
+      - template: block-button
+        block: button
+        text: Demos
+        style: light
+        size: large
+        width: medium
+        url: "#demos"
+        blank: false
+    - width: 1-2
+      blocks:
+      - template: image
+        block: image
+        align: none
+        image: "/uploads/site-2.svg"
+        alt: Website
+        caption: ''
+        lightbox: false
+    divider: false
+    masonry: false
+  navbar:
+    light_color: false
+    transparent: false
+    transparent_light_color: false
+    search: false
+  height: false
+  id: ''
+  class: ''
 - template: section
   columns: one
   grid: 1-2
