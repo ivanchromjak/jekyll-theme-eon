@@ -284,6 +284,24 @@ fields:
         path: 
     label: Shape Top
   label: Background
+- name: animation
+  type: select
+  default: none
+  config:
+    required: false
+    options:
+    - none
+    - slide-bottom
+    - slide-top
+    - slide-left
+    - slide-right
+    - fade
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Animation
 - name: id
   type: text
   config:
