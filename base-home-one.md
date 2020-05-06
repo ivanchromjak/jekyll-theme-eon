@@ -26,6 +26,7 @@ sections:
     custom_image_width: false
     image_width: ''
     horizontal_align: ''
+    parallax: 
   blocks:
   - template: grid
     block: grid
@@ -104,6 +105,7 @@ sections:
     custom_image_width: false
     image_width: ''
     horizontal_align: ''
+    parallax: 
   container: medium
   size: large
   remove_padding: none
@@ -324,7 +326,7 @@ sections:
     overlay_opacity: 0.6
     shape_top: none
     color: ''
-    image: "/uploads/header-9.jpeg"
+    image: "/uploads/header-6.jpg"
     video: ''
     overlay_color: "#020C1D"
     size: cover
@@ -335,6 +337,7 @@ sections:
     custom_image_width: false
     image_width: 4-5
     horizontal_align: right
+    parallax: '200'
   container: medium
   size: large
   remove_padding: none
@@ -402,6 +405,7 @@ sections:
     custom_image_width: false
     image_width: ''
     horizontal_align: ''
+    parallax: 
   container: medium
   size: large
   remove_padding: none
