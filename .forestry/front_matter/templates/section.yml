@@ -155,7 +155,7 @@ fields:
     config:
       maxSize: 64
     label: Image
-  - name: image_align
+  - name: align
     type: select
     default: center-center
     config:
