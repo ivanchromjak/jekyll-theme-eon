@@ -387,7 +387,7 @@ sections:
   cells: []
   divider: false
   masonry: false
-  animation: ''
+  animation: slide-bottom
 - template: section
   columns: one
   grid: 1-2
