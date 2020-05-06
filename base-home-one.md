@@ -15,7 +15,7 @@ sections:
     overlay_opacity: 0.6
     shape_top: none
     color: ''
-    image: "/uploads/blob-1.svg"
+    image: "/uploads/image3.jpg"
     video: ''
     overlay_color: ''
     size: contain
