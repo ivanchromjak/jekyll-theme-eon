@@ -93,6 +93,7 @@ sections:
   gap: ''
   divider: false
   masonry: false
+  blocks: []
 - template: section
   columns: one
   grid: 1-2
@@ -318,6 +319,7 @@ sections:
   divider: false
   masonry: false
   parallax: 
+  blocks: []
 - template: section
   columns: one
   grid: 1-2
@@ -355,6 +357,7 @@ sections:
   divider: false
   masonry: false
   parallax: 
+  blocks: []
 - template: section
   columns: one
   grid: 1-2
@@ -424,6 +427,7 @@ sections:
   divider: false
   masonry: false
   parallax: 
+  blocks: []
 - template: section
   columns: one
   grid: 1-2
@@ -485,6 +489,7 @@ sections:
   divider: false
   masonry: false
   parallax: 
+  blocks: []
 - template: section
   columns: one
   grid: 1-2
@@ -641,6 +646,7 @@ sections:
   divider: false
   masonry: false
   parallax: 
+  blocks: []
 - template: section
   columns: one
   grid: 1-2
@@ -669,5 +675,6 @@ sections:
   divider: false
   masonry: false
   parallax: 
+  blocks: []
 
 ---
