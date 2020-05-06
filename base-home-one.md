@@ -318,7 +318,7 @@ sections:
   cells: []
   divider: false
   masonry: false
-  animation: ''
+  animation: none
 - template: section
   columns: one
   grid: 1-2
