@@ -245,7 +245,38 @@ sections:
   block: grid
   gap: default
   parallax: '0'
-  blocks: []
+  blocks:
+  - template: heading
+    block: heading
+    tag: h2
+    size: h1
+    align: center
+    title: Create your new website today!
+    color: "#FFFFFF"
+  - template: lead
+    block: lead
+    text: Experience the advatages and peace of mind of running a static Jekyll site.
+      Save time and concentrate an what is the most important, your business.
+    color: "#FFFFFF"
+  - template: margin
+    block: margin
+    size: default
+  - template: block-button
+    block: button
+    text: Purchase
+    style: primary
+    size: large
+    blank: true
+    url: https://themeforest.net/item/eon-multipurpose-responsive-jekyll-theme/24065900
+    width: medium
+  - template: block-button
+    block: button
+    text: Demo
+    style: light-outline
+    size: large
+    url: "#"
+    blank: false
+    width: medium
   column_two: []
   height: false
   id: ''
@@ -274,14 +305,132 @@ sections:
   gap: default
   parallax: '0'
   blocks:
-  - template: block-button
-    block: button
-    text: Text
-    style: primary
-    size: regular
-    width: default
-    url: ''
-    blank: false
+  - template: heading
+    block: heading
+    tag: h2
+    size: h1
+    align: center
+    title: Why choose Jekyll static generator?
+    color: ''
+  - template: margin
+    block: margin
+    size: large
+  - template: cards
+    block: cards
+    media: none
+    style: none
+    grid: 1-3
+    gutter: large
+    cards:
+    - title: Blazing fast
+      heading: ''
+      content: Static sites are faster, nearly half of all visitors leave a site if
+        not loaded in three seconds.
+      icon: ''
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: Secure
+      heading: ''
+      content: There are only static files on a web server, there’s nothing dynamic
+        that can be exploited.
+      icon: ''
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: Host for free
+      heading: ''
+      content: Jekyll site can be hosted completely free on GitHub or Gitlab pages.
+      icon: ''
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: Version control
+      heading: ''
+      content: The site source code lives in a version control system and you can
+        go back to any version in history.
+      icon: ''
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: Simplicity
+      heading: ''
+      content: Jekyll is a static site using Liquid language, it is easy to learn
+        if you already know HTML and JS.
+      icon: ''
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: Low maintenance
+      heading: ''
+      content: There are no constant plugin or software updates required to keep your
+        site up-to-date and secure.
+      icon: ''
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: Actively developed
+      heading: ''
+      content: New ready to use demos are being added continuously and new features
+        developed.
+      icon: ''
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: Documented
+      heading: ''
+      content: Not familiar with Jekyll? We have documented the setup and features
+        to get you started fast.
+      icon: ''
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: Customer support
+      heading: ''
+      content: Should you have questions, we are here to help. Each purchase includes
+        six months of support.
+      icon: ''
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    icon_color: ''
+    icon_size: 
   column_two: []
   height: false
   id: ''
