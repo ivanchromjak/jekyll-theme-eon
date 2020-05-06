@@ -64,7 +64,7 @@ sections:
         width: medium
         url: "#demos"
         blank: false
-      animation: slide-left
+      animation: none
     - width: 1-2
       blocks:
       - template: image
@@ -74,7 +74,7 @@ sections:
         alt: Website
         caption: ''
         lightbox: false
-      animation: slide-right
+      animation: none
     divider: false
     masonry: false
     vertical_align: top
