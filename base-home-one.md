@@ -30,7 +30,7 @@ sections:
   blocks:
   - template: grid
     block: grid
-    gap: large
+    gap: default
     parallax: '100'
     cells:
     - width: 1-2
@@ -75,8 +75,8 @@ sections:
         caption: ''
         lightbox: false
       animation: slide-right
-    divider: true
-    masonry: true
+    divider: false
+    masonry: false
     vertical_align: top
   navbar:
     light_color: false
