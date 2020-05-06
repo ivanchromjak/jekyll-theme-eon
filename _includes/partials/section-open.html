@@ -6,7 +6,8 @@
 <div{% if section.id %} id="{{ section.id }}"{% endif %} 
   class="uk-cover-container{% if section.background.style != 'custom' %} uk-background-{{ section.background.style }}{% endif %}{% if section.background.image and section.background.custom_image_width != true %} uk-background-norepeat uk-background-{{ section.background.size | default: 'cover' }} uk-background-{{ section.background.align | default: 'center-center' }}{% endif %}{% if section.class %} {{ section.class }}{% endif %}" 
   style="{% if section.background.style == 'custom' %}background-color: {{ section.background.color }};{% endif %}" 
-  {% if section.background.image and section.background.custom_image_width != true %} data-src="{{ section.background.image | absolute_url }}" data-uk-img{% endif %}>
+  {% if section.background.image and section.background.custom_image_width != true %} data-src="{{ section.background.image | absolute_url }}" data-uk-img 
+  {% if section.background.parallax != empty and section.background.size == 'cover' %} data-uk-parallax="bgy: {{ section.background.parallax }}"{% endif %}{% endif %}>
   
   {% if section.background.custom_image_width %}
     <div class="uk-position-cover">
@@ -15,7 +16,8 @@
           <div class="uk-width-expand@m"></div>
         {% endif %} 
         <div class="uk-width-{{ section.background.image_width | default: '1-2' }}@m uk-height-1-1">
-          <div class="uk-height-1-1 uk-background-norepeat uk-background-{{ section.background.size | default: 'cover' }} uk-background-{{ section.background.align | default: 'center-center' }}" data-src="{{ section.background.image | absolute_url }}" data-uk-img></div>
+          <div class="uk-height-1-1 uk-background-norepeat uk-background-{{ section.background.size | default: 'cover' }} uk-background-{{ section.background.align | default: 'center-center' }}" data-src="{{ section.background.image | absolute_url }}" data-uk-img 
+          {% if section.background.parallax != empty and section.background.size == 'cover' %} data-uk-parallax="bgy: {{ section.background.parallax }}"{% endif %}></div>
         </div>
       </div>
     </div>
