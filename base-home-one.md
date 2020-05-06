@@ -18,6 +18,7 @@ sections:
     image: "/uploads/blob-1.svg"
     video: ''
     overlay_color: ''
+    size: contain
   blocks:
   - template: grid
     block: grid
@@ -88,6 +89,7 @@ sections:
     image: ''
     video: ''
     overlay_color: ''
+    size: ''
   container: medium
   size: large
   remove_padding: none
@@ -311,6 +313,7 @@ sections:
     image: "/uploads/header-9.jpeg"
     video: ''
     overlay_color: "#020C1D"
+    size: ''
   container: medium
   size: medium
   remove_padding: none
@@ -370,6 +373,7 @@ sections:
     image: ''
     video: ''
     overlay_color: ''
+    size: ''
   container: medium
   size: medium
   remove_padding: none
