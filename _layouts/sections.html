@@ -4,6 +4,13 @@ layout: default
 
 {% for section in page.sections %}
   {% include partials/section-open.html %}
+    <div class="uk-section-column uk-text-{{ section.horizontal_align | default: 'left' }}">
+      {% for block in section.blocks %}
+        {% include block-{{ block.block }}.html %}
+      {% endfor %}
+    </div>
+
+
   {% if section.columns == 'one' %}
     <div class="uk-section-column uk-text-{{ section.horizontal_align | default: 'left' }}">
       {% for block in section.column_one %}
