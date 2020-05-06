@@ -56,7 +56,14 @@ sections:
         url: "#demos"
         blank: false
     - width: 1-2
-      blocks: []
+      blocks:
+      - template: image
+        block: image
+        align: none
+        image: "/uploads/site-2.svg"
+        alt: Website
+        caption: ''
+        lightbox: false
     divider: false
     masonry: false
   navbar:
