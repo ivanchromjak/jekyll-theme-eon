@@ -4,6 +4,9 @@
 
 $global-primary-background:     {{ site.data.options.base.primary_color | default: '#1B33BF' }};
 $global-secondary-background:   {{ site.data.options.base.secondary_color | default: '#000' }};
+$base-heading-color:            {{ site.data.options.base.heading_color | default: '#152c5b' }};
+$base-body-color:               {{ site.data.options.base.body_color | default: '#64748a' }};
+$global-muted-color:            {{ site.data.options.base.muted_color | default: '#9aa6b7' }};
 
 // 1. Custom variables and variable overwrites.
 @import "base/variables";

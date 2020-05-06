@@ -6,7 +6,7 @@ $global-font-family:                            'Nunito Sans', -apple-system, Bl
 $global-link-color:                             lighten($global-primary-background, 20%);
 $global-link-hover-color:                       lighten($global-primary-background, 20%);
 $global-small-font-size:                        0.875rem;
-$global-muted-color:                            #f3f4f6;
+// $global-muted-color:                            #f3f4f6;
 $global-xxlarge-font-size:                      2.625rem;
 $global-xlarge-font-size:                       2rem;
 $global-large-font-size:                        1.5rem;
@@ -17,10 +17,10 @@ $border-rounded-border-radius:                  5px;
 // Base variables
 $base-heading-font-family:                      'Nunito Sans', 'Poppins', 'Montserrat', system-ui, san-serif;
 $base-heading-font-weight:                      700;
-$base-heading-color:                            #152c5b;
+// $base-heading-color:                            #152c5b;
 $base-h2-line-height:                           1.4;
 $base-link-hover-text-decoration:               none;
-$base-body-color:                               #64748a;
+// $base-body-color:                               #64748a;
 $base-code-font-family:                         Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
 $base-code-color:                               #6a6b71;
 $base-code-font-size:                           $xsmall-font-size;
