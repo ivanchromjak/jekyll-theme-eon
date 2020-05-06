@@ -19,7 +19,7 @@ sections:
     video: ''
     overlay_color: ''
     size: contain
-    align: center-right
+    align: top-right
     width: ''
     custom_width: false
     width_align: ''
