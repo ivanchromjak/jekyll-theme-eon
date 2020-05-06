@@ -41,3 +41,33 @@ fields:
     max: 
     labelField: 
   label: Cells
+- name: gap
+  type: select
+  default: default
+  config:
+    required: false
+    options:
+    - small
+    - default
+    - large
+    - collapse
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Gap
+- name: masonry
+  type: boolean
+  label: Masonry
+- name: parallax
+  type: number
+  label: Parallax
+  description: Move single columns of a grid at different speeds while scrolling,
+    the number sets the parallax translation in pixels.
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
