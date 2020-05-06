@@ -389,7 +389,7 @@ sections:
     style: muted
     image_align: center-center
     overlay_opacity: 0.6
-    shape_top: none
+    shape_top: angle
     color: ''
     image: ''
     video: ''
