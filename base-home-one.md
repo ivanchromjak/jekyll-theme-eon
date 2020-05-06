@@ -337,7 +337,7 @@ sections:
     custom_image_width: false
     image_width: 4-5
     horizontal_align: right
-    parallax: '200'
+    parallax: "-200"
   container: medium
   size: large
   remove_padding: none
