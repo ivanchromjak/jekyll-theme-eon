@@ -57,6 +57,9 @@ fields:
       file: 
       path: 
   label: Gap
+- name: divider
+  type: boolean
+  label: Divider
 - name: masonry
   type: boolean
   label: Masonry
