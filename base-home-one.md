@@ -8,7 +8,7 @@ sections:
   size: large
   remove_padding: none
   horizontal_align: left
-  vertical_align: top
+  vertical_align: middle
   background:
     style: secondary
     image_align: center-right
