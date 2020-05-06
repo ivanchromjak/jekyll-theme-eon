@@ -215,7 +215,7 @@ fields:
     showOnly:
       field: custom_width
       value: true
-  - name: width_align
+  - name: partial_image_align
     type: select
     default: left
     config:
@@ -228,7 +228,7 @@ fields:
         section: 
         file: 
         path: 
-    label: Width Align
+    label: Partial Image Align
     showOnly:
       field: custom_width
       value: true
