@@ -80,7 +80,8 @@
 
     <div class="uk-section uk-section-{{ section.size | default: 'medium' }}{% if section.remove_padding %} uk-padding-remove-{{ section.remove_padding }}{% endif %}{% if section.height %} uk-flex uk-flex-middle{% endif %}" 
       {% if section.height %} data-uk-height-viewport{% endif %}>
-      <div class="{% unless section.container == 'none' %}uk-container{% endunless %}{% if section.container %} uk-container-{{ section.container | default: 'none' }}{% endif %} uk-position-relative">
+      <div class="{% unless section.container == 'none' %}uk-container{% endunless %}{% if section.container %} uk-container-{{ section.container | default: 'none' }}{% endif %} uk-position-relative" 
+        {% if section.animation != 'none' %} uk-scrollspy="cls: uk-animation-{{ section.animation | default: 'slide-bottom' }}; repeat: true"{% endif %}>
         <!-- {%- if section.title != empty or section.subtitle != empty -%}
           <div class="section-title-{{ section.header_align | default: 'left' }}{% if section.size == 'large' %} uk-margin-large-bottom{% else %} uk-margin-medium-bottom{% endif %}{% if section.header_color_light %} uk-light{% endif %}">  
             {%- if section.title != empty -%}
