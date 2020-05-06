@@ -46,6 +46,8 @@ fields:
     - videos
     - text
     - cards
+    - icon
+    - image
     config:
       min: 
       max: 
