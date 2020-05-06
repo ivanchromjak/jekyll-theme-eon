@@ -6,7 +6,7 @@ layout: default
   {% include partials/section-open.html %}
     <div class="uk-section-column uk-text-{{ section.horizontal_align | default: 'left' }}">
       {% for block in section.blocks %}
-        {% if block.block == 'grid' %}{{block}}
+        {% if block.block == 'grid' %}{{section}}
           <div class="uk-grid-{{ block.gap }}{% if block.divider %} uk-grid-divider{% endif %}" 
             data-uk-grid="{% if block.masonry %}masonry: true;{% endif %}{% if block.parallax != empty %} parallax: {{ block.parallax }};{% endif %}">
             {% for cell in block.cells %}
