@@ -77,6 +77,7 @@ sections:
       animation: slide-right
     divider: true
     masonry: true
+    vertical_align: top
   navbar:
     light_color: false
     transparent: true
