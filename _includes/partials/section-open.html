@@ -10,9 +10,9 @@
   
   {% if section.background.width != 'full' %}
     <div class="uk-position-cover">
-      <div data-uk-grid>
-        <div class="uk-width-1-2@s">
-          <div class="uk-background-norepeat uk-background-{{ section.background.size | default: 'cover' }} uk-background-{{ section.background.align | default: 'center-center' }}" data-src="{{ section.background.image | absolute_url }}" data-uk-img></div>
+      <div class="uk-grid-collapse uk-height-1-1" data-uk-grid>
+        <div class="uk-width-1-2@s uk-height-1-1">
+          <div class="uk-height-1-1 uk-background-norepeat uk-background-{{ section.background.size | default: 'cover' }} uk-background-{{ section.background.align | default: 'center-center' }}" data-src="{{ section.background.image | absolute_url }}" data-uk-img></div>
         </div>
       </div>
     </div>
