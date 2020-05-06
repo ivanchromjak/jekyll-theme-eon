@@ -551,6 +551,6 @@ sections:
   cells: []
   divider: false
   masonry: false
-  animation: ''
+  animation: none
 
 ---
