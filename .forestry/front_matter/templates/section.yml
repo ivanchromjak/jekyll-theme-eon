@@ -190,6 +190,9 @@ fields:
         file: 
         path: 
     label: Image Size
+  - name: custom_width
+    type: boolean
+    label: Custom Image Width
   - name: width
     type: select
     default: 1-2
@@ -209,6 +212,25 @@ fields:
         file: 
         path: 
     label: Image Width
+    showOnly:
+      field: custom_width
+      value: true
+  - name: width_align
+    type: select
+    default: left
+    config:
+      required: false
+      options:
+      - left
+      - right
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Width Align
+    showOnly:
+      field: custom_width
   - name: video
     type: text
     config:
