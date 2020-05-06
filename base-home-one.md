@@ -228,7 +228,7 @@ sections:
 - template: section
   columns: one
   grid: 1-2
-  horizontal_align: left
+  horizontal_align: center
   vertical_align: top
   background:
     style: secondary
