@@ -190,31 +190,6 @@ fields:
         file: 
         path: 
     label: Image Size
-  - name: partial_image
-    type: boolean
-    label: Partial Image
-  - name: partial_image_width
-    type: select
-    default: 1-2
-    config:
-      required: false
-      options:
-      - 1-2
-      - 1-3
-      - 2-3
-      - 1-4
-      - 3-4
-      - 1-5
-      - 1-6
-      source:
-        type: simple
-        section: 
-        file: 
-        path: 
-    label: Partial Image Width
-    showOnly:
-      field: custom_width
-      value: true
   - name: video
     type: text
     config:
