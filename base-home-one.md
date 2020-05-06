@@ -33,6 +33,12 @@ sections:
         align: left
         title: Tired of never ending site maintenance
         color: "#FFFFFF"
+      - template: text
+        block: text
+        text: Put an end to constant theme and plugin updates. Build your website
+          with Jekyll static generator and get on with what matters the most, your
+          business.
+        color: "#D7D7D7"
     divider: false
     masonry: false
   navbar:
