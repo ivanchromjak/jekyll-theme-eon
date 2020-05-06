@@ -21,6 +21,8 @@ sections:
     size: contain
     align: center-right
     width: ''
+    custom_width: false
+    width_align: ''
   blocks:
   - template: grid
     block: grid
@@ -94,6 +96,8 @@ sections:
     size: ''
     align: ''
     width: ''
+    custom_width: false
+    width_align: ''
   container: medium
   size: large
   remove_padding: none
@@ -319,7 +323,9 @@ sections:
     overlay_color: "#020C1D"
     size: cover
     align: center-center
-    width: 1-2
+    width: 2-3
+    custom_width: true
+    width_align: right
   container: medium
   size: large
   remove_padding: none
@@ -382,6 +388,8 @@ sections:
     size: ''
     align: ''
     width: ''
+    custom_width: false
+    width_align: ''
   container: medium
   size: large
   remove_padding: none
