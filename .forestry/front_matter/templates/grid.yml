@@ -36,6 +36,19 @@ fields:
         file: 
         path: 
     label: Width
+  - name: blocks
+    type: blocks
+    label: Blocks
+    template_types:
+    - google-map
+    - heading
+    - block-button
+    - videos
+    - text
+    - cards
+    config:
+      min: 
+      max: 
   config:
     min: 
     max: 
