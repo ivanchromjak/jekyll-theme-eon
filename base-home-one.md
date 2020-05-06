@@ -64,6 +64,7 @@ sections:
         width: medium
         url: "#demos"
         blank: false
+      animation: slide-left
     - width: 1-2
       blocks:
       - template: image
@@ -73,6 +74,7 @@ sections:
         alt: Website
         caption: ''
         lightbox: false
+      animation: slide-right
     divider: false
     masonry: false
   navbar:
@@ -83,6 +85,7 @@ sections:
   height: false
   id: ''
   class: ''
+  animation: ''
 - template: section
   columns: one
   grid: 1-2
@@ -315,6 +318,7 @@ sections:
   cells: []
   divider: false
   masonry: false
+  animation: ''
 - template: section
   columns: one
   grid: 1-2
@@ -383,6 +387,7 @@ sections:
   cells: []
   divider: false
   masonry: false
+  animation: ''
 - template: section
   columns: one
   grid: 1-2
@@ -546,5 +551,6 @@ sections:
   cells: []
   divider: false
   masonry: false
+  animation: ''
 
 ---
