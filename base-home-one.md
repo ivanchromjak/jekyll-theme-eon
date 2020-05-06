@@ -290,7 +290,7 @@ sections:
   horizontal_align: left
   vertical_align: top
   background:
-    style: default
+    style: muted
     image_align: center-center
     overlay_opacity: 0.6
     shape_top: none
