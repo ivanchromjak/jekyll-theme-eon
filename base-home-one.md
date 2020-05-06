@@ -55,6 +55,8 @@ sections:
         width: medium
         url: "#demos"
         blank: false
+    - width: 1-2
+      blocks: []
     divider: false
     masonry: false
   navbar:
