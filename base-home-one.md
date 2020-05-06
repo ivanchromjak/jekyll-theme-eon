@@ -85,7 +85,7 @@ sections:
   height: false
   id: ''
   class: ''
-  animation: ''
+  animation: none
 - template: section
   columns: one
   grid: 1-2
@@ -318,7 +318,7 @@ sections:
   cells: []
   divider: false
   masonry: false
-  animation: ''
+  animation: none
 - template: section
   columns: one
   grid: 1-2
@@ -387,7 +387,7 @@ sections:
   cells: []
   divider: false
   masonry: false
-  animation: slide-bottom
+  animation: fade
 - template: section
   columns: one
   grid: 1-2
@@ -551,6 +551,6 @@ sections:
   cells: []
   divider: false
   masonry: false
-  animation: ''
+  animation: none
 
 ---
