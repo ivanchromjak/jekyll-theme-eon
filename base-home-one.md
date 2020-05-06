@@ -8,7 +8,7 @@ sections:
   size: large
   remove_padding: none
   horizontal_align: left
-  vertical_align: middle
+  vertical_align: top
   background:
     style: secondary
     image_align: center-right
@@ -77,6 +77,7 @@ sections:
       animation: slide-right
     divider: true
     masonry: true
+    vertical_align: top
   navbar:
     light_color: false
     transparent: true
