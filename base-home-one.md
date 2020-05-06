@@ -231,14 +231,14 @@ sections:
   horizontal_align: left
   vertical_align: top
   background:
-    style: default
+    style: secondary
     image_align: center-center
     overlay_opacity: 0.6
     shape_top: none
     color: ''
-    image: ''
+    image: "/uploads/header-9.jpeg"
     video: ''
-    overlay_color: ''
+    overlay_color: "#020C1D"
   container: medium
   size: medium
   remove_padding: none
