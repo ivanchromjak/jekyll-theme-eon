@@ -225,5 +225,69 @@ sections:
   cells: []
   divider: false
   masonry: false
+- template: section
+  columns: one
+  grid: 1-2
+  horizontal_align: left
+  vertical_align: top
+  background:
+    style: default
+    image_align: center-center
+    overlay_opacity: 0.6
+    shape_top: none
+    color: ''
+    image: ''
+    video: ''
+    overlay_color: ''
+  container: medium
+  size: medium
+  remove_padding: none
+  block: grid
+  gap: default
+  parallax: '0'
+  blocks: []
+  column_two: []
+  height: false
+  id: ''
+  class: ''
+  cells: []
+  divider: false
+  masonry: false
+- template: section
+  columns: one
+  grid: 1-2
+  horizontal_align: left
+  vertical_align: top
+  background:
+    style: default
+    image_align: center-center
+    overlay_opacity: 0.6
+    shape_top: none
+    color: ''
+    image: ''
+    video: ''
+    overlay_color: ''
+  container: medium
+  size: medium
+  remove_padding: none
+  block: grid
+  gap: default
+  parallax: '0'
+  blocks:
+  - template: block-button
+    block: button
+    text: Text
+    style: primary
+    size: regular
+    width: default
+    url: ''
+    blank: false
+  column_two: []
+  height: false
+  id: ''
+  class: ''
+  cells: []
+  divider: false
+  masonry: false
 
 ---
