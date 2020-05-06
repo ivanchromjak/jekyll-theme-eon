@@ -19,6 +19,7 @@ sections:
     video: ''
     overlay_color: ''
     size: contain
+    align: center-right
   blocks:
   - template: grid
     block: grid
@@ -90,6 +91,7 @@ sections:
     video: ''
     overlay_color: ''
     size: ''
+    align: ''
   container: medium
   size: large
   remove_padding: none
@@ -314,6 +316,7 @@ sections:
     video: ''
     overlay_color: "#020C1D"
     size: ''
+    align: ''
   container: medium
   size: medium
   remove_padding: none
@@ -374,6 +377,7 @@ sections:
     video: ''
     overlay_color: ''
     size: ''
+    align: ''
   container: medium
   size: medium
   remove_padding: none
