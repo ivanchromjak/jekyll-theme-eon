@@ -4,14 +4,17 @@
 {% endif %}
 
 <div{% if section.id %} id="{{ section.id }}"{% endif %} 
-  class="uk-cover-container{% if section.background.style != 'custom' %} uk-background-{{ section.background.style }}{% endif %}{% if section.background.image and section.background.width == 'full' %} uk-background-norepeat uk-background-{{ section.background.size | default: 'cover' }} uk-background-{{ section.background.align | default: 'center-center' }}{% endif %}{% if section.class %} {{ section.class }}{% endif %}" 
+  class="uk-cover-container{% if section.background.style != 'custom' %} uk-background-{{ section.background.style }}{% endif %}{% if section.background.image and section.background.custom_image_width != true %} uk-background-norepeat uk-background-{{ section.background.size | default: 'cover' }} uk-background-{{ section.background.align | default: 'center-center' }}{% endif %}{% if section.class %} {{ section.class }}{% endif %}" 
   style="{% if section.background.style == 'custom' %}background-color: {{ section.background.color }};{% endif %}" 
-  {% if section.background.image and section.background.width == 'full' %} data-src="{{ section.background.image | absolute_url }}" data-uk-img{% endif %}>
+  {% if section.background.image and section.background.custom_image_width != true %} data-src="{{ section.background.image | absolute_url }}" data-uk-img{% endif %}>
   
-  {% if section.background.width != 'full' %}
+  {% if section.background.custom_image_width %}
     <div class="uk-position-cover">
       <div class="uk-grid-collapse uk-height-1-1" data-uk-grid>
-        <div class="uk-width-1-2@s uk-height-1-1">
+        {% if section.background.width_align == 'right' %}
+          <div class="uk-width-expand@m"></div>
+        {% endif %} 
+        <div class="uk-width-{{ section.background.image_width | default: '1-2' }}@m uk-height-1-1">
           <div class="uk-height-1-1 uk-background-norepeat uk-background-{{ section.background.size | default: 'cover' }} uk-background-{{ section.background.align | default: 'center-center' }}" data-src="{{ section.background.image | absolute_url }}" data-uk-img></div>
         </div>
       </div>
