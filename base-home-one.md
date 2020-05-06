@@ -322,7 +322,7 @@ sections:
     style: secondary
     image_align: center-center
     overlay_opacity: 0.6
-    shape_top: none
+    shape_top: angle
     color: ''
     image: "/uploads/header-9.jpeg"
     video: ''
@@ -332,7 +332,7 @@ sections:
     width: 2-3
     custom_width: true
     width_align: right
-    custom_image_width: true
+    custom_image_width: false
     image_width: 4-5
     horizontal_align: right
   container: medium
