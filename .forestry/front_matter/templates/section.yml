@@ -190,6 +190,19 @@ fields:
         file: 
         path: 
     label: Image Size
+  - name: parallax
+    type: number
+    label: Image Parallax
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+    showOnly:
+      field: size
+      value: cover
   - name: custom_image_width
     type: boolean
     label: Custom Image Width
@@ -217,6 +230,11 @@ fields:
     showOnly:
       field: custom_image_width
       value: true
+  - name: video
+    type: text
+    config:
+      required: false
+    label: Video
   - name: horizontal_align
     type: select
     default: left
@@ -234,11 +252,6 @@ fields:
     showOnly:
       field: custom_image_width
       value: true
-  - name: video
-    type: text
-    config:
-      required: false
-    label: Video
   - name: overlay_color
     type: color
     label: Overlay Color
