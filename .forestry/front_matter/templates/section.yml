@@ -16,9 +16,9 @@ fields:
       file: 
       path: 
   label: Section Columns
-- name: column_one
+- name: blocks
   type: blocks
-  label: Column One
+  label: Blocks
   template_types:
   - block-button
   - cards
