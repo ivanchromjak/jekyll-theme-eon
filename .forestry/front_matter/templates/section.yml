@@ -43,6 +43,7 @@ fields:
   - margin
   - heading
   - code
+  - grid
   config:
     min: 
     max: 
