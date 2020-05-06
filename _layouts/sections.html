@@ -28,19 +28,5 @@ layout: default
       </div>
     </div>
   {% endif %}
-
-  <div class="uk-grid-large uk-text-{{ section.horizontal_align | default: 'left' }}" data-uk-grid>
-    {% for cell in section.cells %}
-      <div class="uk-width-{{ cell.width | default: '1-1' }}@m uk-flex uk-flex-{{ section.vertical_align | default: 'top' }}">
-        <div class="uk-section-column">
-          {% for block in cell.blocks %}
-            {% include block-{{ block.block }}.html %}
-          {% endfor %}
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-
-
   {% include partials/section-close.html %}
 {% endfor %}
