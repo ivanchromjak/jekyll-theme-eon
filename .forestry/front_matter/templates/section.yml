@@ -233,6 +233,7 @@ fields:
     label: Horizontal Align
     showOnly:
       field: custom_image_width
+      value: true
   - name: video
     type: text
     config:
