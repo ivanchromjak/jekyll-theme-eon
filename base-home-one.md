@@ -2,6 +2,47 @@
 layout: sections
 title: Base Home One
 sections:
+- template: header
+  block: header
+  container: medium
+  size: medium
+  remove_padding: none
+  horizontal_align: left
+  vertical_align: top
+  background:
+    style: default
+    image_align: center-center
+    overlay_opacity: 0.6
+    shape_top: none
+    color: ''
+    image: ''
+    video: ''
+    overlay_color: ''
+  blocks:
+  - template: grid
+    block: grid
+    gap: default
+    parallax: '0'
+    cells:
+    - width: 1-2
+      blocks:
+      - template: heading
+        block: heading
+        tag: h1
+        size: small
+        align: left
+        title: Tired of never ending site maintenance
+        color: "#FFFFFF"
+    divider: false
+    masonry: false
+  navbar:
+    light_color: false
+    transparent: false
+    transparent_light_color: false
+    search: false
+  height: false
+  id: ''
+  class: ''
 - template: section
   columns: one
   grid: 1-2
