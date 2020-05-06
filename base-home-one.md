@@ -18,7 +18,7 @@ sections:
     image: "/uploads/image3.jpg"
     video: ''
     overlay_color: ''
-    size: contain
+    size: cover
     align: top-right
     width: ''
     custom_width: false
