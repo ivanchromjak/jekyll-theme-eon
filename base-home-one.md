@@ -15,11 +15,11 @@ sections:
     overlay_opacity: 0.6
     shape_top: none
     color: ''
-    image: "/uploads/image3.jpg"
+    image: "/uploads/blob-1.svg"
     video: ''
     overlay_color: ''
     size: cover
-    align: top-right
+    align: center-right
     width: ''
     custom_width: false
     width_align: ''
