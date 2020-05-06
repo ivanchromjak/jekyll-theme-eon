@@ -190,9 +190,9 @@ fields:
         file: 
         path: 
     label: Image Size
-  - name: custom_width
+  - name: partial_image
     type: boolean
-    label: Custom Image Width
+    label: Partial Image
   - name: width
     type: select
     default: 1-2
