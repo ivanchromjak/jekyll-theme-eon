@@ -5,7 +5,7 @@ sections:
 - template: section
   columns: one
   grid: 1-2
-  horizontal_align: left
+  horizontal_align: center
   vertical_align: top
   background:
     style: default
@@ -17,7 +17,7 @@ sections:
     video: ''
     overlay_color: ''
   container: medium
-  size: medium
+  size: large
   remove_padding: none
   block: grid
   gap: default
