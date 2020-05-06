@@ -93,6 +93,7 @@ sections:
   gap: ''
   divider: false
   masonry: false
+  blocks: []
 - template: section
   columns: one
   grid: 1-2
@@ -318,6 +319,15 @@ sections:
   divider: false
   masonry: false
   parallax: 
+  blocks:
+  - template: block-button
+    block: button
+    text: Text
+    style: primary
+    size: regular
+    width: default
+    url: ''
+    blank: false
 - template: section
   columns: one
   grid: 1-2
@@ -355,6 +365,7 @@ sections:
   divider: false
   masonry: false
   parallax: 
+  blocks: []
 - template: section
   columns: one
   grid: 1-2
@@ -381,6 +392,10 @@ sections:
           npm install
           bundle exec jekyll s --livereload
     color: ''
+  - template: grid
+    block: grid
+    gap: default
+    parallax: '0'
   column_two: []
   height: false
   id: ''
@@ -420,10 +435,11 @@ sections:
       width: default
       url: dffd
       blank: false
-  gap: ''
+  gap: default
   divider: false
   masonry: false
   parallax: 
+  blocks: []
 - template: section
   columns: one
   grid: 1-2
@@ -485,6 +501,7 @@ sections:
   divider: false
   masonry: false
   parallax: 
+  blocks: []
 - template: section
   columns: one
   grid: 1-2
@@ -641,33 +658,6 @@ sections:
   divider: false
   masonry: false
   parallax: 
-- template: section
-  columns: one
-  grid: 1-2
-  horizontal_align: left
-  vertical_align: top
-  background:
-    style: default
-    image_align: center-center
-    overlay_opacity: 0.6
-    shape_top: none
-    color: ''
-    image: ''
-    video: ''
-    overlay_color: ''
-  container: medium
-  size: medium
-  remove_padding: none
-  column_one: []
-  column_two: []
-  height: false
-  id: ''
-  class: ''
-  block: ''
-  cells: []
-  gap: ''
-  divider: false
-  masonry: false
-  parallax: 
+  blocks: []
 
 ---
