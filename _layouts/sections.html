@@ -6,10 +6,11 @@ layout: default
   {% include partials/section-open.html %}
     <div class="uk-section-column uk-text-{{ section.horizontal_align | default: 'left' }}">
       {% for block in section.blocks %}
-        {% if block.block == 'grid' %}
-          <div class="uk-grid-large uk-text-{{ section.horizontal_align | default: 'left' }}" data-uk-grid>
+        {% if block.block == 'grid' %}{{block}}
+          <div class="uk-grid-{{ block.gap }}{% if block.divider %} uk-grid-divider{% endif %}" 
+            data-uk-grid="{% if block.masonry %}masonry: true;{% endif %}{% if block.parallax != empty %} parallax: {{ block.parallax }};{% endif %}">
             {% for cell in block.cells %}
-              <div class="uk-width-{{ cell.width | default: '1-1' }}@m uk-flex uk-flex-{{ block.vertical_align | default: 'top' }}" 
+              <div class="uk-width-{{ cell.width | default: '1-1' }}@m{% if block.vertical_align != 'top' %} uk-flex uk-flex-{{ block.vertical_align | default: 'middle' }}{% endif %}" 
                 {% if cell.animation != 'none' %} uk-scrollspy="cls: uk-animation-{{ cell.animation | default: 'slide-bottom' }}; repeat: true"{% endif %}>
                 <div class="uk-section-column">
                   {% for block in cell.blocks %}
