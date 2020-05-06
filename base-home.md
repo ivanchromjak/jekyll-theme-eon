@@ -320,14 +320,26 @@ sections:
   masonry: false
   parallax: 
   blocks:
-  - template: block-button
-    block: button
-    text: Text
-    style: primary
-    size: regular
-    width: default
-    url: ''
-    blank: false
+  - template: cards
+    block: cards
+    media: none
+    style: default
+    grid: 1-3
+    gutter: default
+    cards:
+    - title: ssss
+      heading: ''
+      content: ssss
+      icon: ''
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    icon_color: ''
+    icon_size: 
 - template: section
   columns: one
   grid: 1-2
