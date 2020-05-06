@@ -51,6 +51,24 @@ fields:
     config:
       min: 
       max: 
+  - name: animation
+    type: select
+    default: none
+    config:
+      required: false
+      options:
+      - none
+      - slide-bottom
+      - slide-top
+      - slide-left
+      - slide-right
+      - fade
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Animation
   config:
     min: 
     max: 
