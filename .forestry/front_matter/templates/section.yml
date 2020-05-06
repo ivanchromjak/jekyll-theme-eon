@@ -215,23 +215,6 @@ fields:
     showOnly:
       field: custom_width
       value: true
-  - name: partial_image_align
-    type: select
-    default: left
-    config:
-      required: false
-      options:
-      - left
-      - right
-      source:
-        type: simple
-        section: 
-        file: 
-        path: 
-    label: Partial Image Align
-    showOnly:
-      field: custom_width
-      value: true
   - name: video
     type: text
     config:
