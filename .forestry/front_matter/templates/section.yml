@@ -294,3 +294,18 @@ fields:
   config:
     required: false
   label: Class
+- name: vertical_align
+  type: select
+  default: top
+  config:
+    required: false
+    options:
+    - top
+    - middle
+    - bottom
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Vertical Align
