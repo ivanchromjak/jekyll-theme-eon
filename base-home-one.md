@@ -379,7 +379,7 @@ sections:
     size: ''
     align: ''
   container: medium
-  size: medium
+  size: large
   remove_padding: none
   block: grid
   gap: default
