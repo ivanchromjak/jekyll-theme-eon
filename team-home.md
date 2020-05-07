@@ -184,5 +184,51 @@ sections:
         animation: none
       divider: false
       masonry: false
+- template: section
+  container: medium
+  size: medium
+  remove_padding: none
+  horizontal_align: left
+  background:
+    style: default
+    align: center-center
+    size: cover
+    parallax: '0'
+    image_width: 1-2
+    horizontal_align: left
+    overlay_opacity: 0.6
+    shape_top: none
+    color: ''
+    image: ''
+    custom_image_width: false
+    video: ''
+    overlay_color: ''
+  animation: none
+  blocks:
+  - template: cards
+    block: cards
+    media: left
+    style: default
+    grid: 1-3
+    gutter: default
+    cards:
+    - title: Track and analyze your business communication
+      heading: ''
+      content: Conveniently aggregate high-payoff schemas rather than 24/7 innovation.
+        Collaboratively pontificate state of the art methodologies through quality
+        vortals.
+      icon: ''
+      image: "/uploads/site-5.png"
+      button:
+        text: View Features
+        style: danger-outline
+        size: medium
+        url: "#"
+        blank: false
+    icon_color: ''
+    icon_size: 
+  height: false
+  id: ''
+  class: ''
 
 ---
