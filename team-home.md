@@ -186,7 +186,7 @@ sections:
         url: ''
         blank: false
     icon_color: "#ED576C"
-    icon_size: 
+    icon_size: '64'
   height: false
   id: ''
   class: ''
