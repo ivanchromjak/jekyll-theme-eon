@@ -10,7 +10,7 @@ sections:
   horizontal_align: left
   background:
     style: default
-    align: top-right
+    align: bottom-right
     size: cover
     parallax: '0'
     image_width: 1-2
