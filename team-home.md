@@ -43,6 +43,7 @@ sections:
       Intrinsicly negotiate 24/7 paradigms after cost effective manufactured products.
     color: "#7B7B7B"
     width: small
+    align: center
   - template: block-button
     block: button
     text: Contact Us
@@ -108,6 +109,7 @@ sections:
       initiatives proactively administrate long term impact imperatives through leadership.
     color: "#A8A8A8"
     width: ''
+    align: ''
   - template: margin
     block: margin
     size: default
