@@ -127,7 +127,7 @@ sections:
       heading: ''
       content: Synamically reconceptualize granular portals before unique scenarios
         interactively aggregate progressive
-      icon: ''
+      icon: "/uploads/icons/ios-video-call.svg"
       image: ''
       button:
         text: Text
