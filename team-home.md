@@ -29,14 +29,6 @@ sections:
     transparent_light_color: false
     search: false
   blocks:
-  - template: heading
-    block: heading
-    tag: h1
-    size: h1
-    align: center
-    title: Effective Team Communication for Startups
-    color: ''
-    width: small
   - template: lead
     block: lead
     text: Efficiently impact out-of-the-box bandwidth after intuitive functionalities.
@@ -73,6 +65,17 @@ sections:
   - template: margin
     block: margin
     size: default
+  - template: grid
+    block: grid
+    gap: default
+    vertical_align: top
+    parallax: '0'
+    cells:
+    - width: 1-2
+      blocks: []
+      animation: none
+    divider: false
+    masonry: false
   height: false
   id: ''
   class: ''
