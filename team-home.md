@@ -276,7 +276,7 @@ sections:
   - template: cards
     block: cards
     media: none
-    style: default
+    style: none
     grid: 1-6
     gutter: default
     cards:
@@ -294,8 +294,8 @@ sections:
     - title: ''
       heading: ''
       content: ''
-      icon: ''
-      image: "/uploads/brand-spotify.svg"
+      icon: "/uploads/brand-spotify.svg"
+      image: ''
       button:
         text: Text
         style: primary
