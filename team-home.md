@@ -98,6 +98,27 @@ sections:
     align: center
     title: We improve team communication flow that will grow your business
     color: ''
+  - template: cards
+    block: cards
+    media: none
+    style: default
+    grid: 1-3
+    gutter: default
+    cards:
+    - title: Messaging
+      heading: ''
+      content: Collaboratively strategize robust value without premium sources promote
+        backend human capital before team.
+      icon: "/uploads/icons/ios-chat-message.svg"
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    icon_color: ''
+    icon_size: 
   height: false
   id: ''
   class: ''
