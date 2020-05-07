@@ -8,12 +8,9 @@ fields:
   template_types:
   - block-button
   - cards
-  - call-to-action
   - icon
-  - title-h2
   - text
   - lead
-  - title-h5
   - image
   - slider
   - videos
@@ -28,7 +25,6 @@ fields:
   - faq
   - margin
   - heading
-  - code
   - grid
   config:
     min: 
