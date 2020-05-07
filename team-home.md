@@ -70,6 +70,7 @@ sections:
   height: false
   id: ''
   class: ''
+  container_two: []
 - template: section
   container: medium
   size: medium
@@ -130,5 +131,25 @@ sections:
   height: false
   id: ''
   class: ''
+  container_two:
+  - blocks:
+    - template: grid
+      block: grid
+      gap: default
+      vertical_align: top
+      parallax: '0'
+      cells:
+      - width: 1-1
+        blocks:
+        - template: image
+          block: image
+          align: none
+          image: ''
+          alt: ''
+          caption: ''
+          lightbox: false
+        animation: none
+      divider: false
+      masonry: false
 
 ---
