@@ -186,7 +186,7 @@ sections:
       masonry: false
 - template: section
   container: medium
-  size: medium
+  size: large
   remove_padding: none
   horizontal_align: left
   background:
@@ -208,7 +208,7 @@ sections:
   - template: cards
     block: cards
     media: left
-    style: default
+    style: none
     grid: 1-3
     gutter: default
     cards:
