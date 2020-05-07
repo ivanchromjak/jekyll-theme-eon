@@ -433,7 +433,20 @@ sections:
     style: default
     grid: 1-3
     gutter: default
-    cards: []
+    cards:
+    - title: BASIC
+      heading: "$199"
+      content: "Distinctively administrate prospective channels without open-source
+        growth strategies. \n\n* Conveniently communicate\n* Resources and standards
+        \n* Compliant best practices \n* Dramatically architect "
+      icon: ''
+      image: ''
+      button:
+        text: Get started
+        style: primary-outline
+        size: regular
+        url: "#"
+        blank: false
     icon_color: ''
     icon_size: 
   height: false
