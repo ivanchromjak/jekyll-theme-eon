@@ -98,7 +98,7 @@ sections:
   horizontal_align: center
   background:
     style: default
-    align: center-center
+    align: bottom-right
     size: cover
     parallax: '0'
     image_width: 1-2
