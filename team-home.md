@@ -126,7 +126,7 @@ sections:
     - title: Company Process
       heading: ''
       content: Intrinsicly enable highly efficient ideas without seamless testing
-        procedures distinctively grow seamless metrics
+        procedures distinctively grow
       icon: "/uploads/icons/ios-rocket.svg"
       image: ''
       button:
@@ -138,7 +138,7 @@ sections:
     - title: Voice and Video
       heading: ''
       content: Synamically reconceptualize granular portals before unique scenarios
-        interactively aggregate progressive
+        interactively
       icon: "/uploads/icons/ios-video-call.svg"
       image: ''
       button:
@@ -150,7 +150,7 @@ sections:
     - title: Instant Messaging
       heading: ''
       content: Collaboratively strategize robust value without premium sources promote
-        backend human capital before team.
+        backend human capital
       icon: "/uploads/icons/ios-communication.svg"
       image: ''
       button:
@@ -162,7 +162,7 @@ sections:
     - title: Customer Support
       heading: ''
       content: Dynamically reconceptualize granular portals before unique scenarios
-        interactively aggregate progressive
+        interactively
       icon: "/uploads/icons/ios-online-support.svg"
       image: ''
       button:
