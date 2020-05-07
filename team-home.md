@@ -66,7 +66,7 @@ sections:
   - template: image
     block: image
     align: center
-    image: "/uploads/team-2.png"
+    image: "/uploads/social-1.svg"
     alt: ''
     caption: ''
     lightbox: false
