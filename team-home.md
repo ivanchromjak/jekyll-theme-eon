@@ -5,9 +5,9 @@ sections:
 - template: header
   block: header
   container: medium
-  size: medium
+  size: large
   remove_padding: none
-  horizontal_align: center
+  horizontal_align: left
   background:
     style: default
     align: center-right
@@ -40,7 +40,7 @@ sections:
       - template: heading
         block: heading
         tag: h1
-        size: default
+        size: small
         align: left
         width: full
         title: Effective Team Communication for Startups
@@ -54,7 +54,7 @@ sections:
         color: ''
       - template: margin
         block: margin
-        size: medium
+        size: default
       - template: block-button
         block: button
         text: Get Started
@@ -71,6 +71,9 @@ sections:
         width: medium
         url: "#"
         blank: false
+      - template: margin
+        block: margin
+        size: default
       animation: none
     divider: false
     masonry: false
