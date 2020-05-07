@@ -252,5 +252,38 @@ sections:
   height: false
   id: ''
   class: ''
+- template: section
+  container: medium
+  size: xsmall
+  remove_padding: none
+  horizontal_align: center
+  background:
+    style: default
+    align: center-center
+    size: cover
+    parallax: '0'
+    image_width: 1-2
+    horizontal_align: left
+    overlay_opacity: 0.6
+    shape_top: none
+    color: ''
+    image: ''
+    custom_image_width: false
+    video: ''
+    overlay_color: ''
+  animation: none
+  blocks:
+  - template: cards
+    block: cards
+    media: none
+    style: default
+    grid: 1-3
+    gutter: default
+    cards: []
+    icon_color: ''
+    icon_size: 
+  height: false
+  id: ''
+  class: ''
 
 ---
