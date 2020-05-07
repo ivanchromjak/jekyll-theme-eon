@@ -79,7 +79,7 @@ sections:
   container_two: []
 - template: section
   container: medium
-  size: medium
+  size: large
   remove_padding: none
   horizontal_align: center
   background:
@@ -110,7 +110,7 @@ sections:
     block: lead
     text: Dramatically reconceptualize leveraged architectures whereas customer directed
       initiatives proactively administrate long term impact imperatives through leadership.
-    color: "#A8A8A8"
+    color: ''
     width: small
     align: ''
   - template: margin
