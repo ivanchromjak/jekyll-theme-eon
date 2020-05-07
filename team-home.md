@@ -10,14 +10,14 @@ sections:
   horizontal_align: left
   background:
     style: default
-    align: center-right
+    align: top-right
     size: contain
     parallax: '0'
     image_width: 1-2
     horizontal_align: left
     overlay_opacity: 0.6
     shape_top: none
-    image: "/uploads/social-1.svg"
+    image: "/uploads/blob-4.svg"
     color: ''
     custom_image_width: false
     video: ''
@@ -31,7 +31,7 @@ sections:
   blocks:
   - template: grid
     block: grid
-    gap: default
+    gap: collapse
     vertical_align: top
     parallax: '0'
     cells:
@@ -74,6 +74,16 @@ sections:
       - template: margin
         block: margin
         size: default
+      animation: none
+    - width: 1-2
+      blocks:
+      - template: image
+        block: image
+        align: none
+        image: "/uploads/social-1.svg"
+        alt: ''
+        caption: ''
+        lightbox: false
       animation: none
     divider: false
     masonry: false
