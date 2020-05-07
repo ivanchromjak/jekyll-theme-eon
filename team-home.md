@@ -72,7 +72,22 @@ sections:
     parallax: '0'
     cells:
     - width: 1-2
-      blocks: []
+      blocks:
+      - template: heading
+        block: heading
+        tag: h1
+        size: default
+        align: left
+        width: full
+        title: Effective Team Communication for Startups
+        color: ''
+      - template: lead
+        block: lead
+        align: left
+        width: full
+        text: Efficiently impact out-of-the-box bandwidth after intuitive functionalities.
+          Intrinsicly negotiate 24/7 paradigms after cost effective manufactured products.
+        color: ''
       animation: none
     divider: false
     masonry: false
