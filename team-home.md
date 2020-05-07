@@ -357,7 +357,7 @@ sections:
         size: regular
         url: ''
         blank: false
-    icon_color: ''
+    icon_color: "#FFFFFF"
     icon_size: 
   height: false
   id: ''
