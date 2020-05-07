@@ -283,6 +283,50 @@ sections:
     - title: ''
       heading: ''
       content: ''
+      icon: "/uploads/brand-airbnb.svg"
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: ''
+      heading: ''
+      content: ''
+      icon: "/uploads/brand-google.svg"
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: ''
+      heading: ''
+      content: ''
+      icon: "/uploads/brand-netflix.svg"
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: ''
+      heading: ''
+      content: ''
+      icon: "/uploads/brand-shopify.svg"
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: ''
+      heading: ''
+      content: ''
       icon: "/uploads/brand-slack.svg"
       image: ''
       button:
