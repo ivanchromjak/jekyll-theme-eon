@@ -32,7 +32,7 @@ sections:
   - template: heading
     block: heading
     tag: h1
-    size: small
+    size: h1
     align: left
     title: Effective Team Communication for Startups
     color: ''
@@ -40,7 +40,7 @@ sections:
     block: lead
     text: Efficiently impact out-of-the-box bandwidth after intuitive functionalities.
       Intrinsicly negotiate 24/7 paradigms after cost effective manufactured products.
-    color: ''
+    color: "#C6C6C6"
   - template: block-button
     block: button
     text: Contact Us
@@ -59,7 +59,7 @@ sections:
     blank: false
   - template: margin
     block: margin
-    size: default
+    size: medium
   - template: image
     block: image
     align: center
