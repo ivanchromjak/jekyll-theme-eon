@@ -707,6 +707,21 @@
 
 @mixin hook-utility-misc(){
 
+  .uk-max-width-xsmall {
+    max-width: $container-xsmall-max-width;
+  }
+
+  .uk-max-width-small {
+    max-width: $container-small-max-width;
+  }
+
+  .uk-max-width-xsmall, .uk-max-width-xsmall {
+    &.uk-text-center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   .uk-section-shape {
     width: 100%;
     position: relative;

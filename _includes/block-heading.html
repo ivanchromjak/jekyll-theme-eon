@@ -1,2 +1,2 @@
-<{{ block.tag | default: 'h2' }} class="{% if block.size == 'h1' or block.size == 'h2' %}uk-{{ block.size }}{% else %}uk-heading-{{ block.size }}{% endif %} uk-text-{{ block.align }}" 
+<{{ block.tag | default: 'h2' }} class="{% if block.size == 'h1' or block.size == 'h2' %}uk-{{ block.size }}{% else %}uk-heading-{{ block.size }}{% endif %} uk-text-{{ block.align }}{% if block.width != 'full' %} uk-max-width-{{ block.width }}{% endif %}" 
   style="{% if block.color != empty %}color: {{ block.color }};{% endif %}">{{ block.title }}</{{ block.tag | default: 'h2' }}>
