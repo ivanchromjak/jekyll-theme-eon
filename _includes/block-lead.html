@@ -1,2 +1,1 @@
-<div class="uk-text-lead{% if block.width != 'full' %} uk-max-width-{{ block.width }}{% endif %}"{% if block.color != empty %} style="color: {{ block.color }};"{% endif %}>{{ block.text }}</div>
-{{block}}
+<div class="uk-text-lead uk-text-{{ block.align }}{% if block.width != 'full' %} uk-max-width-{{ block.width }}{% endif %}"{% if block.color != empty %} style="color: {{ block.color }};"{% endif %}>{{ block.text }}</div>
