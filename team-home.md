@@ -123,11 +123,11 @@ sections:
     grid: 1-3
     gutter: default
     cards:
-    - title: Customer Support
+    - title: Instant Messaging
       heading: ''
-      content: Dynamically reconceptualize granular portals before unique scenarios
-        interactively aggregate progressive
-      icon: "/uploads/icons/ios-online-support.svg"
+      content: Collaboratively strategize robust value without premium sources promote
+        backend human capital before team.
+      icon: "/uploads/icons/ios-communication.svg"
       image: ''
       button:
         text: Text
@@ -135,11 +135,11 @@ sections:
         size: regular
         url: ''
         blank: false
-    - title: Messaging
+    - title: Customer Support
       heading: ''
-      content: Collaboratively strategize robust value without premium sources promote
-        backend human capital before team.
-      icon: "/uploads/icons/ios-chat-message.svg"
+      content: Dynamically reconceptualize granular portals before unique scenarios
+        interactively aggregate progressive
+      icon: "/uploads/icons/ios-online-support.svg"
       image: ''
       button:
         text: Text
