@@ -120,7 +120,7 @@ sections:
     block: cards
     media: none
     style: none
-    grid: 1-3
+    grid: 1-4
     gutter: large
     cards:
     - title: Company Process
