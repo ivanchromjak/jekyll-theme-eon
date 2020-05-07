@@ -31,7 +31,7 @@ sections:
   blocks:
   - template: grid
     block: grid
-    gap: collapse
+    gap: default
     vertical_align: top
     parallax: '0'
     cells:
