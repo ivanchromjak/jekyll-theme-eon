@@ -240,7 +240,7 @@ sections:
         quality vectors. Uniquely synthesize multidisciplinary products for transparent
         total linkage.
       icon: ''
-      image: "/uploads/site-3.png"
+      image: "/uploads/admin-1.png"
       button:
         text: Contact Us
         style: danger-outline
