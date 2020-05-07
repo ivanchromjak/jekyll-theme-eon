@@ -254,11 +254,11 @@ sections:
   class: ''
 - template: section
   container: small
-  size: large
+  size: medium
   remove_padding: none
   horizontal_align: center
   background:
-    style: default
+    style: secondary
     align: center-center
     size: cover
     parallax: '0'
@@ -280,7 +280,7 @@ sections:
     align: center
     width: full
     title: Trusted by world’s leading companies
-    color: ''
+    color: "#FFFFFF"
   - template: margin
     block: margin
     size: large
@@ -357,34 +357,8 @@ sections:
         size: regular
         url: ''
         blank: false
-    icon_color: ''
+    icon_color: "#FFFFFF"
     icon_size: 
-  height: false
-  id: ''
-  class: ''
-- template: section
-  container: medium
-  size: large
-  remove_padding: none
-  horizontal_align: left
-  background:
-    style: secondary
-    align: center-center
-    size: cover
-    parallax: '0'
-    image_width: 1-2
-    horizontal_align: left
-    overlay_opacity: 0.6
-    shape_top: none
-    color: ''
-    image: ''
-    custom_image_width: false
-    video: ''
-    overlay_color: ''
-  animation: none
-  blocks:
-  - template: mailchimp
-    block: mailchimp
   height: false
   id: ''
   class: ''
@@ -432,14 +406,13 @@ sections:
     media: none
     style: default
     grid: 1-3
-    gutter: small
+    gutter: default
     cards:
-    - title: ENTERPRISE
-      heading: "$999"
+    - title: BASIC
+      heading: "$199"
       content: "Distinctively administrate prospective channels without open-source
-        growth strategies.\n\n* Conveniently communicate\n* Resources and standards\n*
-        Compliant best practices\n* Dramatically architect\n* Conveniently simplify
-        \n* Functionalized customer\n* Administrate prospective"
+        growth strategies. \n\n* Conveniently communicate\n* Resources and standards
+        \n* Compliant best practices \n* Dramatically architect "
       icon: ''
       image: ''
       button:
@@ -462,11 +435,12 @@ sections:
         size: medium
         url: "#"
         blank: false
-    - title: BASIC
-      heading: "$199"
+    - title: ENTERPRISE
+      heading: "$999"
       content: "Distinctively administrate prospective channels without open-source
-        growth strategies. \n\n* Conveniently communicate\n* Resources and standards
-        \n* Compliant best practices \n* Dramatically architect "
+        growth strategies.\n\n* Conveniently communicate\n* Resources and standards\n*
+        Compliant best practices\n* Dramatically architect\n* Conveniently simplify
+        \n* Functionalized customer\n* Administrate prospective"
       icon: ''
       image: ''
       button:
