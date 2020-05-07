@@ -90,7 +90,14 @@ sections:
     video: ''
     overlay_color: ''
   animation: none
-  blocks: []
+  blocks:
+  - template: heading
+    block: heading
+    tag: h2
+    size: h1
+    align: center
+    title: We improve team communication flow that will grow your business
+    color: ''
   height: false
   id: ''
   class: ''
