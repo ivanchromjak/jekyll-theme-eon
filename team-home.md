@@ -362,5 +362,31 @@ sections:
   height: false
   id: ''
   class: ''
+- template: section
+  container: medium
+  size: large
+  remove_padding: none
+  horizontal_align: left
+  background:
+    style: muted
+    align: center-center
+    size: cover
+    parallax: '0'
+    image_width: 1-2
+    horizontal_align: left
+    overlay_opacity: 0.6
+    shape_top: none
+    color: ''
+    image: ''
+    custom_image_width: false
+    video: ''
+    overlay_color: ''
+  animation: none
+  blocks:
+  - template: mailchimp
+    block: mailchimp
+  height: false
+  id: ''
+  class: ''
 
 ---
