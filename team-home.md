@@ -74,7 +74,7 @@ sections:
   container: medium
   size: medium
   remove_padding: none
-  horizontal_align: left
+  horizontal_align: center
   background:
     style: default
     align: center-center
@@ -89,7 +89,7 @@ sections:
     custom_image_width: false
     video: ''
     overlay_color: ''
-  animation: none
+  animation: slide-bottom
   blocks:
   - template: heading
     block: heading
