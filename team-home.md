@@ -434,12 +434,11 @@ sections:
     grid: 1-3
     gutter: small
     cards:
-    - title: ENTERPRISE
-      heading: "$999"
+    - title: BASIC
+      heading: "$199"
       content: "Distinctively administrate prospective channels without open-source
-        growth strategies.\n\n* Conveniently communicate\n* Resources and standards\n*
-        Compliant best practices\n* Dramatically architect\n* Conveniently simplify
-        \n* Functionalized customer\n* Administrate prospective"
+        growth strategies. \n\n* Conveniently communicate\n* Resources and standards
+        \n* Compliant best practices \n* Dramatically architect "
       icon: ''
       image: ''
       button:
@@ -462,11 +461,12 @@ sections:
         size: medium
         url: "#"
         blank: false
-    - title: BASIC
-      heading: "$199"
+    - title: ENTERPRISE
+      heading: "$999"
       content: "Distinctively administrate prospective channels without open-source
-        growth strategies. \n\n* Conveniently communicate\n* Resources and standards
-        \n* Compliant best practices \n* Dramatically architect "
+        growth strategies.\n\n* Conveniently communicate\n* Resources and standards\n*
+        Compliant best practices\n* Dramatically architect\n* Conveniently simplify
+        \n* Functionalized customer\n* Administrate prospective"
       icon: ''
       image: ''
       button:
