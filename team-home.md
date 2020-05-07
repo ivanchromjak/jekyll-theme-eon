@@ -98,6 +98,14 @@ sections:
     align: center
     title: We improve team communication flow that will grow your business
     color: ''
+  - template: lead
+    block: lead
+    text: Dramatically reconceptualize leveraged architectures whereas customer directed
+      initiatives proactively administrate long term impact imperatives through leadership.
+    color: "#A8A8A8"
+  - template: margin
+    block: margin
+    size: default
   - template: cards
     block: cards
     media: none
