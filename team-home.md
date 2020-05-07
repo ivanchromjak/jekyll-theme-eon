@@ -117,7 +117,7 @@ sections:
         size: regular
         url: ''
         blank: false
-    icon_color: ''
+    icon_color: "#008AFF"
     icon_size: 
   height: false
   id: ''
