@@ -24,6 +24,21 @@ fields:
   config:
     required: false
     color_format: Hex
+- name: align
+  type: select
+  default: left
+  config:
+    required: false
+    options:
+    - left
+    - center
+    - right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Align
 - name: width
   type: select
   default: full
