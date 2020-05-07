@@ -115,7 +115,7 @@ sections:
     align: ''
   - template: margin
     block: margin
-    size: default
+    size: medium
   - template: cards
     block: cards
     media: none
