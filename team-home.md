@@ -254,7 +254,7 @@ sections:
   class: ''
 - template: section
   container: small
-  size: large
+  size: medium
   remove_padding: none
   horizontal_align: center
   background:
@@ -280,7 +280,7 @@ sections:
     align: center
     width: full
     title: Trusted by world’s leading companies
-    color: ''
+    color: "#FFFFFF"
   - template: margin
     block: margin
     size: large
