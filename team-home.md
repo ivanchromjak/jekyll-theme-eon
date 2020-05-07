@@ -63,7 +63,7 @@ sections:
   - template: image
     block: image
     align: center
-    image: "/uploads/site-6.png"
+    image: "/uploads/site-7.png"
     alt: ''
     caption: ''
     lightbox: false
