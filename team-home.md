@@ -283,7 +283,7 @@ sections:
     color: ''
   - template: margin
     block: margin
-    size: medium
+    size: large
   - template: cards
     block: cards
     media: none
