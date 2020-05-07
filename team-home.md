@@ -277,7 +277,7 @@ sections:
     block: cards
     media: none
     style: default
-    grid: 1-3
+    grid: 1-6
     gutter: default
     cards:
     - title: ''
