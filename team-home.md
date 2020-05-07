@@ -4,7 +4,7 @@ title: Team Home
 sections:
 - template: header
   block: header
-  container: small
+  container: medium
   size: medium
   remove_padding: none
   horizontal_align: center
