@@ -112,7 +112,7 @@ sections:
       initiatives proactively administrate long term impact imperatives through leadership.
     color: ''
     width: small
-    align: ''
+    align: center
   - template: margin
     block: margin
     size: medium
