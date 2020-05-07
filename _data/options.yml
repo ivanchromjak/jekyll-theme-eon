@@ -1,6 +1,6 @@
 ---
 base:
-  primary_color: "#008aff"
+  primary_color: "#174CCC"
   secondary_color: "#0E0B2B"
   navbar:
     layout: default
