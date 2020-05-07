@@ -390,9 +390,9 @@ sections:
   class: ''
 - template: section
   container: medium
-  size: medium
+  size: large
   remove_padding: none
-  horizontal_align: left
+  horizontal_align: center
   background:
     style: muted
     align: center-center
