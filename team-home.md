@@ -283,6 +283,17 @@ sections:
     - title: ''
       heading: ''
       content: ''
+      icon: "/uploads/brand-slack.svg"
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: ''
+      heading: ''
+      content: ''
       icon: ''
       image: "/uploads/brand-spotify.svg"
       button:
