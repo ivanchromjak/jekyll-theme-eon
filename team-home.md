@@ -105,7 +105,7 @@ sections:
     align: center
     title: We improve team communication flow that will grow your business
     color: ''
-    width: ''
+    width: small
   - template: lead
     block: lead
     text: Dramatically reconceptualize leveraged architectures whereas customer directed
