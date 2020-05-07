@@ -5,7 +5,7 @@ sections:
 - template: header
   block: header
   container: medium
-  size: medium
+  size: small
   remove_padding: none
   horizontal_align: center
   background:
@@ -33,7 +33,7 @@ sections:
     block: heading
     tag: h1
     size: h1
-    align: left
+    align: center
     title: Effective Team Communication for Startups
     color: ''
   - template: lead
