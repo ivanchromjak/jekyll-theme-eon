@@ -36,11 +36,13 @@ sections:
     align: center
     title: Effective Team Communication for Startups
     color: ''
+    width: small
   - template: lead
     block: lead
     text: Efficiently impact out-of-the-box bandwidth after intuitive functionalities.
       Intrinsicly negotiate 24/7 paradigms after cost effective manufactured products.
     color: "#7B7B7B"
+    width: ''
   - template: block-button
     block: button
     text: Contact Us
@@ -99,11 +101,13 @@ sections:
     align: center
     title: We improve team communication flow that will grow your business
     color: ''
+    width: ''
   - template: lead
     block: lead
     text: Dramatically reconceptualize leveraged architectures whereas customer directed
       initiatives proactively administrate long term impact imperatives through leadership.
     color: "#A8A8A8"
+    width: ''
   - template: margin
     block: margin
     size: default
