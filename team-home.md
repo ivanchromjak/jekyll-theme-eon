@@ -420,9 +420,9 @@ sections:
   - template: lead
     block: lead
     align: center
-    width: small
-    text: Proactively iterate efficient infrastructures through optimal meta-services.
-      Objectively conceptualize robust customer service via unique architectures.
+    width: xsmall
+    text: Proactively iterate efficient infrastructures through optimal conceptualize
+      robust customer service via unique architectures.
     color: ''
   - template: margin
     block: margin
