@@ -394,7 +394,7 @@ sections:
   remove_padding: none
   horizontal_align: left
   background:
-    style: default
+    style: muted
     align: center-center
     size: cover
     parallax: '0'
