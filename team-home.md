@@ -41,7 +41,7 @@ sections:
     block: lead
     text: Efficiently impact out-of-the-box bandwidth after intuitive functionalities.
       Intrinsicly negotiate 24/7 paradigms after cost effective manufactured products.
-    color: "#7B7B7B"
+    color: ''
     width: small
     align: center
   - template: block-button
