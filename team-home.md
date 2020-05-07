@@ -88,6 +88,25 @@ sections:
         text: Efficiently impact out-of-the-box bandwidth after intuitive functionalities.
           Intrinsicly negotiate 24/7 paradigms after cost effective manufactured products.
         color: ''
+      - template: margin
+        block: margin
+        size: medium
+      - template: block-button
+        block: button
+        text: Get Started
+        style: danger
+        size: medium
+        width: medium
+        url: "#"
+        blank: false
+      - template: block-button
+        block: button
+        text: Try Demo
+        style: primary
+        size: medium
+        width: medium
+        url: "#"
+        blank: false
       animation: none
     divider: false
     masonry: false
