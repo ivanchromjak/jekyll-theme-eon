@@ -24,3 +24,18 @@ fields:
   config:
     required: false
     color_format: Hex
+- name: width
+  type: select
+  default: full
+  config:
+    required: false
+    options:
+    - full
+    - xsmall
+    - small
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Width
