@@ -253,7 +253,7 @@ sections:
   id: ''
   class: ''
 - template: section
-  container: medium
+  container: small
   size: xsmall
   remove_padding: none
   horizontal_align: center
@@ -278,7 +278,7 @@ sections:
     media: none
     style: none
     grid: 1-6
-    gutter: default
+    gutter: large
     cards:
     - title: ''
       heading: ''
