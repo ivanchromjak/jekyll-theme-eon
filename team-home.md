@@ -279,7 +279,18 @@ sections:
     style: default
     grid: 1-3
     gutter: default
-    cards: []
+    cards:
+    - title: ''
+      heading: ''
+      content: ''
+      icon: ''
+      image: "/uploads/brand-spotify.svg"
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
     icon_color: ''
     icon_size: 
   height: false
