@@ -83,7 +83,7 @@ sections:
     image_width: 1-2
     horizontal_align: left
     overlay_opacity: 0.6
-    shape_top: none
+    shape_top: curve
     color: ''
     image: ''
     custom_image_width: false
