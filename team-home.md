@@ -209,7 +209,7 @@ sections:
     block: cards
     media: left
     style: none
-    grid: 1-3
+    grid: 1-1
     gutter: default
     cards:
     - title: Track and analyze your business communication
