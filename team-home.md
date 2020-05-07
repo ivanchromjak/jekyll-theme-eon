@@ -111,7 +111,7 @@ sections:
     text: Dramatically reconceptualize leveraged architectures whereas customer directed
       initiatives proactively administrate long term impact imperatives through leadership.
     color: "#A8A8A8"
-    width: ''
+    width: small
     align: ''
   - template: margin
     block: margin
