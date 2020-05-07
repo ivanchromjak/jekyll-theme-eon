@@ -9,7 +9,7 @@ sections:
   remove_padding: none
   horizontal_align: center
   background:
-    style: custom
+    style: default
     align: center-right
     size: contain
     parallax: '0'
@@ -29,50 +29,51 @@ sections:
     transparent_light_color: false
     search: false
   blocks:
-  - template: heading
-    block: heading
-    tag: h1
-    size: h1
-    align: center
-    title: Effective Team Communication for Startups
-    color: ''
-    width: small
-  - template: lead
-    block: lead
-    text: Efficiently impact out-of-the-box bandwidth after intuitive functionalities.
-      Intrinsicly negotiate 24/7 paradigms after cost effective manufactured products.
-    color: ''
-    width: small
-    align: center
-  - template: block-button
-    block: button
-    text: Contact Us
-    style: primary
-    size: medium
-    width: medium
-    url: "#"
-    blank: false
-  - template: block-button
-    block: button
-    text: Learn More
-    style: primary-outline
-    size: medium
-    width: medium
-    url: "#"
-    blank: false
-  - template: margin
-    block: margin
-    size: large
-  - template: image
-    block: image
-    align: center
-    image: "/uploads/social-1.svg"
-    alt: ''
-    caption: ''
-    lightbox: false
-  - template: margin
-    block: margin
-    size: default
+  - template: grid
+    block: grid
+    gap: default
+    vertical_align: top
+    parallax: '0'
+    cells:
+    - width: 1-2
+      blocks:
+      - template: heading
+        block: heading
+        tag: h1
+        size: default
+        align: left
+        width: full
+        title: Effective Team Communication for Startups
+        color: ''
+      - template: lead
+        block: lead
+        align: left
+        width: full
+        text: Efficiently impact out-of-the-box bandwidth after intuitive functionalities.
+          Intrinsicly negotiate 24/7 paradigms after cost effective manufactured products.
+        color: ''
+      - template: margin
+        block: margin
+        size: medium
+      - template: block-button
+        block: button
+        text: Get Started
+        style: danger
+        size: medium
+        width: medium
+        url: "#"
+        blank: false
+      - template: block-button
+        block: button
+        text: Try Demo
+        style: primary
+        size: medium
+        width: medium
+        url: "#"
+        blank: false
+      animation: none
+    divider: false
+    masonry: false
   height: false
   id: ''
   class: ''
