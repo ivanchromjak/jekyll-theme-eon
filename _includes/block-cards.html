@@ -70,10 +70,10 @@
             {% if card.heading != empty %}
               <h4 class="uk-heading-medium">{{ card.heading }}</h4>
             {% endif %}
-            {{ card.content | markdownify }}
             {% if card.button.url != empty %}
               <a href="{{ card.button.url }}" class="uk-button uk-button-{{ card.button.style }} uk-button-{{ card.button.size }}"{% if card.button.blank %} target="_blank"{% endif %}>{{ card.button.text }}</a>
             {% endif %}
+            {{ card.content | markdownify }}
           </div>
         </div>
       {% endif %}
