@@ -276,10 +276,10 @@ sections:
   - template: heading
     block: heading
     tag: h2
-    size: h1
+    size: default
     align: center
     width: full
-    title: Trusted by over 10,000 world’s leading companies
+    title: Trusted by world’s leading companies
     color: ''
   - template: cards
     block: cards
