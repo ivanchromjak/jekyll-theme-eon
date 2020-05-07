@@ -83,7 +83,7 @@ sections:
   remove_padding: none
   horizontal_align: center
   background:
-    style: muted
+    style: default
     align: center-center
     size: cover
     parallax: '0'
@@ -190,7 +190,7 @@ sections:
   remove_padding: none
   horizontal_align: left
   background:
-    style: default
+    style: muted
     align: center-center
     size: cover
     parallax: '0'
@@ -221,6 +221,28 @@ sections:
       image: "/uploads/site-5.png"
       button:
         text: View Features
+        style: danger-outline
+        size: medium
+        url: "#"
+        blank: false
+    icon_color: ''
+    icon_size: 
+  - template: cards
+    block: cards
+    media: right
+    style: none
+    grid: 1-1
+    gutter: large
+    cards:
+    - title: We are here to help you find team solutions
+      heading: ''
+      content: Enthusiastically disintermediate backend alignments via functionalized
+        quality vectors. Uniquely synthesize multidisciplinary products for transparent
+        total linkage.
+      icon: ''
+      image: "/uploads/site-3.png"
+      button:
+        text: Contact Us
         style: danger-outline
         size: medium
         url: "#"
