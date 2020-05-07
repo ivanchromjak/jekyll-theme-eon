@@ -71,7 +71,7 @@ sections:
   id: ''
   class: ''
 - template: section
-  container: medium
+  container: small
   size: medium
   remove_padding: none
   horizontal_align: center
