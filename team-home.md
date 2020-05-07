@@ -434,6 +434,20 @@ sections:
     grid: 1-3
     gutter: small
     cards:
+    - title: PROFESSIONAL
+      heading: "$499"
+      content: "Distinctively administrate prospective channels without open-source
+        growth strategies.\n\n* Conveniently communicate\n* Resources and standards\n*
+        Compliant best practices\n* Dramatically architect\n* Conveniently simplify
+        \n* Functionalized customer service"
+      icon: ''
+      image: ''
+      button:
+        text: Get started
+        style: primary
+        size: medium
+        url: "#"
+        blank: false
     - title: BASIC
       heading: "$199"
       content: "Distinctively administrate prospective channels without open-source
