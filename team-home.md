@@ -258,7 +258,7 @@ sections:
   remove_padding: none
   horizontal_align: center
   background:
-    style: default
+    style: secondary
     align: center-center
     size: cover
     parallax: '0'
@@ -359,32 +359,6 @@ sections:
         blank: false
     icon_color: ''
     icon_size: 
-  height: false
-  id: ''
-  class: ''
-- template: section
-  container: medium
-  size: large
-  remove_padding: none
-  horizontal_align: left
-  background:
-    style: secondary
-    align: center-center
-    size: cover
-    parallax: '0'
-    image_width: 1-2
-    horizontal_align: left
-    overlay_opacity: 0.6
-    shape_top: none
-    color: ''
-    image: ''
-    custom_image_width: false
-    video: ''
-    overlay_color: ''
-  animation: none
-  blocks:
-  - template: mailchimp
-    block: mailchimp
   height: false
   id: ''
   class: ''
