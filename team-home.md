@@ -227,6 +227,28 @@ sections:
         blank: false
     icon_color: ''
     icon_size: 
+  - template: cards
+    block: cards
+    media: right
+    style: none
+    grid: 1-1
+    gutter: large
+    cards:
+    - title: We are here to help you find team solutions
+      heading: ''
+      content: Enthusiastically disintermediate backend alignments via functionalized
+        quality vectors. Uniquely synthesize multidisciplinary products for transparent
+        total linkage.
+      icon: ''
+      image: "/uploads/site-3.png"
+      button:
+        text: Contact Us
+        style: danger-outline
+        size: medium
+        url: "#"
+        blank: false
+    icon_color: ''
+    icon_size: 
   height: false
   id: ''
   class: ''
