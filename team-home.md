@@ -119,9 +119,9 @@ sections:
   - template: cards
     block: cards
     media: none
-    style: default
+    style: none
     grid: 1-3
-    gutter: default
+    gutter: large
     cards:
     - title: Voice and Video
       heading: ''
@@ -159,7 +159,7 @@ sections:
         size: regular
         url: ''
         blank: false
-    icon_color: "#008AFF"
+    icon_color: "#D0021B"
     icon_size: 
   height: false
   id: ''
