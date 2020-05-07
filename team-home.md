@@ -4,10 +4,10 @@ title: Team Home
 sections:
 - template: header
   block: header
-  container: medium
+  container: small
   size: medium
   remove_padding: none
-  horizontal_align: left
+  horizontal_align: center
   background:
     style: custom
     align: center-right
@@ -25,7 +25,7 @@ sections:
   animation: none
   navbar:
     light_color: false
-    transparent: false
+    transparent: true
     transparent_light_color: false
     search: false
   blocks:
