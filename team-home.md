@@ -41,6 +41,22 @@ sections:
     text: Efficiently impact out-of-the-box bandwidth after intuitive functionalities.
       Intrinsicly negotiate 24/7 paradigms after cost effective manufactured products.
     color: ''
+  - template: block-button
+    block: button
+    text: Contact Us
+    style: primary
+    size: medium
+    width: medium
+    url: "#"
+    blank: false
+  - template: block-button
+    block: button
+    text: Learn More
+    style: primary-outline
+    size: medium
+    width: medium
+    url: "#"
+    blank: false
   - template: margin
     block: margin
     size: default
