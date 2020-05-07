@@ -40,14 +40,25 @@ fields:
     type: blocks
     label: Blocks
     template_types:
-    - google-map
-    - heading
-    - block-button
-    - videos
-    - text
-    - cards
-    - icon
     - image
+    - gallery
+    - header
+    - google-map
+    - videos
+    - block-button
+    - instagram
+    - slider
+    - margin
+    - formspree
+    - faq
+    - portfolio
+    - icon
+    - lead
+    - mailchimp
+    - team
+    - search
+    - cards
+    - text
     config:
       min: 
       max: 
