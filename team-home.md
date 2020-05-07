@@ -368,7 +368,7 @@ sections:
   remove_padding: none
   horizontal_align: left
   background:
-    style: muted
+    style: secondary
     align: center-center
     size: cover
     parallax: '0'
@@ -385,6 +385,54 @@ sections:
   blocks:
   - template: mailchimp
     block: mailchimp
+  height: false
+  id: ''
+  class: ''
+- template: section
+  container: medium
+  size: medium
+  remove_padding: none
+  horizontal_align: left
+  background:
+    style: default
+    align: center-center
+    size: cover
+    parallax: '0'
+    image_width: 1-2
+    horizontal_align: left
+    overlay_opacity: 0.6
+    shape_top: none
+    color: ''
+    image: ''
+    custom_image_width: false
+    video: ''
+    overlay_color: ''
+  animation: none
+  blocks:
+  - template: heading
+    block: heading
+    tag: h2
+    size: h1
+    align: center
+    width: full
+    title: Our pricing plans
+    color: ''
+  - template: lead
+    block: lead
+    align: center
+    width: small
+    text: Proactively iterate efficient infrastructures through optimal meta-services.
+      Objectively conceptualize robust customer service via unique architectures.
+    color: ''
+  - template: cards
+    block: cards
+    media: none
+    style: default
+    grid: 1-3
+    gutter: default
+    cards: []
+    icon_color: ''
+    icon_size: 
   height: false
   id: ''
   class: ''
