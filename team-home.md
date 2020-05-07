@@ -123,6 +123,18 @@ sections:
     grid: 1-3
     gutter: default
     cards:
+    - title: Customer Support
+      heading: ''
+      content: Dynamically reconceptualize granular portals before unique scenarios
+        interactively aggregate progressive
+      icon: "/uploads/icons/ios-online-support.svg"
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
     - title: Messaging
       heading: ''
       content: Collaboratively strategize robust value without premium sources promote
