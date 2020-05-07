@@ -5,7 +5,7 @@ sections:
 - template: header
   block: header
   container: medium
-  size: medium
+  size: large
   remove_padding: none
   horizontal_align: left
   background:
