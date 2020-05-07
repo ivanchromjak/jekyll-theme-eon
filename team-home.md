@@ -40,7 +40,7 @@ sections:
     block: lead
     text: Efficiently impact out-of-the-box bandwidth after intuitive functionalities.
       Intrinsicly negotiate 24/7 paradigms after cost effective manufactured products.
-    color: "#C6C6C6"
+    color: "#7B7B7B"
   - template: block-button
     block: button
     text: Contact Us
