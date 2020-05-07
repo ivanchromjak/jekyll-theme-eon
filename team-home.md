@@ -281,6 +281,9 @@ sections:
     width: full
     title: Trusted by world’s leading companies
     color: ''
+  - template: margin
+    block: margin
+    size: medium
   - template: cards
     block: cards
     media: none
