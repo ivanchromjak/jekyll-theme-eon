@@ -5,7 +5,7 @@ sections:
 - template: header
   block: header
   container: medium
-  size: small
+  size: medium
   remove_padding: none
   horizontal_align: center
   background:
@@ -70,6 +70,9 @@ sections:
     alt: ''
     caption: ''
     lightbox: false
+  - template: margin
+    block: margin
+    size: default
   height: false
   id: ''
   class: ''
