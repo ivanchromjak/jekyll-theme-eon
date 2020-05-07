@@ -17,7 +17,7 @@ sections:
     horizontal_align: left
     overlay_opacity: 0.6
     shape_top: none
-    image: "/uploads/blob-4.svg"
+    image: "/uploads/blob-5.svg"
     color: ''
     custom_image_width: false
     video: ''
