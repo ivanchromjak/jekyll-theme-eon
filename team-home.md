@@ -159,7 +159,7 @@ sections:
         size: regular
         url: ''
         blank: false
-    icon_color: "#D0021B"
+    icon_color: "#ED576C"
     icon_size: 
   height: false
   id: ''
