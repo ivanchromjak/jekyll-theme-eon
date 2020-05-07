@@ -472,7 +472,7 @@ sections:
       button:
         text: Get started
         style: primary-outline
-        size: regular
+        size: medium
         url: "#"
         blank: false
     icon_color: ''
