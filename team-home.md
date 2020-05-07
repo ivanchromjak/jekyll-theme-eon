@@ -17,8 +17,8 @@ sections:
     horizontal_align: left
     overlay_opacity: 0.6
     shape_top: none
-    image: ''
-    color: "#E3F0FA"
+    image: "/uploads/social-1.svg"
+    color: ''
     custom_image_width: false
     video: ''
     overlay_color: ''
