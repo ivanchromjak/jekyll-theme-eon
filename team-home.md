@@ -432,7 +432,7 @@ sections:
     media: none
     style: default
     grid: 1-3
-    gutter: small
+    gutter: default
     cards:
     - title: BASIC
       heading: "$199"
