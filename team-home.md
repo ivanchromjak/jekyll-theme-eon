@@ -254,7 +254,7 @@ sections:
   class: ''
 - template: section
   container: small
-  size: xsmall
+  size: large
   remove_padding: none
   horizontal_align: center
   background:
@@ -273,6 +273,14 @@ sections:
     overlay_color: ''
   animation: none
   blocks:
+  - template: heading
+    block: heading
+    tag: h2
+    size: h1
+    align: center
+    width: full
+    title: Trusted by over 10,000 world’s leading companies
+    color: ''
   - template: cards
     block: cards
     media: none
