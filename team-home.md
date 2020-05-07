@@ -71,6 +71,9 @@ sections:
         width: medium
         url: "#"
         blank: false
+      - template: margin
+        block: margin
+        size: default
       animation: none
     divider: false
     masonry: false
