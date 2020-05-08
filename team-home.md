@@ -337,7 +337,7 @@ sections:
         url: "#"
         text: Get Started
         blank: false
-      animation: none
+      animation: slide-left-small
     - width: 1-2
       blocks:
       - template: image
@@ -347,7 +347,7 @@ sections:
         alt: Image
         caption: ''
         lightbox: false
-      animation: none
+      animation: slide-right-small
     divider: false
     masonry: false
   height: false
