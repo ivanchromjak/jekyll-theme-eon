@@ -80,7 +80,7 @@ sections:
       - template: image
         block: image
         align: none
-        image: "/uploads/social-1.svg"
+        image: "/uploads/team-1.svg"
         alt: ''
         caption: ''
         lightbox: false
