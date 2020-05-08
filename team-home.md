@@ -528,7 +528,7 @@ sections:
         width: medium
         url: "#"
         blank: false
-    - title: ENTERPRISE
+    - title: ''
       heading: ''
       content: ''
       icon: ''
@@ -540,6 +540,14 @@ sections:
         url: "#"
         blank: false
       blocks:
+      - template: heading
+        block: heading
+        tag: h3
+        size: h2
+        align: center
+        width: full
+        title: ENTERPRISE
+        color: ''
       - template: text
         block: text
         align: center
