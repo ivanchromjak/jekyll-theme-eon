@@ -92,6 +92,116 @@ sections:
   class: ''
   container_two: []
 - template: section
+  container: small
+  size: medium
+  remove_padding: none
+  horizontal_align: center
+  background:
+    style: default
+    align: center-center
+    size: cover
+    parallax: '0'
+    image_width: 1-2
+    horizontal_align: left
+    overlay_opacity: 0.6
+    shape_top: none
+    color: ''
+    image: ''
+    custom_image_width: false
+    video: ''
+    overlay_color: ''
+  animation: none
+  blocks:
+  - template: heading
+    block: heading
+    tag: h2
+    size: default
+    align: center
+    width: full
+    title: Trusted by world’s leading companies
+    color: "#FFFFFF"
+  - template: margin
+    block: margin
+    size: large
+  - template: cards
+    block: cards
+    media: none
+    style: none
+    grid: 1-6
+    gutter: large
+    cards:
+    - title: ''
+      heading: ''
+      content: ''
+      icon: "/uploads/brand-airbnb.svg"
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: ''
+      heading: ''
+      content: ''
+      icon: "/uploads/brand-google.svg"
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: ''
+      heading: ''
+      content: ''
+      icon: "/uploads/brand-netflix.svg"
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: ''
+      heading: ''
+      content: ''
+      icon: "/uploads/brand-shopify.svg"
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: ''
+      heading: ''
+      content: ''
+      icon: "/uploads/brand-slack.svg"
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: ''
+      heading: ''
+      content: ''
+      icon: "/uploads/brand-spotify.svg"
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    icon_color: "#FFFFFF"
+    icon_size: 
+  height: false
+  id: ''
+  class: ''
+- template: section
   container: medium
   size: large
   remove_padding: none
@@ -274,116 +384,6 @@ sections:
         url: "#"
         blank: false
     icon_color: ''
-    icon_size: 
-  height: false
-  id: ''
-  class: ''
-- template: section
-  container: small
-  size: medium
-  remove_padding: none
-  horizontal_align: center
-  background:
-    style: secondary
-    align: center-center
-    size: cover
-    parallax: '0'
-    image_width: 1-2
-    horizontal_align: left
-    overlay_opacity: 0.6
-    shape_top: none
-    color: ''
-    image: ''
-    custom_image_width: false
-    video: ''
-    overlay_color: ''
-  animation: none
-  blocks:
-  - template: heading
-    block: heading
-    tag: h2
-    size: default
-    align: center
-    width: full
-    title: Trusted by world’s leading companies
-    color: "#FFFFFF"
-  - template: margin
-    block: margin
-    size: large
-  - template: cards
-    block: cards
-    media: none
-    style: none
-    grid: 1-6
-    gutter: large
-    cards:
-    - title: ''
-      heading: ''
-      content: ''
-      icon: "/uploads/brand-airbnb.svg"
-      image: ''
-      button:
-        text: Text
-        style: primary
-        size: regular
-        url: ''
-        blank: false
-    - title: ''
-      heading: ''
-      content: ''
-      icon: "/uploads/brand-google.svg"
-      image: ''
-      button:
-        text: Text
-        style: primary
-        size: regular
-        url: ''
-        blank: false
-    - title: ''
-      heading: ''
-      content: ''
-      icon: "/uploads/brand-netflix.svg"
-      image: ''
-      button:
-        text: Text
-        style: primary
-        size: regular
-        url: ''
-        blank: false
-    - title: ''
-      heading: ''
-      content: ''
-      icon: "/uploads/brand-shopify.svg"
-      image: ''
-      button:
-        text: Text
-        style: primary
-        size: regular
-        url: ''
-        blank: false
-    - title: ''
-      heading: ''
-      content: ''
-      icon: "/uploads/brand-slack.svg"
-      image: ''
-      button:
-        text: Text
-        style: primary
-        size: regular
-        url: ''
-        blank: false
-    - title: ''
-      heading: ''
-      content: ''
-      icon: "/uploads/brand-spotify.svg"
-      image: ''
-      button:
-        text: Text
-        style: primary
-        size: regular
-        url: ''
-        blank: false
-    icon_color: "#FFFFFF"
     icon_size: 
   height: false
   id: ''
