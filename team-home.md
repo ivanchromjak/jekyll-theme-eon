@@ -282,6 +282,75 @@ sections:
   container: medium
   size: large
   remove_padding: top
+  horizontal_align: left
+  background:
+    style: default
+    align: center-center
+    size: cover
+    parallax: '0'
+    image_width: 1-2
+    horizontal_align: left
+    overlay_opacity: 0.6
+    shape_top: none
+    color: ''
+    image: ''
+    custom_image_width: false
+    video: ''
+    overlay_color: ''
+  animation: none
+  blocks:
+  - template: grid
+    block: grid
+    gap: default
+    vertical_align: middle
+    parallax: '0'
+    cells:
+    - width: 1-2
+      blocks:
+      - template: heading
+        block: heading
+        tag: h2
+        size: h1
+        align: left
+        width: full
+        title: We are here to help you find better communication solution
+        color: ''
+      - template: lead
+        block: lead
+        align: left
+        width: full
+        text: Continually parallel task magnetic data
+        color: ''
+      - template: text
+        block: text
+        align: left
+        width: full
+        text: Collaboratively pontificate state of the art methodologies through quality
+          vortals. Seamlessly underwhelm goal-oriented supply chains rather than backward-compatible
+          human capital. Quickly formulate premier users with high-payoff testing
+          procedures. Continually develop client-centric niches without resource.
+        color: ''
+      - template: block-button
+        block: button
+        style: danger-outline
+        size: regular
+        width: default
+        url: "#"
+        text: Get Started
+        blank: false
+      animation: none
+    - width: 1-1
+      blocks: []
+      animation: none
+    divider: false
+    masonry: false
+  height: false
+  id: ''
+  class: ''
+- template: section
+  container: medium
+  size: large
+  remove_padding: top
   horizontal_align: center
   background:
     style: default
