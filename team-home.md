@@ -418,7 +418,7 @@ sections:
     grid: 1-3
     gutter: default
     cards:
-    - title: ''
+    - title: BASIC
       heading: ''
       content: ''
       icon: ''
