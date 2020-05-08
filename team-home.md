@@ -248,7 +248,7 @@ sections:
         color: ''
       - template: block-button
         block: button
-        text: Contact Us
+        text: View Features
         style: primary-outline
         size: medium
         width: medium
