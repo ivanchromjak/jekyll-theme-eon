@@ -23,3 +23,9 @@ fields:
       file: 
       path: 
   label: Size
+- name: bullet
+  type: boolean
+  label: Bullet
+- name: divider
+  type: boolean
+  label: Divider
