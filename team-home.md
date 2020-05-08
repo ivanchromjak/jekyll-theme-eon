@@ -291,6 +291,44 @@ sections:
     overlay_color: ''
   animation: none
   blocks:
+  - template: grid
+    block: grid
+    gap: default
+    vertical_align: top
+    parallax: '0'
+    cells:
+    - width: 1-2
+      blocks: []
+      animation: none
+    - width: 1-1
+      blocks: []
+      animation: none
+    divider: false
+    masonry: false
+  height: false
+  id: ''
+  class: ''
+- template: section
+  container: medium
+  size: large
+  remove_padding: top
+  horizontal_align: left
+  background:
+    style: default
+    align: center-center
+    size: cover
+    parallax: '0'
+    image_width: 1-2
+    horizontal_align: left
+    overlay_opacity: 0.6
+    shape_top: none
+    color: ''
+    image: ''
+    custom_image_width: false
+    video: ''
+    overlay_color: ''
+  animation: none
+  blocks:
   - template: cards
     block: cards
     media: left
