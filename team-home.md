@@ -92,13 +92,13 @@ sections:
   class: ''
   container_two: []
 - template: section
-  container: small
-  size: medium
-  remove_padding: none
+  container: medium
+  size: large
+  remove_padding: top
   horizontal_align: center
   background:
     style: default
-    align: center-center
+    align: bottom-right
     size: cover
     parallax: '0'
     image_width: 1-2
@@ -110,16 +110,23 @@ sections:
     custom_image_width: false
     video: ''
     overlay_color: ''
-  animation: none
+  animation: slide-bottom
   blocks:
   - template: heading
     block: heading
     tag: h2
-    size: default
+    size: h1
     align: center
-    width: full
-    title: Trusted by world’s leading companies
+    title: We improve team communication flow that will grow your business
     color: ''
+    width: xsmall
+  - template: lead
+    block: lead
+    text: Dramatically reconceptualize leveraged architectures whereas customer directed
+      initiatives proactively administrate long term impact
+    color: ''
+    width: xsmall
+    align: center
   - template: margin
     block: margin
     size: medium
@@ -127,13 +134,14 @@ sections:
     block: cards
     media: none
     style: none
-    grid: 1-6
+    grid: 1-4
     gutter: large
     cards:
-    - title: ''
+    - title: Company Process
       heading: ''
-      content: ''
-      icon: "/uploads/brand-airbnb.svg"
+      content: Intrinsicly enable highly efficient ideas without seamless testing
+        procedures distinctively grow
+      icon: "/uploads/icons/ios-rocket.svg"
       image: ''
       button:
         text: Text
@@ -141,10 +149,11 @@ sections:
         size: regular
         url: ''
         blank: false
-    - title: ''
+    - title: Voice and Video
       heading: ''
-      content: ''
-      icon: "/uploads/brand-google.svg"
+      content: Synamically reconceptualize granular portals before unique scenarios
+        interactively
+      icon: "/uploads/icons/ios-video-call.svg"
       image: ''
       button:
         text: Text
@@ -152,10 +161,11 @@ sections:
         size: regular
         url: ''
         blank: false
-    - title: ''
+    - title: Instant Messaging
       heading: ''
-      content: ''
-      icon: "/uploads/brand-netflix.svg"
+      content: Collaboratively strategize robust value without premium sources promote
+        backend human capital
+      icon: "/uploads/icons/ios-communication.svg"
       image: ''
       button:
         text: Text
@@ -163,10 +173,11 @@ sections:
         size: regular
         url: ''
         blank: false
-    - title: ''
+    - title: Customer Support
       heading: ''
-      content: ''
-      icon: "/uploads/brand-shopify.svg"
+      content: Dynamically reconceptualize granular portals before unique scenarios
+        interactively
+      icon: "/uploads/icons/ios-online-support.svg"
       image: ''
       button:
         text: Text
@@ -174,33 +185,31 @@ sections:
         size: regular
         url: ''
         blank: false
-    - title: ''
-      heading: ''
-      content: ''
-      icon: "/uploads/brand-slack.svg"
-      image: ''
-      button:
-        text: Text
-        style: primary
-        size: regular
-        url: ''
-        blank: false
-    - title: ''
-      heading: ''
-      content: ''
-      icon: "/uploads/brand-spotify.svg"
-      image: ''
-      button:
-        text: Text
-        style: primary
-        size: regular
-        url: ''
-        blank: false
-    icon_color: ''
-    icon_size: 
+    icon_color: "#ED576C"
+    icon_size: '56'
   height: false
   id: ''
   class: ''
+  container_two:
+  - blocks:
+    - template: grid
+      block: grid
+      gap: default
+      vertical_align: top
+      parallax: '0'
+      cells:
+      - width: 1-1
+        blocks:
+        - template: image
+          block: image
+          align: none
+          image: ''
+          alt: ''
+          caption: ''
+          lightbox: false
+        animation: none
+      divider: false
+      masonry: false
 - template: section
   container: medium
   size: large
@@ -354,13 +363,13 @@ sections:
   id: ''
   class: ''
 - template: section
-  container: medium
-  size: large
-  remove_padding: top
+  container: small
+  size: medium
+  remove_padding: none
   horizontal_align: center
   background:
     style: default
-    align: bottom-right
+    align: center-center
     size: cover
     parallax: '0'
     image_width: 1-2
@@ -372,23 +381,16 @@ sections:
     custom_image_width: false
     video: ''
     overlay_color: ''
-  animation: slide-bottom
+  animation: none
   blocks:
   - template: heading
     block: heading
     tag: h2
     size: default
     align: center
-    title: We improve team communication flow that will grow your business
+    width: full
+    title: Trusted by world’s leading companies
     color: ''
-    width: xsmall
-  - template: lead
-    block: lead
-    text: Dramatically reconceptualize leveraged architectures whereas customer directed
-      initiatives proactively administrate long term impact imperatives through leadership.
-    color: ''
-    width: xsmall
-    align: center
   - template: margin
     block: margin
     size: medium
@@ -396,14 +398,13 @@ sections:
     block: cards
     media: none
     style: none
-    grid: 1-4
+    grid: 1-6
     gutter: large
     cards:
-    - title: Company Process
+    - title: ''
       heading: ''
-      content: Intrinsicly enable highly efficient ideas without seamless testing
-        procedures distinctively grow
-      icon: "/uploads/icons/ios-rocket.svg"
+      content: ''
+      icon: "/uploads/brand-airbnb.svg"
       image: ''
       button:
         text: Text
@@ -411,11 +412,10 @@ sections:
         size: regular
         url: ''
         blank: false
-    - title: Voice and Video
+    - title: ''
       heading: ''
-      content: Synamically reconceptualize granular portals before unique scenarios
-        interactively
-      icon: "/uploads/icons/ios-video-call.svg"
+      content: ''
+      icon: "/uploads/brand-google.svg"
       image: ''
       button:
         text: Text
@@ -423,11 +423,10 @@ sections:
         size: regular
         url: ''
         blank: false
-    - title: Instant Messaging
+    - title: ''
       heading: ''
-      content: Collaboratively strategize robust value without premium sources promote
-        backend human capital
-      icon: "/uploads/icons/ios-communication.svg"
+      content: ''
+      icon: "/uploads/brand-netflix.svg"
       image: ''
       button:
         text: Text
@@ -435,11 +434,10 @@ sections:
         size: regular
         url: ''
         blank: false
-    - title: Customer Support
+    - title: ''
       heading: ''
-      content: Dynamically reconceptualize granular portals before unique scenarios
-        interactively
-      icon: "/uploads/icons/ios-online-support.svg"
+      content: ''
+      icon: "/uploads/brand-shopify.svg"
       image: ''
       button:
         text: Text
@@ -447,31 +445,33 @@ sections:
         size: regular
         url: ''
         blank: false
-    icon_color: "#ED576C"
-    icon_size: '56'
+    - title: ''
+      heading: ''
+      content: ''
+      icon: "/uploads/brand-slack.svg"
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    - title: ''
+      heading: ''
+      content: ''
+      icon: "/uploads/brand-spotify.svg"
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+    icon_color: ''
+    icon_size: 
   height: false
   id: ''
   class: ''
-  container_two:
-  - blocks:
-    - template: grid
-      block: grid
-      gap: default
-      vertical_align: top
-      parallax: '0'
-      cells:
-      - width: 1-1
-        blocks:
-        - template: image
-          block: image
-          align: none
-          image: ''
-          alt: ''
-          caption: ''
-          lightbox: false
-        animation: none
-      divider: false
-      masonry: false
 - template: section
   container: medium
   size: large
