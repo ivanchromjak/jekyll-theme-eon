@@ -1074,14 +1074,14 @@
   }
 
   // Pricing
-  .card-pricing .uk-card-body {
+  .uk-block-cards .uk-card-body {
 
     > * {
       margin-bottom: 0;
     }
 
     > *:nth-child(n+2) {
-      margin-top: $global-medium-margin;
+      margin-top: $global-margin * 1.5;
     }
 
     .uk-heading-medium {

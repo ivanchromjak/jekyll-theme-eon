@@ -13,7 +13,7 @@
 {% else %}
   {% assign grid = 'uk-child-width-expand@m' %}
 {% endif %}
-<div class="{{ grid }}{% if block.gutter %} uk-grid-{{ block.gutter }}{% endif %} uk-grid-match uk-flex-center" data-uk-grid>
+<div class="uk-block-cards {{ grid }}{% if block.gutter %} uk-grid-{{ block.gutter }}{% endif %} uk-grid-match uk-flex-center" data-uk-grid>
   {% for card in block.cards %}
     <div>
       {% if block.media == 'left' %}
@@ -27,7 +27,9 @@
           </div>
           <div class="uk-flex uk-flex-middle{% if block.section_content_align != empty %} uk-flex-{{ block.section_content_align }}{% endif %} uk-width-expand@m">
             <div class="uk-card-body">
-              <h3 class="{% if card.icon != empty %}uk-card-title{% else %}uk-h2{% endif %}">{{ card.title }}</h3>
+              {% if card.title != empty %}
+                <h3 class="{% if card.icon != empty %}uk-card-title{% else %}uk-h2{% endif %}">{{ card.title }}</h3>
+              {% endif %}
               {{ card.content | markdownify }}
               {% if card.button.url != empty %}
                 <a href="{{ card.button.url }}" class="uk-button uk-button-{{ card.button.style }} uk-button-{{ card.button.size }}"{% if card.button.blank %} target="_blank"{% endif %}>{{ card.button.text }}</a>
@@ -46,7 +48,9 @@
           </div>
           <div class="uk-flex uk-flex-middle{% if block.section_content_align %} uk-flex-{{ block.section_content_align }}{% endif %} uk-width-expand@m">
             <div class="uk-card-body">
-              <h3 class="{% if card.icon != empty %}uk-card-title{% else %}uk-h2{% endif %}">{{ card.title }}</h3>
+              {% if card.title != empty %}
+                <h3 class="{% if card.icon != empty %}uk-card-title{% else %}uk-h2{% endif %}">{{ card.title }}</h3>
+              {% endif %}
               {{ card.content | markdownify }}
               {% if card.button.url != empty %}
                 <a href="{{ card.button.url }}" class="uk-button uk-button-{{ card.button.style }} uk-button-{{ card.button.size }}"{% if card.button.blank %} target="_blank"{% endif %}>{{ card.button.text }}</a>
@@ -55,7 +59,7 @@
           </div>
         </div>
       {% else %}
-        <div class="uk-card{% if block.style != empty %} uk-card-{{ block.style }}{% endif %}{% if card.icon != empty %} card-icon{% endif %}{% if card.heading != empty %} card-pricing{% endif %}">
+        <div class="uk-card{% if block.style != empty %} uk-card-{{ block.style }}{% endif %}{% if card.icon != empty %} card-icon{% endif %}">
           {% if card.icon != empty or card.image != empty %}
             <div class="uk-card-media-top{% if card.icon != empty and block.style != 'none' %} uk-padding uk-padding-remove-bottom{% endif %}"{% if block.icon_color != empty %} style="color: {{ block.icon_color }}"{% endif %}>
               {% if card.icon != empty %}
@@ -66,11 +70,19 @@
             </div>
           {% endif %}
           <div class="uk-card-body">
-            <h3 class="uk-card-title">{{ card.title }}</h3>
+            {% if card.title != empty %}
+              <h3 class="uk-card-title">{{ card.title }}</h3>
+            {% endif %}
             {{ card.content | markdownify }}
             {% if card.button.url != empty %}
               <a href="{{ card.button.url }}" class="uk-button uk-button-{{ card.button.style }} uk-button-{{ card.button.size }}"{% if card.button.blank %} target="_blank"{% endif %}>{{ card.button.text }}</a>
             {% endif %}
+
+            {% for block in card.blocks %}
+              {% include block-{{ block.block }}.html %}
+            {% endfor %}
+
+
           </div>
         </div>
       {% endif %}
