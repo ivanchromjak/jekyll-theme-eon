@@ -507,7 +507,7 @@ sections:
       - template: block-button
         block: button
         text: Get Started
-        style: primary-outline
+        style: primary
         size: medium
         width: medium
         url: "#"
