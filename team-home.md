@@ -235,7 +235,7 @@ sections:
         Collaboratively pontificate state of the art methodologies through quality
         vortals.
       icon: ''
-      image: "/uploads/site-5.png"
+      image: "/uploads/team-2.svg"
       button:
         text: View Features
         style: danger-outline
@@ -257,7 +257,7 @@ sections:
         quality vectors. Uniquely synthesize multidisciplinary products for transparent
         total linkage.
       icon: ''
-      image: "/uploads/admin-1.png"
+      image: "/uploads/team-3.svg"
       button:
         text: Contact Us
         style: danger-outline
