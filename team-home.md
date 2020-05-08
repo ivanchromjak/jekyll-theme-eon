@@ -298,10 +298,25 @@ sections:
     parallax: '0'
     cells:
     - width: 1-2
-      blocks: []
+      blocks:
+      - template: heading
+        block: heading
+        tag: h2
+        size: default
+        align: left
+        width: full
+        title: ''
+        color: ''
       animation: none
-    - width: 1-1
-      blocks: []
+    - width: 1-2
+      blocks:
+      - template: image
+        block: image
+        align: none
+        image: "/uploads/team-3.svg"
+        alt: Image
+        caption: ''
+        lightbox: false
       animation: none
     divider: false
     masonry: false
