@@ -16,6 +16,21 @@ fields:
     min: 
     max: 
   label: Items
+- name: align
+  type: select
+  default: left
+  config:
+    required: false
+    options:
+    - left
+    - center
+    - right
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Align
 - name: size
   type: select
   default: default
