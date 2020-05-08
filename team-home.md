@@ -222,6 +222,65 @@ sections:
     overlay_color: ''
   animation: none
   blocks:
+  - template: grid
+    block: grid
+    gap: default
+    vertical_align: middle
+    parallax: '0'
+    cells:
+    - width: 1-2
+      blocks:
+      - template: heading
+        block: heading
+        tag: h2
+        size: small
+        align: left
+        width: full
+        title: Track and analyze your business communication
+        color: ''
+      - template: lead
+        block: lead
+        align: left
+        width: full
+        text: Conveniently aggregate high-payoff schemas rather than 24/7 innovation.
+          Collaboratively pontificate state of the art methodologies through quality
+          vortals.
+        color: ''
+      - template: block-button
+        block: button
+        text: Contact Us
+        style: primary-outline
+        size: medium
+        width: medium
+        url: "#"
+        blank: false
+      animation: none
+    divider: false
+    masonry: false
+  height: false
+  id: ''
+  class: ''
+- template: section
+  container: medium
+  size: large
+  remove_padding: top
+  horizontal_align: left
+  background:
+    style: default
+    align: center-center
+    size: cover
+    parallax: '0'
+    image_width: 1-2
+    horizontal_align: left
+    overlay_opacity: 0.6
+    shape_top: none
+    color: ''
+    image: ''
+    custom_image_width: false
+    video: ''
+    overlay_color: ''
+  animation: none
+  blocks:
   - template: cards
     block: cards
     media: left
