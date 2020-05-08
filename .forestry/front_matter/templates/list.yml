@@ -1,4 +1,25 @@
 ---
 label: List
 hide_body: true
-fields: []
+fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: list
+- name: size
+  type: select
+  default: default
+  config:
+    required: false
+    options:
+    - default
+    - large
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Size
