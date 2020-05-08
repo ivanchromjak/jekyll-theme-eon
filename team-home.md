@@ -438,6 +438,14 @@ sections:
         width: full
         title: BASIC
         color: ''
+      - template: heading
+        block: heading
+        tag: h3
+        size: small
+        align: center
+        width: full
+        title: "$199"
+        color: ''
       - template: text
         block: text
         align: center
@@ -493,6 +501,14 @@ sections:
         width: full
         title: PROFESSIONAL
         color: ''
+      - template: heading
+        block: heading
+        tag: h3
+        size: small
+        align: center
+        width: full
+        title: "$299"
+        color: ''
       - template: text
         block: text
         align: center
@@ -547,6 +563,14 @@ sections:
         align: center
         width: full
         title: ENTERPRISE
+        color: ''
+      - template: heading
+        block: heading
+        tag: h3
+        size: small
+        align: center
+        width: full
+        title: "$499"
         color: ''
       - template: text
         block: text
