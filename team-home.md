@@ -114,7 +114,7 @@ sections:
   blocks:
   - template: heading
     block: heading
-    tag: h3
+    tag: h2
     size: default
     align: center
     width: full
@@ -122,7 +122,7 @@ sections:
     color: ''
   - template: margin
     block: margin
-    size: large
+    size: medium
   - template: cards
     block: cards
     media: none
