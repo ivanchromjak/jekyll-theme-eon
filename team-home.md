@@ -302,11 +302,27 @@ sections:
       - template: heading
         block: heading
         tag: h2
-        size: default
+        size: h1
         align: left
         width: full
-        title: ''
+        title: We are here to help you find team solutions
         color: ''
+      - template: text
+        block: text
+        align: left
+        width: full
+        text: Enthusiastically disintermediate backend alignments via functionalized
+          quality vectors. Uniquely synthesize multidisciplinary products for transparent
+          total linkage.
+        color: ''
+      - template: block-button
+        block: button
+        text: Contact Us
+        style: primary-outline
+        size: medium
+        width: medium
+        url: "#"
+        blank: false
       animation: none
     - width: 1-2
       blocks:
