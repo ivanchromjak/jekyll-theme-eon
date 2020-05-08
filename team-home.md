@@ -494,7 +494,6 @@ sections:
         - Compliant best practices
         - Dramatically architect
         - Administrate prospective
-        - Functional customer service
         divider: false
       - template: list
         block: list
@@ -502,6 +501,7 @@ sections:
         size: default
         style: cross
         items:
+        - Functional customer service
         - Conveniently simplify
         divider: false
       - template: block-button
