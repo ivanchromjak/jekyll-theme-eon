@@ -446,7 +446,7 @@ sections:
         color: ''
       - template: list
         block: list
-        size: default
+        size: large
         style: check
         divider: false
         items:
@@ -458,7 +458,7 @@ sections:
       - template: list
         block: list
         align: left
-        size: default
+        size: large
         style: cross
         items:
         - Administrate prospective
@@ -502,7 +502,7 @@ sections:
       - template: list
         block: list
         align: left
-        size: default
+        size: large
         style: check
         items:
         - Conveniently communicate
@@ -514,7 +514,7 @@ sections:
       - template: list
         block: list
         align: left
-        size: default
+        size: large
         style: cross
         items:
         - Functional customer service
@@ -557,7 +557,7 @@ sections:
       - template: list
         block: list
         align: left
-        size: default
+        size: large
         style: check
         items:
         - Conveniently communicate
