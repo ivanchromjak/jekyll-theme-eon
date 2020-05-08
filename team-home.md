@@ -343,7 +343,7 @@ sections:
         color: ''
       - template: margin
         block: margin
-        size: medium
+        size: small
       - template: block-button
         block: button
         style: danger-outline
