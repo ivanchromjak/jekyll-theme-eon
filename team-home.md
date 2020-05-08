@@ -94,7 +94,7 @@ sections:
 - template: section
   container: medium
   size: large
-  remove_padding: top
+  remove_padding: none
   horizontal_align: center
   background:
     style: default
