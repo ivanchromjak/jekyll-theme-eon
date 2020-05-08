@@ -74,6 +74,10 @@ fields:
       - slide-left
       - slide-right
       - fade
+      - slide-bottom-small
+      - slide-top-small
+      - slide-left-small
+      - slide-right-small
       source:
         type: simple
         section: 
