@@ -149,6 +149,7 @@ sections:
         size: regular
         url: ''
         blank: false
+      blocks: []
     - title: Voice and Video
       heading: ''
       content: Synamically reconceptualize granular portals before unique scenarios
@@ -161,6 +162,7 @@ sections:
         size: regular
         url: ''
         blank: false
+      blocks: []
     - title: Instant Messaging
       heading: ''
       content: Collaboratively strategize robust value without premium sources promote
@@ -173,6 +175,7 @@ sections:
         size: regular
         url: ''
         blank: false
+      blocks: []
     - title: Customer Support
       heading: ''
       content: Dynamically reconceptualize granular portals before unique scenarios
@@ -185,6 +188,7 @@ sections:
         size: regular
         url: ''
         blank: false
+      blocks: []
     icon_color: "#ED576C"
     icon_size: '56'
   height: false
@@ -414,6 +418,40 @@ sections:
     grid: 1-3
     gutter: default
     cards:
+    - title: ''
+      heading: ''
+      content: ''
+      icon: ''
+      image: ''
+      button:
+        text: Text
+        style: primary
+        size: regular
+        url: ''
+        blank: false
+      blocks:
+      - template: heading
+        block: heading
+        tag: h4
+        size: default
+        align: left
+        width: full
+        title: FREE
+        color: ''
+      - template: text
+        block: text
+        align: left
+        width: full
+        text: Quickly enhance flexible leadership without focused
+        color: ''
+      - template: block-button
+        block: button
+        text: Text
+        style: primary
+        size: regular
+        width: default
+        url: "#"
+        blank: false
     - title: BASIC
       heading: "$199"
       content: "Distinctively administrate prospective channels without open-source
@@ -427,6 +465,7 @@ sections:
         size: medium
         url: "#"
         blank: false
+      blocks: []
     - title: PROFESSIONAL
       heading: "$499"
       content: "Distinctively administrate prospective channels without open-source
@@ -441,6 +480,7 @@ sections:
         size: medium
         url: "#"
         blank: false
+      blocks: []
     - title: ENTERPRISE
       heading: "$999"
       content: "Distinctively administrate prospective channels without open-source
@@ -455,6 +495,7 @@ sections:
         size: medium
         url: "#"
         blank: false
+      blocks: []
     icon_color: ''
     icon_size: 
   height: false
@@ -510,6 +551,7 @@ sections:
         size: regular
         url: ''
         blank: false
+      blocks: []
     - title: ''
       heading: ''
       content: ''
@@ -521,6 +563,7 @@ sections:
         size: regular
         url: ''
         blank: false
+      blocks: []
     - title: ''
       heading: ''
       content: ''
@@ -532,6 +575,7 @@ sections:
         size: regular
         url: ''
         blank: false
+      blocks: []
     - title: ''
       heading: ''
       content: ''
@@ -543,6 +587,7 @@ sections:
         size: regular
         url: ''
         blank: false
+      blocks: []
     - title: ''
       heading: ''
       content: ''
@@ -554,6 +599,7 @@ sections:
         size: regular
         url: ''
         blank: false
+      blocks: []
     - title: ''
       heading: ''
       content: ''
@@ -565,6 +611,7 @@ sections:
         size: regular
         url: ''
         blank: false
+      blocks: []
     icon_color: ''
     icon_size: 
   height: false
