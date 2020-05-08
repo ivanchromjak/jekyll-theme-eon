@@ -237,7 +237,7 @@ sections:
         alt: Image
         caption: ''
         lightbox: false
-      animation: none
+      animation: slide-left-small
     - width: 1-2
       blocks:
       - template: heading
@@ -261,18 +261,17 @@ sections:
         text: Collaboratively pontificate state of the art methodologies through quality
           vortals. Seamlessly underwhelm goal-oriented supply chains rather than backward-compatible
           human capital. Quickly formulate premier users with high-payoff testing
-          procedures. Continually develop client-centric niches without resource sucking
-          e-markets.
+          procedures develop client-centric niches.
         color: ''
       - template: block-button
         block: button
         text: View Features
-        style: primary-outline
+        style: danger-outline
         size: medium
         width: medium
         url: "#"
         blank: false
-      animation: none
+      animation: slide-right-small
     divider: false
     masonry: false
   height: false
@@ -313,13 +312,13 @@ sections:
         size: h1
         align: left
         width: full
-        title: We are here to help you find better communication solution
+        title: We help you find better communication
         color: ''
       - template: lead
         block: lead
         align: left
         width: full
-        text: Continually parallel task magnetic data
+        text: Continually parallel task magnetic data solutions
         color: ''
       - template: text
         block: text
@@ -328,18 +327,18 @@ sections:
         text: Collaboratively pontificate state of the art methodologies through quality
           vortals. Seamlessly underwhelm goal-oriented supply chains rather than backward-compatible
           human capital. Quickly formulate premier users with high-payoff testing
-          procedures. Continually develop client-centric niches without resource.
+          procedures develop niches without resource.
         color: ''
       - template: block-button
         block: button
         style: danger-outline
-        size: regular
-        width: default
+        size: medium
+        width: medium
         url: "#"
         text: Get Started
         blank: false
-      animation: none
-    - width: 1-1
+      animation: slide-left-small
+    - width: 1-2
       blocks:
       - template: image
         block: image
@@ -348,7 +347,7 @@ sections:
         alt: Image
         caption: ''
         lightbox: false
-      animation: none
+      animation: slide-right-small
     divider: false
     masonry: false
   height: false
