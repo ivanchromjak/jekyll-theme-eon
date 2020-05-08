@@ -497,6 +497,16 @@ sections:
         - Compliant best practices
         - Dramatically architect
         divider: false
+      - template: list
+        block: list
+        align: left
+        size: default
+        style: cross
+        items:
+        - Administrate prospective
+        - Functional customer service
+        - Conveniently simplify
+        divider: false
       - template: block-button
         block: button
         text: Get Started
