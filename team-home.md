@@ -447,7 +447,7 @@ sections:
       - template: heading
         block: heading
         tag: h3
-        size: large
+        size: medium
         align: center
         width: full
         title: "$199"
@@ -510,7 +510,7 @@ sections:
       - template: heading
         block: heading
         tag: h3
-        size: large
+        size: medium
         align: center
         width: full
         title: "$299"
@@ -540,7 +540,7 @@ sections:
         block: button
         text: Get Started
         style: primary
-        size: medium
+        size: large
         width: medium
         url: "#"
         blank: false
@@ -573,7 +573,7 @@ sections:
       - template: heading
         block: heading
         tag: h3
-        size: large
+        size: medium
         align: center
         width: full
         title: "$499"
