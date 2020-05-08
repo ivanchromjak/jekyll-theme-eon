@@ -248,12 +248,17 @@ sections:
         width: full
         title: Track and analyze your business communication
         color: ''
+      - template: lead
+        block: lead
+        align: left
+        width: full
+        text: Conveniently aggregate high-payoff schemas innovation
+        color: ''
       - template: text
         block: text
         align: left
         width: full
-        text: Conveniently aggregate high-payoff schemas rather than 24/7 innovation.
-          Collaboratively pontificate state of the art methodologies through quality
+        text: Collaboratively pontificate state of the art methodologies through quality
           vortals. Seamlessly underwhelm goal-oriented supply chains rather than backward-compatible
           human capital. Quickly formulate premier users with high-payoff testing
           procedures. Continually develop client-centric niches without resource sucking
