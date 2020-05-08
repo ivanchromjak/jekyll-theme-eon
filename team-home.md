@@ -418,7 +418,7 @@ sections:
     grid: 1-3
     gutter: default
     cards:
-    - title: BASIC
+    - title: ''
       heading: ''
       content: ''
       icon: ''
@@ -430,6 +430,14 @@ sections:
         url: ''
         blank: false
       blocks:
+      - template: heading
+        block: heading
+        tag: h3
+        size: h2
+        align: center
+        width: full
+        title: BASIC
+        color: ''
       - template: text
         block: text
         align: center
