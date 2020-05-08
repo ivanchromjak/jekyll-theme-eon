@@ -255,6 +255,16 @@ sections:
         url: "#"
         blank: false
       animation: none
+    - width: 1-1
+      blocks:
+      - template: image
+        block: image
+        align: none
+        image: "/uploads/team-2.svg"
+        alt: Image
+        caption: ''
+        lightbox: false
+      animation: none
     divider: false
     masonry: false
   height: false
