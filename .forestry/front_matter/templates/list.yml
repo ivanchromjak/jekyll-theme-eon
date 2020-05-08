@@ -9,6 +9,13 @@ fields:
   label: Block
   hidden: true
   default: list
+- name: items
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Items
 - name: size
   type: select
   default: default
