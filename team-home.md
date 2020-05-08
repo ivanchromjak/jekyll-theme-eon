@@ -451,8 +451,11 @@ sections:
         block: list
         align: left
         size: default
-        style: default
-        items: []
+        style: cross
+        items:
+        - Administrate prospective
+        - Functional customer service
+        - Conveniently simplify
         divider: false
       - template: block-button
         block: button
