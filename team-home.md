@@ -261,13 +261,12 @@ sections:
         text: Collaboratively pontificate state of the art methodologies through quality
           vortals. Seamlessly underwhelm goal-oriented supply chains rather than backward-compatible
           human capital. Quickly formulate premier users with high-payoff testing
-          procedures. Continually develop client-centric niches without resource sucking
-          e-markets.
+          procedures develop client-centric niches.
         color: ''
       - template: block-button
         block: button
         text: View Features
-        style: primary-outline
+        style: danger-outline
         size: medium
         width: medium
         url: "#"
