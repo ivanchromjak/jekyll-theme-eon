@@ -22,7 +22,7 @@ sections:
     custom_image_width: false
     video: ''
     overlay_color: ''
-  animation: none
+  animation: slide-bottom
   navbar:
     light_color: false
     transparent: true
