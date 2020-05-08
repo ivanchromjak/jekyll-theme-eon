@@ -1158,21 +1158,21 @@
     }
 
     > *:nth-child(n+2) {
-      margin-top: $global-margin * 1.75;
+      margin-top: $global-margin * 2;
     }
 
-    .uk-heading-medium {
-      font-weight: 400;
-    }
+    // .uk-heading-medium {
+    //   font-weight: 400;
+    // }
 
-    ul {
-      list-style: none;
-      padding: 0;
-      margin-bottom: 0;
-      li {
-        margin-top: $global-small-margin;
-      }
-    }
+    // ul {
+    //   list-style: none;
+    //   padding: 0;
+    //   margin-bottom: 0;
+    //   li {
+    //     margin-top: $global-small-margin;
+    //   }
+    // }
   }
 
 }
