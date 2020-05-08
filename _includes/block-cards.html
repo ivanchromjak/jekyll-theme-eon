@@ -30,10 +30,9 @@
               {% if card.title != empty %}
                 <h3 class="{% if card.icon != empty %}uk-card-title{% else %}uk-h2{% endif %}">{{ card.title }}</h3>
               {% endif %}
-              {{ card.content | markdownify }}
-              {% if card.button.url != empty %}
-                <a href="{{ card.button.url }}" class="uk-button uk-button-{{ card.button.style }} uk-button-{{ card.button.size }}"{% if card.button.blank %} target="_blank"{% endif %}>{{ card.button.text }}</a>
-              {% endif %}
+              {% for block in card.blocks %}
+                {% include block-{{ block.block }}.html %}
+              {% endfor %}
             </div>
           </div>
         </div>
@@ -51,10 +50,9 @@
               {% if card.title != empty %}
                 <h3 class="{% if card.icon != empty %}uk-card-title{% else %}uk-h2{% endif %}">{{ card.title }}</h3>
               {% endif %}
-              {{ card.content | markdownify }}
-              {% if card.button.url != empty %}
-                <a href="{{ card.button.url }}" class="uk-button uk-button-{{ card.button.style }} uk-button-{{ card.button.size }}"{% if card.button.blank %} target="_blank"{% endif %}>{{ card.button.text }}</a>
-              {% endif %}
+              {% for block in card.blocks %}
+                {% include block-{{ block.block }}.html %}
+              {% endfor %}
             </div>
           </div>
         </div>
@@ -73,16 +71,9 @@
             {% if card.title != empty %}
               <h3 class="uk-card-title">{{ card.title }}</h3>
             {% endif %}
-            {{ card.content | markdownify }}
-            {% if card.button.url != empty %}
-              <a href="{{ card.button.url }}" class="uk-button uk-button-{{ card.button.style }} uk-button-{{ card.button.size }}"{% if card.button.blank %} target="_blank"{% endif %}>{{ card.button.text }}</a>
-            {% endif %}
-
             {% for block in card.blocks %}
               {% include block-{{ block.block }}.html %}
             {% endfor %}
-
-
           </div>
         </div>
       {% endif %}
