@@ -2,8 +2,9 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-$global-primary-background:     {{ site.data.options.base.primary_color | default: '#1B33BF' }};
-$global-secondary-background:   {{ site.data.options.base.secondary_color | default: '#000' }};
+$global-primary-background:     {{ site.data.options.base.background_primary_color | default: '#1B33BF' }};
+$global-secondary-background:   {{ site.data.options.base.background_secondary_color | default: '#000' }};
+$global-muted-background:       {{ site.data.options.base.background_muted_color | default: '#eee' }};
 $base-heading-color:            {{ site.data.options.base.heading_color | default: '#152c5b' }};
 $base-body-color:               {{ site.data.options.base.body_color | default: '#64748a' }};
 $global-muted-color:            {{ site.data.options.base.muted_color | default: '#9aa6b7' }};
