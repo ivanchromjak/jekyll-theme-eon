@@ -466,11 +466,8 @@ sections:
         url: "#"
         blank: false
     - title: PROFESSIONAL
-      heading: "$499"
-      content: "Distinctively administrate prospective channels without open-source
-        growth strategies.\n\n* Conveniently communicate\n* Resources and standards\n*
-        Compliant best practices\n* Dramatically architect\n* Conveniently simplify
-        \n* Functionalized customer service"
+      heading: ''
+      content: ''
       icon: ''
       image: ''
       button:
@@ -496,6 +493,8 @@ sections:
         - Resources and standards
         - Compliant best practices
         - Dramatically architect
+        - Administrate prospective
+        - Functional customer service
         divider: false
       - template: list
         block: list
@@ -503,8 +502,6 @@ sections:
         size: default
         style: cross
         items:
-        - Administrate prospective
-        - Functional customer service
         - Conveniently simplify
         divider: false
       - template: block-button
