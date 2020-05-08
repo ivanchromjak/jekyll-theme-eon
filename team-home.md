@@ -447,8 +447,13 @@ sections:
       - template: list
         block: list
         size: default
-        style: default
+        style: check
         divider: false
+        items:
+        - Conveniently communicate
+        - Dramatically architect
+        - Compliant best practices
+        - Resources and standards
       - template: block-button
         block: button
         text: Get Started
