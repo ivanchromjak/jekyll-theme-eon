@@ -577,7 +577,6 @@
         margin-left: -40px;
         margin-top: -2px;
         @include svg-fill($list-check-image, "#000", $global-success-background);
-        // background-image: url($list-success-image);
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-color: lighten($global-success-background, 46%);
@@ -586,6 +585,29 @@
     }
   }
 
+  .uk-list-cross {
+    margin-left: 40px;
+
+    li {
+      &:nth-child(n+2) {
+        margin-top: 20px !important;
+      }
+
+      &::before {
+        content: "";
+        width: 30px;
+        height: 30px;
+        float: left;
+        margin-left: -40px;
+        margin-top: -2px;
+        @include svg-fill($list-cross-image, "#000", $global-danger-background);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-color: lighten($global-danger-background, 46%);
+        border-radius: 20px;
+      }
+    }
+  }
 
   // .uk-list-primary {
   //   margin-left: 40px;
