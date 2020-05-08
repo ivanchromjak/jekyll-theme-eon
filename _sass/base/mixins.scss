@@ -566,7 +566,7 @@
 
     li {
       &:nth-child(n+2) {
-        margin-top: 20px !important;
+        // margin-top: 20px !important;
       }
 
       &::before {
@@ -590,7 +590,7 @@
 
     li {
       &:nth-child(n+2) {
-        margin-top: 20px !important;
+        // margin-top: 20px !important;
       }
 
       &::before {
@@ -603,10 +603,14 @@
         @include svg-fill($list-cross-image, "#000", $global-danger-background);
         background-repeat: no-repeat;
         background-position: 50% 50%;
-        background-color: lighten($global-danger-background, 46%);
+        background-color: lighten($global-danger-background, 33%);
         border-radius: 20px;
       }
     }
+  }
+
+  .uk-list-check + .uk-list-cross {
+    margin-top: $global-margin !important;
   }
 
   // .uk-list-primary {
@@ -1154,7 +1158,7 @@
     }
 
     > *:nth-child(n+2) {
-      margin-top: $global-margin * 1.5;
+      margin-top: $global-margin * 1.75;
     }
 
     .uk-heading-medium {
