@@ -560,6 +560,57 @@
   .uk-list {
     margin: 0;
   }
+
+  .uk-list-check {
+    margin-left: 40px;
+
+    li {
+      &:nth-child(n+2) {
+        margin-top: 20px !important;
+      }
+
+      &::before {
+        content: "";
+        width: 30px;
+        height: 30px;
+        float: left;
+        margin-left: -40px;
+        margin-top: -2px;
+        @include svg-fill($list-check-image, "#000", $global-success-background);
+        // background-image: url($list-success-image);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-color: lighten($global-success-background, 46%);
+        border-radius: 20px;
+      }
+    }
+  }
+
+
+  // .uk-list-primary {
+  //   margin-left: 40px;
+
+  //   li {
+  //     &:nth-child(n+2) {
+  //       margin-top: 20px !important;
+  //     }
+
+  //     &::before {
+  //       content: "";
+  //       width: 30px;
+  //       height: 30px;
+  //       float: left;
+  //       margin-left: -40px;
+  //       margin-top: -2px;
+  //       @include svg-fill($list-primary-image, "#000", $global-primary-background);
+  //       // background-image: url($list-primary-image);
+  //       background-repeat: no-repeat;
+  //       background-position: 50% 50%;
+  //       background-color: lighten($global-primary-background, 37%);
+  //       border-radius: 20px;
+  //     }
+  //   }
+  // }
 }
 
 @mixin hook-accordion-title(){
