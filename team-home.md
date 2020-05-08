@@ -513,11 +513,8 @@ sections:
         url: "#"
         blank: false
     - title: ENTERPRISE
-      heading: "$999"
-      content: "Distinctively administrate prospective channels without open-source
-        growth strategies.\n\n* Conveniently communicate\n* Resources and standards\n*
-        Compliant best practices\n* Dramatically architect\n* Conveniently simplify
-        \n* Functionalized customer\n* Administrate prospective"
+      heading: ''
+      content: ''
       icon: ''
       image: ''
       button:
@@ -543,11 +540,14 @@ sections:
         - Resources and standards
         - Compliant best practices
         - Dramatically architect
+        - Administrate prospective
+        - Functional customer service
+        - Conveniently simplify
         divider: false
       - template: block-button
         block: button
         text: Get Started
-        style: primary
+        style: primary-outline
         size: medium
         width: medium
         url: "#"
