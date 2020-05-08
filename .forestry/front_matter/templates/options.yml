@@ -13,20 +13,26 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: primary_color
+  - name: background_primary_color
     type: color
-    label: Primary Color
+    label: Background Primary Color
     config:
       required: true
       color_format: Hex
     default: "#4A90E2"
-  - name: secondary_color
+  - name: background_secondary_color
     type: color
-    label: Secondary Color
+    label: Background Secondary Color
     config:
       required: true
       color_format: Hex
     default: "#202020"
+  - name: background_muted_color
+    type: color
+    label: Background Muted Color
+    config:
+      required: false
+      color_format: Hex
   - name: heading_color
     type: color
     label: Heading Color

@@ -114,7 +114,7 @@ sections:
   blocks:
   - template: heading
     block: heading
-    tag: h3
+    tag: h2
     size: default
     align: center
     width: full
@@ -122,7 +122,7 @@ sections:
     color: ''
   - template: margin
     block: margin
-    size: large
+    size: medium
   - template: cards
     block: cards
     media: none
@@ -204,7 +204,7 @@ sections:
 - template: section
   container: medium
   size: large
-  remove_padding: none
+  remove_padding: top
   horizontal_align: center
   background:
     style: default
@@ -225,7 +225,7 @@ sections:
   - template: heading
     block: heading
     tag: h2
-    size: h1
+    size: default
     align: center
     title: We improve team communication flow that will grow your business
     color: ''
