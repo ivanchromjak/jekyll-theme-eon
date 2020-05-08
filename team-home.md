@@ -363,6 +363,98 @@ sections:
   id: ''
   class: ''
 - template: section
+  container: medium
+  size: large
+  remove_padding: none
+  horizontal_align: center
+  background:
+    style: muted
+    align: center-center
+    size: cover
+    parallax: '0'
+    image_width: 1-2
+    horizontal_align: left
+    overlay_opacity: 0.6
+    shape_top: none
+    color: ''
+    image: ''
+    custom_image_width: false
+    video: ''
+    overlay_color: ''
+  animation: none
+  blocks:
+  - template: heading
+    block: heading
+    tag: h2
+    size: h1
+    align: center
+    width: full
+    title: Our pricing plans
+    color: ''
+  - template: lead
+    block: lead
+    align: center
+    width: xsmall
+    text: Proactively iterate efficient infrastructures through optimal conceptualize
+      robust customer service via unique architectures.
+    color: ''
+  - template: margin
+    block: margin
+    size: medium
+  - template: cards
+    block: cards
+    media: none
+    style: default
+    grid: 1-3
+    gutter: default
+    cards:
+    - title: BASIC
+      heading: "$199"
+      content: "Distinctively administrate prospective channels without open-source
+        growth strategies. \n\n* Conveniently communicate\n* Resources and standards
+        \n* Compliant best practices \n* Dramatically architect "
+      icon: ''
+      image: ''
+      button:
+        text: Get started
+        style: primary-outline
+        size: medium
+        url: "#"
+        blank: false
+    - title: PROFESSIONAL
+      heading: "$499"
+      content: "Distinctively administrate prospective channels without open-source
+        growth strategies.\n\n* Conveniently communicate\n* Resources and standards\n*
+        Compliant best practices\n* Dramatically architect\n* Conveniently simplify
+        \n* Functionalized customer service"
+      icon: ''
+      image: ''
+      button:
+        text: Get started
+        style: primary
+        size: medium
+        url: "#"
+        blank: false
+    - title: ENTERPRISE
+      heading: "$999"
+      content: "Distinctively administrate prospective channels without open-source
+        growth strategies.\n\n* Conveniently communicate\n* Resources and standards\n*
+        Compliant best practices\n* Dramatically architect\n* Conveniently simplify
+        \n* Functionalized customer\n* Administrate prospective"
+      icon: ''
+      image: ''
+      button:
+        text: Get started
+        style: primary-outline
+        size: medium
+        url: "#"
+        blank: false
+    icon_color: ''
+    icon_size: 
+  height: false
+  id: ''
+  class: ''
+- template: section
   container: small
   size: medium
   remove_padding: none
@@ -466,98 +558,6 @@ sections:
         style: primary
         size: regular
         url: ''
-        blank: false
-    icon_color: ''
-    icon_size: 
-  height: false
-  id: ''
-  class: ''
-- template: section
-  container: medium
-  size: large
-  remove_padding: none
-  horizontal_align: center
-  background:
-    style: muted
-    align: center-center
-    size: cover
-    parallax: '0'
-    image_width: 1-2
-    horizontal_align: left
-    overlay_opacity: 0.6
-    shape_top: none
-    color: ''
-    image: ''
-    custom_image_width: false
-    video: ''
-    overlay_color: ''
-  animation: none
-  blocks:
-  - template: heading
-    block: heading
-    tag: h2
-    size: h1
-    align: center
-    width: full
-    title: Our pricing plans
-    color: ''
-  - template: lead
-    block: lead
-    align: center
-    width: xsmall
-    text: Proactively iterate efficient infrastructures through optimal conceptualize
-      robust customer service via unique architectures.
-    color: ''
-  - template: margin
-    block: margin
-    size: medium
-  - template: cards
-    block: cards
-    media: none
-    style: default
-    grid: 1-3
-    gutter: default
-    cards:
-    - title: BASIC
-      heading: "$199"
-      content: "Distinctively administrate prospective channels without open-source
-        growth strategies. \n\n* Conveniently communicate\n* Resources and standards
-        \n* Compliant best practices \n* Dramatically architect "
-      icon: ''
-      image: ''
-      button:
-        text: Get started
-        style: primary-outline
-        size: medium
-        url: "#"
-        blank: false
-    - title: PROFESSIONAL
-      heading: "$499"
-      content: "Distinctively administrate prospective channels without open-source
-        growth strategies.\n\n* Conveniently communicate\n* Resources and standards\n*
-        Compliant best practices\n* Dramatically architect\n* Conveniently simplify
-        \n* Functionalized customer service"
-      icon: ''
-      image: ''
-      button:
-        text: Get started
-        style: primary
-        size: medium
-        url: "#"
-        blank: false
-    - title: ENTERPRISE
-      heading: "$999"
-      content: "Distinctively administrate prospective channels without open-source
-        growth strategies.\n\n* Conveniently communicate\n* Resources and standards\n*
-        Compliant best practices\n* Dramatically architect\n* Conveniently simplify
-        \n* Functionalized customer\n* Administrate prospective"
-      icon: ''
-      image: ''
-      button:
-        text: Get started
-        style: primary-outline
-        size: medium
-        url: "#"
         blank: false
     icon_color: ''
     icon_size: 
