@@ -478,6 +478,12 @@ sections:
         url: "#"
         blank: false
       blocks:
+      - template: text
+        block: text
+        align: center
+        width: full
+        text: Prospective channels without open growth strategies
+        color: ''
       - template: list
         block: list
         align: left
@@ -489,6 +495,14 @@ sections:
         - Compliant best practices
         - Dramatically architect
         divider: false
+      - template: block-button
+        block: button
+        text: Get Started
+        style: primary-outline
+        size: medium
+        width: medium
+        url: "#"
+        blank: false
     - title: ENTERPRISE
       heading: "$999"
       content: "Distinctively administrate prospective channels without open-source
