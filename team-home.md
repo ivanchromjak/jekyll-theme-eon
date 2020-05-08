@@ -319,7 +319,7 @@ sections:
         block: lead
         align: left
         width: full
-        text: Continually parallel task magnetic data
+        text: Continually parallel task magnetic data solutions
         color: ''
       - template: text
         block: text
@@ -333,8 +333,8 @@ sections:
       - template: block-button
         block: button
         style: danger-outline
-        size: regular
-        width: default
+        size: medium
+        width: medium
         url: "#"
         text: Get Started
         blank: false
