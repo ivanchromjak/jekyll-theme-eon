@@ -23,9 +23,22 @@ fields:
       file: 
       path: 
   label: Size
-- name: bullet
-  type: boolean
-  label: Bullet
+- name: style
+  type: select
+  default: default
+  config:
+    required: false
+    options:
+    - default
+    - check
+    - cross
+    - bullet
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Style
 - name: divider
   type: boolean
   label: Divider
