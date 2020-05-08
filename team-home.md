@@ -340,7 +340,14 @@ sections:
         blank: false
       animation: none
     - width: 1-1
-      blocks: []
+      blocks:
+      - template: image
+        block: image
+        align: none
+        image: "/uploads/team-3.svg"
+        alt: Image
+        caption: ''
+        lightbox: false
       animation: none
     divider: false
     masonry: false
