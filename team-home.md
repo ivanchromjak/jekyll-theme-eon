@@ -22,7 +22,7 @@ sections:
     custom_image_width: false
     video: ''
     overlay_color: ''
-  animation: none
+  animation: slide-bottom
   navbar:
     light_color: false
     transparent: true
@@ -94,7 +94,7 @@ sections:
 - template: section
   container: medium
   size: large
-  remove_padding: top
+  remove_padding: none
   horizontal_align: center
   background:
     style: default
@@ -233,7 +233,7 @@ sections:
   blocks:
   - template: grid
     block: grid
-    gap: default
+    gap: large
     vertical_align: middle
     parallax: '0'
     cells:
@@ -272,6 +272,9 @@ sections:
           human capital. Quickly formulate premier users with high-payoff testing
           procedures develop client-centric niches.
         color: ''
+      - template: margin
+        block: margin
+        size: medium
       - template: block-button
         block: button
         text: View Features
@@ -338,6 +341,9 @@ sections:
           human capital. Quickly formulate premier users with high-payoff testing
           procedures develop niches without resource.
         color: ''
+      - template: margin
+        block: margin
+        size: medium
       - template: block-button
         block: button
         style: danger-outline
