@@ -418,7 +418,7 @@ sections:
     grid: 1-3
     gutter: default
     cards:
-    - title: BASIC
+    - title: ''
       heading: ''
       content: ''
       icon: ''
@@ -430,6 +430,14 @@ sections:
         url: ''
         blank: false
       blocks:
+      - template: heading
+        block: heading
+        tag: h3
+        size: h2
+        align: center
+        width: full
+        title: BASIC
+        color: ''
       - template: text
         block: text
         align: center
@@ -465,7 +473,7 @@ sections:
         width: medium
         url: "#"
         blank: false
-    - title: PROFESSIONAL
+    - title: ''
       heading: ''
       content: ''
       icon: ''
@@ -477,6 +485,14 @@ sections:
         url: "#"
         blank: false
       blocks:
+      - template: heading
+        block: heading
+        tag: h3
+        size: h2
+        align: center
+        width: full
+        title: PROFESSIONAL
+        color: ''
       - template: text
         block: text
         align: center
@@ -494,7 +510,6 @@ sections:
         - Compliant best practices
         - Dramatically architect
         - Administrate prospective
-        - Functional customer service
         divider: false
       - template: list
         block: list
@@ -502,6 +517,7 @@ sections:
         size: default
         style: cross
         items:
+        - Functional customer service
         - Conveniently simplify
         divider: false
       - template: block-button
@@ -512,7 +528,7 @@ sections:
         width: medium
         url: "#"
         blank: false
-    - title: ENTERPRISE
+    - title: ''
       heading: ''
       content: ''
       icon: ''
@@ -524,6 +540,14 @@ sections:
         url: "#"
         blank: false
       blocks:
+      - template: heading
+        block: heading
+        tag: h3
+        size: h2
+        align: center
+        width: full
+        title: ENTERPRISE
+        color: ''
       - template: text
         block: text
         align: center
