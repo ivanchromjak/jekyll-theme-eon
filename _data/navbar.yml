@@ -1,57 +1,50 @@
-# Navbar menu navigation links
+---
 base:
-  left:
-
+  left: 
   center:
-    - title: Home
-      url: /
-
-    - title: Headers
-      dropdown:
-        - title: Search
-          url: /header-search/
-        - title: Video
-          url: /header-video/
-        - title: Signup
-          url: /header-signup/
-        - title: CTA
-          url: /header-cta/
-
-    - title: Features
-      dropdown:
-        - title: Components
-        - title: Cards
-          url: /cards/
-        - title: Media
-          url: /media/
-        - title: Call To Action
-          url: /cta/
-        - title: Team
-          url: /team/
-        - title: FAQ
-          url: /faq/
-        - title: Contact Form
-          url: /contact/
-        - title: Content
-          url: /content/
-        - title: Map Styles
-        - title: Default
-          url: /map-default/
-        - title: Silver
-          url: /map-silver/
-        - title: Dark
-          url: /map-dark/
-
-    - title: Portfolio
-      url: /portfolio/
-
-    - title: Blog
-      url: /blog/
-
-    - title: 404
-      url: /404/
-      
+  - title: Home
+    url: "/"
+  - title: Headers
+    dropdown:
+    - title: Search
+      url: "/header-search/"
+    - title: Video
+      url: "/header-video/"
+    - title: Signup
+      url: "/header-signup/"
+    - title: CTA
+      url: "/header-cta/"
+  - title: Features
+    dropdown:
+    - title: Components
+    - title: Cards
+      url: "/cards/"
+    - title: Media
+      url: "/media/"
+    - title: Call To Action
+      url: "/cta/"
+    - title: Team
+      url: "/team/"
+    - title: FAQ
+      url: "/faq/"
+    - title: Contact Form
+      url: "/contact/"
+    - title: Content
+      url: "/content/"
+    - title: Map Styles
+    - title: Default
+      url: "/map-default/"
+    - title: Silver
+      url: "/map-silver/"
+    - title: Dark
+      url: "/map-dark/"
+  - title: Portfolio
+    url: "/portfolio/"
+  - title: Blog
+    url: "/blog/"
+  - title: "404"
+    url: "/404/"
   right:
-    - title: Purchase
-      url: https://themeforest.net/item/eon-multipurpose-responsive-jekyll-theme/24065900
-      button: primary-preserve
+  - title: Purchase
+    url: https://themeforest.net/item/eon-multipurpose-responsive-jekyll-theme/24065900
+    button: primary-outline
