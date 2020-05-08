@@ -17,8 +17,8 @@ base:
     social_networks: true
     shape_top: angle
   heading_color: "#2E1C67"
-  body_color: "#64748A"
-  muted_color: "#8496A9"
+  body_color: "#5E576C"
+  muted_color: "#9695A4"
   background_primary_color: "#3124B2"
   background_secondary_color: "#1F0F49"
   background_muted_color: "#F7F2FF"
