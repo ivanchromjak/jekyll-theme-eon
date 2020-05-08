@@ -463,20 +463,6 @@ sections:
         width: medium
         url: "#"
         blank: false
-    - title: BASIC
-      heading: "$199"
-      content: "Distinctively administrate prospective channels without open-source
-        growth strategies. \n\n* Conveniently communicate\n* Resources and standards
-        \n* Compliant best practices \n* Dramatically architect "
-      icon: ''
-      image: ''
-      button:
-        text: Get started
-        style: primary-outline
-        size: medium
-        url: "#"
-        blank: false
-      blocks: []
     - title: PROFESSIONAL
       heading: "$499"
       content: "Distinctively administrate prospective channels without open-source
@@ -491,7 +477,18 @@ sections:
         size: medium
         url: "#"
         blank: false
-      blocks: []
+      blocks:
+      - template: list
+        block: list
+        align: left
+        size: default
+        style: check
+        items:
+        - Conveniently communicate
+        - Resources and standards
+        - Compliant best practices
+        - Dramatically architect
+        divider: false
     - title: ENTERPRISE
       heading: "$999"
       content: "Distinctively administrate prospective channels without open-source
