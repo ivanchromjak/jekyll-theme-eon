@@ -454,6 +454,7 @@ sections:
         - Dramatically architect
         - Compliant best practices
         - Resources and standards
+        align: left
       - template: block-button
         block: button
         text: Get Started
