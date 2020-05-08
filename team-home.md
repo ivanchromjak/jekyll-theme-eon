@@ -418,7 +418,7 @@ sections:
     grid: 1-3
     gutter: default
     cards:
-    - title: ''
+    - title: BASIC
       heading: ''
       content: ''
       icon: ''
@@ -430,14 +430,6 @@ sections:
         url: ''
         blank: false
       blocks:
-      - template: heading
-        block: heading
-        tag: h3
-        size: default
-        align: center
-        width: full
-        title: BASIC
-        color: ''
       - template: text
         block: text
         align: center
@@ -455,6 +447,16 @@ sections:
         - Compliant best practices
         - Resources and standards
         align: left
+      - template: list
+        block: list
+        align: left
+        size: default
+        style: cross
+        items:
+        - Administrate prospective
+        - Functional customer service
+        - Conveniently simplify
+        divider: false
       - template: block-button
         block: button
         text: Get Started
@@ -463,20 +465,6 @@ sections:
         width: medium
         url: "#"
         blank: false
-    - title: BASIC
-      heading: "$199"
-      content: "Distinctively administrate prospective channels without open-source
-        growth strategies. \n\n* Conveniently communicate\n* Resources and standards
-        \n* Compliant best practices \n* Dramatically architect "
-      icon: ''
-      image: ''
-      button:
-        text: Get started
-        style: primary-outline
-        size: medium
-        url: "#"
-        blank: false
-      blocks: []
     - title: PROFESSIONAL
       heading: "$499"
       content: "Distinctively administrate prospective channels without open-source
@@ -491,7 +479,42 @@ sections:
         size: medium
         url: "#"
         blank: false
-      blocks: []
+      blocks:
+      - template: text
+        block: text
+        align: center
+        width: full
+        text: Prospective channels without open growth strategies
+        color: ''
+      - template: list
+        block: list
+        align: left
+        size: default
+        style: check
+        items:
+        - Conveniently communicate
+        - Resources and standards
+        - Compliant best practices
+        - Dramatically architect
+        divider: false
+      - template: list
+        block: list
+        align: left
+        size: default
+        style: cross
+        items:
+        - Administrate prospective
+        - Functional customer service
+        - Conveniently simplify
+        divider: false
+      - template: block-button
+        block: button
+        text: Get Started
+        style: primary-outline
+        size: medium
+        width: medium
+        url: "#"
+        blank: false
     - title: ENTERPRISE
       heading: "$999"
       content: "Distinctively administrate prospective channels without open-source
@@ -506,7 +529,32 @@ sections:
         size: medium
         url: "#"
         blank: false
-      blocks: []
+      blocks:
+      - template: text
+        block: text
+        align: center
+        width: full
+        text: Distinctively administrate prospective channels without growth
+        color: ''
+      - template: list
+        block: list
+        align: left
+        size: default
+        style: check
+        items:
+        - Conveniently communicate
+        - Resources and standards
+        - Compliant best practices
+        - Dramatically architect
+        divider: false
+      - template: block-button
+        block: button
+        text: Get Started
+        style: primary
+        size: medium
+        width: medium
+        url: "#"
+        blank: false
     icon_color: ''
     icon_size: 
   height: false
