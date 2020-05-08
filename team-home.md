@@ -430,14 +430,6 @@ sections:
         url: ''
         blank: false
       blocks:
-      - template: heading
-        block: heading
-        tag: h3
-        size: default
-        align: center
-        width: full
-        title: BASIC
-        color: ''
       - template: text
         block: text
         align: center
@@ -455,6 +447,13 @@ sections:
         - Compliant best practices
         - Resources and standards
         align: left
+      - template: list
+        block: list
+        align: left
+        size: default
+        style: default
+        items: []
+        divider: false
       - template: block-button
         block: button
         text: Get Started
