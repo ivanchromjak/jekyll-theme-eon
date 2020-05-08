@@ -444,6 +444,11 @@ sections:
         width: full
         text: Quickly enhance flexible leadership without focused
         color: ''
+      - template: list
+        block: list
+        size: default
+        style: default
+        divider: false
       - template: block-button
         block: button
         text: Get Started
