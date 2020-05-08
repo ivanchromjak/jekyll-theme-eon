@@ -111,6 +111,7 @@ fields:
     - image
     - margin
     - icon
+    - list
     config:
       min: 
       max: 
