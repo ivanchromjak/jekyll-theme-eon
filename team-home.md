@@ -504,6 +504,12 @@ sections:
         url: "#"
         blank: false
       blocks:
+      - template: text
+        block: text
+        align: center
+        width: full
+        text: Distinctively administrate prospective channels without growth
+        color: ''
       - template: list
         block: list
         align: left
