@@ -233,13 +233,13 @@ sections:
       - template: heading
         block: heading
         tag: h2
-        size: small
+        size: h1
         align: left
         width: full
         title: Track and analyze your business communication
         color: ''
-      - template: lead
-        block: lead
+      - template: text
+        block: text
         align: left
         width: full
         text: Conveniently aggregate high-payoff schemas rather than 24/7 innovation.
@@ -255,7 +255,7 @@ sections:
         url: "#"
         blank: false
       animation: none
-    - width: 1-1
+    - width: 1-2
       blocks:
       - template: image
         block: image
