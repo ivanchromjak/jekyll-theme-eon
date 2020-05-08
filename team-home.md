@@ -503,7 +503,18 @@ sections:
         size: medium
         url: "#"
         blank: false
-      blocks: []
+      blocks:
+      - template: list
+        block: list
+        align: left
+        size: default
+        style: check
+        items:
+        - Conveniently communicate
+        - Resources and standards
+        - Compliant best practices
+        - Dramatically architect
+        divider: false
     icon_color: ''
     icon_size: 
   height: false
