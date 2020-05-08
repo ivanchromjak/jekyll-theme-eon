@@ -432,24 +432,34 @@ sections:
       blocks:
       - template: heading
         block: heading
-        tag: h4
+        tag: h3
         size: default
-        align: left
+        align: center
         width: full
-        title: FREE
+        title: BASIC
         color: ''
       - template: text
         block: text
-        align: left
+        align: center
         width: full
         text: Quickly enhance flexible leadership without focused
         color: ''
+      - template: list
+        block: list
+        size: default
+        style: check
+        divider: false
+        items:
+        - Conveniently communicate
+        - Dramatically architect
+        - Compliant best practices
+        - Resources and standards
       - template: block-button
         block: button
-        text: Text
-        style: primary
-        size: regular
-        width: default
+        text: Get Started
+        style: primary-outline
+        size: medium
+        width: medium
         url: "#"
         blank: false
     - title: BASIC

@@ -1,0 +1,51 @@
+---
+label: List
+hide_body: true
+fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: list
+- name: items
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Items
+- name: size
+  type: select
+  default: default
+  config:
+    required: false
+    options:
+    - default
+    - large
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Size
+- name: style
+  type: select
+  default: default
+  config:
+    required: false
+    options:
+    - default
+    - check
+    - cross
+    - bullet
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Style
+- name: divider
+  type: boolean
+  label: Divider
