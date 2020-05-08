@@ -225,7 +225,7 @@ sections:
   - template: heading
     block: heading
     tag: h2
-    size: h1
+    size: default
     align: center
     title: We improve team communication flow that will grow your business
     color: ''
