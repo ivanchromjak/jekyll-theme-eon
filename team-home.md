@@ -540,7 +540,7 @@ sections:
         block: button
         text: Get Started
         style: primary
-        size: large
+        size: medium
         width: medium
         url: "#"
         blank: false
