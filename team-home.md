@@ -313,7 +313,7 @@ sections:
         size: h1
         align: left
         width: full
-        title: We are here to help you find better communication solution
+        title: We help you find better communication
         color: ''
       - template: lead
         block: lead
@@ -328,7 +328,7 @@ sections:
         text: Collaboratively pontificate state of the art methodologies through quality
           vortals. Seamlessly underwhelm goal-oriented supply chains rather than backward-compatible
           human capital. Quickly formulate premier users with high-payoff testing
-          procedures. Continually develop client-centric niches without resource.
+          procedures develop niches without resource.
         color: ''
       - template: block-button
         block: button
@@ -339,7 +339,7 @@ sections:
         text: Get Started
         blank: false
       animation: none
-    - width: 1-1
+    - width: 1-2
       blocks:
       - template: image
         block: image
