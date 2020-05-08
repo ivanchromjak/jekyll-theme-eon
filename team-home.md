@@ -114,12 +114,12 @@ sections:
   blocks:
   - template: heading
     block: heading
-    tag: h2
+    tag: h3
     size: default
     align: center
     width: full
     title: Trusted by world’s leading companies
-    color: "#FFFFFF"
+    color: ''
   - template: margin
     block: margin
     size: large
@@ -196,7 +196,7 @@ sections:
         size: regular
         url: ''
         blank: false
-    icon_color: "#FFFFFF"
+    icon_color: ''
     icon_size: 
   height: false
   id: ''
