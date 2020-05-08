@@ -15,7 +15,7 @@ base:
     layout: columns
     style: secondary
     social_networks: true
-    shape_top: angle
+    shape_top: none
   heading_color: "#2E1C67"
   body_color: "#5E576C"
   muted_color: "#9695A4"
