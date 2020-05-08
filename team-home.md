@@ -501,19 +501,19 @@ sections:
         width: full
         title: PROFESSIONAL
         color: ''
-      - template: heading
-        block: heading
-        tag: h3
-        size: small
-        align: center
-        width: full
-        title: "$299"
-        color: ''
       - template: text
         block: text
         align: center
         width: full
         text: Prospective channels without open growth strategies
+        color: ''
+      - template: heading
+        block: heading
+        tag: h3
+        size: medium
+        align: center
+        width: full
+        title: "$299"
         color: ''
       - template: list
         block: list
@@ -564,19 +564,19 @@ sections:
         width: full
         title: ENTERPRISE
         color: ''
-      - template: heading
-        block: heading
-        tag: h3
-        size: small
-        align: center
-        width: full
-        title: "$499"
-        color: ''
       - template: text
         block: text
         align: center
         width: full
         text: Distinctively administrate prospective channels without growth
+        color: ''
+      - template: heading
+        block: heading
+        tag: h3
+        size: medium
+        align: center
+        width: full
+        title: "$499"
         color: ''
       - template: list
         block: list
