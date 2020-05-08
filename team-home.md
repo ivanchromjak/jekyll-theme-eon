@@ -233,7 +233,7 @@ sections:
   blocks:
   - template: grid
     block: grid
-    gap: default
+    gap: large
     vertical_align: middle
     parallax: '0'
     cells:
