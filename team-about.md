@@ -225,7 +225,23 @@ sections:
         longitude: "-99.164967"
       animation: none
     - width: 1-1
-      blocks: []
+      blocks:
+      - template: heading
+        block: heading
+        tag: h2
+        size: h1
+        align: left
+        width: full
+        title: Come visit us
+        color: ''
+      - template: text
+        block: text
+        align: left
+        width: full
+        text: "Globally expedite covalent functionalities and ubiquitous core competencies.
+          Appropriately synthesize transparent partnerships through covalent intellectual
+          capital.\n\n10400 Queen Avenue  \nStonebanks  \n92202 "
+        color: ''
       animation: none
     divider: false
     masonry: false
