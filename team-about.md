@@ -42,16 +42,6 @@ sections:
     text: Professionally repurpose premium convergence without parallel testing procedures.
       Holisticly myocardinate ubiquitous synergy.
     color: ''
-  - template: margin
-    block: margin
-    size: large
-  - template: image
-    block: image
-    align: center
-    image: "/uploads/team-2.jpg"
-    alt: Team
-    caption: ''
-    lightbox: false
   navbar:
     light_color: false
     transparent: false
@@ -63,10 +53,10 @@ sections:
 - template: section
   container: medium
   size: large
-  remove_padding: none
+  remove_padding: top
   horizontal_align: left
   background:
-    style: muted
+    style: default
     align: center-center
     size: cover
     parallax: '0'
@@ -79,88 +69,29 @@ sections:
     custom_image_width: false
     video: ''
     overlay_color: ''
-  animation: none
+  animation: fade
   blocks:
-  - template: grid
-    block: grid
-    gap: large
-    vertical_align: top
-    parallax: '0'
-    cells:
-    - width: 1-2
-      blocks:
-      - template: heading
-        block: heading
-        tag: h2
-        size: h1
-        align: left
-        width: full
-        title: Holisticly streamline collaborative platforms
-        color: ''
-      animation: none
-    - width: 1-2
-      blocks:
-      - template: text
-        block: text
-        align: left
-        width: full
-        text: "Appropriately iterate premier schemas and standardized e-tailers. Continually
-          deploy optimal scenarios after mission-critical intellectual capital. Synergistically
-          target technically sound internal or \"organic\" sources rather than enterprise
-          intellectual capital. Intrinsicly extend process-centric solutions and go
-          forward information. \n\nInteractively provide access to functionalized
-          action items for revolutionary niches. Professionally repurpose premium
-          convergence without parallel testing procedures ubiquitous synergy after
-          granular e-business. Progressively myocardinate ubiquitous relationships
-          through principle-centered expertise. "
-        color: ''
-      animation: none
-    divider: false
-    masonry: false
-  - template: margin
-    block: margin
-    size: xlarge
-  - template: grid
-    block: grid
-    gap: large
-    vertical_align: top
-    parallax: '0'
-    cells:
-    - width: 1-2
-      blocks:
-      - template: heading
-        block: heading
-        tag: h2
-        size: h1
-        align: left
-        width: full
-        title: Dynamically actualize viral innovation interface
-        color: ''
-      animation: none
-    - width: 1-2
-      blocks:
-      - template: text
-        block: text
-        align: left
-        width: full
-        text: "Competently facilitate value-added outsourcing before team building
-          e-markets. Dramatically redefine best-of-breed portals and pandemic infrastructures.
-          Continually transform impactful sources through client-centered experiences.
-          Proactively network value-added convergence rather than stand-alone applications.
-          \n\nGlobally repurpose an expanded array of scenarios with frictionless
-          outsourcing. Continually maximize empowered architectures with 2.0 technology.
-          Competently procrastinate focused infrastructures whereas high-payoff metrics."
-        color: ''
-      animation: none
-    divider: false
-    masonry: false
+  - template: gallery
+    block: gallery
+    lightbox: true
+    grid: 1-3
+    gutter: medium
+    images:
+    - image: "/uploads/team-2.jpg"
+      caption: ''
+    - image: ''
+      caption: ''
+    - image: ''
+      caption: ''
+    - image: ''
+      caption: ''
   height: false
   id: ''
   class: ''
 - template: section
   container: small
   size: large
-  remove_padding: none
+  remove_padding: top
   horizontal_align: center
   background:
     style: default
@@ -283,69 +214,6 @@ sections:
   horizontal_align: left
   background:
     style: muted
-    align: center-center
-    size: cover
-    parallax: '0'
-    image_width: 1-2
-    horizontal_align: left
-    overlay_opacity: 0.6
-    shape_top: none
-    color: ''
-    image: ''
-    custom_image_width: false
-    video: ''
-    overlay_color: ''
-  animation: none
-  blocks:
-  - template: grid
-    block: grid
-    gap: large
-    vertical_align: middle
-    parallax: '0'
-    cells:
-    - width: 1-2
-      blocks:
-      - template: google-map
-        block: google-map
-        zoom: '14'
-        style: silver
-        height: xlarge
-        latitude: '19.419897'
-        longitude: "-99.164967"
-      animation: none
-    - width: 1-2
-      blocks:
-      - template: heading
-        block: heading
-        tag: h2
-        size: h1
-        align: left
-        width: full
-        title: Come visit us
-        color: ''
-      - template: text
-        block: text
-        align: left
-        width: full
-        text: "Globally expedite covalent functionalities and ubiquitous core competencies.
-          Appropriately synthesize transparent partnerships through covalent intellectual
-          capital. Dynamically foster client-focused networks without collaborative
-          methods of empowerment.\n\n10400 Queen Avenue  \nStonebanks  \n92202 New
-          World\n\nTel: 023 934 9393"
-        color: ''
-      animation: none
-    divider: false
-    masonry: false
-  height: false
-  id: ''
-  class: ''
-- template: section
-  container: medium
-  size: large
-  remove_padding: none
-  horizontal_align: left
-  background:
-    style: default
     align: center-center
     size: cover
     parallax: '0'
