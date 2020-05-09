@@ -37,18 +37,7 @@ sections:
     width: xsmall
     text: Continually integrate resource maximizing customer service via enabled niches
       distinctively optimize worldwide mindshare and bricks-and-clicks niche markets
-    color: ''
-  - template: grid
-    block: grid
-    gap: large
-    vertical_align: top
-    parallax: '0'
-    cells:
-    - width: 1-1
-      blocks: []
-      animation: none
-    divider: false
-    masonry: false
+    color: "#E1DDE5"
   - template: gallery
     block: gallery
     lightbox: false
