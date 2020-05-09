@@ -215,9 +215,9 @@ sections:
         block: lead
         align: left
         width: small
-        text: Assertively engineer timely e-business before high standards in infrastructures.
-          Collaboratively cultivate competitive e-business and virtual leverage existing
-          interoperable leadership imperatives.
+        text: Assertively engineer timely e-business before high standards in infrastructures
+          cultivate competitive e-business and virtual leverage existing interoperable
+          leadership imperatives.
         color: ''
       animation: none
     - width: auto
