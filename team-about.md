@@ -22,7 +22,7 @@ sections:
     custom_image_width: false
     video: ''
     overlay_color: ''
-  animation: slide-bottom
+  animation: fade
   blocks:
   - template: margin
     block: margin
