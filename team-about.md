@@ -37,9 +37,10 @@ sections:
     color: ''
   - template: lead
     block: lead
-    align: left
+    align: center
     width: full
-    text: ''
+    text: Professionally repurpose premium convergence without parallel testing procedures.
+      Holisticly myocardinate ubiquitous synergy after granular e-business.
     color: ''
   navbar:
     light_color: false
