@@ -41,7 +41,7 @@ sections:
         size: medium
         align: left
         width: full
-        title: Small team. Big impact.
+        title: Small team. Big global impact.
         color: ''
       - template: lead
         block: lead
