@@ -4,7 +4,7 @@ title: Team About
 sections:
 - template: header
   block: header
-  container: medium
+  container: small
   size: large
   remove_padding: top
   horizontal_align: left
