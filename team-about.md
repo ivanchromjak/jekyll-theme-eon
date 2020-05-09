@@ -82,7 +82,7 @@ sections:
       - template: image
         block: image
         align: none
-        image: "/uploads/team-4.jpg"
+        image: "/uploads/office-4.jpg"
         alt: ''
         caption: ''
         lightbox: false
