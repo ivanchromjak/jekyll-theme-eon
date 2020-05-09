@@ -240,7 +240,8 @@ sections:
         width: full
         text: "Globally expedite covalent functionalities and ubiquitous core competencies.
           Appropriately synthesize transparent partnerships through covalent intellectual
-          capital.\n\n10400 Queen Avenue  \nStonebanks  \n92202 New World "
+          capital.\n\n10400 Queen Avenue  \nStonebanks  \n92202 New World \n\nTel:
+          023 934 9393"
         color: ''
       animation: none
     divider: false
