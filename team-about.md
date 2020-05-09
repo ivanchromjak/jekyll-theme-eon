@@ -233,7 +233,7 @@ sections:
   id: ''
   class: ''
 - template: section
-  container: medium
+  container: xsmall
   size: large
   remove_padding: none
   horizontal_align: center
