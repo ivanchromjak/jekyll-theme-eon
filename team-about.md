@@ -87,6 +87,23 @@ sections:
         caption: ''
         lightbox: false
       animation: none
+    - width: 1-4
+      blocks:
+      - template: image
+        block: image
+        align: none
+        image: "/uploads/office-3.jpg"
+        alt: ''
+        caption: ''
+        lightbox: false
+      - template: image
+        block: image
+        align: none
+        image: "/uploads/office-1.jpg"
+        alt: ''
+        caption: ''
+        lightbox: false
+      animation: none
     divider: false
     masonry: false
   - template: gallery
