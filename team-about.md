@@ -191,7 +191,7 @@ sections:
   id: ''
   class: ''
 - template: section
-  container: medium
+  container: large
   size: medium
   remove_padding: none
   horizontal_align: left
