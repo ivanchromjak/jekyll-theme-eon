@@ -98,7 +98,7 @@ sections:
   - template: grid
     block: grid
     gap: default
-    vertical_align: top
+    vertical_align: middle
     parallax: '0'
     cells:
     - width: expand
