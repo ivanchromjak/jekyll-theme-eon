@@ -189,6 +189,9 @@ sections:
       animation: none
     divider: false
     masonry: false
+  - template: margin
+    block: margin
+    size: large
   - template: grid
     block: grid
     gap: large
