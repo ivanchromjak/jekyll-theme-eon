@@ -3,7 +3,7 @@ layout: sections
 title: Team About
 sections:
 - template: section
-  container: medium
+  container: small
   size: large
   remove_padding: none
   horizontal_align: center
