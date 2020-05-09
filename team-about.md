@@ -71,6 +71,24 @@ sections:
     overlay_color: ''
   animation: fade
   blocks:
+  - template: grid
+    block: grid
+    gap: default
+    vertical_align: top
+    parallax: '0'
+    cells:
+    - width: 1-3
+      blocks:
+      - template: image
+        block: image
+        align: none
+        image: "/uploads/team-4.jpg"
+        alt: ''
+        caption: ''
+        lightbox: false
+      animation: none
+    divider: false
+    masonry: false
   - template: gallery
     block: gallery
     lightbox: true
