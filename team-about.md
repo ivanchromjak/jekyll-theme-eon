@@ -40,12 +40,33 @@ sections:
     color: ''
   - template: grid
     block: grid
-    gap: default
+    gap: large
     vertical_align: top
     parallax: '0'
-    cells: []
+    cells:
+    - width: 1-1
+      blocks: []
+      animation: none
     divider: false
     masonry: false
+  - template: gallery
+    block: gallery
+    lightbox: true
+    grid: 1-6
+    gutter: large
+    images:
+    - image: "/uploads/brand-shopify.svg"
+      caption: ''
+    - image: "/uploads/brand-netflix.svg"
+      caption: ''
+    - image: "/uploads/brand-google.svg"
+      caption: ''
+    - image: "/uploads/brand-airbnb.svg"
+      caption: ''
+    - image: "/uploads/brand-slack.svg"
+      caption: ''
+    - image: "/uploads/brand-spotify.svg"
+      caption: ''
   height: false
   id: ''
   class: ''
