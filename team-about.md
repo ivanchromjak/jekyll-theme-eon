@@ -2,6 +2,44 @@
 layout: sections
 title: Team About
 sections:
+- template: header
+  block: header
+  container: medium
+  size: medium
+  remove_padding: none
+  horizontal_align: center
+  background:
+    style: default
+    align: center-center
+    size: cover
+    parallax: '0'
+    image_width: 1-2
+    horizontal_align: left
+    overlay_opacity: 0.6
+    shape_top: none
+    color: ''
+    image: ''
+    custom_image_width: false
+    video: ''
+    overlay_color: ''
+  animation: slide-bottom
+  blocks:
+  - template: heading
+    block: heading
+    tag: h1
+    size: small
+    align: center
+    width: full
+    title: Small team. Big impact.
+    color: ''
+  navbar:
+    light_color: false
+    transparent: false
+    transparent_light_color: false
+    search: false
+  height: false
+  id: ''
+  class: ''
 - template: section
   container: medium
   size: large
