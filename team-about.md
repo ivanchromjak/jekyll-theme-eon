@@ -196,7 +196,15 @@ sections:
     parallax: '0'
     cells:
     - width: 1-2
-      blocks: []
+      blocks:
+      - template: heading
+        block: heading
+        tag: h2
+        size: h1
+        align: left
+        width: full
+        title: Dynamically actualize viral innovation with performance based interfaces
+        color: ''
       animation: none
     - width: 1-2
       blocks:
