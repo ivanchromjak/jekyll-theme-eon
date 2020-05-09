@@ -41,7 +41,7 @@ sections:
     color: ''
   - template: margin
     block: margin
-    size: medium
+    size: default
   - template: block-button
     block: button
     text: Get Started
