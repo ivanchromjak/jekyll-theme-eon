@@ -44,7 +44,7 @@ sections:
     color: ''
   - template: margin
     block: margin
-    size: medium
+    size: large
   - template: image
     block: image
     align: center
