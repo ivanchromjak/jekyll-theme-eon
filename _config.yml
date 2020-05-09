@@ -36,27 +36,27 @@ authors:
   john:
     name: John Brown
     title: Support
-    avatar: avatar-john.png
+    avatar: avatar-2.jpg
   evan:
     name: Evan Wells
     title: Support
-    avatar: avatar-evan.png
+    avatar: avatar-3.jpg
   sara:
     name: Sara Galen
     title: Lead Developer
-    avatar: avatar-sara.png
+    avatar: avatar-1.jpg
   alex:
     title: Design Engineer
     name: Alex Koch
-    avatar: avatar-alex.png
+    avatar: avatar-4.jpg
   daniel:
     title: Developer
     name: Daniel Shultz
-    avatar: avatar-daniel.png
+    avatar: avatar-5.jpg
   tom:
     title: Developer
     name: Tom Farrell
-    avatar: avatar-tom.png
+    avatar: avatar-6.jpg
 # navbar:
 #   layout: default
 #   light_color: false
