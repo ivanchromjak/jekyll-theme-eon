@@ -75,7 +75,7 @@ sections:
     block: grid
     gap: small
     vertical_align: top
-    parallax: "-100"
+    parallax: '150'
     cells:
     - width: 1-3
       blocks:
