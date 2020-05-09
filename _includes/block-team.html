@@ -1,4 +1,4 @@
-<div class="uk-flex-center uk-text-center section-team" data-uk-grid>
+<div class="uk-flex-center uk-text-center uk-block-team uk-child-width-{{ block.grid | default: 'expand' }} uk-grid-{{ block.gap }}" data-uk-grid>
 
 	{% if block.authors != empty %}
 			{% assign authors = block.authors | split: ", " %}

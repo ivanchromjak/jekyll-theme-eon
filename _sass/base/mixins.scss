@@ -1107,26 +1107,26 @@
     }
   }
 
-  .section-team {
-    .uk-slider-items {
-      li {
-        opacity: .7;
-        &.uk-active {
-            opacity: 1;
-        };
-      }
-    }
+  // .uk-block-team {
+  //   .uk-slider-items {
+  //     li {
+  //       opacity: .7;
+  //       &.uk-active {
+  //           opacity: 1;
+  //       };
+  //     }
+  //   }
 
-    .uk-grid > div {
-      width: 128px;
-    }
+  //   .uk-grid > div {
+  //     width: 128px;
+  //   }
 
-    .uk-card {
-      img {
-          max-width: 86px;
-      }
-    }
-  }
+  //   .uk-card {
+  //     img {
+  //         max-width: 86px;
+  //     }
+  //   }
+  // }
 
   @media (min-width: $breakpoint-small) {
     .section-videos {
