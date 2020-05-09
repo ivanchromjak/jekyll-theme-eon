@@ -191,7 +191,7 @@ sections:
     masonry: false
   - template: margin
     block: margin
-    size: large
+    size: xlarge
   - template: grid
     block: grid
     gap: large
