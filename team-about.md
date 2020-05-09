@@ -77,6 +77,16 @@ sections:
     vertical_align: top
     parallax: '0'
     cells:
+    - width: expand
+      blocks:
+      - template: image
+        block: image
+        align: none
+        image: "/uploads/team-2.jpg"
+        alt: ''
+        caption: ''
+        lightbox: false
+      animation: none
     - width: 1-3
       blocks:
       - template: image
@@ -106,20 +116,6 @@ sections:
       animation: none
     divider: false
     masonry: false
-  - template: gallery
-    block: gallery
-    lightbox: true
-    grid: 1-3
-    gutter: medium
-    images:
-    - image: "/uploads/team-2.jpg"
-      caption: ''
-    - image: "/uploads/office-3.jpg"
-      caption: ''
-    - image: "/uploads/office-2.jpg"
-      caption: ''
-    - image: "/uploads/office-1.jpg"
-      caption: ''
   height: false
   id: ''
   class: ''
