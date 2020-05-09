@@ -41,7 +41,7 @@ sections:
     color: ''
   - template: block-button
     block: button
-    text: Contact Us
+    text: Get Started
     style: primary
     size: medium
     width: medium
