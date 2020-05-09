@@ -73,7 +73,7 @@ sections:
   blocks:
   - template: grid
     block: grid
-    gap: small
+    gap: default
     vertical_align: top
     parallax: '150'
     cells:
