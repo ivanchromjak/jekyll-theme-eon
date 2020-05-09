@@ -26,7 +26,7 @@ sections:
   blocks:
   - template: margin
     block: margin
-    size: medium
+    size: large
   - template: heading
     block: heading
     tag: h1
@@ -40,7 +40,7 @@ sections:
     align: center
     width: xsmall
     text: Professionally repurpose premium convergence without parallel testing procedures.
-      Holisticly myocardinate ubiquitous synergy after granular e-business.
+      Holisticly myocardinate ubiquitous synergy.
     color: ''
   navbar:
     light_color: false
