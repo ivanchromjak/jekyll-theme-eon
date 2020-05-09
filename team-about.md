@@ -231,6 +231,8 @@ sections:
   - template: team
     block: team
     authors: ''
+    grid: 1-3
+    gap: large
   height: false
   id: ''
   class: ''
