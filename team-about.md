@@ -189,9 +189,12 @@ sections:
       animation: none
     divider: false
     masonry: false
+  - template: margin
+    block: margin
+    size: large
   - template: grid
     block: grid
-    gap: default
+    gap: large
     vertical_align: top
     parallax: '0'
     cells:
@@ -227,9 +230,9 @@ sections:
   id: ''
   class: ''
 - template: section
-  container: large
+  container: small
   size: medium
-  remove_padding: top
+  remove_padding: none
   horizontal_align: left
   background:
     style: default
@@ -268,8 +271,8 @@ sections:
   - template: team
     block: team
     authors: ''
-    grid: 1-4
-    gap: large
+    grid: 1-3
+    gap: medium
   height: false
   id: ''
   class: ''
