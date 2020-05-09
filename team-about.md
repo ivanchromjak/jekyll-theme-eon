@@ -27,34 +27,21 @@ sections:
   - template: margin
     block: margin
     size: medium
-  - template: cards
-    block: cards
-    media: left
-    style: none
-    grid: 1-1
-    gutter: large
-    cards:
-    - title: ''
-      icon: ''
-      image: "/uploads/team.jpg"
-      blocks:
-      - template: heading
-        block: heading
-        tag: h1
-        size: medium
-        align: left
-        width: full
-        title: Small team. Big global impact.
-        color: ''
-      - template: lead
-        block: lead
-        align: left
-        width: full
-        text: Professionally repurpose premium convergence without parallel testing
-          procedures. Holisticly myocardinate ubiquitous synergy after granular e-business.
-        color: ''
-    icon_color: ''
-    icon_size: 
+  - template: heading
+    block: heading
+    tag: h1
+    size: medium
+    align: center
+    width: small
+    title: Small team. Big global impact.
+    color: ''
+  - template: lead
+    block: lead
+    align: center
+    width: xsmall
+    text: Professionally repurpose premium convergence without parallel testing procedures.
+      Holisticly myocardinate ubiquitous synergy after granular e-business.
+    color: ''
   navbar:
     light_color: false
     transparent: false
@@ -193,7 +180,7 @@ sections:
 - template: section
   container: large
   size: medium
-  remove_padding: none
+  remove_padding: top
   horizontal_align: left
   background:
     style: default
