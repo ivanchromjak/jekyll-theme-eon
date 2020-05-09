@@ -33,8 +33,8 @@ sections:
     color: "#FFFFFF"
   - template: lead
     block: lead
-    align: left
-    width: full
+    align: center
+    width: xsmall
     text: Continually integrate resource maximizing customer service via enabled niches
       distinctively optimize worldwide mindshare and bricks-and-clicks niche markets
     color: ''
