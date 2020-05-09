@@ -3,7 +3,7 @@
   <p>Create Instagram <a href="https://instagram.pixelunion.net/">access token</a> and add it to _config.yml file, e.g. instagram_accesstoken: 12537527232323223</p>
 </div>
 {% endunless %}
-<div id="instagram" class="uk-child-width-1-2@s uk-child-width-{{ block.grid | default: '1-4' }}@m{% if block.gutter %} uk-grid-{{ block.gutter }}{% endif %}" data-uk-grid></div>
+<div id="instagram" class="uk-block-instagram uk-child-width-1-2@s uk-child-width-{{ block.grid | default: '1-4' }}@m{% if block.gutter %} uk-grid-{{ block.gutter }}{% endif %}" data-uk-grid></div>
 <script>
   instafetch.init({
     accessToken: '{{ site.instagram_accesstoken }}',

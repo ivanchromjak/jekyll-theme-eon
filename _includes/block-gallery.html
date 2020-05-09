@@ -1,4 +1,4 @@
-<div class="uk-flex uk-flex-center uk-child-width-1-2@s uk-child-width-{{ block.grid | default: '1-4' }}@m{% if block.gutter != empty %} uk-grid-{{ block.gutter }}{% endif %}" data-uk-grid="masonry: true"{% if block.lightbox %} data-uk-lightbox="animation: slide"{% endif %}>
+<div class="uk-block-gallery uk-flex uk-flex-center uk-child-width-1-2@s uk-child-width-{{ block.grid | default: '1-4' }}@m{% if block.gutter != empty %} uk-grid-{{ block.gutter }}{% endif %}" data-uk-grid="masonry: true"{% if block.lightbox %} data-uk-lightbox="animation: slide"{% endif %}>
   {% for image in block.images %}
     <div>
       {% if block.lightbox %}

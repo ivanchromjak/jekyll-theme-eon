@@ -1,4 +1,4 @@
-<div class="uk-flex-center uk-text-center uk-block-team uk-child-width-{{ block.grid | default: 'expand' }} uk-grid-{{ block.gap }}" data-uk-grid>
+<div class="uk-block-team uk-flex-center uk-text-center uk-block-team uk-child-width-{{ block.grid | default: 'expand' }} uk-grid-{{ block.gap }}" data-uk-grid>
 
 	{% if block.authors != empty %}
 			{% assign authors = block.authors | split: ", " %}
@@ -14,7 +14,7 @@
 					{% assign item = author[1] %}
 			{% endif %}
 				<div>
-					<div class="uk-card">
+					<div class="">
 							{% if item.avatar %}
 									{% if item.avatar contains 'http' %}
 											{% assign domain = '' %}
