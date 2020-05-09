@@ -48,7 +48,7 @@ sections:
     cards:
     - title: ''
       icon: ''
-      image: ''
+      image: "/uploads/team.jpg"
       blocks:
       - template: heading
         block: heading
