@@ -47,17 +47,27 @@ sections:
     grid: 1-6
     gutter: large
     images:
-    - image: "/uploads/brand-shopify.svg"
+    - image: "/uploads/brand-color-stripe.png"
       caption: ''
-    - image: "/uploads/brand-netflix.svg"
+    - image: "/uploads/brand-color-spotify.png"
       caption: ''
-    - image: "/uploads/brand-google.svg"
+    - image: "/uploads/brand-color-pinterest.png"
       caption: ''
-    - image: "/uploads/brand-airbnb.svg"
+    - image: "/uploads/brand-color-intercom.png"
       caption: ''
-    - image: "/uploads/brand-slack.svg"
+    - image: "/uploads/brand-color-netflix.png"
       caption: ''
-    - image: "/uploads/brand-spotify.svg"
+    - image: "/uploads/brand-color-instagram.png"
+      caption: ''
+    - image: "/uploads/brand-color-facebook.png"
+      caption: ''
+    - image: "/uploads/brand-color-dribbble.png"
+      caption: ''
+    - image: "/uploads/brand-color-digitalocean.png"
+      caption: ''
+    - image: "/uploads/brand-color-coinbase.png"
+      caption: ''
+    - image: "/uploads/brand-color-airbnb.png"
       caption: ''
   height: false
   id: ''
