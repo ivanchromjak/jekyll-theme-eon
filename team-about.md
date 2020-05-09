@@ -4,7 +4,7 @@ title: Team About
 sections:
 - template: section
   container: medium
-  size: medium
+  size: large
   remove_padding: none
   horizontal_align: left
   background:
@@ -29,7 +29,7 @@ sections:
 - template: section
   container: small
   size: large
-  remove_padding: none
+  remove_padding: top
   horizontal_align: center
   background:
     style: default
