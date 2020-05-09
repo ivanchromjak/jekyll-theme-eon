@@ -53,7 +53,7 @@ sections:
 - template: section
   container: large
   size: large
-  remove_padding: top
+  remove_padding: none
   horizontal_align: left
   background:
     style: default
