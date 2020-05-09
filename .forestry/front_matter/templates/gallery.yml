@@ -9,6 +9,24 @@ fields:
   label: Block
   hidden: true
   default: gallery
+- name: images
+  type: field_group_list
+  fields:
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
+  - name: caption
+    type: text
+    config:
+      required: false
+    label: Caption
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Images
 - name: lightbox
   type: boolean
   label: Lightbox
@@ -46,21 +64,16 @@ fields:
       file: 
       path: 
   label: Gutter
-- name: images
-  type: field_group_list
-  fields:
-  - name: image
-    type: file
-    config:
-      maxSize: 64
-    label: Image
-  - name: caption
-    type: text
-    config:
-      required: false
-    label: Caption
+- name: masonry
+  type: boolean
+  label: Masonry
+- name: parallax
+  type: number
+  label: Parallax
+  description: ''
+  default: 0
+  required: true
   config:
     min: 
     max: 
-    labelField: 
-  label: Images
+    step: 
