@@ -191,7 +191,7 @@ sections:
     masonry: false
   - template: grid
     block: grid
-    gap: default
+    gap: large
     vertical_align: top
     parallax: '0'
     cells:
