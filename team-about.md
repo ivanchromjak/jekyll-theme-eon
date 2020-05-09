@@ -68,6 +68,22 @@ sections:
     overlay_color: ''
   animation: fade
   blocks:
+  - template: gallery
+    block: gallery
+    lightbox: true
+    grid: 1-3
+    gutter: medium
+    images:
+    - image: "/uploads/office-2.jpg"
+      caption: ''
+    - image: "/uploads/office-4.jpg"
+      caption: ''
+    - image: "/uploads/office-3.jpg"
+      caption: ''
+    - image: "/uploads/office-1.jpg"
+      caption: ''
+    - image: "/uploads/header-9.jpeg"
+      caption: ''
   - template: grid
     block: grid
     gap: default
