@@ -264,7 +264,7 @@ sections:
     color: ''
   - template: margin
     block: margin
-    size: medium
+    size: large
   - template: team
     block: team
     authors: ''
@@ -276,7 +276,7 @@ sections:
 - template: section
   container: medium
   size: large
-  remove_padding: top
+  remove_padding: none
   horizontal_align: left
   background:
     style: default
