@@ -167,7 +167,7 @@ sections:
         size: h1
         align: left
         width: full
-        title: Holisticly streamline collaborative e-tailers and flexible platforms.
+        title: Holisticly streamline collaborative platforms
         color: ''
       animation: none
     - width: 1-2
