@@ -24,21 +24,6 @@ sections:
     overlay_color: ''
   animation: slide-bottom
   blocks:
-  - template: heading
-    block: heading
-    tag: h1
-    size: small
-    align: center
-    width: full
-    title: Small team. Big impact.
-    color: ''
-  - template: lead
-    block: lead
-    align: center
-    width: full
-    text: Dynamically monetize an expanded array of infomediaries with exceptional
-      catalysts for change.
-    color: ''
   - template: cards
     block: cards
     media: left
