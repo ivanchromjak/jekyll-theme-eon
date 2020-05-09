@@ -24,6 +24,9 @@ sections:
     overlay_color: ''
   animation: slide-bottom
   blocks:
+  - template: margin
+    block: margin
+    size: medium
   - template: cards
     block: cards
     media: left
