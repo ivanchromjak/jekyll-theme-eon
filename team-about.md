@@ -258,7 +258,7 @@ sections:
   - template: grid
     block: grid
     gap: large
-    vertical_align: middle
+    vertical_align: top
     parallax: '0'
     cells:
     - width: 1-2
@@ -287,8 +287,9 @@ sections:
         width: full
         text: "Globally expedite covalent functionalities and ubiquitous core competencies.
           Appropriately synthesize transparent partnerships through covalent intellectual
-          capital.\n\n10400 Queen Avenue  \nStonebanks  \n92202 New World \n\nTel:
-          023 934 9393"
+          capital. Dynamically foster client-focused networks without collaborative
+          methods of empowerment.\n\n10400 Queen Avenue  \nStonebanks  \n92202 New
+          World\n\nTel: 023 934 9393"
         color: ''
       animation: none
     divider: false
