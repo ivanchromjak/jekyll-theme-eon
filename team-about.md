@@ -79,11 +79,11 @@ sections:
     images:
     - image: "/uploads/team-2.jpg"
       caption: ''
-    - image: ''
+    - image: "/uploads/office-3.jpg"
       caption: ''
-    - image: ''
+    - image: "/uploads/office-2.jpg"
       caption: ''
-    - image: ''
+    - image: "/uploads/office-1.jpg"
       caption: ''
   height: false
   id: ''
