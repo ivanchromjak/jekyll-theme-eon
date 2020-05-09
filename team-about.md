@@ -108,7 +108,15 @@ sections:
         color: ''
       animation: none
     - width: 1-1
-      blocks: []
+      blocks:
+      - template: block-button
+        block: button
+        text: Apply Now
+        style: primary
+        size: medium
+        width: medium
+        url: "/contact/"
+        blank: false
       animation: none
     divider: false
     masonry: false
