@@ -210,10 +210,16 @@ sections:
   blocks:
   - template: grid
     block: grid
-    gap: default
+    gap: large
     vertical_align: top
     parallax: '0'
-    cells: []
+    cells:
+    - width: 1-1
+      blocks: []
+      animation: none
+    - width: 1-1
+      blocks: []
+      animation: none
     divider: false
     masonry: false
   height: false
