@@ -32,6 +32,13 @@ sections:
     width: full
     title: Small team. Big impact.
     color: ''
+  - template: lead
+    block: lead
+    align: center
+    width: full
+    text: Dynamically monetize an expanded array of infomediaries with exceptional
+      catalysts for change.
+    color: ''
   navbar:
     light_color: false
     transparent: false
