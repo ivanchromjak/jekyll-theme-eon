@@ -214,8 +214,15 @@ sections:
     vertical_align: top
     parallax: '0'
     cells:
-    - width: 1-1
-      blocks: []
+    - width: 1-2
+      blocks:
+      - template: google-map
+        block: google-map
+        zoom: '14'
+        style: silver
+        height: xlarge
+        latitude: '19.419897'
+        longitude: "-99.164967"
       animation: none
     - width: 1-1
       blocks: []
