@@ -51,7 +51,7 @@ sections:
     masonry: false
   - template: gallery
     block: gallery
-    lightbox: true
+    lightbox: false
     grid: 1-6
     gutter: large
     images:
