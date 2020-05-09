@@ -265,13 +265,13 @@ sections:
         block: heading
         tag: h2
         size: h1
-        align: left
+        align: center
         width: full
         title: Interested in joining our awesome team?
         color: ''
       - template: lead
         block: lead
-        align: left
+        align: center
         width: small
         text: Assertively engineer timely e-business before high standards in infrastructures
           cultivate competitive e-business and virtual leverage existing interoperable
