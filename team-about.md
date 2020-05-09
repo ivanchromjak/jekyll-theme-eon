@@ -189,6 +189,32 @@ sections:
       animation: none
     divider: false
     masonry: false
+  - template: grid
+    block: grid
+    gap: default
+    vertical_align: top
+    parallax: '0'
+    cells:
+    - width: 1-2
+      blocks: []
+      animation: none
+    - width: 1-2
+      blocks:
+      - template: text
+        block: text
+        align: left
+        width: full
+        text: "Competently facilitate value-added outsourcing before team building
+          e-markets. Dramatically redefine best-of-breed portals and pandemic infrastructures.
+          Continually transform impactful sources through client-centered experiences.
+          Proactively network value-added convergence rather than stand-alone applications.
+          \n\nGlobally repurpose an expanded array of scenarios with frictionless
+          outsourcing. Continually maximize empowered architectures with 2.0 technology.
+          Competently procrastinate focused infrastructures whereas high-payoff metrics."
+        color: ''
+      animation: none
+    divider: false
+    masonry: false
   height: false
   id: ''
   class: ''
