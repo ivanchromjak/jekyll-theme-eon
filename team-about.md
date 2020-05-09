@@ -231,7 +231,7 @@ sections:
   class: ''
 - template: section
   container: small
-  size: medium
+  size: large
   remove_padding: none
   horizontal_align: left
   background:
