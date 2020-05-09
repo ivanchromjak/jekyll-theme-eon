@@ -114,6 +114,16 @@ sections:
         caption: ''
         lightbox: false
       animation: none
+    - width: 1-3
+      blocks:
+      - template: image
+        block: image
+        align: none
+        image: "/uploads/header-9.jpeg"
+        alt: ''
+        caption: ''
+        lightbox: false
+      animation: none
     divider: false
     masonry: false
   height: false
