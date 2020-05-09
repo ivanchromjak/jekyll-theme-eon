@@ -73,9 +73,9 @@ sections:
   blocks:
   - template: grid
     block: grid
-    gap: default
+    gap: small
     vertical_align: top
-    parallax: '0'
+    parallax: '100'
     cells:
     - width: 1-3
       blocks:
@@ -125,7 +125,7 @@ sections:
         lightbox: false
       animation: none
     divider: false
-    masonry: false
+    masonry: true
   height: false
   id: ''
   class: ''
