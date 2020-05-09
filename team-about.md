@@ -176,10 +176,15 @@ sections:
         block: text
         align: left
         width: full
-        text: |-
-          Appropriately iterate premier schemas and standardized e-tailers. Continually deploy optimal scenarios after mission-critical intellectual capital. Synergistically target technically sound internal or "organic" sources rather than enterprise intellectual capital. Intrinsicly extend process-centric solutions and go forward information. Interactively provide access to functionalized action items for revolutionary niches.
-
-          Professionally repurpose premium convergence without parallel testing procedures. Holisticly myocardinate ubiquitous synergy after granular e-business. Progressively myocardinate ubiquitous relationships through principle-centered expertise. Authoritatively evisculate state of the art growth strategies and innovative innovation. Distinctively deliver low-risk high-yield materials without timely networks.
+        text: "Appropriately iterate premier schemas and standardized e-tailers. Continually
+          deploy optimal scenarios after mission-critical intellectual capital. Synergistically
+          target technically sound internal or \"organic\" sources rather than enterprise
+          intellectual capital. Intrinsicly extend process-centric solutions and go
+          forward information. \n\nInteractively provide access to functionalized
+          action items for revolutionary niches. Professionally repurpose premium
+          convergence without parallel testing procedures ubiquitous synergy after
+          granular e-business. Progressively myocardinate ubiquitous relationships
+          through principle-centered expertise. "
         color: ''
       animation: none
     divider: false
