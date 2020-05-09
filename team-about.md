@@ -47,8 +47,8 @@ sections:
         block: lead
         align: left
         width: full
-        text: Dynamically monetize an expanded array and functional catalysts for
-          change of infomediaries with exceptional catalysts for change.
+        text: Professionally repurpose premium convergence without parallel testing
+          procedures. Holisticly myocardinate ubiquitous synergy after granular e-business.
         color: ''
     icon_color: ''
     icon_size: 
