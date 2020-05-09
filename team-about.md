@@ -77,22 +77,22 @@ sections:
     vertical_align: top
     parallax: '0'
     cells:
-    - width: expand
-      blocks:
-      - template: image
-        block: image
-        align: none
-        image: "/uploads/team-2.jpg"
-        alt: ''
-        caption: ''
-        lightbox: false
-      animation: none
     - width: 1-3
       blocks:
       - template: image
         block: image
         align: none
         image: "/uploads/team-4.jpg"
+        alt: ''
+        caption: ''
+        lightbox: false
+      animation: none
+    - width: expand
+      blocks:
+      - template: image
+        block: image
+        align: none
+        image: "/uploads/team-2.jpg"
         alt: ''
         caption: ''
         lightbox: false
