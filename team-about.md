@@ -4,11 +4,11 @@ title: Team About
 sections:
 - template: section
   container: medium
-  size: medium
+  size: large
   remove_padding: none
   horizontal_align: left
   background:
-    style: default
+    style: primary
     align: center-center
     size: cover
     parallax: '0'
@@ -22,7 +22,30 @@ sections:
     video: ''
     overlay_color: ''
   animation: none
-  blocks: []
+  blocks:
+  - template: heading
+    block: heading
+    tag: h2
+    size: h1
+    align: center
+    width: full
+    title: You’re in a good company
+    color: "#FFFFFF"
+  - template: lead
+    block: lead
+    align: left
+    width: full
+    text: Continually integrate resource maximizing customer service via enabled niches
+      distinctively optimize worldwide mindshare and bricks-and-clicks niche markets
+    color: ''
+  - template: grid
+    block: grid
+    gap: default
+    vertical_align: top
+    parallax: '0'
+    cells: []
+    divider: false
+    masonry: false
   height: false
   id: ''
   class: ''
