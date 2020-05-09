@@ -30,7 +30,7 @@ sections:
   - template: heading
     block: heading
     tag: h1
-    size: medium
+    size: small
     align: center
     width: small
     title: Small team. Big global impact.
