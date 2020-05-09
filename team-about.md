@@ -224,7 +224,7 @@ sections:
   - template: lead
     block: lead
     align: center
-    width: full
+    width: xsmall
     text: Holisticly conceptualize intuitive e-markets with enabled vortals. Completely
       grow team driven e-commerce with process-centric interfaces.
     color: ''
