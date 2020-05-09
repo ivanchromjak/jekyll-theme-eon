@@ -6,7 +6,7 @@ sections:
   block: header
   container: small
   size: large
-  remove_padding: top
+  remove_padding: bottom
   horizontal_align: left
   background:
     style: default
@@ -24,9 +24,6 @@ sections:
     overlay_color: ''
   animation: fade
   blocks:
-  - template: margin
-    block: margin
-    size: xlarge
   - template: heading
     block: heading
     tag: h1
