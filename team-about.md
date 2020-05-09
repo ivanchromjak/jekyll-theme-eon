@@ -86,58 +86,6 @@ sections:
       caption: ''
     masonry: true
     parallax: '100'
-  - template: grid
-    block: grid
-    gap: default
-    vertical_align: top
-    parallax: '150'
-    cells:
-    - width: 1-3
-      blocks:
-      - template: image
-        block: image
-        align: none
-        image: "/uploads/office-4.jpg"
-        alt: ''
-        caption: ''
-        lightbox: false
-      animation: none
-    - width: 1-3
-      blocks:
-      - template: image
-        block: image
-        align: none
-        image: "/uploads/office-3.jpg"
-        alt: ''
-        caption: ''
-        lightbox: false
-      - template: image
-        block: image
-        align: none
-        image: "/uploads/office-1.jpg"
-        alt: ''
-        caption: ''
-        lightbox: false
-      animation: none
-    - width: 1-3
-      blocks:
-      - template: image
-        block: image
-        align: none
-        image: "/uploads/team-2.jpg"
-        alt: ''
-        caption: ''
-        lightbox: false
-      - template: image
-        block: image
-        align: none
-        image: "/uploads/header-9.jpeg"
-        alt: ''
-        caption: ''
-        lightbox: false
-      animation: none
-    divider: false
-    masonry: true
   height: false
   id: ''
   class: ''
