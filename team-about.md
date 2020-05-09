@@ -22,7 +22,7 @@ sections:
     custom_image_width: false
     video: ''
     overlay_color: ''
-  animation: slide-bottom
+  animation: fade
   blocks:
   - template: margin
     block: margin
@@ -135,10 +135,10 @@ sections:
 - template: section
   container: medium
   size: large
-  remove_padding: top
+  remove_padding: none
   horizontal_align: left
   background:
-    style: default
+    style: muted
     align: center-center
     size: cover
     parallax: '0'
@@ -189,6 +189,40 @@ sections:
       animation: none
     divider: false
     masonry: false
+  - template: grid
+    block: grid
+    gap: default
+    vertical_align: top
+    parallax: '0'
+    cells:
+    - width: 1-2
+      blocks:
+      - template: heading
+        block: heading
+        tag: h2
+        size: h1
+        align: left
+        width: full
+        title: Dynamically actualize viral innovation with performance based interfaces
+        color: ''
+      animation: none
+    - width: 1-2
+      blocks:
+      - template: text
+        block: text
+        align: left
+        width: full
+        text: "Competently facilitate value-added outsourcing before team building
+          e-markets. Dramatically redefine best-of-breed portals and pandemic infrastructures.
+          Continually transform impactful sources through client-centered experiences.
+          Proactively network value-added convergence rather than stand-alone applications.
+          \n\nGlobally repurpose an expanded array of scenarios with frictionless
+          outsourcing. Continually maximize empowered architectures with 2.0 technology.
+          Competently procrastinate focused infrastructures whereas high-payoff metrics."
+        color: ''
+      animation: none
+    divider: false
+    masonry: false
   height: false
   id: ''
   class: ''
@@ -230,7 +264,7 @@ sections:
     color: ''
   - template: margin
     block: margin
-    size: medium
+    size: large
   - template: team
     block: team
     authors: ''
@@ -242,7 +276,7 @@ sections:
 - template: section
   container: medium
   size: large
-  remove_padding: top
+  remove_padding: none
   horizontal_align: left
   background:
     style: default
