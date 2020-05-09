@@ -84,6 +84,8 @@ sections:
       caption: ''
     - image: "/uploads/header-9.jpeg"
       caption: ''
+    masonry: true
+    parallax: '100'
   - template: grid
     block: grid
     gap: default
@@ -255,6 +257,8 @@ sections:
       caption: ''
     - image: "/uploads/brand-color-discord.png"
       caption: ''
+    masonry: false
+    parallax: 
   height: false
   id: ''
   class: ''
