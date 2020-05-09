@@ -26,7 +26,7 @@ sections:
   blocks:
   - template: margin
     block: margin
-    size: large
+    size: xlarge
   - template: heading
     block: heading
     tag: h1
