@@ -47,8 +47,6 @@ sections:
     grid: 1-6
     gutter: medium
     images:
-    - image: "/uploads/brand-color-discord.png"
-      caption: ''
     - image: "/uploads/brand-color-stripe.png"
       caption: ''
     - image: "/uploads/brand-color-spotify.png"
@@ -70,6 +68,8 @@ sections:
     - image: "/uploads/brand-color-coinbase.png"
       caption: ''
     - image: "/uploads/brand-color-airbnb.png"
+      caption: ''
+    - image: "/uploads/brand-color-discord.png"
       caption: ''
   height: false
   id: ''
