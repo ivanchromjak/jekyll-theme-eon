@@ -113,9 +113,6 @@ sections:
         alt: ''
         caption: ''
         lightbox: false
-      animation: none
-    - width: 1-3
-      blocks:
       - template: image
         block: image
         align: none
