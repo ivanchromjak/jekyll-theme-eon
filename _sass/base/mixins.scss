@@ -787,6 +787,9 @@
   .uk-block-gallery, .uk-block-image, .uk-block-team {
     img {
       border-radius: $border-rounded-border-radius-large;
+      & + .uk-overlay {
+        border-radius: $border-rounded-border-radius-large;
+      }
     }
   }
 
