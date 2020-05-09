@@ -47,6 +47,8 @@ sections:
     grid: 1-6
     gutter: medium
     images:
+    - image: "/uploads/brand-color-discord.png"
+      caption: ''
     - image: "/uploads/brand-color-stripe.png"
       caption: ''
     - image: "/uploads/brand-color-spotify.png"
