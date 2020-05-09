@@ -104,7 +104,7 @@ sections:
         caption: ''
         lightbox: false
       animation: none
-    - width: expand
+    - width: 1-3
       blocks:
       - template: image
         block: image
