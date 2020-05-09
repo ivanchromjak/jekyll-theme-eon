@@ -32,13 +32,13 @@ sections:
     tag: h1
     size: medium
     align: center
-    width: full
+    width: small
     title: Small team. Big global impact.
     color: ''
   - template: lead
     block: lead
     align: center
-    width: full
+    width: xsmall
     text: Professionally repurpose premium convergence without parallel testing procedures.
       Holisticly myocardinate ubiquitous synergy after granular e-business.
     color: ''
