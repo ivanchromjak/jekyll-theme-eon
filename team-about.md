@@ -63,7 +63,7 @@ sections:
   blocks:
   - template: grid
     block: grid
-    gap: default
+    gap: large
     vertical_align: top
     parallax: '0'
     cells:
@@ -78,7 +78,7 @@ sections:
         title: Holisticly streamline collaborative e-tailers and flexible platforms.
         color: ''
       animation: none
-    - width: 1-1
+    - width: 1-2
       blocks:
       - template: text
         block: text
