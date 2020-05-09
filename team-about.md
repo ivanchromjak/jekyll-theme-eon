@@ -51,6 +51,44 @@ sections:
   id: ''
   class: ''
 - template: section
+  container: medium
+  size: large
+  remove_padding: top
+  horizontal_align: left
+  background:
+    style: default
+    align: center-center
+    size: cover
+    parallax: '0'
+    image_width: 1-2
+    horizontal_align: left
+    overlay_opacity: 0.6
+    shape_top: none
+    color: ''
+    image: ''
+    custom_image_width: false
+    video: ''
+    overlay_color: ''
+  animation: fade
+  blocks:
+  - template: gallery
+    block: gallery
+    lightbox: true
+    grid: 1-3
+    gutter: medium
+    images:
+    - image: "/uploads/team-2.jpg"
+      caption: ''
+    - image: ''
+      caption: ''
+    - image: ''
+      caption: ''
+    - image: ''
+      caption: ''
+  height: false
+  id: ''
+  class: ''
+- template: section
   container: small
   size: large
   remove_padding: top
