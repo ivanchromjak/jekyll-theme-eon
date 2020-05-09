@@ -46,7 +46,7 @@ sections:
     block: button
     text: Get Started
     style: primary
-    size: medium
+    size: regular
     width: medium
     url: "#"
     blank: false
@@ -54,7 +54,7 @@ sections:
     block: button
     text: Contact Us
     style: primary-outline
-    size: medium
+    size: regular
     width: medium
     url: "#"
     blank: false
