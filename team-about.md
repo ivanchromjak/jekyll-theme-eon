@@ -87,16 +87,6 @@ sections:
         caption: ''
         lightbox: false
       animation: none
-    - width: expand
-      blocks:
-      - template: image
-        block: image
-        align: none
-        image: "/uploads/team-2.jpg"
-        alt: ''
-        caption: ''
-        lightbox: false
-      animation: none
     - width: 1-4
       blocks:
       - template: image
@@ -110,6 +100,16 @@ sections:
         block: image
         align: none
         image: "/uploads/office-1.jpg"
+        alt: ''
+        caption: ''
+        lightbox: false
+      animation: none
+    - width: expand
+      blocks:
+      - template: image
+        block: image
+        align: none
+        image: "/uploads/team-2.jpg"
         alt: ''
         caption: ''
         lightbox: false
