@@ -7,7 +7,7 @@ sections:
   container: small
   size: large
   remove_padding: bottom
-  horizontal_align: left
+  horizontal_align: center
   background:
     style: default
     align: center-center
@@ -39,6 +39,9 @@ sections:
     text: Professionally repurpose premium convergence without parallel testing procedures.
       Holisticly myocardinate ubiquitous synergy.
     color: ''
+  - template: margin
+    block: margin
+    size: medium
   - template: block-button
     block: button
     text: Get Started
