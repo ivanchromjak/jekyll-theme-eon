@@ -228,6 +228,9 @@ sections:
     text: Holisticly conceptualize intuitive e-markets with enabled vortals. Completely
       grow team driven e-commerce with process-centric interfaces.
     color: ''
+  - template: margin
+    block: margin
+    size: medium
   - template: team
     block: team
     authors: ''
