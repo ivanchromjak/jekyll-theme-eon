@@ -206,7 +206,7 @@ sections:
         size: h1
         align: left
         width: full
-        title: Dynamically actualize viral innovation with performance based interfaces
+        title: Dynamically actualize viral innovation interface
         color: ''
       animation: none
     - width: 1-2
