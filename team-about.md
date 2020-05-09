@@ -233,7 +233,7 @@ sections:
   id: ''
   class: ''
 - template: section
-  container: xsmall
+  container: small
   size: large
   remove_padding: none
   horizontal_align: center
@@ -256,7 +256,7 @@ sections:
   - template: grid
     block: grid
     gap: default
-    vertical_align: middle
+    vertical_align: top
     parallax: '0'
     cells:
     - width: 1-1
