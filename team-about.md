@@ -6,7 +6,7 @@ sections:
   block: header
   container: medium
   size: large
-  remove_padding: none
+  remove_padding: top
   horizontal_align: left
   background:
     style: default
