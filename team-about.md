@@ -6,7 +6,7 @@ sections:
   container: small
   size: large
   remove_padding: none
-  horizontal_align: left
+  horizontal_align: center
   background:
     style: default
     align: center-center
