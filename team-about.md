@@ -127,6 +127,53 @@ sections:
   container: small
   size: large
   remove_padding: top
+  horizontal_align: left
+  background:
+    style: default
+    align: center-center
+    size: cover
+    parallax: '0'
+    image_width: 1-2
+    horizontal_align: left
+    overlay_opacity: 0.6
+    shape_top: none
+    color: ''
+    image: ''
+    custom_image_width: false
+    video: ''
+    overlay_color: ''
+  animation: none
+  blocks:
+  - template: heading
+    block: heading
+    tag: h2
+    size: h1
+    align: center
+    width: full
+    title: Creative minds working for your business
+    color: ''
+  - template: lead
+    block: lead
+    align: center
+    width: xsmall
+    text: Holisticly conceptualize intuitive e-markets with enabled vortals. Completely
+      grow team driven e-commerce with process-centric interfaces.
+    color: ''
+  - template: margin
+    block: margin
+    size: large
+  - template: team
+    block: team
+    authors: ''
+    grid: 1-3
+    gap: medium
+  height: false
+  id: ''
+  class: ''
+- template: section
+  container: small
+  size: large
+  remove_padding: top
   horizontal_align: center
   background:
     style: default
@@ -192,53 +239,6 @@ sections:
       caption: ''
     - image: "/uploads/brand-color-discord.png"
       caption: ''
-  height: false
-  id: ''
-  class: ''
-- template: section
-  container: small
-  size: large
-  remove_padding: top
-  horizontal_align: left
-  background:
-    style: default
-    align: center-center
-    size: cover
-    parallax: '0'
-    image_width: 1-2
-    horizontal_align: left
-    overlay_opacity: 0.6
-    shape_top: none
-    color: ''
-    image: ''
-    custom_image_width: false
-    video: ''
-    overlay_color: ''
-  animation: none
-  blocks:
-  - template: heading
-    block: heading
-    tag: h2
-    size: h1
-    align: center
-    width: full
-    title: Creative minds working for your business
-    color: ''
-  - template: lead
-    block: lead
-    align: center
-    width: xsmall
-    text: Holisticly conceptualize intuitive e-markets with enabled vortals. Completely
-      grow team driven e-commerce with process-centric interfaces.
-    color: ''
-  - template: margin
-    block: margin
-    size: large
-  - template: team
-    block: team
-    authors: ''
-    grid: 1-3
-    gap: medium
   height: false
   id: ''
   class: ''
