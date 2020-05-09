@@ -5,7 +5,7 @@ sections:
 - template: header
   block: header
   container: small
-  size: large
+  size: medium
   remove_padding: bottom
   horizontal_align: center
   background:
@@ -58,6 +58,9 @@ sections:
     width: medium
     url: "#"
     blank: false
+  - template: margin
+    block: margin
+    size: default
   navbar:
     light_color: false
     transparent: false
