@@ -42,9 +42,9 @@ sections:
   - template: cards
     block: cards
     media: left
-    style: default
-    grid: 1-3
-    gutter: default
+    style: none
+    grid: 1-1
+    gutter: large
     cards:
     - title: ''
       icon: ''
