@@ -236,7 +236,7 @@ sections:
   container: medium
   size: large
   remove_padding: none
-  horizontal_align: left
+  horizontal_align: center
   background:
     style: muted
     align: center-center
@@ -251,7 +251,7 @@ sections:
     custom_image_width: false
     video: ''
     overlay_color: ''
-  animation: none
+  animation: slide-bottom
   blocks:
   - template: grid
     block: grid
@@ -259,7 +259,7 @@ sections:
     vertical_align: middle
     parallax: '0'
     cells:
-    - width: expand
+    - width: 1-1
       blocks:
       - template: heading
         block: heading
@@ -278,7 +278,7 @@ sections:
           leadership imperatives.
         color: ''
       animation: none
-    - width: auto
+    - width: 1-1
       blocks:
       - template: block-button
         block: button
