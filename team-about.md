@@ -45,7 +45,7 @@ sections:
     block: gallery
     lightbox: false
     grid: 1-6
-    gutter: large
+    gutter: medium
     images:
     - image: "/uploads/brand-color-stripe.png"
       caption: ''
