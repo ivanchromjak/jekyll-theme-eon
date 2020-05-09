@@ -39,6 +39,22 @@ sections:
     text: Professionally repurpose premium convergence without parallel testing procedures.
       Holisticly myocardinate ubiquitous synergy.
     color: ''
+  - template: block-button
+    block: button
+    text: Contact Us
+    style: primary
+    size: medium
+    width: medium
+    url: "#"
+    blank: false
+  - template: block-button
+    block: button
+    text: Contact Us
+    style: primary-outline
+    size: medium
+    width: medium
+    url: "#"
+    blank: false
   navbar:
     light_color: false
     transparent: false
