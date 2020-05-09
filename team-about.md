@@ -73,8 +73,8 @@ sections:
   id: ''
   class: ''
 - template: section
-  container: large
-  size: medium
+  container: medium
+  size: large
   remove_padding: none
   horizontal_align: left
   background:
