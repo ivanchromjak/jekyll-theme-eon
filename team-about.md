@@ -234,7 +234,7 @@ sections:
   - template: team
     block: team
     authors: ''
-    grid: 1-3
+    grid: 1-4
     gap: large
   height: false
   id: ''
