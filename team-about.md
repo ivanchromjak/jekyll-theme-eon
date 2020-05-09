@@ -230,7 +230,7 @@ sections:
   id: ''
   class: ''
 - template: section
-  container: large
+  container: small
   size: medium
   remove_padding: none
   horizontal_align: left
@@ -271,8 +271,8 @@ sections:
   - template: team
     block: team
     authors: ''
-    grid: 1-4
-    gap: large
+    grid: 1-3
+    gap: medium
   height: false
   id: ''
   class: ''
