@@ -42,6 +42,9 @@ sections:
     text: Professionally repurpose premium convergence without parallel testing procedures.
       Holisticly myocardinate ubiquitous synergy.
     color: ''
+  - template: margin
+    block: margin
+    size: medium
   - template: image
     block: image
     align: center
