@@ -5,7 +5,7 @@ sections:
 - template: header
   block: header
   container: medium
-  size: medium
+  size: large
   remove_padding: none
   horizontal_align: left
   background:
@@ -38,7 +38,7 @@ sections:
       - template: heading
         block: heading
         tag: h1
-        size: small
+        size: medium
         align: left
         width: full
         title: Small team. Big impact.
@@ -224,7 +224,7 @@ sections:
         latitude: '19.419897'
         longitude: "-99.164967"
       animation: none
-    - width: 1-1
+    - width: 1-2
       blocks:
       - template: heading
         block: heading
