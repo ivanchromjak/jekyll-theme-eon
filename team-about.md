@@ -64,61 +64,6 @@ sections:
   id: ''
   class: ''
 - template: section
-  container: medium
-  size: large
-  remove_padding: top
-  horizontal_align: left
-  background:
-    style: default
-    align: center-center
-    size: cover
-    parallax: '0'
-    image_width: 1-2
-    horizontal_align: left
-    overlay_opacity: 0.6
-    shape_top: none
-    color: ''
-    image: ''
-    custom_image_width: false
-    video: ''
-    overlay_color: ''
-  animation: none
-  blocks:
-  - template: grid
-    block: grid
-    gap: large
-    vertical_align: top
-    parallax: '0'
-    cells:
-    - width: 1-2
-      blocks:
-      - template: heading
-        block: heading
-        tag: h2
-        size: h1
-        align: left
-        width: full
-        title: Holisticly streamline collaborative e-tailers and flexible platforms.
-        color: ''
-      animation: none
-    - width: 1-2
-      blocks:
-      - template: text
-        block: text
-        align: left
-        width: full
-        text: |-
-          Appropriately iterate premier schemas and standardized e-tailers. Continually deploy optimal scenarios after mission-critical intellectual capital. Synergistically target technically sound internal or "organic" sources rather than enterprise intellectual capital. Intrinsicly extend process-centric solutions and go forward information. Interactively provide access to functionalized action items for revolutionary niches.
-
-          Professionally repurpose premium convergence without parallel testing procedures. Holisticly myocardinate ubiquitous synergy after granular e-business. Progressively myocardinate ubiquitous relationships through principle-centered expertise. Authoritatively evisculate state of the art growth strategies and innovative innovation. Distinctively deliver low-risk high-yield materials without timely networks.
-        color: ''
-      animation: none
-    divider: false
-    masonry: false
-  height: false
-  id: ''
-  class: ''
-- template: section
   container: small
   size: large
   remove_padding: top
@@ -187,6 +132,61 @@ sections:
       caption: ''
     - image: "/uploads/brand-color-discord.png"
       caption: ''
+  height: false
+  id: ''
+  class: ''
+- template: section
+  container: medium
+  size: large
+  remove_padding: top
+  horizontal_align: left
+  background:
+    style: default
+    align: center-center
+    size: cover
+    parallax: '0'
+    image_width: 1-2
+    horizontal_align: left
+    overlay_opacity: 0.6
+    shape_top: none
+    color: ''
+    image: ''
+    custom_image_width: false
+    video: ''
+    overlay_color: ''
+  animation: none
+  blocks:
+  - template: grid
+    block: grid
+    gap: large
+    vertical_align: top
+    parallax: '0'
+    cells:
+    - width: 1-2
+      blocks:
+      - template: heading
+        block: heading
+        tag: h2
+        size: h1
+        align: left
+        width: full
+        title: Holisticly streamline collaborative e-tailers and flexible platforms.
+        color: ''
+      animation: none
+    - width: 1-2
+      blocks:
+      - template: text
+        block: text
+        align: left
+        width: full
+        text: |-
+          Appropriately iterate premier schemas and standardized e-tailers. Continually deploy optimal scenarios after mission-critical intellectual capital. Synergistically target technically sound internal or "organic" sources rather than enterprise intellectual capital. Intrinsicly extend process-centric solutions and go forward information. Interactively provide access to functionalized action items for revolutionary niches.
+
+          Professionally repurpose premium convergence without parallel testing procedures. Holisticly myocardinate ubiquitous synergy after granular e-business. Progressively myocardinate ubiquitous relationships through principle-centered expertise. Authoritatively evisculate state of the art growth strategies and innovative innovation. Distinctively deliver low-risk high-yield materials without timely networks.
+        color: ''
+      animation: none
+    divider: false
+    masonry: false
   height: false
   id: ''
   class: ''
