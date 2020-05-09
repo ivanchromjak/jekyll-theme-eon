@@ -63,12 +63,12 @@ sections:
   id: ''
   class: ''
 - template: section
-  container: medium
+  container: large
   size: medium
   remove_padding: none
   horizontal_align: left
   background:
-    style: default
+    style: muted
     align: center-center
     size: cover
     parallax: '0'
