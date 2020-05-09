@@ -95,19 +95,19 @@ sections:
         block: heading
         tag: h2
         size: h1
-        align: center
+        align: left
         width: full
         title: Interested in joining our team?
         color: ''
       - template: lead
         block: lead
-        align: center
+        align: left
         width: xsmall
         text: Assertively engineer timely e-business before high standards in infrastructures.
           Collaboratively cultivate competitive e-business and virtual imperatives.
         color: ''
       animation: none
-    - width: 1-1
+    - width: auto
       blocks:
       - template: block-button
         block: button
