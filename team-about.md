@@ -78,9 +78,9 @@ sections:
       caption: ''
     - image: "/uploads/office-2.jpg"
       caption: ''
-    - image: "/uploads/office-3.jpg"
-      caption: ''
     - image: "/uploads/team-2.jpg"
+      caption: ''
+    - image: "/uploads/office-3.jpg"
       caption: ''
     - image: "/uploads/header-9.jpeg"
       caption: ''
