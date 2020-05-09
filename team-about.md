@@ -300,7 +300,7 @@ sections:
   - template: grid
     block: grid
     gap: large
-    vertical_align: top
+    vertical_align: middle
     parallax: '0'
     cells:
     - width: 1-2
