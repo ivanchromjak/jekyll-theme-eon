@@ -7,7 +7,7 @@ sections:
   container: medium
   size: medium
   remove_padding: none
-  horizontal_align: center
+  horizontal_align: left
   background:
     style: default
     align: center-center
@@ -39,6 +39,34 @@ sections:
     text: Dynamically monetize an expanded array of infomediaries with exceptional
       catalysts for change.
     color: ''
+  - template: cards
+    block: cards
+    media: left
+    style: default
+    grid: 1-3
+    gutter: default
+    cards:
+    - title: ''
+      icon: ''
+      image: ''
+      blocks:
+      - template: heading
+        block: heading
+        tag: h1
+        size: small
+        align: left
+        width: full
+        title: Small team. Big impact.
+        color: ''
+      - template: lead
+        block: lead
+        align: left
+        width: full
+        text: Dynamically monetize an expanded array and functional catalysts for
+          change of infomediaries with exceptional catalysts for change.
+        color: ''
+    icon_color: ''
+    icon_size: 
   navbar:
     light_color: false
     transparent: false
@@ -215,9 +243,9 @@ sections:
         block: lead
         align: left
         width: small
-        text: Assertively engineer timely e-business before high standards in infrastructures.
-          Collaboratively cultivate competitive e-business and virtual leverage existing
-          interoperable leadership imperatives.
+        text: Assertively engineer timely e-business before high standards in infrastructures
+          cultivate competitive e-business and virtual leverage existing interoperable
+          leadership imperatives.
         color: ''
       animation: none
     - width: auto
