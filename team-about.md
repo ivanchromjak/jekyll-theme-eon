@@ -44,9 +44,9 @@ sections:
     color: ''
   - template: image
     block: image
-    align: none
-    image: ''
-    alt: ''
+    align: center
+    image: "/uploads/team-2.jpg"
+    alt: Team
     caption: ''
     lightbox: false
   navbar:
