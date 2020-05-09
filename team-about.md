@@ -4,7 +4,7 @@ title: Team About
 sections:
 - template: header
   block: header
-  container: medium
+  container: small
   size: large
   remove_padding: top
   horizontal_align: left
@@ -44,7 +44,7 @@ sections:
     color: ''
   - template: margin
     block: margin
-    size: medium
+    size: large
   - template: image
     block: image
     align: center
@@ -228,10 +228,13 @@ sections:
     text: Holisticly conceptualize intuitive e-markets with enabled vortals. Completely
       grow team driven e-commerce with process-centric interfaces.
     color: ''
+  - template: margin
+    block: margin
+    size: medium
   - template: team
     block: team
     authors: ''
-    grid: 1-3
+    grid: 1-4
     gap: large
   height: false
   id: ''
