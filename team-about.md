@@ -8,7 +8,7 @@ sections:
   remove_padding: none
   horizontal_align: left
   background:
-    style: primary
+    style: default
     align: center-center
     size: cover
     parallax: '0'
@@ -30,14 +30,14 @@ sections:
     align: center
     width: full
     title: You’re in a good company
-    color: "#FFFFFF"
+    color: ''
   - template: lead
     block: lead
     align: center
     width: xsmall
     text: Continually integrate resource maximizing customer service via enabled niches
       distinctively optimize worldwide mindshare and bricks-and-clicks niche markets
-    color: "#E1DDE5"
+    color: ''
   - template: gallery
     block: gallery
     lightbox: false
